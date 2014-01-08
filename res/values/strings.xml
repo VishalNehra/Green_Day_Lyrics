@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    
+    <string name="preference_category2_title">User Interface</string>
+    <string name="list2_title">Theme</string>
+    <string name="list2_summary">Choose a theme</string>
+    <string name="list2_dialog_title">Choose one</string>
+
+    
+    <string name="preference_category3_title">About</string>
+    <string name="simple1_title">Build Version</string>
+    <string name="simple1_summary">0.02 Alpha</string>
+    <string name="intent1_preference_title">Source Code</string>
+    <string name="intent1_preference_summary">https://github.com/vishal0071/UPES-CSI</string>
+    <string name="simple2_preference_title">Green Day is</string>
+    <string name="simple2_preference_summary">List of Green Day members</string>
+    <string name="member1_title">Billie Joe Armstrong</string>
+    <string name="member1_summary">Guitar</string>
+    <string name="member2_title">Tre Cool</string>
+    <string name="member2_summary">Drums</string>
+    <string name="member3_title">Mike Dirnt</string>
+    <string name="member3_summary">Bass</string>
+    <string name="member4_title">Jason White</string>
+    <string name="member4_summary">Guitar</string>
+    <string name="member5_title">Jeff Matika</string>
+    <string name="member5_summary">Guitar</string>
+    <string name="member6_title">Jason Freese</string>
+    <string name="member6_summary">Saxophone, Trumphet</string>
+    
+    <string name="ui_profile_toast_save_text">Button is not working ATM!</string>
+    
+    
+    
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Dookie</item>
+        <item>American Idiot</item>
+        
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_dookie</item>
+        <item>@drawable/ic_americanidiot</item>
+        
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="app_name">Green Day Lyrics</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <string name="settings_name">Settings</string>
+    <string name="feedback_name">Feedback</string>
+    
+    
+    
+    <!-- American Idiot -->
+    <string name="americanidiot_preference">List</string>
+    
+    
+
+</resources>

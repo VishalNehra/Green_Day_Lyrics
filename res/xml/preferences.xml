@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <PreferenceCategory
+            android:title="@string/preference_category2_title">
+            <ListPreference android:key="list2_preference"
+                android:title="@string/list2_title"
+                android:summary="@string/list2_summary"
+                android:entries="@array/list2_preferences"
+                android:entryValues="@array/list2_preferences_values"
+                android:dialogTitle="@string/list2_dialog_title"/>
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:title="@string/preference_category3_title">
+            <Preference
+                android:key="simple1_preference"
+                android:title="@string/simple1_title"
+                android:summary="@string/simple1_summary"/>
+            <PreferenceScreen
+                android:title="@string/intent1_preference_title"
+                android:summary="@string/intent1_preference_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/vishal0071/Greenday_Lyrics"/>
+
+        </PreferenceScreen>
+        <PreferenceScreen
+                android:key="simple2_preference"
+                android:title="@string/simple2_preference_title"
+                android:summary="@string/simple2_preference_summary">
+            
+            <!-- Preference Screen Menu -->
+            <Preference android:key="member1_screen"
+                android:title="@string/member1_title"
+                android:summary="@string/member1_summary"/>
+            <Preference android:key="member2_screen"
+                android:title="@string/member2_title"
+                android:summary="@string/member2_summary"/>
+            <Preference android:key="member3_screen"
+                android:title="@string/member3_title"
+                android:summary="@string/member3_summary"/>
+            <Preference android:key="member4_screen"
+                android:title="@string/member4_title"
+                android:summary="@string/member4_summary"/>
+            <Preference android:key="member5_screen"
+                android:title="@string/member5_title"
+                android:summary="@string/member5_summary"/>
+            <Preference android:key="member6_screen"
+                android:title="@string/member6_title"
+                android:summary="@string/member6_summary"/>
+            <!-- More list can be added -->
+        </PreferenceScreen>
+        </PreferenceCategory>
+      
+        
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="list2_preferences">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Light Lime</item>
+        <item>Light Mojo</item>
+        <item>Light San Marino</item>
+        <item>Dark Lime</item>
+        <item>Dark Mojo</item>
+        <item>Dark San Marino</item>
+    </string-array>
+    
+    <string-array name="list2_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        
+    </string-array>
+    
+</resources>
