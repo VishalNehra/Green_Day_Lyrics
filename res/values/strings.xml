@@ -15,17 +15,17 @@
     <string name="simple1_preference_title">Albums</string>
     <string name="simple1_preference_summary">Date of Release</string>
     <string name="member1_title">Billie Joe Armstrong</string>
-    <string name="member1_summary">Guitar</string>
-    <string name="member2_title">Tre Cool</string>
-    <string name="member2_summary">Drums</string>
-    <string name="member3_title">Mike Dirnt</string>
-    <string name="member3_summary">Bass</string>
+    <string name="member1_summary">Lead Vocals, Guitars, Piano, Harmonica</string>
+    <string name="member2_title">Mike Dirnt</string>
+    <string name="member2_summary">Bass Guitar, Backing Vocals</string>
+    <string name="member3_title">Tré Cool</string>
+    <string name="member3_summary">Drums, Percussion, Backing Vocals</string>
     <string name="member4_title">Jason White</string>
-    <string name="member4_summary">Guitar</string>
+    <string name="member4_summary">Guitars, Backing Vocals</string>
     <string name="member5_title">Jeff Matika</string>
-    <string name="member5_summary">Guitar</string>
+    <string name="member5_summary">Rhythm Guitar, Backing Vocals</string>
     <string name="member6_title">Jason Freese</string>
-    <string name="member6_summary">Saxophone, Trumphet</string>
+    <string name="member6_summary">Keyboards, Piano, Saxophone, Trombone, Backing Vocals</string>
     
     <string name="ui_profile_toast_save_text">Button is not working ATM!</string>
     

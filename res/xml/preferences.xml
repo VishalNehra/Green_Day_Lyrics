@@ -114,22 +114,37 @@
             <!-- Preference Screen Menu -->
             <Preference android:key="member1_screen"
                 android:title="@string/member1_title"
-                android:summary="@string/member1_summary"/>
+                android:summary="@string/member1_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Billie_Joe_Armstrong"/>
+            </Preference>
+            
             <Preference android:key="member2_screen"
                 android:title="@string/member2_title"
-                android:summary="@string/member2_summary"/>
+                android:summary="@string/member2_summary">
+             <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Mike_Dirnt"/></Preference>
+            
             <Preference android:key="member3_screen"
                 android:title="@string/member3_title"
-                android:summary="@string/member3_summary"/>
+                android:summary="@string/member3_summary">
+             <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Tr%C3%A9_Cool"/></Preference>
+            
             <Preference android:key="member4_screen"
                 android:title="@string/member4_title"
-                android:summary="@string/member4_summary"/>
+                android:summary="@string/member4_summary">
+              <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Jason_White_(musician)"/></Preference>
             <Preference android:key="member5_screen"
                 android:title="@string/member5_title"
                 android:summary="@string/member5_summary"/>
+               
             <Preference android:key="member6_screen"
                 android:title="@string/member6_title"
-                android:summary="@string/member6_summary"/>
+                android:summary="@string/member6_summary">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Jason_Freese"/></Preference>
             <!-- More list can be added -->
         </PreferenceScreen>
         </PreferenceCategory>
