@@ -61,10 +61,34 @@ public class MainActivity extends Activity {
         // adding nav drawer items to array
         // Home
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
+        // 39/Smooth
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1), true, "19"));
+        // Kerplunk
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "15"));
         // Dookie
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-        //AmericanIdiot
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "14"));
+        // Insomniac
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1), true, "15"));
+        // Nimrod
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "22"));
+        // Warning
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1), true, "12"));
+        // International Superhits
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1), true, "3"));
+        // Shenanigans
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1), true, "8"));
+        // American Idiot
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1), true, "13"));
+        // 21st Centuary Breakdown
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuIcons.getResourceId(10, -1), true, "19"));
+        // UNO
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[11], navMenuIcons.getResourceId(11, -1), true, "12"));
+        // DOS
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuIcons.getResourceId(12, -1), true, "13"));
+        // TRE
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuIcons.getResourceId(13, -1), true, "12"));
+        // Unreleased
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "36"));
         
          
  
@@ -161,11 +185,48 @@ public class MainActivity extends Activity {
             fragment = new HomeFragment();
             break;
         case 1:
-            fragment = new DookieFragment();
+            fragment = new TnsFragment();
             break;
         case 2:
+            fragment = new KerplunkFragment();
+            break;
+        case 3:
+            fragment = new DookieFragment();
+            break;
+        case 4:
+            fragment = new InsomniacFragment();
+            break;
+        case 5:
+            fragment = new NimrodFragment();
+            break;
+        case 6:
+            fragment = new WarningFragment();
+            break;
+        case 7:
+            fragment = new IntSuperFragment();
+            break;
+        case 8:
+            fragment = new ShenanigansFragment();
+            break;
+        case 9:
             fragment = new AmericanIdiotFragment();
             break;
+        case 10:
+            fragment = new TcbFragment();
+            break;
+        case 11:
+            fragment = new UnoFragment();
+            break;
+        case 12:
+            fragment = new DosFragment();
+            break;
+        case 13:
+            fragment = new TreFragment();
+            break;
+        case 14:
+            fragment = new UnreleasedFragment();
+            break;
+        
         
  
         default:

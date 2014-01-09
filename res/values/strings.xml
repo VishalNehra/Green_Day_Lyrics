@@ -34,18 +34,44 @@
     
     
     <string-array name="nav_drawer_items">
-        <item >Home</item>
-        <item >Dookie</item>
+        <item>Home</item>
+        <item>39/Smooth</item>
+        <item>Kerplunk</item>
+        <item>Dookie</item>
+        <item>Insomniac</item>
+        <item>Nimrod</item>
+        <item>Warning</item>
+        <item>International Superhits</item>
+        <item>Shenanigans</item>
         <item>American Idiot</item>
+        <item>21st Centuary Breakdown</item>
+        <item>¡UNO!</item>
+        <item>¡DOS!</item>
+        <item>¡TRE!</item>
+        <item>Unreleased</item>
+        
         
     </string-array>
     
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home2</item>
+        <item>@drawable/ic_tns</item>
+        <item>@drawable/ic_kerplunk</item>
         <item>@drawable/ic_dookie</item>
+        <item>@drawable/ic_insomniac</item>
+        <item>@drawable/ic_nimrod</item>
+        <item>@drawable/ic_warning</item>
+        <item>@drawable/ic_ins</item>
+        <item>@drawable/ic_shenanigans</item>
         <item>@drawable/ic_americanidiot</item>
+        <item>@drawable/ic_tcb</item>
+        <item>@drawable/ic_uno</item>
+        <item>@drawable/ic_dos</item>
+        <item>@drawable/ic_tre</item>
+        <item>@drawable/ic_unreleased</item>
+
         
     </array>
     

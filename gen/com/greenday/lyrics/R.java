@@ -38,45 +38,82 @@ public final class R {
         public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int americanidiot_cover=0x7f020000;
+        public static final int americanidiot_cover2=0x7f020000;
         public static final int counter_bg=0x7f020001;
-        public static final int dookie_cover=0x7f020002;
-        public static final int ic_americanidiot=0x7f020003;
-        public static final int ic_dookie=0x7f020004;
-        public static final int ic_drawer=0x7f020005;
-        public static final int ic_home=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int list_item_bg_normal=0x7f020008;
-        public static final int list_item_bg_pressed=0x7f020009;
-        public static final int list_selector=0x7f02000a;
-        public static final int uno_cover=0x7f02000b;
+        public static final int dookie_cover2=0x7f020002;
+        public static final int dos_cover2=0x7f020003;
+        public static final int home_cover2=0x7f020004;
+        public static final int ic_americanidiot=0x7f020005;
+        public static final int ic_dookie=0x7f020006;
+        public static final int ic_dos=0x7f020007;
+        public static final int ic_drawer=0x7f020008;
+        public static final int ic_home=0x7f020009;
+        public static final int ic_home2=0x7f02000a;
+        public static final int ic_ins=0x7f02000b;
+        public static final int ic_insomniac=0x7f02000c;
+        public static final int ic_kerplunk=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int ic_nimrod=0x7f02000f;
+        public static final int ic_shenanigans=0x7f020010;
+        public static final int ic_tcb=0x7f020011;
+        public static final int ic_tns=0x7f020012;
+        public static final int ic_tre=0x7f020013;
+        public static final int ic_uno=0x7f020014;
+        public static final int ic_unreleased=0x7f020015;
+        public static final int ic_warning=0x7f020016;
+        public static final int ins_cover2=0x7f020017;
+        public static final int insomniac=0x7f020018;
+        public static final int insomniac_cover2=0x7f020019;
+        public static final int kerplunk_cover2=0x7f02001a;
+        public static final int list_item_bg_normal=0x7f02001b;
+        public static final int list_item_bg_pressed=0x7f02001c;
+        public static final int list_selector=0x7f02001d;
+        public static final int nimrod_cover2=0x7f02001e;
+        public static final int shenanigans_cover2=0x7f02001f;
+        public static final int tcb_cover2=0x7f020020;
+        public static final int tns_cover2=0x7f020021;
+        public static final int tre_cover2=0x7f020022;
+        public static final int uno_cover2=0x7f020023;
+        public static final int unreleased_cover2=0x7f020024;
+        public static final int warning_cover2=0x7f020025;
     }
     public static final class id {
-        public static final int button1=0x7f0b000c;
+        public static final int button1=0x7f0b000b;
         public static final int counter=0x7f0b0005;
         public static final int drawer_layout=0x7f0b0000;
-        public static final int editText1=0x7f0b000b;
-        public static final int editText2=0x7f0b000a;
-        public static final int editText3=0x7f0b000d;
+        public static final int editText1=0x7f0b000a;
+        public static final int editText2=0x7f0b0009;
+        public static final int editText3=0x7f0b000c;
         public static final int frame_container=0x7f0b0001;
         public static final int icon=0x7f0b0003;
-        public static final int item1=0x7f0b000e;
-        public static final int item2=0x7f0b000f;
+        public static final int item1=0x7f0b000d;
+        public static final int item2=0x7f0b000e;
         public static final int list_slidermenu=0x7f0b0002;
-        public static final int textView1=0x7f0b0007;
-        public static final int textView2=0x7f0b0008;
-        public static final int textView3=0x7f0b0009;
+        public static final int textView1=0x7f0b0006;
+        public static final int textView2=0x7f0b0007;
+        public static final int textView3=0x7f0b0008;
         public static final int title=0x7f0b0004;
-        public static final int txtLabel=0x7f0b0006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int drawer_list_item=0x7f030001;
         public static final int fragment_americanidiot=0x7f030002;
         public static final int fragment_dookie=0x7f030003;
-        public static final int fragment_home=0x7f030004;
-        public static final int reportproblem=0x7f030005;
-        public static final int settings=0x7f030006;
+        public static final int fragment_dos=0x7f030004;
+        public static final int fragment_home=0x7f030005;
+        public static final int fragment_insomniac=0x7f030006;
+        public static final int fragment_intsuper=0x7f030007;
+        public static final int fragment_kerplunk=0x7f030008;
+        public static final int fragment_nimrod=0x7f030009;
+        public static final int fragment_shenanigans=0x7f03000a;
+        public static final int fragment_tcb=0x7f03000b;
+        public static final int fragment_tns=0x7f03000c;
+        public static final int fragment_tre=0x7f03000d;
+        public static final int fragment_uno=0x7f03000e;
+        public static final int fragment_unreleased=0x7f03000f;
+        public static final int fragment_warning=0x7f030010;
+        public static final int reportproblem=0x7f030011;
+        public static final int settings=0x7f030012;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -142,7 +179,6 @@ public final class R {
          */
         public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f090001;
     }

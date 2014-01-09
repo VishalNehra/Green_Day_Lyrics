@@ -23,7 +23,7 @@
                 android:title="@string/intent1_preference_title"
                 android:summary="@string/intent1_preference_summary">
             <intent android:action="android.intent.action.VIEW"
-                    android:data="https://github.com/vishal0071/Greenday_Lyrics"/>
+                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
 
         </PreferenceScreen>
         <PreferenceScreen
