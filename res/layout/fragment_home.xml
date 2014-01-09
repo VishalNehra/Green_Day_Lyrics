@@ -2,8 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_cover2">
-     
-     
+    android:background="@drawable/home_cover2"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Green Day"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#646464"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Green Day is an American punk rock band formed in 1987. 
+     \n\nThe band consists of lead vocalist and guitarist \nBillie Joe Armstrong\n\nbassist and backing vocalist \nMike Dirnt,\n\ndrummer Tré Cool \n\nand guitarist and backing vocalist \nJason White,\n\nwho became a full member \nafter playing in the band as a session \nand touring guitarist for 13 years." />
  
 </RelativeLayout>

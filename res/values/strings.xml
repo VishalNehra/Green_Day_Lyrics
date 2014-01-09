@@ -3,19 +3,17 @@
 
 
     
-    <string name="preference_category2_title">User Interface</string>
-    <string name="list2_title">Theme</string>
-    <string name="list2_summary">Choose a theme</string>
-    <string name="list2_dialog_title">Choose one</string>
-
+    <string name="preference_category2_title">Albums</string>
     
     <string name="preference_category3_title">About</string>
     <string name="simple1_title">Build Version</string>
     <string name="simple1_summary">0.02 Alpha</string>
     <string name="intent1_preference_title">Source Code</string>
-    <string name="intent1_preference_summary">https://github.com/vishal0071/UPES-CSI</string>
+    <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
     <string name="simple2_preference_title">Green Day is</string>
     <string name="simple2_preference_summary">List of Green Day members</string>
+    <string name="simple1_preference_title">Albums</string>
+    <string name="simple1_preference_summary">Date of Release</string>
     <string name="member1_title">Billie Joe Armstrong</string>
     <string name="member1_summary">Guitar</string>
     <string name="member2_title">Tre Cool</string>
@@ -88,6 +86,36 @@
     
     <!-- American Idiot -->
     <string name="americanidiot_preference">List</string>
+    
+    <!-- ALBUM LIST -->
+    
+    <string name="album1_title">39/Smooth</string>
+    <string name="album1_summary">April 13, 1990  (Good Friday)</string>
+    <string name="album2_title">Kerplunk</string>
+    <string name="album2_summary">January 17, 1992</string>
+    <string name="album3_title">Dookie</string>
+    <string name="album3_summary">February 1, 1994</string>
+    <string name="album4_title">Insomniac</string>
+    <string name="album4_summary">October 10, 1995</string>
+    <string name="album5_title">Nimrod</string>
+    <string name="album5_summary">October 14, 1997</string>
+    <string name="album6_title">Warning</string>
+    <string name="album6_summary">October 3, 2000</string>
+    <string name="album7_title">International Superhits</string>
+    <string name="album7_summary">November 13, 2001</string>
+    <string name="album8_title">Shenanigans</string>
+    <string name="album8_summary">July 2, 2002</string>
+    <string name="album9_title">American Idiot</string>
+    <string name="album9_summary">September 21, 2004</string>
+    <string name="album10_title">21st Centuary Breakdown</string>
+    <string name="album10_summary">May 15, 2009</string>
+    <string name="album11_title">UNO</string>
+    <string name="album11_summary">September 21, 2012</string>
+    <string name="album12_title">DOS</string>
+    <string name="album12_summary">November 9, 2012 (My B\'Day :D)</string>
+    <string name="album13_title">TRE</string>
+    <string name="album13_summary">December 7, 2012</string>
+    
     
     
 

@@ -119,41 +119,68 @@ public final class R {
         public static final int main=0x7f0a0000;
     }
     public static final class string {
+        public static final int album10_summary=0x7f080031;
+        public static final int album10_title=0x7f080030;
+        public static final int album11_summary=0x7f080033;
+        public static final int album11_title=0x7f080032;
+        public static final int album12_summary=0x7f080035;
+        public static final int album12_title=0x7f080034;
+        public static final int album13_summary=0x7f080037;
+        public static final int album13_title=0x7f080036;
+        public static final int album1_summary=0x7f08001f;
+        /**  ALBUM LIST 
+         */
+        public static final int album1_title=0x7f08001e;
+        public static final int album2_summary=0x7f080021;
+        public static final int album2_title=0x7f080020;
+        public static final int album3_summary=0x7f080023;
+        public static final int album3_title=0x7f080022;
+        public static final int album4_summary=0x7f080025;
+        public static final int album4_title=0x7f080024;
+        public static final int album5_summary=0x7f080027;
+        public static final int album5_title=0x7f080026;
+        public static final int album6_summary=0x7f080029;
+        public static final int album6_title=0x7f080028;
+        public static final int album7_summary=0x7f08002b;
+        public static final int album7_title=0x7f08002a;
+        public static final int album8_summary=0x7f08002d;
+        public static final int album8_title=0x7f08002c;
+        public static final int album9_summary=0x7f08002f;
+        public static final int album9_title=0x7f08002e;
         /**  American Idiot 
          */
-        public static final int americanidiot_preference=0x7f08001e;
-        public static final int app_name=0x7f080019;
+        public static final int americanidiot_preference=0x7f08001d;
+        public static final int app_name=0x7f080018;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f080018;
-        public static final int drawer_close=0x7f08001b;
-        public static final int drawer_open=0x7f08001a;
-        public static final int feedback_name=0x7f08001d;
-        public static final int intent1_preference_summary=0x7f080008;
-        public static final int intent1_preference_title=0x7f080007;
-        public static final int list2_dialog_title=0x7f080003;
-        public static final int list2_summary=0x7f080002;
-        public static final int list2_title=0x7f080001;
-        public static final int member1_summary=0x7f08000c;
-        public static final int member1_title=0x7f08000b;
-        public static final int member2_summary=0x7f08000e;
-        public static final int member2_title=0x7f08000d;
-        public static final int member3_summary=0x7f080010;
-        public static final int member3_title=0x7f08000f;
-        public static final int member4_summary=0x7f080012;
-        public static final int member4_title=0x7f080011;
-        public static final int member5_summary=0x7f080014;
-        public static final int member5_title=0x7f080013;
-        public static final int member6_summary=0x7f080016;
-        public static final int member6_title=0x7f080015;
+        public static final int desc_list_item_icon=0x7f080017;
+        public static final int drawer_close=0x7f08001a;
+        public static final int drawer_open=0x7f080019;
+        public static final int feedback_name=0x7f08001c;
+        public static final int intent1_preference_summary=0x7f080005;
+        public static final int intent1_preference_title=0x7f080004;
+        public static final int member1_summary=0x7f08000b;
+        public static final int member1_title=0x7f08000a;
+        public static final int member2_summary=0x7f08000d;
+        public static final int member2_title=0x7f08000c;
+        public static final int member3_summary=0x7f08000f;
+        public static final int member3_title=0x7f08000e;
+        public static final int member4_summary=0x7f080011;
+        public static final int member4_title=0x7f080010;
+        public static final int member5_summary=0x7f080013;
+        public static final int member5_title=0x7f080012;
+        public static final int member6_summary=0x7f080015;
+        public static final int member6_title=0x7f080014;
         public static final int preference_category2_title=0x7f080000;
-        public static final int preference_category3_title=0x7f080004;
-        public static final int settings_name=0x7f08001c;
-        public static final int simple1_summary=0x7f080006;
-        public static final int simple1_title=0x7f080005;
-        public static final int simple2_preference_summary=0x7f08000a;
-        public static final int simple2_preference_title=0x7f080009;
-        public static final int ui_profile_toast_save_text=0x7f080017;
+        public static final int preference_category3_title=0x7f080001;
+        public static final int settings_name=0x7f08001b;
+        public static final int simple1_preference_summary=0x7f080009;
+        public static final int simple1_preference_title=0x7f080008;
+        public static final int simple1_summary=0x7f080003;
+        public static final int simple1_title=0x7f080002;
+        public static final int simple2_preference_summary=0x7f080007;
+        public static final int simple2_preference_title=0x7f080006;
+        public static final int ui_profile_toast_save_text=0x7f080016;
     }
     public static final class style {
         /** 

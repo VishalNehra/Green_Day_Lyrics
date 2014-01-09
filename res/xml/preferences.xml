@@ -4,12 +4,92 @@
         
         <PreferenceCategory
             android:title="@string/preference_category2_title">
-            <ListPreference android:key="list2_preference"
-                android:title="@string/list2_title"
-                android:summary="@string/list2_summary"
-                android:entries="@array/list2_preferences"
-                android:entryValues="@array/list2_preferences_values"
-                android:dialogTitle="@string/list2_dialog_title"/>
+            <PreferenceScreen
+                android:key="simple1_preference"
+                android:title="@string/simple1_preference_title"
+                android:summary="@string/simple1_preference_summary">
+            
+            <!-- Preference Screen Menu -->
+            <Preference android:key="album1_screen"
+                android:title="@string/album1_title"
+                android:summary="@string/album1_summary">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/39/Smooth"/>
+                </Preference>
+            <Preference android:key="album2_screen"
+                android:title="@string/album2_title"
+                android:summary="@string/album2_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Kerplunk_(album)"/>
+            </Preference>
+            <Preference android:key="album3_screen"
+                android:title="@string/album3_title"
+                android:summary="@string/album3_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Dookie"/>
+            </Preference>
+            <Preference android:key="member4_screen"
+                android:title="@string/album4_title"
+                android:summary="@string/album4_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Insomniac_(Green_Day_album)"/>
+            </Preference>
+            <Preference android:key="album5_screen"
+                android:title="@string/album5_title"
+                android:summary="@string/album5_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Nimrod_(album)"/>
+            </Preference>
+            <Preference android:key="album6_screen"
+                android:title="@string/album6_title"
+                android:summary="@string/album6_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Warning_(Green_Day_album)"/>
+            </Preference>
+            <Preference android:key="album7_screen"
+                android:title="@string/album7_title"
+                android:summary="@string/album7_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/International_Superhits!"/>
+            </Preference>
+            <Preference android:key="album8_screen"
+                android:title="@string/album8_title"
+                android:summary="@string/album8_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Shenanigans_(album)"/>
+            </Preference>
+            <Preference android:key="album9_screen"
+                android:title="@string/album9_title"
+                android:summary="@string/album9_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/American_Idiot"/>
+            </Preference>
+            <Preference android:key="album10_screen"
+                android:title="@string/album10_title"
+                android:summary="@string/album10_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/21st_Century_Breakdown"/>
+            </Preference>
+            <Preference android:key="album11_screen"
+                android:title="@string/album11_title"
+                android:summary="@string/album11_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/%C2%A1Uno!"/>
+            </Preference>
+            <Preference android:key="album12_screen"
+                android:title="@string/album12_title"
+                android:summary="@string/album12_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/%C2%A1Dos!"/>
+            </Preference>
+            <Preference android:key="album13_screen"
+                android:title="@string/album13_title"
+                android:summary="@string/album13_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/%C2%A1Tr%C3%A9!"/>
+            </Preference>
+            <!-- More list can be added -->
+        </PreferenceScreen>
             
         </PreferenceCategory>
         
