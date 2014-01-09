@@ -7,7 +7,7 @@
     
     <string name="preference_category3_title">About</string>
     <string name="simple1_title">Build Version</string>
-    <string name="simple1_summary">0.02 Alpha</string>
+    <string name="simple1_summary">0.05 Alpha</string>
     <string name="intent1_preference_title">Source Code</string>
     <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
     <string name="simple2_preference_title">Green Day is</string>
@@ -45,7 +45,7 @@
         <item>21st Centuary Breakdown</item>
         <item>¡UNO!</item>
         <item>¡DOS!</item>
-        <item>¡TRE!</item>
+        <item>¡TRÉ!</item>
         <item>Unreleased</item>
         
         
@@ -109,11 +109,11 @@
     <string name="album9_summary">September 21, 2004</string>
     <string name="album10_title">21st Centuary Breakdown</string>
     <string name="album10_summary">May 15, 2009</string>
-    <string name="album11_title">UNO</string>
+    <string name="album11_title">¡UNO!</string>
     <string name="album11_summary">September 21, 2012</string>
-    <string name="album12_title">DOS</string>
+    <string name="album12_title">¡DOS!</string>
     <string name="album12_summary">November 9, 2012 (My B\'Day :D)</string>
-    <string name="album13_title">TRE</string>
+    <string name="album13_title">¡TRÉ!</string>
     <string name="album13_summary">December 7, 2012</string>
     
     
