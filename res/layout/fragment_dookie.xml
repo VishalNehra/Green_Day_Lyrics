@@ -5,6 +5,149 @@
     android:orientation="vertical"
     android:background="@drawable/dookie_cover2" >
 
-    
+    <Button
+        android:id="@+id/button1_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:text="Burnout" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button2_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1_dookie"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Having A Blast" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button3_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:text="Chump" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3_dookie"
+        android:layout_toLeftOf="@+id/button3_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button4_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView02"
+        android:layout_toRightOf="@+id/ImageView02"
+        android:text="Long View" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4_dookie"
+        android:layout_toLeftOf="@+id/button4_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button5_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView03"
+        android:layout_toRightOf="@+id/ImageView03"
+        android:text="Welcome To Paradise" />
+
+    <Button
+        android:id="@+id/button6_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView04"
+        android:layout_toRightOf="@+id/ImageView04"
+        android:text="Pulling Teeth" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5_dookie"
+        android:layout_toLeftOf="@+id/button5_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button7_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView05"
+        android:layout_toRightOf="@+id/ImageView05"
+        android:text="Basket Case" />
+
+    <ImageView
+        android:id="@+id/ImageView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6_dookie"
+        android:layout_toLeftOf="@+id/button6_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <ImageView
+        android:id="@+id/ImageView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7_dookie"
+        android:layout_toLeftOf="@+id/button7_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <ImageView
+        android:id="@+id/ImageView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button8_dookie"
+        android:layout_toLeftOf="@+id/button8_dookie"
+        android:src="@drawable/ic_dookie" />
+
+    <Button
+        android:id="@+id/button8_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageView07"
+        android:layout_toRightOf="@+id/ImageView07"
+        android:text="She" />
+
+    <Button
+        android:id="@+id/button9_dookie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView07"
+        android:layout_toRightOf="@+id/ImageView07"
+        android:text="Sassafras Roots" />
 
 </RelativeLayout>

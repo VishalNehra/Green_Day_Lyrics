@@ -24,7 +24,7 @@ public class Reportproblem extends Activity {
 		EditText et2=(EditText) findViewById(R.id.editText2);
 		TextView tv3=(TextView) findViewById(R.id.textView3);
 		EditText et3=(EditText) findViewById(R.id.editText3);
-		Button b=(Button) findViewById(R.id.button1);
+		Button b=(Button) findViewById(R.id.button1_dookie);
 		b.setOnClickListener(new OnClickListener() {
 			
 			@Override

@@ -1,42 +1,42 @@
 package com.greenday.lyrics;
 
-import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.preference.ListPreference;
-import android.preference.PreferenceFragment;
+import android.preference.PreferenceActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class Settings extends Activity {
+import com.greenday.lyrics.R;
 
+public class Settings extends PreferenceActivity {
+
+	@SuppressWarnings("deprecation")
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// Display the fragment as the main content.
-		FragmentManager mFragmentManager = getFragmentManager();
-		FragmentTransaction mFragmentTransaction = mFragmentManager
-				.beginTransaction();
-		PrefsFragment mPrefsFragment = new PrefsFragment();
-		mFragmentTransaction.replace(android.R.id.content, mPrefsFragment);
-		mFragmentTransaction.commit();
-	
-//  We could have condensed the 5 lines into 1 line of code. 		
-//		getFragmentManager().beginTransaction()
-//				.replace(android.R.id.content, new PrefsFragment()).commit();
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 
+		addPreferencesFromResource(R.xml.preferences);
 	}
 
-	public static class PrefsFragment extends PreferenceFragment {
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		return super.onCreateOptionsMenu(menu);
+	}
 
-		@Override
-		public void onCreate(Bundle savedInstanceState) {
-			super.onCreate(savedInstanceState);
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
 
-			// Load the preferences from an XML resource
-			addPreferencesFromResource(R.xml.preferences);
+		case android.R.id.home:
+			onBackPressed();
+			break;
+
+		default:
+
 		}
-	}
+		;
 
+		return super.onOptionsItemSelected(item);
+	}
 }
