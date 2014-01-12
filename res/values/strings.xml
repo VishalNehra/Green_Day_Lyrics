@@ -7,7 +7,7 @@
     
     <string name="preference_category3_title">About</string>
     <string name="simple1_title">Build Version</string>
-    <string name="simple1_summary">0.05 Alpha</string>
+    <string name="simple1_summary">0.07 Alpha</string>
     <string name="intent1_preference_title">Source Code</string>
     <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
     <string name="simple2_preference_title">Green Day is</string>
@@ -27,7 +27,7 @@
     <string name="member6_title">Jason Freese</string>
     <string name="member6_summary">Keyboards, Piano, Saxophone, Trombone, Backing Vocals</string>
     
-    <string name="ui_profile_toast_save_text">Button is not working ATM!</string>
+    <string name="ui_profile_toast_save_text">Sent! Your suggestion will be reviewed soon.</string>
     
     
     
@@ -80,7 +80,7 @@
     <string name="drawer_close">Slider Menu Closed</string>
     
     <string name="settings_name">Settings</string>
-    <string name="feedback_name">Feedback</string>
+    <string name="feedback_name">Report</string>
     
     
     
@@ -116,7 +116,11 @@
     <string name="album13_title">¡TRÉ!</string>
     <string name="album13_summary">December 7, 2012</string>
     
+    <!-- Submit button -->
+    <string name="mail_feedback_email">vishalmeham2@gmail.com</string>
     
-    
+    <!-- Rate Button -->
+    <string name="intent2_preference_title">Rate the app</string>
+    <string name="intent2_preference_summary">Support the development by giving good rating!</string>
 
 </resources>

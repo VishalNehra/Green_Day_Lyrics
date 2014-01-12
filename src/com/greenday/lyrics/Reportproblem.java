@@ -1,6 +1,7 @@
 package com.greenday.lyrics;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,23 +25,21 @@ public class Reportproblem extends Activity {
 		EditText et2=(EditText) findViewById(R.id.editText2);
 		TextView tv3=(TextView) findViewById(R.id.textView3);
 		EditText et3=(EditText) findViewById(R.id.editText3);
-		Button b=(Button) findViewById(R.id.button1_dookie);
-		b.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
+		Button b=(Button) findViewById(R.id.button1);
+	}
+				public void btnsubmit(View v) {
+			         final Intent _Intent = new Intent(android.content.Intent.ACTION_SEND);
+			         _Intent.setType("text/html");
+			         _Intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{ getString(R.string.mail_feedback_email) });
+			         _Intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.id.editText1));
+			         _Intent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.id.editText3));
+			         startActivity(Intent.createChooser(_Intent, getString(R.id.editText2)));
+			    }   
 				
-				Toast.makeText(getApplicationContext(),
-
-                        getString(R.string.ui_profile_toast_save_text),
-
-                        Toast.LENGTH_SHORT).show();
-				finish();
 				
-			}
-		});
+				
+		
 
 }
-}
+
 

@@ -78,22 +78,24 @@ public final class R {
         public static final int warning_cover2=0x7f020025;
     }
     public static final class id {
-        public static final int button1_dookie=0x7f0b000d;
+        public static final int button1=0x7f0b0010;
         public static final int counter=0x7f0b0006;
         public static final int drawer_layout=0x7f0b0000;
-        public static final int editText1=0x7f0b000c;
+        public static final int editText1=0x7f0b000a;
         public static final int editText2=0x7f0b000b;
-        public static final int editText3=0x7f0b000e;
+        public static final int editText3=0x7f0b000d;
+        public static final int editText4=0x7f0b000f;
         public static final int frame_container=0x7f0b0001;
         public static final int icon=0x7f0b0004;
         public static final int imageView1=0x7f0b0007;
-        public static final int item1=0x7f0b000f;
-        public static final int item2=0x7f0b0010;
+        public static final int item1=0x7f0b0011;
+        public static final int item2=0x7f0b0012;
         public static final int listView1=0x7f0b0003;
         public static final int list_slidermenu=0x7f0b0002;
         public static final int textView1=0x7f0b0008;
         public static final int textView2=0x7f0b0009;
-        public static final int textView3=0x7f0b000a;
+        public static final int textView3=0x7f0b000c;
+        public static final int textView4=0x7f0b000e;
         public static final int title=0x7f0b0005;
     }
     public static final class layout {
@@ -116,6 +118,7 @@ public final class R {
         public static final int fragment_unreleased=0x7f030010;
         public static final int fragment_warning=0x7f030011;
         public static final int reportproblem=0x7f030012;
+        public static final int song_americanidiot=0x7f030013;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -161,6 +164,13 @@ public final class R {
         public static final int feedback_name=0x7f08001c;
         public static final int intent1_preference_summary=0x7f080005;
         public static final int intent1_preference_title=0x7f080004;
+        public static final int intent2_preference_summary=0x7f08003a;
+        /**  Rate Button 
+         */
+        public static final int intent2_preference_title=0x7f080039;
+        /**  Submit button 
+         */
+        public static final int mail_feedback_email=0x7f080038;
         public static final int member1_summary=0x7f08000b;
         public static final int member1_title=0x7f08000a;
         public static final int member2_summary=0x7f08000d;

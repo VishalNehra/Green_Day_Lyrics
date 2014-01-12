@@ -37,7 +37,7 @@ public class TcbFragment extends Fragment {
         		"\t\t\t\t\tHorseshoes And Handgranades",
         		"\t\t\t\t\tThe Static Age",
         		"\t\t\t\t\t21 Guns",
-        		"\t\t\t\t\tAmerican Eulogy\n(Mass Hysteria / Modern World)",
+        		"\t\t\t\t\tAmerican Eulogy\n\t\t\t\t\t(Mass Hysteria / Modern World)",
         		"\t\t\t\t\tSee The Light"};
         ArrayAdapter<String> adapter =
         new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, items); 

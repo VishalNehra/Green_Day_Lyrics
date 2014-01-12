@@ -147,6 +147,14 @@
                     android:data="http://en.wikipedia.org/wiki/Jason_Freese"/></Preference>
             <!-- More list can be added -->
         </PreferenceScreen>
+        <!-- Rate Button -->
+        
+        <PreferenceScreen
+                android:title="@string/intent2_preference_title"
+                android:summary="@string/intent2_preference_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="market://details?id=com.cubeactive.qnotelistfree"/>
+        </PreferenceScreen>
         </PreferenceCategory>
       
         
