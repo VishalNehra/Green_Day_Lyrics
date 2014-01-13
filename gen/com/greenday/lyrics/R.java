@@ -152,6 +152,9 @@ public final class R {
         public static final int album8_title=0x7f08002c;
         public static final int album9_summary=0x7f08002f;
         public static final int album9_title=0x7f08002e;
+        /**  Songs titles 
+         */
+        public static final int americanidiot=0x7f08003b;
         /**  American Idiot 
          */
         public static final int americanidiot_preference=0x7f08001d;

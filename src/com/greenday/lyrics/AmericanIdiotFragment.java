@@ -6,16 +6,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.app.Fragment;
-import android.app.ListFragment;
 import android.content.Context;
 import android.content.Intent;
 
-public class AmericanIdiotFragment extends ListFragment{
+public class AmericanIdiotFragment extends Fragment{
 	
 	public AmericanIdiotFragment(){}
     
@@ -53,33 +52,36 @@ public class AmericanIdiotFragment extends ListFragment{
          //To have custom list view use this : you must define CustomeAdapter class
          // listview.setadapter(new CustomeAdapter(getActivity()));
         //getActivty is used instead of Context
+        /*
+         * Adding extra command below;  
+         */
+         
+         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() 
+         { 
+        	 public void onItemClick(AdapterView<?> p, View view, int position, long id)
+        	 
+        	 { 
+        		 Fragment fragment = null;
+        		 switch(position)
+                 {
+                 case 0:  Intent newActivity = new Intent(getActivity(), song_americanidiot.class);     
+                 		  startActivityForResult(newActivity, 0);
+                          Log.d("Option", "Option 1  was clicked!!");
+                          break;
+                 case 1:  Intent newActivity1 = new Intent(getActivity(), Settings.class);     
+                          startActivityForResult(newActivity1, 1);
+                          break;
           
+              }
+        	 }
+        });
         return rootView;
     }
-        
-    
-    public void onListItemClick (ListView l, View v, int position, long id) {
-        //Do what you need  
-            switch( position )
-            {
-               case 0:  Intent newActivity = new Intent(getActivity(), song_americanidiot.class);     
-                        startActivityForResult(newActivity, 0);
-                        Log.d("Option", "Option 1  was clicked!!");
-                        break;
-               case 1:  Intent newActivity1 = new Intent(getActivity(), song_americanidiot.class);     
-                        startActivityForResult(newActivity1, 1);
-                        break;
-               
-                      
-        
-            }
-        }
-
-
-		
+   
 }
             
             	
             
+
 
 

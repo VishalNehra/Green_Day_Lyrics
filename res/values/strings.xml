@@ -122,5 +122,8 @@
     <!-- Rate Button -->
     <string name="intent2_preference_title">Rate the app</string>
     <string name="intent2_preference_summary">Support the development by giving good rating!</string>
-
+	
+    <!-- Songs titles -->
+    <string name="americanidiot">American Idiot</string>
+    
 </resources>

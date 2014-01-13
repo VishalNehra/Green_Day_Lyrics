@@ -13,6 +13,7 @@ import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.app.ListFragment;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
@@ -180,6 +181,7 @@ public class MainActivity extends Activity {
     private void displayView(int position) {
         // update the main content by replacing fragments
         Fragment fragment = null;
+        ListFragment listfragment = null;
         switch (position) {
         case 0:
             fragment = new HomeFragment();

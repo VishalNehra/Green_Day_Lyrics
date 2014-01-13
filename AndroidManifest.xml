@@ -22,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.greenday.albums.song_americanidiot"
+            android:label="@string/americanidiot"
+            android:icon="@drawable/ic_americanidiot"></activity>
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings_name" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
