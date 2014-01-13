@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/americanidiot_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_americanidiot" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nSummer has come and passed\n
+The innocent can never last\n
+Wake me up when September ends\n
+\n
+Like my father's come to pass\n
+Weven years has gone so fast\n
+Wake me up when September ends\n
+\n
+Here comes the rain again\n
+falling from the stars\n
+Drenched in my pain again\n
+becoming who we are\n
+\n
+As my memory rests\n
+But never forgets what I lost\n
+Wake me up when September ends\n
+\n
+Summer has come and passed\n
+The innocent can never last\n
+Wake me up when September ends\n
+\n
+Ring out the bells again\n
+like we did when spring began\n
+Wake me up when September ends\n
+\n
+Here comes the rain again\n
+falling from the stars\n
+Drenched in my pain again\n
+becoming who we are\n
+\n
+As my memory rests\n
+but never forgets what I lost\n
+Wake me up when September ends\n
+\n
+Summer has come and passed\n
+The innocent can never last\n
+Wake me up when September ends\n
+\n
+Like my father's come to pass\n
+twenty years has gone so fast\n
+Wake me up when September ends\n
+Wake me up when September ends\n
+Wake me up when September ends..."/>
+</ScrollView>
+
+</RelativeLayout>

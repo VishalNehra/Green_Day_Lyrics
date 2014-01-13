@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/americanidiot_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_americanidiot" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nShe's a rebel \n
+She's a saint\n
+She's salt of the earth\n
+And she's dangerous\n
+\n
+She's a rebel\n
+Vigilante \n
+Missing link on the brink\n
+Of destruction\n
+\n
+From Chicago to Toronto \n
+She's the one that they\n
+Call old whatsername\n
+\n
+She's the symbol\n
+of resistance\n
+and she's holding on my\n
+heart like a hand grenade\n
+\n
+Is she dreaming\n
+what I'm thinking\n
+Is she the mother of all bombs\n
+gonna detonate\n
+\n
+Is she trouble\n
+like I'm trouble\n
+make it a double\n
+twist of fate\n
+or a melody that\n
+\n
+She sings the revolution\n
+the dawning of our lives\n
+she brings this liberation\n
+that I just can't define\n
+nothing comes to mind\n
+[x2]\n
+\n
+She's a rebel \n
+She's a saint
+\n
+She's salt of the earth\n
+And she's dangerous\n
+\n
+She's a rebel\n
+Vigilante \n
+Missing link on the brink\n
+Of destruction\n
+\n
+She's a rebel \n
+She's a saint\n
+She's salt of the earth\n
+And she's dangerous\n
+\n
+She's a rebel\n
+Vigilante \n
+Missing link on the brink\n
+Of destruction\n
+\n
+She's a rebel, She's a rebel, She's a rebel, \nAnd she's dangerous\n
+[x2]"/>
+</ScrollView>
+
+</RelativeLayout>

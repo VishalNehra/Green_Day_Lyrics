@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/americanidiot_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_americanidiot" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI walk a lonely road\n
+The only one that I have ever known\n
+Don't know where it goes\n
+But it's home to me and I walk alone\n
+\n
+I walk this empty street\n
+On the Boulevard of Broken Dreams\n
+When the city sleeps\n
+And I'm the only one and I walk alone\n
+\n
+I walk alone\n
+I walk alone\n
+I walk alone\n
+I walk a...\n
+\n
+My shadow's th' only one that walks beside me\n
+My shallow heart's the only thing that's beating\n
+Sometimes I wish someone up there will find me\n
+'til then I walk alone\n
+\n
+Ah-ah, ah-ah, ah-ah, aaah-ah,\n
+Ah-ah, ah-ah, ah-ah\n
+\n
+I'm walking down the line\n
+That divides me somewhere in my mind\n
+On the border line\n
+Of the edge and where I walk alone\n
+\n
+Read between the lines\n
+What's ****ed up and everything's alright\n
+Check my vital signs\n
+To know I'm still alive and I walk alone\n
+\n
+I walk alone\n
+I walk alone\n
+I walk alone\n
+I walk a...\n
+\n
+My shadow's the only one that walks beside me\n
+My shallow heart's the only thing that's beating\n
+Sometimes I wish someone up there will find me\n
+'til then I walk alone\n
+\n
+Ah-ah, ah-ah, ah-ah, aaah-ah\n
+Ah-ah, ah-ah\n
+\n
+I walk alone\n
+I walk a...\n
+\n
+I walk this empty street\n
+On the Boulevard of Broken Dreams\n
+When the city sleeps\n
+And I'm the only one and I walk a...\n
+\n
+My shadow's the only one that walks beside me\n
+My shallow heart's the only thing that's beating\n
+Sometimes I wish someone up there will find me\n
+'til then I walk alone..."/>
+</ScrollView>
+
+</RelativeLayout>

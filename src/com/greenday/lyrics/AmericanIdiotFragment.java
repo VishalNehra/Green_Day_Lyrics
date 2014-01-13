@@ -1,6 +1,18 @@
 package com.greenday.lyrics;
 
+import com.greenday.albums.Whatshername;
 import com.greenday.albums.song_americanidiot;
+import com.greenday.albums.song_awtw;
+import com.greenday.albums.song_bobd;
+import com.greenday.albums.song_extordgirl;
+import com.greenday.albums.song_givemenov;
+import com.greenday.albums.song_holiday;
+import com.greenday.albums.song_homcom;
+import com.greenday.albums.song_jos;
+import com.greenday.albums.song_letterbomb;
+import com.greenday.albums.song_shesarebel;
+import com.greenday.albums.song_stjimmy;
+import com.greenday.albums.song_wmuwse;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -68,9 +80,42 @@ public class AmericanIdiotFragment extends Fragment{
                  		  startActivityForResult(newActivity, 0);
                           Log.d("Option", "Option 1  was clicked!!");
                           break;
-                 case 1:  Intent newActivity1 = new Intent(getActivity(), Settings.class);     
+                 case 1:  Intent newActivity1 = new Intent(getActivity(), song_jos.class);     
                           startActivityForResult(newActivity1, 1);
                           break;
+                 case 2:  Intent newActivity2 = new Intent(getActivity(), song_holiday.class);     
+			              startActivityForResult(newActivity2, 1);
+			              break;
+                 case 3:  Intent newActivity3 = new Intent(getActivity(), song_bobd.class);     
+	              		  startActivityForResult(newActivity3, 1);
+	              		  break;
+                 case 4:  Intent newActivity4 = new Intent(getActivity(), song_awtw.class);     
+		         		  startActivityForResult(newActivity4, 1);
+		         		  break;
+                 case 5:  Intent newActivity5 = new Intent(getActivity(), song_stjimmy.class);     
+		        		  startActivityForResult(newActivity5, 1);
+		        		  break;
+                 case 6:  Intent newActivity6 = new Intent(getActivity(), song_givemenov.class);     
+			       		  startActivityForResult(newActivity6, 1);
+			       		  break;
+                 case 7:  Intent newActivity7 = new Intent(getActivity(), song_shesarebel.class);     
+			       		  startActivityForResult(newActivity7, 1);
+			       		  break;
+                 case 8:  Intent newActivity8 = new Intent(getActivity(), song_extordgirl.class);     
+			       		  startActivityForResult(newActivity8, 1);
+			       		  break;
+                 case 9:  Intent newActivity9 = new Intent(getActivity(), song_letterbomb.class);     
+			       		  startActivityForResult(newActivity9, 1);
+			       		  break; 
+                 case 10: Intent newActivity10 = new Intent(getActivity(), song_wmuwse.class);     
+			       		  startActivityForResult(newActivity10, 1);
+			       		  break; 
+                 case 11: Intent newActivity11 = new Intent(getActivity(), song_homcom.class);     
+			       		  startActivityForResult(newActivity11, 1);
+			       		  break;
+                 case 12: Intent newActivity12 = new Intent(getActivity(), Whatshername.class);     
+	       		  startActivityForResult(newActivity12, 1);
+	       		  break;   		  
           
               }
         	 }

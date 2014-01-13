@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/americanidiot_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_americanidiot" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\n[Part 1]\n\n
+
+I'm the son of rage and love\n
+The Jesus of Suburbia\n
+From the bible of none of the above\n
+On a steady diet of\n
+Soda pop and Ritalin\n
+No one ever died for my 
+\nSins in hell\n
+As far as I can tell\n
+At least the ones I got away with\n\n
+
+And there's nothing wrong with me\n
+This is how I'm supposed to be\n
+In a land of make believe\n
+That don't believe in me\n\n
+
+Get my television fixed\n
+Sitting on my crucifix\n
+The living room or my private womb\n
+While the Moms and Brads are away\n
+To fall in love and fall in debt\n
+To alcohol and cigarettes\n
+And Mary Jane\n
+To keep me insane,\n
+Doing someone else's cocaine\n\n
+
+And there's nothing wrong with me\n
+This is how I'm supposed to be\n
+In a land of make believe\n
+That don't believe in me\n\n
+[Tré Cool on the DRUMS!!]\n\n
+[Part 2: City Of The Damned]\n\n
+
+At the center of the Earth\n
+In the parking lot\n
+Of the 7-11 where I was taught\n
+The motto was just a lie\n
+It says home is where your heart is\n
+But what a shame\n
+Cause everyone's heart\n
+Doesn't beat the same\n
+It's beating out of time\n
+\n
+City of the dead\n
+At the end of another lost highway\n
+Signs misleading to nowhere\n
+City of the damned\n
+Lost children with dirty faces today\n
+No one really seems to care\n
+\n
+I read the graffiti\n
+In the bathroom stall\n
+Like the holy scriptures of a shopping mall\n
+And so it seemed to confess\n
+It didn't say much\n
+But it only confirmed that\n
+The center of the earth\n
+Is the end of the world\n
+And I could really care less\n
+\n
+City of the dead\n
+At the end of another lost highway\n
+Signs misleading to nowhere\n
+City of the damned\n
+Lost children with dirty faces today\n
+No one really seems to care...\n
+\n\n
+[Part 3: I Don't Care]
+\n\n
+I don't care if you don't\n
+I don't care if you don't\n
+I don't care if you don't care\n
+[X4]\n
+
+I don't care...\n
+\n
+Everyone is so full of shit\n
+Born and raised by hypocrites\n
+Hearts recycled but never saved\n
+From the cradle to the grave\n
+We are the kids of war and peace\n
+From Anaheim to the middle east\n
+We are the stories and disciples of\n
+The Jesus of suburbia\n
+\n
+Land of make believe\n
+And that don't believe in me\n
+Land of make believe\n
+And I don't believe\n
+And I don't care!\n
+I don't care! [x4]\n
+\n
+[Part 4: Dearly Beloved]\n
+\n
+Dearly beloved are you listening?\n
+I can't remember a word that you were saying\n
+Are we demented or am I disturbed?\n
+The space that's in between insane and insecure\n
+\n
+Oh, therapy, can you please fill the void?\n
+Am I retarded or am I just overjoyed?\n
+Nobody's perfect and I stand accused\n
+For lack of a better word, and that's my best excuse\n
+\n[Mike Dirnt on BASS !!]\n\n
+[Part 5: Tales Of Another Broken Home]\n\n
+
+To live and not to breathe\n
+Is to die, in tragedy\n
+To run, to run away\n
+To find, what you believe\n
+\n
+And I leave behind\n
+This hurricane of fucking lies\n
+\n
+I lost my faith to this\n
+This town that don't exist\n
+So I run, I run away\n
+To the lights of masochist\n
+\n
+And I, leave behind\n
+This hurricane of fucking lies\n
+And I, walked this line\n
+A million and one fucking times\n
+But not this time\n
+\n
+I don't feel any shame, I won't apologize\n
+When there ain't nowhere you can go\n
+Running away from pain when you've been victimized\n
+Tales from another broken \nhome\n
+\n
+You're leaving...\n
+You're leaving...\n
+You're leaving...\n
+Ah you're leaving home..."/>
+</ScrollView>
+
+</RelativeLayout>

@@ -124,6 +124,22 @@
     <string name="intent2_preference_summary">Support the development by giving good rating!</string>
 	
     <!-- Songs titles -->
-    <string name="americanidiot">American Idiot</string>
+    <string name="americanidiot_title">American Idiot</string>
+    <string name="jos_title">Jesus Of Suburbia</string>
+    <string name="holiday_title">Holiday</string>
+    <string name="bobd_title">Boulevard of Broken Dreams</string>
+    <string name="awtw_title">Are We The Waiting</string>
+    <string name="stjimmy_title">St. Jimmy</string>
+    <string name="givemenov_title">Give Me Novacaine</string>
+    <string name="shesarebel_title">She\'s A Rebel</string>
+    <string name="extordgirl_title">Extraordinary Girl</string>
+    <string name="letterbomb_title">Letterbomb</string>
+    <string name="wmuwse_title">Wake Me Up When September Ends</string>
+    <string name="homcom_title">Homecoming</string>
+    <string name="whatshername_title">Whatshername</string>
+    
+    
+    
+
     
 </resources>

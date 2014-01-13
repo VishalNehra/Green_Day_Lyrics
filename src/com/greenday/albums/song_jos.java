@@ -3,6 +3,7 @@ package com.greenday.albums;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Settings;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,14 +12,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class song_americanidiot extends Activity {
+public class song_jos extends Activity {
 	
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.song_americanidiot);
+		setContentView(R.layout.song_jos);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		

@@ -22,13 +22,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.greenday.albums.song_americanidiot"
-            android:label="@string/americanidiot"
-            android:icon="@drawable/ic_americanidiot"></activity>
+        
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings_name" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
            android:label="@string/feedback_name" />
+        
+        <!-- Songs -->
+        <activity android:name="com.greenday.albums.song_americanidiot"
+            android:label="@string/americanidiot_title"></activity>
+        <activity android:name="com.greenday.albums.song_jos"
+            android:label="@string/jos_title"></activity>
+        <activity android:name="com.greenday.albums.song_holiday"
+            android:label="@string/holiday_title"></activity>
+        <activity android:name="com.greenday.albums.song_bobd"
+            android:label="@string/bobd_title"></activity>
+        <activity android:name="com.greenday.albums.song_awtw"
+            android:label="@string/awtw_title"></activity>
+        <activity android:name="com.greenday.albums.song_stjimmy"
+            android:label="@string/stjimmy_title"></activity>
+        <activity android:name="com.greenday.albums.song_givemenov"
+            android:label="@string/givemenov_title"></activity>
+        <activity android:name="com.greenday.albums.song_shesarebel"
+            android:label="@string/shesarebel_title"></activity>
+        <activity android:name="com.greenday.albums.song_extordgirl"
+            android:label="@string/extordgirl_title"></activity>
+        <activity android:name="com.greenday.albums.song_letterbomb"
+            android:label="@string/letterbomb_title"></activity>
+        <activity android:name="com.greenday.albums.song_wmuwse"
+            android:label="@string/wmuwse_title"></activity>
+        <activity android:name="com.greenday.albums.song_homcom"
+            android:label="@string/homcom_title"></activity>
+        <activity android:name="com.greenday.albums.Whatshername"
+            android:label="@string/whatshername_title"></activity>
+        
     </application>
 
 </manifest>

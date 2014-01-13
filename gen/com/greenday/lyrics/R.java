@@ -78,29 +78,30 @@ public final class R {
         public static final int warning_cover2=0x7f020025;
     }
     public static final class id {
-        public static final int button1=0x7f0b0010;
-        public static final int counter=0x7f0b0006;
+        public static final int button1=0x7f0b0011;
+        public static final int counter=0x7f0b0007;
         public static final int drawer_layout=0x7f0b0000;
-        public static final int editText1=0x7f0b000a;
-        public static final int editText2=0x7f0b000b;
-        public static final int editText3=0x7f0b000d;
-        public static final int editText4=0x7f0b000f;
+        public static final int editText1=0x7f0b000b;
+        public static final int editText2=0x7f0b000c;
+        public static final int editText3=0x7f0b000e;
+        public static final int editText4=0x7f0b0010;
         public static final int frame_container=0x7f0b0001;
-        public static final int icon=0x7f0b0004;
-        public static final int imageView1=0x7f0b0007;
-        public static final int item1=0x7f0b0011;
-        public static final int item2=0x7f0b0012;
-        public static final int listView1=0x7f0b0003;
+        public static final int icon=0x7f0b0005;
+        public static final int imageView1=0x7f0b0009;
+        public static final int imageView2=0x7f0b0003;
+        public static final int item1=0x7f0b0012;
+        public static final int item2=0x7f0b0013;
+        public static final int listView1=0x7f0b0008;
         public static final int list_slidermenu=0x7f0b0002;
-        public static final int textView1=0x7f0b0008;
-        public static final int textView2=0x7f0b0009;
-        public static final int textView3=0x7f0b000c;
-        public static final int textView4=0x7f0b000e;
-        public static final int title=0x7f0b0005;
+        public static final int textView1=0x7f0b0004;
+        public static final int textView2=0x7f0b000a;
+        public static final int textView3=0x7f0b000d;
+        public static final int textView4=0x7f0b000f;
+        public static final int title=0x7f0b0006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int americanidiot_lv=0x7f030001;
+        public static final int americanidiot_whatshername=0x7f030001;
         public static final int drawer_list_item=0x7f030002;
         public static final int fragment_americanidiot=0x7f030003;
         public static final int fragment_dookie=0x7f030004;
@@ -119,6 +120,17 @@ public final class R {
         public static final int fragment_warning=0x7f030011;
         public static final int reportproblem=0x7f030012;
         public static final int song_americanidiot=0x7f030013;
+        public static final int song_awtw=0x7f030014;
+        public static final int song_bobd=0x7f030015;
+        public static final int song_extordgirl=0x7f030016;
+        public static final int song_givemenov=0x7f030017;
+        public static final int song_holiday=0x7f030018;
+        public static final int song_homcom=0x7f030019;
+        public static final int song_jos=0x7f03001a;
+        public static final int song_letterbomb=0x7f03001b;
+        public static final int song_shesarebel=0x7f03001c;
+        public static final int song_stjimmy=0x7f03001d;
+        public static final int song_wmuwse=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -152,25 +164,33 @@ public final class R {
         public static final int album8_title=0x7f08002c;
         public static final int album9_summary=0x7f08002f;
         public static final int album9_title=0x7f08002e;
-        /**  Songs titles 
-         */
-        public static final int americanidiot=0x7f08003b;
         /**  American Idiot 
          */
         public static final int americanidiot_preference=0x7f08001d;
+        /**  Songs titles 
+         */
+        public static final int americanidiot_title=0x7f08003b;
         public static final int app_name=0x7f080018;
+        public static final int awtw_title=0x7f08003f;
+        public static final int bobd_title=0x7f08003e;
         /**  Content Description 
          */
         public static final int desc_list_item_icon=0x7f080017;
         public static final int drawer_close=0x7f08001a;
         public static final int drawer_open=0x7f080019;
+        public static final int extordgirl_title=0x7f080043;
         public static final int feedback_name=0x7f08001c;
+        public static final int givemenov_title=0x7f080041;
+        public static final int holiday_title=0x7f08003d;
+        public static final int homcom_title=0x7f080046;
         public static final int intent1_preference_summary=0x7f080005;
         public static final int intent1_preference_title=0x7f080004;
         public static final int intent2_preference_summary=0x7f08003a;
         /**  Rate Button 
          */
         public static final int intent2_preference_title=0x7f080039;
+        public static final int jos_title=0x7f08003c;
+        public static final int letterbomb_title=0x7f080044;
         /**  Submit button 
          */
         public static final int mail_feedback_email=0x7f080038;
@@ -189,13 +209,17 @@ public final class R {
         public static final int preference_category2_title=0x7f080000;
         public static final int preference_category3_title=0x7f080001;
         public static final int settings_name=0x7f08001b;
+        public static final int shesarebel_title=0x7f080042;
         public static final int simple1_preference_summary=0x7f080009;
         public static final int simple1_preference_title=0x7f080008;
         public static final int simple1_summary=0x7f080003;
         public static final int simple1_title=0x7f080002;
         public static final int simple2_preference_summary=0x7f080007;
         public static final int simple2_preference_title=0x7f080006;
+        public static final int stjimmy_title=0x7f080040;
         public static final int ui_profile_toast_save_text=0x7f080016;
+        public static final int whatshername_title=0x7f080047;
+        public static final int wmuwse_title=0x7f080045;
     }
     public static final class style {
         /** 
