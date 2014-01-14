@@ -1,18 +1,18 @@
 package com.greenday.lyrics;
 
-import com.greenday.albums.Whatshername;
-import com.greenday.albums.Americanidiot;
-import com.greenday.albums.Arewethewaiting;
-import com.greenday.albums.Boulevardofbd;
-import com.greenday.albums.Extraordgirl;
-import com.greenday.albums.Givemenov;
-import com.greenday.albums.Holiday;
-import com.greenday.albums.Homecoming;
-import com.greenday.albums.Jesusofsuburb;
-import com.greenday.albums.Letterbomb;
-import com.greenday.albums.Shesarebel;
-import com.greenday.albums.Stjimmy;
-import com.greenday.albums.Wakemeup;
+import com.greenday.americanidiot.Americanidiot;
+import com.greenday.americanidiot.Arewethewaiting;
+import com.greenday.americanidiot.Boulevardofbd;
+import com.greenday.americanidiot.Extraordgirl;
+import com.greenday.americanidiot.Givemenov;
+import com.greenday.americanidiot.Holiday;
+import com.greenday.americanidiot.Homecoming;
+import com.greenday.americanidiot.Jesusofsuburb;
+import com.greenday.americanidiot.Letterbomb;
+import com.greenday.americanidiot.Shesarebel;
+import com.greenday.americanidiot.Stjimmy;
+import com.greenday.americanidiot.Wakemeup;
+import com.greenday.americanidiot.Whatshername;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -50,8 +50,7 @@ public class AmericanIdiotFragment extends Fragment{
         		"\t\t\t\t\tLetterbomb",
         		"\t\t\t\t\tWake Me Up When September Ends",
         		"\t\t\t\t\tHomecoming",
-        		"\t\t\t\t\tWhatsername",
-        		"\t\t\t\t\tFavorite Son (Bonus Track)"};
+        		"\t\t\t\t\tWhatsername"};
         ArrayAdapter<String> adapter =
         new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
         super.onActivityCreated(savedInstanceState);
@@ -110,10 +109,7 @@ public class AmericanIdiotFragment extends Fragment{
 			       		  break;
                  case 12: Intent newActivity12 = new Intent(getActivity(), Whatshername.class);     
 			       		  startActivityForResult(newActivity12, 1);
-			       		  break;
-                 case 13: Intent newActivity13 = new Intent(getActivity(), Whatshername.class);     
-			       		  startActivityForResult(newActivity13, 1);
-			       		  break;  		  
+			       		  break; 		  
           
               }
         	 }

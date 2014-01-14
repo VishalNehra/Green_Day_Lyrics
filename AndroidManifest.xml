@@ -29,41 +29,113 @@
            android:label="@string/feedback_name" />
         
         <!-- Songs -->
-        <activity android:name="com.greenday.albums.Americanidiot"
+        <!-- American Idiot -->
+        <activity android:name="com.greenday.americanidiot.Americanidiot"
             android:label="@string/americanidiot_title"></activity>
-        <activity android:name="com.greenday.albums.Jesusofsuburb"
+        <activity android:name="com.greenday.americanidiot.Jesusofsuburb"
             android:label="@string/jos_title"></activity>
-        <activity android:name="com.greenday.albums.Holiday"
+        <activity android:name="com.greenday.americanidiot.Holiday"
             android:label="@string/holiday_title"></activity>
-        <activity android:name="com.greenday.albums.Boulevardofbd"
+        <activity android:name="com.greenday.americanidiot.Boulevardofbd"
             android:label="@string/bobd_title"></activity>
-        <activity android:name="com.greenday.albums.Arewethewaiting"
+        <activity android:name="com.greenday.americanidiot.Arewethewaiting"
             android:label="@string/awtw_title"></activity>
-        <activity android:name="com.greenday.albums.Stjimmy"
+        <activity android:name="com.greenday.americanidiot.Stjimmy"
             android:label="@string/stjimmy_title"></activity>
-        <activity android:name="com.greenday.albums.Givemenov"
+        <activity android:name="com.greenday.americanidiot.Givemenov"
             android:label="@string/givemenov_title"></activity>
-        <activity android:name="com.greenday.albums.Shesarebel"
+        <activity android:name="com.greenday.americanidiot.Shesarebel"
             android:label="@string/shesarebel_title"></activity>
-        <activity android:name="com.greenday.albums.Extraordgirl"
+    	<activity android:name="com.greenday.americanidiot.Extraordgirl"
             android:label="@string/extordgirl_title"></activity>
-        <activity android:name="com.greenday.albums.Letterbomb"
+    	<activity android:name="com.greenday.americanidiot.Letterbomb"
             android:label="@string/letterbomb_title"></activity>
-        <activity android:name="com.greenday.albums.Wakemeup"
+    	<activity android:name="com.greenday.americanidiot.Wakemeup"
             android:label="@string/wmuwse_title"></activity>
-        <activity android:name="com.greenday.albums.Homecoming"
+    	<activity android:name="com.greenday.americanidiot.Homecoming"
             android:label="@string/homcom_title"></activity>
-        <activity android:name="com.greenday.albums.Whatshername"
+    	<activity android:name="com.greenday.americanidiot.Whatshername"
             android:label="@string/whatshername_title"></activity>
+    	
         <!-- UNO -->
-        <activity android:name="com.greenday.albums.Nuclearfamily"
+        <activity android:name="com.greenday.uno.Nuclearfamily"
             android:label="@string/nuclearfamily_title"></activity>
-        <activity android:name="com.greenday.albums.Staythenight"
+        <activity android:name="com.greenday.uno.Staythenight"
             android:label="@string/staythenight_title"></activity>
-        <activity android:name="com.greenday.albums.Carpediem"
+        <activity android:name="com.greenday.uno.Carpediem"
             android:label="@string/carpediem_title"></activity>
-        <activity android:name="com.greenday.albums.Letyourselfgo"
+        <activity android:name="com.greenday.uno.Letyourselfgo"
             android:label="@string/letyourselfgo_title"></activity>
+        <activity android:name="com.greenday.uno.Killthedj"
+            android:label="@string/killthedj_title"></activity>
+        <activity android:name="com.greenday.uno.Fellforyou"
+            android:label="@string/fellforyou_title"></activity>
+        <activity android:name="com.greenday.uno.Lossofcontrol"
+            android:label="@string/lossofcontrol_title"></activity>
+        <activity android:name="com.greenday.uno.Troublemaker"
+            android:label="@string/troublemaker_title"></activity>
+        <activity android:name="com.greenday.uno.Angelblue"
+            android:label="@string/angelblue_title"></activity>
+        <activity android:name="com.greenday.uno.Sweetsixt"
+            android:label="@string/sweetsixt_title"></activity>
+        <activity android:name="com.greenday.uno.Rustyjames"
+            android:label="@string/rustyjames_title"></activity>
+        <activity android:name="com.greenday.uno.Ohlove"
+            android:label="@string/ohlove_title"></activity>
+        
+        <!-- DOS -->
+        <activity android:name="com.greenday.dos.Cutonight"
+            android:label="@string/cutonight_title"></activity>
+        <activity android:name="com.greenday.dos.Fucktime"           
+            android:label="@string/fucktime_title"></activity>
+        <activity android:name="com.greenday.dos.Stopredflash"
+            android:label="@string/stopredflash_title"></activity>
+        <activity android:name="com.greenday.dos.Lazybones"
+            android:label="@string/lazybones_title"></activity>
+        <activity android:name="com.greenday.dos.Wildone"
+            android:label="@string/wildone_title"></activity>
+        <activity android:name="com.greenday.dos.Makeoutparty"
+            android:label="@string/makeoutparty_title"></activity>
+        <activity android:name="com.greenday.dos.Strayheart"
+            android:label="@string/strayheart_title"></activity>
+        <activity android:name="com.greenday.dos.Ashley"
+            android:label="@string/ashley_title"></activity>
+        <activity android:name="com.greenday.dos.Babyeyes"
+            android:label="@string/babyeyes_title"></activity>
+        <activity android:name="com.greencom.dos.Ladycobra"
+                 android:label="@string/ladycobra_title"></activity>
+        <activity android:name="com.greenday.dos.Nightlife"
+            	 android:label="@string/nightlife_title"></activity>
+        <activity android:name="com.greenday.dos.Wowthatsloud"
+            android:label="@string/wowthatsloud_title"></activity>
+        <activity android:name="com.greenday.dos.Amy"
+        	android:label="@string/amy_title"></activity>
+        
+        <!-- TRE -->
+        <activity android:name="com.greenday.tre.Brutallove"
+        	android:label="@string/brutallove_title"></activity>
+        <activity android:name="com.greenday.tre.Missingyou"
+        	android:label="@string/missingyou_title"></activity>
+        <activity android:name="com.greenday.tre.Avesrnde"
+        	android:label="@string/avesrnde_title"></activity>
+        <activity android:name="com.greenday.tre.Dramaqueen"
+        	android:label="@string/dramaqueen_title"></activity>
+        <activity android:name="com.greenday.tre.Kid"
+        	android:label="@string/kid_title"></activity>
+        <activity android:name="com.greenday.tre.Sexdrugs"
+        	android:label="@string/sexdrugs_title"></activity>
+        <activity android:name="com.greenday.tre.Littleboytrain"
+        	android:label="@string/littleboytrain_title"></activity>
+        <activity android:name="com.greenday.tre.Amanda"
+        	android:label="@string/amanda_title"></activity>
+        <activity android:name="com.greenday.tre.Walkaway"
+        	android:label="@string/walkaway_title"></activity>
+        <activity android:name="com.greenday.tre.Dirtybastards"
+        	android:label="@string/dirtybastards_title"></activity>
+        <activity android:name="com.greenday.tre.Ninetyninerev"
+        	android:label="@string/ninetyninerev_title"></activity>
+        <activity android:name="com.greenday.tre.Theforgotten"
+        	android:label="@string/theforgotten_title"></activity>
         
         
     </application>

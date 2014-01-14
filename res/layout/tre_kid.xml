@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tre_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tre" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nHey, little kid\n
+did you wake up late one day?\n
+You're not so young, but you're still dumb\n
+and you're numb to your old glory,\n
+but now it's gone.\n
+\n
+I fell in love,\n
+but it didn't catch your fall.\n
+Then I crashed, to a wall\n
+Then I fell to pieces on the floor.\n
+Now you're sick to death.\n
+\n
+Bombs away!\n
+Here goes nothing, the shouting's over.\n
+Hey X-Kid, bombs away!\n
+Here goes nothing, the shouting's over and out,\n
+over and out again.\n
+\n
+I once was old enough to know better\n
+then I was too young to care.\n
+but who cares?\n
+I probably would but Hollywood is dead and gone\n
+\n
+You fell in love,\n
+but then you just fell apart.\n
+Like a kick in the head,\n
+you're an X-Kid and you\n
+never even got started again.\n
+\n
+Bombs away!\n
+Here goes nothing, the shouting's over.\n
+Hey X-Kid, bombs away!\n
+Here goes nothing, the shouting's over and out,\n
+over and out...\n
+\n
+And you were searching your soul\n
+and you got lost and out of control.\n
+You went over the edge of joking,\n
+died of a broken heart!\n
+\n
+Hey, little kid\n
+did you wake up late one day?\n
+You're not so young, but you're still dumb.\n
+You're an X-kid and you never even got started again.\n
+\n
+Bombs away!\n
+Here goes nothing, the shouting's over.\n
+Hey X-Kid, bombs away!\n
+Here goes nothing, the shouting's over.\n
+\n
+Hey X-Kid, bombs away!\n
+Here goes nothing, the shouting's over.\n
+\n
+Hey X-Kid, bombs away!\n
+Here goes nothing, the shouting's over and out,\n
+over and out,\n
+over and over and out!"/>
+</ScrollView>
+
+</RelativeLayout>

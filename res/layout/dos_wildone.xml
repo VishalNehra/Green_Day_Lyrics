@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dos_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_dos" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nShe\n
+She's my wild one\n
+My heart is in panic\n
+Her eyes look so manic now\n
+\n
+She\n
+Little wild one\n
+My heart is a chaser\n
+She's strung out on razors now\n
+\n
+She gave up on Jesus for living on Venus\n
+All dressed up with nowhere to go\n
+I'm drinking the Kool-Aid, \n
+I jumped on the grenade\n
+Now that my mind's gonna blow, \n
+Hello\n
+\n
+She\n
+She's my wild one\n
+My heart is in danger\n
+From shadows and strangers now\n
+\n
+She\n
+Little wild one\n
+She's covered in angels\n
+And demons and halos now\n
+\n
+She gave up on jesus, for living on Venus\n
+All dressed up with nowhere to go\n
+I'm drinking the Kool-Aid, \n
+I jumped on a grenade\n
+Now that my mind's gonna blow, \n
+Hello\n
+\n
+She gave up on jesus, for living on Venus\n
+All fucked up with nowhere to go\n
+I'm drinking the Kool-Aid, \n
+I jumped on a grenade\n
+Now that my mind's gonna blow, \n
+Hello\n
+\n
+Little wild one\n
+My heart is in danger, \n
+She's strung out on razors now\n
+My heart is in danger, \n
+She's strung out on razors now"/>
+</ScrollView>
+
+</RelativeLayout>

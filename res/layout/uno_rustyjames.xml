@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uno_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_uno" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nThis whiskey sour, amateur hour\n
+Raise your glass and toast your friends\n
+Some day we will fight again, well\n
+Your enemies, your tragedies\n
+Pocket knives and rusty chains\n
+Where in the hell is the old gang at?\n
+\n
+And all the losers\n
+Can't even win for losing\n
+And the beginners\n
+Don't even know what song they're singing\n
+\n
+[x2:]\n
+Well there's no one left around\n
+And you're the last gang in town\n
+And your heart can't even break\n
+When it doesn't even pound\n
+\n
+Alright!\n\n
+This broken scene is turning green\n
+A brass knuckles left in the rain\n
+Death wish kids among the living\n
+I wanna ride on the divided\n
+Anything but the mainstream\n
+Where the fuck is your old gang, man?\n
+\n
+And all the losers\n
+Can't even win for losing\n
+And the beginners\n
+Don't even know what song they're singing\n
+\n
+[x2:]\n
+Well there's no one left around\n
+And you're the last gang in town\n
+And your heart can't even break\n
+When it doesn't even pound\n
+\n
+So long...\n
+Didn't even say a goodnight\n
+So long...\n
+There's nowhere to go\n
+When you're hiding in plain sight\n
+\n
+[x4:]\n
+Well there's no one left around\n
+And you're the last gang in town\n
+And your heart can't even break\n
+When it doesn't even pound"/>
+</ScrollView>
+
+</RelativeLayout>

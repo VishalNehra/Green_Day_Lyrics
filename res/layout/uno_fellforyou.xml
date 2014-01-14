@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uno_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_uno" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI woke up in a pool of sweat,\n
+First I thought that I pissed the bed.\n
+Haunted stories in the midnight hour,\n
+The kiss of death on the Eiffel Tower.\n
+\n
+And I went down,\n
+Like the speed of sound.\n
+You're out of sight,\n
+But not out of mind.\n
+I had a dream that I kissed your lips \n
+And it felt so true.\n
+Then I woke up as a nervous wreck \n
+And I fell for you.\n
+I'll spend the night living in denial.\n
+Making paper planes just for a while.\n
+I'll crash into you, crash into you,\n
+Did you crash in my imagination too?\n
+\n
+Break a leg and you crush my heart,\n
+I'm a mess and you're a work of art.\n
+Got your blessings going 0 to 5,\n
+Steal a kiss and I took a dive.\n 
+\n
+And I went down,\n
+Like the speed of sound.\n
+You're out of sight,\n
+But not out of mind.\n
+I had a dream that I kissed your lips \n
+And it felt so true.\n
+Then I woke up as a nervous wreck \n
+And I fell for you.\n
+I'll spend the night living in denial.\n
+Making paper planes just for a while.\n
+I'll crash into you, crash into you,\n
+Did you crash in my imagination?\n
+\n
+I had a dream that I kissed your lips \n
+And it felt so true.\n
+Then I woke up as a nervous wreck,\n
+And I fell for you\n
+And I fell for you\n
+And I fell for you"/>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dos_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_dos" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI'm too tired to be bored\n
+I'm too bored to be tired\n
+And the silence is so deafening\n
+It's like picking at a sore\n
+\n
+I'm too mental to go crazy\n
+I'm too drunk to be pure\n
+And my mind is playing tricks on me\n
+And I can't sleep tonight\n
+'Cause I'm so tired\n
+\n
+I can't take it anymore\n
+And with all the liars\n
+Like a prisoner of war\n
+\n
+I don't want your sympathy,\n
+I don't want your honesty\n
+I just wanna get some peace of mind\n
+It's only in my head,\n
+As I roll over and play dead\n
+I don't wanna hear it anymore\n
+\n
+It's good to see you\n
+But I really must admit\n
+There's an odor in the air\n
+And I think you look like shit\n
+\n
+I can't stand from falling down\n
+I'm too sick to throw up\n
+Everyone keeps talking\n
+And they can't shut the fuck up\n
+'Cause I'm so tired\n
+\n
+I can't take it anymore\n
+And with all the liars\n
+Like a prisoner of war\n
+\n
+I don't want your sympathy,\n
+I don't want your honesty\n
+I just wanna get some peace of mind\n
+It's only in my head,\n
+As I roll over and play dead\n
+I don't wanna hear it anymore\n
+\n
+I don't want your sympathy,\n
+I don't want your honesty\n
+I just wanna get some peace of mind\n
+It's only in my head,\n
+As I roll over and play dead\n
+I don't wanna hear about it\n
+I don't wanna scream about it\n
+I don't wanna hear it anymore"/>
+</ScrollView>
+
+</RelativeLayout>

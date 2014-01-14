@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tre_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tre" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nWhere did you come from?\n
+Where have you been?\n
+Looks like you fell into the trash bin\n
+I'm catching train, I'm crashing a car\n
+Back in for daylight shooting for the stars\n
+\n
+Like a lifelong daisy chain\n
+Of my imagination\n
+A rat inside a maze\n
+I got no destination\n
+\n
+Cause I'm a little boy named Train\n
+Ask me again, I'll tell you the same\n
+Little boy named Train\n
+\n
+Don't know where I come from\n
+But I know where I have been\n
+\n
+Serious people are funny to me\n
+Funny people seem so serious\n
+\n
+I'm always lost and nothing will change\n
+Give me directions and I'll get lost again\n
+\n
+Like a lifelong daisy chain\n
+Of my imagination\n
+A rat inside a maze\n
+I got no destination\n
+\n
+Cause I'm a little boy named Train\n
+Ask me again, I'll tell you the same\n
+Little boy named Train\n
+\n
+Don't know where I come from\n
+But I know where I have been\n
+\n
+Like a lifelong daisy chain\n
+Of my imagination\n
+A rat inside a maze\n
+I got no destination\n
+\n
+Cause I'm a little boy named Train\n
+Ask me again, I'll tell you the same\n
+Little boy named Train\n
+\n
+I don't know where I come from\n
+But I know where I have been\n
+\n
+I said I don't know where I come from\n
+But I know where I have been"/>
+</ScrollView>
+
+</RelativeLayout>

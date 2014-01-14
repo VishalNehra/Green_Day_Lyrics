@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tre_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tre" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nAll my life trouble follows me \n
+Like a mystery, girl\n
+I've been chasing down a memory \n
+Like a mystery, girl\n
+I've been getting lost \n
+Searching my soul all around this town\n
+I took a wrong turn at growing up \n
+And it's freaking me out\n
+\n
+Back at school it never made much sense\n
+Now I pay but I can't pay attention\n
+Teaching me the hardest lessons of my life\n
+Too dumb to die I guess, \n
+But that's the way it goes\n
+Sometimes I must regress these\n
+\n
+Sex, drugs &amp; violence\n
+English, math &amp; science,\n
+Safety in numbers\n
+Give me, give me danger\n
+\n
+Well I don't want to be an imbecile\n
+But Jesus made me that way\n
+\n
+All my life I've been running wild like a runaway\n
+Wherever the night takes me like a stowaway\n
+\n
+Back at home it never made much sense\n
+Now I pay but I can't pay attention\n
+Teaches me the hardest lessons of my life\n
+Too dumb to die I guess, \n
+But that's the way it goes\n
+Sometimes I must regress these\n
+\n
+Sex, drugs &amp; violence\n
+English, math &amp; science,\n
+Safety in numbers\n
+Give me, give me danger\n
+\n
+Back at home it never made much sense\n
+I can pay but I can't pay attention\n
+Teaching me the hardest lessons of my life\n
+Too dumb to die I guess, \n
+But that's the way it goes\n
+Sometimes I must regress these\n
+\n
+Sex, drugs &amp; violence\n
+English, math &amp; science,\n
+Safety in numbers\n
+Give me, give me danger\n
+\n
+Sex, drugs &amp; violence\n
+English, math &amp; science,\n
+Safety in numbers\n
+Give me, give me danger\n
+\n
+Sex, drugs &amp; violence\n
+English, math &amp; science,\n
+Safety in numbers\n
+Give me, give me danger"/>
+</ScrollView>
+
+</RelativeLayout>

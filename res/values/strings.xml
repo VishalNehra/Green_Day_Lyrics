@@ -143,7 +143,43 @@
     <string name="staythenight_title">Stay The Night</string>
     <string name="carpediem_title">Carpe Diem</string>
     <string name="letyourselfgo_title">Let Yourself Go</string>
+    <string name="killthedj_title">Kill The DJ</string>
+    <string name="fellforyou_title">Fell For You</string>
+    <string name="lossofcontrol_title">Loss Of Control</string>
+    <string name="troublemaker_title">Troublemaker</string>
+    <string name="angelblue_title">Angel Blue</string>
+    <string name="sweetsixt_title">Sweet 16</string>
+    <string name="rustyjames_title">Rusty James</string>
+    <string name="ohlove_title">Oh Love</string>
     
+    <!-- DOS -->
+    <string name="cutonight_title">See You Tonight</string>
+    <string name="fucktime_title">Fuck Time</string>
+    <string name="stopredflash_title">Stop When Red Lights Flash</string>
+    <string name="lazybones_title">Lazy Bones</string>
+    <string name="wildone_title">Wild One</string>
+    <string name="makeoutparty_title">Makeout Party</string>
+    <string name="strayheart_title">Stray Heart</string>
+    <string name="ashley_title">Ashley</string>
+    <string name="babyeyes_title">Baby Eyes</string>
+    <string name="ladycobra_title">Lady Cobra</string>
+    <string name="nightlife_title">Nightlife</string>
+    <string name="wowthatsloud_title">Wow! That\'s Loud</string>
+    <string name="amy_title">Amy</string>
+    
+    <!-- TRE -->
+    <string name="brutallove_title">Brutal Love</string>
+    <string name="missingyou_title">Missing You</string>
+    <string name="avesrnde_title">8th Avenue Serenade</string>
+    <string name="dramaqueen_title">Drama Queen</string>
+    <string name="kid_title">X-Kid</string>
+    <string name="sexdrugs_title">Sex, Drugs &amp; Violence</string>
+    <string name="littleboytrain_title">Little Boy Named Train</string>
+    <string name="amanda_title">Amanda</string>
+    <string name="walkaway_title">Walk Away</string>
+    <string name="dirtybastards_title">Dirty Rotten Bastards</string>
+    <string name="ninetyninerev_title">99 Revolutions</string>
+    <string name="theforgotten_title">The Forgotten</string>
     
     
 

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dos_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_dos" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\n[Feat. Lady Cobra]\n\n
+Taking a ride to my old haunt\n
+She's in my blood, \n
+I reside in my Nightlife\n
+My favorite colour's candy apple, girl\n
+And she resides \n
+In my mind and my Nightlife\n
+\n
+What's that I hear, \n
+You wanna go for a ride?\n
+Oh, don't be afraid boy, 
+\nto come inside\n
+I got the thing that you want, \n
+The fix that you need\n
+Chase this with a little lust and greed\n
+\n
+I'll be the devil on your shoulder saying \n
+'Hey boy, come over'\n
+My black heart beats crimson and clovers\n
+So operator, operator, patch my boy in\n
+This is Nightlife \n
+And I'll get under your skin\n
+\n
+Taking a ride to my old haunt\n
+She's in my blood,\n 
+I reside in my Nightlife\n
+My favorite colour's candy apple, girl\n
+And she resides in my mind and my Nightlife\n
+\n
+What a thrill, heart beat fast\n
+Sounds like love, \n
+but you know it won't last\n
+Cheap champagne stain on an even cheaper suit\n
+Hope there's more in your pants than a bus route\n
+\n
+Build up the walls, \n
+light the sugar-coated walls\n
+Girls on your bar stool from late last calls\n
+This town is filled with snakes,\n 
+mistakes and whisky shakes\n
+It's too late I already cut the breaks\n
+\n
+Well I am rolling, strolling into town 
+\n(Come inside)\n
+Is it me or am I going crazy? 
+\n(It's just you)\n
+This dirty city is my sugar town 
+\n(Sugar town)\n
+My little angel of death is my Nightlife\n
+\n
+(Come inside)\n
+(It's just you)\n
+(Sugar Town)\n
+\n
+Gonna make a move, 
+\nBefore I get bored\n
+If you wanna explore my vocal cord\n
+Baby girl go, go dance on the cooch\n
+Hand on my knee or\n 
+Hand on the hooch\n
+\n
+Why don't you stick around \n
+For one more round?\n
+This place is a circus, \n
+And I know you'll be my clown\n
+'Cause I'm a ringleader, 
+\nI run the show\n
+And only when I tell you when it is time to go\n
+\n
+Taking a ride to my old haunt\n
+She's in my blood, 
+\nI reside in my Nightlife\n
+My favorite colour's candy apple, girl\n
+And she resides in my mind \n
+And my Nightlife\n
+\n
+(Hey boy) She is my Nightlife\n
+(Hey boy) She is my Nightlife\n
+(Hey boy) She is my Nightlife\n
+(See you later) She is my Nightlife"/>
+</ScrollView>
+
+</RelativeLayout>
