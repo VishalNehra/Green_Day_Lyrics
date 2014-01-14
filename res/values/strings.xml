@@ -124,6 +124,7 @@
     <string name="intent2_preference_summary">Support the development by giving good rating!</string>
 	
     <!-- Songs titles -->
+    <!-- American Idiot -->
     <string name="americanidiot_title">American Idiot</string>
     <string name="jos_title">Jesus Of Suburbia</string>
     <string name="holiday_title">Holiday</string>
@@ -137,6 +138,11 @@
     <string name="wmuwse_title">Wake Me Up When September Ends</string>
     <string name="homcom_title">Homecoming</string>
     <string name="whatshername_title">Whatshername</string>
+    <!-- UNO -->
+    <string name="nuclearfamily_title">Nuclear Family</string>
+    <string name="staythenight_title">Stay The Night</string>
+    <string name="carpediem_title">Carpe Diem</string>
+    <string name="letyourselfgo_title">Let Yourself Go</string>
     
     
     

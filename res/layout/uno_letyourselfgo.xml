@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uno_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_uno" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nShut your mouth \n
+'cause you're talking too much\n
+And I don't give a damn anyway\n
+You always seem to be stepping in shit\n
+And all you really do is complain\n
+It's your lie, tell it how you like\n
+Small minds tend to think alike\n
+
+Shut your mouth \n
+'cause you're talking too much\n
+And I don't give a fuck anyway\n
+\n
+[Chorus:]\n
+\n
+Let yourself go, let yourself go, let yourself go [x4]\n
+Gotta let me go, gotta let it go [x2]\n
+\n
+Cut the crap 'cause you're screaming in my ear\n
+And you're taking up all of the space\n
+You're really testing my patience again\n
+And I'd rather get punched in the face\n
+You're getting on my every last nerve\n
+Everything you've said I've already heard\n
+\n
+I'm sick to death of your every last breath\n
+And I don't give a fuck anyway\n
+\n
+[Chorus:]\n\n
+Let yourself go, let yourself go, let yourself go [x4]\n
+Gotta let me go, gotta let it go [x4]\n
+\n
+
+Always fuck fuckin' with my head now..\n
+Always fuck fuckin' with my head now..\n
+Always fuck fuckin' with my head now..\n
+Always fucking with my head and I gotta let it go!\n
+\n
+[Chorus:]\n\n
+Let yourself go, let yourself go, let yourself go [x8]"/>
+</ScrollView>
+
+</RelativeLayout>

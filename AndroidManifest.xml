@@ -29,32 +29,42 @@
            android:label="@string/feedback_name" />
         
         <!-- Songs -->
-        <activity android:name="com.greenday.albums.song_americanidiot"
+        <activity android:name="com.greenday.albums.Americanidiot"
             android:label="@string/americanidiot_title"></activity>
-        <activity android:name="com.greenday.albums.song_jos"
+        <activity android:name="com.greenday.albums.Jesusofsuburb"
             android:label="@string/jos_title"></activity>
-        <activity android:name="com.greenday.albums.song_holiday"
+        <activity android:name="com.greenday.albums.Holiday"
             android:label="@string/holiday_title"></activity>
-        <activity android:name="com.greenday.albums.song_bobd"
+        <activity android:name="com.greenday.albums.Boulevardofbd"
             android:label="@string/bobd_title"></activity>
-        <activity android:name="com.greenday.albums.song_awtw"
+        <activity android:name="com.greenday.albums.Arewethewaiting"
             android:label="@string/awtw_title"></activity>
-        <activity android:name="com.greenday.albums.song_stjimmy"
+        <activity android:name="com.greenday.albums.Stjimmy"
             android:label="@string/stjimmy_title"></activity>
-        <activity android:name="com.greenday.albums.song_givemenov"
+        <activity android:name="com.greenday.albums.Givemenov"
             android:label="@string/givemenov_title"></activity>
-        <activity android:name="com.greenday.albums.song_shesarebel"
+        <activity android:name="com.greenday.albums.Shesarebel"
             android:label="@string/shesarebel_title"></activity>
-        <activity android:name="com.greenday.albums.song_extordgirl"
+        <activity android:name="com.greenday.albums.Extraordgirl"
             android:label="@string/extordgirl_title"></activity>
-        <activity android:name="com.greenday.albums.song_letterbomb"
+        <activity android:name="com.greenday.albums.Letterbomb"
             android:label="@string/letterbomb_title"></activity>
-        <activity android:name="com.greenday.albums.song_wmuwse"
+        <activity android:name="com.greenday.albums.Wakemeup"
             android:label="@string/wmuwse_title"></activity>
-        <activity android:name="com.greenday.albums.song_homcom"
+        <activity android:name="com.greenday.albums.Homecoming"
             android:label="@string/homcom_title"></activity>
         <activity android:name="com.greenday.albums.Whatshername"
             android:label="@string/whatshername_title"></activity>
+        <!-- UNO -->
+        <activity android:name="com.greenday.albums.Nuclearfamily"
+            android:label="@string/nuclearfamily_title"></activity>
+        <activity android:name="com.greenday.albums.Staythenight"
+            android:label="@string/staythenight_title"></activity>
+        <activity android:name="com.greenday.albums.Carpediem"
+            android:label="@string/carpediem_title"></activity>
+        <activity android:name="com.greenday.albums.Letyourselfgo"
+            android:label="@string/letyourselfgo_title"></activity>
+        
         
     </application>
 

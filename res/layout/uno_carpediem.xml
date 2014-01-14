@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uno_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_uno" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "100"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nBreaking in a sweat\n
+Like a bomb threat\n
+Is your silhouette fading out?\n
+Nothing left to lose\n
+Detonate the fuse\n
+Another breaking news blowout\n
+\n
+Ain't it beautiful?\n
+So unusual\n
+Life's a gas and it's running out\n
+Living a cliche\n
+Gonna seize the day\n
+Bottle rockets and celebrate, celebrate, celebrate\n
+\n
+Carpe diem, a battle cry\n
+Are we all too young to die?\n
+Ask a reason and no reply\n
+Are we all too young to die?\n
+\n
+Making a living\n
+Making a killing\n
+What's worth forgiving?\n
+Alright\n
+\n
+A blink of an eye\n
+Barely scraping by\n
+Dominated by passerby's\n
+Feeling out of luck\n
+When the traffic's stuck\n
+And you're feeling\n
+So left behind\n
+\n
+Getting off a binge\n
+Get a second wind\n
+Another promise\n
+to make a change\n
+Got a Broken wing\n
+Hear the angels sing\n
+When the signal that's out of range\n
+Ain't it strange?\n
+Ain't it strange?\n
+\n
+Carpe diem, a battle cry\n
+Are we all too young to die?\n
+Ask a reason and no reply\n
+Are we all too young to die?\n
+\n
+Making a living\n
+Making a killing\n
+What's worth forgiving?\n
+Alright\n
+\n
+Making a living\n
+Making a killing\n
+What's worth forgiving?\n
+Alright\n
+\n
+Carpe diem, a battle cry\n
+Are we all too young to die?\n
+Ask a reason and no reply\n
+Are we all too young to die?
+\n
+\n
+Carpe diem, a battle cry\n
+Are we all too young to die?\n
+Ask a reason and no reply\n
+Are we all too young to die?"/>
+</ScrollView>
+
+</RelativeLayout>

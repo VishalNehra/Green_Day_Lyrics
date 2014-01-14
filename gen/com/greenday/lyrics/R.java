@@ -101,36 +101,40 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int americanidiot_whatshername=0x7f030001;
-        public static final int drawer_list_item=0x7f030002;
-        public static final int fragment_americanidiot=0x7f030003;
-        public static final int fragment_dookie=0x7f030004;
-        public static final int fragment_dos=0x7f030005;
-        public static final int fragment_home=0x7f030006;
-        public static final int fragment_insomniac=0x7f030007;
-        public static final int fragment_intsuper=0x7f030008;
-        public static final int fragment_kerplunk=0x7f030009;
-        public static final int fragment_nimrod=0x7f03000a;
-        public static final int fragment_shenanigans=0x7f03000b;
-        public static final int fragment_tcb=0x7f03000c;
-        public static final int fragment_tns=0x7f03000d;
-        public static final int fragment_tre=0x7f03000e;
-        public static final int fragment_uno=0x7f03000f;
-        public static final int fragment_unreleased=0x7f030010;
-        public static final int fragment_warning=0x7f030011;
-        public static final int reportproblem=0x7f030012;
-        public static final int song_americanidiot=0x7f030013;
-        public static final int song_awtw=0x7f030014;
-        public static final int song_bobd=0x7f030015;
-        public static final int song_extordgirl=0x7f030016;
-        public static final int song_givemenov=0x7f030017;
-        public static final int song_holiday=0x7f030018;
-        public static final int song_homcom=0x7f030019;
-        public static final int song_jos=0x7f03001a;
-        public static final int song_letterbomb=0x7f03001b;
-        public static final int song_shesarebel=0x7f03001c;
-        public static final int song_stjimmy=0x7f03001d;
-        public static final int song_wmuwse=0x7f03001e;
+        public static final int americanidiot_americanidiot=0x7f030001;
+        public static final int americanidiot_arewethewaiting=0x7f030002;
+        public static final int americanidiot_boulevard=0x7f030003;
+        public static final int americanidiot_extordgirl=0x7f030004;
+        public static final int americanidiot_givemenov=0x7f030005;
+        public static final int americanidiot_holiday=0x7f030006;
+        public static final int americanidiot_homcom=0x7f030007;
+        public static final int americanidiot_jesusofsuburb=0x7f030008;
+        public static final int americanidiot_letterbomb=0x7f030009;
+        public static final int americanidiot_shesarebel=0x7f03000a;
+        public static final int americanidiot_stjimmy=0x7f03000b;
+        public static final int americanidiot_wakemeup=0x7f03000c;
+        public static final int americanidiot_whatshername=0x7f03000d;
+        public static final int drawer_list_item=0x7f03000e;
+        public static final int fragment_americanidiot=0x7f03000f;
+        public static final int fragment_dookie=0x7f030010;
+        public static final int fragment_dos=0x7f030011;
+        public static final int fragment_home=0x7f030012;
+        public static final int fragment_insomniac=0x7f030013;
+        public static final int fragment_intsuper=0x7f030014;
+        public static final int fragment_kerplunk=0x7f030015;
+        public static final int fragment_nimrod=0x7f030016;
+        public static final int fragment_shenanigans=0x7f030017;
+        public static final int fragment_tcb=0x7f030018;
+        public static final int fragment_tns=0x7f030019;
+        public static final int fragment_tre=0x7f03001a;
+        public static final int fragment_uno=0x7f03001b;
+        public static final int fragment_unreleased=0x7f03001c;
+        public static final int fragment_warning=0x7f03001d;
+        public static final int reportproblem=0x7f03001e;
+        public static final int uno_carpediem=0x7f03001f;
+        public static final int uno_letyourselfgo=0x7f030020;
+        public static final int uno_nuclearfamily=0x7f030021;
+        public static final int uno_staythenight=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -168,11 +172,13 @@ public final class R {
          */
         public static final int americanidiot_preference=0x7f08001d;
         /**  Songs titles 
+ American Idiot 
          */
         public static final int americanidiot_title=0x7f08003b;
         public static final int app_name=0x7f080018;
         public static final int awtw_title=0x7f08003f;
         public static final int bobd_title=0x7f08003e;
+        public static final int carpediem_title=0x7f08004a;
         /**  Content Description 
          */
         public static final int desc_list_item_icon=0x7f080017;
@@ -191,6 +197,7 @@ public final class R {
         public static final int intent2_preference_title=0x7f080039;
         public static final int jos_title=0x7f08003c;
         public static final int letterbomb_title=0x7f080044;
+        public static final int letyourselfgo_title=0x7f08004b;
         /**  Submit button 
          */
         public static final int mail_feedback_email=0x7f080038;
@@ -206,6 +213,9 @@ public final class R {
         public static final int member5_title=0x7f080012;
         public static final int member6_summary=0x7f080015;
         public static final int member6_title=0x7f080014;
+        /**  UNO 
+         */
+        public static final int nuclearfamily_title=0x7f080048;
         public static final int preference_category2_title=0x7f080000;
         public static final int preference_category3_title=0x7f080001;
         public static final int settings_name=0x7f08001b;
@@ -216,6 +226,7 @@ public final class R {
         public static final int simple1_title=0x7f080002;
         public static final int simple2_preference_summary=0x7f080007;
         public static final int simple2_preference_title=0x7f080006;
+        public static final int staythenight_title=0x7f080049;
         public static final int stjimmy_title=0x7f080040;
         public static final int ui_profile_toast_save_text=0x7f080016;
         public static final int whatshername_title=0x7f080047;
