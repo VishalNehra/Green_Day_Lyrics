@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nRaise your hands now to testify\n
+Your confession will be crucified\n
+You're a sacrificial suicide\n
+Like a dog that's been sodomized\n
+Stand Up! All the white boys\n
+Sit Down! And the black girls\n
+Stand Up! You're the soldiers\n
+Sit Down! Of the new world\n
+\n
+Put your faith in a miracle\n
+And it's non-denominational\n
+Join the choir we will be singing\n
+In the church of wishful thinking\n
+\n
+A fire burns today\n
+Of blasphemy and genocide\n
+The sirens of decay\n
+Will infiltrate the faith fanatics\n
+\n
+Oh, bless me Lord for I have sinned\n
+It's been a lifetime since I last confessed\n
+I threw my crutches in \n
+'The river of a shadow of doubt'\n
+And I'll be dressed up in my Sunday best\n
+\n
+Say a prayer for the family\n
+Drop a coin for humanity\n
+Ain't this uniform so flattering?\n
+I never asked you a god damn thing\n
+\n
+A fire burns today\n
+Of blasphemy and genocide\n
+The sirens of decay\n
+Will infiltrate the faith fanatics\n
+\n
+Don't test me\n
+Second guess me\n
+Protest me\n
+You... will... disappear\n
+\n
+I want to know who's allowed to breed\n
+All the dogs who never learned to read\n
+Missionary politicians\n
+And the cops of a new religion\n
+\n
+A fire burns today\n
+Of blasphemy and genocide\n
+The sirens of decay\n
+Will infiltrate the inside"/>
+</ScrollView>
+
+</RelativeLayout>

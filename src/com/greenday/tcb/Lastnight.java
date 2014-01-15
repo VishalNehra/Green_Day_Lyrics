@@ -1,4 +1,4 @@
-package com.greenday.tre;
+package com.greenday.tcb;
 
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
@@ -11,14 +11,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Missingyou extends Activity {
+public class Lastnight extends Activity {
 	
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tre_missingyou);
+		setContentView(R.layout.tcb_lastnight);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		

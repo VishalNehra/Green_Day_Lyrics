@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\n[XIII American Eulogy]\n
+\n
+Sing us a song of the century\n
+It sings like American Eulogy\n
+The dawn of my love and conspiracy\n
+Forgotten hope and the class of 13\n
+Tell me a story into that goodnight\n
+Sing us a song for me\n
+\n
+[A. Mass Hysteria]\n
+\n
+Hysteria, mass hysteria!\n
+Mass hysteria!\n
+Mass hysteria!\n
+\n
+Red alert is the colour of panic\n
+Elevated to the point of static\n
+Beating into the hearts of the fanatics\n
+And the neighborhood's a loaded gun\n
+Idle thought lead to full-throttle screaming\n
+And the welfare is asphyxiating\n
+Mass confusion is all the new age \n
+And it's creating a feeding ground for the bottom feeders of hysteria\n
+\n
+Hysteria, mass hysteria!\n
+Mass hysteria!\n
+Mass hysteria!\n
+Mass hysteria!\n
+\n
+True sounds of maniacal laughter\n
+And the deafmute is misleading the choir\n
+The punchline is a natural disaster\n
+And it's sung by the unemployed\n
+Fight fire with a riot\n
+The class war is hanging on a wire \n
+Because the martyr is a compulsive liar\n
+When he said 'it's just a bunch of niggers \n
+Throwing gas into the ....'\n
+\n
+Hysteria, mass hysteria!\n
+Mass hysteria!\n
+Mass hysteria!\n
+Mass hysteria!\n
+\n
+There's a disturbance on the oceanside\n
+They tapped into the reserve\n
+The static response is so unclear now\n
+Mayday this is not a test!\n
+As the neighborhood burns, America is falling\n
+Vigilantes warning ya,\n
+calling christian and gloria\n
+\n
+[Bridge + Solo]\n
+\n
+[B. Modern World]\n
+\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+\n
+I'm the class of '13\n
+In the era of dissent\n
+A hostage of the soul\n
+On a strike to pay the rent\n
+The last of the rebels\n
+Without a common ground\n
+I'm gonna light a fire into the underground\n
+\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+\n
+I am a nation without bureaucratic ties\n
+Deny the allegation as it's written (fucking lies!)\n
+\n
+I want to take a ride to the great divide\n
+Beyond the 'up to date' and the neo-gentrified\n
+The high definition for the low resident\n
+Where the value of your mind is not held in contempt\n
+I can hear the sound of a beating heart\n
+That bleeds beyond a system that's falling apart\n
+With money to burn on a minimum wage\n
+I don't give a shit about the modern age\n
+\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+I don't wanna live in the modern world!\n
+\n
+I don't wanna live in the modern world! \n
+(Mass hysteria!)"/>
+</ScrollView>
+
+</RelativeLayout>

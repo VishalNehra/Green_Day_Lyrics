@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shenanigans_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_shenanigans" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nDon't want to have you hangin,\n
+Around me like a leech.\n
+I think you're just a problem,\n
+So stay the hell away from me \n
+Because I don't believe in you.\n
+And I wanna sit here all my life alone.\n
+\n
+This may sound a little rough,\n
+Don't wanna fall in love.\n
+Don't need security.\n
+\n
+I ain't no dog without a bone.\n
+Don't have no time for love.\n
+So stay the fuck away from me \n
+Because I don't believe in you,\n
+And I wanna sit here all my life alone.\n
+This may sound a little rough.\n
+Don't wanna fall in love.\n
+\n
+This may sound a little rough.\n
+Don't wanna fall in love.\n
+This may sound a little rough.\n
+Don't wanna fall in love.\n
+This may sound a little fucked.\n
+Don't wanna fall in love."/>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI crossed the river\n
+Fell into the sea\n
+Where the non-believers go beyond belief\n
+Then I scratched the surface\n
+In the mouth of hell\n
+Running out of service in the blood I fell\n
+\n
+[Chorus:]\n
+Well I, I just want to see the light\n
+And I, I don't want to lose my sight\n
+Well I, I just want to see the light\n
+And I need to know what's worth the fight\n
+\n
+I've been wasted\n
+Pills and alcohol\n
+I've been chasing\n
+Down the pool halls\n
+I drank the water from a hurricane\n
+I set a fire just to see the flame\n
+\n
+[Chorus]\n
+\n
+I crossed the desert\n
+Reaching higher ground\n
+Then I found the pavement to take the liars down\n
+But it's gone forever,but never too late\n
+Where the ever after is in the hands of fate\n
+\n
+[Chorus]"/>
+</ScrollView>
+
+</RelativeLayout>

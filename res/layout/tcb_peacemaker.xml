@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nOne, two, three, four\n
+\n
+Well, I've got a fever\n
+A non-believer\n
+I'm in a state of grace\n
+For I am the Caesar\n
+I'm gonna seize the day\n
+\n
+Well, call of the banshee (Hey, hey)\n
+Hey, hey, hey, hey, hey\n
+As God as my witness \n
+The infidels are gonna pay\n
+\n
+Well, call the assassin\n
+The orgasm\n
+A spasm of love and hate\n
+For what will divide us?\n
+The righteous and the meek\n
+
+Well, call of the wild (Hey, hey)\n
+Hey, hey, hey, hey, hey\n
+Well, death to the girl \n
+At the end of the serenade\n
+\n
+Vendetta, sweet vendetta\n
+This Beretta of the night\n
+This fire and the desire\n
+Well, shots ringing out on a holy parasite\n
+\n
+Well, I am a killjoy from Detroit\n
+I drink from a well of rage\n
+I feed off the weakness\n
+With all my love\n
+\n
+Well, call up the captain (Hey, hey)\n
+Hey, hey, hey, hey, hey\n
+Well, death of the lover \n
+That you were dreaming of\n
+\n
+This is a stand off a Molotov\n
+Cocktail's on the house\n
+You thought I was write off \n
+You better think again\n
+\n
+Well, call the peacemaker (Hey, hey)\n
+Hey, hey, hey, hey, hey\n
+I'm gonna send you back \n
+To the place where it all began\n
+\n
+Vendetta, sweet vendetta\n
+This Beretta of the night\n
+This fire and the desire\n
+Well, shots ringing out on a holy parasite\n
+\n
+Well, now the caretaker's\n
+The undertaker\n
+So, I'm gonna go out\n
+And get the peacemaker\n
+This is the Neo\n
+St. Valentine's massacre\n
+\n
+Well, call up the Gaza (Hey, hey)\n
+Hey, hey, hey, hey, hey\n
+Well, death to the ones at the end of the serenade\n
+Well, death to the ones at the end of the serenade\n
+Well, death to the ones at the end of the serenade\n
+Well, death to the ones at the end of the serenade!"/>
+</ScrollView>
+
+</RelativeLayout>

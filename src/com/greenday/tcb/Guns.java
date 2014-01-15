@@ -1,4 +1,4 @@
-package com.greenday.tre;
+package com.greenday.tcb;
 
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
@@ -11,14 +11,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Missingyou extends Activity {
+public class Guns extends Activity {
 	
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tre_missingyou);
+		setContentView(R.layout.tcb_guns);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
@@ -45,12 +45,10 @@ public class Missingyou extends Activity {
 		};
 		if(item.getItemId()==R.id.item1)
 		{
-			Log.d("Option", "Option 1 was clicked");
 			startActivity(new Intent(getApplicationContext(), Settings.class));
 		}
 		if(item.getItemId()==R.id.item2)
 		{
-			Log.d("Option", "Option 2 was clicked");
 			startActivity(new Intent(getApplicationContext(), Reportproblem.class));
 		}
 	            return super.onOptionsItemSelected(item);

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nLittle girl, little girl, \n
+Why are you crying?\n
+Inside your restless soul \n
+Your heart is dying?\n
+Little one, little one, \n
+Your soul is purging\n
+Of love and razor blades \n
+your blood is surging\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You're a stray for the salvation army\n
+There is no place like home \n
+When you got no place to go\n
+\n
+Little girl, little girl, \n
+Your life is calling\n
+The charlatans and saints of your abandon\n
+Little one, little one, \n
+The sky is falling\n
+Your lifeboat of deception is now sailing\n
+In the wake all the way no rhyme or reason\n
+Your bloodshot eyes \n
+Will show your heart of treason\n
+\n
+Little girl, little girl, you're dirty liar\n
+You're just a junkie preaching to the choir\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You're a stray for the salvation army\n
+There is no place like home \n
+when you got no place to go\n
+\n
+The traces of blood always follow you home \n
+Like the mascara tears from your getaway\n
+You're walking with blisters and running with shears\n
+So unholy sister of grace!\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You're a stray for the salvation army\n
+There is no place like home"/>
+</ScrollView>
+
+</RelativeLayout>

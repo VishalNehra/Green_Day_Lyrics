@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI've got a really bad disease\n
+It's got me begging on my hands and knees\n
+So, take me to emergency\n
+Cause something seems to be missing\n
+Somebody take the pain away\n
+It's like an ulcer bleeding in my brain\n
+So send me to the pharmacy \n
+So I can lose my memory\n
+\n
+I'm elated, medicated\n
+Lord knows I tried to find a way to run away\n
+\n
+I think they found another cure\n
+For broken hearts and feeling insecure\n
+You'd be surprised what I endure\n
+What makes you feel so self-assured\n
+\n
+I need to find a place to hide\n
+You never know what could be waiting outside\n
+The accidents that you could find\n
+It's like some kind of suicide\n
+\n
+So what ails you, is what impales you\n
+I feel like I've been crucified to be satisfied\n
+\n
+I'm a victim of my symptom\n
+I am my own worst enemy\n
+You're a victim of your symptom\n
+You are your own worst enemy\n
+Know your enemy\n
+\n
+I'm elated, medicated\n
+I am my own worst enemy\n
+So what ails you is what impales you\n
+You are your own worst enemy\n
+You're a victim of the system"/>
+</ScrollView>
+
+</RelativeLayout>

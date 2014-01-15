@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<!-- ACRA Testings -->
+	<string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
+    
+<string name="crash_dialog_title">CrashTest has crashed</string>
+<string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click OK.</string>
+<string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+<string name="crash_dialog_ok_toast">Thank you !</string>
 
+	<!-- Searchtitle -->
+    
+    <string name="search_title">Search a song</string>
     
     <string name="preference_category2_title">Albums</string>
     
     <string name="preference_category3_title">About</string>
     <string name="simple1_title">Build Version</string>
-    <string name="simple1_summary">0.07 Alpha</string>
+    <string name="simple1_summary">0.08 Alpha</string>
     <string name="intent1_preference_title">Source Code</string>
     <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
     <string name="simple2_preference_title">Green Day is</string>
@@ -42,7 +54,7 @@
         <item>International Superhits</item>
         <item>Shenanigans</item>
         <item>American Idiot</item>
-        <item>21st Centuary Breakdown</item>
+        <item>21st Century Breakdown</item>
         <item>¡UNO!</item>
         <item>¡DOS!</item>
         <item>¡TRÉ!</item>
@@ -107,7 +119,7 @@
     <string name="album8_summary">July 2, 2002</string>
     <string name="album9_title">American Idiot</string>
     <string name="album9_summary">September 21, 2004</string>
-    <string name="album10_title">21st Centuary Breakdown</string>
+    <string name="album10_title">21st Century Breakdown</string>
     <string name="album10_summary">May 15, 2009</string>
     <string name="album11_title">¡UNO!</string>
     <string name="album11_summary">September 21, 2012</string>
@@ -180,6 +192,42 @@
     <string name="dirtybastards_title">Dirty Rotten Bastards</string>
     <string name="ninetyninerev_title">99 Revolutions</string>
     <string name="theforgotten_title">The Forgotten</string>
+    
+    <!-- 21st centuary breakdown -->
+    <string name="songofcentuary_title">Song Of The Centuary</string>
+    <string name="tcb_title">21st Century Breakdown</string>
+    <string name="knowyourenemy_title">Know Your Enemy</string>
+    <string name="vivalagloria_title">¡Viva La Gloria!</string>
+    <string name="lobotomy_title">Before The Lobotomy</string>
+    <string name="inferno_title">Christian\'s Inferno</string>
+    <string name="lastnight_title">Last Night On Earth</string>
+    <string name="eastjesus_title">East Jesus Nowhere</string>
+    <string name="peacemaker_title">Peacemaker</string>
+    <string name="lastamerican_title">Last Of American Girls</string>
+    <string name="murdercity_title">Murder City</string>
+    <string name="vivalagloria2_title">¿Viva La Gloria? (Little Girl)</string>
+    <string name="restlessheart_title">Restless Heart Syndrome</string>
+    <string name="horseshoes_title">Horseshoes And Handgranades</string>
+    <string name="staticage_title">The Static Age</string>
+    <string name="guns_title">21 Guns</string>
+    <string name="americaneulogy_title">American Eulogy (Mass Hysteria/Modern World)</string>
+    <string name="seethelight_title">See The Light</string>
+    
+    <!-- Shenanigans -->
+    <string name="suffocate_title">Suffocate</string>
+    <string name="desensitized_title">Desensitized</string>
+    <string name="youlied_title">You Lied</string>
+    <string name="outsider_title">Outsider</string>
+    <string name="fallinlove_title">Don\'t Wanna Fall In Love</string>
+    <string name="espionage_title">Espionage</string>
+    <string name="wannabeontv_title">I Want To Be On T.V.</string>
+    <string name="scumbag_title">Scumbag</string>
+    <string name="tiredofwaiting_title">Tired Of Waiting For You</string>
+    <string name="sickofme_title">Sick Of Me</string>
+    <string name="rotting_title">Rotting</string>
+    <string name="dodada_title">Do Da Da</string>
+    <string name="onwagon_title">On The Wagon</string>
+    <string name="yourdead_title">Ha Ha You\'re Dead</string>
     
     
 

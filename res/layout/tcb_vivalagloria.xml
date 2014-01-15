@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tcb_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_tcb" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nHey Gloria?\n
+Are you standing close to the edge?\n
+Lookout to the setting sun\n
+The brink of your vision\n
+Eternal youth is a landscape of the lie\n
+\n
+The cracks of my skin can prove\n
+As the years will testify\n
+Say your prayers and light a fire \n
+We're going to start a war\n
+Your slogan's a gun for hire\n
+It's what we waited for\n
+\n
+Hey Gloria\n
+\n
+This is why we were on the edge\n
+The fight of our lives been drawn to this undying love\n
+\n
+Gloria!Viva La Gloria!\n
+You blast your name in graffiti on the walls (oh)\n
+Falling through broken glass \n
+That's slashing through your spirit\n
+I can hear it like a jilted crowd\n
+\n
+Gloria!Where are you Gloria?\n
+You found a home in \n
+All your scars and ammunition\n
+You made your bed in salad days \n
+Amongst the ruins\n
+Ashes to ashes of our youth\n
+\n
+She smashed her knuckles into winter \n
+(Gloria)\n
+As autumns wind fades into black\n
+She is the saint of all the sinners \n
+(Gloria)\n
+The one that's fallen through the cracks\n
+So don't put away your burning light\n
+\n
+Gloria!Where are you Gloria?\n
+Don't lose you faith to your lost naivete\n
+Weather the storm and don't look back on last November\n
+When your banners were burning down\n
+\n
+Gloria!Viva La Gloria!\n
+Send me your amnesty down to the broken hearted\n
+Bring us the season that we always will remember\n
+Don't let the bonfires go out\n
+\n
+So Gloria\n
+\n
+Send out your message of \n
+The light that shadows in the night\n
+Gloria where's your undying love?\n
+Tell me the story of your life ...\n
+(Your life!)"/>
+</ScrollView>
+
+</RelativeLayout>
