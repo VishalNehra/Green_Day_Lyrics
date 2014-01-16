@@ -229,6 +229,19 @@
     <string name="onwagon_title">On The Wagon</string>
     <string name="yourdead_title">Ha Ha You\'re Dead</string>
     
+    <!-- Warning -->
+    <string name="bloodsex_title">Blood, Sex and Booze</string>
+    <string name="castaway_title">Castaway</string>
+    <string name="warning_title">Warning</string>
+    <string name="church_title">Church On Sunday</string>
+    <string name="fashion_title">Fashion Victim</string>
+    <string name="misery_title">Misery</string>
+    <string name="deadbeat_title">Deadbeat Holiday</string>
+    <string name="holdon_title">Hold On</string>
+    <string name="jackass_title">Jackass</string>
+    <string name="waiting_title">Waiting</string>
+    <string name="minority_title">Minority</string>
+    <string name="macy_title">Macy\'s Day Parade</string>
     
 
     

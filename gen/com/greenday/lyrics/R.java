@@ -90,11 +90,12 @@ public final class R {
         public static final int icon=0x7f0b0005;
         public static final int imageView1=0x7f0b0009;
         public static final int imageView2=0x7f0b0003;
-        public static final int item1=0x7f0b0012;
-        public static final int item2=0x7f0b0013;
+        public static final int item1=0x7f0b0013;
+        public static final int item2=0x7f0b0014;
         public static final int listView1=0x7f0b0008;
         public static final int list_slidermenu=0x7f0b0002;
-        public static final int search=0x7f0b0014;
+        public static final int pager=0x7f0b0012;
+        public static final int search=0x7f0b0015;
         public static final int textView1=0x7f0b0004;
         public static final int textView2=0x7f0b000a;
         public static final int textView3=0x7f0b000d;
@@ -202,6 +203,19 @@ public final class R {
         public static final int uno_staythenight=0x7f030061;
         public static final int uno_sweetsixt=0x7f030062;
         public static final int uno_troublemaker=0x7f030063;
+        public static final int viewpager=0x7f030064;
+        public static final int warning_bloodsex=0x7f030065;
+        public static final int warning_castaway=0x7f030066;
+        public static final int warning_church=0x7f030067;
+        public static final int warning_deadbeat=0x7f030068;
+        public static final int warning_fashion=0x7f030069;
+        public static final int warning_holdon=0x7f03006a;
+        public static final int warning_jackass=0x7f03006b;
+        public static final int warning_macy=0x7f03006c;
+        public static final int warning_minority=0x7f03006d;
+        public static final int warning_misery=0x7f03006e;
+        public static final int warning_waiting=0x7f03006f;
+        public static final int warning_warning=0x7f030070;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -251,11 +265,16 @@ public final class R {
         public static final int avesrnde_title=0x7f080069;
         public static final int awtw_title=0x7f080045;
         public static final int babyeyes_title=0x7f080062;
+        /**  Warning 
+         */
+        public static final int bloodsex_title=0x7f080093;
         public static final int bobd_title=0x7f080044;
         /**  TRE 
          */
         public static final int brutallove_title=0x7f080067;
         public static final int carpediem_title=0x7f080050;
+        public static final int castaway_title=0x7f080094;
+        public static final int church_title=0x7f080096;
         public static final int crash_dialog_comment_prompt=0x7f080003;
         public static final int crash_dialog_ok_toast=0x7f080004;
         public static final int crash_dialog_text=0x7f080002;
@@ -266,6 +285,7 @@ public final class R {
         /**  DOS 
          */
         public static final int cutonight_title=0x7f08005a;
+        public static final int deadbeat_title=0x7f080099;
         /**  Content Description 
          */
         public static final int desc_list_item_icon=0x7f08001d;
@@ -279,11 +299,13 @@ public final class R {
         public static final int espionage_title=0x7f08008a;
         public static final int extordgirl_title=0x7f080049;
         public static final int fallinlove_title=0x7f080089;
+        public static final int fashion_title=0x7f080097;
         public static final int feedback_name=0x7f080022;
         public static final int fellforyou_title=0x7f080053;
         public static final int fucktime_title=0x7f08005b;
         public static final int givemenov_title=0x7f080047;
         public static final int guns_title=0x7f080082;
+        public static final int holdon_title=0x7f08009a;
         public static final int holiday_title=0x7f080043;
         public static final int homcom_title=0x7f08004c;
         public static final int horseshoes_title=0x7f080080;
@@ -294,6 +316,7 @@ public final class R {
         /**  Rate Button 
          */
         public static final int intent2_preference_title=0x7f08003f;
+        public static final int jackass_title=0x7f08009b;
         public static final int jos_title=0x7f080042;
         public static final int kid_title=0x7f08006b;
         public static final int killthedj_title=0x7f080052;
@@ -307,6 +330,7 @@ public final class R {
         public static final int littleboytrain_title=0x7f08006d;
         public static final int lobotomy_title=0x7f080077;
         public static final int lossofcontrol_title=0x7f080054;
+        public static final int macy_title=0x7f08009e;
         /**  Submit button 
          */
         public static final int mail_feedback_email=0x7f08003e;
@@ -323,6 +347,8 @@ public final class R {
         public static final int member5_title=0x7f080018;
         public static final int member6_summary=0x7f08001b;
         public static final int member6_title=0x7f08001a;
+        public static final int minority_title=0x7f08009d;
+        public static final int misery_title=0x7f080098;
         public static final int missingyou_title=0x7f080068;
         public static final int murdercity_title=0x7f08007d;
         public static final int nightlife_title=0x7f080064;
@@ -373,8 +399,10 @@ public final class R {
         public static final int ui_profile_toast_save_text=0x7f08001c;
         public static final int vivalagloria2_title=0x7f08007e;
         public static final int vivalagloria_title=0x7f080076;
+        public static final int waiting_title=0x7f08009c;
         public static final int walkaway_title=0x7f08006f;
         public static final int wannabeontv_title=0x7f08008b;
+        public static final int warning_title=0x7f080095;
         public static final int whatshername_title=0x7f08004d;
         public static final int wildone_title=0x7f08005e;
         public static final int wmuwse_title=0x7f08004b;
@@ -383,6 +411,7 @@ public final class R {
         public static final int yourdead_title=0x7f080092;
     }
     public static final class style {
+        public static final int ActionBar_San=0x7f090001;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -407,7 +436,7 @@ public final class R {
         public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
          */
-        public static final int AppTheme=0x7f090001;
+        public static final int AppTheme=0x7f090002;
     }
     public static final class xml {
         public static final int preferences=0x7f040000;

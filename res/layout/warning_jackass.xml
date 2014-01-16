@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/warning_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_warning" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nTo know you is to hate you\n
+So loving you must be like suicide\n
+I don't mind if you don't mind\n
+I'm not the one that's going to die\n
+I guess i just can't listen\n
+To this one sided conversation again\n
+`cause I don't care if I don't care\n
+No one ever said that life is fair\n
+\n
+Everybody loves a joke\n
+But no one likes a fool\n
+And you're always cracking \n
+the same old lines again\n
+You're well rehearsed on every verse\n
+And that was stated clear\n
+But no one understands your verity\n
+\n
+The center of attention\n
+Got an honerable mention once again\n
+Congratulations and salutations\n
+You're a figment of your own imagination\n
+\n
+Everybody loves a joke\n
+But no one likes a fool\n
+And you're always cracking \n
+the same old lines again\n
+You're well rehearsed on every verse\n
+And that was stated clear\n
+But no one understands your verity\n
+\n
+To know you is to bait you\n
+And you fell victim to your own denial\n
+I don't mind if you don't mind\n
+If you're wasting all your time"/>
+</ScrollView>
+
+</RelativeLayout>

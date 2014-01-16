@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppBaseTheme" >
         <activity
             android:name="com.greenday.lyrics.MainActivity"
             android:label="@string/app_name" >
@@ -247,6 +247,31 @@
         <activity android:name="com.greenday.shenanigans.Yourdead"
         	android:label="@string/yourdead_title"></activity>
         
+        <!-- Warning -->
+		<activity android:name="com.greenday.warning.Bloodsex"
+		    android:label="@string/bloodsex_title"></activity> 
+		<activity android:name="com.greenday.warning.Castaway"
+		    android:label="@string/castaway_title"></activity>
+		<activity android:name="com.greenday.warning.Warning"
+		    android:label="@string/warning_title"></activity>  
+		<activity android:name="com.greenday.warning.Church"
+		    android:label="@string/church_title"></activity>
+	    <activity android:name="com.greenday.warning.Fashion"
+		    android:label="@string/fashion_title"></activity>
+	    <activity android:name="com.greenday.warning.Misery"
+		    android:label="@string/misery_title"></activity>
+	    <activity android:name="com.greenday.warning.Deadbeat"
+		    android:label="@string/deadbeat_title"></activity>
+	    <activity android:name="com.greenday.warning.Holdon"
+		    android:label="@string/holdon_title"></activity>
+	    <activity android:name="com.greenday.warning.Jackass"
+		    android:label="@string/jackass_title"></activity>
+	    <activity android:name="com.greenday.warning.Waiting"
+		    android:label="@string/waiting_title"></activity>
+	    <activity android:name="com.greenday.warning.Minority"
+		    android:label="@string/minority_title"></activity>
+	    <activity android:name="com.greenday.warning.Macy"
+		    android:label="@string/macy_title"></activity>              
         
         
     </application>

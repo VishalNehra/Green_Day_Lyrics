@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/warning_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_warning" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nToday is the first day \n
+of the rest of our lives\n
+Tomorrow is too late to pretend\n
+Everything's allright now\n
+I'm not getting any younger as long\n
+As you don't get any older\n
+I'm not going to state \nthat yesterday never was\n
+\n
+Bloodshot deadbeat and a lack of sleep\n
+Making your mascara bleed\n
+Tears down your face\n
+Leaving traces of my mistakes\n
+\n
+(When I say)\n
+If I promise to go to church on Sunday\n
+Will you go with me on Friday night?\n
+If you live with me, I'll die for you\n
+And this compromise\n
+\n
+I hereby solemnly swear to tell\n
+The whole truth\n
+And nothing but the truth is what\n
+I'll ever hear from you now\n
+'Trust' is a dirty word that comes\n
+Only from such a liar\n
+But 'respect' is something I will earn...\n
+If you have faith"/>
+</ScrollView>
+
+</RelativeLayout>
