@@ -13,7 +13,6 @@
     </padding>
  
     <!-- Here is the corner radius -->
-    <corners android:radius="2dp" >
-    </corners>
+    <corners android:radius="10dp"/>
  
 </shape>

@@ -271,7 +271,19 @@
 	    <activity android:name="com.greenday.warning.Minority"
 		    android:label="@string/minority_title"></activity>
 	    <activity android:name="com.greenday.warning.Macy"
-		    android:label="@string/macy_title"></activity>              
+		    android:label="@string/macy_title"></activity>
+	    
+	    <!-- Nimrod -->
+	    <activity android:name="com.greenday.nimrod.Allthetime"
+	        android:label="@string/allthetime_title"></activity>
+	    <activity android:name="com.greenday.nimrod.Goodriddance"
+	        android:label="@string/goodriddance_title"></activity>
+	    <activity android:name="com.greenday.nimrod.Haushinka"
+	        android:label="@string/haushinka_title"></activity>
+	    <activity android:name="com.greenday.nimrod.Hitchinaride"
+	        android:label="@string/haushinka_title"></activity>
+	    <activity android:name="com.greenday.nimrod.Niceguys"
+	        android:label="@string/niceguys_title"></activity>
         
         
     </application>

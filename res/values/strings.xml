@@ -243,6 +243,13 @@
     <string name="minority_title">Minority</string>
     <string name="macy_title">Macy\'s Day Parade</string>
     
+    <!-- Nimrod -->
+    <string name="allthetime_title">All The Time</string>
+    <string name="goodriddance_title">Good Riddance(Time Of Your Life)</string>
+    <string name="haushinka_title">Haushinka</string>
+    <string name="hitchinaride_title">Hitchin\' A Ride</string>
+    <string name="niceguys_title">Nice Guys Finish Last</string>
+    
 
     
 </resources>
