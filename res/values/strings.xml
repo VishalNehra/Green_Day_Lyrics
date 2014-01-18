@@ -14,6 +14,7 @@
 	<!-- Searchtitle -->
     
     <string name="search_title">Search a song</string>
+    <string name="search_hint">Type a song name</string>
     
     <string name="preference_category2_title">Albums</string>
     

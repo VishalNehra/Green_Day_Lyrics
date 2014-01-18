@@ -9,11 +9,12 @@
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+   
  
     <!-- Listview to display slider menu -->
     <ListView
         android:id="@+id/list_slidermenu"
-        android:layout_width="240dp"
+        android:layout_width="290dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"

@@ -26,6 +26,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
  
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
@@ -49,7 +50,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
- 
+        
         mTitle = mDrawerTitle = getTitle();
  
         // load slide menu items
@@ -153,14 +154,13 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-     // Associate searchable configuration with the SearchView
-        SearchManager searchManager =
-               (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView =
-                (SearchView) menu.findItem(R.id.search).getActionView();
-        searchView.setSearchableInfo(
-                searchManager.getSearchableInfo(getComponentName()));
-        return true;
+            // Associate searchable configuration with the SearchView
+     		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+     		SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
+     				.getActionView();
+     		searchView.setSearchableInfo(searchManager
+     				.getSearchableInfo(getComponentName()));
+     		return super.onCreateOptionsMenu(menu);
     }
     //Search bar;
     

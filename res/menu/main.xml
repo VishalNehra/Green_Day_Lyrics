@@ -3,10 +3,10 @@
     
     <item android:id="@+id/item1" android:title="Settings" />
 	<item android:id="@+id/item2" android:title="Feedback" />
-	<item android:id="@+id/search"
+	<item android:id="@+id/action_search"
           android:title="@string/search_title"
           android:icon="@drawable/ic_search"
-          android:showAsAction="collapseActionView|ifRoom"
+          android:showAsAction="always"
           android:actionViewClass="android.widget.SearchView" />
 
 </menu>
