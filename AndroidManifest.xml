@@ -35,16 +35,13 @@
         </activity>
         
        <!-- Search results activity -->
-        <activity android:name="Searchresults"
-            android:parentActivityName="com.greenday.lyrics.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
-        </activity>
+        <activity android:name=".Searchresults">
+        <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+    </activity>
         
         
         
