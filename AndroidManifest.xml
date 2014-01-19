@@ -30,9 +30,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            <meta-data android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
         </activity>
         
        <!-- Search results activity -->
@@ -62,65 +61,47 @@
         <activity android:name="com.greenday.americanidiot.Americanidiot"
             android:label="@string/americanidiot_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Jesusofsuburb"
             android:label="@string/jos_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Holiday"
             android:label="@string/holiday_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Boulevardofbd"
             android:label="@string/bobd_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Arewethewaiting"
             android:label="@string/awtw_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Stjimmy"
             android:label="@string/stjimmy_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Givemenov"
             android:label="@string/givemenov_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
         <activity android:name="com.greenday.americanidiot.Shesarebel"
             android:label="@string/shesarebel_title"
             android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+            
         </activity>
     	<activity android:name="com.greenday.americanidiot.Extraordgirl"
             android:label="@string/extordgirl_title"
             android:uiOptions="splitActionBarWhenNarrow">
-    	    <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+    	    
     	</activity>
     	<activity android:name="com.greenday.americanidiot.Letterbomb"
             android:label="@string/letterbomb_title"
@@ -130,725 +111,291 @@
     	<activity android:name="com.greenday.americanidiot.Wakemeup"
             android:label="@string/wmuwse_title"
             android:uiOptions="splitActionBarWhenNarrow">
-    	    <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+    	    
     	</activity>
     	<activity android:name="com.greenday.americanidiot.Homecoming"
             android:label="@string/homcom_title"
             android:uiOptions="splitActionBarWhenNarrow">
-    	    <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+    	    
     	</activity>
     	<activity android:name="com.greenday.americanidiot.Whatshername"
             android:label="@string/whatshername_title"
             android:uiOptions="splitActionBarWhenNarrow">
-    	    <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
+    	    
     	</activity>
     	
         <!-- UNO -->
         <activity android:name="com.greenday.uno.Nuclearfamily"
             android:label="@string/nuclearfamily_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-        
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Staythenight"
             android:label="@string/staythenight_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Carpediem"
             android:label="@string/carpediem_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Letyourselfgo"
             android:label="@string/letyourselfgo_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Killthedj"
             android:label="@string/killthedj_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Fellforyou"
             android:label="@string/fellforyou_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Lossofcontrol"
             android:label="@string/lossofcontrol_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Troublemaker"
             android:label="@string/troublemaker_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Angelblue"
             android:label="@string/angelblue_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Sweetsixt"
             android:label="@string/sweetsixt_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Rustyjames"
             android:label="@string/rustyjames_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.uno.Ohlove"
             android:label="@string/ohlove_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         <!-- DOS -->
         <activity android:name="com.greenday.dos.Cutonight"
             android:label="@string/cutonight_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Fucktime"           
             android:label="@string/fucktime_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Stopredflash"
             android:label="@string/stopredflash_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Lazybones"
             android:label="@string/lazybones_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Wildone"
             android:label="@string/wildone_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Makeoutparty"
             android:label="@string/makeoutparty_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Strayheart"
             android:label="@string/strayheart_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Ashley"
             android:label="@string/ashley_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Babyeyes"
             android:label="@string/babyeyes_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greencom.dos.Ladycobra"
                  android:label="@string/ladycobra_title"
-                 android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+                 android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Nightlife"
             	 android:label="@string/nightlife_title"
-            	 android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            	 android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Wowthatsloud"
             android:label="@string/wowthatsloud_title"
-            android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+            android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.dos.Amy"
         	android:label="@string/amy_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         <!-- TRE -->
         <activity android:name="com.greenday.tre.Brutallove"
         	android:label="@string/brutallove_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Missingyou"
         	android:label="@string/missingyou_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Avesrnde"
         	android:label="@string/avesrnde_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Dramaqueen"
         	android:label="@string/dramaqueen_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Kid"
         	android:label="@string/kid_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Sexdrugs"
         	android:label="@string/sexdrugs_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Littleboytrain"
         	android:label="@string/littleboytrain_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Amanda"
         	android:label="@string/amanda_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Walkaway"
         	android:label="@string/walkaway_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Dirtybastards"
         	android:label="@string/dirtybastards_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Ninetyninerev"
         	android:label="@string/ninetyninerev_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tre.Theforgotten"
         	android:label="@string/theforgotten_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         <!-- 21st centuary breakdown -->
         <activity android:name="com.greenday.tcb.Songofcentuary"
         	android:label="@string/songofcentuary_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Tcb"
         	android:label="@string/tcb_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Knowyourenemy"
         	android:label="@string/knowyourenemy_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Vivalagloria"
         	android:label="@string/vivalagloria_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Lobotomy"
         	android:label="@string/lobotomy_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Inferno"
         	android:label="@string/inferno_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Lastnight"
         	android:label="@string/lastnight_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Eastjesus"
         	android:label="@string/eastjesus_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Peacemaker"
         	android:label="@string/peacemaker_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Lastamerican"
         	android:label="@string/lastamerican_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Murdercity"
         	android:label="@string/murdercity_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Vivalagloria2"
         	android:label="@string/vivalagloria2_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Restlessheart"
         	android:label="@string/restlessheart_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Horseshoes"
         	android:label="@string/horseshoes_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Staticage"
         	android:label="@string/staticage_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Guns"
         	android:label="@string/guns_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Americaneulogy"
         	android:label="@string/americaneulogy_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.tcb.Seethelight"
         	android:label="@string/seethelight_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         <!-- Shenanigans -->
         <activity android:name="com.greenday.shenanigans.Suffocate"
         	android:label="@string/suffocate_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Desensitized"
         	android:label="@string/desensitized_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Youlied"
         	android:label="@string/youlied_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Outsider"
         	android:label="@string/outsider_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Fallinlove"
         	android:label="@string/fallinlove_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Espionage"
         	android:label="@string/espionage_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.WannabeonTV"
         	android:label="@string/wannabeontv_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Scumbag"
         	android:label="@string/scumbag_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Tiredofwaiting"
         	android:label="@string/tiredofwaiting_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Sickofme"
         	android:label="@string/sickofme_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Rotting"
         	android:label="@string/rotting_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Dodada"
         	android:label="@string/dodada_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Onwagon"
         	android:label="@string/onwagon_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         <activity android:name="com.greenday.shenanigans.Yourdead"
         	android:label="@string/yourdead_title"
-        	android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
-        </activity>
+        	android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         <!-- Warning -->
 		<activity android:name="com.greenday.warning.Bloodsex"
 		    android:label="@string/bloodsex_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-		    <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-		</activity> 
+		    android:uiOptions="splitActionBarWhenNarrow"></activity> 
 		<activity android:name="com.greenday.warning.Castaway"
 		    android:label="@string/castaway_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-		    
-		</activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 		<activity android:name="com.greenday.warning.Warning"
 		    android:label="@string/warning_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-		    
-		</activity>  
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>  
 		<activity android:name="com.greenday.warning.Church"
 		    android:label="@string/church_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-		    
-		</activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Fashion"
 		    android:label="@string/fashion_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Misery"
 		    android:label="@string/misery_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Deadbeat"
 		    android:label="@string/deadbeat_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Holdon"
 		    android:label="@string/holdon_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Jackass"
 		    android:label="@string/jackass_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Waiting"
 		    android:label="@string/waiting_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Minority"
 		    android:label="@string/minority_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.warning.Macy"
 		    android:label="@string/macy_title"
-		    android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+		    android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    
 	    <!-- Nimrod -->
 	    <activity android:name="com.greenday.nimrod.Allthetime"
 	        android:label="@string/allthetime_title"
 	        android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-            
 	    </activity>
 	    <activity android:name="com.greenday.nimrod.Goodriddance"
 	        android:label="@string/goodriddance_title"
-	        android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+	        android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.nimrod.Haushinka"
 	        android:label="@string/haushinka_title"
-	        android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+	        android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.nimrod.Hitchinaride"
 	        android:label="@string/haushinka_title"
-	        android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+	        android:uiOptions="splitActionBarWhenNarrow"></activity>
 	    <activity android:name="com.greenday.nimrod.Niceguys"
 	        android:label="@string/niceguys_title"
-	        android:uiOptions="splitActionBarWhenNarrow">
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".Searchresults" />
-	        
-	    </activity>
+	        android:uiOptions="splitActionBarWhenNarrow"></activity>
         
         
     </application>

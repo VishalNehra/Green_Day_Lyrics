@@ -20,7 +20,7 @@
     
     <string name="preference_category3_title">About</string>
     <string name="simple1_title">Build Version</string>
-    <string name="simple1_summary">0.09 Alpha</string>
+    <string name="simple1_summary">0.08 Alpha</string>
     <string name="intent1_preference_title">Source Code</string>
     <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
     <string name="simple2_preference_title">Green Day is</string>
