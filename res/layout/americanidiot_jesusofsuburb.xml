@@ -13,19 +13,19 @@
         android:layout_alignParentLeft="true"
         android:src="@drawable/ic_americanidiot" />
 <ScrollView
+    android:id="@+id/scrollview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:maxLines = "200"
+        
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
         android:text="\n[Part 1]\n\n
-
 I'm the son of rage and love\n
 The Jesus of Suburbia\n
 From the bible of none of the above\n

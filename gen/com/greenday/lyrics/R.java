@@ -84,28 +84,30 @@ public final class R {
         public static final int warning_cover2=0x7f020027;
     }
     public static final class id {
-        public static final int action_search=0x7f0c0015;
-        public static final int button1=0x7f0c0011;
-        public static final int counter=0x7f0c0007;
+        public static final int action_search=0x7f0c0017;
+        public static final int button1=0x7f0c0012;
+        public static final int counter=0x7f0c0008;
         public static final int drawer_layout=0x7f0c0000;
-        public static final int editText1=0x7f0c000b;
-        public static final int editText2=0x7f0c000c;
-        public static final int editText3=0x7f0c000e;
-        public static final int editText4=0x7f0c0010;
+        public static final int editText1=0x7f0c000c;
+        public static final int editText2=0x7f0c000d;
+        public static final int editText3=0x7f0c000f;
+        public static final int editText4=0x7f0c0011;
         public static final int frame_container=0x7f0c0001;
-        public static final int icon=0x7f0c0005;
-        public static final int imageView1=0x7f0c0009;
+        public static final int icon=0x7f0c0006;
+        public static final int imageView1=0x7f0c000a;
         public static final int imageView2=0x7f0c0003;
-        public static final int item1=0x7f0c0013;
-        public static final int item2=0x7f0c0014;
-        public static final int listView1=0x7f0c0008;
+        public static final int item1=0x7f0c0015;
+        public static final int item2=0x7f0c0016;
+        public static final int listView1=0x7f0c0009;
         public static final int list_slidermenu=0x7f0c0002;
-        public static final int pager=0x7f0c0012;
+        public static final int pager=0x7f0c0014;
+        public static final int scrollview=0x7f0c0005;
         public static final int textView1=0x7f0c0004;
-        public static final int textView2=0x7f0c000a;
-        public static final int textView3=0x7f0c000d;
-        public static final int textView4=0x7f0c000f;
-        public static final int title=0x7f0c0006;
+        public static final int textView2=0x7f0c000b;
+        public static final int textView3=0x7f0c000e;
+        public static final int textView4=0x7f0c0010;
+        public static final int title=0x7f0c0007;
+        public static final int txtQuery=0x7f0c0013;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
