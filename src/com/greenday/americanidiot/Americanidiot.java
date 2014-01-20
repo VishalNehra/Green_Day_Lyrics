@@ -1,5 +1,9 @@
 package com.greenday.americanidiot;
 
+import org.acra.ACRA;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Settings;
@@ -18,11 +22,18 @@ public class Americanidiot extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		ACRA.getErrorReporter().putCustomData("myKey", "asdfasdfasfas");
 		setContentView(R.layout.americanidiot_americanidiot);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
+		// SLF4J
+	    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+	    log.info("hello world");
+	    
+	    
 	}
+
 	
 	//Action bar code below
 	

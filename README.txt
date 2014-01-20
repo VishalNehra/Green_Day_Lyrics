@@ -1,1 +1,1 @@
-GREEN DAY LYRICS application source code. a
+GREEN DAY LYRICS application source code.

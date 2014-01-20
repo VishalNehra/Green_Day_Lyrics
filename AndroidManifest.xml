@@ -8,7 +8,6 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -432,9 +431,7 @@
 	    <activity android:name="com.greenday.nimrod.Kingforaday"
 	        android:label="@string/kingforaday_title"
 	         ></activity>
-	    <activity android:name="com.greenday.nimrod.Prosthetichead"
-	        android:label="@string/prosthetichead_title"
-	         ></activity>
+	    
 	    
         <!-- for expanding menu bar-  android:uiOptions="splitActionBarWhenNarrow" -->
         
