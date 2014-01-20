@@ -1,4 +1,4 @@
-package info.slidingmenuadapter;
+package com.slidingmenu.adapter;
 
 import com.greenday.lyrics.R;
 import com.slidingmenu.model.NavDrawerItem;

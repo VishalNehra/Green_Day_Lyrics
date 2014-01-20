@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nimrod_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_nimrod" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nYou pushed me once too far again\n
+I'd like to break you fucking teeth.\n
+Stick a knife \n
+In the center of your back.
+You better grow some eyes \n
+in the back of your head.\n
+I fight dirty, just like your looks.\n
+Can't take, can't take, \n
+Can't take anymore.\n
+\n
+Take back, Take back, Take.\n
+\n
+The taste of bad blood \n
+on the tip of my tongue.\n
+An eye for an eye.\n
+Gun for a gun.\n
+\n
+Cold-cocked and \n
+I'm taking back what's mine.\n
+Expect it when you're least expecting it.\n
+No loss of love, \n
+The smell of regret.\n
+Lights out\n
+Can't take anymore\n
+\n
+Take back, Take back, Take back, \n
+Take back, Take back.\n
+Shit!"/>
+</ScrollView>
+
+</RelativeLayout>

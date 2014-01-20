@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nimrod_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_nimrod" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI see you, \n
+Down in the front line. \n
+Such a sight for sore eyes, \n
+You're a suicide makeover. \n
+Plastic eyes, \n
+lookin' through a numbskull. \n
+Self-effaced, what's his face. \n
+You erased yourself so shut up. \n
+You don't let up. \n
+\n
+You have a growth that must be treated \n
+Like a severed severe pain in the neck. \n
+You can smell it but you can't see it. \n
+No explanation identified \n
+'cause you don't know. \n
+You don't say. \n
+\n
+And you got no reply. \n
+Hey you, where did you come from?\n 
+Got a head full of lead, \n
+You're a inbred bastard son. \n
+All dressed up, red blooded, \n
+a mannequin \n
+Do or die, no reply, \n
+Don't deny that you're synthetic. \n
+You're pathetic."/>
+</ScrollView>
+
+</RelativeLayout>

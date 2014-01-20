@@ -1,8 +1,8 @@
 package com.greenday.lyrics;
  
-import info.slidingmenuadapter.NavDrawerListAdapter;
 
 import com.greenday.tcb.Acra;
+import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
  
 import java.util.ArrayList;
@@ -155,16 +155,14 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
      // Get the SearchView and set the searchable configuration
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+       /* SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
         // Assumes current activity is the searchable activity
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setIconifiedByDefault(true); // Do not iconify the widget; expand it by default
+        searchView.setIconifiedByDefault(true); // Do not iconify the widget; expand it by default */
         return true;
     }
-    //Search bar;
     
- 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // toggle nav drawer on selecting action bar app icon/title

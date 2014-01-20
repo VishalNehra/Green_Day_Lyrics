@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nimrod_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_nimrod" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI woke up on the wrong side \n
+of the floor. \n
+Made, made my way through the front door. \n
+Broke my engagement with myself. \n
+Perfect picture of bad health, \n
+Another notch scratched on my belt. \n
+The future just ain't what it used to be.\n 
+\n
+I got a new start on a dead end road. \n
+Peaked, peaked out on reaching new lows.\n 
+Owe, I paid off all my debts to myself. \n
+Perfect picture of bad health, \n
+Another notch scratched on my belt. \n
+The future's in my living room. \n
+\n
+Uptight, I'm a nag with a gun. \n
+All night, suicide's last call. \n
+I've been uptight all night. \n
+I'm a son of a gun. \n
+Uptight I'm a nag with a gun."/>
+</ScrollView>
+
+</RelativeLayout>

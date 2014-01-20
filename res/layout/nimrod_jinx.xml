@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nimrod_cover2"
+    android:layout_gravity="center_horizontal"  >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_nimrod" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "200"
+		android:scrollbars = "vertical"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" 
+        android:text="\nI fucked up again it's all my fault. \n
+So turn me around \n
+And face the wall. \n
+Read me my rights \n
+And tell me I'm wrong.\n 
+Until it gets into my thick skull. \n
+\n
+A slap on the wrist. \n
+A stab in the back. \n
+Torture me, I've been a bad boy.\n 
+Nail me to the cross until you have won.\n 
+I lost before I did any wrong. \n
+\n
+I'm hexed with regrets and bad luck. \n
+Keep you distance 'cause it's rubbing off.\n 
+Or you will be damned to \n
+spend your life in hell. \n
+Or earth with me tangled at your feet.\n 
+You finally met you nemesis \n
+disguised as your fatal long lost love. \n
+So kiss it good bye \n
+Until death do we part.\n 
+You fell for a jinx for crying out loud."/>
+</ScrollView>
+
+</RelativeLayout>
