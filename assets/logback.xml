@@ -3,7 +3,7 @@
   <appender name="file" class="ch.qos.logback.core.FileAppender">
     <file>/data/data/com.greenday.lyrics/files/log/extra.log</file>
     <encoder>
-      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+      <pattern>%d{DD:MM:YY:HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
     </encoder>
   </appender>
 

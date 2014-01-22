@@ -1,7 +1,12 @@
 package com.greenday.tcb;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
+import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +33,7 @@ public class Knowyourenemy extends Activity {
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.main_song, menu);
         return true;
     }
 	
@@ -43,15 +48,16 @@ public class Knowyourenemy extends Activity {
 		default:
 
 		};
-		if(item.getItemId()==R.id.item1)
+		if(item.getItemId()==R.id.settings)
 		{
-			Log.d("Option", "Option 1 was clicked");
 			startActivity(new Intent(getApplicationContext(), Settings.class));
 		}
-		if(item.getItemId()==R.id.item2)
+		if(item.getItemId()==R.id.reportsong)
 		{
-			Log.d("Option", "Option 2 was clicked");
-			startActivity(new Intent(getApplicationContext(), Reportproblem.class));
+			//Log report
+		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    log.info("21st Centuary Breakdown/Know Your Enemy");
+			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}
 	            return super.onOptionsItemSelected(item);
 		

@@ -1,7 +1,7 @@
 package com.greenday.lyrics;
  
 
-import com.greenday.tcb.Acra;
+
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
  
@@ -175,7 +175,7 @@ public class MainActivity extends Activity {
         	startActivity(new Intent(MainActivity.this, Settings.class));
             return true;
         case R.id.item2:
-        	startActivity(new Intent(MainActivity.this, Acra.class));
+        	startActivity(new Intent(MainActivity.this, Reportproblem.class));
             return true;
         default:
             return super.onOptionsItemSelected(item);

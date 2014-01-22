@@ -1,7 +1,12 @@
 package com.greenday.nimrod;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
+import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import android.app.Activity;
 import android.content.Intent;
@@ -27,7 +32,7 @@ public class Hitchinaride extends Activity {
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.main_song, menu);
         return true;
     }
 	
@@ -42,13 +47,16 @@ public class Hitchinaride extends Activity {
 		default:
 
 		};
-		if(item.getItemId()==R.id.item1)
+		if(item.getItemId()==R.id.settings)
 		{
 			startActivity(new Intent(getApplicationContext(), Settings.class));
 		}
-		if(item.getItemId()==R.id.item2)
+		if(item.getItemId()==R.id.reportsong)
 		{
-			startActivity(new Intent(getApplicationContext(), Reportproblem.class));
+			//Log report
+		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    log.info("Nimrod/Hitchin' A Ride");
+			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}
 	            return super.onOptionsItemSelected(item);
 		

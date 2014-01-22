@@ -48,6 +48,8 @@
            android:label="@string/settings_name" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
            android:label="@string/feedback_name" />
+        <activity android:name="com.greenday.lyrics.Reportsong"
+            android:theme="@style/Reportsong"/>
         
         <!-- Songs -->
         <!-- ACRA -->
@@ -430,6 +432,9 @@
 	         ></activity>
 	    <activity android:name="com.greenday.nimrod.Kingforaday"
 	        android:label="@string/kingforaday_title"
+	         ></activity>
+	    <activity android:name="com.greenday.nimrod.Prosthetichead"
+	        android:label="@string/prosthetichead_title"
 	         ></activity>
 	    
 	    
