@@ -55,7 +55,7 @@ public class Waiting extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Waiting.class);
 		    log.info("Warning/Waiting");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

@@ -55,7 +55,7 @@ public class Nuclearfamily extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Nuclearfamily.class);
 				    log.info("UNO/Nuclear Family");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

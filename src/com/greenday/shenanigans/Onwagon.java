@@ -54,7 +54,7 @@ public class Onwagon extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Onwagon.class);
 			    log.info("Shenanigans/On The Wagon");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

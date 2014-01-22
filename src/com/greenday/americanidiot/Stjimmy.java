@@ -54,7 +54,7 @@ public class Stjimmy extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Stjimmy.class);
 			    log.info("American Idiot/St. Jimmy");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

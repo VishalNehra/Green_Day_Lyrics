@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<!-- ACRA Testings -->
+	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
 	</string>
 	<!-- Searchtitle -->
     
     <string name="search_title">Search a song</string>
     <string name="search_hint">Search songs</string>
+    
+    <!-- Settings -->
     
     <string name="preference_category2_title">Albums</string>
     
@@ -36,7 +38,7 @@
     <string name="ui_profile_toast_save_text">Sent! Your suggestion will be reviewed soon.</string>
     
     
-    
+    <!-- Sliding menu items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
         <item>39/Smooth</item>
@@ -85,13 +87,10 @@
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
     
-    <string name="settings_name">Settings</string>
-    <string name="feedback_name">Report</string>
-    
-    
-    
-    <!-- American Idiot -->
-    <string name="americanidiot_preference">List</string>
+    <!-- Options Menu items -->
+    <string name="settings">Settings</string>
+    <string name="reportproblem">Report problem</string>
+    <string name="reportsong">Report this song</string>
     
     <!-- ALBUM LIST -->
     
@@ -121,9 +120,6 @@
     <string name="album12_summary">November 9, 2012 (My B\'Day :D)</string>
     <string name="album13_title">¡TRÉ!</string>
     <string name="album13_summary">December 7, 2012</string>
-    
-    <!-- Submit button -->
-    <string name="mail_feedback_email">vishalmeham2@gmail.com</string>
     
     <!-- Rate Button -->
     <string name="intent2_preference_title">Rate the app</string>
@@ -253,11 +249,113 @@
     <string name="jinx_title">Jinx</string>
     <string name="walkingalone_title">Walking Alone</string>
     <string name="reject_title">Reject</string>
-    <string name="takeback_title">Reject</string>
+    <string name="takeback_title">Take Back</string>
     <string name="kingforaday_title">King For A Day</string>
     <string name="prosthetichead_title">Prosthetic Head</string>
     
     
-
+	<!-- Insomniac -->
+	<string name="armatage_title">Armatage Shanks</string>
+	<string name="brat_title">Brat</string>
+	<string name="stuckwithme_title">Stuck With Me</string>
+	<string name="geekstink_title">Geek Stink Breath</string>
+	<string name="nopride_title">No Pride</string>
+	<string name="babuvula_title">Bab\'s Uvula Who!</string>
+	<string name="eightysix_title">86</string>
+	<string name="panicsong_title">Panic Song</string>
+	<string name="stuartave_title">Stuart And The Ave</string>
+	<string name="brainstew_title">Brain Stew</string>
+	<string name="jaded_title">Jaded</string>
+	<string name="westbound_title">Westbound Sign</string>
+	<string name="tightwad_title">Tight Wad Hill</string>
+	<string name="walking_title">Walking Contradiction</string>
+	
+	<!-- Dookie -->
+	
+	<string name="burnout_title">Burnout</string>
+	<string name="havingblast_title">Having A Blast</string>
+	<string name="chump_title">Chump</string>
+	<string name="longview_title">Longview</string>
+	<string name="welcomeparadise_title">Welcome To Paradise</string>
+	<string name="pullingteeth_title">Pulling Teeth</string>
+	<string name="basketcase_title">Basket Case</string>
+	<string name="she_title">She</string>
+	<string name="sassafrasroots_title">Sassafras Roots</string>
+	<string name="whencomearound_title">When I Come Around</string>
+	<string name="comingclean_title">Coming Clean</string>
+	<string name="emeniussleepus_title">Emenius Sleepus</string>
+	<string name="intheend_title">In The End</string>
+	<string name="fod_title">F.O.D.</string>
+	
+    <!-- Kerplunk -->
+    
+    <string name="lightyears_title">2000 Light Years Away</string>
+    <string name="razorbacks_title">One For The Razorbacks</string>
+    <string name="welcome_title">Welcome To Paradise</string>
+    <string name="christie_title">Christie Road</string>
+    <string name="privateale_title">Private Ale</string>
+    <string name="oominated_title">Oominated Love Slave</string>
+    <string name="oneoflies_title">One Of My Lies</string>
+    <string name="eighty_title">80</string>
+    <string name="android_title">Android</string>
+    <string name="nooneknows_title">No One Knows</string>
+    <string name="whowrote_title">Who Wrote Holden Caulfield?</string>
+    <string name="wordsmightate_title">Words I Might Have Ate</string>
+    <string name="sweetchildren_title">Sweet Children</string>
+    <string name="bestthing_title">Best Thing In Town</string>
+    <string name="strangeland_title">Strangeland</string>
+    <string name="mygeneration_title">My Generation</string>
+    
+    <!-- 39/Smooth -->
+    
+    <string name="thousandhours_title">1000 Hours</string>
+    <string name="sixteen_title">16</string>
+    <string name="coffeemaker_title">409 In Your Coffeemaker</string>
+    <string name="atlibrary_title">At The Library</string>
+    <string name="disappearingboy_title">Disappearing Boy</string>
+    <string name="dontleaveme_title">Don\'t Leave Me</string>
+    <string name="dryice_title">Dry Ice</string>
+    <string name="goingpasalacqua_title">Going To Pasalacqua</string>
+    <string name="greenday_title">Green Day</string>
+    <string name="wantbealone_title">I Want To Be Alone</string>
+    <string name="iwasthere_title">I Was There</string>
+    <string name="knowledge_title">Knowledge</string>
+    <string name="onlyofyou_title">Only Of You</string>
+    <string name="paperlanterns_title">Paper Lanterns</string>
+    <string name="rest_title">Rest</string>
+    <string name="roadtoacceptance_title">Road To Acceptance</string>
+    <string name="judgedaughter_title">The Judge\'s Daughter</string>
+    <string name="oneiwant_title">The One I Want</string>
+    <string name="whyyouwanthim_title">Why Do You Want Him?</string>
+    
+    <!-- International Superhits -->
+    
+    <string name="maria_title">Maria</string>
+    <string name="poprocks_title">Poprocks And Coke</string>
+    <string name="jar_title">Jason Andrew Relva</string>
+    <string name="walkingcontradiction_title">Walking Contradiction</string>
+    
+    <!-- Unreleased -->
+    
+    <string name="quickone_title">A Quick One While He\'s Away</string>
+    <string name="stateofmind_title">Another State Of Mind</string>
+    <string name="cigarettes_title">Cigarettes And Valentines</string>
+    <string name="favouriteson_title">Favourite Son</string>
+    <string name="governator_title">Governator</string>
+    <string name="heartscollide_title">Hearts Collide</string>
+    <string name="foughtlaw_title">I Fought The Law</string>
+    <string name="kissingsanta_title">I Saw My Parents Kissing Santa Claws</string>
+    <string name="likeastone_title">Like A Rolling Stone</string>
+    <string name="mechanicalman_title">Mechanical Man</string>
+    <string name="minnesotagirl_title">Minnesota Girl</string>
+    <string name="shoplifter_title">Shoplifter</string>
+    <string name="shout_title">Shout</string>
+    <string name="teenage_title">Teenage Lobotomy</string>
+    <string name="thatsallright_title">That\'s All Right</string>
+    <string name="toomuch_title">Too Much, Too Soon</string>
+    <string name="wearechampions_title">We Are The Champions</string>
+    <string name="workingclasshero_title">Working Class Hero</string>
+    
+    
     
 </resources>

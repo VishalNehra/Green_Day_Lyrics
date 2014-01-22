@@ -54,7 +54,7 @@ public class Tiredofwaiting extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Tiredofwaiting.class);
 			    log.info("Shenanigans/Tired Of Waiting For You");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

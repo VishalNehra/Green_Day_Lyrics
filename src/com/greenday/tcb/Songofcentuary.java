@@ -55,7 +55,7 @@ public class Songofcentuary extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Songofcentuary.class);
 		    log.info("21st Centuary Breakdown/Song Of The Centuary");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

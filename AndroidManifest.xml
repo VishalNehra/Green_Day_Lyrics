@@ -45,9 +45,10 @@
         
         
         <activity android:name="com.greenday.lyrics.Settings"
-           android:label="@string/settings_name" />
+           android:label="@string/settings" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
-           android:label="@string/feedback_name" />
+           android:label="@string/reportproblem"
+           android:theme="@style/Reportproblem" />
         <activity android:name="com.greenday.lyrics.Reportsong"
             android:theme="@style/Reportsong"/>
         
@@ -191,7 +192,7 @@
         <activity android:name="com.greenday.dos.Babyeyes"
             android:label="@string/babyeyes_title"
              ></activity>
-        <activity android:name="com.greencom.dos.Ladycobra"
+        <activity android:name="com.greenday.dos.Ladycobra"
                  android:label="@string/ladycobra_title"
                   ></activity>
         <activity android:name="com.greenday.dos.Nightlife"
@@ -392,7 +393,7 @@
 	        android:label="@string/haushinka_title"
 	         ></activity>
 	    <activity android:name="com.greenday.nimrod.Hitchinaride"
-	        android:label="@string/haushinka_title"
+	        android:label="@string/hitchinaride_title"
 	         ></activity>
 	    <activity android:name="com.greenday.nimrod.Niceguys"
 	        android:label="@string/niceguys_title"
@@ -437,6 +438,269 @@
 	        android:label="@string/prosthetichead_title"
 	         ></activity>
 	    
+	    <!-- Insomniac -->
+	    <activity android:name="com.greenday.insomniac.Armatage"
+	        android:label="@string/armatage_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Brat"
+	        android:label="@string/brat_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Stuckwithme"
+	        android:label="@string/stuckwithme_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Geekstink"
+	        android:label="@string/geekstink_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Nopride"
+	        android:label="@string/nopride_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Babuvula"
+	        android:label="@string/babuvula_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Eightysix"
+	        android:label="@string/eightysix_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Panicsong"
+	        android:label="@string/panicsong_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Stuartave"
+	        android:label="@string/stuartave_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Brainstew"
+	        android:label="@string/brainstew_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Jaded"
+	        android:label="@string/jaded_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Westbound"
+	        android:label="@string/westbound_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Tightwad"
+	        android:label="@string/tightwad_title"
+	         ></activity>
+	    <activity android:name="com.greenday.insomniac.Walking"
+	        android:label="@string/walking_title"
+	         ></activity>
+	    
+	    <!-- Dookie -->
+	    
+	    <activity android:name="com.greenday.dookie.Burnout"
+	        android:label="@string/burnout_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Havingblast"
+	        android:label="@string/havingblast_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Chump"
+	        android:label="@string/chump_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Longview"
+	        android:label="@string/longview_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Welcomeparadise"
+	        android:label="@string/welcomeparadise_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Pullingteeth"
+	        android:label="@string/pullingteeth_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Basketcase"
+	        android:label="@string/basketcase_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.She"
+	        android:label="@string/she_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Sassafrasroots"
+	        android:label="@string/sassafrasroots_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Whencomearound"
+	        android:label="@string/whencomearound_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Comingclean"
+	        android:label="@string/comingclean_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Emeniussleepus"
+	        android:label="@string/emeniussleepus_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.Intheend"
+	        android:label="@string/intheend_title"
+	         ></activity>
+	    <activity android:name="com.greenday.dookie.FOD"
+	        android:label="@string/fod_title"
+	         ></activity>
+	    
+	    <!-- Kerplunk -->
+	    
+	    <activity android:name="com.greenday.kerplunk.Lightyears"
+	        android:label="@string/lightyears_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Razorbacks"
+	        android:label="@string/razorbacks_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Welcome"
+	        android:label="@string/welcome_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Christie"
+	        android:label="@string/christie_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Privateale"
+	        android:label="@string/privateale_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Oominated"
+	        android:label="@string/oominated_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Oneoflies"
+	        android:label="@string/oneoflies_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Eighty"
+	        android:label="@string/eighty_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Android"
+	        android:label="@string/android_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Nooneknows"
+	        android:label="@string/nooneknows_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Whowrote"
+	        android:label="@string/whowrote_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Wordsmightate"
+	        android:label="@string/wordsmightate_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Sweetchildren"
+	        android:label="@string/sweetchildren_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Bestthing"
+	        android:label="@string/bestthing_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Strangeland"
+	        android:label="@string/strangeland_title"
+	         ></activity>
+	    <activity android:name="com.greenday.kerplunk.Mygeneration"
+	        android:label="@string/mygeneration_title"
+	         ></activity>
+	    
+	    <!-- International Superhits -->
+	    <activity android:name="com.greenday.ins.Maria"
+	        android:label="@string/maria_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Poprocks"
+	        android:label="@string/poprocks_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Longview"
+	        android:label="@string/longview_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Welcomeparadise"
+	        android:label="@string/welcomeparadise_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Basketcase"
+	        android:label="@string/basketcase_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Whencomearound"
+	        android:label="@string/whencomearound_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.She"
+	        android:label="@string/she_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.JAR"
+	        android:label="@string/jar_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Geekstink"
+	        android:label="@string/geekstink_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Brainstew"
+	        android:label="@string/brainstew_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Jaded"
+	        android:label="@string/jaded_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Walking"
+	        android:label="@string/walking_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Stuckwithme"
+	        android:label="@string/stuckwithme_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Hitchinaride"
+	        android:label="@string/hitchinaride_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Goodriddance"
+	        android:label="@string/goodriddance_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Redundant"
+	        android:label="@string/redundant_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Niceguys"
+	        android:label="@string/niceguys_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Minority"
+	        android:label="@string/minority_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Warning"
+	        android:label="@string/warning_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Waiting"
+	        android:label="@string/waiting_title"
+	         ></activity>
+	    <activity android:name="com.greenday.ins.Macy"
+	        android:label="@string/macy_title"
+	         ></activity>
+	    
+	    <!-- 39/Smooth -->
+	    <activity android:name="com.greenday.tns.Thousandhours"
+	        android:label="@string/thousandhours_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Sixteen"
+	        android:label="@string/sixteen_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Coffeemaker"
+	        android:label="@string/coffeemaker_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Atlibrary"
+	        android:label="@string/atlibrary_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Disappearingboy"
+	        android:label="@string/disappearingboy_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Dontleaveme"
+	        android:label="@string/dontleaveme_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Dryice"
+	        android:label="@string/dryice_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Goingpasalacqua"
+	        android:label="@string/goingpasalacqua_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Greenday"
+	        android:label="@string/greenday_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Wantbealone"
+	        android:label="@string/wantbealone_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Iwasthere"
+	        android:label="@string/iwasthere_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Knowledge"
+	        android:label="@string/knowledge_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Onlyofyou"
+	        android:label="@string/onlyofyou_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Paperlanterns"
+	        android:label="@string/paperlanterns_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Rest"
+	        android:label="@string/rest_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Roadtoacceptance"
+	        android:label="@string/roadtoacceptance_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Judgedaughter"
+	        android:label="@string/judgedaughter_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Oneiwant"
+	        android:label="@string/oneiwant_title"
+	         ></activity>
+	    <activity android:name="com.greenday.tns.Whyyouwanthim"
+	        android:label="@string/whyyouwanthim_title"
+	         ></activity>
 	    
         <!-- for expanding menu bar-  android:uiOptions="splitActionBarWhenNarrow" -->
         

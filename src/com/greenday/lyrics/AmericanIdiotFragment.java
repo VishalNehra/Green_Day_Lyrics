@@ -118,9 +118,4 @@ public class AmericanIdiotFragment extends Fragment{
     }
    
 }
-            
-            	
-            
-
-
-
+ 

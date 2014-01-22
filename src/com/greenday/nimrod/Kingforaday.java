@@ -58,7 +58,7 @@ public class Kingforaday extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Kingforaday.class);
 		    log.info("Nimrod/King For A Day");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

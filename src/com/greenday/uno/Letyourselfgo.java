@@ -55,7 +55,7 @@ public class Letyourselfgo extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Letyourselfgo.class);
 				    log.info("UNO/Let Yourself Go");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

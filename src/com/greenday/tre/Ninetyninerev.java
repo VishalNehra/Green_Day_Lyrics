@@ -55,7 +55,7 @@ public class Ninetyninerev extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Ninetyninerev.class);
 			    log.info("TRE/99 Revolutions");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

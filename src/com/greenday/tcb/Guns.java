@@ -55,7 +55,7 @@ public class Guns extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Guns.class);
 		    log.info("21st Centuary Breakdown/21 Guns");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

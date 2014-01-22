@@ -54,7 +54,7 @@ public class Holiday extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Holiday.class);
 			    log.info("American Idiot/Holiday");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

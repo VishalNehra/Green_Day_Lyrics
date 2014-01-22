@@ -54,7 +54,7 @@ public class Goodriddance extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Goodriddance.class);
 		    log.info("Nimrod/Good Riddance Time Of Your Life");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

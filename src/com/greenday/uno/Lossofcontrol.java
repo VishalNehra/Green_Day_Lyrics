@@ -55,7 +55,7 @@ public class Lossofcontrol extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Lossofcontrol.class);
 				    log.info("UNO/Loss Of Control");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

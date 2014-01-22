@@ -55,7 +55,7 @@ public class Angelblue extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Angelblue.class);
 			    log.info("UNO/Angel Blue");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

@@ -55,7 +55,7 @@ public class Macy extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Macy.class);
 		    log.info("Warning/Macy's Day Parade");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

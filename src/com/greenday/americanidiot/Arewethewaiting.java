@@ -54,7 +54,7 @@ public class Arewethewaiting extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Arewethewaiting.class);
 			    log.info("American Idiot/Are We The Waiting");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

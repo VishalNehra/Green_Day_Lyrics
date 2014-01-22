@@ -54,7 +54,7 @@ public class Outsider extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Outsider.class);
 			    log.info("Shenanigans/Outsider");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

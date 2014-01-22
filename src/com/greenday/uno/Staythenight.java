@@ -55,7 +55,7 @@ public class Staythenight extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Staythenight.class);
 				    log.info("UNO/Stay The Night");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

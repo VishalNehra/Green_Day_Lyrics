@@ -55,7 +55,7 @@ public class Castaway extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Castaway.class);
 				    log.info("Warning/Castaway");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

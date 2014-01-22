@@ -55,7 +55,7 @@ public class Avesrnde extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Avesrnde.class);
 			    log.info("TRE/8th Avenue Serenade");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

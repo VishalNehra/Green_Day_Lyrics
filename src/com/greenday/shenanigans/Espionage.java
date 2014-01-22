@@ -54,7 +54,7 @@ public class Espionage extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Espionage.class);
 			    log.info("Shenanigans/Espionage");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

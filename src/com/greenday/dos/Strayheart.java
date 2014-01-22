@@ -55,7 +55,7 @@ public class Strayheart extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Strayheart.class);
 				    log.info("DOS/Stray Heart");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

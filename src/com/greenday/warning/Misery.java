@@ -55,7 +55,7 @@ public class Misery extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Misery.class);
 		    log.info("Warning/Misery");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

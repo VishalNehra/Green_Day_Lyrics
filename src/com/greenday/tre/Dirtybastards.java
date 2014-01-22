@@ -55,7 +55,7 @@ public class Dirtybastards extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Dirtybastards.class);
 			    log.info("TRE/Dirty Rotten Bastards");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

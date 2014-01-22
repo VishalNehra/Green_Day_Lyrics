@@ -54,7 +54,7 @@ public class Desensitized extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Desensitized.class);
 		    log.info("Shenanigans/Desensitized");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

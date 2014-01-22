@@ -55,7 +55,7 @@ public class Nightlife extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Nightlife.class);
 				    log.info("DOS/Nightlife");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

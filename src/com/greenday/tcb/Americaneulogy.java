@@ -55,7 +55,7 @@ public class Americaneulogy extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Americaneulogy.class);
 			    log.info("21st Centuary Breakdown/American Euology");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

@@ -58,7 +58,7 @@ public class Jinx extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Jinx.class);
 		    log.info("Nimrod/Jinx");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

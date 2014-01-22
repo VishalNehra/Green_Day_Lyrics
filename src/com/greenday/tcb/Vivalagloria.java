@@ -55,7 +55,7 @@ public class Vivalagloria extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Vivalagloria.class);
 		    log.info("21st Centuary Breakdown/Viva La Gloria");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

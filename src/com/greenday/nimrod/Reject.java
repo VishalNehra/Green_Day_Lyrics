@@ -58,7 +58,7 @@ public class Reject extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Reject.class);
 		    log.info("Nimrod/Reject");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

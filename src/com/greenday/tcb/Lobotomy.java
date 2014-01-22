@@ -55,7 +55,7 @@ public class Lobotomy extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Lobotomy.class);
 		    log.info("21st Centuary Breakdown/Before The Lobotomy");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

@@ -54,7 +54,7 @@ public class Murdercity extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Murdercity.class);
 		    log.info("21st Centuary Breakdown/Murder City");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

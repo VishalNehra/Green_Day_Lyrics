@@ -58,7 +58,7 @@ public class Scattered extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Scattered.class);
 		    log.info("Nimrod/Scattered");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

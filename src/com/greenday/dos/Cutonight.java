@@ -55,7 +55,7 @@ public class Cutonight extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Cutonight.class);
 				    log.info("DOS/See You Tonight");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

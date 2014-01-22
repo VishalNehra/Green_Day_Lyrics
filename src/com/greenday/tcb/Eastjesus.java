@@ -55,7 +55,7 @@ public class Eastjesus extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Eastjesus.class);
 		    log.info("21st Centuary Breakdown/East Jesus Nowhere");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

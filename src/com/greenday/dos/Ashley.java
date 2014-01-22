@@ -55,7 +55,7 @@ public class Ashley extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Ashley.class);
 				    log.info("DOS/Ashley");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

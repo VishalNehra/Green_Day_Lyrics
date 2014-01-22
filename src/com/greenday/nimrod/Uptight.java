@@ -58,7 +58,7 @@ public class Uptight extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Uptight.class);
 		    log.info("Nimrod/Uptight");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

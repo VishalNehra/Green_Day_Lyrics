@@ -58,7 +58,7 @@ public class Takeback extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Takeback.class);
 		    log.info("Nimrod/Take Back");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

@@ -55,7 +55,7 @@ public class Jesusofsuburb extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Jesusofsuburb.class);
 			    log.info("American Idiot/Jesus Of Suburbia");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

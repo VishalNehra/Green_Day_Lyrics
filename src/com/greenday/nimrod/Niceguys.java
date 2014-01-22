@@ -54,7 +54,7 @@ public class Niceguys extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Niceguys.class);
 		    log.info("Nimrod/Nice Guys Finish Last");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

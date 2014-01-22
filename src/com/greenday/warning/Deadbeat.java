@@ -55,7 +55,7 @@ public class Deadbeat extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Deadbeat.class);
 		    log.info("Warning/Deadbeat Holiday");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

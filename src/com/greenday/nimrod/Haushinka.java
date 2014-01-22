@@ -54,7 +54,7 @@ public class Haushinka extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Haushinka.class);
 		    log.info("Nimrod/Haushinka");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

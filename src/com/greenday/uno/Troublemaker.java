@@ -55,7 +55,7 @@ public class Troublemaker extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Troublemaker.class);
 				    log.info("UNO/Troublemaker");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

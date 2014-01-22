@@ -55,7 +55,7 @@ public class Theforgotten extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Theforgotten.class);
 			    log.info("TRE/The Forgotten");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

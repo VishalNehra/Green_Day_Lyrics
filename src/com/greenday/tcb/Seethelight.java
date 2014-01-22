@@ -55,7 +55,7 @@ public class Seethelight extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Seethelight.class);
 		    log.info("21st Centuary Breakdown/See The Light");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

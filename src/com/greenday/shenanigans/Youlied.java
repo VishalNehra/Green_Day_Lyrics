@@ -54,7 +54,7 @@ public class Youlied extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Youlied.class);
 			    log.info("Shenanigans/You Lied");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

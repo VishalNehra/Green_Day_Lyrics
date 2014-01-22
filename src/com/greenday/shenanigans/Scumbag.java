@@ -54,7 +54,7 @@ public class Scumbag extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Scumbag.class);
 			    log.info("Shenanigans/Scumbag");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

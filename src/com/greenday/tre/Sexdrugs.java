@@ -55,7 +55,7 @@ public class Sexdrugs extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Sexdrugs.class);
 			    log.info("TRE/Sex, Drugs And Violence");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

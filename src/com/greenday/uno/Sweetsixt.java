@@ -55,7 +55,7 @@ public class Sweetsixt extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Sweetsixt.class);
 				    log.info("UNO/Sweet 16");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

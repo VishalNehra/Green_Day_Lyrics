@@ -55,7 +55,7 @@ public class Bloodsex extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Bloodsex.class);
 				    log.info("Warning/Blood Sex And Booze");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

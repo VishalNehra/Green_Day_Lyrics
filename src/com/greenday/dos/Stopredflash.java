@@ -55,7 +55,7 @@ public class Stopredflash extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Stopredflash.class);
 				    log.info("DOS/Stop When Red Lights Flash");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

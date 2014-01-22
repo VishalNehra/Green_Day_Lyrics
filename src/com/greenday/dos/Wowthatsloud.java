@@ -55,7 +55,7 @@ public class Wowthatsloud extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Wowthatsloud.class);
 				    log.info("DOS/Wow That's Loud");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

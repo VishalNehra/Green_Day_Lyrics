@@ -54,7 +54,7 @@ public class Hitchinaride extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Hitchinaride.class);
 		    log.info("Nimrod/Hitchin' A Ride");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

@@ -55,7 +55,7 @@ public class Lazybones extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Lazybones.class);
 				    log.info("DOS/Lazy Bones");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

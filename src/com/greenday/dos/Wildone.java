@@ -55,7 +55,7 @@ public class Wildone extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Wildone.class);
 				    log.info("DOS/Wild One");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

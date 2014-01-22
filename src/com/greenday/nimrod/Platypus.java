@@ -58,7 +58,7 @@ public class Platypus extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Platypus.class);
 		    log.info("Nimrod/Platypus I Hate You");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

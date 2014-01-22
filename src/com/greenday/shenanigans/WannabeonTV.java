@@ -54,7 +54,7 @@ public class WannabeonTV extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(WannabeonTV.class);
 			    log.info("Shenanigans/I Want To Be On T.V.");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

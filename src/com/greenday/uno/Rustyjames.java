@@ -55,7 +55,7 @@ public class Rustyjames extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Rustyjames.class);
 				    log.info("UNO/Rusty James");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

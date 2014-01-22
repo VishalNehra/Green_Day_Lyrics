@@ -55,7 +55,7 @@ public class Fellforyou extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Fellforyou.class);
 				    log.info("UNO/Fell For You");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

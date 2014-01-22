@@ -55,7 +55,7 @@ public class Inferno extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Inferno.class);
 		    log.info("21st Centuary Breakdown/Christian's Inferno");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

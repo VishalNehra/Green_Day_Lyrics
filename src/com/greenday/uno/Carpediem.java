@@ -55,7 +55,7 @@ public class Carpediem extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+				    Logger log = LoggerFactory.getLogger(Carpediem.class);
 				    log.info("UNO/Carpe Diem");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}

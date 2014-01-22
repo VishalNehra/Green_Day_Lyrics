@@ -58,7 +58,7 @@ public class Prosthetichead extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Prosthetichead.class);
 		    log.info("Nimrod/Prosthetic Head");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

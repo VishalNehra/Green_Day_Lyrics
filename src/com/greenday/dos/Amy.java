@@ -55,7 +55,7 @@ public class Amy extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Amy.class);
 			    log.info("DOS/Amy");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

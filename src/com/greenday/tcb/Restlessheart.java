@@ -54,7 +54,7 @@ public class Restlessheart extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Restlessheart.class);
 		    log.info("21st Centuary Breakdown/Restless Heart Syndrome");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

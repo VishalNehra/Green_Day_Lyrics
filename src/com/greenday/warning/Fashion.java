@@ -55,7 +55,7 @@ public class Fashion extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Fashion.class);
 		    log.info("Warning/Fashion Victim");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

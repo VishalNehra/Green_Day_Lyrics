@@ -55,7 +55,7 @@ public class Knowyourenemy extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Knowyourenemy.class);
 		    log.info("21st Centuary Breakdown/Know Your Enemy");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

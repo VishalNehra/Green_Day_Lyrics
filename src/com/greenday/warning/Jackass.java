@@ -55,7 +55,7 @@ public class Jackass extends Activity {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+		    Logger log = LoggerFactory.getLogger(Jackass.class);
 		    log.info("Warning/Jackass");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
 		}

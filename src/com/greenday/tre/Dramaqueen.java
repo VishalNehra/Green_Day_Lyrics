@@ -55,7 +55,7 @@ public class Dramaqueen extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Dramaqueen.class);
 			    log.info("TRE/Drama Queen");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}

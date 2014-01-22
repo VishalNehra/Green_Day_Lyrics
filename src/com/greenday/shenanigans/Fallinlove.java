@@ -54,7 +54,7 @@ public class Fallinlove extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Fallinlove.class);
 			    log.info("Shenanigans/Don't Wanna Fall In Love");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
 			}
