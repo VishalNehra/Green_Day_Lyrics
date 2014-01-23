@@ -6,12 +6,6 @@
     android:background="@drawable/tns_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_tns" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -23,20 +17,49 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nSitting in my room last night\n
+Staring at the mirror\n
+I couldn't find a reason why\n
+I couldn't be near her\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+'Cause you are the one that started\n
+To make me feel this way\n
+And every night I'm thinking\n
+About the words you'd say\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Pictures going through my mind\n
+When we're together\n
+All these long \n
+And sleepless nights\n
+Will I ever get better\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+'Cause you are the one that started\n
+To make me feel this way\n
+And every night \n
+I'm thinking\n
+About the words you'd say\n
+'Cause you are \n
+THE ONE THAT I WANT\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Now you know how I feel\n
+This love is forever\n
+You make my life seem so unreal\n
+Will I ever get better? ...\n
+\n
+'Cause you are \n
+The one that started\n
+To make me feel this way\n
+And every night I'm thinking\n
+About the words you'd say\n
+'Cause you are \n
+THE ONE THAT I WANT"/>
 </ScrollView>
-
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_tns"
+    android:background="@null" />
 </RelativeLayout>

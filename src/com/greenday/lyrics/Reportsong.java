@@ -4,6 +4,9 @@ import org.acra.ACRA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -46,7 +49,6 @@ public class Reportsong extends Activity {
 				finish();
 			}
 		});
-
 	}
 }
 

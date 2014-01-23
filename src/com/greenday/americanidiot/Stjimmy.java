@@ -7,6 +7,9 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -57,9 +60,9 @@ public class Stjimmy extends Activity {
 			    Logger log = LoggerFactory.getLogger(Stjimmy.class);
 			    log.info("American Idiot/St. Jimmy");
 				startActivity(new Intent(getApplicationContext(), Reportsong.class));
+				
 			}
 		            return super.onOptionsItemSelected(item);
-			
 		}
 		
 	}

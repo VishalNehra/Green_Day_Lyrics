@@ -6,12 +6,6 @@
     android:background="@drawable/nimrod_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_nimrod" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -58,5 +52,12 @@ And I'll guarantee we'll have the road\n
 And I'll guarantee we'll have the road\n
 And I'll guarantee we'll have the road"/>
 </ScrollView>
-
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_nimrod"
+    android:background="@null" />
 </RelativeLayout>

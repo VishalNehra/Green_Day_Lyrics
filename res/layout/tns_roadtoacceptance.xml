@@ -6,12 +6,6 @@
     android:background="@drawable/tns_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_tns" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -23,20 +17,85 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI always waste my \n
+time just wondering\n
+What the next man thinks of me\n
+I'll never do exactly what I want\n
+And I'll sculpt my \n
+Life for your acceptance\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I always waste my time just wondering\n
+What the next man thinks of me\n
+I'll never do exactly what I want\n
+And I'll sculpt my \n
+Life for your acceptance\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+And I feel forgotten\n
+Feel like rotting\n
+(Do you feel the same?)\n
+(Do you feel the same?)\n
+Adolescence\n
+Just can't make sense\n
+(It's calling my name)\n
+(It's calling my name)\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I take a look around\n
+And all the things I've found\n
+I call it blind hatred\n
+If you'd stop a while\n
+And maybe if you'd smile\n
+You would realize that\n
+We're all the same\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+It's just like our brain\n
+When it goes insane\n
+We feel the same pain\n
+\n
+All my life \n
+I've seemed to have this need\n
+I think at times it even turns to greed\n
+We all want to join some family\n
+We'll even sacrifice a moral changing\n
+\n
+And I feel forgotten\n
+Feel like rotting\n
+(Do you feel the same?)\n
+(Do you feel the same?)\n
+Adolescence\n
+Just can't make sense\n
+(It's calling my name)\n
+(It's calling my name)\n
+\n
+I take a look around\n
+And all the things I've found\n
+I call it blind hatred\n
+If you'd stop a while\n
+And maybe if you'd smile\n
+You would realize that\n
+We're all the same\n
+\n
+It's just like our brain\n
+When it goes insane\n
+We feel the same pain\n
+\n
+I take a look around\n
+And all the things I've found\n
+I call it blind hatred\n
+If you'd stop a while\n
+And maybe if you'd smile\n
+You would realize that\n
+We're all the same\n
+\n
+It's just like our brain\n
+When it goes insane\n
+We feel the same pain"/>
 </ScrollView>
-
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_tns"
+    android:background="@null" />
 </RelativeLayout>

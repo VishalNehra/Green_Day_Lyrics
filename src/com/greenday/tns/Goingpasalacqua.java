@@ -24,7 +24,7 @@ public class Goingpasalacqua extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tns_thousandhours);
+		setContentView(R.layout.tns_goingpasalacqua);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		

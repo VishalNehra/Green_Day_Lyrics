@@ -6,12 +6,6 @@
     android:background="@drawable/tns_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_tns" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -23,20 +17,45 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nHey there lookin' at me\n
+Tell me what do you see\n
+But you quickly turn your head away\n
+Try to find the words I could use\n
+Don't have the courage \n
+to come up to you\n
+My chance is looking a bit grey\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Staring across the room\n
+Are you leaving soon?\n
+I just need a little time\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+What is it that drives me mad\n
+Girls like you that I never had\n
+What is it about you that I adore?\n
+What makes me feel so much pain?\n
+That makes me go so insane\n
+What is it about you that I adore?\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Staring across the room\n
+Are you leaving soon?\n
+I just need a little time \n
+(what time, ah!)\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Why did you have to leave so soon?\n
+Why did you have to walk away?\n
+Oh, well, it happened again\n
+She walked away with her boyfriend\n
+Maybe we'll meet again someday.\n
+Maybe we'll meet again someday.\n
+Maybe we'll meet again someday.\n
+Someday"/>
 </ScrollView>
-
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_tns"
+    android:background="@null" />
 </RelativeLayout>

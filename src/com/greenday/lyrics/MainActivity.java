@@ -4,6 +4,9 @@ package com.greenday.lyrics;
 
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
  
 import java.util.ArrayList;
  
@@ -50,9 +53,23 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
         mTitle = mDrawerTitle = getTitle();
- 
+        //Crouton Toast
+        boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
+
+        if (firstboot){
+            // 1) Launch the authentication activity
+        	Crouton.makeText(this, "Welcome!", Style.CONFIRM).show();
+            Crouton.makeText(this, "Slide from left corner towards right to get started", Style.INFO).show();
+            // 2) Then save the state
+        
+            getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+                .edit()
+                .putBoolean("firstboot", false)
+                .commit();
+        }
+        
+        //Crouton toast ends
         // load slide menu items
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
  
@@ -287,6 +304,10 @@ public class MainActivity extends Activity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-    
+    //Protect crouton to display on orientation change
+    protected void onDestroy() {
+        Crouton.clearCroutonsForActivity(this);
+        super.onDestroy();
+      }
     
 }

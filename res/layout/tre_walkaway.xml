@@ -6,12 +6,6 @@
     android:background="@drawable/tre_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_tre" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -93,5 +87,12 @@ Walk away\n
 \n
 Walk away"/>
 </ScrollView>
-
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_tre"
+    android:background="@null" />
 </RelativeLayout>

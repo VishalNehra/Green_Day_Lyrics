@@ -22,9 +22,10 @@ import android.app.Application;
 				ReportField.STACK_TRACE,
 				ReportField.APPLICATION_LOG
 								 },
-				mode = ReportingInteractionMode.TOAST,
+		/*		mode = ReportingInteractionMode.TOAST,
                 forceCloseDialogAfterToast = false, // optional, default false
-                resToastText = R.string.crash_toast_text,
+                resToastText = R.string.crash_toast_text, */
+								 
                 applicationLogFile = "/data/data/com.greenday.lyrics/files/log/extra.log"
 		)
 public class MyApplication extends Application {
