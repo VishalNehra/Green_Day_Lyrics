@@ -17,20 +17,55 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nSomething's on my mind\n
+It's been for quite some time\n
+This time I'm on to you\n
+So where's the other face?\n
+The face I heard before\n
+Your head trip's boring me\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Let's nuke the bridge we torched\n
+2,000 times before\n
+This time we'll blast it all to hell\n
+I've had this burning in my guts now\n
+for so long\n
+My belly's aching now to say\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Stuck down in a rut of dislogic and smut\n
+A side of you well hid\n
+When it's all said and done\n
+it's real and it's been fun\n
+But was it all REAL fun\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Let's nuke the bridge we torched\n
+2,000 times before\n
+This time we'll blast it all to hell\n
+I've felt this burning in my guts now\n
+for so long\n
+My belly's aching now to say\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+to say...\n
+\n
+You're just... a fuck,\n
+I can't explain it 'cause I think you suck.\n
+I'm take-\n
+-in pride\n
+in telling you to fuck off and die.\n
+\n
+I've had this burning in my guts now\n
+for so long\n
+My belly's aching now to say\n
+I'm taking pleasure in the doubts\n
+I've passed to you\n
+So listen up as you bite thisssss...\n
+\n
+You're just... a fuck,\n
+I can't explain it 'cause I think you suck.\n
+I'm take-\n
+-in pride\n
+in telling you to fuck off and die.\n
+\n
+Goood niiiiiiiiight...."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

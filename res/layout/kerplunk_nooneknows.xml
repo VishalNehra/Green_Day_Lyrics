@@ -17,20 +17,41 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nWhy should my fun have to end?\n
+For me it's only the beginning\n
+I see my friends begin to age\n
+A short countdown to what end\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Call me irresponsible\n
+Call me habitual\n
+But when you think of me\n
+Do you fill your head with schemes\n
+Better think again\n
+Cause no one knows\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I don't want to cause no harm\n
+But sometimes my actions hurt\n
+Is there something I should find\n
+To make plans for forever\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Call me irresponsible\n
+Call me habitual\n
+But when you think of me\n
+Do you fill your head with schemes\n
+Better think again\n
+Cause no one knows\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Call me irresponsible\n
+Call me habitual\n
+But when you think of me\n
+Do you fill your head with schemes\n
+Better think again\n
+Cause no one knows\n
+\n
+Does it seem like all your memories fade\n
+You soak up knowledge to fill the space\n
+And still my answer remains...\n
+I don't know"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

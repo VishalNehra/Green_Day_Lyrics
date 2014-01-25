@@ -17,20 +17,48 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nHey old man in woman's shoes\n
+I wonder if he knows I think he's crazy\n
+When he was young did he have dreams\n
+Of wearing woman's shoes and being crazy?\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+It makes me wonder when I grow to be that age\n
+Will I be walking down the street begging for your spare change\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Or will I grow that old?\n
+Will I still be around?\n
+The way I carry on I'll end up\n
+Six feet underground\n
+And waste away...\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+When the old man was in school\n
+Did the golden rule make him go crazy\n
+Or did he hide away from hopes\n
+Behind a smile and smoking dope\n
+It's crazy\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+It makes me wonder when I grow to be that age\n
+Will I be walking down the street begging for your spare change\n
+\n
+Or will I grow that old?\n
+Will I still be around?\n
+The way I carry on I'll end up\n
+Six feet underground\n
+And waste away...\n
+\n
+It seems so frightening\n
+Time passes by like lightning\n
+Before you know it you're struck down\n
+I always waste my time on my chemical emotions\n
+It keeps my head spinning around\n
+And waste away...\n
+\n
+It seems so frightening\n
+Time passes by like lightning\n
+Before you know it you're struck down\n
+I always waste my time on my chemical emotions\n
+It keeps my head spinning around\n
+And waste away..."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

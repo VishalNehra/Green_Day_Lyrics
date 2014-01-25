@@ -17,20 +17,54 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nSit around and watch the tube, \n
+but nothing's on\n
+I change the channels for an hour or two\n
+Twiddle my thumbs just for a bit\n
+I'm sick of all the same old shit\n
+In a house with unlocked doors\n
+And I'm fucking lazy\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Bite my lip and close my eyes\n
+Take me away to paradise\n
+I'm so damn bored I'm going blind\n
+And I smell like shit\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Peel me off this Velcro seat and get me moving\n
+I sure as hell can't do it by myself\n
+I'm feeling like a dog in heat\n
+Barred indoors from the summer street\n
+I locked the door to my own cell\n
+And I lost the key\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Bite my lip and close my eyes\n
+Take me away to paradise\n
+I'm so damn bored I'm going blind\n
+And I smell like shit\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I got no motivation\n
+Where is my motivation?\n
+No time for the motivation\n
+Smoking my inspiration\n
+\n
+Sit around and watch the phone, \n
+but no one's calling\n
+Call me pathetic, \n
+call me what you will\n
+My mother says to get a job\n
+But she don't like the one she's got\n
+When masturbation's lost its fun\n
+You're fucking lonely\n
+\n
+Bite my lip and close my eyes\n
+Take me away to paradise\n
+I'm so damn bored\n
+I'm going blind\n
+And loneliness has to suffice\n
+Bite my lip and close my eyes\n
+I was slipping away to paradise\n
+Some say, 'Quit or I'll go blind.'\n
+But it's just a myth"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

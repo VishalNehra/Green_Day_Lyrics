@@ -17,20 +17,39 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nJuliet's trying to find out what she wants, 
+\nbut she don't know\n
+Experience has got her down\n
+Look this direction, I know it's not perfection, \n
+it's just me...\n
+I want to bring you up again now\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Cause' I'm losing what's left of my dignity\n
+A small price to pay to see that you're happy\n
+Forget all the disappointments you have faced\n
+Open up your worried world and let me in\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Juliet's crying cause now \n
+She's realizing love can be\n
+Filled with pain and distrust\n
+I know I am crazy, and a bit lazy\n
+But I will try to bring you up again now\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Cause' I'm losing what's left of my dignity\n
+A small price to pay to see that you're happy\n
+Forget all the disappointments you have faced\n
+Open up your worried world and let me in\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Juliet's crying cause now \n
+She's realizing love can be\n
+Filled with pain and distrust\n
+I know I am crazy, and a bit lazy\n
+But I will try to bring you up again some how\n
+\n
+Cause' I'm losing what's left of my dignity\n
+A small price to pay to see that you're happy\n
+Forget all the disappointments you have faced\n
+Open up your worried world and let me in"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

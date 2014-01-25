@@ -21,6 +21,7 @@ import com.greenday.ins.Walking;
 import com.greenday.ins.Warning;
 import com.greenday.ins.Welcomeparadise;
 import com.greenday.ins.Whencomearound;
+import com.greenday.unreleased.Allbymyself;
 import com.greenday.unreleased.Cigarettes;
 import com.greenday.unreleased.Favouriteson;
 import com.greenday.unreleased.Foughtlaw;
@@ -63,7 +64,8 @@ public class UnreleasedFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tA Quick One While He's Away",
+        String[] values = new String[] {"\t\t\t\t\tAll By Myself",
+        		"\t\t\t\t\tA Quick One While He's Away",
         		"\t\t\t\t\tAnother State Of Mind",
         		"\t\t\t\t\tCigarettes And Valentines",
         		"\t\t\t\t\tFavourite Son",
@@ -102,59 +104,62 @@ public class UnreleasedFragment extends Fragment {
                 		 Fragment fragment = null;
                 		 switch(position)
                          {
-                         case 0:  Intent newActivity = new Intent(getActivity(), Quickone.class);     
-                         		  startActivityForResult(newActivity, 0);
+                         case 0:  Intent newActivity = new Intent(getActivity(), Allbymyself.class);     
+		                		  startActivityForResult(newActivity, 0);
+		                          break;
+                         case 1:  Intent newActivity1 = new Intent(getActivity(), Quickone.class);     
+                         		  startActivityForResult(newActivity1, 0);
                                   break;
-                         case 1:  Intent newActivity1 = new Intent(getActivity(), Stateofmind.class);     
-                                  startActivityForResult(newActivity1, 1);
+                         case 2:  Intent newActivity2 = new Intent(getActivity(), Stateofmind.class);     
+                                  startActivityForResult(newActivity2, 1);
                                   break;
-                         case 2:  Intent newActivity2 = new Intent(getActivity(), Cigarettes.class);     
-        			              startActivityForResult(newActivity2, 1);
+                         case 3:  Intent newActivity3 = new Intent(getActivity(), Cigarettes.class);     
+        			              startActivityForResult(newActivity3, 1);
         			              break;
-                         case 3:  Intent newActivity3 = new Intent(getActivity(), Favouriteson.class);     
-        	              		  startActivityForResult(newActivity3, 1);
+                         case 4:  Intent newActivity4 = new Intent(getActivity(), Favouriteson.class);     
+        	              		  startActivityForResult(newActivity4, 1);
         	              		  break;
-                         case 4:  Intent newActivity4 = new Intent(getActivity(), Governator.class);     
-        		         		  startActivityForResult(newActivity4, 1);
+                         case 5:  Intent newActivity5 = new Intent(getActivity(), Governator.class);     
+        		         		  startActivityForResult(newActivity5, 1);
         		         		  break;
-                         case 5:  Intent newActivity5 = new Intent(getActivity(), Heartscollide.class);     
-        		        		  startActivityForResult(newActivity5, 1);
+                         case 6:  Intent newActivity6 = new Intent(getActivity(), Heartscollide.class);     
+        		        		  startActivityForResult(newActivity6, 1);
         		        		  break;
-                         case 6:  Intent newActivity6 = new Intent(getActivity(), Foughtlaw.class);     
-        			       		  startActivityForResult(newActivity6, 1);
-        			       		  break;
-                         case 7:  Intent newActivity7 = new Intent(getActivity(), Kissingsanta.class);     
+                         case 7:  Intent newActivity7 = new Intent(getActivity(), Foughtlaw.class);     
         			       		  startActivityForResult(newActivity7, 1);
         			       		  break;
-                         case 8:  Intent newActivity8 = new Intent(getActivity(), Likeastone.class);     
+                         case 8:  Intent newActivity8 = new Intent(getActivity(), Kissingsanta.class);     
         			       		  startActivityForResult(newActivity8, 1);
         			       		  break;
-                         case 9:  Intent newActivity9 = new Intent(getActivity(), Mechanicalman.class);     
+                         case 9:  Intent newActivity9 = new Intent(getActivity(), Likeastone.class);     
         			       		  startActivityForResult(newActivity9, 1);
-        			       		  break; 
-                         case 10: Intent newActivity10 = new Intent(getActivity(), Minnesotagirl.class);     
+        			       		  break;
+                         case 10:  Intent newActivity10 = new Intent(getActivity(), Mechanicalman.class);     
         			       		  startActivityForResult(newActivity10, 1);
         			       		  break; 
-                         case 11: Intent newActivity11 = new Intent(getActivity(), Shoplifter.class);     
+                         case 11: Intent newActivity11 = new Intent(getActivity(), Minnesotagirl.class);     
         			       		  startActivityForResult(newActivity11, 1);
-        			       		  break;
-                         case 12: Intent newActivity12 = new Intent(getActivity(), Shout.class);     
+        			       		  break; 
+                         case 12: Intent newActivity12 = new Intent(getActivity(), Shoplifter.class);     
         			       		  startActivityForResult(newActivity12, 1);
         			       		  break;
-                         case 13: Intent newActivity13 = new Intent(getActivity(), Teenage.class);     
-					       		  startActivityForResult(newActivity13, 1);
-					       		  break;
-                         case 14: Intent newActivity14 = new Intent(getActivity(), Thatsallright.class);     
+                         case 13: Intent newActivity13 = new Intent(getActivity(), Shout.class);     
+        			       		  startActivityForResult(newActivity13, 1);
+        			       		  break;
+                         case 14: Intent newActivity14 = new Intent(getActivity(), Teenage.class);     
 					       		  startActivityForResult(newActivity14, 1);
 					       		  break;
-                         case 15: Intent newActivity15 = new Intent(getActivity(), Toomuch.class);     
+                         case 15: Intent newActivity15 = new Intent(getActivity(), Thatsallright.class);     
 					       		  startActivityForResult(newActivity15, 1);
 					       		  break;
-                         case 16: Intent newActivity16 = new Intent(getActivity(), Wearechampions.class);     
+                         case 16: Intent newActivity16 = new Intent(getActivity(), Toomuch.class);     
 					       		  startActivityForResult(newActivity16, 1);
 					       		  break;
-                         case 17: Intent newActivity17 = new Intent(getActivity(), Workingclasshero.class);     
+                         case 17: Intent newActivity17 = new Intent(getActivity(), Wearechampions.class);     
 					       		  startActivityForResult(newActivity17, 1);
+					       		  break;
+                         case 18: Intent newActivity18 = new Intent(getActivity(), Workingclasshero.class);     
+					       		  startActivityForResult(newActivity18, 1);
 					       		  break;
                   
                       }

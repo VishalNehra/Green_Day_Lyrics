@@ -17,20 +17,25 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nLooking at the clouds in the sky\n
+floating image in my mind\n
+Now I wonder where this place is from\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Evidence is everywhere\n
+I start to run, now I'm scared\n
+Strange beings all around.\n
+Everyone come to this place I've found\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I'm feeling phyced\n
+walking? wonder why\n
+All my joys are open\n
+No more crimes\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+My eyes are clear and now I'm cured\n
+I only wanna be for sure\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Get in my mind and you will find\n
+Mother love from all mankind"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

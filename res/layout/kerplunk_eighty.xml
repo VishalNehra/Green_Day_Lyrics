@@ -17,20 +17,58 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nMy mental stability reaches \n
+ its bitter end\n
+And all my senses are coming unglued\n
+Is there any cure for this \n
+disease someone called love\n
+Not as long as there are girls like you\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Everything she does questions my mental health\n
+It makes me lose control\n
+I wanna hurt myself\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+If anyone can hear me \n
+slap some sense into me\n
+But you turn your head \n
+And I end up talking to myself\n
+Anxiety has got me strung out and frustrated\n
+So I loose my head or \n
+I bang it up against the wall\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Sometimes I wonder if I should be left alone\n
+And lock myself up in a padded room\n
+I'd sit and spew my guts out to the open air\n
+No one wants to hear a drunken fool\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Everything she does questions my mental health\n
+It makes me lose control\n
+I just can't trust myself\n
+\n
+If anyone can hear me \n
+slap some sense into me\n
+But you turn your head \n
+And I end up talking to myself\n
+Anxiety has got me strung out and frustrated\n
+So I loose my head or \n
+I bang it up against the wall\n
+\n
+I do not mind if this goes on\n
+Cause now it seems I'm too far gone\n
+I must admit I enjoy myself\n
+80 please keep taking me away\n
+\n
+Everything she does questions my mental health\n
+It makes me lose control\n
+I just can't trust myself\n
+\n
+If anyone can hear me \n
+slap some sense into me\n
+But you turn your head \n
+And I end up talking to myself\n
+Anxiety has got me strung out and frustrated\n
+So I loose my head or \n
+I bang it up against the wall"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

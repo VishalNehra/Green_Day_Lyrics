@@ -17,20 +17,41 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI'm all busted up\n
+Broken bones and nasty cuts\n
+Accidents will happen\n
+But this time I can't get up\n
+She comes to check on me\n
+Making sure I'm on my knees\n
+After all she's the one\n
+Who put me in this state\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Is she ultra-violent?\n
+Is she disturbed?\n
+I better tell her that I love her\n
+Before she does it all over again\n
+Oh god, she's killing me!!!\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+For now I'll lie around\n
+hell, that's all I can really do\n
+She takes good care of me\n
+Just keep saying my love is true\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Is she ultra-violent?\n
+Is she disturbed?\n
+I better tell her that I love her\n
+Before she does it all over again\n
+Oh god, she's killing me!!!\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Looking out my window for\n
+Someone that's passing by\n
+No one knows I'm locked in here\n
+All I do is cry\n
+\n
+For now I'll lie around\n
+hell, that's all I can really do\n
+She takes good care of me\n
+Just keep saying my love is true"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

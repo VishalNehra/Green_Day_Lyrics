@@ -17,20 +17,34 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nShe...\n
+She screams in silence\n
+A sullen riot penetrating through her mind\n
+Waiting for a sign\n
+To smash the silence with \n
+The brick of self-control\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+[Chorus:]\n
+Are you locked up in a world\n
+That's been planned out for you?\n
+Are you feeling like \n
+A social tool without a use?\n
+Scream at me until my ears bleed\n
+I'm taking heed just for you\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+She...\n
+She's figured out\n
+All her doubts were \n
+someone else's point of view\n
+Waking up this time\n
+To smash the silence with \n
+the brick of self-control\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+[Chorus]\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+EHHHHHH,AHHHHHHHHHH!!!\n
+\n
+[Chorus]"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

@@ -17,20 +17,49 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI'm taking all you down with me\n
+Explosives duct taped to my spine\n
+Nothings gonna change my mind\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I won't listen to anyone's last words\n
+There's nothing left for you to say\n
+Soon you'll be dead anyway\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+No one here is getting out alive\n
+This time I've really lost my mind \n
+And I don't care\n
+So close your eyes\n
+And kiss yourself goodbye\n
+And think about the times you spent \n
+And what they've meant\n
+To me it's nothing...\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I'm losing all my happiness\n
+The happiness you pinned on me\n
+Loneliness still comforts me\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+My anger dwells inside of me\n
+I'm taking it all out on you\n
+And the shit you put me through\n
+\n
+No one here is getting out alive\n
+This time I've really lost my mind \n
+And I don't care\n
+So close your eyes\n
+And kiss yourself goodbye\n
+And think about the times you spent \n
+And what they've meant\n
+To me its nothing...\n
+\n
+Do you ever think back to another time?\n
+Does it bring you so down \n
+That you thought you lost your mind?\n
+Do you ever want to lead a long trail of destruction\n
+and mow down any bullshit that confronts you?\n
+Do you ever build up all \n
+the small things in your head?\n
+To make one problem that adds up to nothing\n
+To me it's nothing..."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

@@ -17,20 +17,40 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nRoaming 'round your house\n
+WASTING YOUR TIME\n
+No obligation,just\n
+WASTING YOUR TIME\n
+So why are you alone?\n
+WASTING YOUR TIME\n
+When you could be with me\n
+WASTING YOUR TIME\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Well,I'm a WASTE like you\n
+With nothing else to do\n
+May I WASTE your time too?\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Warding off regrets\n
+WASTING YOUR TIME\n
+Smoking cigarettes\n
+WASTING YOUR TIME\n
+I'm just a PARASITE\n
+WASTING YOUR TIME\n
+APPLYING myself to\n
+WASTING YOUR TIME\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Well,I'm a WASTE like you\n
+With nothing else to do\n
+May I WASTE your time too?\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+So why are you alone?\n
+WASTING YOUR TIME\n
+When you could be with me\n
+WASTING YOUR TIME\n
+\n
+Well,I'm a WASTE like you\n
+With nothing else to do\n
+May I WASTE your time too?"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

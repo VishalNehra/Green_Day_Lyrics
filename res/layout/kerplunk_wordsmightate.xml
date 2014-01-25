@@ -17,20 +17,33 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nNow it seems I can't keep my mind of you\n
+My brain drifts back to \n
+better days we've been through\n
+Like sitting on blacktop of the school grounds\n
+The love I witched about I finally found\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+But now it's gone and I take the blame\n
+So there's nothing I can do but take the pain\n
+Why?\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Now I dwell on what you remind me of\n
+A sweet young girl who sacrificed her love\n
+As for me... I am blind without a cause\n
+And now I reazlied what I have lost\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+It was something real that I could have had\n
+Now I play the fool whose stable soul's gone bad\n
+Why?\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Tell me the words I might have said\n
+That's pumping pressure deep inside my head\n
+Was it bad enough to be too late?\n
+Just tell me the words I might have ate\n
+\n
+But now it's gone and I take the blame\n
+So there's nothing I can do but take the pain\n
+Why?"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

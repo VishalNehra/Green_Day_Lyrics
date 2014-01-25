@@ -11,10 +11,15 @@ import com.greenday.lyrics.Settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Oominated extends Activity {
@@ -27,7 +32,25 @@ public class Oominated extends Activity {
 		setContentView(R.layout.kerplunk_oominated);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
+		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog builder = new AlertDialog.Builder(Oominated.this)
+		        
+		        .setMessage("Writers:\n" +
+		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
+		        		"Copyright:\n" +
+		        		"Green Daze Music")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
 
 
 	}

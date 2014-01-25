@@ -17,20 +17,46 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\n[B.J. whispers 'I think I can do Who...'\n way down in the mix]\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Well, people try to put us down\n
+Talkin' bout my generation\n
+Just because we get around\n
+Talkin' bout my generation\n
+The things they do look awful cold\n
+Talkin' bout my generation\n
+I hope I die before I get old\n
+Talkin' bout my generation\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+My generation\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Why don't you all just fade away?\n
+Talkin' bout my generation\n
+And don't try to dig what we all say\n
+Talkin' bout my generation\n
+I'm not trying to cause a big sensation\n
+Talkin' bout my generation\n
+I'm just talkin' bout my generation\n
+Talkin' bout my generation\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+My generation.\n
+\n
+Heineken, fuck that shit!\n
+\n
+Why don't you all just fade away?\n
+Talkin' bout my generation\n
+And don't try to dig what we all say\n
+Talkin' bout my generation\n
+I'm not trying to cause a big sensation\n
+Talkin' bout my generation\n
+I'm just talkin' bout my generation\n
+Talkin' bout my generation\n
+\n
+My generation\n
+Talkin' bout my generation\n
+\n
+This is my generation\n
+This is my generation, baby"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

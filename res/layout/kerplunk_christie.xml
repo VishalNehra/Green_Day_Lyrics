@@ -17,20 +17,43 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nStaring out of my window\n
+Watching the cars go rolling by\n
+My friends are gone\n
+I've got nothing to do\n
+So I sit here patiently\n
+Watching the clock tick so slowly\n
+Gotta get away\n
+Or my brains will explode\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Give me something to do to kill some time\n
+Take me to that place that I call home\n
+Take away the strains of being lonely\n
+Take me to the tracks at Christie Road\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+See the hills from afar\n
+Standing on my beat up car\n
+The sun went down and the night fills the sky\n
+Now I feel like me once again\n
+As the train comes rolling in\n
+Smoked my boredom gone\n
+Slapped my brains up so high\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Give me something to do to kill some time\n
+Take me to that place that I call home\n
+Take away the strains of being lonely\n
+Take me to the tracks at Christie Road\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Mother stay out of my way of that place we go\n
+We'll always seem to find our way to Christie Road\n
+\n
+Mother stay out of my way of that place we go\n
+We'll always seem to find our way to Christie Road\n
+\n
+If there's one thing that I need\n
+That makes me feel complete\n
+So I go to Christie Road\n
+It's home..."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

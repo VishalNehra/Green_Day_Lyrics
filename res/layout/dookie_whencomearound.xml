@@ -17,20 +17,47 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI heard you crying loud,\n
+all the way across town\n
+You've been searching for that someone,\n
+and it's me out on the prowl\n
+As you sit around feeling sorry for yourself\n
+Well, don't get lonely now\n
+And dry your whining eyes\n
+I'm just roaming for the moment\n
+Sleazin' my back yard \n
+so don't get so uptight\n
+you been thinking about ditching me\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+No time to search the world around\n
+Cause you know where I'll be found\n
+When I come around\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I heard it all before\n
+So don't knock down my door\n
+I'm a loser and a user so \n
+I don't need no accuser\n
+to try and flag me down \n
+Because I know you're right\n
+So go do what you like\n
+Make sure you do it wise\n
+You may find out that \n
+Your self-doubt means nothing\n
+was ever there\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+You can't go forcing something \n
+if it's just not right\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+No time to search the world around\n
+Cause you know where I'll be found\n
+When I come around\n
+\n
+No time to search the world around\n
+Cause you know where I'll be found\n
+When I come around\n
+When I come around\n
+When I come around\n
+When I come around"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

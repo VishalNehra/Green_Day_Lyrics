@@ -17,20 +17,47 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nDo you have the time\n
+To listen to me whine\n
+About nothing and everything\n
+All at once\n
+I am one of those\n
+Melodramatic fools\n
+Neurotic to the bone\n
+No doubt about it\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Sometimes I give myself the creeps\n
+Sometimes my mind plays tricks on me\n
+It all keeps adding up\n
+I think I'm cracking up\n
+Am I just paranoid?\n
+Am I just stoned?\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I went to a shrink\n
+To analyze my dreams\n
+She says it's lack of sex\n
+That's bringing me down\n
+I went to a whore\n
+He said my life's a bore\n
+So quit my whining cause\n
+It's bringing her down\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Sometimes I give myself the creeps\n
+Sometimes my mind plays tricks on me\n
+It all keeps adding up\n
+I think I'm cracking up\n
+Am I just paranoid?\n
+Uh, yuh, yuh, ya\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Grasping to control\n
+So I better hold on\n
+\n
+Sometimes I give myself the creeps\n
+Sometimes my mind plays tricks on me\n
+It all keeps adding up\n
+I think I'm cracking up\n
+Am I just paranoid?\n
+Am I just stoned?"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

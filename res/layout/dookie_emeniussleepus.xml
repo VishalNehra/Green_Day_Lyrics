@@ -17,20 +17,35 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI saw my friend the other day \n
+and I don't know\n
+Exactly just what he became\n
+It goes to show\n
+It wasn't long ago\n
+I was just like you\n
+And now I think I'm sick \n
+And I wanna go home\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+How have I been, how have you been\n
+It's been so long\n
+What have you done with all your time\n
+And what went wrong\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I knew you back when\n
+And you ... you knew me\n
+And now I think I'm sick \n
+and I wanna go home\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Anybody ever say no?\n
+Ever tell you that you weren't right?\n
+Where did all the little kid go?\n
+Did you lose it in a hateful fight?\n
+And you know it's true\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+It wasn't long ago\n
+I was just like you\n
+And now I think you're sick \n
+and I wanna go home"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

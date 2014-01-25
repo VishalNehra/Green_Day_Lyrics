@@ -17,20 +17,37 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nAll brawn and no brains\n
+And all those nice things\n
+You FINALLY got what you want\n
+Someone to look good with\n
+AND light your cigarette\n
+Is this what you really want?\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I figured out what you're all about\n
+And I don't think I like what I see\n
+SOOOOO ...\n
+I HOPE I won't be there in the end\n
+if you come around.\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+How long will he last\n
+Before he's a CREEP in the past\n
+And you're alone once again?\n
+Will you pop up AGAIN and be my\n
+'SPECIAL FRIEND' 'till the end?\n
+And when will that be?\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I figured out what you're all about\n
+And I don't think I like what I see\n
+SOOOOO ...\n
+I HOPE I won't be there in the end\n
+if you come around.\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I figured out what you're all about\n
+And I don't think I like what I see\n
+SOOOOO ...\n
+I HOPE I won't be there in the end\n
+if you come around."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"

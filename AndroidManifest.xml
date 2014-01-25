@@ -758,6 +758,9 @@
 	    <activity android:name="com.greenday.unreleased.Workingclasshero"
 	        android:label="@string/workingclasshero_title"
 	         ></activity>
+	    <activity android:name="com.greenday.unreleased.Allbymyself"
+	        android:label="@string/allbymyself_title"
+	         ></activity>
 	    
         <!-- for expanding menu bar-  android:uiOptions="splitActionBarWhenNarrow" -->
         

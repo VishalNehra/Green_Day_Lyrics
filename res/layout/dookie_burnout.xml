@@ -17,20 +17,31 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI declare I don't care no more\n
+I'm burning up and out and growing bored\n
+In my smoked out boring room\n
+My hair is shagging in my eyes\n
+Dragging my feet to hit the street tonight\n
+To drive along these shit town lights\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I'm not growing up\n
+I'm just burning out\n
+And I stepped in line\n
+to walk amongst the dead\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Apathy has rained on me\n
+Now I'm feeling like a soggy dream\n
+So close to drowning but I don't mind\n
+I've lived inside this mental cave\n
+Throw my emotions in the grave\n
+Hell, who needs them anyway\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I'm not growing up\n
+I'm just burning out\n
+And I stepped in line\n
+to walk amongst the dead\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+[Repeat many times]"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
