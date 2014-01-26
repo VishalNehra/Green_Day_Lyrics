@@ -68,8 +68,8 @@ public class MainActivity extends Activity {
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
             co.insert = ShowcaseView.INSERT_TO_VIEW;
-            ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_TITLE, 1, this,
-            		"Open the drawer", "You can also press on title to open the drawer.", co);
+            ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
+            		"Open the drawer", "You can also press on overflow icon to open the drawer.", co);
 
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()
