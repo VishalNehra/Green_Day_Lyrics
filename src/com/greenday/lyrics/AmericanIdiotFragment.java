@@ -1,5 +1,6 @@
 package com.greenday.lyrics;
 
+import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.americanidiot.Boulevardofbd;
@@ -114,6 +115,4 @@ public class AmericanIdiotFragment extends Fragment{
         });
         return rootView;
     }
-   
 }
- 

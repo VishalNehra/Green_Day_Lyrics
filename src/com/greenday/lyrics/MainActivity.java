@@ -2,6 +2,8 @@ package com.greenday.lyrics;
  
 
 
+import com.espian.showcaseview.ShowcaseView;
+import com.espian.showcaseview.targets.ViewTarget;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
 
@@ -54,15 +56,21 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
-        //Crouton Toast
+        
+      //Crouton Toast
         boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
 
         if (firstboot){
             // 1) Launch the authentication activity
         	Crouton.makeText(this, "Welcome!", Style.CONFIRM).show();
             Crouton.makeText(this, "Slide from left corner towards right to get started", Style.INFO).show();
+            Crouton.makeText(this, "Please don't forget to rate the app in market :)", Style.ALERT).show();
             // 2) Then save the state
-        
+            ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+            co.insert = ShowcaseView.INSERT_TO_VIEW;
+            ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_TITLE, 1, this,
+            		"Open the drawer", "You can also press on title to open the drawer.", co);
+
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()
                 .putBoolean("firstboot", false)
@@ -84,7 +92,7 @@ public class MainActivity extends Activity {
  
         // adding nav drawer items to array
         // Home
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1), true, "14"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1), true, null));
         // 39/Smooth
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1), true, "19"));
         // Kerplunk

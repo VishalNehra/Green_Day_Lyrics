@@ -9,10 +9,15 @@ import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Murdercity extends Activity {
@@ -25,7 +30,24 @@ public class Murdercity extends Activity {
 		setContentView(R.layout.tcb_murdercity);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
+		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog builder = new AlertDialog.Builder(Murdercity.this)
+		        .setMessage("Writers:\n" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
+		        		"Copyright:\n" +
+		        		"Green Daze Music, WB Music Corp.")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
 	}
 	
 	//Action bar code below

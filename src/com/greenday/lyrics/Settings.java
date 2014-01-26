@@ -7,6 +7,9 @@ import android.view.MenuItem;
 
 import com.greenday.lyrics.R;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 public class Settings extends PreferenceActivity {
 
 	@SuppressWarnings("deprecation")
@@ -17,6 +20,7 @@ public class Settings extends PreferenceActivity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		addPreferencesFromResource(R.xml.preferences);
+
 	}
 
 	@Override
@@ -38,5 +42,6 @@ public class Settings extends PreferenceActivity {
 		;
 
 		return super.onOptionsItemSelected(item);
+		
 	}
 }

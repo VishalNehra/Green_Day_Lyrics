@@ -28,6 +28,9 @@ import com.greenday.insomniac.Tightwad;
 import com.greenday.insomniac.Walking;
 import com.greenday.insomniac.Westbound;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.os.Bundle;
 import android.app.Fragment;
 import android.content.Intent;
@@ -47,7 +50,6 @@ public class InsomniacFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_insomniac, container, false);
-        
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

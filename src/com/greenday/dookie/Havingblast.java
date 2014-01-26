@@ -11,6 +11,8 @@ import com.greenday.lyrics.Settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -27,9 +29,17 @@ public class Havingblast extends Activity {
 		setContentView(R.layout.dookie_havingblast);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-
-
+		AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
+        .setMessage("Writers:\n" +
+        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
+        		"Copyright:\n" +
+        		"Green Daze Music, WB Music Corp.")
+        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                closeContextMenu();
+            }
+        })
+        .show();    
 	}
 	
 	//Action bar code below
