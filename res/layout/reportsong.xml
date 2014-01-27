@@ -21,7 +21,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="Data usage hardly in KB's"
+        android:text="(Data usage hardly in KB's)"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <EditText

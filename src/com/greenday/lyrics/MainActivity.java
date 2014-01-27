@@ -64,12 +64,12 @@ public class MainActivity extends Activity {
             // 1) Launch the authentication activity
         	Crouton.makeText(this, "Welcome!", Style.CONFIRM).show();
             Crouton.makeText(this, "Slide from left corner towards right to get started", Style.INFO).show();
-            Crouton.makeText(this, "Please don't forget to rate the app in market :)", Style.ALERT).show();
+            Crouton.makeText(this, "You can also access all songs from option below!", Style.ALERT).show();
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
             co.insert = ShowcaseView.INSERT_TO_VIEW;
             ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
-            		"Open the drawer", "You can also press on overflow icon to open the drawer.", co);
+            		"Addition Info.", "\nWant to know who are the writers of the song?\nThis button is for you!", co);
 
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()

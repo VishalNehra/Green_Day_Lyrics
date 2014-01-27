@@ -6,7 +6,7 @@
     -->
     
     <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
-    <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog"/>
+    <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
     <style name="AppBaseTheme" parent="android:Theme.Holo">
         
         <item name="android:actionBarStyle">

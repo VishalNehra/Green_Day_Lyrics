@@ -45,7 +45,7 @@ public class Reportsong extends Activity {
 				//Lib used to submit edittext to log
 				Logger log = LoggerFactory.getLogger(Reportsong.class);
 				log.info(et.getText().toString());
-				//Exception to start ACRA without any crash!!
+				//Exception to start ACRA without any crash
 				Throwable caughtException=null;
 				ACRA.getErrorReporter().handleException(caughtException);
 				finish();

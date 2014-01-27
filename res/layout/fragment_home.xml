@@ -3,44 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home_cover2"
-    android:gravity="center_horizontal" >
+    android:gravity="left" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:text="Green Day"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#646464"
-        android:textSize="30sp" />
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines = "200"
-		android:scrollbars = "vertical"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="58dp"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"
-        android:text="Green Day is an American punk rock band formed in 1987. 
-     \n\n
-The band consists of lead vocalist and guitarist \n
-Billie Joe Armstrong\n\n
-bassist and backing vocalist \n
-Mike Dirnt,\n\n
-drummer Tré Cool \n\n
-and guitarist and backing vocalist \n
-Jason White,\n\n
-who became a full member \n
-after playing in the band as a session \n
-and touring guitarist for 13 years." />
-    </ScrollView>
+<ImageButton
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_home2"
+    android:background="@null" />
+
+<ImageButton
+    android:id="@+id/imageButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@null"
+    android:gravity="center"
+    android:src="@drawable/all_songs" />
+
+<ImageButton
+    android:id="@+id/imageButton2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageButton1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:background="@null"
+    android:src="@drawable/recents" />
  
 </RelativeLayout>
