@@ -55,24 +55,24 @@ public class NimrodFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tNice Guys Finish Last",
-        		"\t\t\t\t\tHitchin' A Ride",
-        		"\t\t\t\t\tThe Grouch",
-        		"\t\t\t\t\tRedundant",
-        		"\t\t\t\t\tScattered",
-        		"\t\t\t\t\tAll The Time",
-        		"\t\t\t\t\tWorry Rock",
-        		"\t\t\t\t\tPlatypus (I Hate You)",
-        		"\t\t\t\t\tUptight",
-        		"\t\t\t\t\tLast Ride In",
-        		"\t\t\t\t\tJinx",
-        		"\t\t\t\t\tHaushinka",
-        		"\t\t\t\t\tWalking Alone",
-        		"\t\t\t\t\tReject",
-        		"\t\t\t\t\tTake Back",
-        		"\t\t\t\t\tKing For A Day",
-        		"\t\t\t\t\tGood Riddance (Time Of Your Life)",
-        		"\t\t\t\t\tProsthetic Head"};
+        String[] values = new String[] {"Nice Guys Finish Last",
+        		"Hitchin' A Ride",
+        		"The Grouch",
+        		"Redundant",
+        		"Scattered",
+        		"All The Time",
+        		"Worry Rock",
+        		"Platypus (I Hate You)",
+        		"Uptight",
+        		"Last Ride In",
+        		"Jinx",
+        		"Haushinka",
+        		"Walking Alone",
+        		"Reject",
+        		"Take Back",
+        		"King For A Day",
+        		"Good Riddance (Time Of Your Life)",
+        		"Prosthetic Head"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

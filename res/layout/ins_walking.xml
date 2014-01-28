@@ -17,26 +17,53 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nDo as I say not as I do because\n
+The shit's so deep you can't run away\n
+I beg to differ on the contrary\n
+I agree with every word that you say\n
+Talk is cheap and lies are expensive\n
+My wallet's fat and so is my head\n
+Hit and run and then I'll hit you again\n
+I'm a smart ass but I'm playing dumb\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Standards set and broken all the time\n
+Control the chaos behind a gun\n
+Call it as I see it even if\n
+I was born deaf, blind and dumb\n
+Losers winning big on the lottery\n
+Rehab rejects still sniffing glue\n
+Constant refutation with myself\n
+I'm a victim of a catch 22\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+I have no belief\n
+But I believe\n
+I'm a walking contradiction\n
+And I ain't got no right\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Do as I say not as I do because\n
+The shit's so deep you can't run away\n
+I beg to differ on the contrary\n
+I agree with every word that you say\n
+Talk is cheap and lies are expensive\n
+My wallet's fat and so is my head\n
+Hit and run and then I'll hit you again\n
+I'm a smart ass but I'm playing dumb\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I have no belief\n
+But I believe\n
+I'm a walking contradiction\n
+And I ain't got no right\n
+\n
+I have no belief\n
+But I believe\n
+I'm a walking contradiction\n
+And I ain't got no right"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

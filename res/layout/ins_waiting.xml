@@ -17,26 +17,55 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI've been waiting a long time\n
+For this moment to come\n
+I'm destined\n
+For anything...at all\n
+Downtown lights will be shining\n
+On me like a new diamond\n
+Ring out under the midnight hour\n
+No one can touch me now\n
+And I can't turn my back\n
+It's too late ready or not at all\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Well, I'm so much closer than\n
+I have ever known...\n
+Wake up\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Dawning of a new era\n
+Calling...\n
+don't let it catch you falling\n
+Ready or not at all\n
+So close enough to taste it\n
+Almost...I can embrace this\n
+Feeling....\n
+on the tip of my tongue\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Well, I'm so much closer than\n
+I have ever known...\n
+Wake up\n
+Better thank your lucky stars....\n
+(Shey hey hey)\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I've been waiting for a life time\n
+For this moment to come\n
+I'm destined for anything at all\n
+\n
+Dumbstruck\n
+Colour me stupid\n
+Good luck\n
+You're gonna need it\n
+Where I'm going if I get there...\n
+At all....\n
+\n
+Wake up\n
+Better thank your lucky stars...."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

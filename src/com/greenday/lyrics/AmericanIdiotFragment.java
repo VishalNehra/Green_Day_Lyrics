@@ -1,6 +1,5 @@
 package com.greenday.lyrics;
 
-import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.americanidiot.Boulevardofbd;
@@ -37,19 +36,19 @@ public class AmericanIdiotFragment extends Fragment{
 
         //EDITED Code
         
-        String[] values = new String[] {"\t\t\t\t\tAmerican Idiot",
-        		"\t\t\t\t\tJesus Of Suburbia",
-        		"\t\t\t\t\tHoliday",
-        		"\t\t\t\t\tBoulevard of Broken Dreams",
-        		"\t\t\t\t\tAre We The Waiting",
-        		"\t\t\t\t\tSt. Jimmy",
-        		"\t\t\t\t\tGive Me Novacaine",
-        		"\t\t\t\t\tShe's A Rebel",
-        		"\t\t\t\t\tExtraordinary Girl",
-        		"\t\t\t\t\tLetterbomb",
-        		"\t\t\t\t\tWake Me Up When September Ends",
-        		"\t\t\t\t\tHomecoming",
-        		"\t\t\t\t\tWhatsername"};
+        String[] values = new String[] {"American Idiot",
+        		"Jesus Of Suburbia",
+        		"Holiday",
+        		"Boulevard of Broken Dreams",
+        		"Are We The Waiting",
+        		"St. Jimmy",
+        		"Give Me Novacaine",
+        		"She's A Rebel",
+        		"Extraordinary Girl",
+        		"Letterbomb",
+        		"Wake Me Up When September Ends",
+        		"Homecoming",
+        		"Whatsername"};
         ArrayAdapter<String> adapter =
         new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
         super.onActivityCreated(savedInstanceState);

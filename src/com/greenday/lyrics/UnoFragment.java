@@ -36,18 +36,18 @@ public class UnoFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tNuclear Family",
-        		"\t\t\t\t\tStay The Night",
-        		"\t\t\t\t\tCarpe Diem",
-        		"\t\t\t\t\tLet Yourself Go",
-        		"\t\t\t\t\tKill The DJ",
-        		"\t\t\t\t\tFell For You",
-        		"\t\t\t\t\tLoss Of Control",
-        		"\t\t\t\t\tTroublemaker",
-        		"\t\t\t\t\tAngel Blue",
-        		"\t\t\t\t\tSweet 16",
-        		"\t\t\t\t\tRusty James",
-        		"\t\t\t\t\tOh Love"};
+        String[] values = new String[] {"Nuclear Family",
+        		"Stay The Night",
+        		"Carpe Diem",
+        		"Let Yourself Go",
+        		"Kill The DJ",
+        		"Fell For You",
+        		"Loss Of Control",
+        		"Troublemaker",
+        		"Angel Blue",
+        		"Sweet 16",
+        		"Rusty James",
+        		"Oh Love"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

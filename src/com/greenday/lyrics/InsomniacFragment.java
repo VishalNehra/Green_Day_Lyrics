@@ -53,20 +53,20 @@ public class InsomniacFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tArmatage Shanks",
-        		"\t\t\t\t\tBrat",
-        		"\t\t\t\t\tStuck With Me",
-        		"\t\t\t\t\tGeek Stink Breath",
-        		"\t\t\t\t\tNo Pride",
-        		"\t\t\t\t\tBab's Uvula Who!",
-        		"\t\t\t\t\t86",
-        		"\t\t\t\t\tPanic Song",
-        		"\t\t\t\t\tStuart And The Ave.",
-        		"\t\t\t\t\tBrain Stew",
-        		"\t\t\t\t\tJaded",
-        		"\t\t\t\t\tWestbound Sign",
-        		"\t\t\t\t\tTight Wad Hill",
-        		"\t\t\t\t\tWalking Contradiction"};
+        String[] values = new String[] {"Armatage Shanks",
+        		"Brat",
+        		"Stuck With Me",
+        		"Geek Stink Breath",
+        		"No Pride",
+        		"Bab's Uvula Who!",
+        		"86",
+        		"Panic Song",
+        		"Stuart And The Ave.",
+        		"Brain Stew",
+        		"Jaded",
+        		"Westbound Sign",
+        		"Tight Wad Hill",
+        		"Walking Contradiction"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

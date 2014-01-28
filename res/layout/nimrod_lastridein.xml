@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/nimrod_cover"
+    android:background="@drawable/nimrod_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_nimrod"
     android:background="@null" />

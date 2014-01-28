@@ -17,26 +17,47 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nWe're living in repetition.\n
+Content in the same old shtick again.\n
+Now the routine's turning to contention,\n
+Like a production line going over \n
+And over and over, roller coaster.\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Now I cannot speak, I've lost my voice.\n
+I'm speechless and redundant.\n
+'Cause I love you's not enough.\n
+I'm lost for words.\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Choreographed and lack of passion.\n
+Prototypes of what we were.\n
+Went full circle 'til I'm nauseous.\n
+Taken for granted now.\n
+Now I waste it, faked it,\n
+Ate it, now i hate it.\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+'Cause I cannot speak, \n
+I lost my voice.\n
+I'm speechless and redundant, \n
+'cause I love you's not enough.\n
+I'm lost for words.\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Now I cannot speak, \n
+I've lost my voice.\n
+I'm speechless and redundant.\n
+'Cause I love you's not enough.\n
+I'm lost for words.\n
+\n
+Now I cannot speak, \n
+I've lost my voice.\n
+I'm speechless and redundant.\n
+'Cause I love you's not enough.\n
+I'm lost for words."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

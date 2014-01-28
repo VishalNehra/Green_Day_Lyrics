@@ -17,26 +17,44 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nCheapskate on the hill\n
+A thrill seeker making deals\n
+Sugar city urchin wasting time\n
+Town of lunatics\n
+Begging for another fix\n
+Turning tricks for speedballs\n
+One more night\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Making your rounds once again\n
+Turning up empty handed\n
+Bumming a ride\n
+Burning daylight\n
+Last up at dawn... tight wad hill\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Drugstore hooligan\n
+Another white trash mannequin\n
+On display to rot up on the hill\n
+Living out a lie\n
+But having the time of his life\n
+Hating every minute of his existance\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Making your rounds once again\n
+Turning up empty handed\n
+Bumming a ride\n
+Burning daylight\n
+Last up at dawn... tight wad hill\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Making your rounds once again\n
+Turning up empty handed\n
+Bumming a ride\n
+Burning daylight\n
+Last up at dawn... tight wad hill"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
     android:background="@null" />

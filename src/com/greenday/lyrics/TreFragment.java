@@ -49,18 +49,18 @@ public class TreFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tBrutal Love",
-        		"\t\t\t\t\tMissing You",
-        		"\t\t\t\t\t8th Avenue Serenade",
-        		"\t\t\t\t\tDrama Queen",
-        		"\t\t\t\t\tX-Kid",
-        		"\t\t\t\t\tSex, Drugs & Violence",
-        		"\t\t\t\t\tLittle Boy Named Train",
-        		"\t\t\t\t\tAmanda",
-        		"\t\t\t\t\tWalk Away",
-        		"\t\t\t\t\tDirty Rotten Bastards",
-        		"\t\t\t\t\t99 Revolutions",
-        		"\t\t\t\t\tThe Forgotten"};
+        String[] values = new String[] {"Brutal Love",
+        		"Missing You",
+        		"8th Avenue Serenade",
+        		"Drama Queen",
+        		"X-Kid",
+        		"Sex, Drugs & Violence",
+        		"Little Boy Named Train",
+        		"Amanda",
+        		"Walk Away",
+        		"Dirty Rotten Bastards",
+        		"99 Revolutions",
+        		"The Forgotten"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

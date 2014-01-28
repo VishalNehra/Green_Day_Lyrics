@@ -17,63 +17,90 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[Performed by Billie Joe Armstrong]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+I ain't a politician\n
+I'm just a bad musician\n
+Whatcha gonna do for me?\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+Do you have a taste for\n
+Sex and blood and hate, or\n
+Really good LSD\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+I'd like to start a band with\n
+I'll sing and you can\n
+Learn to play the tambourine\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+Here's an invitation\n
+No time for hesitation\n
+Come and join my family\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+[Chorus]\n
+I live inside of you\n
+But you don't belong to me\n
+I'm a reflection of you\n
+What's my recipe?\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+Half a cup satanical\n
+Teaspoon puritanical\n
+Stir it with a bloody hand\n
+Quarter cup messiahcal\n
+Sprinkle of maniacle\n
+Now I'm a mechanical man\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+I'll give you the heads up\n
+Come on and get your legs up\n
+This is called the family jam\n
 \n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
+Together we'll stay hidden\n
+Wait for Armageddon\n
+Stick it to the man\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+[Chorus]\n
+\n
+[Charlie (laughs):] \n
+'Watch this shit, woman! Gonna learn somethin' right now.'\n
+\n
+[Singing]\n
+Open up the curtains\n
+Then we'll start hurting\n
+Come on lets do the creepy crawl\n
+The shows about to go down\n
+Come I got the low down\n
+Together we'll make Hollywood fall\n
+\n
+I live inside of you\n
+But you don't belong to me\n
+I'm a reflection of you\n
+What's my recipe?\n
+\n
+I live inside of you\n
+But you don't belong to me\n
+I'm a reflection of you\n
+What's my recipe?\n
+\n
+I live inside of you\n
+But you don't belong to me\n
+I'm a reflection of you\n
+You look at me and what do you see?\n
+A half a cup satanical, \n
+A teaspoon puritanical,\n
+Stirred with a bloody hand\n
+A quarter cup messiahcal, \n
+A sprinkle of maniacal\n
+And now I'm a mechanical man\n
+A half a cup satanical, \n
+A teaspoon puritanical,\n
+Stirred with a bloody hand\n
+A quarter cup messiahcal, \n
+A sprinkle of maniacal\n
+And now I'm a mechanical man"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

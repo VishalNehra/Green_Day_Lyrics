@@ -17,26 +17,59 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\n[Verse 1:]\n
+This is a public service anouncement, this is only a test\n
+Emergency evacuation protest\n
+May Impair your ability to operate machinery\n
+Can't quite tell just what it means to me\n
+Keep out of reach of children, \n
+Don't you talk to strangers\n
+Get your philosophy from a bumper sticker\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+[Chorus:]\n
+Warning. Live without warning\n
+Say warning. Live without warning\n
+Without. Alright.\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+[Verse 2:]\n
+Better homes and safety-sealed communities\n
+Did you remember to pay the utility?\n
+Caution: Police line, \n
+you better not cross.
+Is it the cop, \n
+Or am I the one thats really dangerous?\n
+Sanitation, expiration date, \n
+Question everything.\n
+Or shut up and be a victim of authority\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+[Chorus:]\n
+Warning. Live without warning\n
+Say warning. Live without warning\n
+Say warning. Live without warning\n
+Say warning. Live without warning\n
+Without. Alright.\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+[Verse 3:]\n
+Better homes and safety-sealed communities\n
+Did you remember to pay the utility?\n
+Caution: Police line, you better not cross.\n
+Is it the cop, or am I the one that's really dangerous\n
+Sanitation, expiration date, question everything.\n
+Or shut up and be a victim of authority\n
+\n
+[Chorus:]\n
+Warning. Live without warning\n
+Say warning. Live without warning\n
+Say warning. Live without warning\n
+Say warning. Live without warning\n
+This is a public service anouncement, \n
+this is only a test"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_dos"
     android:background="@null" />

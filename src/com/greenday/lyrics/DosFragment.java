@@ -49,19 +49,19 @@ public class DosFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tSee You Tonight",
-        		"\t\t\t\t\tFuck Time",
-        		"\t\t\t\t\tStop When Red Lights Flash",
-        		"\t\t\t\t\tLazy Bones",
-        		"\t\t\t\t\tWild One",
-        		"\t\t\t\t\tMakeout Party",
-        		"\t\t\t\t\tStray Heart",
-        		"\t\t\t\t\tAshley",
-        		"\t\t\t\t\tBaby Eyes",
-        		"\t\t\t\t\tLady Cobra",
-        		"\t\t\t\t\tNightlife",
-        		"\t\t\t\t\tWOW! That's Loud",
-        		"\t\t\t\t\tAmy"};
+        String[] values = new String[] {"See You Tonight",
+        		"Fuck Time",
+        		"Stop When Red Lights Flash",
+        		"Lazy Bones",
+        		"Wild One",
+        		"Makeout Party",
+        		"Stray Heart",
+        		"Ashley",
+        		"Baby Eyes",
+        		"Lady Cobra",
+        		"Nightlife",
+        		"WOW! That's Loud",
+        		"Amy"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

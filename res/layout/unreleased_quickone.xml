@@ -17,63 +17,159 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[originally performed by The Who]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+[I. Her Man's Been Gone]\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+Her man's been gone\n
+For nigh a year\n
+He was due home yesterday\n
+But he ain't here\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+Her man's been gone\n
+For nigh on a year\n
+He was due home yesterday\n
+But he ain't here\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+[II. Crying Town]\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+Down your street your crying \n
+is a well-known sound\n
+Your street is very well known, \n
+throughout your town\n
+Your town is very famous \n
+for the little girl\n
+Whose cries can be heard \n
+All around the world\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+[III. We Have A Remedy]\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+Fa la la la la la\n
+Fa la la la la\n
+Fa la la la la la\n
+Fa la la la la\n
 \n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
+We have a remedy\n
+You'll appreciate\n
+No need to be so sad\n
+He's only late\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+We'll bring you flowers and things\n
+Help pass your time\n
+We'll give him eagle's wings\n
+Then he can fly to you\n
+\n
+Fa la la la la la\n
+Fa la la la la\n
+Fa la la la la la\n
+Fa la la la la\n
+Fa la la la la la\n
+Fa la la la la la\n
+\n
+We have a remedy\n
+Fa la la la la la la\n
+We have a remedy\n
+Fa la la la la la la\n
+We have a remedy\n
+Fa la la la la la la\n
+We have a remedy\n
+Fa la la la la la la\n
+\n
+[Spoken]\n
+We have a remedy.\n
+We have!\n
+\n
+Little girl guide, \n
+why don't you stop your crying?\n
+Here comes Ivor the engine driver \n
+to make you feel much better\n
+\n
+[IV. Ivor The Engine Driver]\n
+\n
+My name is Ivor\n
+I'm an engine driver\n
+\n
+I know him well\n
+I know why you feel blue\n
+Just 'cause he's late\n
+Don't mean he'll never get through\n
+\n
+He told me he loves you\n
+He ain't no liar, I ain't either\n
+So let's have a smile \n
+for an old engine driver\n
+So let's have a smile \n
+for an old engine driver\n
+\n
+Please take a sweet\n
+Come take a walk with me\n
+We'll sort it out\n
+Back at my place, maybe\n
+\n
+It'll come right\n
+You ain't no fool, I ain't either\n
+So why not be nice to an old engine driver?\n
+Better be nice to an old engine driver\n
+Better be nice to an old engine driver\n
+\n
+[V. Soon Be Home]\n
+\n
+We'll soon be home\n
+We'll soon be home\n
+We'll soon\n
+We'll soon, soon, soon be home\n
+\n
+We'll soon be home\n
+We'll soon be home\n
+We'll soon\n
+We'll soon, soon, soon be home\n
+\n
+Come on, old horse\n
+\n
+Soon be home\n
+Soon be home\n
+Soon\n
+We'll soon, soon, soon be home\n
+\n
+We'll soon\n
+We'll soon, soon, soon be home\n
+\n
+We'll soon be home\n
+Soon be home ...\n
+\n
+[VI. You Are Forgiven]\n
+\n
+Dang, dang, dang, dang, dang, dang, dang, dang, dang\n
+\n
+Cello, cello, cello, cello, cello, cello\n
+Cello, cello, cello, cello, cello, cello\n
+Cello, cello, cello, cello, cello, cello\n
+Cello, cello, cello, cello, cello, cello\n
+\n
+I can't believe it\n
+Do my eyes deceive me?\n
+Am I back in your arms?\n
+Away from all harm?\n
+\n
+It's like a dream to be with you again\n
+Can't believe that I'm with you again\n
+\n
+I missed you and I must admit\n
+I kissed a few and once did sit\n
+On Ivor the Engine Driver's lap\n
+And later with him, had a nap\n
+\n
+You are forgiven, \n
+you are forgiven, \n
+you are forgiven ... [ad lib]\n
+\n
+You are forgiven"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

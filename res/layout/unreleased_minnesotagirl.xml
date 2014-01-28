@@ -17,63 +17,31 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\nSittin' on the hood of a camaro\n
+Watchin' shooting stars across the earth\n
+Counting all the bites from the mosquitoes\n
+There goes my Minnesota girl\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+Lazy days\n
+Gone without notice\n
+In a daze... with faraway eyes\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+Driving to a closed spot Wednesday afternoon\n
+There goes my Minnesota girl\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+In a daze\n
+Go without notice\n
+Lazy days....with faraway eyes\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
-\n
-Amy please don't go!\n
-Amy please don't go!\n
-\n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+Countin' from the pieces we have been through\n
+Here comes my Minnesota girl\n
+There goes my Minnesota girl"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

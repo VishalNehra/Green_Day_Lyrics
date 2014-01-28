@@ -58,27 +58,27 @@ public class IntSuperFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tMaria",
-        		"\t\t\t\t\tPoprocks and Coke",
-        		"\t\t\t\t\tLong View",
-        		"\t\t\t\t\tWelcome To Paradise",
-        		"\t\t\t\t\tBasket Case",
-        		"\t\t\t\t\tWhen I Come Around",
-        		"\t\t\t\t\tShe",
-        		"\t\t\t\t\tJ.A.R. (Jason Andrew Relva)",
-        		"\t\t\t\t\tGeek Stink Breath",
-        		"\t\t\t\t\tBrain Stew",
-        		"\t\t\t\t\tJaded",
-        		"\t\t\t\t\tWalking Contradiction",
-        		"\t\t\t\t\tStuck With Me",
-        		"\t\t\t\t\tHitchin' a Ride",
-        		"\t\t\t\t\tGood Riddance (Time of Your Life)",
-        		"\t\t\t\t\tRedundant",
-        		"\t\t\t\t\tNice Guys Finish Last",
-        		"\t\t\t\t\tMinority",
-        		"\t\t\t\t\tWarning",
-        		"\t\t\t\t\tWaiting",
-        		"\t\t\t\t\tMacy's Day Parade"};
+        String[] values = new String[] {"Maria",
+        		"Poprocks and Coke",
+        		"Long View",
+        		"Welcome To Paradise",
+        		"Basket Case",
+        		"When I Come Around",
+        		"She",
+        		"J.A.R. (Jason Andrew Relva)",
+        		"Geek Stink Breath",
+        		"Brain Stew",
+        		"Jaded",
+        		"Walking Contradiction",
+        		"Stuck With Me",
+        		"Hitchin' a Ride",
+        		"Good Riddance (Time of Your Life)",
+        		"Redundant",
+        		"Nice Guys Finish Last",
+        		"Minority",
+        		"Warning",
+        		"Waiting",
+        		"Macy's Day Parade"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

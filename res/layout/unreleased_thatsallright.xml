@@ -17,63 +17,43 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[Originally by Arthur Crudup]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+Well, that's all right mama\n
+That's all right for you\n
+That's all right now mama\n
+Just any way you do\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+That's all right\n
+That's all right\n
+That's all right now mama\n
+Any way you do\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+Well mama she done told me\n
+Papa done told me too\n
+Son that gal you're foolin' with\n
+She ain't no good for you, but\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+That's all right\n
+That's all right\n
+That's all right now mama\n
+Any way you do\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+De de de de,\n
+De de de de\n
+De de de de\n
+De de de de de de de\n
+I need your lovin'\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
-\n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+That's all right\n
+That's all right now mama\n
+Any way you do"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

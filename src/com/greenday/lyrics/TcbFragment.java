@@ -42,24 +42,24 @@ public class TcbFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tSong Of The Centuary",
-        		"\t\t\t\t\t21st Century Breakdown",
-        		"\t\t\t\t\tKnow Your Enemy",
-        		"\t\t\t\t\t¡Viva La Gloria!",
-        		"\t\t\t\t\tBefore The Lobotomy",
-        		"\t\t\t\t\tChristian's Inferno",
-        		"\t\t\t\t\tLast Night On Earth",
-        		"\t\t\t\t\tEast Jesus Nowhere",
-        		"\t\t\t\t\tPeacemaker",
-        		"\t\t\t\t\tLast Of American Girls",
-        		"\t\t\t\t\tMurder City",
-        		"\t\t\t\t\t¿Viva La Gloria? (Little Girl)",
-        		"\t\t\t\t\tRestless Heart Syndrome",
-        		"\t\t\t\t\tHorseshoes And Handgranades",
-        		"\t\t\t\t\tThe Static Age",
-        		"\t\t\t\t\t21 Guns",
-        		"\t\t\t\t\tAmerican Eulogy\n\t\t\t\t\t(Mass Hysteria / Modern World)",
-        		"\t\t\t\t\tSee The Light"};
+        String[] values = new String[] {"Song Of The Centuary",
+        		"21st Century Breakdown",
+        		"Know Your Enemy",
+        		"¡Viva La Gloria!",
+        		"Before The Lobotomy",
+        		"Christian's Inferno",
+        		"Last Night On Earth",
+        		"East Jesus Nowhere",
+        		"Peacemaker",
+        		"Last Of American Girls",
+        		"Murder City",
+        		"¿Viva La Gloria? (Little Girl)",
+        		"Restless Heart Syndrome",
+        		"Horseshoes And Handgranades",
+        		"The Static Age",
+        		"21 Guns",
+        		"American Eulogy\n(Mass Hysteria / Modern World)",
+        		"See The Light"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

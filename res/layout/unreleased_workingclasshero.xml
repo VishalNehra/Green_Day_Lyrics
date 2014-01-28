@@ -17,63 +17,60 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[John Lennon cover]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+As soon as your born \n
+they make you feel small\n
+By giving you no time instead of it all\n
+Till the pain is so \n
+big you feel nothing at all\n
+A working class hero is something to be\n
+A working class hero is something to be\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+They hurt you at home and \n
+They hit you at school\n
+They hate if you're clever and \n
+They despise a fool\n
+Till you're so fucking crazy \n
+you can't follow their rules\n
+A working class hero is something to be\n
+A working class hero is something to be\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+When they've tortured and \n
+Scared you for twenty odd years\n
+Then they expect you to pick a career\n
+When you can't really function \n
+You're so full of fear\n
+A working class hero is something to be\n
+A working class hero is something to be\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+Keep you doped with religion and sex and TV,\n
+And you think you're so clever and \n
+you're classless and free,\n
+But you're still fucking peasants \n
+as far as I can see,\n
+A working class hero is something to be\n
+A working class hero is something to be\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+There's room at the top \n
+they are telling you still\n
+But first you must learn \n
+how to smile as you kill\n
+If you want to be like \n
+all the folks on the hill\n
+A working class hero is something to be\n
+A working class hero is something to be\n
+A working class hero is something to be\n
+A working class hero is something to be\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
-\n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+If you want to be a hero, well just follow me\n
+If you want to be a hero, well just follow me"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

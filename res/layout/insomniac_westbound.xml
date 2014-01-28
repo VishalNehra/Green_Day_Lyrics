@@ -17,26 +17,55 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nBoxed up\n
+All of her favorite things\n
+Sold the rest at a rainy yard sale\n
+Big plans and leaving friends and\n
+A westbound sign\n
+Weighed out\n
+Her choices on a scale\n
+Prevailing nothing made sense\n
+Just transportation and a\n
+Blank decision...\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+She's taking off\n
+Taking off...\n
+Taking off...\n
+Taking off...\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+No time and no copping out\n
+She's burning daylight and petrol\n
+Blacked out the rearview mirror\n
+Heading westward on\n
+Strung out\n
+On confusion road\n
+And ten minute nervous breakdowns\n
+Xanex a beer for thought\n
+And she determined...\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+She's taking off\n
+Taking off...\n
+Taking off...\n
+Taking off...\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Is it salvation?\n
+Or an escape from discontent?\n
+Will she find her name\n
+In the California cement?\n
+Punched out of the grind\n
+That punched her one too many times...\n
+Is tragedy 2000 miles away?\n
+\n
+She's taking off\n
+Taking off...\n
+Taking off...\n
+Taking off..."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
     android:background="@null" />

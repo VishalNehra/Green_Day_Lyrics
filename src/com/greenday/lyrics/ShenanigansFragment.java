@@ -57,20 +57,20 @@ public ShenanigansFragment(){}
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\tSuffocate",
-        		"\t\t\t\t\tDesensitized",
-        		"\t\t\t\t\tYou Lied",
-        		"\t\t\t\t\tOutsider",
-        		"\t\t\t\t\tDon't Wanna Fall In Love",
-        		"\t\t\t\t\tEspionage",
-        		"\t\t\t\t\tI Want To Be On T.V.",
-        		"\t\t\t\t\tScumbag",
-        		"\t\t\t\t\tTired Of Waiting For You",
-        		"\t\t\t\t\tSick Of Me",
-        		"\t\t\t\t\tRotting",
-        		"\t\t\t\t\tDo Da Da",
-        		"\t\t\t\t\tOn The Wagon",
-        		"\t\t\t\t\tHa Ha You're Dead"};
+        String[] values = new String[] {"Suffocate",
+        		"Desensitized",
+        		"You Lied",
+        		"Outsider",
+        		"Don't Wanna Fall In Love",
+        		"Espionage",
+        		"I Want To Be On T.V.",
+        		"Scumbag",
+        		"Tired Of Waiting For You",
+        		"Sick Of Me",
+        		"Rotting",
+        		"Do Da Da",
+        		"On The Wagon",
+        		"Ha Ha You're Dead"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

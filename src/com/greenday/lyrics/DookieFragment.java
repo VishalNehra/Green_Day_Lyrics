@@ -38,20 +38,20 @@ import android.widget.ListView;
 	        ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
 	        //EDITED Code 
-	        String[] values = new String[] {"\t\t\t\t\tBurnout",
-	        		"\t\t\t\t\tHaving A Blast",
-	        		"\t\t\t\t\tChump",
-	        		"\t\t\t\t\tLongview",
-	        		"\t\t\t\t\tWelcome To Paradise",
-	        		"\t\t\t\t\tPulling Teeth",
-	        		"\t\t\t\t\tBasket Case",
-	        		"\t\t\t\t\tShe",
-	        		"\t\t\t\t\tSassafras Roots",
-	        		"\t\t\t\t\tWhen I Come Around",
-	        		"\t\t\t\t\tComing Clean",
-	        		"\t\t\t\t\tEmenius Sleepus",
-	        		"\t\t\t\t\tIn The End",
-	        		"\t\t\t\t\tF.O.D."};
+	        String[] values = new String[] {"Burnout",
+	        		"Having A Blast",
+	        		"Chump",
+	        		"Longview",
+	        		"Welcome To Paradise",
+	        		"Pulling Teeth",
+	        		"Basket Case",
+	        		"She",
+	        		"Sassafras Roots",
+	        		"When I Come Around",
+	        		"Coming Clean",
+	        		"Emenius Sleepus",
+	        		"In The End",
+	        		"F.O.D."};
 	        ArrayAdapter<String> adapter =
 	                new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
 	                super.onActivityCreated(savedInstanceState);

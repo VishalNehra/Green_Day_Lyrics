@@ -17,63 +17,54 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\nI don't wanna go back home\n
+I don't wanna kiss goodnight\n
+Let us paralyze this moment\n
+'til it dies\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+To the end of the earth\n
+Under the valley of the stars\n
+There's a car crashing\n
+Deep inside my heart\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+Take a ride to the avenues\n
+Across the Great Divide\n
+There's a siren screaming\n
+'I'm alive', it cries\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+Red alert is the color\n
+Of your paper valentines\n
+Intertwined on this moment\n
+Passing by\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+Take a ride through the avenues\n
+Across the Great Divide\n
+There's a siren screaming\n
+'I'm alive', it cries\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+Red alert is the color\n
+Of your paper valentines\n
+Intertwined on this moment\n
+Passing by\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+Oh, come away with me tonight\n
+With cigarettes and valentines\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+Cigarettes and Valentines!\n
 \n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
+So, come away with me tonight\n
+With cigarettes and valentines\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+Oh, come away with me tonight\n
+With cigarettes and valentines\n
+\n
+Cigarettes and Valentines!"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

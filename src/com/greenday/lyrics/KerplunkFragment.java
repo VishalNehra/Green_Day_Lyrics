@@ -54,22 +54,22 @@ public class KerplunkFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\t2000 Light Years Away",
-        		"\t\t\t\t\tOne For The Razorbacks",
-        		"\t\t\t\t\tWelcome To Paradise",
-        		"\t\t\t\t\tChristie Road",
-        		"\t\t\t\t\tPrivate Ale",
-        		"\t\t\t\t\tOominated Love Slave",
-        		"\t\t\t\t\tOne Of My Lies",
-        		"\t\t\t\t\t80",
-        		"\t\t\t\t\tAndroid",
-        		"\t\t\t\t\tNo One Knows",
-        		"\t\t\t\t\tWho Wrote Holden Caulfield?",
-        		"\t\t\t\t\tWords I Might Have Ate",
-        		"\t\t\t\t\tSweet Children",
-        		"\t\t\t\t\tBest Thing In Town",
-        		"\t\t\t\t\tStrangeland",
-        		"\t\t\t\t\tMy Generation"};
+        String[] values = new String[] {"2000 Light Years Away",
+        		"One For The Razorbacks",
+        		"Welcome To Paradise",
+        		"Christie Road",
+        		"Private Ale",
+        		"Oominated Love Slave",
+        		"One Of My Lies",
+        		"80",
+        		"Android",
+        		"No One Knows",
+        		"Who Wrote Holden Caulfield?",
+        		"Words I Might Have Ate",
+        		"Sweet Children",
+        		"Best Thing In Town",
+        		"Strangeland",
+        		"My Generation"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

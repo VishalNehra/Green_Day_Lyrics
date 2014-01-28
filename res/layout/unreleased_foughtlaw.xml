@@ -17,63 +17,40 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\nBreakin' rocks in the hot sun \n
+I fought the law and the law won \n
+I fought the law and the law won \n
+I needed the money 'cause I had none \n
+I fought the law and the law won \n
+I fought the law and the law won \n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+I miss my baby and I feel so sad\n
+I guess my race is run \n
+Well she's the best girl that I ever had\n 
+I fought the law and the law won \n
+I fought the law and the\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+Robin' people with a six gun \n
+I fought the law and the law won\n
+I fought the law and the law won\n
+I miss my baby and I miss my fun\n
+I fought the law and the law won\n
+I fought the law and the law won\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+I miss my baby and I feel so sad\n
+I guess my race is run\n
+Well she's the best girl that I ever had\n
+I fought the law and the law won\n
+I fought the law and the\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
-\n
-Amy please don't go!\n
-Amy please don't go!\n
-\n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+I fought the law and the law won [x7]\n
+I fought the law and the"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

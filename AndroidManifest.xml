@@ -13,15 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppBaseTheme" android:name="com.greenday.lyrics.MyApplication">
-       <activity
-            android:name="com.greenday.lyrics.Splashscreen"
-            android:label="@string/app_name" >
-            <intent-filter>
-               
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-			
-        </activity>
+       
         <activity
             android:name="com.greenday.lyrics.MainActivity"
             android:label="@string/app_name"

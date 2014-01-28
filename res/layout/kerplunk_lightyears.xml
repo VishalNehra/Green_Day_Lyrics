@@ -62,7 +62,7 @@ Cause she's 2000 light years away"/>
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_kerplunk"
     android:background="@null" />

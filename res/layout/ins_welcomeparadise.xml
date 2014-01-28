@@ -17,26 +17,62 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nDear mother,\n
+Can you hear me whining?\n
+It's been three whole weeks\n
+Since that I have left your home\n
+This sudden fear has left me trembling\n
+Cause now it seems that \n
+I am out here on my own\n
+And I'm feeling so alone\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Pay attention to the cracked streets\n
+And the broken homes\n
+Some call it the slums\n
+Some call it nice\n
+I want to take you through\n
+a wasteland I like to call my home\n
+Welcome To Paradise\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+A gunshot rings out at the station\n
+Another urchin snaps \n
+And left dead on his own\n
+It makes me wonder why I'm still here\n
+For some strange reason it's now\n
+Feeling like my home\n
+And I'm never gonna go\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Pay attention to the cracked streets\n
+And the broken homes\n
+Some call it slums\n
+Some call it nice\n
+I want to take you through\n
+a wasteland I like to call\n
+my home\n
+Welcome To Paradise\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Dear mother,\n
+Can you hear me laughing\n
+It's been six whole months\n
+Since that I have left your home\n
+It makes me wonder why I'm still here\n
+For some strange reason it's now\n
+Feeling like my home\n
+And I'm never gonna go\n
+\n
+Pay attention to the cracked streets\n
+And the broken homes\n
+Some call it the slums\n
+Some call it nice\n
+I want to take you through\n
+a wasteland I like to call my home\n
+Welcome To Paradise"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

@@ -17,63 +17,49 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[Originally by Queen]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+I've paid my dues\n
+Time after time \n
+I've done my sentence \n
+But committed no crime \n
+And bad mistakes \n
+I've made a few \n
+I've had my share of sand kicked in my face\n
+But I've come through \n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+We are the champions - my friends \n
+And we'll keep on fighting - till the end - \n
+We are the champions - \n
+We are the champions \n
+No time for losers \n
+'Cause we are the champions - of the world -\n 
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+I've taken my bows \n
+And my curtain calls -\n 
+You brought me fame and fortuen and \n
+everything that goes with it \n
+- and some fucking great cheers\n
+I thank you all - \n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+But it's been no bed of roses \n
+No pleasure cruise \n
+I consider it a challenge \n
+Before the whole human race\n
+And I ain't gonna lose \n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
-\n
-Amy please don't go!\n
-Amy please don't go!\n
-\n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+We are the champions - my friends \n
+And we'll keep on fighting - till the end\n
+We are the champions \n
+We are the champions \n
+No time for losers \n
+'Cause we are the champions - of the world"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

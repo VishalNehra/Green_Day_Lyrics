@@ -17,26 +17,44 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nStanding on the corner of\n
+Stuart and the Avenue\n
+Ripping up my transfer\n
+And a photograph of you\n
+You're a blur of my dead past \n
+and rotting existance
+As I stand laughing on the \n
+corner of insignificance\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Well, destiny is dead\n
+In the hands of bad luck\n
+Before it might have made some sense\n
+But now it's all fucked up\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Seasons change as well as minds\n
+And I'm a two faced clown\n
+You're mommy's little nightmare\n
+Driving daddy's car around\n
+I'm beat down and half brain dead\n
+The long lost king of fools\n
+I may be dumb\n
+But I'm not stupid enough \n
+to stay with you\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Well, destiny is dead\n
+In the hands of bad luck\n
+Before it might have made some sense\n
+But now it's all fucked up\n
+[x2]\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+We're all fucked up...\n
+You're all fucked up..."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
     android:background="@null" />

@@ -17,26 +17,37 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nNice guys finish last.\n
+You're running out of gas.\n
+Your sympathy will get you left behind.\n
+Sometimes you're at your best, \n
+when you feel the worst.\n
+Do you feel washed up, \n
+like piss going down the drain\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Pressure cooker pick my brain and tell me I'm insane.\n
+I'm so fucking happy I could cry.\n
+Every joke can have its truth \n
+and now the joke's on you.\n
+I never knew you were such a funny guy.\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Oh nice guys finish last, \n
+when you are the outcast.\n
+Don't pat yourself on the back \n
+you might break your spine.\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
-\n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Living on command.\n
+You're shaking lots of hands.\n
+You're kissing up and bleeding all your trust, \n
+taking what you need.\n
+Bite the hand that feeds.\n
+You lose your memory and you got no shame."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

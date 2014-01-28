@@ -17,63 +17,91 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\nOnce upon a time you dressed so fine\n
+You threw the bums a dime in your prime, didn't you? \n
+Peopled call, say, beware doll, youre bound to fall\n
+You thought they were all kiddin you\n
+You used to laugh about\n
+Everybody that was hangin out\n
+Now you don't talk so loud\n
+Now you don't seem so proud\n
+About having to be scrounging for your next meal.\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+How does it feel\n
+How does it feel\n
+To be without a home\n
+Like a complete unknown\n
+Like a rolling stone?\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+You've gone to the finest school all right, \n
+miss lonely\n
+But you know you only used to get juiced in it\n
+And nobody has ever taught \n
+You how to live on the street\n
+And now you find out \n
+You're gonna have to get used to it\n
+You said you'd never compromise\n
+With the mystery tramp, \n
+But now you realize\n
+He's not selling any alibis\n
+As you stare into the vacuum of his eyes\n
+And ask him do you want to make a deal?\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+How does it feel\n
+How does it feel\n
+To be on your own\n
+With no direction home\n
+Like a complete unknown\n
+Like a rolling stone?\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+You never turned around to see the frowns \n
+on the jugglers and the clowns\n
+When they all come down and did tricks for you\n
+You never understood that it ain't no good\n
+You shouldn't let other people get your kicks for you\n
+You used to ride on the \n
+chrome horse with your diplomat\n
+Who carried on his shoulder a siamese cat\n
+Ain't it hard when you discover that\n
+He really wasn't where its at\n
+After he took from you \n
+everything he could steal.\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+How does it feel\n
+How does it feel\n
+To be on your own\n
+With no direction home\n
+Like a complete unknown\n
+Like a rolling stone?\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+Princess on the steeple and \n
+All the pretty people\n
+They're drinkin, \n
+thinkin that they got it made\n
+Exchanging all kinds of precious gifts and things\n
+But you'd better lift your diamond ring, \n
+you'd better pawn it babe\n
+You used to be so amused\n
+At napoleon in rags and the language that he used\n
+Go to him now, he calls you, \n
+you cant refuse\n
+When you got nothing, \n
+you got nothing to lose\n
+You're invisible now, \n
+you got no secrets to conceal.\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
-\n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+How does it feel\n
+How does it feel\n
+To be on your own\n
+With no direction home\n
+Like a complete unknown\n
+Like a rolling stone?"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

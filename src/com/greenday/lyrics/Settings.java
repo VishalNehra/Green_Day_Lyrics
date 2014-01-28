@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import com.greenday.lyrics.R;
 
@@ -20,6 +21,9 @@ public class Settings extends PreferenceActivity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		addPreferencesFromResource(R.xml.preferences);
+		this.setContentView(R.layout.pref_act);
+		ListView lv=(ListView) findViewById(R.id.listView1);
+		this.getListView().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.allsongs_bg));
 
 	}
 

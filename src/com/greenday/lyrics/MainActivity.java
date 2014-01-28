@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
             // 1) Launch the authentication activity
         	Crouton.makeText(this, "Welcome!", Style.CONFIRM).show();
             Crouton.makeText(this, "Slide from left corner towards right to get started", Style.INFO).show();
-            Crouton.makeText(this, "You can also access all songs from option below!", Style.ALERT).show();
+            Crouton.makeText(this, "Please don't forget to rate this app in market.", Style.ALERT).show();
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
             co.insert = ShowcaseView.INSERT_TO_VIEW;

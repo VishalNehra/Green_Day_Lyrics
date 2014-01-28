@@ -17,26 +17,58 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nWherever you go\n
+You know I’ll be there\n
+If you go far,\n
+You know I’ll be there\n
+I’ll go anywhere,\n
+So I’ll see you there\n
+You place the name\n
+You know I’ll be there\n
+You name the time\n
+You know I’ll be there\n
+I’ll go anywhere\n
+So I’ll see you there\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I don’t care if you don’t mind\n
+I’ll be there not far behind\n
+I will dare\n
+Keep in mind\n
+I’ll be there for you\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Where there’s truth\n
+You know I’ll be there\n
+Amongst the lies\n
+You know I’ll be there\n
+I’ll go anywhere\n
+So I’ll see you there\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I don’t care if you don’t mind\n
+I’ll be there not far behind\n
+I will dare\n
+Keep in mind\n
+I’ll be there for you\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+If you should fall\n
+You know I’ll be there\n
+To catch the call\n
+You know I’ll be there\n
+I’ll go anywhere\n
+So I’ll see you there\n
+\n
+I don’t care if you don’t mind\n
+I’ll be there not far behind\n
+I will dare\n
+Keep in mind\n
+I don’t care\n
+I’ll be there for you\n
+I’ll be there for you"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

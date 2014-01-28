@@ -17,26 +17,43 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\n\nI'm not part of your elite\n
+I'm just alright\n
+Class structure waving colors\n
+Bleeding from my throat\n
+Not subservient to you I'm just alright\n
+Down classed by the powers that be\n
+Give me loss of hope\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Cast out... Buried in a hole\n
+Struck down... forcing me to fall\n
+Destroyed... giving up the fight\n
+Well, I know I'm not alright\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+What's my price and \n
+will you pay it if it's alright?\n
+Take it from my dignity\n
+waste it until it's dead\n
+Throw me back into the gutter\n
+'Cause it's alright\n
+Find another pleasure fucker\n
+Drag them down to hell\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Cast out... Buried in a hole\n
+Struck down... forcing me to fall\n
+Destroyed... giving up the fight\n
+Well, I know I'm not alright\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Cast out... Buried in a hole\n
+Struck down... forcing me to fall\n
+Destroyed... giving up the fight\n
+Well, I know I'm not alright"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

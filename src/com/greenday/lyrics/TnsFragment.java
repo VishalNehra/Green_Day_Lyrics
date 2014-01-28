@@ -64,25 +64,25 @@ public class TnsFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"\t\t\t\t\t1000 Hours",
-        		"\t\t\t\t\t16",
-        		"\t\t\t\t\t409 In Your Coffeemaker",
-        		"\t\t\t\t\tAt The Library",
-        		"\t\t\t\t\tDisappering Boy",
-        		"\t\t\t\t\tDon't Leave Me",
-        		"\t\t\t\t\tDry Ice",
-        		"\t\t\t\t\tGoing To Pasalacqua",
-        		"\t\t\t\t\tGreen Day",
-        		"\t\t\t\t\tI Want To Be Alone",
-        		"\t\t\t\t\tI Was There",
-        		"\t\t\t\t\tKnowledge",
-        		"\t\t\t\t\tOnly Of You",
-        		"\t\t\t\t\tPaper Lanterns",
-        		"\t\t\t\t\tRest",
-        		"\t\t\t\t\tRoad To Accptance",
-        		"\t\t\t\t\tThe Judge's Daughter",
-        		"\t\t\t\t\tThe One I Want",
-        		"\t\t\t\t\tWhy Do You Want Him?"};
+        String[] values = new String[] {"1000 Hours",
+        		"16",
+        		"409 In Your Coffeemaker",
+        		"At The Library",
+        		"Disappering Boy",
+        		"Don't Leave Me",
+        		"Dry Ice",
+        		"Going To Pasalacqua",
+        		"Green Day",
+        		"I Want To Be Alone",
+        		"I Was There",
+        		"Knowledge",
+        		"Only Of You",
+        		"Paper Lanterns",
+        		"Rest",
+        		"Road To Accptance",
+        		"The Judge's Daughter",
+        		"The One I Want",
+        		"Why Do You Want Him?"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);

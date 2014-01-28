@@ -17,63 +17,73 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\nShe's always living like \n
+She's running out of time\n
+Too much just ain't enough \n
+to keep her satisfied\n
+Her plastic card is filled \n
+With nothing comes to mind\n
+It's now her occupation that \n
+She's overqualified\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+The looks are always so deceiving\n
+The truth is always misconstrued\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+To you...\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you too\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+He's talking shit about how \n
+It's better way back when\n
+He lives every waking moment \n
+as means to an end\n
+We are we are but I'm not\n
+I never used to be\n
+So god bless your fucking past \n
+And to hell with your glory\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+The looks are always so deceiving\n
+The truth is always misconstrued\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you too\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+She packs her bags and \n
+says goodbye and bon voyage\n
+Farewell we'll see you in hell \n
+I hope you rest in pieces\n
+Fuck you\n
+Oh..oh oh oh oh...\n
+Oh..oh oh oh oh...\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you\n
+Too much too soon\n
+Too little and now your coming unglued\n
+Too much too soon\n
+Too late and now it sucks to be you too\n
 \n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+Woah...oh oh oh oh.."/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

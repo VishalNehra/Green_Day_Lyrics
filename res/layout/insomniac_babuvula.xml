@@ -17,26 +17,81 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI've got a knack for 
+fucking everything up\n
+My temper flies and \n
+I get myself all wound up\n
+My fuse is short and \n
+My blood pressure is high\n
+I lose control and \n
+I get myself all wound up\n
+Tension mounts and \n
+I fly off the wall\n
+I self destruct and \n
+I get myself all wound up\n
+Petulance and irritation sets in\n
+I throw a tantrum and \n
+I get myself all wound up\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I lose myself and \n
+I'm all wound up\n
+Petulance and \n
+I'm all wound up\n
+I lose control and \n
+I'm all wound up\n
+I lose myself and \n
+I'm all wound up\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Chip on my shoulder and \n
+A leech on my back\n
+Stuck in a rut and \n
+I get myself all wound up\n
+Killed my composure and \n
+It will never come back\n
+Loss of control and \n
+I get myself all wound up\n
+Blown out of proportion again\n
+My temper snaps and \n
+I get myself all wound up\n
+Spontaneous combustion panic attack\n
+I slipped a gear and \n
+I get myself all wound up\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I lose myself and \n
+I'm all wound up
+Petulance and \n
+I'm all wound up\n
+I lose control and \n
+I'm all wound up\n
+I lose myself and \n
+I'm all wound up\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I've got a knack for \n
+fucking everything up\n
+My temper flies and \n
+I get myself all wound up\n
+My fuse is short and \n
+My blood pressure is high\n
+I lose control and \n
+I get myself all wound up\n
+Tension mounts and \n
+I fly off the wall\n
+I self destruct and \n
+I get myself all wound up\n
+Petulance and irritation sets in\n
+I throw a tantrum and \n
+I get myself all wound up\n
+\n
+I lose myself and I'm all wound up\n
+Petulance and I'm all wound up\n
+I lose control and I'm all wound up\n
+I lose myself and I'm all wound up"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
     android:background="@null" />

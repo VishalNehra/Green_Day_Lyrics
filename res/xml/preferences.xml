@@ -98,7 +98,13 @@
             <Preference
                 android:key="simple1_preference"
                 android:title="@string/simple1_title"
-                android:summary="@string/simple1_summary"/>
+                android:summary="@string/simple1_summary">
+            <intent 
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.greenday.lyrics"
+        android:targetClass="com.greenday.lyrics.Allsongs"
+    /></Preference>
+            
             <PreferenceScreen
                 android:title="@string/intent1_preference_title"
                 android:summary="@string/intent1_preference_summary">

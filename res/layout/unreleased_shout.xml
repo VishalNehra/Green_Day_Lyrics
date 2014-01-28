@@ -17,63 +17,89 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nIs your heart singing out of tune?\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+        android:text="\n[Originally by The Isley Brothers]\n
 \n
-No one really knows about your soul\n
-And I barely really know your name\n
-Burning rhythms and posting lies\n
-And a bunch of fools drown in shame\n
+Well, you know you make me wanna\n
+(Shout) Throw my hand up\n
+(Shout) Kick my heels back\n
+(Shout) Throw my head back\n
+(Shout) Come on now (Shout)\n
+Don't forget to say you will\n
+(Shout, Shout) Don't forget to say\n
+(Shout) Yeah yeah yeah yeah, come on\n
+(Say you will) Say it right now, baby\n
+(Say you will) Come on, come on\n
+(Say you will) Say it right now, baby\n
+(Say you will)\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
+I still remember\n
+When you used to be nine years old yeah, yeah\n
+An' now that you're grown up\n
+You're old enough to know\n
+An' you wanna leave me\n
+You wanna let me go\n
 \n
-Did you tattoo a lucky charm\n
-To keep you out of harms way?\n
-Warding off all evil signs\n
-But never really kept you safe\n
+I want you to know\n
+I said I want you to know right now\n
+You've been good to me, baby\n
+Better than I've been to myself\n
+And if you ever leave me\n
+I don't want nobody else\n
+I said I want you to know\n
+I said I want you to know right no\n
 \n
-Now you're too young for the golden age\n
-'Cause the record bin's been replaced\n
-27 gone without a trace\n
-And you walked away from your drink\n
+You know you make me wanna\n
+(Shout) Kick my shoes off\n
+(Shout) Throw my hands up\n
+(Shout) Take my pants off\n
+(Shout) Come on now\n
+(Shout) Don't forget to say you will\n
+(Shout, Shout) Don't forget to say\n
+(Shout) Yeah yeah yeah yeah, come on\n
+(Say you will) Say it right now, baby\n
+(Say you will)\n
 \n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of...\n
+(Say) Say that you love me\n
+(Say) Say that you need me\n
+(Say) Say that you want me\n
+(Say) Don't ever leave me\n
+(Shout) Come on now\n
+(Shout) Come on now\n
+(Shout) Come on now\n
+(Shout) Come on now\n
 \n
-Amy please don't go!\n
-Amy please don't go!\n
+(Shout) A little bit softer now\n
 \n
-Is your heart singing out of tune\n
-Are your eyes just singing the blues?\n
-Dirty records from another time\n
-Some blood stains on your shoes\n
+(Shout) A little bit louder now\n
 \n
-May I have this last dance\n
-By chance if we should meet?\n
-Can you write me a lullaby?\n
-So we can sing you to sleep\n
-\n
-Amy don't you go\n
-I want you around\n
-Singin' woah please don't go\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?\n
-Do you wanna be a friend of mine?"/>
+Hey (Hey) Hey (Hey)\n
+Yeah (Yeah) Yeah (Yeah)\n
+Shout now\n
+A little shout now\n
+Jump up and shout now\n
+A little shout now\n
+Come on (Shout now)\n
+Come on now (Shout now)\n
+Come on now (Shout now)\n
+Come on now (Shout now)\n
+Come on jump up and shout now\n
+A little shout now\n
+Jump up and shout now\n
+A little shout now\n
+Jump up and shout now\n
+A little shout now\n
+Jump up and shout now\n
+A little shout now, yeah,\n
+HEY!\n
+HO!\n
+GO!\n
+HEY!"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
     android:background="@null" />

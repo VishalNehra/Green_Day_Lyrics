@@ -17,26 +17,69 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI want to be the minority\n
+I don't need your authority\n
+Down with the moral majority\n
+'Cause I want to be the minority\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I pledge allegiance to the underworld\n
+One nation underdog\n
+There of which I stand alone\n
+A face in the crowd\n
+Unsung, against the mold\n
+Without a doubt\n
+Singled out\n
+The only way I know\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+'Cause I want to be the minority\n
+I don't need your authority\n
+Down with the moral majority\n
+'Cause I want to be the minority\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Stepped out of the line\n
+Like a sheep runs from the herd\n
+Marching out of time\n
+To my own beat now\n
+The only way I know\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+One light, one mind\n
+Flashing in the dark\n
+Blinded by the silence \n
+of a thousand broken hearts\n
+'For crying out loud,' she screamed unto me\n
+A free for all\n
+Fuck 'em all\n
+You're on your own side\n
+\n
+'Cause I want to be the minority\n
+I don't need your authority\n
+Down with the moral majority\n
+'Cause I want to be the minority\n
+\n
+One light, one mind\n
+Flashing in the dark\n
+Blinded by the silence \n
+of a thousand broken hearts\n
+'For crying out loud,' she screamed unto me\n
+A free for all\n
+Fuck 'em all\n
+You're on your own side\n
+\n
+'Cause I want to be the minority\n
+I don't need your authority\n
+Down with the moral majority\n
+'Cause I want to be the minority\n
+\n
+The minority\n
+I want to be the minority\n
+The minority\n
+I want to be the minority"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

@@ -17,26 +17,54 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nI'm on a mission\n
+I made my decision\n
+To lead a path of self destruction\n
+A slow progression\n
+Killing my complexion\n
+And it's rotting out my teeth\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+I'm on a roll\n
+No self control\n
+I'm blowing off steam \n
+with methamphetamine\n
+Don't know what I want\n
+That's all that I've got\n
+And I'm picking scabs off my face\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Every hour my blood is turning sour\n
+And my pulse is beating out of time\n
+I found a treasure\n
+filled with sick pleasure\n
+And it sits on a thick white line\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+I'm on a roll\n
+No self control\n
+I'm blowing off steam \n
+with methamphetamine\n
+Don't know what I want\n
+That's all that I've got\n
+And I'm picking scabs off my face\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+I'm on a mission\n
+I've got no decision\n
+Like a cripple running the rat race\n
+Wish in one hand shit in the other\n
+And see which one gets filled first\n
+\n
+I'm on a roll\n
+No self control\n
+I'm blowing off steam \n
+with methamphetamine\n
+Don't know what I want\n
+That's all that I've got\n
+And I'm picking scabs off my face"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_ins"
     android:background="@null" />

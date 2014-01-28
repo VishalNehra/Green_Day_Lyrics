@@ -17,26 +17,54 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nMaybe I'll see you tonight\n
-Maybe I'll see you tonight\n
+        android:text="\nMom and Dad don't look \n
+so hot these days\n
+They're getting over the hill\n
+Death is closing in and catching up\n
+As far as I can tell\n
+Got a plan of action and cold blood\n
+And it smells of defiance\n
+I'll just wait for \n
+Mom and Dad to die\n
+And got my inheritance\n
 \n
-Wherever the night takes you\n
-Maybe you'll see me too\n
+Well now I want more\n
+'Cause I'm getting bored\n
+And I'm going nowhere fast\n
+I was once filled with doubt\n
+Now it's all figured out\n
+Nothing good can last\n
 \n
-The colder it gets, you won't see me anymore\n
-But there's still a chance I might walk to your door\n
+Crows feet and rot are setting in\n
+And time is running out\n
+My parent's income interest rate\n
+Is gaining higher clout\n
+I'm a snot nosed slob\n
+Without a job\n
+And I know I darn well should\n
+Mom and Dad don't look \n
+so hot these days\n
+But my future's looking good\n
 \n
-Maybe the time is not right\n
-I won't be seeing you tonight\n
+Well now I want more\n
+'Cause I'm getting bored\n
+And I'm going nowhere fast\n
+I was once filled with doubt\n
+Now it's all figured out\n
+Nothing good can last\n
 \n
-Maybe I'll see you tonight\n
-Maybe I'll see you tonight"/>
+Well now I want more\n
+'Cause I'm getting bored\n
+And I'm going nowhere fast\n
+I was once filled with doubt\n
+Now it's all figured out\n
+Nothing good can last"/>
 </ScrollView>
 <ImageButton
     android:id="@+id/imageButton1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
     android:background="@null" />
