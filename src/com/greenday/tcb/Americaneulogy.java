@@ -39,7 +39,9 @@ public class Americaneulogy extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Americaneulogy.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"21st Century Breakdown (2009)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

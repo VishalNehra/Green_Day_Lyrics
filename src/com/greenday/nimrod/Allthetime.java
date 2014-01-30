@@ -39,7 +39,9 @@ public class Allthetime extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Allthetime.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Nimrod (1997)\n\n" +
+		        		"Writers:\n" +
 		        		"Dorothy Fields, Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard, Arthur Schwartz\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, Chappell & Co. Inc., WB Music Corp.")

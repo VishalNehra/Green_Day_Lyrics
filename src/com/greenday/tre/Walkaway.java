@@ -37,7 +37,9 @@ public class Walkaway extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Walkaway.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡TRÉ! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Tré Cool, Billie Joe Armstrong, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +
 		        		"Curb Congregation Songs, Green Daze Music, WB Music Corp.")

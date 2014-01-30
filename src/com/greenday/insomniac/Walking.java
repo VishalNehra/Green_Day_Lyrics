@@ -39,7 +39,9 @@ public class Walking extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Walking.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Insomiac (1995)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

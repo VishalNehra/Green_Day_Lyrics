@@ -30,7 +30,9 @@ public class Havingblast extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
-        .setMessage("Writers:\n" +
+        .setMessage("Album:\n" +
+        		"Dookie (1994)\n\n" +
+        		"Writers:\n" +
         		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
         		"Copyright:\n" +
         		"Green Daze Music, WB Music Corp.")

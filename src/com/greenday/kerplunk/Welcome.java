@@ -39,7 +39,9 @@ public class Welcome extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Welcome.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

@@ -38,7 +38,9 @@ public class Coffeemaker extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Coffeemaker.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"39/Smooth (1990)\n\n" +
+		        		"Writers:\n" +
 		        		"John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

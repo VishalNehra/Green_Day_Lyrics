@@ -39,7 +39,9 @@ public class Razorbacks extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Razorbacks.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

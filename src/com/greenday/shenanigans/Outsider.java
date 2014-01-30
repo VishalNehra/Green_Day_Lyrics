@@ -37,7 +37,9 @@ public class Outsider extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Outsider.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Shenanigans (2002)\n\n" +
+		        		"Writers:\n" +
 		        		"Joey Ramone, Dee Dee Ramone, Johnny Ramone\n\n" +
 		        		"Copyright:\n" +
 		        		"Taco Tunes")

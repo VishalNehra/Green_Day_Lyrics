@@ -37,7 +37,9 @@ public class WannabeonTV extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(WannabeonTV.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Shenanigans (2002)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

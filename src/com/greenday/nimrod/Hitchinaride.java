@@ -37,7 +37,9 @@ public class Hitchinaride extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Hitchinaride.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Nimrod (1997)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

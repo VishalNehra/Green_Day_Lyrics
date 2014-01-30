@@ -38,7 +38,9 @@ public class She extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(She.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Dookie (1994)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Al Schnier, Rob Derhak, Billie Joe Armstrong, Chuck Garvey, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, Spaz Medicine Music Inc., WB Music Corp.")

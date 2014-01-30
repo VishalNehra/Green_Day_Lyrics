@@ -39,7 +39,9 @@ public class Knowledge extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Knowledge.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"39/Smooth (1990)\n\n" +
+		        		"Writers:\n" +
 		        		"Operation Ivy\n\n")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {

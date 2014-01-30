@@ -37,7 +37,9 @@ public class Horseshoes extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Horseshoes.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"21st Century Breakdown (2009)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, van Morrison, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Carlin Music Corp., Green Daze Music, Bernice Music Inc., Unichappell Music Inc., WB Music Corp.")

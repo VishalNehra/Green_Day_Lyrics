@@ -37,7 +37,9 @@ public class Killthedj extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Killthedj.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡UNO! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Tré Cool, Michael Pritchard, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

@@ -39,7 +39,9 @@ public class Kingforaday extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Kingforaday.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Nimrod (1997)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

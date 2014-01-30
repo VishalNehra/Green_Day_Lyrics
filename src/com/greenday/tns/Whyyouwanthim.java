@@ -39,7 +39,9 @@ public class Whyyouwanthim extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Whyyouwanthim.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"39/Smooth (1990)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

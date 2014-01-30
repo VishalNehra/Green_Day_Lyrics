@@ -37,7 +37,9 @@ public class Nightlife extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Nightlife.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡DOS! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Monica Painter\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

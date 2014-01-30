@@ -37,7 +37,9 @@ public class Tiredofwaiting extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Shenanigans (2002)\n\n" +
+		        		"Writers:\n" +
 		        		"Ray Davies\n\n" +
 		        		"Copyright:\n" +
 		        		"Jayboy Music Corp.")

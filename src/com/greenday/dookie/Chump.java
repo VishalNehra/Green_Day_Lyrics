@@ -38,7 +38,9 @@ public class Chump extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Chump.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Dookie (1994)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

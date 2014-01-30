@@ -37,7 +37,9 @@ public class Cutonight extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Cutonight.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡DOS! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Tré Cool, Billie Joe Armstrong, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

@@ -39,7 +39,9 @@ public class Greenday extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Greenday.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"39/Smooth (1990)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

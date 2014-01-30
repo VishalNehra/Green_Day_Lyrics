@@ -39,7 +39,9 @@ public class Dontleaveme extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Dontleaveme.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"39/Smooth (1990)\n\n" +
+		        		"Writers:\n" +
 		        		"John Kiffmeyer, Billie Joe Armstrong, Bela Bartok, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, Boosey & Hawkes Music Publishers Ltd.")

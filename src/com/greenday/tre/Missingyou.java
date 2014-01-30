@@ -37,7 +37,9 @@ public class Missingyou extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Missingyou.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡TRÉ! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Tré Cool, Billie Joe Armstrong, Mike Dirnt, joe L. Thomas, Dallas Austin\n\n" +
 		        		"Copyright:\n" +
 		        		"Universal Music - Z Tunes LLC, Emi Blackwood Music Inc., 563 Music Publishing, Green Daze Music, WB Music Corp.")

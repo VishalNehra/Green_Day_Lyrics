@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Changelog -->
+    <string name="title_changelog">Change log</string>
+    <string name="changelog_close">Close</string>
+    
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
 	</string>

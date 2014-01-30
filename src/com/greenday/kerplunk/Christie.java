@@ -39,7 +39,9 @@ public class Christie extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Christie.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

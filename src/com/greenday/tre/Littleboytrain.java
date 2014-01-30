@@ -37,7 +37,9 @@ public class Littleboytrain extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Littleboytrain.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"¡TRÉ! (2012)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Tré Cool, Mike Dirnt (Unconfirmed)\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp. (Unconfirmed)")

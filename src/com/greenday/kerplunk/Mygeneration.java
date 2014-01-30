@@ -39,7 +39,9 @@ public class Mygeneration extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Mygeneration.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Pete Townshend\n\n" +
 		        		"Label:\n"+
 		        		"Brunswick 05944 (UK)\n" +

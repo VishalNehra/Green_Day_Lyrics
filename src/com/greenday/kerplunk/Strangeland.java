@@ -39,7 +39,9 @@ public class Strangeland extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Strangeland.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Mike Pritchard, John Kiffmeyer, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

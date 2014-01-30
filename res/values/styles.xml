@@ -4,8 +4,6 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    
-    <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
     <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
     <style name="AppBaseTheme" parent="android:Theme.Holo">
         
@@ -24,6 +22,15 @@
         
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:textColor">#588204</item>
+    </style>
+    
+    <!-- Testing -->
+    <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_background</item>
+    </style>
+
+    <style name="Widget.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
     </style>
     
 </resources>

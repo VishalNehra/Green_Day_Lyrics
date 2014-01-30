@@ -69,6 +69,7 @@ import com.greenday.kerplunk.Privateale;
 import com.greenday.kerplunk.Razorbacks;
 import com.greenday.kerplunk.Strangeland;
 import com.greenday.kerplunk.Sweetchildren;
+import com.greenday.kerplunk.Welcome;
 import com.greenday.kerplunk.Whowrote;
 import com.greenday.kerplunk.Wordsmightate;
 import com.greenday.nimrod.Allthetime;
@@ -179,22 +180,27 @@ import com.greenday.warning.Warning;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 public class Allsongs extends Activity {
-	
+	ArrayAdapter<String> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		ListView lv= (ListView) findViewById(R.id.listView1);
+		final ListView lv= (ListView) findViewById(R.id.listView1);
+		EditText inputSearch = (EditText) findViewById(R.id.inputSearch);
 		String[] values = new String []
 				{
 				"1,000 Hours",
@@ -372,368 +378,568 @@ public class Allsongs extends Activity {
 				"¡Viva La Gloria!",
 				"¿Viva La Gloria? (Little Girl)"
 				};
-		lv.setFastScrollEnabled(true);
-		lv.setFastScrollAlwaysVisible(true);
-		ArrayAdapter<String> adapter=
-				new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
+		
+		adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
 		lv.setAdapter(adapter);
-		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+		
+		/**
+         * Enabling Search Filter
+         * */
+        inputSearch.addTextChangedListener(new TextWatcher() {
+             
+            @Override
+            public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+                // When user changed the Text
+                Allsongs.this.adapter.getFilter().filter(cs);   
+            }
+             
+            @Override
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+                    int arg3) {
+                // TODO Auto-generated method stub
+                 
+            }
+             
+            public void afterTextChanged(Editable arg0) {
+                // TODO Auto-generated method stub  
+            }
+        });
+		
+		lv.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> p, View view, int position,
-					long id) {
+			public void onItemClick(AdapterView parent, View view,int position, long _id) {
+				String values = adapter.getItem(position);
+
+				
 				// TODO Auto-generated method stub
-				switch (position)
-				{
-				case 0: startActivity(new Intent(getApplicationContext(), Thousandhours.class));
-				break;
-				case 1: startActivity(new Intent(getApplicationContext(), Sixteen.class));
-				break;
-				case 2: startActivity(new Intent(getApplicationContext(), Lightyears.class));
-				break;
-				case 3: startActivity(new Intent(getApplicationContext(), Guns.class));
-				break;
-				case 4: startActivity(new Intent(getApplicationContext(), Tcb.class));
-				break;
-				case 5: startActivity(new Intent(getApplicationContext(), Coffeemaker.class));
-				break;
-				case 6: startActivity(new Intent(getApplicationContext(), Eighty.class));
-				break;
-				case 7: startActivity(new Intent(getApplicationContext(), Eightysix.class));
-				break;
-				case 8: startActivity(new Intent(getApplicationContext(), Avesrnde.class));
-				break;
-				case 9: startActivity(new Intent(getApplicationContext(), Ninetyninerev.class));
-				break;
-				case 10: startActivity(new Intent(getApplicationContext(), Allbymyself.class));
-				break;
-				case 11: startActivity(new Intent(getApplicationContext(), Allthetime.class));
-				break;
-				case 12: startActivity(new Intent(getApplicationContext(), Amanda.class));
-				break;
-				case 13: startActivity(new Intent(getApplicationContext(), Americaneulogy.class));
-				break;
-				case 14: startActivity(new Intent(getApplicationContext(), Americanidiot.class));
-				break;
-				case 15: startActivity(new Intent(getApplicationContext(), Amy.class));
-				break;
-				case 16: startActivity(new Intent(getApplicationContext(), Android.class));
-				break;
-				case 17: startActivity(new Intent(getApplicationContext(), Angelblue.class));
-				break;
-				case 18: startActivity(new Intent(getApplicationContext(), Arewethewaiting.class));
-				break;
-				case 19: startActivity(new Intent(getApplicationContext(), Armatage.class));
-				break;
-				case 20: startActivity(new Intent(getApplicationContext(), Ashley.class));
-				break;
-				case 21: startActivity(new Intent(getApplicationContext(), Atlibrary.class));
-				break;
-				case 22: startActivity(new Intent(getApplicationContext(), Babuvula.class));
-				break;
-				case 23: startActivity(new Intent(getApplicationContext(), Babyeyes.class));
-				break;
-				case 24: startActivity(new Intent(getApplicationContext(), Basketcase.class));
-				break;
-				case 25: startActivity(new Intent(getApplicationContext(), Lobotomy.class));
-				break;
-				case 26: startActivity(new Intent(getApplicationContext(), Bestthing.class));
-				break;
-				case 27: startActivity(new Intent(getApplicationContext(), Bloodsex.class));
-				break;
-				case 28: startActivity(new Intent(getApplicationContext(), Boulevardofbd.class));
-				break;
-				case 29: startActivity(new Intent(getApplicationContext(), Brainstew.class));
-				break;
-				case 30: startActivity(new Intent(getApplicationContext(), Brat.class));
-				break;
-				case 31: startActivity(new Intent(getApplicationContext(), Brutallove.class));
-				break;
-				case 32: startActivity(new Intent(getApplicationContext(), Burnout.class));
-				break;
-				case 33: startActivity(new Intent(getApplicationContext(), Carpediem.class));
-				break;
-				case 34: startActivity(new Intent(getApplicationContext(), Castaway.class));
-				break;
-				case 35: startActivity(new Intent(getApplicationContext(), Inferno.class));
-				break;
-				case 36: startActivity(new Intent(getApplicationContext(), Christie.class));
-				break;
-				case 37: startActivity(new Intent(getApplicationContext(), Chump.class));
-				break;
-				case 38: startActivity(new Intent(getApplicationContext(), Church.class));
-				break;
-				case 39: startActivity(new Intent(getApplicationContext(), Comingclean.class));
-				break;
-				case 40: startActivity(new Intent(getApplicationContext(), Deadbeat.class));
-				break;
-				case 41: startActivity(new Intent(getApplicationContext(), Desensitized.class));
-				break;
-				case 42: startActivity(new Intent(getApplicationContext(), Dirtybastards.class));
-				break;
-				case 43: startActivity(new Intent(getApplicationContext(), Disappearingboy.class));
-				break;
-				case 44: startActivity(new Intent(getApplicationContext(), Dodada.class));
-				break;
-				case 45: startActivity(new Intent(getApplicationContext(), Dodada.class));
-				break;
-				case 46: startActivity(new Intent(getApplicationContext(), Dontleaveme.class));
-				break;
-				case 47: startActivity(new Intent(getApplicationContext(), Fallinlove.class));
-				break;
-				case 48: startActivity(new Intent(getApplicationContext(), Dramaqueen.class));
-				break;
-				case 49: startActivity(new Intent(getApplicationContext(), Dryice.class));
-				break;
-				case 50: startActivity(new Intent(getApplicationContext(), Eastjesus.class));
-				break;
-				case 51: startActivity(new Intent(getApplicationContext(), Emeniussleepus.class));
-				break;
-				case 52: startActivity(new Intent(getApplicationContext(), Extraordgirl.class));
-				break;
-				case 53: startActivity(new Intent(getApplicationContext(), FOD.class));
-				break;
-				case 54: startActivity(new Intent(getApplicationContext(), Fashion.class));
-				break;
-				case 55: startActivity(new Intent(getApplicationContext(), Fellforyou.class));
-				break;
-				case 56: startActivity(new Intent(getApplicationContext(), Fucktime.class));
-				break;
-				case 57: startActivity(new Intent(getApplicationContext(), Geekstink.class));
-				break;
-				case 58: startActivity(new Intent(getApplicationContext(), Givemenov.class));
-				break;
-				case 59: startActivity(new Intent(getApplicationContext(), Goingpasalacqua.class));
-				break;
-				case 60: startActivity(new Intent(getApplicationContext(), Goodriddance.class));
-				break;
-				case 61: startActivity(new Intent(getApplicationContext(), Greenday.class));
-				break;
-				case 62: startActivity(new Intent(getApplicationContext(), Yourdead.class));
-				break;
-				case 63: startActivity(new Intent(getApplicationContext(), Haushinka.class));
-				break;
-				case 64: startActivity(new Intent(getApplicationContext(), Havingblast.class));
-				break;
-				case 65: startActivity(new Intent(getApplicationContext(), Hitchinaride.class));
-				break;
-				case 66: startActivity(new Intent(getApplicationContext(), Holdon.class));
-				break;
-				case 67: startActivity(new Intent(getApplicationContext(), Holiday.class));
-				break;
-				case 68: startActivity(new Intent(getApplicationContext(), Homecoming.class));
-				break;
-				case 69: startActivity(new Intent(getApplicationContext(), Horseshoes.class));
-				break;
-				case 70: startActivity(new Intent(getApplicationContext(), Wantbealone.class));
-				break;
-				case 71: startActivity(new Intent(getApplicationContext(), WannabeonTV.class));
-				break;
-				case 72: startActivity(new Intent(getApplicationContext(), Iwasthere.class));
-				break;
-				case 73: startActivity(new Intent(getApplicationContext(), Intheend.class));
-				break;
-				case 74: startActivity(new Intent(getApplicationContext(), Jackass.class));
-				break;
-				case 75: startActivity(new Intent(getApplicationContext(), Jaded.class));
-				break;
-				case 76: startActivity(new Intent(getApplicationContext(), Jesusofsuburb.class));
-				break;
-				case 77: startActivity(new Intent(getApplicationContext(), Jinx.class));
-				break;
-				case 78: startActivity(new Intent(getApplicationContext(), Killthedj.class));
-				break;
-				case 79: startActivity(new Intent(getApplicationContext(), Kingforaday.class));
-				break;
-				case 80: startActivity(new Intent(getApplicationContext(), Knowyourenemy.class));
-				break;
-				case 81: startActivity(new Intent(getApplicationContext(), Knowledge.class));
-				break;
-				case 82: startActivity(new Intent(getApplicationContext(), Ladycobra.class));
-				break;
-				case 83: startActivity(new Intent(getApplicationContext(), Lastnight.class));
-				break;
-				case 84: startActivity(new Intent(getApplicationContext(), Lastamerican.class));
-				break;
-				case 85: startActivity(new Intent(getApplicationContext(), Lazybones.class));
-				break;
-				case 86: startActivity(new Intent(getApplicationContext(), Letyourselfgo.class));
-				break;
-				case 87: startActivity(new Intent(getApplicationContext(), Letterbomb.class));
-				break;
-				case 88: startActivity(new Intent(getApplicationContext(), Littleboytrain.class));
-				break;
-				case 89: startActivity(new Intent(getApplicationContext(), Longview.class));
-				break;
-				case 90: startActivity(new Intent(getApplicationContext(), Lossofcontrol.class));
-				break;
-				case 91: startActivity(new Intent(getApplicationContext(), Macy.class));
-				break;
-				case 92: startActivity(new Intent(getApplicationContext(), Makeoutparty.class));
-				break;
-				case 93: startActivity(new Intent(getApplicationContext(), Minority.class));
-				break;
-				case 94: startActivity(new Intent(getApplicationContext(), Misery.class));
-				break;
-				case 95: startActivity(new Intent(getApplicationContext(), Missingyou.class));
-				break;
-				case 96: startActivity(new Intent(getApplicationContext(), Murdercity.class));
-				break;
-				case 97: startActivity(new Intent(getApplicationContext(), Mygeneration.class));
-				break;
-				case 98: startActivity(new Intent(getApplicationContext(), Niceguys.class));
-				break;
-				case 99: startActivity(new Intent(getApplicationContext(), Nightlife.class));
-				break;
-				case 100: startActivity(new Intent(getApplicationContext(), Nooneknows.class));
-				break;
-				case 101: startActivity(new Intent(getApplicationContext(), Nopride.class));
-				break;
-				case 102: startActivity(new Intent(getApplicationContext(), Nuclearfamily.class));
-				break;
-				case 103: startActivity(new Intent(getApplicationContext(), Ohlove.class));
-				break;
-				case 104: startActivity(new Intent(getApplicationContext(), Onwagon.class));
-				break;
-				case 105: startActivity(new Intent(getApplicationContext(), Razorbacks.class));
-				break;
-				case 106: startActivity(new Intent(getApplicationContext(), Oneoflies.class));
-				break;
-				case 107: startActivity(new Intent(getApplicationContext(), Onlyofyou.class));
-				break;
-				case 108: startActivity(new Intent(getApplicationContext(), Outsider.class));
-				break;
-				case 109: startActivity(new Intent(getApplicationContext(), Panicsong.class));
-				break;
-				case 110: startActivity(new Intent(getApplicationContext(), Paperlanterns.class));
-				break;
-				case 111: startActivity(new Intent(getApplicationContext(), Peacemaker.class));
-				break;
-				case 112: startActivity(new Intent(getApplicationContext(), Platypus.class));
-				break;
-				case 113: startActivity(new Intent(getApplicationContext(), Privateale.class));
-				break;
-				case 114: startActivity(new Intent(getApplicationContext(), Prosthetichead.class));
-				break;
-				case 115: startActivity(new Intent(getApplicationContext(), Pullingteeth.class));
-				break;
-				case 116: startActivity(new Intent(getApplicationContext(), Redundant.class));
-				break;
-				case 117: startActivity(new Intent(getApplicationContext(), Reject.class));
-				break;
-				case 118: startActivity(new Intent(getApplicationContext(), Rest.class));
-				break;
-				case 119: startActivity(new Intent(getApplicationContext(), Restlessheart.class));
-				break;
-				case 120: startActivity(new Intent(getApplicationContext(), Roadtoacceptance.class));
-				break;
-				case 121: startActivity(new Intent(getApplicationContext(), Rotting.class));
-				break;
-				case 122: startActivity(new Intent(getApplicationContext(), Rustyjames.class));
-				break;
-				case 123: startActivity(new Intent(getApplicationContext(), Sassafrasroots.class));
-				break;
-				case 124: startActivity(new Intent(getApplicationContext(), Scattered.class));
-				break;
-				case 125: startActivity(new Intent(getApplicationContext(), Scumbag.class));
-				break;
-				case 126: startActivity(new Intent(getApplicationContext(), Seethelight.class));
-				break;
-				case 127: startActivity(new Intent(getApplicationContext(), Cutonight.class));
-				break;
-				case 128: startActivity(new Intent(getApplicationContext(), Sexdrugs.class));
-				break;
-				case 129: startActivity(new Intent(getApplicationContext(), She.class));
-				break;
-				case 130: startActivity(new Intent(getApplicationContext(), Shesarebel.class));
-				break;
-				case 131: startActivity(new Intent(getApplicationContext(), Sickofme.class));
-				break;
-				case 132: startActivity(new Intent(getApplicationContext(), Songofcentuary.class));
-				break;
-				case 133: startActivity(new Intent(getApplicationContext(), Stjimmy.class));
-				break;
-				case 134: startActivity(new Intent(getApplicationContext(), Staythenight.class));
-				break;
-				case 135: startActivity(new Intent(getApplicationContext(), Stopredflash.class));
-				break;
-				case 136: startActivity(new Intent(getApplicationContext(), Strangeland.class));
-				break;
-				case 137: startActivity(new Intent(getApplicationContext(), Strayheart.class));
-				break;
-				case 138: startActivity(new Intent(getApplicationContext(), Stuartave.class));
-				break;
-				case 139: startActivity(new Intent(getApplicationContext(), Stuckwithme.class));
-				break;
-				case 140: startActivity(new Intent(getApplicationContext(), Suffocate.class));
-				break;
-				case 141: startActivity(new Intent(getApplicationContext(), Sweetsixt.class));
-				break;
-				case 142: startActivity(new Intent(getApplicationContext(), Sweetchildren.class));
-				break;
-				case 143: startActivity(new Intent(getApplicationContext(), Takeback.class));
-				break;
-				case 144: startActivity(new Intent(getApplicationContext(), Theforgotten.class));
-				break;
-				case 145: startActivity(new Intent(getApplicationContext(), Grouch.class));
-				break;
-				case 146: startActivity(new Intent(getApplicationContext(), Judgedaughter.class));
-				break;
-				case 147: startActivity(new Intent(getApplicationContext(), Oneiwant.class));
-				break;
-				case 148: startActivity(new Intent(getApplicationContext(), Staticage.class));
-				break;
-				case 149: startActivity(new Intent(getApplicationContext(), Tightwad.class));
-				break;
-				case 150: startActivity(new Intent(getApplicationContext(), Tiredofwaiting.class));
-				break;
-				case 151: startActivity(new Intent(getApplicationContext(), Troublemaker.class));
-				break;
-				case 152: startActivity(new Intent(getApplicationContext(), Uptight.class));
-				break;
-				case 153: startActivity(new Intent(getApplicationContext(), Waiting.class));
-				break;
-				case 154: startActivity(new Intent(getApplicationContext(), Wakemeup.class));
-				break;
-				case 155: startActivity(new Intent(getApplicationContext(), Walkaway.class));
-				break;
-				case 156: startActivity(new Intent(getApplicationContext(), Walkingalone.class));
-				break;
-				case 157: startActivity(new Intent(getApplicationContext(), Walking.class));
-				break;
-				case 158: startActivity(new Intent(getApplicationContext(), Warning.class));
-				break;
-				case 159: startActivity(new Intent(getApplicationContext(), Welcomeparadise.class));
-				break;
-				case 160: startActivity(new Intent(getApplicationContext(), com.greenday.ins.Welcomeparadise.class));
-				break;
-				case 161: startActivity(new Intent(getApplicationContext(), Westbound.class));
-				break;
-				case 162: startActivity(new Intent(getApplicationContext(), Whatshername.class));
-				break;
-				case 163: startActivity(new Intent(getApplicationContext(), Whencomearound.class));
-				break;
-				case 164: startActivity(new Intent(getApplicationContext(), Whowrote.class));
-				break;
-				case 165: startActivity(new Intent(getApplicationContext(), Whyyouwanthim.class));
-				break;
-				case 166: startActivity(new Intent(getApplicationContext(), Wildone.class));
-				break;
-				case 167: startActivity(new Intent(getApplicationContext(), Wordsmightate.class));
-				break;
-				case 168: startActivity(new Intent(getApplicationContext(), Worryrock.class));
-				break;
-				case 169: startActivity(new Intent(getApplicationContext(), Wowthatsloud.class));
-				break;
-				case 170: startActivity(new Intent(getApplicationContext(), Kid.class));
-				break;
-				case 171: startActivity(new Intent(getApplicationContext(), Youlied.class));
-				break;
-				case 172: startActivity(new Intent(getApplicationContext(), Vivalagloria.class));
-				break;
-				case 173: startActivity(new Intent(getApplicationContext(), Vivalagloria2.class));
-				break;
-				}
+				Intent i =null;
+
+				if (values=="1,000 Hours") {
+					i=new Intent(Allsongs.this, Thousandhours.class);
+					startActivity(i);}
+				if (values=="16") {
+					i=new Intent(Allsongs.this, Sixteen.class);
+					startActivity(i);}
+				if (values=="2000 Light Years Away") {
+					i=new Intent(Allsongs.this, Lightyears.class);
+					startActivity(i);}
+				if (values=="21 Guns") {
+					i=new Intent(Allsongs.this, Guns.class);
+					startActivity(i);}
+				if (values=="21st Century Breakdown") {
+					i=new Intent(Allsongs.this, Tcb.class);
+					startActivity(i);}
+				if (values=="409 In Your Coffeemaker") {
+					i=new Intent(Allsongs.this, Coffeemaker.class);
+					startActivity(i);}
+				if (values=="80") {
+					i=new Intent(Allsongs.this, Eighty.class);
+					startActivity(i);}
+				if (values=="86") {
+					i=new Intent(Allsongs.this, Eightysix.class);
+					startActivity(i);}
+				if (values=="8th Ave Serenade") {
+					i=new Intent(Allsongs.this, Avesrnde.class);
+					startActivity(i);}
+				if (values=="99 Revolutions") {
+					i=new Intent(Allsongs.this, Ninetyninerev.class);
+					startActivity(i);}
+				if (values=="All By Myself") {
+					i=new Intent(Allsongs.this, Allbymyself.class);
+					startActivity(i);}
+				if (values=="All The Time") {
+					i=new Intent(Allsongs.this, Allthetime.class);
+					startActivity(i);}
+				if (values=="Amanda") {
+					i=new Intent(Allsongs.this, Amanda.class);
+					startActivity(i);}
+				if (values=="American Eulogy") {
+					i=new Intent(Allsongs.this, Americaneulogy.class);
+					startActivity(i);}
+				if (values=="American Idiot") {
+					i=new Intent(Allsongs.this, Americanidiot.class);
+					startActivity(i);}
+				if (values=="Amy") {
+					i=new Intent(Allsongs.this, Amy.class);
+					startActivity(i);}
+				if (values=="Android") {
+					i=new Intent(Allsongs.this, Android.class);
+					startActivity(i);}
+				if (values=="Angel Blue") {
+					i=new Intent(Allsongs.this, Angelblue.class);
+					startActivity(i);}
+				if (values=="Are We The Waiting") {
+					i=new Intent(Allsongs.this, Arewethewaiting.class);
+					startActivity(i);}
+				if (values=="Armatage Shanks") {
+					i=new Intent(Allsongs.this, Armatage.class);
+					startActivity(i);}
+				if (values=="Ashley") {
+					i=new Intent(Allsongs.this, Ashley.class);
+					startActivity(i);}
+				if (values=="At The Library") {
+					i=new Intent(Allsongs.this, Atlibrary.class);
+					startActivity(i);}
+				if (values=="Bab's Uvula Who?") {
+					i=new Intent(Allsongs.this, Babuvula.class);
+					startActivity(i);}
+				if (values=="Baby Eyes") {
+					i=new Intent(Allsongs.this, Babyeyes.class);
+					startActivity(i);}
+				if (values=="Basket Case") {
+					i=new Intent(Allsongs.this, Basketcase.class);
+					startActivity(i);}
+				if (values=="Before The Lobotomy") {
+					i=new Intent(Allsongs.this, Lobotomy.class);
+					startActivity(i);}
+				if (values=="Best Thing In Town") {
+					i=new Intent(Allsongs.this, Bestthing.class);
+					startActivity(i);}
+				if (values=="Blood, Sex And Booze") {
+					i=new Intent(Allsongs.this, Bloodsex.class);
+					startActivity(i);}
+				if (values=="Boulevard Of Broken Dreams") {
+					i=new Intent(Allsongs.this, Boulevardofbd.class);
+					startActivity(i);}
+				if (values=="Brain Stew") {
+					i=new Intent(Allsongs.this, Brainstew.class);
+					startActivity(i);}
+				if (values=="Brat") {
+					i=new Intent(Allsongs.this, Brat.class);
+					startActivity(i);}
+				if (values=="Brutal Love") {
+					i=new Intent(Allsongs.this, Brutallove.class);
+					startActivity(i);}
+				if (values=="Burnout") {
+					i=new Intent(Allsongs.this, Burnout.class);
+					startActivity(i);}
+				if (values=="Carpe Diem") {
+					i=new Intent(Allsongs.this, Carpediem.class);
+					startActivity(i);}
+				if (values=="Castaway") {
+					i=new Intent(Allsongs.this, Castaway.class);
+					startActivity(i);}
+				if (values=="Christian's Inferno") {
+					i=new Intent(Allsongs.this, Inferno.class);
+					startActivity(i);}
+				if (values=="Christie Road") {
+					i=new Intent(Allsongs.this, Christie.class);
+					startActivity(i);}
+				if (values=="Chump") {
+					i=new Intent(Allsongs.this, Chump.class);
+					startActivity(i);}
+				if (values=="Church On Sunday") {
+					i=new Intent(Allsongs.this, Church.class);
+					startActivity(i);}
+				if (values=="Coming Clean") {
+					i=new Intent(Allsongs.this, Comingclean.class);
+					startActivity(i);}
+				if (values=="Deadbeat Holiday") {
+					i=new Intent(Allsongs.this, Deadbeat.class);
+					startActivity(i);}
+				if (values=="Desensitized") {
+					i=new Intent(Allsongs.this, Desensitized.class);
+					startActivity(i);}
+				if (values=="Dirty Rotten Bastards") {
+					i=new Intent(Allsongs.this, Dirtybastards.class);
+					startActivity(i);}
+				if (values=="Disappearing Boy") {
+					i=new Intent(Allsongs.this, Disappearingboy.class);
+					startActivity(i);}
+				if (values=="Do Da Da") {
+					i=new Intent(Allsongs.this, Dodada.class);
+					startActivity(i);}
+				if (values=="Dominated Love Slave") {
+					i=new Intent(Allsongs.this, Dodada.class);
+					startActivity(i);}
+				if (values=="Don't Leave Me") {
+					i=new Intent(Allsongs.this, Dontleaveme.class);
+					startActivity(i);}
+				if (values=="Don't Wanna Fall In Love") {
+					i=new Intent(Allsongs.this, Fallinlove.class);
+					startActivity(i);}
+				if (values=="Drama Queen") {
+					i=new Intent(Allsongs.this, Dramaqueen.class);
+					startActivity(i);}
+				if (values=="Dry Ice") {
+					i=new Intent(Allsongs.this, Dryice.class);
+					startActivity(i);}
+				if (values=="East Jesus Nowhere") {
+					i=new Intent(Allsongs.this, Eastjesus.class);
+					startActivity(i);}
+				if (values=="Emenius Sleepus") {
+					i=new Intent(Allsongs.this, Emeniussleepus.class);
+					startActivity(i);}
+				if (values=="Extraordinary Girl") {
+					i=new Intent(Allsongs.this, Extraordgirl.class);
+					startActivity(i);}
+				if (values=="F.O.D.") {
+					i=new Intent(Allsongs.this, FOD.class);
+					startActivity(i);}
+				if (values=="Fashion Victim") {
+					i=new Intent(Allsongs.this, Fashion.class);
+					startActivity(i);}
+				if (values=="Fell For You") {
+					i=new Intent(Allsongs.this, Fellforyou.class);
+					startActivity(i);}
+				if (values=="Fuck Time") {
+					i=new Intent(Allsongs.this, Fucktime.class);
+					startActivity(i);}
+				if (values=="Geek Stink Breath") {
+					i=new Intent(Allsongs.this, Geekstink.class);
+					startActivity(i);}
+				if (values=="Give Me Novacaine") {
+					i=new Intent(Allsongs.this, Givemenov.class);
+					startActivity(i);}
+				if (values=="Going To Pasalacqua") {
+					i=new Intent(Allsongs.this, Goingpasalacqua.class);
+					startActivity(i);}
+				if (values=="Good Riddance (Time Of Your Life)") {
+					i=new Intent(Allsongs.this, Goodriddance.class);
+					startActivity(i);}
+				if (values=="Green Day") {
+					i=new Intent(Allsongs.this, Greenday.class);
+					startActivity(i);}
+				if (values=="Ha Ha You're Dead") {
+					i=new Intent(Allsongs.this, Yourdead.class);
+					startActivity(i);}
+				if (values=="Haushinka") {
+					i=new Intent(Allsongs.this, Haushinka.class);
+					startActivity(i);}
+				if (values=="Having A Blast") {
+					i=new Intent(Allsongs.this, Havingblast.class);
+					startActivity(i);}
+				if (values=="Hitchin' A Ride") {
+					i=new Intent(Allsongs.this, Hitchinaride.class);
+					startActivity(i);}
+				if (values=="Hold On") {
+					i=new Intent(Allsongs.this, Holdon.class);
+					startActivity(i);}
+				if (values=="Holiday") {
+					i=new Intent(Allsongs.this, Holiday.class);
+					startActivity(i);}
+				if (values=="Homecoming") {
+					i=new Intent(Allsongs.this, Homecoming.class);
+					startActivity(i);}
+				if (values=="Horseshoes And Handgrenades") {
+					i=new Intent(Allsongs.this, Horseshoes.class);
+					startActivity(i);}
+				if (values=="I Want To Be Alone") {
+					i=new Intent(Allsongs.this, WannabeonTV.class);
+					startActivity(i);}
+				if (values=="I Want To Be On TV") {
+					i=new Intent(Allsongs.this, WannabeonTV.class);
+					startActivity(i);}
+				if (values=="I Was There") {
+					i=new Intent(Allsongs.this, Iwasthere.class);
+					startActivity(i);}
+				if (values=="In The End") {
+					i=new Intent(Allsongs.this, Intheend.class);
+					startActivity(i);}
+				if (values=="Jackass") {
+					i=new Intent(Allsongs.this, Jackass.class);
+					startActivity(i);}
+				if (values=="Jaded") {
+					i=new Intent(Allsongs.this, Jaded.class);
+					startActivity(i);}
+				if (values=="Jesus Of Suburbia") {
+					i=new Intent(Allsongs.this, Jesusofsuburb.class);
+					startActivity(i);}
+				if (values=="Jinx") {
+					i=new Intent(Allsongs.this, Jinx.class);
+					startActivity(i);}
+				if (values=="Kill The DJ") {
+					i=new Intent(Allsongs.this, Killthedj.class);
+					startActivity(i);}
+				if (values=="King For A Day") {
+					i=new Intent(Allsongs.this, Kingforaday.class);
+					startActivity(i);}
+				if (values=="Know Your Enemy") {
+					i=new Intent(Allsongs.this, Knowyourenemy.class);
+					startActivity(i);}
+				if (values=="Knowledge") {
+					i=new Intent(Allsongs.this, Knowledge.class);
+					startActivity(i);}
+				if (values=="Lady Cobra") {
+					i=new Intent(Allsongs.this, Ladycobra.class);
+					startActivity(i);}
+				if (values=="Last Night On Earth") {
+					i=new Intent(Allsongs.this, Lastnight.class);
+					startActivity(i);}
+				if (values=="Last Of The American Girls") {
+					i=new Intent(Allsongs.this, Lastamerican.class);
+					startActivity(i);}
+				if (values=="Lazy Bones") {
+					i=new Intent(Allsongs.this, Lazybones.class);
+					startActivity(i);}
+				if (values=="Let Yourself Go") {
+					i=new Intent(Allsongs.this, Letyourselfgo.class);
+					startActivity(i);}
+				if (values=="Letterbomb") {
+					i=new Intent(Allsongs.this, Letterbomb.class);
+					startActivity(i);}
+				if (values=="Little Boy Named Train") {
+					i=new Intent(Allsongs.this, Littleboytrain.class);
+					startActivity(i);}
+				if (values=="Longview") {
+					i=new Intent(Allsongs.this, Longview.class);
+					startActivity(i);}
+				if (values=="Loss Of Control") {
+					i=new Intent(Allsongs.this, Lossofcontrol.class);
+					startActivity(i);}
+				if (values=="Macy's Day Parade") {
+					i=new Intent(Allsongs.this, Macy.class);
+					startActivity(i);}
+				if (values=="Makeout Party") {
+					i=new Intent(Allsongs.this, Makeoutparty.class);
+					startActivity(i);}
+				if (values=="Minority") {
+					i=new Intent(Allsongs.this, Minority.class);
+					startActivity(i);}
+				if (values=="Misery") {
+					i=new Intent(Allsongs.this, Misery.class);
+					startActivity(i);}
+				if (values=="Missing You") {
+					i=new Intent(Allsongs.this, Missingyou.class);
+					startActivity(i);}
+				if (values=="Murder City") {
+					i=new Intent(Allsongs.this, Murdercity.class);
+					startActivity(i);}
+				if (values=="My Generation") {
+					i=new Intent(Allsongs.this, Mygeneration.class);
+					startActivity(i);}
+				if (values=="Nice Guys Finish Last") {
+					i=new Intent(Allsongs.this, Niceguys.class);
+					startActivity(i);}
+				if (values=="Nightlife") {
+					i=new Intent(Allsongs.this, Nightlife.class);
+					startActivity(i);}
+				if (values=="No One Knows") {
+					i=new Intent(Allsongs.this, Nooneknows.class);
+					startActivity(i);}
+				if (values=="No Pride") {
+					i=new Intent(Allsongs.this, Nopride.class);
+					startActivity(i);}
+				if (values=="Nuclear Family") {
+					i=new Intent(Allsongs.this, Nuclearfamily.class);
+					startActivity(i);}
+				if (values=="Oh Love") {
+					i=new Intent(Allsongs.this, Ohlove.class);
+					startActivity(i);}
+				if (values=="On The Wagon") {
+					i=new Intent(Allsongs.this, Onwagon.class);
+					startActivity(i);}
+				if (values=="One For The Razorbacks") {
+					i=new Intent(Allsongs.this, Razorbacks.class);
+					startActivity(i);}
+				if (values=="One Of My Lies") {
+					i=new Intent(Allsongs.this, Oneoflies.class);
+					startActivity(i);}
+				if (values=="Only Of You") {
+					i=new Intent(Allsongs.this, Onlyofyou.class);
+					startActivity(i);}
+				if (values=="Outsider") {
+					i=new Intent(Allsongs.this, Outsider.class);
+					startActivity(i);}
+				if (values=="Panic Song") {
+					i=new Intent(Allsongs.this, Panicsong.class);
+					startActivity(i);}
+				if (values=="Paper Lanterns") {
+					i=new Intent(Allsongs.this, Paperlanterns.class);
+					startActivity(i);}
+				if (values=="Peacemaker") {
+					i=new Intent(Allsongs.this, Peacemaker.class);
+					startActivity(i);}
+				if (values=="Platypus (I Hate You)") {
+					i=new Intent(Allsongs.this, Platypus.class);
+					startActivity(i);}
+				if (values=="Private Ale") {
+					i=new Intent(Allsongs.this, Privateale.class);
+					startActivity(i);}
+				if (values=="Prosthetic Head") {
+					i=new Intent(Allsongs.this, Prosthetichead.class);
+					startActivity(i);}
+				if (values=="Pulling Teeth") {
+					i=new Intent(Allsongs.this, Pullingteeth.class);
+					startActivity(i);}
+				if (values=="Redundant") {
+					i=new Intent(Allsongs.this, Redundant.class);
+					startActivity(i);}
+				if (values=="Reject") {
+					i=new Intent(Allsongs.this, Reject.class);
+					startActivity(i);}
+				if (values=="Rest") {
+					i=new Intent(Allsongs.this, Rest.class);
+					startActivity(i);}
+				if (values=="Restless Heart Syndrome") {
+					i=new Intent(Allsongs.this, Restlessheart.class);
+					startActivity(i);}
+				if (values=="Road To Acceptance") {
+					i=new Intent(Allsongs.this, Roadtoacceptance.class);
+					startActivity(i);}
+				if (values=="Rotting") {
+					i=new Intent(Allsongs.this, Rotting.class);
+					startActivity(i);}
+				if (values=="Rusty James") {
+					i=new Intent(Allsongs.this, Rustyjames.class);
+					startActivity(i);}
+				if (values=="Sassafras Roots") {
+					i=new Intent(Allsongs.this, Sassafrasroots.class);
+					startActivity(i);}
+				if (values=="Scattered") {
+					i=new Intent(Allsongs.this, Scattered.class);
+					startActivity(i);}
+				if (values=="Scumbag") {
+					i=new Intent(Allsongs.this, Scumbag.class);
+					startActivity(i);}
+				if (values=="See The Light") {
+					i=new Intent(Allsongs.this, Seethelight.class);
+					startActivity(i);}
+				if (values=="See You Tonight") {
+					i=new Intent(Allsongs.this, Cutonight.class);
+					startActivity(i);}
+				if (values=="Sex, Drugs & Violence") {
+					i=new Intent(Allsongs.this, Sexdrugs.class);
+					startActivity(i);}
+				if (values=="She") {
+					i=new Intent(Allsongs.this, She.class);
+					startActivity(i);}
+				if (values=="She's A Rebel") {
+					i=new Intent(Allsongs.this, Shesarebel.class);
+					startActivity(i);}
+				if (values=="Sick Of Me") {
+					i=new Intent(Allsongs.this, Sickofme.class);
+					startActivity(i);}
+				if (values=="Song Of The Century") {
+					i=new Intent(Allsongs.this, Songofcentuary.class);
+					startActivity(i);}
+				if (values=="St. Jimmy") {
+					i=new Intent(Allsongs.this, Stjimmy.class);
+					startActivity(i);}
+				if (values=="Stay The Night") {
+					i=new Intent(Allsongs.this, Staythenight.class);
+					startActivity(i);}
+				if (values=="Stop When The Red Light Flash") {
+					i=new Intent(Allsongs.this, Stopredflash.class);
+					startActivity(i);}
+				if (values=="Strangeland") {
+					i=new Intent(Allsongs.this, Strangeland.class);
+					startActivity(i);}
+				if (values=="Stray Heart") {
+					i=new Intent(Allsongs.this, Strayheart.class);
+					startActivity(i);}
+				if (values=="Stuart And The Ave") {
+					i=new Intent(Allsongs.this, Stuartave.class);
+					startActivity(i);}
+				if (values=="Stuck With Me") {
+					i=new Intent(Allsongs.this, Stuckwithme.class);
+					startActivity(i);}
+				if (values=="Suffocate") {
+					i=new Intent(Allsongs.this, Suffocate.class);
+					startActivity(i);}
+				if (values=="Sweet 16") {
+					i=new Intent(Allsongs.this, Sweetsixt.class);
+					startActivity(i);}
+				if (values=="Sweet Children") {
+					i=new Intent(Allsongs.this, Sweetchildren.class);
+					startActivity(i);}
+				if (values=="Take Back") {
+					i=new Intent(Allsongs.this, Takeback.class);
+					startActivity(i);}
+				if (values=="The Forgotten") {
+					i=new Intent(Allsongs.this, Theforgotten.class);
+					startActivity(i);}
+				if (values=="The Grouch") {
+					i=new Intent(Allsongs.this, Grouch.class);
+					startActivity(i);}
+				if (values=="The Judge's Daughter") {
+					i=new Intent(Allsongs.this, Judgedaughter.class);
+					startActivity(i);}
+				if (values=="The One I Want") {
+					i=new Intent(Allsongs.this, Oneiwant.class);
+					startActivity(i);}
+				if (values=="The Static Age") {
+					i=new Intent(Allsongs.this, Staticage.class);
+					startActivity(i);}
+				if (values=="Tight Wadd Hill") {
+					i=new Intent(Allsongs.this, Tightwad.class);
+					startActivity(i);}
+				if (values=="Tired Of Waiting") {
+					i=new Intent(Allsongs.this, Tiredofwaiting.class);
+					startActivity(i);}
+				if (values=="Troublemaker") {
+					i=new Intent(Allsongs.this, Troublemaker.class);
+					startActivity(i);}
+				if (values=="Uptight") {
+					i=new Intent(Allsongs.this, Uptight.class);
+					startActivity(i);}
+				if (values=="Waiting") {
+					i=new Intent(Allsongs.this, Waiting.class);
+					startActivity(i);}
+				if (values=="Wake Me Up When September Ends") {
+					i=new Intent(Allsongs.this, Wakemeup.class);
+					startActivity(i);}
+				if (values=="Walk Away") {
+					i=new Intent(Allsongs.this, Walkaway.class);
+					startActivity(i);}
+				if (values=="Walking Alone") {
+					i=new Intent(Allsongs.this, Walkingalone.class);
+					startActivity(i);}
+				if (values=="Walking Contradiction") {
+					i=new Intent(Allsongs.this, Walking.class);
+					startActivity(i);}
+				if (values=="Warning") {
+					i=new Intent(Allsongs.this, Warning.class);
+					startActivity(i);}
+				if (values=="Welcome To Paradise") {
+					i=new Intent(Allsongs.this, Welcome.class);
+					startActivity(i);}
+				if (values=="Welcome To Paradise") {
+					i=new Intent(Allsongs.this, Welcomeparadise.class);
+					startActivity(i);}
+				if (values=="Westbound Sign") {
+					i=new Intent(Allsongs.this, Westbound.class);
+					startActivity(i);}
+				if (values=="Whatsername") {
+					i=new Intent(Allsongs.this, Whatshername.class);
+					startActivity(i);}
+				if (values=="When I Come Around") {
+					i=new Intent(Allsongs.this, Whencomearound.class);
+					startActivity(i);}
+				if (values=="Who Wrote Holden Caulfield?") {
+					i=new Intent(Allsongs.this, Whowrote.class);
+					startActivity(i);}
+				if (values=="Why Do You Want Him?") {
+					i=new Intent(Allsongs.this, Whyyouwanthim.class);
+					startActivity(i);}
+				if (values=="Wild One") {
+					i=new Intent(Allsongs.this, Wildone.class);
+					startActivity(i);}
+				if (values=="Words I Might Have Ate") {
+					i=new Intent(Allsongs.this, Wordsmightate.class);
+					startActivity(i);}
+				if (values=="Worry Rock") {
+					i=new Intent(Allsongs.this, Worryrock.class);
+					startActivity(i);}
+				if (values=="Wow! That's Loud") {
+					i=new Intent(Allsongs.this, Wowthatsloud.class);
+					startActivity(i);}
+				if (values=="X-Kid") {
+					i=new Intent(Allsongs.this, Kid.class);
+					startActivity(i);}
+				if (values=="You Lied") {
+					i=new Intent(Allsongs.this, Youlied.class);
+					startActivity(i);}
+				if (values=="You Lied") {
+					i=new Intent(Allsongs.this, Youlied.class);
+					startActivity(i);}
+				if (values=="¡Viva La Gloria!") {
+					i=new Intent(Allsongs.this, Vivalagloria.class);
+					startActivity(i);}
+				if (values=="¿Viva La Gloria? (Little Girl)") {
+					i=new Intent(Allsongs.this, Vivalagloria2.class);
+					startActivity(i);}
 				
 			}
 		});

@@ -39,7 +39,9 @@ public class Lightyears extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Lightyears.this)
 		        
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (1992)\n\n" +
+		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")

@@ -39,7 +39,9 @@ public class Waiting extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Waiting.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"Warning (2000)\n\n" +
+		        		"Writers:\n" +
 		        		"Billy Armstrong, Frank Wright Iii, Billie Joe Armstrong, Walter Gil Fuller, Tony Hatch, Michael Pritchard, Dizzy Gillespie, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Warner Chappell Music Ltd., Sony/ATV Music Publishing (Uk) Limited, Welbeck Music Ltd., Green Daze Music, Consolidated Music Publishers A Div Of Music Sales Corp., WB Music Corp.")

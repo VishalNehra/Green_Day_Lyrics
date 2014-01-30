@@ -39,7 +39,9 @@ public class Guns extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Guns.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"21st Century Breakdown (2009)\n\n" +
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, E. Frank, John Edmund Andrew Phillips, Frank E. Iii Wright, Iii Wright, David Bowie, Michael Pritchard, John Phillips\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, Tintoretto Music, WB Music Corp.")
