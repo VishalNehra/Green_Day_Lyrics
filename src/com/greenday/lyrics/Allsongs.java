@@ -381,7 +381,8 @@ public class Allsongs extends Activity {
 		
 		adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
 		lv.setAdapter(adapter);
-		
+		lv.setFastScrollEnabled(true);
+		lv.setFastScrollAlwaysVisible(true);
 		/**
          * Enabling Search Filter
          * */
@@ -626,7 +627,7 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Horseshoes.class);
 					startActivity(i);}
 				if (values=="I Want To Be Alone") {
-					i=new Intent(Allsongs.this, WannabeonTV.class);
+					i=new Intent(Allsongs.this, Wantbealone.class);
 					startActivity(i);}
 				if (values=="I Want To Be On TV") {
 					i=new Intent(Allsongs.this, WannabeonTV.class);

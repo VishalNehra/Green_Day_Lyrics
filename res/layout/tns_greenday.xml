@@ -6,12 +6,6 @@
     android:background="@drawable/tns_cover2"
     android:layout_gravity="center_horizontal"  >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-        android:src="@drawable/ic_tns" />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -61,5 +55,11 @@ Picture sounds\n
 Of moving insects so surreal\n
 Lay around"/>
 </ScrollView>
-
+ <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+        android:src="@drawable/ic_tns"
+        android:background="@null" />
 </RelativeLayout>
