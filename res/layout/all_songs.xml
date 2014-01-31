@@ -9,8 +9,9 @@
     <EditText android:id="@+id/inputSearch"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Search a song..."
-        android:inputType="textVisiblePassword"/>
+        android:hint="Tap to search a song..."
+        android:inputType="textCapWords"
+        android:textColorHint="#5062b6"/>
     
     <ListView
         android:id="@+id/listView1"

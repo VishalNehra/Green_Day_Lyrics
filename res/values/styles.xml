@@ -5,6 +5,7 @@
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
+    <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
     <style name="AppBaseTheme" parent="android:Theme.Holo">
         
         <item name="android:actionBarStyle">

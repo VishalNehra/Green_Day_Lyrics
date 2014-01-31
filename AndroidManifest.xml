@@ -38,22 +38,26 @@
         
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
-           android:windowSoftInputMode="stateHidden" />
+           android:windowSoftInputMode="stateHidden|adjustPan"/>
         
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
            android:label="@string/reportproblem"
            android:theme="@style/Reportproblem" />
-        <activity android:name="com.greenday.lyrics.Reportsong"/>
+        <activity android:name="com.greenday.lyrics.Reportsong"
+            android:theme="@style/Reportsong" />
         
-        <!-- Songs -->
         <!-- ACRA -->
         <activity android:name="org.acra.CrashReportDialog"
         android:theme="@android:style/Theme.Dialog"
         android:launchMode="singleInstance"
         android:excludeFromRecents="true"
         android:finishOnTaskLaunch="true" />
+        
+        
+        <!-- Songs -->
+        
         <!-- American Idiot -->
         <activity android:name="com.greenday.americanidiot.Americanidiot"
             android:label="@string/americanidiot_title"

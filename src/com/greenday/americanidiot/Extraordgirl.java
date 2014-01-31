@@ -4,17 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
-import com.greenday.shenanigans.Desensitized;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +33,7 @@ public class Extraordgirl extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Extraordgirl.this)
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +

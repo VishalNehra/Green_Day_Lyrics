@@ -3,13 +3,10 @@ package com.greenday.dookie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -29,6 +26,7 @@ public class Havingblast extends Activity {
 		setContentView(R.layout.dookie_havingblast);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		@SuppressWarnings("unused")
 		AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
         .setMessage("Album:\n" +
         		"Dookie (1994)\n\n" +

@@ -3,14 +3,9 @@ package com.greenday.ins;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
-import com.greenday.nimrod.Kingforaday;
-
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -38,6 +33,7 @@ public class Minority extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Minority.this)
 		        .setMessage("From:\n" +
 		        		"Warning, 2000")

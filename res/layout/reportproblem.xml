@@ -41,7 +41,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView3"
         android:ems="10"
-        android:inputType="textMultiLine" >
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="Tap here to type..." >
 
         <requestFocus />
     </EditText>

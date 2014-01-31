@@ -732,7 +732,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int yourdead_title=0x7f070092;
     }
     public static final class style {
-        public static final int ActionBar_San=0x7f080009;
+        public static final int ActionBar_San=0x7f08000a;
         /** 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -750,16 +750,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080008;
+        public static final int AppBaseTheme=0x7f080009;
         /**  Application theme. 
          */
-        public static final int AppTheme=0x7f08000a;
+        public static final int AppTheme=0x7f08000b;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
          */
         public static final int Reportproblem=0x7f080007;
+        public static final int Reportsong=0x7f080008;
         public static final int ShowcaseButton=0x7f080000;
         public static final int ShowcaseView=0x7f080002;
         public static final int ShowcaseView_Light=0x7f080001;
@@ -767,13 +768,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int TextAppearance_ShowcaseView_Detail_Light=0x7f080005;
         public static final int TextAppearance_ShowcaseView_Title=0x7f080003;
         public static final int TextAppearance_ShowcaseView_Title_Light=0x7f080006;
-        public static final int Theme_TranslucentActionBar=0x7f08000d;
-        public static final int Theme_TranslucentActionBar_ActionBar=0x7f08000e;
-        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f08000f;
+        public static final int Theme_TranslucentActionBar=0x7f08000e;
+        public static final int Theme_TranslucentActionBar_ActionBar=0x7f08000f;
+        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f080010;
         /**  Testing 
          */
-        public static final int Widget_ActionBar=0x7f08000b;
-        public static final int Widget_ActionBar_Transparent=0x7f08000c;
+        public static final int Widget_ActionBar=0x7f08000c;
+        public static final int Widget_ActionBar_Transparent=0x7f08000d;
     }
     public static final class xml {
         public static final int preferences=0x7f050000;

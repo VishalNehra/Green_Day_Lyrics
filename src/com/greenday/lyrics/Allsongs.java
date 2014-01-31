@@ -203,7 +203,7 @@ public class Allsongs extends Activity {
 		EditText inputSearch = (EditText) findViewById(R.id.inputSearch);
 		String[] values = new String []
 				{
-				"1,000 Hours",
+				"1000 Hours",
 				"16",
 				"2000 Light Years Away",
 				"21 Guns",

@@ -3,9 +3,7 @@ package com.greenday.dos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import android.app.Activity;
@@ -13,7 +11,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,6 +30,7 @@ public class Nightlife extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
+			@SuppressWarnings("unused")
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
