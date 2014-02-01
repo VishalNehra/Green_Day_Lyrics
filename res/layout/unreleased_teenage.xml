@@ -58,5 +58,5 @@ I'm a teenage lobotomy"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

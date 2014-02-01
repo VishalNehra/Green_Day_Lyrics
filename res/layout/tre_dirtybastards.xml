@@ -80,6 +80,7 @@ Well, Julianna homicide\n
 Oh, won't you be my blushing bride?\n
 Alright\n
 \n
+[Mike Dirnt On BASS!]\n\n
 Well, California's burning to the ground\n
 And Julianna walks on holy ground\n
 Where there's smoke there's fire burning out the lights\n
@@ -133,5 +134,5 @@ Carried away"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tre"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

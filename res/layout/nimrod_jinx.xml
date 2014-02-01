@@ -49,5 +49,5 @@ You fell for a jinx for crying out loud."/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_nimrod"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

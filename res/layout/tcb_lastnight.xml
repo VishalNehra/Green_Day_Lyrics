@@ -53,5 +53,5 @@ Did I ever make it through?"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tcb"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

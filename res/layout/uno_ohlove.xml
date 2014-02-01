@@ -92,5 +92,5 @@ Tonight my heart's on the loose..."/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_uno"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

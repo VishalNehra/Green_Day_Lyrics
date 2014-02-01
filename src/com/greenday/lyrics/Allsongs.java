@@ -177,7 +177,12 @@ import com.greenday.warning.Misery;
 import com.greenday.warning.Waiting;
 import com.greenday.warning.Warning;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.app.Activity;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -185,14 +190,18 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class Allsongs extends Activity {
 	ArrayAdapter<String> adapter;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -200,7 +209,12 @@ public class Allsongs extends Activity {
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
-		EditText inputSearch = (EditText) findViewById(R.id.inputSearch);
+		EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
+		boolean search = getIntent().getBooleanExtra("Search", false);
+		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
+		if(search) {
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+			}
 		String[] values = new String []
 				{
 				"1000 Hours",
@@ -386,7 +400,7 @@ public class Allsongs extends Activity {
 		/**
          * Enabling Search Filter
          * */
-        inputSearch.addTextChangedListener(new TextWatcher() {
+        txtQuery.addTextChangedListener(new TextWatcher() {
              
             @Override
             public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
@@ -400,12 +414,13 @@ public class Allsongs extends Activity {
                 // TODO Auto-generated method stub
                  
             }
-             
+            
             public void afterTextChanged(Editable arg0) {
                 // TODO Auto-generated method stub  
             }
         });
-		
+        
+        
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -944,10 +959,12 @@ public class Allsongs extends Activity {
 				
 			}
 		});
+		
 	}
-		
+	
+	
 		//Action bar code below
-		
+
 		@Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
 	        getMenuInflater().inflate(R.menu.main, menu);
@@ -977,7 +994,13 @@ public class Allsongs extends Activity {
 			    log.info("All Songs");
 				startActivity(new Intent(getApplicationContext(), Reportproblem.class));
 			}
+			if(item.getItemId()==R.id.action_search)
+			{
+				Crouton.makeText(this, "Tap here to search!", Style.INFO).show();
+				getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+			}
 		            return super.onOptionsItemSelected(item);
 			
 		}
+		
 	}

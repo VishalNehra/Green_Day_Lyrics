@@ -26,8 +26,11 @@ import android.support.v4.app.ListFragment;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -96,23 +99,23 @@ public class MainActivity extends Activity {
         // 39/Smooth
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1), true, "19"));
         // Kerplunk
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "15"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "16"));
         // Dookie
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "14"));
         // Insomniac
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1), true, "15"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1), true, "14"));
         // Nimrod
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "22"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "18"));
         // Warning
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1), true, "12"));
         // International Superhits
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1), true, "3"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1), true, "21"));
         // Shenanigans
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1), true, "8"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1), true, "14"));
         // American Idiot
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1), true, "14"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1), true, "13"));
         // 21st Centuary Breakdown
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuIcons.getResourceId(10, -1), true, "19"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuIcons.getResourceId(10, -1), true, "18"));
         // UNO
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[11], navMenuIcons.getResourceId(11, -1), true, "12"));
         // DOS
@@ -120,7 +123,7 @@ public class MainActivity extends Activity {
         // TRE
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuIcons.getResourceId(13, -1), true, "12"));
         // Unreleased
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "35"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "12"));
         
          
  
@@ -178,14 +181,18 @@ public class MainActivity extends Activity {
  
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-     // Get the SearchView and set the searchable configuration
-       /* SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
-        // Assumes current activity is the searchable activity
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+    	MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main, menu);
+
+		// Associate searchable configuration with the SearchView
+		/*SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+		SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
+				.getActionView();
+		searchView.setSearchableInfo(searchManager
+				.getSearchableInfo(getComponentName()));
+
         searchView.setIconifiedByDefault(true); // Do not iconify the widget; expand it by default */
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
     
     @Override
@@ -202,6 +209,12 @@ public class MainActivity extends Activity {
         case R.id.item2:
         	startActivity(new Intent(MainActivity.this, Reportproblem.class));
             return true;
+        case R.id.action_search:
+			// search action
+        	Intent intent = new Intent(MainActivity.this, Allsongs.class);
+        	intent.putExtra("Search", true);
+        	startActivity(intent);
+			return true;
         default:
             return super.onOptionsItemSelected(item);
         }
@@ -265,9 +278,6 @@ public class MainActivity extends Activity {
         case 14:
             fragment = new UnreleasedFragment();
             break;
-        
-        
- 
         default:
             break;
         }

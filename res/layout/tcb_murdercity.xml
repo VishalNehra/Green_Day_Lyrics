@@ -57,5 +57,5 @@ The clock strikes midnight in the murder city"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tcb"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

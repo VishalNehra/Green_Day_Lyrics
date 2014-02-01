@@ -47,5 +47,5 @@ Before all the flames burn out"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tre"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -57,5 +57,5 @@ if you come around."/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_dookie"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

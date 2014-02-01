@@ -67,5 +67,5 @@ And I ain't got no right"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -50,5 +50,5 @@ Sweet children, sweet children, sweet children Remember when?"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_kerplunk"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

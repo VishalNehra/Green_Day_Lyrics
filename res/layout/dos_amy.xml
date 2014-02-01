@@ -77,5 +77,5 @@ Do you wanna be a friend of mine?"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_dos"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

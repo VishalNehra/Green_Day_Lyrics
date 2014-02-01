@@ -76,5 +76,5 @@ Someone help him up or he's gonna end up quitting"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_kerplunk"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

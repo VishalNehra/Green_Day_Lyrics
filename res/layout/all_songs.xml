@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/allsongs_bg" >
+    android:orientation="vertical" >
 
     <!-- Editext for Search -->
-    <EditText android:id="@+id/inputSearch"
+    <EditText android:id="@+id/txtQuery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Tap to search a song..."
+        android:hint="Type to search a song..."
         android:inputType="textCapWords"
         android:textColorHint="#5062b6"/>
     

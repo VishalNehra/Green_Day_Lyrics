@@ -86,5 +86,5 @@ She's a rebel, She's a rebel, She's a rebel, \nAnd she's dangerous\n
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_americanidiot"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

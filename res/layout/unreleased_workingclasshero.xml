@@ -74,5 +74,5 @@ If you want to be a hero, well just follow me"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_unreleased"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

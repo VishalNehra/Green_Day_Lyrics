@@ -65,5 +65,5 @@ Let yourself go, let yourself go, let yourself go [x8]"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_uno"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

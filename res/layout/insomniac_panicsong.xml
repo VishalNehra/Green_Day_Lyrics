@@ -53,5 +53,5 @@ I wanna jump out! [x4]"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_insomniac"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

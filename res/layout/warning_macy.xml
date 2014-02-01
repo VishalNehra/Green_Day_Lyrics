@@ -72,5 +72,5 @@ It's all that I wanted"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_warning"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

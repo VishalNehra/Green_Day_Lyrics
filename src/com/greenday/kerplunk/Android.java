@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
+import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -86,6 +87,14 @@ public class Android extends Activity {
 				    Logger log = LoggerFactory.getLogger(Android.class);
 				    log.info("Kerplunk/Android");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
+				}
+				if(item.getItemId()==R.id.action_search)
+				{
+					// search action
+		        	Intent intent = new Intent(this, Allsongs.class);
+		        	intent.putExtra("Search", true);
+		        	startActivity(intent);
+					return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

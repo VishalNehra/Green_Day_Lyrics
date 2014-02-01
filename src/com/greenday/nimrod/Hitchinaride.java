@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.dookie.Burnout;
+import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -82,6 +83,14 @@ public class Hitchinaride extends Activity {
 		    Logger log = LoggerFactory.getLogger(Hitchinaride.class);
 		    log.info("Nimrod/Hitchin' A Ride");
 			startActivity(new Intent(getApplicationContext(), Reportsong.class));
+		}
+		if(item.getItemId()==R.id.action_search)
+		{
+			// search action
+        	Intent intent = new Intent(this, Allsongs.class);
+        	intent.putExtra("Search", true);
+        	startActivity(intent);
+			return true;
 		}
 	            return super.onOptionsItemSelected(item);
 		

@@ -62,5 +62,5 @@ Lay around"/>
         android:layout_height="wrap_content"
     android:layout_alignParentRight="true"
         android:src="@drawable/ic_tns"
-        android:background="@null" />
+        style="?android:borderlessButtonStyle" />
 </RelativeLayout>

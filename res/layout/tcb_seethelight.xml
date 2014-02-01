@@ -55,5 +55,5 @@ Where the ever after is in the hands of fate\n
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tcb"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

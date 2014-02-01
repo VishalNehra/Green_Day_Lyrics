@@ -93,5 +93,5 @@ Well, death to the ones at the end of the serenade!"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_tcb"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

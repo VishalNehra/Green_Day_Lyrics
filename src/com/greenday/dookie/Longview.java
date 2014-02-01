@@ -3,6 +3,7 @@ package com.greenday.dookie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -83,6 +84,14 @@ public class Longview extends Activity {
 				    Logger log = LoggerFactory.getLogger(Longview.class);
 				    log.info("Dookie/Longview");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
+				}
+				if(item.getItemId()==R.id.action_search)
+				{
+					// search action
+		        	Intent intent = new Intent(this, Allsongs.class);
+		        	intent.putExtra("Search", true);
+		        	startActivity(intent);
+					return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

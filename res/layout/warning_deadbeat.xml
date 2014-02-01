@@ -13,6 +13,7 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textIsSelectable="true"
         android:maxLines = "200"
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
@@ -70,5 +71,5 @@ Want to do is...not to....give up......"/>
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_warning"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

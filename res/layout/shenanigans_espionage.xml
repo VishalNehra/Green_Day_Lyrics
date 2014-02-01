@@ -13,5 +13,5 @@
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
     android:src="@drawable/ic_shenanigans"
-    android:background="@null" />
+    style="?android:borderlessButtonStyle" />
 </RelativeLayout>
