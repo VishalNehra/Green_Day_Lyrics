@@ -37,7 +37,8 @@ public class FOD extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(FOD.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[Song ends at 2:50, followed by hidden track 'All by Myself' performed by Tré Cool, which starts at 4:07]" +
+		        		"Album:\n" +
 		        		"Dookie (1994)\n\n" +
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +

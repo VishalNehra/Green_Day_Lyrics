@@ -37,7 +37,8 @@ public class Welcomeparadise extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Welcomeparadise.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[Re-recorded version from Kerplunk]\n\n" + 
+		        		"Album:\n" +
 		        		"Dookie (1994)\n\n" +
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +

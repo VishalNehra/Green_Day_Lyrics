@@ -39,7 +39,7 @@ public class Nightlife extends Activity {
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Monica Painter\n\n" +
+		        		"Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

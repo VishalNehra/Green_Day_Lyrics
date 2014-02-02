@@ -40,7 +40,7 @@ public class Panicsong extends Activity {
 		        .setMessage("Album:\n" +
 		        		"Insomiac (1995)\n\n" +
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
+		        		"Billie Joe Armstrong, Mike Dirnt, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

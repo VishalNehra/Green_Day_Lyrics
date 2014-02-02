@@ -39,7 +39,7 @@ public class Jesusofsuburb extends Activity {
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +
 		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\nMike Dirnt for 'Nobody Likes you'\nTré Cool for 'Rock And Roll Girlfriend'\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

@@ -18,10 +18,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 
 public class AmericanIdiotFragment extends Fragment{
@@ -32,6 +36,49 @@ public class AmericanIdiotFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_americanidiot, container, false);
+        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"American Idiot (September 20, 2004)\n\n" +
+		        		"Length:\n" +
+		        		"57:12\n\n" +
+		        		"Track List:\n" +
+		        		"1. American Idiot (2:54)\n" +
+		        		"2. Jesus of Suburbia (9:08)\n" +
+		        		    "\t\tI. Jesus of Suburbia\n" +
+							"\t\tII. City of the Damned\n" +
+							"\t\tIII. I Don't Care\n" +
+							"\t\tIV. Dearly Beloved\n" +
+							"\t\tV. Tales of Another Broken Home\n" +
+		        		"3. Holiday (3:52)\n" +
+		        		"4. Boulevard of Broken Dreams (4:20)\n" +
+		        		"5. Are We the Waiting (2:42)\n" +
+		        		"6. St. Jimmy (2:56)\n" +
+		        		"7. Give Me Novacaine (3:25)\n" +
+		        		"8. She's a Rebel (2:00)\n" +
+		        		"9. Extraordinary Girl (3:33)\n" +
+		        		"10. Letterbomb (4:05)\n" +
+		        		"11. Wake Me Up When September Ends (4:45)\n" +
+		        		"12. Homecoming (9:18)\n" +
+			        		"\t\tI. The Death of St. Jimmy\n" +
+							"\t\tII. East 12th St.\n" +
+							"\t\tIII. Nobody Likes You (by Mike Dirnt)\n" +
+							"\t\tIV. Rock and Roll Girlfriend (by Tré Cool)\n" +
+							"\t\tV. We're Coming Home Again\n" +
+		        		"13. Whatsername (4:14)\n")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code

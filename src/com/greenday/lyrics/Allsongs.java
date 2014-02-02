@@ -407,7 +407,7 @@ public class Allsongs extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Crouton.makeText(Allsongs.this, "Cleared", Style.CONFIRM).show();
+				Toast.makeText(Allsongs.this, "Cleared", 2000).show();
 				txtQuery.setText("");
 			}
 		});
