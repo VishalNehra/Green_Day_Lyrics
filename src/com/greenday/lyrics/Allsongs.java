@@ -180,6 +180,7 @@ import com.greenday.warning.Warning;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
@@ -190,12 +191,14 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -209,7 +212,7 @@ public class Allsongs extends Activity {
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
-		EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
+		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		boolean search = getIntent().getBooleanExtra("Search", false);
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
@@ -397,6 +400,17 @@ public class Allsongs extends Activity {
 		lv.setAdapter(adapter);
 		lv.setFastScrollEnabled(true);
 		lv.setFastScrollAlwaysVisible(true);
+		ImageButton ib=(ImageButton) findViewById(R.id.txtQuery_clear);
+		ib.setOnClickListener(new OnClickListener() {
+			
+			@SuppressLint("ShowToast")
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Crouton.makeText(Allsongs.this, "Cleared", Style.CONFIRM).show();
+				txtQuery.setText("");
+			}
+		});
 		/**
          * Enabling Search Filter
          * */

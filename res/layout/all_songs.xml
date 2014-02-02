@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <!-- Editext for Search -->
     <EditText android:id="@+id/txtQuery"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Type to search a song..."
         android:inputType="textCapWords"
-        android:textColorHint="#5062b6"/>
-    
+        android:drawableLeft="@drawable/ic_action_search"
+        android:textColorHint="#5062b6"
+        android:singleLine="true"/>
+
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtQuery" >
     </ListView>
 
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/txtQuery_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="?android:borderlessButtonStyle"
+        android:src="@drawable/ic_action_cancel" />
+
+</RelativeLayout>
