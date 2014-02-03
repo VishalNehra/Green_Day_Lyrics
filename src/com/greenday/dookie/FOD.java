@@ -30,6 +30,7 @@ public class FOD extends Activity {
 		setContentView(R.layout.dookie_fod);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -40,6 +41,8 @@ public class FOD extends Activity {
 		        .setMessage("[Song ends at 2:50, followed by hidden track 'All by Myself' performed by Tré Cool, which starts at 4:07]" +
 		        		"Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"5:46\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

@@ -43,7 +43,7 @@ public class Oominated extends Activity {
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
+		        		"Billie Joe Armstrong, Tré Cool, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

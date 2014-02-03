@@ -29,6 +29,7 @@ public class JAR extends Activity {
 		setContentView(R.layout.ins_jar);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -36,8 +37,14 @@ public class JAR extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(JAR.this)
-		        .setMessage("Written By:\n" +
-		        		"Mike Dirnt; from the Angus soundtrack, 1995")
+		        .setMessage("Album:\n" +
+		        		"International Superhits! (2001)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:51\n\n" + 
+		        		"Written By:\n" +
+		        		"Mike Dirnt; from the Angus soundtrack, 1995\nBillie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
+			        	"Copyright:\n" +
+			        	"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();

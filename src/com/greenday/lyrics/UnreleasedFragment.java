@@ -60,6 +60,7 @@ public class UnreleasedFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_unreleased, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
         
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 

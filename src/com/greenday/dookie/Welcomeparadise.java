@@ -30,6 +30,7 @@ public class Welcomeparadise extends Activity {
 		setContentView(R.layout.dookie_welcomeparadise);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -40,6 +41,8 @@ public class Welcomeparadise extends Activity {
 		        .setMessage("[Re-recorded version from Kerplunk]\n\n" + 
 		        		"Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:44\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

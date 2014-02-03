@@ -29,6 +29,7 @@ public class Wildone extends Activity {
 		setContentView(R.layout.dos_wildone);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Wildone extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Wildone.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"4:19\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Tré Cool, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +

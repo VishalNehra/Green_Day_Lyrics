@@ -29,6 +29,7 @@ public class Cutonight extends Activity {
 		setContentView(R.layout.dos_cutonight);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Cutonight extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Cutonight.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"1:06\n\n" + 
 		        		"Writers:\n" +
 		        		"Tré Cool, Billie Joe Armstrong, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +

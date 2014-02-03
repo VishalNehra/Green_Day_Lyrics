@@ -29,6 +29,7 @@ public class Geekstink extends Activity {
 		setContentView(R.layout.ins_geekstink);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,9 +39,15 @@ public class Geekstink extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Geekstink.this)
 		        .setMessage("From:\n" +
 		        		"Insomniac, 1995")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Geekstink.this, com.greenday.insomniac.Geekstink.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

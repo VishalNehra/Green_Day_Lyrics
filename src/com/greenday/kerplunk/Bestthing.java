@@ -43,7 +43,7 @@ public class Bestthing extends Activity {
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Mike Pritchard, John Kiffmeyer, Michael Pritchard\n\n" +
+		        		"Billie Joe Armstrong, Mike Dirnt, Mike Pritchard, John Kiffmeyer, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

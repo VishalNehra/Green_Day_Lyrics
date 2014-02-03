@@ -30,6 +30,7 @@ public class Emeniussleepus extends Activity {
 		setContentView(R.layout.dookie_emeniussleepus);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class Emeniussleepus extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Emeniussleepus.this)
 		        .setMessage("Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"1:43\n\n" + 
 		        		"Writers:\n" +
 		        		"Mike Dirnt, Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

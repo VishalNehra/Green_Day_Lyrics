@@ -27,10 +27,13 @@ public class Havingblast extends Activity {
 		setContentView(R.layout.dookie_havingblast);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		@SuppressWarnings("unused")
 		AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
         .setMessage("Album:\n" +
         		"Dookie (1994)\n\n" +
+        		"Track Length:\n" +
+        		"2:44\n\n" + 
         		"Writers:\n" +
         		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
         		"Copyright:\n" +

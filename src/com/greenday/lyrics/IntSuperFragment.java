@@ -36,13 +36,17 @@ import com.greenday.ins.Welcomeparadise;
 import com.greenday.ins.Whencomearound;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class IntSuperFragment extends Fragment {
@@ -54,6 +58,49 @@ public class IntSuperFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_intsuper, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
+        
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"International Superhits! (November 13, 2001)\n\n" +
+		        		"Length:\n" +
+		        		"60:44\n\n" +
+		        		"Track List:\n" +
+		        		"1. Maria (2:47)\n" +
+		        		"2. Poprocks & Coke (2:38)\n" +
+		        		"3. Longview (3:53)\n" +
+		        		"4. Welcome to Paradise (3:44)\n" +
+		        		"5. Basket Case (3:01)\n" +
+		        		"6. When I Come Around (2:58)\n" +
+		        		"7. She (2:14)\n" +
+		        		"8. J.A.R. (Jason Andrew Relva) (2:51)\n" +
+		        		"9. Geek Stink Breath (2:15)\n" +
+		        		"10. Brain Stew (3:13)\n" +
+		        		"11. Jaded (1:30)\n" +
+		        		"12. Walking Contradiction (2:31)\n" +
+		        		"13. Stuck with Me (2:15)\n" +
+		        		"14. Hitchin' a Ride (2:51)\n" +
+		        		"15. Good Riddance (Time of Your Life) (2:33)\n" +
+		        		"16. Redundant (3:18)\n" +
+		        		"17. Nice Guys Finish Last (2:49)\n" +
+		        		"18. Minority (2:47)\n" +
+		        		"19. Warning (3:41)\n" +
+		        		"20. Waiting (3:11)\n" +
+		        		"21. Macy's Day Parade (3:33)")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
         
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 

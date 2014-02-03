@@ -29,6 +29,7 @@ public class Jesusofsuburb extends Activity {
 		setContentView(R.layout.americanidiot_jesusofsuburb);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,8 +39,10 @@ public class Jesusofsuburb extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +
+		        		"Track Length:\n" +
+		        		"9:08\n\n" + 
 		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\nMike Dirnt for 'Nobody Likes you'\nTré Cool for 'Rock And Roll Girlfriend'\n\n" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

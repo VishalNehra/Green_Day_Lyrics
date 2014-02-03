@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/americanidiot_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView
@@ -110,7 +109,7 @@ They're all out without you havin' fun\n
 (where'd you go..go..go..go..)\n
 \n
 [Part 4: Rock And Roll Girlfriend]\n\n
-[Written and sung by Tre Cool]\n
+[Written and sung by Tré Cool]\n
 \n
 Geez!...Ha..\n
 \n

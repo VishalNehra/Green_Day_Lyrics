@@ -29,6 +29,7 @@ public class Ashley extends Activity {
 		setContentView(R.layout.dos_ashley);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Ashley extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Ashley.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:50\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Tré Cool, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +

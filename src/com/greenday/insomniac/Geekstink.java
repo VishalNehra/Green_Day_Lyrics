@@ -30,6 +30,7 @@ public class Geekstink extends Activity {
 		setContentView(R.layout.insomniac_geekstink);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class Geekstink extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Geekstink.this)
 		        .setMessage("Album:\n" +
 		        		"Insomiac (1995)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:15\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

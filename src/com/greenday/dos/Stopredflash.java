@@ -29,6 +29,7 @@ public class Stopredflash extends Activity {
 		setContentView(R.layout.dos_stopredflash);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Stopredflash extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Stopredflash.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:26\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
 		        		"Copyright:\n" +

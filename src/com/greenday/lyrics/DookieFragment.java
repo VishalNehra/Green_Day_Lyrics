@@ -1,6 +1,4 @@
 package com.greenday.lyrics;
-	
-	
 
 import com.greenday.dookie.Basketcase;
 import com.greenday.dookie.Burnout;
@@ -40,6 +38,7 @@ import android.widget.ListView;
 	            Bundle savedInstanceState) {
 	  
 	        View rootView = inflater.inflate(R.layout.fragment_dookie, container, false);
+			getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 	        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 			b.setOnClickListener(new OnClickListener() {
 				@Override

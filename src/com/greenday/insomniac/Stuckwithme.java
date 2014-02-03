@@ -29,6 +29,7 @@ public class Stuckwithme extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.insomniac_stuckwithme);
 		tv1 = (TextView)findViewById(R.id.textView1);
+		getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -39,6 +40,8 @@ public class Stuckwithme extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Stuckwithme.this)
 		        .setMessage("Album:\n" +
 		        		"Insomiac (1995)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:16\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

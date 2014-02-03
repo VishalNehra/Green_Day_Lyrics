@@ -51,6 +51,7 @@ public class NimrodFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_nimrod, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
           
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 

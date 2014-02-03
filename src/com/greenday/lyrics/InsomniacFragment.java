@@ -32,13 +32,17 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class InsomniacFragment extends Fragment {
@@ -50,6 +54,43 @@ public class InsomniacFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_insomniac, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
+		
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"Insomniac (October 10, 1995)\n\n" +
+		        		"Length:\n" +
+		        		"32:49\n\n" +
+		        		"Track List:\n" +
+		        		"1. Armatage Shanks (2:17)\n" +
+		        		"2. Brat (1:43)\n" +
+		        		"3. Stuck with Me (2:16)\n" +
+		        		"4. Geek Stink Breath (2:15)\n" +
+		        		"5. No Pride (2:19)\n" +
+		        		"6. Bab's Uvula Who? (2:08)\n" +
+		        		"7. 86 (2:47)\n" +
+		        		"8. Panic Song (3:35)\n" +
+		        		"9. Stuart and the Ave. (2:03)\n" +
+		        		"10. Brain Stew (3:13)\n" +
+		        		"11. Jaded (1:30)\n" +
+		        		"12. Westbound Sign (2:12)\n" +
+		        		"13. Tight Wad Hill (2:01)\n" +
+		        		"14. Walking Contradiction (2:31)")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
+		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

@@ -28,6 +28,7 @@ public class Arewethewaiting extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_arewethewaiting);
 		tv1 = (TextView)findViewById(R.id.textView1);
+		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -38,6 +39,8 @@ public class Arewethewaiting extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Arewethewaiting.this)
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:42\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

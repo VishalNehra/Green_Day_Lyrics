@@ -29,6 +29,7 @@ public class Fucktime extends Activity {
 		setContentView(R.layout.dos_fucktime);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Fucktime extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Fucktime.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:45\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Tré Cool, Rick Wright, Roger Waters, David Gilmour, Nicholas Mason, Mike Dirnt\n\n" +
 		        		"Copyright:\n" +

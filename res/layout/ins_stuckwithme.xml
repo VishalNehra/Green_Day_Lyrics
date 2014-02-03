@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ins_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView
@@ -18,7 +17,7 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\n\nI'm not part of your elite\n
+        android:text="\nI'm not part of your elite\n
 I'm just alright\n
 Class structure waving colors\n
 Bleeding from my throat\n

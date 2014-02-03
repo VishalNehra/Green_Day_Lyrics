@@ -29,6 +29,7 @@ public class Stjimmy extends Activity {
 		setContentView(R.layout.americanidiot_stjimmy);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,6 +39,8 @@ public class Stjimmy extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Stjimmy.this)
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:56\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

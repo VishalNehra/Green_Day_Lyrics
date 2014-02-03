@@ -29,6 +29,7 @@ public class Goodriddance extends Activity {
 		setContentView(R.layout.ins_goodriddance);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,9 +39,15 @@ public class Goodriddance extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Goodriddance.this)
 		        .setMessage("From:\n" +
 		        		"Nimrod, 1997")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Goodriddance.this, com.greenday.nimrod.Goodriddance.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

@@ -49,6 +49,7 @@ public class DosFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_dos, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
         ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

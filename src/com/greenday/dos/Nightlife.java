@@ -29,6 +29,7 @@ public class Nightlife extends Activity {
 		setContentView(R.layout.dos_nightlife);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@SuppressWarnings("unused")
@@ -38,6 +39,8 @@ public class Nightlife extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Nightlife.this)
 		        .setMessage("Album:\n" +
 		        		"¡DOS! (2012)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:04\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra\n\n" +
 		        		"Copyright:\n" +

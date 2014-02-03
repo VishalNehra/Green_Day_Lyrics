@@ -30,6 +30,7 @@ public class Basketcase extends Activity {
 		setContentView(R.layout.dookie_basketcase);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class Basketcase extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Basketcase.this)
 		        .setMessage("Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:01\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

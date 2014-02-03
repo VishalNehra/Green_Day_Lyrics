@@ -29,6 +29,7 @@ public class Poprocks extends Activity {
 		setContentView(R.layout.ins_poprocks);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -36,7 +37,11 @@ public class Poprocks extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Poprocks.this)
-		        .setMessage("Writers:\n" +
+		        .setMessage("Album:\n" +
+		        		"International Superhits! (2001)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:38\n\n" + 
+		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")

@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ins_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView
@@ -18,7 +17,7 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="My friend drove off the other day\n
+        android:text="\nMy friend drove off the other day\n
 Now he's gone and all they say\n
 Is you gotta live cause life goes on\n
 But now I see I'm mortal too\n

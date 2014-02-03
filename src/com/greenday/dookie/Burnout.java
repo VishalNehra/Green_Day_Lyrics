@@ -30,6 +30,7 @@ public class Burnout extends Activity {
 		setContentView(R.layout.dookie_burnout);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class Burnout extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Burnout.this)
 		        .setMessage("Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:07\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Conrad Shafie, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

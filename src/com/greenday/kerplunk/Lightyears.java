@@ -43,7 +43,7 @@ public class Lightyears extends Activity {
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
 		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Jesse Michaels, Pete Rypins and Dave 'E.C.' Henwood\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

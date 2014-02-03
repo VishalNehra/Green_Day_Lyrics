@@ -30,6 +30,7 @@ public class She extends Activity {
 		setContentView(R.layout.dookie_she);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class She extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(She.this)
 		        .setMessage("Album:\n" +
 		        		"Dookie (1994)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:14\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Al Schnier, Rob Derhak, Billie Joe Armstrong, Chuck Garvey, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

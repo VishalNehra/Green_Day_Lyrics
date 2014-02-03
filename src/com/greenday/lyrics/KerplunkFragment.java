@@ -32,13 +32,17 @@ import com.greenday.kerplunk.Whowrote;
 import com.greenday.kerplunk.Wordsmightate;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class KerplunkFragment extends Fragment {
@@ -50,7 +54,46 @@ public class KerplunkFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_kerplunk, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
         
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"Kerplunk (January 17, 1992)\n\n" +
+		        		"Length:\n" +
+		        		"33:58 (Vinyl Version)\n" +
+		        		"42:09 (CD & Cassette Version)\n\n" +
+		        		"Track List:\n" +
+		        		"1. 2000 Light Years Away (2:24)\n" +
+		        		"2. One for the Razorbacks (2:30)\n" +
+		        		"3. Welcome to Paradise (3:30)\n" +
+		        		"4. Christie Road (3:33)\n" +
+		        		"5. Private Ale (2:26)\n" +
+		        		"6. Dominated Love Slave (1:42)\n" +
+		        		"7. One of My Lies (2:19)\n" +
+		        		"8. 80 (3:39)\n" +
+		        		"9. Android (3:00)\n" +
+		        		"10. No One Knows (3:39)\n" +
+		        		"11. Who Wrote Holden Caulfield? (2:44)\n" +
+		        		"12. Words I Might Have Ate (2:32)\n" +
+		        		"13. Sweet Children [CD] (1:41)\n" +
+		        		"14. Best Thing in Town [CD] (2:03)\n" +
+		        		"15. Strangeland [CD] (2:08)\n" +
+		        		"16. My Generation [CD] (2:19)\n")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
+		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

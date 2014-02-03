@@ -60,6 +60,7 @@ public class TnsFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_tns, container, false);
+		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
         
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 

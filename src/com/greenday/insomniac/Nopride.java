@@ -30,6 +30,7 @@ public class Nopride extends Activity {
 		setContentView(R.layout.insomniac_nopride);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -39,6 +40,8 @@ public class Nopride extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Nopride.this)
 		        .setMessage("Album:\n" +
 		        		"Insomiac (1995)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:19\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

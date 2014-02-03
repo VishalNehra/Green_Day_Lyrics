@@ -28,6 +28,7 @@ public class Homecoming extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_homcom);
 		tv1 = (TextView)findViewById(R.id.textView1);
+		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -38,8 +39,10 @@ public class Homecoming extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Homecoming.this)
 		        .setMessage("Album:\n" +
 		        		"American Idiot (2004)\n\n" +
+		        		"Track Length:\n" +
+		        		"9:18\n\n" + 
 		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\nMike Dirnt for 'Nobody Likes you'\nTré Cool for 'Rock And Roll Girlfriend'\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
