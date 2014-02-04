@@ -33,6 +33,8 @@ public class Christie extends Activity {
 		setContentView(R.layout.kerplunk_christie);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
+		getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -42,6 +44,8 @@ public class Christie extends Activity {
 		        
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:33\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

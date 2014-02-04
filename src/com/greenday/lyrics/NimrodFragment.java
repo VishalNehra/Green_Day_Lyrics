@@ -33,13 +33,17 @@ import com.greenday.nimrod.Walkingalone;
 import com.greenday.nimrod.Worryrock;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class NimrodFragment extends Fragment {
@@ -53,6 +57,45 @@ public class NimrodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_nimrod, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
           
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"Nimrod (October 14, 1997)\n\n" +
+		        		"Length:\n" +
+		        		"49:09\n\n" +
+		        		"Track List:\n" +
+		        		"1. Nice Guys Finish Last (2:49)\n" +
+		        		"2. Hitchin' a Ride (2:51)\n" +
+		        		"3. The Grouch (2:12)\n" +
+		        		"4. Redundant (3:17)\n" +
+		        		"5. Scattered (3:02)\n" +
+		        		"6. All the Time (2:10)\n" +
+		        		"7. Worry Rock (2:27)\n" +
+		        		"8. Platypus (I Hate You) (2:21)\n" +
+		        		"9. Uptight (3:04)\n" +
+		        		"10. Last Ride In (3:47)\n" +
+		        		"11. Jinx (2:12)\n" +
+		        		"12. Haushinka (3:25)\n" +
+		        		"13. Walking Alone (2:45)\n" +
+		        		"14. Reject (2:05)\n" +
+		        		"15. Take Back (1:09)\n" +
+		        		"16. King for a Day (3:13)\n" +
+		        		"17. Good Riddance (Time of Your Life) (2:34)\n" +
+		        		"18. Prosthetic Head (3:38)\n")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
+		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

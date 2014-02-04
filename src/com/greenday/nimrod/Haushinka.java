@@ -31,6 +31,7 @@ public class Haushinka extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.nimrod_haushinka);
 		tv1 = (TextView)findViewById(R.id.textView1);
+		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -40,6 +41,8 @@ public class Haushinka extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Haushinka.this)
 		        .setMessage("Album:\n" +
 		        		"Nimrod (1997)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:25\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

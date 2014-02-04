@@ -213,7 +213,9 @@ public class Allsongs extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
-		boolean search = getIntent().getBooleanExtra("Search", false);
+		boolean search = getIntent().getBooleanExtra("Search", true);
+		txtQuery.setText(getIntent().getExtras().getString("track"));
+		lv.invalidate();
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);

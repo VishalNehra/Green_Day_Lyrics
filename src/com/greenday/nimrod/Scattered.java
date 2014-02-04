@@ -33,6 +33,7 @@ public class Scattered extends Activity {
 		setContentView(R.layout.nimrod_scattered);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -41,6 +42,8 @@ public class Scattered extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Scattered.this)
 		        .setMessage("Album:\n" +
 		        		"Nimrod (1997)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:02\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

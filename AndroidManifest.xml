@@ -26,7 +26,7 @@
             
         </activity>
         
-        
+        <activity android:name="com.greenday.lyrics.Nowplaying"/>
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
            android:windowSoftInputMode="stateHidden|adjustPan">

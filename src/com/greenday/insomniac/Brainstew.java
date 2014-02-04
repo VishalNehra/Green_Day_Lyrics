@@ -39,7 +39,7 @@ public class Brainstew extends Activity {
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Brainstew.this)
 		        .setMessage("Album:\n" +
-		        		"Insomiac (1995)\n\n" +
+		        		"Insomniac (1995)\n\n" +
 		        		"Track Length:\n" +
 		        		"3:13\n\n" + 
 		        		"Writers:\n" +

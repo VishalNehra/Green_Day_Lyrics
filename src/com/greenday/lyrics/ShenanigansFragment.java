@@ -34,13 +34,17 @@ import com.greenday.tcb.Vivalagloria;
 import com.greenday.tcb.Vivalagloria2;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 
@@ -55,6 +59,41 @@ public ShenanigansFragment(){}
         View rootView = inflater.inflate(R.layout.fragment_shenanigans, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
         
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage("Album:\n" +
+		        		"Shenanigans (July 2, 2002)\n\n" +
+		        		"Length:\n" +
+		        		"33:23\n\n" +
+		        		"Track List:\n" +
+		        		"1. Suffocate (2:54)\n" +
+		        		"2. Desensitized (2:47)\n" +
+		        		"3. You Lied (2:26)\n" +
+		        		"4. Outsider (2:17)\n" +
+		        		"5. Don't Wanna Fall in Love (1:38)\n" +
+		        		"6. Espionage (3:23)\n" +
+		        		"7. I Want to Be on T.V. (1:17)\n" +
+		        		"8. Scumbag (1:46)\n" +
+		        		"9. Tired of Waiting for You (2:34)\n" +
+		        		"10. Sick of Me (2:07)\n" +
+		        		"11. Rotting (2:52)\n" +
+		        		"12. Do Da Da (1:30)\n" +
+		        		"13. On the Wagon (2:48)\n" +
+		        		"14. Ha Ha You're Dead (3:07)")
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
+		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

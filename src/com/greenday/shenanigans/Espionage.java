@@ -30,16 +30,28 @@ public class Espionage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shenanigans_espionage);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Espionage.this)
-		        .setMessage("Instrumental")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage("[from 'Hitchin' a Ride', 1997\n\n]" +
+		        		"Instrumental\n\n" +
+		        		"Album:\n" +
+		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:23")
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Espionage.this, com.greenday.nimrod.Hitchinaride.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

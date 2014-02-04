@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -20,6 +21,20 @@ import android.widget.Toast;
 	            Bundle savedInstanceState) {
 	  
 	        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+	        
+	        //Testings
+	        Button b=(Button) rootView.findViewById(R.id.button1);
+	        b.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent intent = new Intent(getActivity(), Nowplaying.class);
+					startActivity(intent);
+				}
+			});
+	        
+	        
 	        ImageButton image = (ImageButton) rootView.findViewById(R.id.imageView1);
 	        image.setOnClickListener(new OnClickListener() {
 				

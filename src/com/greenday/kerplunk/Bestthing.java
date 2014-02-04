@@ -33,6 +33,7 @@ public class Bestthing extends Activity {
 		setContentView(R.layout.kerplunk_bestthing);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -42,6 +43,8 @@ public class Bestthing extends Activity {
 		        
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:03\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Mike Dirnt, Mike Pritchard, John Kiffmeyer, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +

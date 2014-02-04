@@ -33,6 +33,7 @@ public class Welcome extends Activity {
 		setContentView(R.layout.kerplunk_welcome);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -42,6 +43,8 @@ public class Welcome extends Activity {
 		        
 		        .setMessage("Album:\n" +
 		        		"Kerplunk (1992)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:30\n\n" + 
 		        		"Writers:\n" +
 		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
 		        		"Copyright:\n" +

@@ -34,6 +34,7 @@ public class Allthetime extends Activity {
 		setContentView(R.layout.nimrod_allthetime);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
@@ -42,6 +43,8 @@ public class Allthetime extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Allthetime.this)
 		        .setMessage("Album:\n" +
 		        		"Nimrod (1997)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:10\n\n" + 
 		        		"Writers:\n" +
 		        		"Dorothy Fields, Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard, Arthur Schwartz\n\n" +
 		        		"Copyright:\n" +

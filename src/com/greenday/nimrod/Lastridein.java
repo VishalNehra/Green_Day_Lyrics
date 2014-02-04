@@ -31,13 +31,16 @@ public class Lastridein extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.nimrod_lastridein);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Lastridein.this)
-		        .setMessage("Instrumental")
+		        .setMessage("Instrumental\n\n" +
+		        		"Track Length:\n" +
+		        		"3:47")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
