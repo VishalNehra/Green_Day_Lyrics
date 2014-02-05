@@ -1,15 +1,27 @@
 package com.greenday.lyrics;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.greenday.dos.Ashley;
+import com.greenday.nimrod.Allthetime;
+import com.greenday.nimrod.Grouch;
+
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Nowplaying extends Activity {
 
@@ -25,11 +37,23 @@ public static final String CMDNEXT = "next";
 public void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.nowplaying);
+getActionBar().setDisplayHomeAsUpEnabled(true);
+
 IntentFilter iF = new IntentFilter();
+getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
+Button b=(Button) findViewById(R.id.button1);
+b.setOnClickListener(new OnClickListener() {
+	
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		Intent i=null;
+		i=new Intent(Nowplaying.this, Allsongs.class);
+		startActivity(i);
+	}
+});
+
 iF.addAction("com.android.music.metachanged");
-iF.addAction("com.android.music.playstatechanged");
-iF.addAction("com.android.music.playbackcomplete");
-iF.addAction("com.android.music.queuechanged");
 
 registerReceiver(mReceiver, iF);
 }
@@ -40,8 +64,6 @@ private BroadcastReceiver mReceiver = new BroadcastReceiver() {
 public void onReceive(Context context, Intent intent)
 {
 String action = intent.getAction();
-String cmd = intent.getStringExtra("command");
-Log.d("mIntentReceiver.onReceive ", action + " / " + cmd);
 String artist = intent.getStringExtra("artist");
 final String album = intent.getStringExtra("album");
 final String track = intent.getStringExtra("track");
@@ -53,11 +75,54 @@ b.setOnClickListener(new OnClickListener() {
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
 		Intent intent = new Intent(Nowplaying.this, Allsongs.class);
-    	intent.putExtra("track", track.toString());
+    	intent.putExtra("track", true);
+    	intent.putExtra("track", track);
+    	intent.putExtras(getIntent());
     	startActivity(intent);
-		return ;
+		return;
 	}
 });
 }
 };
+//Action bar code below
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    getMenuInflater().inflate(R.menu.main_song, menu);
+    return true;
+}
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+	switch (item.getItemId()) {
+
+	case android.R.id.home:
+		onBackPressed();
+		break;
+
+	default:
+
+	};
+	if(item.getItemId()==R.id.settings)
+	{
+		startActivity(new Intent(getApplicationContext(), Settings.class));
+	}
+	if(item.getItemId()==R.id.reportsong)
+	{
+		//Log report
+	    Logger log = LoggerFactory.getLogger(Nowplaying.class);
+	    log.info("Now Playing");
+		startActivity(new Intent(getApplicationContext(), Reportsong.class));
+	}
+	if(item.getItemId()==R.id.action_search)
+	{
+		// search action
+    	Intent intent = new Intent(this, Allsongs.class);
+    	intent.putExtra("Search", true);
+    	startActivity(intent);
+		return true;
+	}
+            return super.onOptionsItemSelected(item);
+	
+}
 }

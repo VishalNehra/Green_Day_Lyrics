@@ -14,6 +14,9 @@
     <string name="search_hint">Search songs</string>
     <string name="all_songs">All Songs</string>
     
+    <!-- Play title -->
+    <string name="play_title">Show Now Playing Track</string>
+    
     <!-- Settings -->
     
     <string name="preference_category2_title">Albums</string>

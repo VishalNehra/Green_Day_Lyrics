@@ -1,7 +1,5 @@
 package com.greenday.lyrics;
  
-
-
 import com.espian.showcaseview.ShowcaseView;
 import com.espian.showcaseview.targets.ViewTarget;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
@@ -215,6 +213,10 @@ public class MainActivity extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
+        case R.id.action_play:
+			// media broadcast receiver
+        	startActivity(new Intent(MainActivity.this, Nowplaying.class));
+            return true;
         default:
             return super.onOptionsItemSelected(item);
         }

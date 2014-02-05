@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="This feature is current under testing.\n 
+This means that this feature will work under suitable conditions or might not work at all!\n
+Feature is currently tested on Apollo and Play Music.\n
+Also, name of the track saved in your storage must match with the existing data on this app.\n\n
+Instructions\n\n
+After pressing on the search button below, you need to press on the PLAY button next to Search bar in the next screen.\n
+If it doesn't work, don't panic!. You can give it a try again. \nSimple as that.\n\n"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </ScrollView>
+
 
     <Button
         android:id="@+id/button1"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/current"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="Remember, DO NOT DIRECTLY GO AND PRESS ON THE PLAY BUTTON in next screen.
+First open this screen only then go to the one!\n
+If you do, (Patrick, this is for you) the app will crash, idk why :/\n
+Also, you must have a song running in background to use this feature!\n"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-</LinearLayout>
+</RelativeLayout>

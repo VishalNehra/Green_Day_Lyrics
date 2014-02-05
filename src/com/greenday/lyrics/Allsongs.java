@@ -3,6 +3,7 @@ package com.greenday.lyrics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.americanidiot.Boulevardofbd;
@@ -182,8 +183,6 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -193,10 +192,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -204,8 +203,7 @@ import android.widget.Toast;
 
 public class Allsongs extends Activity {
 	ArrayAdapter<String> adapter;
-
-	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
@@ -213,12 +211,39 @@ public class Allsongs extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
-		boolean search = getIntent().getBooleanExtra("Search", true);
-		txtQuery.setText(getIntent().getExtras().getString("track"));
-		lv.invalidate();
+		
+		 //Crouton Toast
+        boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_allsongs", true);
+
+        if (firstboot){
+            // 1) Launch the authentication activity
+            Crouton.makeText(this, "Please don't press on play icon!", Style.ALERT).show();
+            Crouton.makeText(this, "Navigate only from NOW PLAYING to use this feature!", Style.INFO).show();
+           
+            getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+                .edit()
+                .putBoolean("firstboot_allsongs", false)
+                .commit();
+        }
+        
+        //Crouton toast ends
+		
+		ImageButton b=(ImageButton) findViewById(R.id.txtQuery_play);
+		b.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				boolean track = getIntent().getBooleanExtra("track", true);
+				if(track==true){
+				txtQuery.setText(getIntent().getExtras().getString("track"));}
+			}
+		});
+		boolean search = getIntent().getBooleanExtra("Search", false);
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+            
 			}
 		String[] values = new String []
 				{
@@ -235,7 +260,7 @@ public class Allsongs extends Activity {
 				"All By Myself",
 				"All The Time",
 				"Amanda",
-				"American Eulogy",
+				"American Eulogy (Mass Hysteria/Modern World)",
 				"American Idiot",
 				"Amy",
 				"Android",
@@ -425,17 +450,19 @@ public class Allsongs extends Activity {
             }
              
             @Override
-            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+            public void beforeTextChanged(CharSequence cs2, int arg1, int arg2,
                     int arg3) {
                 // TODO Auto-generated method stub
-                 
+            	Allsongs.this.adapter.getFilter().filter(cs2); 
             }
             
-            public void afterTextChanged(Editable arg0) {
+            public void afterTextChanged(Editable cs3) {
                 // TODO Auto-generated method stub  
+            	Allsongs.this.adapter.getFilter().filter(cs3); 
             }
         });
-        
+
+		lv.invalidate();
         
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
@@ -983,7 +1010,7 @@ public class Allsongs extends Activity {
 
 		@Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
-	        getMenuInflater().inflate(R.menu.main, menu);
+	        getMenuInflater().inflate(R.menu.main_all, menu);
 	        
 	        return true;
 	    }
@@ -1009,11 +1036,6 @@ public class Allsongs extends Activity {
 			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
 			    log.info("All Songs");
 				startActivity(new Intent(getApplicationContext(), Reportproblem.class));
-			}
-			if(item.getItemId()==R.id.action_search)
-			{
-				Crouton.makeText(this, "Tap here to search!", Style.INFO).show();
-				getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 			}
 		            return super.onOptionsItemSelected(item);
 			

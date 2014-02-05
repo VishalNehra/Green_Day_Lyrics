@@ -25,7 +25,7 @@ public final class R {
 		public static final int cling = 0x7f020007;
 		public static final int cling_bleached = 0x7f020008;
 		public static final int cling_button_bg = 0x7f020009;
-		public static final int hand = 0x7f02000d;
+		public static final int hand = 0x7f02000e;
 	}
 	public static final class id {
 		public static final int showcase_button = 0x7f050000;

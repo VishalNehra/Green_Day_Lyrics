@@ -9,10 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.Toast;
 	 	
 	public class HomeFragment extends Fragment {
 	    public HomeFragment(){}
@@ -23,7 +20,7 @@ import android.widget.Toast;
 	        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 	        
 	        //Testings
-	        Button b=(Button) rootView.findViewById(R.id.button1);
+	        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton3);
 	        b.setOnClickListener(new OnClickListener() {
 				
 				@Override
@@ -33,7 +30,6 @@ import android.widget.Toast;
 					startActivity(intent);
 				}
 			});
-	        
 	        
 	        ImageButton image = (ImageButton) rootView.findViewById(R.id.imageView1);
 	        image.setOnClickListener(new OnClickListener() {
@@ -51,7 +47,8 @@ import android.widget.Toast;
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startActivity(new Intent(arg0.getContext(),Allsongs.class));
+					Intent intent = new Intent(getActivity(), Allsongs.class);
+					startActivity(intent);
 				}
 			});
 	        ImageButton ib2 = (ImageButton) rootView.findViewById(R.id.imageButton2);

@@ -23,11 +23,20 @@
 
     <ImageButton
         android:id="@+id/txtQuery_clear"
-        android:layout_width="wrap_content"
+        style="?android:borderlessButtonStyle"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        style="?android:borderlessButtonStyle"
+        android:layout_width="35dp"
         android:src="@drawable/ic_action_cancel" />
+
+    <ImageButton
+        android:id="@+id/txtQuery_play"
+        style="?android:borderlessButtonStyle"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_width="35dp"
+        android:layout_toLeftOf="@+id/txtQuery_clear"
+        android:src="@drawable/ic_action_play_dark" />
 
 </RelativeLayout>

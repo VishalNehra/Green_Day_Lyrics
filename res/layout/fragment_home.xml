@@ -34,12 +34,15 @@
     style="?android:borderlessButtonStyle"
     android:src="@drawable/recents" />
 
-<Button
-    android:id="@+id/button1"
+<ImageButton
+    android:id="@+id/imageButton3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:text="Button" />
+    android:layout_below="@+id/imageButton2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    style="?android:borderlessButtonStyle"
+     android:src="@drawable/playing" />
+
  
 </RelativeLayout>
