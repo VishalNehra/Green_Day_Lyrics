@@ -40,7 +40,7 @@ public class Dodada extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Dodada.this)
-		        .setMessage("[from 'Brain Stew/Jaded', 1996\n\n]" +
+		        .setMessage("[from 'Brain Stew/Jaded', 1996]\n\n" +
 		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
 		        		"Track Length:\n" +
@@ -54,10 +54,23 @@ public class Dodada extends Activity {
 		                closeContextMenu();
 		            }
 		        })
-		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		        .setNegativeButton("Go To Originals", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
-		                Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Brainstew.class);
-		                startActivity(intent);
+		            	AlertDialog builder2 = new AlertDialog.Builder(Dodada.this)
+				        .setMessage("Choose any one track")
+				        .setPositiveButton("Brain Stew", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				            	Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Brainstew.class);
+				                startActivity(intent);
+				            }
+				        })
+				        .setNegativeButton("Jaded", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				                Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Jaded.class);
+				                startActivity(intent);
+				            }
+				        })
+				        .show();    
 		            }
 		        })
 		        .show();    

@@ -38,15 +38,24 @@ public class Outsider extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Outsider.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[originally performed by the Ramones; from 'Warning', 2000]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:17\n\n" + 
 		        		"Writers:\n" +
 		        		"Joey Ramone, Dee Dee Ramone, Johnny Ramone\n\n" +
 		        		"Copyright:\n" +
 		        		"Taco Tunes")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Outsider.this, com.greenday.warning.Warning.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

@@ -38,15 +38,24 @@ public class Rotting extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Rotting.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[from 'Good Riddance', 1997]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:52\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Rotting.this, com.greenday.nimrod.Goodriddance.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

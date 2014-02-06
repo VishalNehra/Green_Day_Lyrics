@@ -38,15 +38,24 @@ public class Fallinlove extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Fallinlove.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[from 'Geek Stink Breath', 1995]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"1:38\n\n" +
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Fallinlove.this, com.greenday.insomniac.Geekstink.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

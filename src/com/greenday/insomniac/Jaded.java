@@ -39,7 +39,7 @@ public class Jaded extends Activity {
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Jaded.this)
 		        .setMessage("Album:\n" +
-		        		"Insomiac (1995)\n\n" +
+		        		"Insomniac (1995)\n\n" +
 		        		"Track Length:\n" +
 		        		"1:30\n\n" + 
 		        		"Writers:\n" +

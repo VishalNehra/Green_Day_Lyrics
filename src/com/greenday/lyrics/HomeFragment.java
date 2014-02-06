@@ -48,6 +48,7 @@ import android.widget.ImageButton;
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
 					Intent intent = new Intent(getActivity(), Allsongs.class);
+					intent.putExtra("fix", true);
 					startActivity(intent);
 				}
 			});

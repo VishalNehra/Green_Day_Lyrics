@@ -7,6 +7,9 @@ import com.greenday.dos.Ashley;
 import com.greenday.nimrod.Allthetime;
 import com.greenday.nimrod.Grouch;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -75,9 +78,7 @@ b.setOnClickListener(new OnClickListener() {
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
 		Intent intent = new Intent(Nowplaying.this, Allsongs.class);
-    	intent.putExtra("track", true);
     	intent.putExtra("track", track);
-    	intent.putExtras(getIntent());
     	startActivity(intent);
 		return;
 	}
@@ -88,7 +89,7 @@ b.setOnClickListener(new OnClickListener() {
 
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.main_song, menu);
+    getMenuInflater().inflate(R.menu.main, menu);
     return true;
 }
 
@@ -103,11 +104,11 @@ public boolean onOptionsItemSelected(MenuItem item) {
 	default:
 
 	};
-	if(item.getItemId()==R.id.settings)
+	if(item.getItemId()==R.id.item1)
 	{
 		startActivity(new Intent(getApplicationContext(), Settings.class));
 	}
-	if(item.getItemId()==R.id.reportsong)
+	if(item.getItemId()==R.id.item2)
 	{
 		//Log report
 	    Logger log = LoggerFactory.getLogger(Nowplaying.class);
@@ -121,6 +122,11 @@ public boolean onOptionsItemSelected(MenuItem item) {
     	intent.putExtra("Search", true);
     	startActivity(intent);
 		return true;
+	}
+	if(item.getItemId()==R.id.action_play)
+	{
+		Crouton.makeText(Nowplaying.this, "You are already here!", Style.INFO).show();
+		Crouton.makeText(Nowplaying.this, "Follow instructions given below before using this feature", Style.ALERT).show();
 	}
             return super.onOptionsItemSelected(item);
 	

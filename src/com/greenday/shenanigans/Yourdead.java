@@ -40,8 +40,10 @@ public class Yourdead extends Activity {
 				AlertDialog builder = new AlertDialog.Builder(Yourdead.this)
 		        .setMessage("Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"3:07\n\n" + 
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
+		        		"Billie Joe Armstrong, Mike Dirnt, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {

@@ -37,7 +37,7 @@ public class Espionage extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Espionage.this)
-		        .setMessage("[from 'Hitchin' a Ride', 1997\n\n]" +
+		        .setMessage("[from 'Hitchin' a Ride', 1997]\n\n" +
 		        		"Instrumental\n\n" +
 		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +

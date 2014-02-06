@@ -38,15 +38,24 @@ public class WannabeonTV extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(WannabeonTV.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[originally performed by Fang; from 'Geek Stink Breath', 1995]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"1:17\n\n" + 
 		        		"Writers:\n" +
-		        		"Billie Joe Armstrong\n\n" +
+		        		"Sam McBride, Tom Flynn\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(WannabeonTV.this, com.greenday.insomniac.Geekstink.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

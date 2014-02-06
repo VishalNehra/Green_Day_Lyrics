@@ -235,10 +235,19 @@ public class Allsongs extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				boolean track = getIntent().getBooleanExtra("track", true);
-				if(track==true){
+				if(track){
 				txtQuery.setText(getIntent().getExtras().getString("track"));}
 			}
 		});
+		
+		//Fixes crash of play button
+		boolean fix=getIntent().getBooleanExtra("fix", true);
+		if(fix)
+		{
+			
+		}
+		//Fixes
+		
 		boolean search = getIntent().getBooleanExtra("Search", false);
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
@@ -474,7 +483,7 @@ public class Allsongs extends Activity {
 				// TODO Auto-generated method stub
 				Intent i =null;
 
-				if (values=="1,000 Hours") {
+				if (values=="1000 Hours") {
 					i=new Intent(Allsongs.this, Thousandhours.class);
 					startActivity(i);}
 				if (values=="16") {
@@ -1033,9 +1042,13 @@ public class Allsongs extends Activity {
 			if(item.getItemId()==R.id.item2)
 			{
 				//Log report
-			    Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			    Logger log = LoggerFactory.getLogger(Allsongs.class);
 			    log.info("All Songs");
 				startActivity(new Intent(getApplicationContext(), Reportproblem.class));
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				startActivity(new Intent(getApplicationContext(), Nowplaying.class));
 			}
 		            return super.onOptionsItemSelected(item);
 			

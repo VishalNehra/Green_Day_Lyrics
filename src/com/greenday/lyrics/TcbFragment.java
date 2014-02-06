@@ -20,26 +20,76 @@ import com.greenday.tcb.Vivalagloria;
 import com.greenday.tcb.Vivalagloria2;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class TcbFragment extends Fragment {
 	
 	public TcbFragment(){}
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_tcb, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.tcb_cover2);
-        
+		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+		b.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(getActivity())
+		        .setMessage(Html.fromHtml("<b>Album</b><br>" +
+		        		"21st Century Breakdown <i>(May 15, 2009)</i><br><br>" +
+		        		"<b>Length</b><br>" +
+		        		"<i>69:16</i><br><br>" +
+		        		"<b>Track List</b><br>" +
+		        		"1. Song of the Century <i>(0:57)</i><br><br>" +
+		        		"<b>Act I: Heroes and Cons</b><br><br>" +
+		        		"2. 21st Century Breakdown <i>(5:09)</i><br>" +
+		        		"3. Know Your Enemy <i>(3:11)</i><br>" +
+		        		"4. ¡Viva la Gloria! <i>(3:31)</i><br>" +
+		        		"5. Before the Lobotomy <i>(4:37)</i><br>" +
+		        		"6. Christian's Inferno <i>(3:07)</i><br>" +
+		        		"7. Last Night on Earth <i>(3:57)</i><br><br>" +
+		        		"<b>Act II: Charlatans and Saints</b><br><br>" +
+		        		"8. East Jesus Nowhere <i>(4:35)</i><br>" +
+		        		"9. Peacemaker <i>(3:24)</i><br>" +
+		        		"10. Last of the American Girls <i>(3:51)</i><br>" +
+		        		"11. Murder City <i>(2:54)</i><br>" +
+		        		"12. ¿Viva la Gloria? (Little Girl) <i>(3:48)</i><br>" +
+		        		"13. Restless Heart Syndrome <i>(4:21)</i><br><br>" +
+		        		"<b>Act III: Horseshoes and Handgrenades</b><br><br>" +
+		        		"14. Horseshoes and Handgrenades <i>(3:14)</i><br>" +
+		        		"15. The Static Age <i>(4:17)</i><br>" +
+		        		"16. 21 Guns <i>(5:21)</i><br>" +
+		        		"17. American Eulogy <i>(4:26)</i><br>" +
+		        		"18. See the Light <i>(4:36)</i><br>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                getActivity().closeContextMenu();
+		            }
+		        })
+		        .show();    
+			}
+		});
+		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 

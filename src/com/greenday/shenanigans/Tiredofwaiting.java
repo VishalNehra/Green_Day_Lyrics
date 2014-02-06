@@ -38,15 +38,24 @@ public class Tiredofwaiting extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[originally performed by The Kinks; from 'Basket Case', 1994]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:34\n\n" + 
 		        		"Writers:\n" +
 		        		"Ray Davies\n\n" +
 		        		"Copyright:\n" +
 		        		"Jayboy Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Tiredofwaiting.this, com.greenday.dookie.Basketcase.class);
+		                startActivity(intent);
 		            }
 		        })
 		        .show();    

@@ -284,9 +284,11 @@
         	 ></activity>
         <activity android:name="com.greenday.tcb.Guns"
         	android:label="@string/guns_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
         	 ></activity>
         <activity android:name="com.greenday.tcb.Americaneulogy"
         	android:label="@string/americaneulogy_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
         	 ></activity>
         <activity android:name="com.greenday.tcb.Seethelight"
         	android:label="@string/seethelight_title"

@@ -9,5 +9,9 @@
           android:icon="@drawable/ic_search"
           android:showAsAction="always"
           android:actionViewClass="android.widget.SearchView" />    -->
+    <item android:id="@+id/action_play"
+        android:icon="@drawable/ic_action_play"
+        android:showAsAction="always"
+        android:title="@string/play_title"/>
     		
 </menu>

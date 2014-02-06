@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.dookie.Basketcase;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.NimrodFragment;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -38,13 +39,16 @@ public class Suffocate extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Suffocate.this)
-		        .setMessage("Album:\n" +
+		        .setMessage("[outtake from 'Nimrod', 1997]\n\n" +
+		        		"Album:\n" +
 		        		"Shenanigans (2002)\n\n" +
+		        		"Track Length:\n" +
+		        		"2:54\n\n" + 
 		        		"Writers:\n" +
 		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
 		        		"Copyright:\n" +
 		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

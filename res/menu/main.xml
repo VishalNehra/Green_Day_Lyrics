@@ -15,6 +15,6 @@
         android:title="@string/search_title"/>  
     <item android:id="@+id/action_play"
         android:icon="@drawable/ic_action_play"
-        android:showAsAction="ifRoom"
+        android:showAsAction="always"
         android:title="@string/play_title"/>				
 </menu>

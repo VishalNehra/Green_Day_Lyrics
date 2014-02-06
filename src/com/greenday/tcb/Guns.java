@@ -16,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,13 +41,15 @@ public class Guns extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Guns.this)
-		        .setMessage("Album:\n" +
-		        		"21st Century Breakdown (2009)\n\n" +
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, E. Frank, John Edmund Andrew Phillips, Frank E. Iii Wright, Iii Wright, David Bowie, Michael Pritchard, John Phillips\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, Tintoretto Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b>Album</b><br>" +
+		        		"21st Century Breakdown <i>(2009)</i><br><br>" +
+		        		"<b>Track Length</b><br>" +
+		        		"<i>4:35</i><br><br>" + 
+		        		"<b>Writers</b><br>" +
+		        		"Billie Joe Armstrong, E. Frank, John Edmund Andrew Phillips, Frank E. Iii Wright, Iii Wright, David Bowie, Michael Pritchard, John Phillips<br><br>" +
+		        		"<b>Copyright</b><br>" +
+		        		"Green Daze Music, Tintoretto Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
