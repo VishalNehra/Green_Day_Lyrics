@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,15 +38,15 @@ public class Homecoming extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Homecoming.this)
-		        .setMessage("Album:\n" +
-		        		"American Idiot (2004)\n\n" +
-		        		"Track Length:\n" +
-		        		"9:18\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\nMike Dirnt for 'Nobody Likes you'\nTré Cool for 'Rock And Roll Girlfriend'\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
+		        		"American Idiot <i>(2004)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>9:18</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\nMike Dirnt for 'Nobody Likes you'\nTré Cool for 'Rock And Roll Girlfriend'<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,15 +39,15 @@ public class Whencomearound extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Whencomearound.this)
-		        .setMessage("Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:58\n\n" + 
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</b></u><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>2:58</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard<br><br>" +
+		        		"<b><u>COPYRIGHT</b></u><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

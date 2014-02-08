@@ -23,7 +23,6 @@ public class Settings extends PreferenceActivity {
 		addPreferencesFromResource(R.xml.preferences);
 		this.setContentView(R.layout.pref_act);
 		ListView lv=(ListView) findViewById(R.id.listView1);
-		this.getListView().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.allsongs_bg));
 
 	}
 

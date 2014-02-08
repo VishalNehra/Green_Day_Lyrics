@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,16 +39,17 @@ public class Welcomeparadise extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Welcomeparadise.this)
-		        .setMessage("[Re-recorded version from Kerplunk]\n\n" + 
-		        		"Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"3:44\n\n" + 
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>INFORMATION</b></u><br>" +
+		        		"<i>Re-recorded version from Kerplunk</i><br><br>" + 
+		        		"<b><u>ALBUM</b></u><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>3:44</i><br><br>" + 
+		        		"<b><u>WRITERS</b></u><br>" +
+		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

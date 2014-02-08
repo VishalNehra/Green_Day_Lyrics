@@ -8,6 +8,7 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,6 +27,7 @@
             
         </activity>
         
+        <activity android:name="com.greenday.lyrics.Recents"></activity>
         <activity android:name="com.greenday.lyrics.Nowplaying"
             android:screenOrientation="portrait"/>
         <activity android:name="com.greenday.lyrics.Allsongs"
@@ -35,7 +37,8 @@
     </activity>
         
         <activity android:name="com.greenday.lyrics.Settings"
-           android:label="@string/settings" />
+           android:label="@string/settings"
+           android:theme="@style/Theme.SettingsBackground" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
            android:label="@string/reportproblem"
            android:theme="@style/Reportproblem" />

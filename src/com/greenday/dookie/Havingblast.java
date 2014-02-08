@@ -13,8 +13,12 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Havingblast extends Activity {
@@ -28,22 +32,32 @@ public class Havingblast extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
-		@SuppressWarnings("unused")
-		AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
-        .setMessage("Album:\n" +
-        		"Dookie (1994)\n\n" +
-        		"Track Length:\n" +
-        		"2:44\n\n" + 
-        		"Writers:\n" +
-        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-        		"Copyright:\n" +
-        		"Green Daze Music, WB Music Corp.")
-        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                closeContextMenu();
-            }
-        })
-        .show();    
+		
+		ImageButton ib=(ImageButton) findViewById(R.id.imageButton1);
+		ib.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				@SuppressWarnings("unused")
+				AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</b></u><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>2:44</i><br><br>" + 
+		        		"<b><u>WRITERS</b></u><br>" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show(); 
+			}
+		});
+		   
 	}
 	
 	//Action bar code below

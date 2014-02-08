@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,15 +38,15 @@ public class Stopredflash extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Stopredflash.this)
-		        .setMessage("Album:\n" +
-		        		"¡DOS! (2012)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:26\n\n" + 
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
+		        		"¡DOS! <i>(2012)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</b></u><br>" +
+		        		"<i>2:26</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

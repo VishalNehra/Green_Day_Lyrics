@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,15 +39,15 @@ public class She extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(She.this)
-		        .setMessage("Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:14\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Al Schnier, Rob Derhak, Billie Joe Armstrong, Chuck Garvey, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, Spaz Medicine Music Inc., WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>2:14</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Michael Pritchard, Al Schnier, Rob Derhak, Billie Joe Armstrong, Chuck Garvey, Frank E. Iii Wright<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, Spaz Medicine Music Inc., WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

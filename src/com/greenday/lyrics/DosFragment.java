@@ -31,6 +31,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,25 +58,26 @@ public class DosFragment extends Fragment {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage("Album:\n" +
-		        		"¡Dos! (November 9, 2012)\n[My B'Day :D]\n\n" +
-		        		"Length:\n" +
-		        		"39:21\n\n" +
-		        		"Track List:\n" +
-		        		"1. See You Tonight (1:06)\n" +
-		        		"2. Fuck Time (2:45)\n" +
-		        		"3. Stop When the Red Lights Flash (2:26)\n" +
-		        		"4. Lazy Bones (3:34)\n" +
-		        		"5. Wild One (4:19)\n" +
-		        		"6. Makeout Party (3:14)\n" +
-		        		"7. Stray Heart (3:44)\n" +
-		        		"8. Ashley (2:50)\n" +
-		        		"9. Baby Eyes (2:22)\n" +
-		        		"10. Lady Cobra (2:05)\n" +
-		        		"11. Nightlife (3:04)\n" +
-		        		"12. Wow! That's Loud (4:27)\n" +
-		        		"13. Amy (3:25)\n")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u><font color='#524ef8'>Album</u></font></b><br>" +
+		        		"<font color='#006500'>¡Dos! <i>(November 9, 2012)</font></i>" +
+		        		"<font color='#00900e'><i><br>[My B'Day :D]</i></font><br><br>" +
+		        		"<b><u><font color='#524ef8'>Length</font></u></b><br>" +
+		        		"<font color='#006500'><i>39:21</font></i><br><br>" +
+		        		"<b><u><font color='#524ef8'>Track List</font></u></b><br>" +
+		        		"<font color='#006500'>1. See You Tonight <i>(1:06)</i><br>" +
+		        		"2. Fuck Time <i>(2:45)</i><br>" +
+		        		"3. Stop When the Red Lights Flash <i>(2:26)</i><br>" +
+		        		"4. Lazy Bones <i>(3:34)</i><br>" +
+		        		"5. Wild One <i>(4:19)</i><br>" +
+		        		"6. Makeout Party <i>(3:14)</i><br>" +
+		        		"7. Stray Heart <i>(3:44)</i><br>" +
+		        		"8. Ashley <i>(2:50)</i><br>" +
+		        		"9. Baby Eyes <i>(2:22)</i><br>" +
+		        		"10. Lady Cobra <i>(2:05)</i><br>" +
+		        		"11. Nightlife <i>(3:04)</i><br>" +
+		        		"12. Wow! That's Loud <i>(4:27)</i><br>" +
+		        		"13. Amy <i>(3:25)</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
 		            }

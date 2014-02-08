@@ -52,5 +52,6 @@ EHHHHHH,AHHHHHHHHHH!!!\n
     android:layout_height="wrap_content"
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
-    style="?android:borderlessButtonStyle" />
+    style="?android:borderlessButtonStyle"
+    android:src="@drawable/ic_dookie" />
 </RelativeLayout>

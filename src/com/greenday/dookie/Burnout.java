@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,14 +39,14 @@ public class Burnout extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Burnout.this)
-		        .setMessage("Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:07\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Conrad Shafie, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Emi Music Publishing Ltd., Green Daze Music, WB Music Corp.")
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</b></u><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>2:07</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Michael Pritchard, Conrad Shafie, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Emi Music Publishing Ltd., Green Daze Music, WB Music Corp."))
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();

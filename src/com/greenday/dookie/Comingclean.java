@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,14 +39,14 @@ public class Comingclean extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Comingclean.this)
-		        .setMessage("Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"1:34\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</b></u><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</u></b><br>" +
+		        		"<i>1:34</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
 		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();

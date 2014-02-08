@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,15 +38,15 @@ public class Nightlife extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Nightlife.this)
-		        .setMessage("Album:\n" +
-		        		"¡DOS! (2012)\n\n" +
-		        		"Track Length:\n" +
-		        		"3:04\n\n" + 
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
+		        		"¡DOS! <i>(2012)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</b></u><br>" +
+		        		"<i>3:04</i><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

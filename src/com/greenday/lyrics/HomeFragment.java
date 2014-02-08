@@ -58,7 +58,9 @@ import android.widget.ImageButton;
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					Crouton.makeText(getActivity(), "Feature yet to be implemented.", Style.INFO).show();				}
+					Intent intent = new Intent(getActivity(), Recents.class);
+					startActivity(intent);				
+					}
 			});
 	        return rootView;
 	    }

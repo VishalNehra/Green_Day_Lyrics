@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,16 +39,17 @@ public class FOD extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(FOD.this)
-		        .setMessage("[Song ends at 2:50, followed by hidden track 'All by Myself' performed by Tré Cool, which starts at 4:07]" +
-		        		"Album:\n" +
-		        		"Dookie (1994)\n\n" +
-		        		"Track Length:\n" +
-		        		"5:46\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<b><u>INFORMATION</u></b><br>" +
+		        		"<i>Song ends at 2:50, followed by hidden track 'All by Myself' performed by Tré Cool, which starts at 4:07</i><br><br>" +
+		        		"<b><u>ALBUM</u></b><br>" +
+		        		"Dookie <i>(1994)</i><br><br>" +
+		        		"<b><u>TRACK LENGTH</b></u><br>" +
+		        		"<i>5:46</i></b><br><br>" + 
+		        		"<b><u>WRITERS</u></b><br>" +
+		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<b><u>COPYRIGHT</u></b><br>" +
+		        		"Green Daze Music, WB Music Corp."))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

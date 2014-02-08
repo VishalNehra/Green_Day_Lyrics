@@ -21,6 +21,7 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,26 +47,26 @@ import android.widget.ListView;
 					// TODO Auto-generated method stub
 					@SuppressWarnings("unused")
 					AlertDialog builder = new AlertDialog.Builder(getActivity())
-			        .setMessage("Album:\n" +
-			        		"Dookie (February 1, 1994)\n\n" +
-			        		"Length:\n" +
-			        		"39:38\n\n" +
-			        		"Track List:\n" +
-			        		"1. Burnout (2:07)\n" +
-			        		"2. Having A Blast (2:44)\n" +
-			        		"3. Chump (2:54)\n" +
-			        		"4. Longview (3:59)\n" +
-			        		"5. Welcome to Paradise (3:44)\n" +
-			        		"6. Pulling Teeth (2:31)\n" +
-			        		"7. Basket Case (3:01)\n" +
-			        		"8. She (2:14)\n" +
-			        		"9. Sassafras Roots (2:37)\n" +
-			        		"10. When I Come Around (2:58)\n" +
-			        		"11. Coming Clean (1:34)\n" +
-			        		"12. Emenius Sleepus (1:43)\n" +
-			        		"13. In The End (1:46)\n" +
-			        		"14. F.O.D. (5:46)")
-			        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+			        .setMessage(Html.fromHtml("<b><u><font color='#524ef8'>ALBUM</u></font></b><br>" +
+			        		"<font color='#006500'>Dookie <i>(February 1, 1994)</font></i><br><br>" +
+			        		"<b><u><font color='#524ef8'>LENGTH</font></u></b><br>" +
+			        		"<font color='#006500'><i>39:38</font></i><br><br>" +
+			        		"<b><u><font color='#524ef8'>TRACK LIST</font></u></b><br>" +
+			        		"<font color='#006500'>1. Burnout <i>(2:07)</i><br>" +
+			        		"2. Having A Blast <i>(2:44)</i><br>" +
+			        		"3. Chump <i>(2:54)</i><br>" +
+			        		"4. Longview <i>(3:59)</i><br>" +
+			        		"5. Welcome to Paradise <i>(3:44)</i><br>" +
+			        		"6. Pulling Teeth <i>(2:31)</i><br>" +
+			        		"7. Basket Case <i>(3:01)</i><br>" +
+			        		"8. She <i>(2:14)</i><br>" +
+			        		"9. Sassafras Roots <i>(2:37)</i><br>" +
+			        		"10. When I Come Around <i>(2:58)</i><br>" +
+			        		"11. Coming Clean <i>(1:34)</i><br>" +
+			        		"12. Emenius Sleepus <i>(1:43)</i><br>" +
+			        		"13. In The End <i>(1:46)</i><br>" +
+			        		"14. F.O.D. <i>(5:46)</i></font>"))
+			        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
 			                getActivity().closeContextMenu();
 			            }
