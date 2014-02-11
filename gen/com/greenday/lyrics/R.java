@@ -431,6 +431,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int main_song=0x7f0b0002;
     }
     public static final class string {
+        /**  Alert Dialog 
+         */
+        public static final int album=0x7f060108;
         public static final int album10_summary=0x7f060039;
         public static final int album10_title=0x7f060038;
         public static final int album11_summary=0x7f06003b;
@@ -466,6 +469,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int allthetime_title=0x7f0600a0;
         public static final int amanda_title=0x7f06006f;
         public static final int americaneulogy_title=0x7f060084;
+        public static final int americanidiot_album=0x7f06010f;
         /**  Songs titles 
  American Idiot 
          */
@@ -506,6 +510,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int cigarettes_title=0x7f0600f7;
         public static final int coffeemaker_title=0x7f0600e0;
         public static final int comingclean_title=0x7f0600ca;
+        public static final int copyright=0x7f06010d;
+        public static final int copyright1=0x7f06010e;
         /**  ACRA 
          */
         public static final int crash_toast_text=0x7f060003;
@@ -521,6 +527,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int disappearingboy_title=0x7f0600e2;
         public static final int dodada_title=0x7f060091;
         public static final int dontleaveme_title=0x7f0600e3;
+        public static final int dookie_album=0x7f060110;
+        public static final int dos_album=0x7f060111;
         public static final int dramaqueen_title=0x7f06006b;
         public static final int drawer_close=0x7f060022;
         public static final int drawer_open=0x7f060021;
@@ -555,6 +563,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int homcom_title=0x7f06004d;
         public static final int horseshoes_title=0x7f060081;
         public static final int inferno_title=0x7f060079;
+        public static final int insomniac_album=0x7f060112;
         public static final int intent1_preference_summary=0x7f06000d;
         public static final int intent1_preference_title=0x7f06000c;
         public static final int intent2_preference_summary=0x7f060041;
@@ -569,6 +578,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int jinx_title=0x7f0600ac;
         public static final int jos_title=0x7f060043;
         public static final int judgedaughter_title=0x7f0600ee;
+        public static final int kerplunk_album=0x7f060113;
         public static final int kid_title=0x7f06006c;
         public static final int killthedj_title=0x7f060053;
         public static final int kingforaday_title=0x7f0600b0;
@@ -580,6 +590,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int lastnight_title=0x7f06007a;
         public static final int lastridein_title=0x7f0600ab;
         public static final int lazybones_title=0x7f06005e;
+        public static final int length=0x7f06010a;
         public static final int letterbomb_title=0x7f06004b;
         public static final int letyourselfgo_title=0x7f060052;
         /**  Kerplunk 
@@ -713,6 +724,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int title_changelog=0x7f060001;
         public static final int toomuch_title=0x7f060104;
+        public static final int track_length=0x7f060109;
+        public static final int track_list=0x7f06010c;
         public static final int troublemaker_title=0x7f060056;
         public static final int ui_profile_toast_save_text=0x7f06001e;
         public static final int uptight_title=0x7f0600aa;
@@ -740,6 +753,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int workingclasshero_title=0x7f060106;
         public static final int worryrock_title=0x7f0600a8;
         public static final int wowthatsloud_title=0x7f060066;
+        public static final int writers=0x7f06010b;
         public static final int youlied_title=0x7f060088;
         public static final int yourdead_title=0x7f060093;
     }
@@ -766,6 +780,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f07000b;
+        /**  Dialog 
+         */
+        public static final int CustomDialog=0x7f07000f;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -781,9 +798,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int TextAppearance_ShowcaseView_Title=0x7f070003;
         public static final int TextAppearance_ShowcaseView_Title_Light=0x7f070006;
         public static final int Theme_SettingsBackground=0x7f07000e;
-        public static final int Theme_TranslucentActionBar=0x7f07000f;
-        public static final int Theme_TranslucentActionBar_ActionBar=0x7f070010;
-        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f070011;
+        public static final int Theme_TranslucentActionBar=0x7f070010;
+        public static final int Theme_TranslucentActionBar_ActionBar=0x7f070011;
+        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f070012;
         /**  Testing 
          */
         public static final int Widget_ActionBar=0x7f07000c;

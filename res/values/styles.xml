@@ -37,5 +37,10 @@
    <style name="Theme.SettingsBackground" parent="@style/Theme.TranslucentActionBar">
 	<item name="android:windowBackground">@drawable/allsongs_bg</item>
 	</style>
+	
+   <!-- Dialog -->
+   <style name="CustomDialog" parent="android:Theme.Holo.Light.Dialog">
+       <item name="android:windowFrame">@drawable/americanidiot_cover2</item>
+</style>
     
 </resources>

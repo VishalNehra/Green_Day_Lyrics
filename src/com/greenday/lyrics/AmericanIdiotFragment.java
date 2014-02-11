@@ -45,11 +45,11 @@ public class AmericanIdiotFragment extends Fragment{
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage(Html.fromHtml("<b><u><font color='#524ef8'>ALBUM</u></font></b><br>" +
+		        .setMessage(Html.fromHtml(getString(R.string.album) +
 		        		"<font color='#006500'>American Idiot <i>(September 20, 2004)</font></i><br><br>" +
-		        		"<b><u><font color='#524ef8'>LENGTH</font></u></b><br>" +
+		        		getString(R.string.length) +
 		        		"<font color='#006500'><i>57:12</font></i><br><br>" +
-		        		"<b><u><font color='#524ef8'>TRACK LIST</font></u></b><br>" +
+		        		getString(R.string.track_list) +
 		        		"<font color='#006500'>1. American Idiot <i>(2:54)</i><br>" +
 		        		"2. Jesus of Suburbia <i>(9:08)</font></i><br>" +
 		        		    "\t\t<font color='#00900e'><i>I. Jesus of Suburbia<br>" +

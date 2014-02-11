@@ -183,9 +183,13 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -217,9 +221,17 @@ public class Allsongs extends Activity {
 
         if (firstboot){
             // 1) Launch the authentication activity
-            Crouton.makeText(this, "Please don't press on play icon!", Style.ALERT).show();
-            Crouton.makeText(this, "Navigate only from NOW PLAYING to use this feature!", Style.INFO).show();
-           
+        	AlertDialog builder = new AlertDialog.Builder(this)
+        	.setTitle("INSTRUCTIONS")
+        	.setMessage(Html.fromHtml("<center><b><u>INSTRUCTIONS</center></u></b><br><br>" +
+        			"Blah Blah"))
+        			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+			            public void onClick(DialogInterface dialog, int which) {
+			                Allsongs.this.closeContextMenu();
+			            }
+			        })
+			        .show();    
+        	
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()
                 .putBoolean("firstboot_allsongs", false)
@@ -237,6 +249,10 @@ public class Allsongs extends Activity {
 				boolean track = getIntent().getBooleanExtra("track", true);
 				if(track){
 				txtQuery.setText(getIntent().getExtras().getString("track"));}
+			
+				if(track=false){
+					getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+				}
 			}
 		});
 		
@@ -244,7 +260,7 @@ public class Allsongs extends Activity {
 		boolean fix=getIntent().getBooleanExtra("fix", true);
 		if(fix)
 		{
-			
+			getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		}
 		//Fixes
 		
@@ -252,7 +268,6 @@ public class Allsongs extends Activity {
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
-            
 			}
 		String[] values = new String []
 				{

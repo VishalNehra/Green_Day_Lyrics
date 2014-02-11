@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -38,14 +39,14 @@ public class Nightlife extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Nightlife.this)
-		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
-		        		"¡DOS! <i>(2012)</i><br><br>" +
-		        		"<b><u>TRACK LENGTH</b></u><br>" +
-		        		"<i>3:04</i><br><br>" + 
-		        		"<b><u>WRITERS</u></b><br>" +
-		        		"Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra<br><br>" +
-		        		"<b><u>COPYRIGHT</u></b><br>" +
-		        		"Green Daze Music, WB Music Corp."))
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.dos_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:04</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billie Joe Armstrong, Monica Painter a.k.a. Lady Cobra</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -93,6 +94,12 @@ public class Nightlife extends Activity {
 		        	intent.putExtra("Search", true);
 		        	startActivity(intent);
 					return true;
+				}
+				if(item.getItemId()==R.id.action_play)
+				{
+					// now playing
+					startActivity(new Intent(this, Nowplaying.class));
+		            return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

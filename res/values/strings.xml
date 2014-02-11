@@ -365,5 +365,21 @@
     <string name="workingclasshero_title">Working Class Hero</string>
     <string name="allbymyself_title">All By Myself</string>
     
+    <!-- Alert Dialog -->
+    <string name="album">&lt;b>&lt;u>&lt;font color="#524ef8">ALBUM&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="track_length">&lt;b>&lt;u>&lt;font color="#524ef8">TRACK LENGTH&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="length">&lt;b>&lt;u>&lt;font color="#524ef8">LENGTH&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="writers">&lt;b>&lt;u>&lt;font color="#524ef8">WRITERS&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="track_list">&lt;b>&lt;u>&lt;font color="#524ef8">TRACK LIST&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="copyright">&lt;b>&lt;u>&lt;font color="#524ef8">COPYRIGHT&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    <string name="copyright1">&lt;font color="#006500">Green Daze Music, WB Music Corp.&lt;/font></string>
+    
+    <string name="americanidiot_album">&lt;font color="#006500">American Idiot&lt;i> (2004)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="dookie_album">&lt;font color="#006500">Dookie&lt;i> (1994)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="dos_album">&lt;font color="#006500">¡DOS!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="insomniac_album">&lt;font color="#006500">Insomniac&lt;i> (1995)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="kerplunk_album">&lt;font color="#006500">¡DOS!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    
+    
     
 </resources>

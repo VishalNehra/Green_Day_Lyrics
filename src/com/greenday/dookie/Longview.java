@@ -3,7 +3,9 @@ package com.greenday.dookie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -39,14 +41,14 @@ public class Longview extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Longview.this)
-		        .setMessage(Html.fromHtml("<b><u>ALBUM</b></u><br>" +
-		        		"Dookie <i>(1994)</i><br><br>" +
-		        		"<b><u>TRACK LENGTH</u></b><br>" +
-		        		"<i>3:59</i><br><br>" + 
-		        		"<b><u>WRITERS</b></u><br>" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
-		        		"<b><u>COPYRIGHT</u></b><br>" +
-		        		"Green Daze Music, WB Music Corp."))
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.dookie_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:59</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -96,6 +98,12 @@ public class Longview extends Activity {
 		        	intent.putExtra("Search", true);
 		        	startActivity(intent);
 					return true;
+				}
+				if(item.getItemId()==R.id.action_play)
+				{
+					// now playing
+					startActivity(new Intent(Longview.this, Nowplaying.class));
+		            return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

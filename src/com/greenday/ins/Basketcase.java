@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -12,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,9 +39,9 @@ public class Basketcase extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Basketcase.this)
-		        .setMessage("From\n" +
-		        		"Dookie, 1994")
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
+		        		"<font color='#006500'>Dookie, <i>1994</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
@@ -94,6 +96,12 @@ public class Basketcase extends Activity {
 		        	intent.putExtra("Search", true);
 		        	startActivity(intent);
 					return true;
+				}
+				if(item.getItemId()==R.id.action_play)
+				{
+					// now playing
+					startActivity(new Intent(this, Nowplaying.class));
+		            return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

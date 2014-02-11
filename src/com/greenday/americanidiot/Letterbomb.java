@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -38,14 +39,14 @@ public class Letterbomb extends Activity {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(Letterbomb.this)
-		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
-		        		"American Idiot <i>(2004)</i><br><br>" +
-		        		"<b><u>TRACK LENGTH</u></b><br>" +
-		        		"<i>4:05</i><br><br>" + 
-		        		"<b><u>WRITERS</u></b><br>" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
-		        		"<b><u>COPYRIGHT</u></b><br>" +
-		        		"Green Daze Music, WB Music Corp."))
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.americanidiot_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>4:05</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -93,6 +94,12 @@ public class Letterbomb extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(Letterbomb.this, Nowplaying.class));
+	            return true;
 			}
 		            return super.onOptionsItemSelected(item);
 			

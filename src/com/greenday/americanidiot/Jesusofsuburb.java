@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -11,6 +12,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
@@ -36,24 +38,25 @@ public class Jesusofsuburb extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				@SuppressWarnings("unused")
-				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
-		        .setMessage(Html.fromHtml("<b><u>ALBUM</u></b><br>" +
-		        		"American Idiot <i>(2004)</i><br><br>" +
-		        		"<b><u>TRACK LENGTH</u></b><br>" +
-		        		"<i>9:08</i><br><br>" + 
-		        		"<b><u>WRITERS</u></b><br>" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
-		        		"<b><u>COPYRIGHT</u></b><br>" +
-		        		"Green Daze Music, WB Music Corp."))
+				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this, R.style.CustomDialog)
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.americanidiot_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>9:08</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
+		            
 		        })
-		        .show();    
+		        .show();
 			}
 		});
+		
 	}
 	
 	//Action bar code below
@@ -93,6 +96,12 @@ public class Jesusofsuburb extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(Jesusofsuburb.this, Nowplaying.class));
+	            return true;
 			}
 		            return super.onOptionsItemSelected(item);
 			
