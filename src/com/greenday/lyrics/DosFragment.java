@@ -58,12 +58,12 @@ public class DosFragment extends Fragment {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage(Html.fromHtml("<b><u><font color='#524ef8'>Album</u></font></b><br>" +
-		        		"<font color='#006500'>¡Dos! <i>(November 9, 2012)</font></i>" +
-		        		"<font color='#00900e'><i><br>[My B'Day :D]</i></font><br><br>" +
-		        		"<b><u><font color='#524ef8'>Length</font></u></b><br>" +
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.dos_album_release) +
+		        		"<font color='#00900e'><i>[My B'Day :D]</i></font><br><br>" +
+		        		getString(R.string.length) +
 		        		"<font color='#006500'><i>39:21</font></i><br><br>" +
-		        		"<b><u><font color='#524ef8'>Track List</font></u></b><br>" +
+		        		getString(R.string.track_list) +
 		        		"<font color='#006500'>1. See You Tonight <i>(1:06)</i><br>" +
 		        		"2. Fuck Time <i>(2:45)</i><br>" +
 		        		"3. Stop When the Red Lights Flash <i>(2:26)</i><br>" +

@@ -38,6 +38,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,26 +67,26 @@ public ShenanigansFragment(){}
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage("Album:\n" +
-		        		"Shenanigans (July 2, 2002)\n\n" +
-		        		"Length:\n" +
-		        		"33:23\n\n" +
-		        		"Track List:\n" +
-		        		"1. Suffocate (2:54)\n" +
-		        		"2. Desensitized (2:47)\n" +
-		        		"3. You Lied (2:26)\n" +
-		        		"4. Outsider (2:17)\n" +
-		        		"5. Don't Wanna Fall in Love (1:38)\n" +
-		        		"6. Espionage (3:23)\n" +
-		        		"7. I Want to Be on T.V. (1:17)\n" +
-		        		"8. Scumbag (1:46)\n" +
-		        		"9. Tired of Waiting for You (2:34)\n" +
-		        		"10. Sick of Me (2:07)\n" +
-		        		"11. Rotting (2:52)\n" +
-		        		"12. Do Da Da (1:30)\n" +
-		        		"13. On the Wagon (2:48)\n" +
-		        		"14. Ha Ha You're Dead (3:07)")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album) +
+		        		getString(R.string.shenanigans_album_release) +
+		        		getString(R.string.length) +
+		        		"<font color='#006500'><i>33:23</i></font><br><br>" +
+		        		getString(R.string.track_list) +
+		        		"<font color='#006500'>1. Suffocate <i>(2:54)</i><br>" +
+		        		"2. Desensitized <i>(2:47)</i><br>" +
+		        		"3. You Lied <i>(2:26)</i><br>" +
+		        		"4. Outsider <i>(2:17)</i><br>" +
+		        		"5. Don't Wanna Fall in Love <i>(1:38)</i><br>" +
+		        		"6. Espionage <i>(3:23)</i><br>" +
+		        		"7. I Want to Be on T.V. <i>(1:17)</i><br>" +
+		        		"8. Scumbag <i>(1:46)</i><br>" +
+		        		"9. Tired of Waiting for You <i>(2:34)</i><br>" +
+		        		"10. Sick of Me <i>(2:07)</i><br>" +
+		        		"11. Rotting <i>(2:52)</i><br>" +
+		        		"12. Do Da Da <i>(1:30)</i><br>" +
+		        		"13. On the Wagon <i>(2:48)</i><br>" +
+		        		"14. Ha Ha You're Dead <i>(3:07)</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
 		            }

@@ -36,6 +36,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,29 +64,29 @@ public class KerplunkFragment extends Fragment {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage("Album:\n" +
-		        		"Kerplunk (January 17, 1992)\n\n" +
-		        		"Length:\n" +
-		        		"33:58 (Vinyl Version)\n" +
-		        		"42:09 (CD & Cassette Version)\n\n" +
-		        		"Track List:\n" +
-		        		"1. 2000 Light Years Away (2:24)\n" +
-		        		"2. One for the Razorbacks (2:30)\n" +
-		        		"3. Welcome to Paradise (3:30)\n" +
-		        		"4. Christie Road (3:33)\n" +
-		        		"5. Private Ale (2:26)\n" +
-		        		"6. Dominated Love Slave (1:42)\n" +
-		        		"7. One of My Lies (2:19)\n" +
-		        		"8. 80 (3:39)\n" +
-		        		"9. Android (3:00)\n" +
-		        		"10. No One Knows (3:39)\n" +
-		        		"11. Who Wrote Holden Caulfield? (2:44)\n" +
-		        		"12. Words I Might Have Ate (2:32)\n" +
-		        		"13. Sweet Children [CD] (1:41)\n" +
-		        		"14. Best Thing in Town [CD] (2:03)\n" +
-		        		"15. Strangeland [CD] (2:08)\n" +
-		        		"16. My Generation [CD] (2:19)\n")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album) +
+		        		getString(R.string.kerplunk_album_release) +
+		        		getString(R.string.length) +
+		        		"<font color='#006500'><i>33:58</i> (Vinyl Version)<br>" +
+		        		"<i>42:09</i> (CD & Cassette Version)</font><br><br>" +
+		        		getString(R.string.track_list) +
+		        		"<font color='#006500'>1. 2000 Light Years Away <i>(2:24)</i><br>" +
+		        		"2. One for the Razorbacks <i>(2:30)</i><br>" +
+		        		"3. Welcome to Paradise <i>(3:30)</i><br>" +
+		        		"4. Christie Road <i>(3:33)</i><br>" +
+		        		"5. Private Ale <i>(2:26)</i><br>" +
+		        		"6. Dominated Love Slave <i>(1:42)</i><br>" +
+		        		"7. One of My Lies <i>(2:19)</i><br>" +
+		        		"8. 80 <i>(3:39)</i><br>" +
+		        		"9. Android <i>(3:00)</i><br>" +
+		        		"10. No One Knows <i>(3:39)</i><br>" +
+		        		"11. Who Wrote Holden Caulfield? <i>(2:44)</i><br>" +
+		        		"12. Words I Might Have Ate <i>(2:32)</i><br>" +
+		        		"13. Sweet Children <i>[CD] (1:41)</i><br>" +
+		        		"14. Best Thing in Town <i>[CD] (2:03)</i><br>" +
+		        		"15. Strangeland <i>[CD] (2:08)</i><br>" +
+		        		"16. My Generation <i>[CD] (2:19)</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
 		            }

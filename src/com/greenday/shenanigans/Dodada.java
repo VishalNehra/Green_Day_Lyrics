@@ -7,6 +7,7 @@ import com.greenday.americanidiot.Americanidiot;
 import com.greenday.dookie.Basketcase;
 import com.greenday.ins.Hitchinaride;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -16,6 +17,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,15 +42,16 @@ public class Dodada extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Dodada.this)
-		        .setMessage("[from 'Brain Stew/Jaded', 1996]\n\n" +
-		        		"Album:\n" +
-		        		"Shenanigans (2002)\n\n" +
-		        		"Track Length:\n" +
-		        		"1:30\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'><i>[From 'Brain Stew/Jaded', 1996]</i></font><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>1:30</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -57,8 +60,8 @@ public class Dodada extends Activity {
 		        .setNegativeButton("Go To Originals", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		            	AlertDialog builder2 = new AlertDialog.Builder(Dodada.this)
-				        .setMessage("Choose any one track")
-				        .setPositiveButton("Brain Stew", new DialogInterface.OnClickListener() {
+				        
+				        .setNeutralButton("Brain Stew", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int which) {
 				            	Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Brainstew.class);
 				                startActivity(intent);
@@ -68,6 +71,11 @@ public class Dodada extends Activity {
 				            public void onClick(DialogInterface dialog, int which) {
 				                Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Jaded.class);
 				                startActivity(intent);
+				            }
+				        })
+				        .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				                closeContextMenu();
 				            }
 				        })
 				        .show();    
@@ -116,6 +124,12 @@ public class Dodada extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(this, Nowplaying.class));
+	            return true;
 			}
 		            return super.onOptionsItemSelected(item);
 			

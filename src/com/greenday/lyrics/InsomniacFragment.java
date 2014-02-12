@@ -1,18 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.americanidiot.Americanidiot;
-import com.greenday.americanidiot.Arewethewaiting;
-import com.greenday.americanidiot.Boulevardofbd;
-import com.greenday.americanidiot.Extraordgirl;
-import com.greenday.americanidiot.Givemenov;
-import com.greenday.americanidiot.Holiday;
-import com.greenday.americanidiot.Homecoming;
-import com.greenday.americanidiot.Jesusofsuburb;
-import com.greenday.americanidiot.Letterbomb;
-import com.greenday.americanidiot.Shesarebel;
-import com.greenday.americanidiot.Stjimmy;
-import com.greenday.americanidiot.Wakemeup;
-import com.greenday.americanidiot.Whatshername;
 import com.greenday.insomniac.Armatage;
 import com.greenday.insomniac.Babuvula;
 import com.greenday.insomniac.Brainstew;
@@ -28,14 +15,12 @@ import com.greenday.insomniac.Tightwad;
 import com.greenday.insomniac.Walking;
 import com.greenday.insomniac.Westbound;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
-
 import android.os.Bundle;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,26 +48,26 @@ public class InsomniacFragment extends Fragment {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage("Album:\n" +
-		        		"Insomniac (October 10, 1995)\n\n" +
-		        		"Length:\n" +
-		        		"32:49\n\n" +
-		        		"Track List:\n" +
-		        		"1. Armatage Shanks (2:17)\n" +
-		        		"2. Brat (1:43)\n" +
-		        		"3. Stuck with Me (2:16)\n" +
-		        		"4. Geek Stink Breath (2:15)\n" +
-		        		"5. No Pride (2:19)\n" +
-		        		"6. Bab's Uvula Who? (2:08)\n" +
-		        		"7. 86 (2:47)\n" +
-		        		"8. Panic Song (3:35)\n" +
-		        		"9. Stuart and the Ave. (2:03)\n" +
-		        		"10. Brain Stew (3:13)\n" +
-		        		"11. Jaded (1:30)\n" +
-		        		"12. Westbound Sign (2:12)\n" +
-		        		"13. Tight Wad Hill (2:01)\n" +
-		        		"14. Walking Contradiction (2:31)")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album) +
+		        		getString(R.string.insomniac_album_release) +
+		        		getString(R.string.length) +
+		        		"<font color='#006500'><i>32:49</font></i><br><br>" +
+		        		getString(R.string.track_list) +
+		        		"<font color='#006500'>1. Armatage Shanks <i>(2:17)</i><br>" +
+		        		"2. Brat <i>(1:43)</i><br>" +
+		        		"3. Stuck with Me <i>(2:16)</i><br>" +
+		        		"4. Geek Stink Breath <i>(2:15)</i><br>" +
+		        		"5. No Pride <i>(2:19)</i><br>" +
+		        		"6. Bab's Uvula Who? <i>(2:08)</i><br>" +
+		        		"7. 86 <i>(2:47)</i><br>" +
+		        		"8. Panic Song <i>(3:35)</i><br>" +
+		        		"9. Stuart and the Ave. <i>(2:03)</i><br>" +
+		        		"10. Brain Stew <i>(3:13)</i><br>" +
+		        		"11. Jaded <i>(1:30)</i><br>" +
+		        		"12. Westbound Sign <i>(2:12)</i><br>" +
+		        		"13. Tight Wad Hill <i>(2:01)</i><br>" +
+		        		"14. Walking Contradiction <i>(2:31)</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
 		            }

@@ -47,11 +47,11 @@ import android.widget.ListView;
 					// TODO Auto-generated method stub
 					@SuppressWarnings("unused")
 					AlertDialog builder = new AlertDialog.Builder(getActivity())
-			        .setMessage(Html.fromHtml("<b><u><font color='#524ef8'>ALBUM</u></font></b><br>" +
-			        		"<font color='#006500'>Dookie <i>(February 1, 1994)</font></i><br><br>" +
-			        		"<b><u><font color='#524ef8'>LENGTH</font></u></b><br>" +
+			        .setMessage(Html.fromHtml(getString(R.string.album) +
+			        		getString(R.string.dookie_album_release) +
+			        		getString(R.string.length) +
 			        		"<font color='#006500'><i>39:38</font></i><br><br>" +
-			        		"<b><u><font color='#524ef8'>TRACK LIST</font></u></b><br>" +
+			        		getString(R.string.track_list) +
 			        		"<font color='#006500'>1. Burnout <i>(2:07)</i><br>" +
 			        		"2. Having A Blast <i>(2:44)</i><br>" +
 			        		"3. Chump <i>(2:54)</i><br>" +

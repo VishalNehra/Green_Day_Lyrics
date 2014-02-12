@@ -40,6 +40,7 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,33 +68,33 @@ public class IntSuperFragment extends Fragment {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage("Album:\n" +
-		        		"International Superhits! (November 13, 2001)\n\n" +
-		        		"Length:\n" +
-		        		"60:44\n\n" +
-		        		"Track List:\n" +
-		        		"1. Maria (2:47)\n" +
-		        		"2. Poprocks & Coke (2:38)\n" +
-		        		"3. Longview (3:53)\n" +
-		        		"4. Welcome to Paradise (3:44)\n" +
-		        		"5. Basket Case (3:01)\n" +
-		        		"6. When I Come Around (2:58)\n" +
-		        		"7. She (2:14)\n" +
-		        		"8. J.A.R. (Jason Andrew Relva) (2:51)\n" +
-		        		"9. Geek Stink Breath (2:15)\n" +
-		        		"10. Brain Stew (3:13)\n" +
-		        		"11. Jaded (1:30)\n" +
-		        		"12. Walking Contradiction (2:31)\n" +
-		        		"13. Stuck with Me (2:15)\n" +
-		        		"14. Hitchin' a Ride (2:51)\n" +
-		        		"15. Good Riddance (Time of Your Life) (2:33)\n" +
-		        		"16. Redundant (3:18)\n" +
-		        		"17. Nice Guys Finish Last (2:49)\n" +
-		        		"18. Minority (2:47)\n" +
-		        		"19. Warning (3:41)\n" +
-		        		"20. Waiting (3:11)\n" +
-		        		"21. Macy's Day Parade (3:33)")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album) +
+		        		"<font color='#006500'>International Superhits! <i>(November 13, 2001)</font></i><br><br>" +
+		        		getString(R.string.length) +
+		        		"<font color='#006500'><i>60:44</font></i><br><br>" +
+		        		getString(R.string.track_list) +
+		        		"<font color='#006500'>1. Maria <i>(2:47)</i><br>" +
+		        		"2. Poprocks & Coke <i>(2:38)</i><br>" +
+		        		"3. Longview <i>(3:53)</i><br>" +
+		        		"4. Welcome to Paradise <i>(3:44)</i><br>" +
+		        		"5. Basket Case <i>(3:01)</i><br>" +
+		        		"6. When I Come Around <i>(2:58)</i><br>" +
+		        		"7. She <i>(2:14)</i><br>" +
+		        		"8. J.A.R. (Jason Andrew Relva) <i>(2:51)</i><br>" +
+		        		"9. Geek Stink Breath <i>(2:15)</i><br>" +
+		        		"10. Brain Stew <i>(3:13)</i><br>" +
+		        		"11. Jaded <i>(1:30)</i><br>" +
+		        		"12. Walking Contradiction <i>(2:31)</i><br>" +
+		        		"13. Stuck with Me <i>(2:15)</i><br>" +
+		        		"14. Hitchin' a Ride <i>(2:51)</i><br>" +
+		        		"15. Good Riddance (Time of Your Life) <i>(2:33)</i><br>" +
+		        		"16. Redundant <i>(3:18)</i><br>" +
+		        		"17. Nice Guys Finish Last <i>(2:49)</i><br>" +
+		        		"18. Minority <i>(2:47)</i><br>" +
+		        		"19. Warning <i>(3:41)</i><br>" +
+		        		"20. Waiting <i>(3:11)</i><br>" +
+		        		"21. Macy's Day Parade <i>(3:33)</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
 		            }

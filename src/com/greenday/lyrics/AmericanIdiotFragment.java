@@ -46,7 +46,7 @@ public class AmericanIdiotFragment extends Fragment{
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
 		        .setMessage(Html.fromHtml(getString(R.string.album) +
-		        		"<font color='#006500'>American Idiot <i>(September 20, 2004)</font></i><br><br>" +
+		        		getString(R.string.americanidiot_album_release) +
 		        		getString(R.string.length) +
 		        		"<font color='#006500'><i>57:12</font></i><br><br>" +
 		        		getString(R.string.track_list) +

@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -35,21 +36,22 @@ public class Americaneulogy extends Activity {
 		setContentView(R.layout.tcb_americaneulogy);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.tcb_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Americaneulogy.this)
-		        .setMessage(Html.fromHtml("<b>Album</b><br>" +
-		        		"21st Century Breakdown <i>(2009)</i><br><br>" +
-		        		"<b>Track Length</b><br>" +
-		        		"<i>4:26</i><br><br>" + 
-		        		"<b>Writers</b><br>" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
-		        		"<b>Copyright</b><br>" +
-		        		"Green Daze Music, WB Music Corp."))
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.tcb_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>4:26</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
@@ -96,6 +98,12 @@ public class Americaneulogy extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(this, Nowplaying.class));
+	            return true;
 			}
 		            return super.onOptionsItemSelected(item);
 			

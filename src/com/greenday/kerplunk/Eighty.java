@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -16,6 +17,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,15 +43,15 @@ public class Eighty extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Eighty.this)
 		        
-		        .setMessage("Album:\n" +
-		        		"Kerplunk (1992)\n\n" +
-		        		"Track Length:\n" +
-		        		"3:39\n\n" + 
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.kerplunk_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:39</i></font><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		"<font color='#006500'>Green Daze Music</font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
@@ -98,6 +100,12 @@ public class Eighty extends Activity {
 		        	intent.putExtra("Search", true);
 		        	startActivity(intent);
 					return true;
+				}
+				if(item.getItemId()==R.id.action_play)
+				{
+					// now playing
+					startActivity(new Intent(this, Nowplaying.class));
+		            return true;
 				}
 			            return super.onOptionsItemSelected(item);
 				

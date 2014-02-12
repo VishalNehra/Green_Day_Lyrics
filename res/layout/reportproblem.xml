@@ -42,7 +42,7 @@
         android:layout_below="@+id/textView3"
         android:ems="10"
         android:inputType="textCapSentences|textMultiLine"
-        android:hint="Tap here to type..." >
+        android:hint="Type your message..." >
 
         <requestFocus />
     </EditText>

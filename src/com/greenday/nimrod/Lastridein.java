@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -16,6 +17,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,10 +40,11 @@ public class Lastridein extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Lastridein.this)
-		        .setMessage("Instrumental\n\n" +
-		        		"Track Length:\n" +
-		        		"3:47")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.nimrod_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:47</i></font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }
@@ -90,6 +93,12 @@ public class Lastridein extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
+		}
+		if(item.getItemId()==R.id.action_play)
+		{
+			// now playing
+			startActivity(new Intent(this, Nowplaying.class));
+            return true;
 		}
 	            return super.onOptionsItemSelected(item);
 		

@@ -375,10 +375,21 @@
     <string name="copyright1">&lt;font color="#006500">Green Daze Music, WB Music Corp.&lt;/font></string>
     
     <string name="americanidiot_album">&lt;font color="#006500">American Idiot&lt;i> (2004)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="americanidiot_album_release">&lt;font color="#006500">American Idiot&lt;i> (September 20, 2004)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="dookie_album">&lt;font color="#006500">Dookie&lt;i> (1994)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="dookie_album_release">&lt;font color="#006500">Dookie&lt;i> (February 1, 1994)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="dos_album">&lt;font color="#006500">¡DOS!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="dos_album_release">&lt;font color="#006500">¡DOS!&lt;i> (November 9, 2012)&lt;/font>&lt;/i>&lt;br></string>
     <string name="insomniac_album">&lt;font color="#006500">Insomniac&lt;i> (1995)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
-    <string name="kerplunk_album">&lt;font color="#006500">¡DOS!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="insomniac_album_release">&lt;font color="#006500">Insomniac&lt;i> (October 10, 1995)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="kerplunk_album">&lt;font color="#006500">Kerplunk&lt;i> (1992)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="kerplunk_album_release">&lt;font color="#006500">Kerplunk&lt;i> (January 17, 1992)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="nimrod_album">&lt;font color="#006500">Nimrod&lt;i> (1997)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="nimrod_album_release">&lt;font color="#006500">Nimrod&lt;i> (October 14, 1997)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="shenanigans_album">&lt;font color="#006500">Shenanigans&lt;i> (2002)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="shenanigans_album_release">&lt;font color="#006500">Shenanigans&lt;i> (July 2, 2002)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tcb_album">&lt;font color="#006500">21st Century Breakdown&lt;i> (2009)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tcb_album_release">&lt;font color="#006500">21st Century Breakdown&lt;i> (May 15, 2009)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     
     
     

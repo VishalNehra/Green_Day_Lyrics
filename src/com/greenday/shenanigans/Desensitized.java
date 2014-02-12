@@ -7,6 +7,7 @@ import com.greenday.americanidiot.Americanidiot;
 import com.greenday.ins.Basketcase;
 import com.greenday.ins.Hitchinaride;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -16,6 +17,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,15 +42,16 @@ public class Desensitized extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Desensitized.this)
-		        .setMessage("[from 'Good Riddance', 1997. Also a single in the Green Day Singles Box.]\n\n" +
-		        		"Album:\n" +
-		        		"Shenanigans (2002)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:47\n\n" + 
-		        		"Writers:\n" +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'><i>[From 'Good Riddance', 1997. Also a single in the Green Day Singles Box.]</font></i><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:47</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
 		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -103,6 +106,12 @@ public class Desensitized extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
+		}
+		if(item.getItemId()==R.id.action_play)
+		{
+			// now playing
+			startActivity(new Intent(this, Nowplaying.class));
+            return true;
 		}
 	            return super.onOptionsItemSelected(item);
 		

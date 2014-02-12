@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.dookie.Basketcase;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -15,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,21 +34,23 @@ public class Tiredofwaiting extends Activity {
 		setContentView(R.layout.shenanigans_tiredofwaiting);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
-		        .setMessage("[originally performed by The Kinks; from 'Basket Case', 1994]\n\n" +
-		        		"Album:\n" +
-		        		"Shenanigans (2002)\n\n" +
-		        		"Track Length:\n" +
-		        		"2:34\n\n" + 
-		        		"Writers:\n" +
-		        		"Ray Davies\n\n" +
-		        		"Copyright:\n" +
-		        		"Jayboy Music Corp.")
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'><i>[Originally performed by The Kinks; from 'Basket Case', 1994]</i></font><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:34</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Ray Davies</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		"<font color='#006500'>Jayboy Music Corp.</font>"))
 		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
@@ -101,6 +105,12 @@ public class Tiredofwaiting extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(this, Nowplaying.class));
+	            return true;
 			}
 		            return super.onOptionsItemSelected(item);
 			

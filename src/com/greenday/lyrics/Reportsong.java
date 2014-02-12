@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +28,7 @@ public class Reportsong extends Activity {
 		setContentView(R.layout.reportsong);
 		TextView tv=(TextView) findViewById(R.id.textView1);
 		final EditText et=(EditText) findViewById(R.id.editText1);
+		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 		Button b2= (Button) findViewById(R.id.button2);
 		b2.setOnClickListener(new OnClickListener() {
 			
