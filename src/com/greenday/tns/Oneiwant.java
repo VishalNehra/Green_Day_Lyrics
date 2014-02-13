@@ -33,6 +33,7 @@ public class Oneiwant extends Activity {
 		setContentView(R.layout.tns_oneiwant);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		this.getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

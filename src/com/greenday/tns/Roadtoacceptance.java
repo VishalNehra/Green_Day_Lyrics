@@ -33,6 +33,7 @@ public class Roadtoacceptance extends Activity {
 		setContentView(R.layout.tns_roadtoacceptance);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		this.getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

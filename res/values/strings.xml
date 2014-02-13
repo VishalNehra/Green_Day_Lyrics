@@ -43,19 +43,16 @@
     <string name="member6_title">Jason Freese</string>
     <string name="member6_summary">Keyboards, Piano, Saxophone, Trombone, Backing Vocals</string>
     
-    <string name="ui_profile_toast_save_text">Sent! Your suggestion will be reviewed soon.</string>
-    
-    
     <!-- Sliding menu items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>39/Smooth</item>
+        <item>1039/S.O.S.H.</item>
         <item>Kerplunk</item>
         <item>Dookie</item>
         <item>Insomniac</item>
         <item>Nimrod</item>
         <item>Warning</item>
-        <item>International Superhits</item>
+        <item>International Superhits!</item>
         <item>Shenanigans</item>
         <item>American Idiot</item>
         <item>21st Century Breakdown</item>
@@ -314,9 +311,9 @@
     <string name="strangeland_title">Strangeland</string>
     <string name="mygeneration_title">My Generation</string>
     
-    <!-- 39/Smooth -->
+    <!-- 1,039/Smoothed Out Slappy Hours -->
     
-    <string name="thousandhours_title">1000 Hours</string>
+    <string name="thousandhours_title">1,000 Hours</string>
     <string name="sixteen_title">16</string>
     <string name="coffeemaker_title">409 In Your Coffeemaker</string>
     <string name="atlibrary_title">At The Library</string>
@@ -390,6 +387,8 @@
     <string name="shenanigans_album_release">&lt;font color="#006500">Shenanigans&lt;i> (July 2, 2002)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="tcb_album">&lt;font color="#006500">21st Century Breakdown&lt;i> (2009)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="tcb_album_release">&lt;font color="#006500">21st Century Breakdown&lt;i> (May 15, 2009)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tns_album">&lt;font color="#006500">1,039/Smoothed Out Slappy Hours&lt;i>&lt;br>(1991)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tns_album_release">&lt;font color="#006500">1,039/Smoothed Out Slappy Hours&lt;i>&lt;br>(July 1, 1991)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     
     
     
