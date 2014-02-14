@@ -33,30 +33,6 @@ public class Jesusofsuburb extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
-		        .setMessage(Html.fromHtml(getString(R.string.album)+
-		        		getString(R.string.americanidiot_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>9:08</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		            
-		        })
-		        .show();
-			}
-		});
-		
 	}
 	
 	//Action bar code below
@@ -102,6 +78,26 @@ public class Jesusofsuburb extends Activity {
 				// now playing
 				startActivity(new Intent(Jesusofsuburb.this, Nowplaying.class));
 	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.americanidiot_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>9:08</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		            
+		        })
+		        .show();
 			}
 		            return super.onOptionsItemSelected(item);
 			

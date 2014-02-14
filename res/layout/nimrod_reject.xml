@@ -47,12 +47,4 @@ Right on my face.\n
 To hell and back and \n
 Hell again I've gone."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_nimrod"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

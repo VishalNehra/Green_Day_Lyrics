@@ -37,12 +37,4 @@ I only wanna be for sure\n
 Get in my mind and you will find\n
 Mother love from all mankind"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_kerplunk"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

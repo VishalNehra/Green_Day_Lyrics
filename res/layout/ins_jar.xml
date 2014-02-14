@@ -62,12 +62,4 @@ For a day far away\n
 While im young and while I'm able\n
 All I wanna do is..."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_ins"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

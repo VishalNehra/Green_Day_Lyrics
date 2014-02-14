@@ -52,12 +52,4 @@ And I'll guarantee we'll have the road\n
 And I'll guarantee we'll have the road\n
 And I'll guarantee we'll have the road"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_nimrod"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

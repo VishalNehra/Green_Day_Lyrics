@@ -38,12 +38,4 @@ I've been uptight all night. \n
 I'm a son of a gun. \n
 Uptight I'm a nag with a gun."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_nimrod"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

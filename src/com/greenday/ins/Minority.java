@@ -3,6 +3,7 @@ package com.greenday.ins;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
@@ -32,31 +33,6 @@ public class Minority extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				@SuppressWarnings("unused")
-				AlertDialog builder = new AlertDialog.Builder(Minority.this)
-		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
-		        		"<font color='#006500'>Warning, <i>2000</i></font>"))
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                Intent intent=new Intent(Minority.this, com.greenday.warning.Minority.class);
-		                startActivity(intent);
-		            }
-		        })
-		        .show();    
-			}
-		});
-
-
 	}
 	
 	//Action bar code below
@@ -102,6 +78,25 @@ public class Minority extends Activity {
 					// now playing
 					startActivity(new Intent(this, Nowplaying.class));
 		            return true;
+				}
+				if(item.getItemId()==R.id.action_label)
+				{
+					//Info
+					AlertDialog builder = new AlertDialog.Builder(Minority.this)
+			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
+			        		"<font color='#006500'>Warning, <i>2000</i></font>"))
+			        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+			            public void onClick(DialogInterface dialog, int which) {
+			                closeContextMenu();
+			            }
+			        })
+			        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+			            public void onClick(DialogInterface dialog, int which) {
+			                Intent intent=new Intent(Minority.this, com.greenday.warning.Minority.class);
+			                startActivity(intent);
+			            }
+			        })
+			        .show();  
 				}
 			            return super.onOptionsItemSelected(item);
 				

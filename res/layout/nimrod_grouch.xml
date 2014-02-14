@@ -51,12 +51,4 @@ I don't have sex 'cause i can't get it up\n
 I'm just a grouch sitting on the couch\n
 The world owes me, so fuck you"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_nimrod"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

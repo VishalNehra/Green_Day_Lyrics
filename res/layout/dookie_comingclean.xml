@@ -35,12 +35,4 @@ I found out what it takes to be a man\n
 Well, Mom and Dad will never understand\n
 WHAT'S HAPPENING TO ME"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_dookie"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

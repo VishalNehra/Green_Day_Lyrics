@@ -77,12 +77,4 @@ I need from you \n
 But I just... \n
 Just can't have you"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_dos"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

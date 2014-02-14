@@ -41,12 +41,4 @@ So kiss it good bye \n
 Until death do we part.\n 
 You fell for a jinx for crying out loud."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_nimrod"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

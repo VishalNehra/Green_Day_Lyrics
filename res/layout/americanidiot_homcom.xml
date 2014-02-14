@@ -184,12 +184,4 @@ Nobody likes you\n
 Everyone left you\n
 They're all out without you \nhavin' fun"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_americanidiot"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

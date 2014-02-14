@@ -87,12 +87,4 @@ Petulance and I'm all wound up\n
 I lose control and I'm all wound up\n
 I lose myself and I'm all wound up"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_insomniac"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

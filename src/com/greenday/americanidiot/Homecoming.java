@@ -32,29 +32,6 @@ public class Homecoming extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				@SuppressWarnings("unused")
-				AlertDialog builder = new AlertDialog.Builder(Homecoming.this)
-		        .setMessage(Html.fromHtml(getString(R.string.album)+
-		        		getString(R.string.americanidiot_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>9:18</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Michael Pritchard<br>Billie Joe Armstrong<br>Frank E. Iii Wright<br>Mike Dirnt for <i>'Nobody Likes you'</i><br>Tré Cool for <i>'Rock And Roll Girlfriend'</i></font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .show();    
-			}
-		});
 	}
 	
 	//Action bar code below
@@ -100,6 +77,25 @@ public class Homecoming extends Activity {
 				// now playing
 				startActivity(new Intent(Homecoming.this, Nowplaying.class));
 	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Homecoming.this)
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.americanidiot_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>9:18</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard<br>Billie Joe Armstrong<br>Frank E. Iii Wright<br>Mike Dirnt for <i>'Nobody Likes you'</i><br>Tré Cool for <i>'Rock And Roll Girlfriend'</i></font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show(); 
 			}
 		            return super.onOptionsItemSelected(item);
 			

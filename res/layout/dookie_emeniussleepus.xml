@@ -47,12 +47,4 @@ I was just like you\n
 And now I think you're sick \n
 and I wanna go home"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_dookie"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -68,12 +68,4 @@ He makes a plan to take a stand \n
 But always ends up sitting.\n
 Someone help him up or he's gonna end up quitting"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_kerplunk"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

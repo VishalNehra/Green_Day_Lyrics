@@ -60,12 +60,4 @@ I was once filled with doubt\n
 Now it's all figured out\n
 Nothing good can last"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_insomniac"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -61,12 +61,4 @@ At all....\n
 Wake up\n
 Better thank your lucky stars...."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_ins"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

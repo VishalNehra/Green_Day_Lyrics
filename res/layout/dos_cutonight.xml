@@ -32,12 +32,4 @@ I won't be seeing you tonight\n
 Maybe I'll see you tonight\n
 Maybe I'll see you tonight"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_dos"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

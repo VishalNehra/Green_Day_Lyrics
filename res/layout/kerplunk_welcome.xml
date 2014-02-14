@@ -66,12 +66,4 @@ I want to take you through\n
 a wasteland I like to call my home\n
 Welcome To Paradise"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_kerplunk"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

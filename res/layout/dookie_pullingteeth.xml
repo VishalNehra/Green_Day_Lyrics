@@ -53,12 +53,4 @@ hell, that's all I can really do\n
 She takes good care of me\n
 Just keep saying my love is true"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_dookie"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

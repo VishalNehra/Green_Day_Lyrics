@@ -51,12 +51,4 @@ If my memory serves me right\n
 I'll never turn back time\n
 Forgetting you, but not the time."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_americanidiot"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -60,12 +60,4 @@ Don't know what I want\n
 That's all that I've got\n
 And I'm picking scabs off my face"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_insomniac"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

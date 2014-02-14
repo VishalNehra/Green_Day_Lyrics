@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -42,6 +42,7 @@
    <!-- Dialog -->
    <style name="CustomDialog" parent="android:Theme.Holo.Light.Dialog">
        <item name="android:windowFrame">@drawable/americanidiot_cover2</item>
+       
 </style>
-    
+
 </resources>

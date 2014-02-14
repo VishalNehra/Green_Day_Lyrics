@@ -51,12 +51,4 @@ There's no return from 86\n
 There's no return from 86\n
 Don't even try..."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_insomniac"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>
