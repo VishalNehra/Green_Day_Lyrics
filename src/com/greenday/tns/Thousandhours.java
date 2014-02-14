@@ -16,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,13 +42,15 @@ public class Thousandhours extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Thousandhours.this)
 		        
-		        .setMessage("Album:\n" +
-		        		"39/Smooth (1990)\n\n" +
-		        		"Writers:\n" +
-		        		"John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.tns_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:25</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright2)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

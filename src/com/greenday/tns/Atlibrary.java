@@ -48,7 +48,7 @@ public class Atlibrary extends Activity {
 		        		getString(R.string.writers) +
 		        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
 		        		getString(R.string.copyright) +
-		        		"<font color='#006500'>Green Daze Music</font>"))
+		        		getString(R.string.copyright2)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();

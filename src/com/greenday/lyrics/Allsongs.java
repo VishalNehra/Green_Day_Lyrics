@@ -213,6 +213,7 @@ public class Allsongs extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		
@@ -248,10 +249,7 @@ public class Allsongs extends Activity {
 				// TODO Auto-generated method stub
 				boolean track = getIntent().getBooleanExtra("track", true);
 				if(track){
-				txtQuery.setText(getIntent().getExtras().getString("track"));}
-			
-				if(track=false){
-					getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+				txtQuery.setText(getIntent().getExtras().getString("track"));
 				}
 			}
 		});
@@ -260,12 +258,11 @@ public class Allsongs extends Activity {
 		boolean fix=getIntent().getBooleanExtra("fix", true);
 		if(fix)
 		{
-			getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+			
 		}
-		//Fixes
 		
+		//Action bar search
 		boolean search = getIntent().getBooleanExtra("Search", false);
-		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		if(search) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 			}

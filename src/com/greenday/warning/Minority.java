@@ -16,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,19 +35,22 @@ public class Minority extends Activity {
 		setContentView(R.layout.warning_minority);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Minority.this)
-		        .setMessage("Album:\n" +
-		        		"Warning (2000)\n\n" +
-		        		"Writers:\n" +
-		        		"Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard\n\n" +
-		        		"Copyright:\n" +
-		        		"Green Daze Music, WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.warning_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:49</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

@@ -16,6 +16,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
@@ -37,28 +38,7 @@ public class Guns extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.tcb_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Guns.this)
-		        .setMessage(Html.fromHtml(getString(R.string.album)+
-		        		getString(R.string.tcb_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>5:21</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Billie Joe Armstrong, E. Frank, John Edmund Andrew Phillips, Frank E. Iii Wright, Iii Wright, David Bowie, Michael Pritchard, John Phillips</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		"<font color='#006500'>Green Daze Music, Tintoretto Music, WB Music Corp.</font>"))
-		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .show();    
-			}
-		});
+		
 	}
 	
 	//Action bar code below
@@ -104,6 +84,25 @@ public class Guns extends Activity {
 			// now playing
 			startActivity(new Intent(this, Nowplaying.class));
             return true;
+		}
+		if(item.getItemId()==R.id.action_label)
+		{
+			// Label
+			AlertDialog builder = new AlertDialog.Builder(Guns.this)
+	        .setMessage(Html.fromHtml(getString(R.string.album)+
+	        		getString(R.string.tcb_album) +
+	        		getString(R.string.track_length) +
+	        		"<font color='#006500'><i>5:21</font></i><br><br>" + 
+	        		getString(R.string.writers) +
+	        		"<font color='#006500'>Billie Joe Armstrong, E. Frank, John Edmund Andrew Phillips, Frank E. Iii Wright, Iii Wright, David Bowie, Michael Pritchard, John Phillips</font><br><br>" +
+	        		getString(R.string.copyright) +
+	        		"<font color='#006500'>Green Daze Music, Tintoretto Music, WB Music Corp.</font>"))
+	        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int which) {
+	                closeContextMenu();
+	            }
+	        })
+	        .show();    
 		}
 	            return super.onOptionsItemSelected(item);
 		

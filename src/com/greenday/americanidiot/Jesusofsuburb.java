@@ -38,7 +38,7 @@ public class Jesusofsuburb extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this, R.style.CustomDialog)
+				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
 		        .setMessage(Html.fromHtml(getString(R.string.album)+
 		        		getString(R.string.americanidiot_album) +
 		        		getString(R.string.track_length) +

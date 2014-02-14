@@ -28,6 +28,7 @@
     <!-- Testing -->
     <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background</item>
+        <item name="android:backgroundSplit">@null</item>
     </style>
 
     <style name="Widget.ActionBar.Transparent">

@@ -17,6 +17,16 @@
     <!-- Play title -->
     <string name="play_title">Show Now Playing Track</string>
     
+    <!-- Report title -->
+    <string name="report_title">Report this song</string>
+    
+    <!-- Label title -->
+    <string name="label_title">Information</string>
+    
+     <!-- Settings title -->
+    <string name="settings_title">Settings</string>
+    
+    
     <!-- Settings -->
     
     <string name="preference_category2_title">Albums</string>
@@ -46,7 +56,7 @@
     <!-- Sliding menu items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>1039/S.O.S.H.</item>
+        <item>1039/Smooth...</item>
         <item>Kerplunk</item>
         <item>Dookie</item>
         <item>Insomniac</item>
@@ -56,9 +66,9 @@
         <item>Shenanigans</item>
         <item>American Idiot</item>
         <item>21st Century Breakdown</item>
-        <item>¡UNO!</item>
-        <item>¡DOS!</item>
-        <item>¡TRÉ!</item>
+        <item>¡Uno!</item>
+        <item>¡Dos!</item>
+        <item>¡Tré!</item>
         <item>Extras</item>
         
         
@@ -370,13 +380,14 @@
     <string name="track_list">&lt;b>&lt;u>&lt;font color="#524ef8">TRACK LIST&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
     <string name="copyright">&lt;b>&lt;u>&lt;font color="#524ef8">COPYRIGHT&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
     <string name="copyright1">&lt;font color="#006500">Green Daze Music, WB Music Corp.&lt;/font></string>
+    <string name="copyright2">&lt;font color="#006500">Green Daze Music&lt;/font></string>
     
     <string name="americanidiot_album">&lt;font color="#006500">American Idiot&lt;i> (2004)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="americanidiot_album_release">&lt;font color="#006500">American Idiot&lt;i> (September 20, 2004)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="dookie_album">&lt;font color="#006500">Dookie&lt;i> (1994)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="dookie_album_release">&lt;font color="#006500">Dookie&lt;i> (February 1, 1994)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
-    <string name="dos_album">&lt;font color="#006500">¡DOS!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
-    <string name="dos_album_release">&lt;font color="#006500">¡DOS!&lt;i> (November 9, 2012)&lt;/font>&lt;/i>&lt;br></string>
+    <string name="dos_album">&lt;font color="#006500">¡Dos!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="dos_album_release">&lt;font color="#006500">¡Dos!&lt;i> (November 9, 2012)&lt;/font>&lt;/i>&lt;br></string>
     <string name="insomniac_album">&lt;font color="#006500">Insomniac&lt;i> (1995)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="insomniac_album_release">&lt;font color="#006500">Insomniac&lt;i> (October 10, 1995)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="kerplunk_album">&lt;font color="#006500">Kerplunk&lt;i> (1992)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
@@ -389,6 +400,12 @@
     <string name="tcb_album_release">&lt;font color="#006500">21st Century Breakdown&lt;i> (May 15, 2009)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="tns_album">&lt;font color="#006500">1,039/Smoothed Out Slappy Hours&lt;i>&lt;br>(1991)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="tns_album_release">&lt;font color="#006500">1,039/Smoothed Out Slappy Hours&lt;i>&lt;br>(July 1, 1991)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tre_album_release">&lt;font color="#006500">¡Tré!&lt;i> (December 7, 2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="tre_album">&lt;font color="#006500">¡Tré!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="uno_album_release">&lt;font color="#006500">¡Uno!&lt;i> (September 21, 2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="uno_album">&lt;font color="#006500">¡Uno!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="warning_album_release">&lt;font color="#006500">Warning&lt;i> (October 3, 2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="warning_album">&lt;font color="#006500">Warning&lt;i> (2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     
     
     

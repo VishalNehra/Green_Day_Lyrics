@@ -45,7 +45,7 @@ public class Americanidiot extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
-				AlertDialog builder = new AlertDialog.Builder(Americanidiot.this, android.R.style.Theme_DeviceDefault_Light_Dialog_MinWidth)
+				AlertDialog builder = new AlertDialog.Builder(Americanidiot.this)
 		        .setMessage(Html.fromHtml(getString(R.string.album)+
 		        		getString(R.string.americanidiot_album) +
 		        		getString(R.string.track_length) +

@@ -16,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,11 +42,15 @@ public class Knowledge extends Activity {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Knowledge.this)
 		        
-		        .setMessage("Album:\n" +
-		        		"39/Smooth (1990)\n\n" +
-		        		"Writers:\n" +
-		        		"Operation Ivy\n\n")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.tns_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:19</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Operation Ivy</font><br><br>" +
+		        		"<font color='#524ef8'><b><u>Label</b></u></font><br>" +
+		        		"<font color='#006500'>Lookout!</font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

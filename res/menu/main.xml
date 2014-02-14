@@ -14,7 +14,7 @@
         android:showAsAction="always"
         android:title="@string/search_title"/>  
     <item android:id="@+id/action_play"
-        android:icon="@drawable/ic_action_play"
+        android:icon="@drawable/ic_play"
         android:showAsAction="always"
         android:title="@string/play_title"/>				
 </menu>

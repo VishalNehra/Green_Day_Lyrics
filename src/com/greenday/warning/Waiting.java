@@ -16,6 +16,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,19 +35,22 @@ public class Waiting extends Activity {
 		setContentView(R.layout.warning_waiting);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
 		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				AlertDialog builder = new AlertDialog.Builder(Waiting.this)
-		        .setMessage("Album:\n" +
-		        		"Warning (2000)\n\n" +
-		        		"Writers:\n" +
-		        		"Billy Armstrong, Frank Wright Iii, Billie Joe Armstrong, Walter Gil Fuller, Tony Hatch, Michael Pritchard, Dizzy Gillespie, Frank E. Iii Wright\n\n" +
-		        		"Copyright:\n" +
-		        		"Warner Chappell Music Ltd., Sony/ATV Music Publishing (Uk) Limited, Welbeck Music Ltd., Green Daze Music, Consolidated Music Publishers A Div Of Music Sales Corp., WB Music Corp.")
-		        .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.warning_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:13</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billy Armstrong, Frank Wright Iii, Billie Joe Armstrong, Walter Gil Fuller, Tony Hatch, Michael Pritchard, Dizzy Gillespie, Frank E. Iii Wright</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		"<font color='#006500'>Warner Chappell Music Ltd., Sony/ATV Music Publishing (Uk) Limited, Welbeck Music Ltd., Green Daze Music, Consolidated Music Publishers A Div Of Music Sales Corp., WB Music Corp.</font>"))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                closeContextMenu();
 		            }

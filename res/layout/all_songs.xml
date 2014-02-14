@@ -37,6 +37,6 @@
         android:layout_alignParentTop="true"
         android:layout_width="35dp"
         android:layout_toLeftOf="@+id/txtQuery_clear"
-        android:src="@drawable/ic_action_play_dark" />
+        android:src="@drawable/ic_action_play" />
 
 </RelativeLayout>

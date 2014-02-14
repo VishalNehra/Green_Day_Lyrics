@@ -58,6 +58,8 @@
         <!-- American Idiot -->
         <activity android:name="com.greenday.americanidiot.Americanidiot"
             android:label="@string/americanidiot_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
              >
             
         </activity>
@@ -125,6 +127,8 @@
         <!-- UNO -->
         <activity android:name="com.greenday.uno.Nuclearfamily"
             android:label="@string/nuclearfamily_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
              ></activity>
         <activity android:name="com.greenday.uno.Staythenight"
             android:label="@string/staythenight_title"
@@ -163,6 +167,8 @@
         <!-- DOS -->
         <activity android:name="com.greenday.dos.Cutonight"
             android:label="@string/cutonight_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
              ></activity>
         <activity android:name="com.greenday.dos.Fucktime"           
             android:label="@string/fucktime_title"
@@ -204,6 +210,8 @@
         <!-- TRE -->
         <activity android:name="com.greenday.tre.Brutallove"
         	android:label="@string/brutallove_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
         	 ></activity>
         <activity android:name="com.greenday.tre.Missingyou"
         	android:label="@string/missingyou_title"
@@ -288,6 +296,7 @@
         <activity android:name="com.greenday.tcb.Guns"
         	android:label="@string/guns_title"
         	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
         	 ></activity>
         <activity android:name="com.greenday.tcb.Americaneulogy"
         	android:label="@string/americaneulogy_title"
@@ -300,6 +309,8 @@
         <!-- Shenanigans -->
         <activity android:name="com.greenday.shenanigans.Suffocate"
         	android:label="@string/suffocate_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
         	 ></activity>
         <activity android:name="com.greenday.shenanigans.Desensitized"
         	android:label="@string/desensitized_title"
@@ -344,6 +355,8 @@
         <!-- Warning -->
 		<activity android:name="com.greenday.warning.Bloodsex"
 		    android:label="@string/bloodsex_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 		     ></activity> 
 		<activity android:name="com.greenday.warning.Castaway"
 		    android:label="@string/castaway_title"
@@ -382,6 +395,8 @@
 	    <!-- Nimrod -->
 	    <activity android:name="com.greenday.nimrod.Allthetime"
 	        android:label="@string/allthetime_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         >
 	    </activity>
 	    <activity android:name="com.greenday.nimrod.Goodriddance"
@@ -439,6 +454,8 @@
 	    <!-- Insomniac -->
 	    <activity android:name="com.greenday.insomniac.Armatage"
 	        android:label="@string/armatage_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.insomniac.Brat"
 	        android:label="@string/brat_title"
@@ -484,6 +501,8 @@
 	    
 	    <activity android:name="com.greenday.dookie.Burnout"
 	        android:label="@string/burnout_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.dookie.Havingblast"
 	        android:label="@string/havingblast_title"
@@ -529,6 +548,8 @@
 	    
 	    <activity android:name="com.greenday.kerplunk.Lightyears"
 	        android:label="@string/lightyears_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.kerplunk.Razorbacks"
 	        android:label="@string/razorbacks_title"
@@ -579,6 +600,8 @@
 	    <!-- International Superhits -->
 	    <activity android:name="com.greenday.ins.Maria"
 	        android:label="@string/maria_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.ins.Poprocks"
 	        android:label="@string/poprocks_title"
@@ -644,6 +667,8 @@
 	    <!-- 39/Smooth -->
 	    <activity android:name="com.greenday.tns.Thousandhours"
 	        android:label="@string/thousandhours_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.tns.Sixteen"
 	        android:label="@string/sixteen_title"
@@ -704,6 +729,8 @@
 	    
 	    <activity android:name="com.greenday.unreleased.Quickone"
 	        android:label="@string/quickone_title"
+        	android:uiOptions="splitActionBarWhenNarrow"
+        	android:windowSoftInputMode="adjustPan"
 	         ></activity>
 	    <activity android:name="com.greenday.unreleased.Stateofmind"
 	        android:label="@string/stateofmind_title"
@@ -760,7 +787,9 @@
 	        android:label="@string/allbymyself_title"
 	         ></activity>
 	    
-        <!-- for expanding menu bar-  android:uiOptions="splitActionBarWhenNarrow" -->
+        <!-- for second actionbar-  android:uiOptions="splitActionBarWhenNarrow"
+        	 to avoid pushing second action bar with softkeyboard(duh!) :
+        	 android:windowSoftInputMode="adjustPan"  -->
         
     </application>
 
