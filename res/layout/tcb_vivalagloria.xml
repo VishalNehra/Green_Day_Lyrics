@@ -74,12 +74,4 @@ Gloria where's your undying love?\n
 Tell me the story of your life ...\n
 (Your life!)"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tcb"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

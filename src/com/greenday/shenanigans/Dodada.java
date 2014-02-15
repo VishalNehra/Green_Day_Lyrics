@@ -12,6 +12,8 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.nimrod.Allthetime;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -36,55 +38,6 @@ public class Dodada extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Dodada.this)
-		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
-		        		"<font color='#006500'><i>[From 'Brain Stew/Jaded', 1996]</i></font><br><br>" +
-		        		getString(R.string.album)+
-		        		getString(R.string.shenanigans_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>1:30</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .setNegativeButton("Go To Originals", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		            	AlertDialog builder2 = new AlertDialog.Builder(Dodada.this)
-				        
-				        .setNeutralButton("Brain Stew", new DialogInterface.OnClickListener() {
-				            public void onClick(DialogInterface dialog, int which) {
-				            	Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Brainstew.class);
-				                startActivity(intent);
-				            }
-				        })
-				        .setNegativeButton("Jaded", new DialogInterface.OnClickListener() {
-				            public void onClick(DialogInterface dialog, int which) {
-				                Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Jaded.class);
-				                startActivity(intent);
-				            }
-				        })
-				        .setPositiveButton("Close", new DialogInterface.OnClickListener() {
-				            public void onClick(DialogInterface dialog, int which) {
-				                closeContextMenu();
-				            }
-				        })
-				        .show();    
-		            }
-		        })
-		        .show();    
-			}
-		});
-
 	}
 	
 	//Action bar code below
@@ -130,6 +83,51 @@ public class Dodada extends Activity {
 				// now playing
 				startActivity(new Intent(this, Nowplaying.class));
 	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Dodada.this)
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'>From <i>'Brain Stew/Jaded', 1996</i></font><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>1:30</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Originals", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		            	AlertDialog builder2 = new AlertDialog.Builder(Dodada.this)
+				        
+				        .setNeutralButton("Brain Stew", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				            	Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Brainstew.class);
+				                startActivity(intent);
+				            }
+				        })
+				        .setNegativeButton("Jaded", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				                Intent intent=new Intent(Dodada.this, com.greenday.insomniac.Jaded.class);
+				                startActivity(intent);
+				            }
+				        })
+				        .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+				            public void onClick(DialogInterface dialog, int which) {
+				                closeContextMenu();
+				            }
+				        })
+				        .show();    
+		            }
+		        })
+		        .show();    
 			}
 		            return super.onOptionsItemSelected(item);
 			

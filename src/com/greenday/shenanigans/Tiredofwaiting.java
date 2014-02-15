@@ -11,6 +11,8 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.nimrod.Allthetime;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -35,37 +37,6 @@ public class Tiredofwaiting extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
-		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
-		        		"<font color='#006500'><i>[Originally performed by The Kinks; from 'Basket Case', 1994]</i></font><br><br>" +
-		        		getString(R.string.album)+
-		        		getString(R.string.shenanigans_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>2:34</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Ray Davies</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		"<font color='#006500'>Jayboy Music Corp.</font>"))
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                Intent intent=new Intent(Tiredofwaiting.this, com.greenday.dookie.Basketcase.class);
-		                startActivity(intent);
-		            }
-		        })
-		        .show();    
-			}
-		});
-
 	}
 	
 	//Action bar code below
@@ -111,6 +82,33 @@ public class Tiredofwaiting extends Activity {
 				// now playing
 				startActivity(new Intent(this, Nowplaying.class));
 	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'>Originally performed by The Kinks; from <i>'Basket Case', 1994</i></font><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:34</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Ray Davies</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		"<font color='#006500'>Jayboy Music Corp.</font>"))
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                Intent intent=new Intent(Tiredofwaiting.this, com.greenday.dookie.Basketcase.class);
+		                startActivity(intent);
+		            }
+		        })
+		        .show(); 
 			}
 		            return super.onOptionsItemSelected(item);
 			

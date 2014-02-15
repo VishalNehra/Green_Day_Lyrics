@@ -44,12 +44,4 @@ I wanna be on TV.\n
 Want people to know me.\n
 I wanna be on TV."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_shenanigans"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

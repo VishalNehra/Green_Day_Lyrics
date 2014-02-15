@@ -67,12 +67,4 @@ Of blasphemy and genocide\n
 The sirens of decay\n
 Will infiltrate the inside"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tcb"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

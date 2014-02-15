@@ -89,12 +89,4 @@ Silence is the enemy\n
 Against your urgency\n
 so rally up the demons of your soul (Ohaooh)"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tcb"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

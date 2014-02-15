@@ -12,6 +12,8 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.nimrod.Allthetime;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -36,31 +38,6 @@ public class Suffocate extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Suffocate.this)
-		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
-		        		"<font color='#006500'><i>[Outtake from 'Nimrod', 1997]</i></font><br><br>" +
-		        		getString(R.string.album)+
-		        		getString(R.string.shenanigans_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>2:54</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .show();    
-			}
-		});
-
 	}
 	
 	//Action bar code below
@@ -106,6 +83,27 @@ public class Suffocate extends Activity {
 				// now playing
 				startActivity(new Intent(this, Nowplaying.class));
 	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Suffocate.this)
+		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+		        		"<font color='#006500'>Outtake from <i>'Nimrod', 1997</i></font><br><br>" +
+		        		getString(R.string.album)+
+		        		getString(R.string.shenanigans_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>2:54</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show();      
 			}
 		            return super.onOptionsItemSelected(item);
 			

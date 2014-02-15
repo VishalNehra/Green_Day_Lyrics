@@ -60,12 +60,4 @@ For the end of western civilization\n
 She's a natural disaster\n
 She's the last of the American Girls"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tcb"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

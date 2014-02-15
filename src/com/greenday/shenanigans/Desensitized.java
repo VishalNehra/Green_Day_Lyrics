@@ -12,6 +12,8 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.nimrod.Allthetime;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -36,37 +38,6 @@ public class Desensitized extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Desensitized.this)
-		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
-		        		"<font color='#006500'><i>[From 'Good Riddance', 1997. Also a single in the Green Day Singles Box.]</font></i><br><br>" +
-		        		getString(R.string.album)+
-		        		getString(R.string.shenanigans_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>2:47</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                Intent intent=new Intent(Desensitized.this, com.greenday.nimrod.Goodriddance.class);
-		                startActivity(intent);
-		            }
-		        })
-		        .show();    
-			}
-		});
-
 	}
 	
 	//Action bar code below
@@ -112,6 +83,33 @@ public class Desensitized extends Activity {
 			// now playing
 			startActivity(new Intent(this, Nowplaying.class));
             return true;
+		}
+		if(item.getItemId()==R.id.action_label)
+		{
+			//Info
+			AlertDialog builder = new AlertDialog.Builder(Desensitized.this)
+	        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
+	        		"<font color='#006500'>From <i>'Good Riddance', 1997</i>. Also a single in the Green Day Singles Box.]</font><br><br>" +
+	        		getString(R.string.album)+
+	        		getString(R.string.shenanigans_album) +
+	        		getString(R.string.track_length) +
+	        		"<font color='#006500'><i>2:47</font></i><br><br>" + 
+	        		getString(R.string.writers) +
+	        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+	        		getString(R.string.copyright) +
+	        		getString(R.string.copyright1)))
+	        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int which) {
+	                closeContextMenu();
+	            }
+	        })
+	        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int which) {
+	                Intent intent=new Intent(Desensitized.this, com.greenday.nimrod.Goodriddance.class);
+	                startActivity(intent);
+	            }
+	        })
+	        .show();   
 		}
 	            return super.onOptionsItemSelected(item);
 		
