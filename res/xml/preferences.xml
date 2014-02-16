@@ -2,13 +2,31 @@
 
     <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
         
+        <!-- Theme -->
+        <PreferenceCategory android:title="@string/theme_title">
+            <ListPreference android:title="@string/themechooser_title"
+                android:dialogTitle="@string/themechooser_dialog"
+                android:key="themechooser"
+                android:entries="@array/themes_list"
+                android:entryValues="@array/themes_value" />
+                
+        </PreferenceCategory>
+        
+        <!-- Storage -->
+        <PreferenceCategory android:title="@string/storage_title">
+            <Preference android:title="@string/cache_title"
+                android:key="cache"
+                android:summary="@string/cache_summary"/>
+        </PreferenceCategory>
+        
+        <!-- Green Day -->
         <PreferenceCategory
-            android:title="@string/preference_category2_title">
+            android:title="@string/greenday_title">
+            <!-- Albums -->
             <PreferenceScreen
-                android:key="simple1_preference"
-                android:title="@string/simple1_preference_title"
-                android:summary="@string/simple1_preference_summary">
-            
+                android:title="@string/albums_title"
+                android:summary="@string/albums_summary">
+               
             <!-- Preference Screen Menu -->
             <Preference android:key="album1_screen"
                 android:title="@string/album1_title"
@@ -28,7 +46,7 @@
             <intent android:action="android.intent.action.VIEW"
                     android:data="http://en.wikipedia.org/wiki/Dookie"/>
             </Preference>
-            <Preference android:key="member4_screen"
+            <Preference android:key="album4_screen"
                 android:title="@string/album4_title"
                 android:summary="@string/album4_summary">
             <intent android:action="android.intent.action.VIEW"
@@ -88,34 +106,12 @@
             <intent android:action="android.intent.action.VIEW"
                     android:data="http://en.wikipedia.org/wiki/%C2%A1Tr%C3%A9!"/>
             </Preference>
-            <!-- More list can be added -->
-        </PreferenceScreen>
-            
-        </PreferenceCategory>
-        
-        <PreferenceCategory
-            android:title="@string/preference_category3_title">
-            <Preference
-                android:key="simple1_preference"
-                android:title="@string/simple1_title"
-                android:summary="@string/simple1_summary">
-            <intent 
-        android:action="android.intent.action.VIEW"
-        android:targetPackage="com.greenday.lyrics"
-        android:targetClass="com.greenday.lyrics.Allsongs"
-    /></Preference>
+            </PreferenceScreen>
+            <!-- Members -->
             
             <PreferenceScreen
-                android:title="@string/intent1_preference_title"
-                android:summary="@string/intent1_preference_summary">
-            <intent android:action="android.intent.action.VIEW"
-                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
-
-        </PreferenceScreen>
-        <PreferenceScreen
-                android:key="simple2_preference"
-                android:title="@string/simple2_preference_title"
-                android:summary="@string/simple2_preference_summary">
+                android:title="@string/members_title"
+                android:summary="@string/members_summary">
             
             <!-- Preference Screen Menu -->
             <Preference android:key="member1_screen"
@@ -153,15 +149,63 @@
                     android:data="http://en.wikipedia.org/wiki/Jason_Freese"/></Preference>
             <!-- More list can be added -->
         </PreferenceScreen>
-        <!-- Rate Button -->
-        
-        <PreferenceScreen
-                android:title="@string/intent2_preference_title"
-                android:summary="@string/intent2_preference_summary">
-            <intent android:action="android.intent.action.VIEW"
-                    android:data="market://details?id=com.cubeactive.qnotelistfree"/>
-        </PreferenceScreen>
+            
         </PreferenceCategory>
-      
+        
+        <!-- About -->
+        
+        <PreferenceCategory
+            android:title="@string/about_title">
+            <Preference
+                android:key="build_version"
+                android:title="@string/version_title"
+                android:summary="@string/version_summary">
+            <intent 
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://github.com/vishal0071/Green_Day_Lyrics/releases"/>
+		        <!-- intent to open class
+		        android:targetPackage="com.greenday.lyrics"
+		        android:targetClass="com.greenday.lyrics.Allsongs"  -->
+			</Preference>
+            
+            <Preference
+                android:key="source"
+                android:title="@string/source_title"
+                android:summary="@string/source_summary">
+	            <intent android:action="android.intent.action.VIEW"
+	                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
+            </Preference>
+            
+            <Preference android:key="changelog"
+                android:title="@string/changelog_title"
+                android:summary="@string/changelog_summary"/>
+            
+            </PreferenceCategory>
+            
+            <!-- Extras -->
+      <PreferenceCategory android:title="@string/extras_title">
+            <Preference android:key="store"
+                android:title="@string/store_title"
+                android:summary="@string/store_summary">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.bravadousa.com/greenday/"/>
+            </Preference>
+            <Preference android:key="donate"
+                android:title="@string/donate_title"
+                android:summary="@string/donate_summary">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="market://details?id=com.greenday.lyrics_donate"/>
+            </Preference>
+            
+            <Preference
+	                android:title="@string/rate_title"
+	                android:summary="@string/rate_summary">
+	            <intent android:action="android.intent.action.VIEW"
+	                    android:data="market://details?id=com.greenday.lyrics"/>
+	        </Preference>
+            
+            <Preference android:key="disclaimer"
+                android:title="@string/disclaimer_title"/>
+      </PreferenceCategory>
         
 </PreferenceScreen>

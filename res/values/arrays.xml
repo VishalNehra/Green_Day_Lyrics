@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string-array name="list2_preferences">
-        <item>Dark</item>
+    <string-array name="themes_list">
+        <item>Default</item>
         <item>Light</item>
         <item>Light Lime</item>
         <item>Light Mojo</item>
@@ -12,7 +12,7 @@
         <item>Dark San Marino</item>
     </string-array>
     
-    <string-array name="list2_preferences_values">
+    <string-array name="themes_value">
         <item>0</item>
         <item>1</item>
         <item>2</item>

@@ -4,6 +4,8 @@
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
+    <string name="changelog_version">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;b>&lt;br></string>
+    <string name="changelog_change">&lt;font color="#006500">\tInitial release&lt;/font>&lt;br>&lt;br>&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
@@ -29,17 +31,34 @@
     
     <!-- Settings -->
     
-    <string name="preference_category2_title">Albums</string>
+    <string name="greenday_title">Green Day</string>
+    <string name="theme_title">Theme</string>
+    <string name="themechooser_title">Theme Chooser</string>
+    <string name="themechooser_dialog">Choose a theme</string>
+    <string name="themes_list_default">Default</string>
     
-    <string name="preference_category3_title">About</string>
-    <string name="simple1_title">Build Version</string>
-    <string name="simple1_summary">0.08 Alpha</string>
-    <string name="intent1_preference_title">Source Code</string>
-    <string name="intent1_preference_summary">https://github.com/vishal0071/Green_Day_Lyrics</string>
-    <string name="simple2_preference_title">Green Day is</string>
-    <string name="simple2_preference_summary">List of Green Day members</string>
-    <string name="simple1_preference_title">Albums</string>
-    <string name="simple1_preference_summary">Date of Release</string>
+    <string name="storage_title">Storage</string>
+    <string name="cache_title">Clear Cache</string>
+    <string name="cache_summary">Clears cache in memory</string>
+    
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">List of changes in app</string>
+    
+    <string name="store_title">Store</string>
+    <string name="store_summary">Support Green Day, purchase original stuff</string>
+    
+    <string name="donate_title">Donate version</string>
+    <string name="donate_summary">Help me pay play store hosting charges</string>
+    
+    <string name="about_title">About</string>
+    <string name="version_title">Build Version</string>
+    <string name="version_summary">0.08 Alpha</string>
+    <string name="source_title">Github</string>
+    <string name="source_summary">Application sources</string>
+    <string name="members_title">Members</string>
+    <string name="members_summary">List of Green Day members</string>
+    <string name="albums_title">Albums</string>
+    <string name="albums_summary">Released till now</string>
     <string name="member1_title">Billie Joe Armstrong</string>
     <string name="member1_summary">Lead Vocals, Guitars, Piano, Harmonica</string>
     <string name="member2_title">Mike Dirnt</string>
@@ -137,8 +156,12 @@
     <string name="album13_summary">December 7, 2012</string>
     
     <!-- Rate Button -->
-    <string name="intent2_preference_title">Rate the app</string>
-    <string name="intent2_preference_summary">Support the development by giving good rating!</string>
+    <string name="rate_title">Rate the app</string>
+    <string name="rate_summary">Please leave a feedback of app in market</string>
+    
+    <string name="disclaimer_title">Disclaimer</string>
+    
+    <string name="extras_title">Extras</string>
 	
     <!-- Songs titles -->
     <!-- American Idiot -->
