@@ -53,12 +53,4 @@ Kids alright, alright as they'll ever be\n
 Well, you will always be my\n
 You will always be my sweet 16"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_uno"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

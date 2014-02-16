@@ -77,12 +77,4 @@ Say you'll stay the night\n
 So stay the night\n
 I don't wanna say goodbye..."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_uno"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

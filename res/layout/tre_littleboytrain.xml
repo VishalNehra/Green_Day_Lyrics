@@ -68,12 +68,4 @@ But I know where I have been\n
 I said I don't know where I come from\n
 But I know where I have been"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tre"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

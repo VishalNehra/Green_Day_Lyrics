@@ -57,12 +57,4 @@ Always fucking with my head and I gotta let it go!\n
 [Chorus:]\n\n
 Let yourself go, let yourself go, let yourself go [x8]"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_uno"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

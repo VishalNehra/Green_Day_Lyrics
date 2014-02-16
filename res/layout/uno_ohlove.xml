@@ -84,12 +84,4 @@ Tonight my heart's on the loose\n
 Tonight my heart's on the loose...\n
 Tonight my heart's on the loose..."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_uno"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

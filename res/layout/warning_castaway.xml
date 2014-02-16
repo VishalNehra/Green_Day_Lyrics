@@ -58,12 +58,4 @@ Castaway - now I'm on my own\n
 Lost and found, trouble bound\n
 Castaway"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_warning"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

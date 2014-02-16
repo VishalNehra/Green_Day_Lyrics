@@ -63,12 +63,4 @@ Last chance to piss it all away\n
 Nothing but hell to pay whan all you\n
 Want to do is...not to....give up......"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_warning"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

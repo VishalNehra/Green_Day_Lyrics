@@ -42,12 +42,4 @@ The first time I caught \n
 A glimpse of you\n
 Then my thoughts were only of you"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tns"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

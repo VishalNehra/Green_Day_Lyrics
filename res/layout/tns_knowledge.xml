@@ -44,12 +44,4 @@ This time I got it all figured out:\n
 All I know is that I don't know nothing...\n
 And that's fine."/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tns"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

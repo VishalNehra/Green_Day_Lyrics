@@ -55,11 +55,4 @@ Picture sounds\n
 Of moving insects so surreal\n
 Lay around"/>
 </ScrollView>
- <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-        android:src="@drawable/ic_tns"
-        style="?android:borderlessButtonStyle" />
 </RelativeLayout>

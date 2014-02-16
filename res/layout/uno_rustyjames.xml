@@ -66,12 +66,4 @@ And you're the last gang in town\n
 And your heart can't even break\n
 When it doesn't even pound"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_uno"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

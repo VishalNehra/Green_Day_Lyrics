@@ -70,12 +70,4 @@ I said I don't know\n
 The catastrophic hymns from yesterday\n
 Of misery"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_warning"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

@@ -58,12 +58,4 @@ Don’t look away from the arms of tomorrow\n
 Don’t look away from the arms of a moment\n
 Don’t look away from the arms of love"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tre"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

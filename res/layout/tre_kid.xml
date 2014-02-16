@@ -75,12 +75,4 @@ Here goes nothing, the shouting's over and out,\n
 over and out,\n
 over and over and out!"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tre"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

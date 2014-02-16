@@ -55,12 +55,4 @@ Is old enough to bleed now\n
 She's old enough to bleed now\n
 She's old enough to bleed now"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tre"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

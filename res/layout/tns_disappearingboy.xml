@@ -52,12 +52,4 @@ My whereabouts are now unknown\n
 I vanished from all your joy\n
 I'm the disappearing boy"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tns"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

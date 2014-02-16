@@ -70,12 +70,4 @@ Can we find a way\n
 So that you can stay\n
 I think I'm gonna Pop"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_tns"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>
