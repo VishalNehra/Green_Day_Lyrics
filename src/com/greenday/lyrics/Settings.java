@@ -1,20 +1,33 @@
 package com.greenday.lyrics;
 
+import java.io.File;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.text.Html;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CheckBox;
 import android.widget.ListView;
 
+import com.greenday.americanidiot.Whatshername;
 import com.greenday.lyrics.R;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -28,7 +41,7 @@ public class Settings extends PreferenceActivity {
 		super.onCreate(savedInstanceState);
 		
 		ListPreference mthemeChooser;
-		Preference mCache, mchangeLog;
+		Preference mCache, mchangeLog, mHints;
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
@@ -64,17 +77,54 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						AlertDialog cache_alert2 = new AlertDialog.Builder(Settings.this)
-						.setMessage("Not programmed")
-						.setNeutralButton("Duh!", new DialogInterface.OnClickListener() {
-							
-							@Override
-							public void onClick(DialogInterface dialog, int which) {
-								// TODO Auto-generated method stub
-								closeContextMenu();
-							}
-						}).show();
+						Crouton.makeText(Settings.this, "Not cleared \t\t:-(", Style.ALERT).show();
+						//Storage.getInstance().clearApplicationData();
+						File dir = new File(Environment.getDownloadCacheDirectory()+"data/data/com.greenday.lyrics/files/log");
+						if (dir.isDirectory()) {
+					        String[] children = dir.list();
+					        for (int i = 0; i < children.length; i++) {
+					            new File(dir, children[i]).delete();
+					        }
+					    }
 					}
+				}).show();
+				return false;
+			}
+		});
+		
+		//Shared Preferences
+		mHints=(Preference)findPreference("hints");
+		mHints.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog hints_alert = new AlertDialog.Builder(Settings.this)
+				.setTitle("Are you sure?")
+				.setMessage("You will need to face all the startup instructions once again!")
+				.setNegativeButton("No", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						closeContextMenu();
+					}
+				})
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					
+					@SuppressLint("NewApi")
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						//To clear shared preferences
+						SharedPreferences settings = Settings.this.getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE); 
+				        settings.edit().clear().commit();
+				        Logger log = LoggerFactory.getLogger(Settings.class);
+					    log.info("Settings/ERASED_PREFERENCES");
+				        navigateUpTo(new Intent(Settings.this, MainActivity.class));
+				        System.exit(0);
+					    }
+					
 				}).show();
 				return false;
 			}
@@ -96,7 +146,9 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						Intent i = new Intent(Intent.ACTION_VIEW, 
+							       Uri.parse("https://github.com/vishal0071/Green_Day_Lyrics/commits/master"));
+							startActivity(i);
 						//Intent to github commits
 					}
 				})
@@ -111,6 +163,7 @@ public class Settings extends PreferenceActivity {
 				return false;
 			}
 		});
+		
 		
 		//Disclaimer
 		
@@ -137,6 +190,6 @@ public class Settings extends PreferenceActivity {
 		;
 
 		return super.onOptionsItemSelected(item);
-		
+	
 	}
 }

@@ -87,7 +87,7 @@ public class Holiday extends Activity {
 		        		getString(R.string.track_length) +
 		        		"<font color='#006500'><i>3:52</font></i><br><br>" + 
 		        		getString(R.string.writers) +
-		        		"Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
 		        		getString(R.string.copyright) +
 		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {

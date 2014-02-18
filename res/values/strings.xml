@@ -28,6 +28,9 @@
      <!-- Settings title -->
     <string name="settings_title">Settings</string>
     
+    <!-- Showcaseviews -->
+    <string name="showcase_button_ok">OK</string>
+    
     
     <!-- Settings -->
     
@@ -40,11 +43,13 @@
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>
     <string name="cache_summary">Clears cache in memory</string>
+    <string name="hints_title">Review Hints</string>
+    <string name="hints_summary">Missed any instruction? This option is for you.</string>
     
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">List of changes in app</string>
     
-    <string name="store_title">Store</string>
+    <string name="store_title">Green Day Store</string>
     <string name="store_summary">Support Green Day, purchase original stuff</string>
     
     <string name="donate_title">Donate version</string>

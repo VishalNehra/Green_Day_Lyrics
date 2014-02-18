@@ -1,5 +1,6 @@
 package com.greenday.lyrics;
  
+import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.espian.showcaseview.targets.ViewTarget;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
@@ -58,19 +59,38 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
         
-      //Crouton Toast
+      //Boot_pref
         boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
 
         if (firstboot){
             // 1) Launch the authentication activity
-        	Crouton.makeText(this, "Welcome!", Style.CONFIRM).show();
-            Crouton.makeText(this, "Slide from left corner towards right to get started", Style.INFO).show();
-            Crouton.makeText(this, "Please don't forget to rate this app in market.", Style.ALERT).show();
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-            co.insert = ShowcaseView.INSERT_TO_VIEW;
             ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
-            		"Addition Info.", "\nWant to know who are the writers of the song?\nThis button is for you!", co);
+            		"Welcome", "\n\n\nSlide from left to right to access list of albums.\n" +
+            				"\nYou can also press highlighted area as an alternative.", co);
+           
+            //Click listeners for showcaseview
+            sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+            	 @Override
+            	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            	        //The view is hidden/dismissed
+            		 Crouton.makeText(MainActivity.this, "This app is still in Beta, you may encounter bugs.", Style.ALERT).show();
+            		 Crouton.makeText(MainActivity.this, "Please report when you find any strange behaviour in app.", Style.INFO).show();
+            		 Crouton.makeText(MainActivity.this, "Go ahead, explore the app. and its features!", Style.INFO).show();
+            	    }
+
+            	 @Override
+            	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
+            	        //The view is shown
+            	    }
+
+				@Override
+				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+					// TODO Auto-generated method stub
+					
+				}
+            	});
 
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()
@@ -78,7 +98,7 @@ public class MainActivity extends Activity {
                 .commit();
         }
         
-        //Crouton toast ends
+        //Boot_pref ends
         // load slide menu items
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
  

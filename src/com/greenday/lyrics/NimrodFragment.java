@@ -32,6 +32,9 @@ import com.greenday.nimrod.Uptight;
 import com.greenday.nimrod.Walkingalone;
 import com.greenday.nimrod.Worryrock;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.os.Bundle;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -58,6 +61,22 @@ public class NimrodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_nimrod, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
           
+		//Boot_pref
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_detail", true);
+
+        if (firstboot){
+		 
+        	Crouton.makeText(getActivity(), "If you press on the album icon at corner right", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "You can see some details about the current album.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
+        	
+         getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE)
+         .edit()
+         .putBoolean("firstboot_report", false)
+         .commit();
+        }
+		//Boot_pref ends
+		
 		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

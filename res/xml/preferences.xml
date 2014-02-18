@@ -17,6 +17,9 @@
             <Preference android:title="@string/cache_title"
                 android:key="cache"
                 android:summary="@string/cache_summary"/>
+            <Preference android:title="@string/hints_title"
+                android:key="hints"
+                android:summary="@string/hints_summary"/>
         </PreferenceCategory>
         
         <!-- Green Day -->

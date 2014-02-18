@@ -44,17 +44,6 @@ getActionBar().setDisplayHomeAsUpEnabled(true);
 
 IntentFilter iF = new IntentFilter();
 getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
-Button b=(Button) findViewById(R.id.button1);
-b.setOnClickListener(new OnClickListener() {
-	
-	@Override
-	public void onClick(View arg0) {
-		// TODO Auto-generated method stub
-		Intent i=null;
-		i=new Intent(Nowplaying.this, Allsongs.class);
-		startActivity(i);
-	}
-});
 
 iF.addAction("com.android.music.metachanged");
 
@@ -71,14 +60,15 @@ String artist = intent.getStringExtra("artist");
 final String album = intent.getStringExtra("album");
 final String track = intent.getStringExtra("track");
 Log.d("Music",artist+":"+album+":"+track);
-Button b=(Button) findViewById(R.id.button1);
+ImageButton b=(ImageButton) findViewById(R.id.imageButton3);
 b.setOnClickListener(new OnClickListener() {
 	
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
 		Intent intent = new Intent(Nowplaying.this, Allsongs.class);
-    	intent.putExtra("track", track);
+    	
+		intent.putExtra("track", track);
     	startActivity(intent);
 		return;
 	}

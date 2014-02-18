@@ -1,5 +1,6 @@
 package com.greenday.lyrics;
 
+import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.americanidiot.Boulevardofbd;
@@ -13,6 +14,9 @@ import com.greenday.americanidiot.Shesarebel;
 import com.greenday.americanidiot.Stjimmy;
 import com.greenday.americanidiot.Wakemeup;
 import com.greenday.americanidiot.Whatshername;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.os.Bundle;
 import android.text.Html;
@@ -38,6 +42,24 @@ public class AmericanIdiotFragment extends Fragment{
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_americanidiot, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
+		
+
+		//Boot_pref
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_detail", true);
+
+        if (firstboot){
+		 
+        	Crouton.makeText(getActivity(), "If you press on the album icon at corner right", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "You can see some details about the current album.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
+        	
+         getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE)
+         .edit()
+         .putBoolean("firstboot_detail", false)
+         .commit();
+        }
+		//Boot_pref ends
+        
         ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

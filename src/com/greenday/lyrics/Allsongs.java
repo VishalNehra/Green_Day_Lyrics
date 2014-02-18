@@ -3,6 +3,7 @@ package com.greenday.lyrics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
@@ -191,6 +192,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -217,21 +219,56 @@ public class Allsongs extends Activity {
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		
-		 //Crouton Toast
+		 //Boot_pref
         boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_allsongs", true);
 
         if (firstboot){
             // 1) Launch the authentication activity
-        	AlertDialog builder = new AlertDialog.Builder(this)
-        	.setTitle("INSTRUCTIONS")
-        	.setMessage(Html.fromHtml("<center><b><u>INSTRUCTIONS</center></u></b><br><br>" +
-        			"Blah Blah"))
-        			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-			            public void onClick(DialogInterface dialog, int which) {
-			                Allsongs.this.closeContextMenu();
-			            }
-			        })
-			        .show();    
+        	ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+            //For leavign action bar unhidden; 
+   		 co.insert = ShowcaseView.INSERT_TO_VIEW;
+            ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 0, this,
+            		"All Songs", "\nFind all Green Day songs at a single place.\n\n" +
+            				"Quickly search any song from the list using search bar!\n" +
+            				"Do report if any Green Day song not included/spelled incorrectly in the list.\n" +
+            				"\nPlease read instructions carefully in the upcomming screen.", co);
+            
+            //Click listeners for showcaseview
+            sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+           	 @Override
+           	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
+           	        //The view is hidden/dismissed
+           		AlertDialog builder = new AlertDialog.Builder(Allsongs.this)
+            	.setTitle("INSTRUCTIONS")
+            	.setMessage(Html.fromHtml("Below are the instructions of usage of <b>Now Playing</b> feature<br><br>" +
+            			"1. Open <b><font color='#464ea3'>'Now Playing'</font></b> either from HOME or anywhere in app using Action Bar Icon.<br><br>" +
+            			"2. Press on <b><font color='#464ea3'>'Search'</font></b> button in the 'Now Playing' screen.<br><br>" +
+            			"3. Now press on the <b><font color='#464ea3'>'Play'</font></b> icon in search bar. <br><br>" +
+            			"And then you will see name of your current playing song!<br>" +
+            			"When you change the song, repeat the same process.<br>" +
+            			"<br><br><i><u><b><font color='#e02923'>Warning!</font></b></i></u><br>" +
+            			"Do Not press on play button without playing any song in media player.<br>"))
+            			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+    			            public void onClick(DialogInterface dialog, int which) {
+    			                Allsongs.this.closeContextMenu();
+    			            }
+    			        })
+    			        .show();   
+           	    }
+
+           	 @Override
+           	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
+           	        //The view is shown
+           	    }
+
+				@Override
+				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+					// TODO Auto-generated method stub
+					
+				}
+           	});
+            
+        	 
         	
             getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
                 .edit()
@@ -239,7 +276,7 @@ public class Allsongs extends Activity {
                 .commit();
         }
         
-        //Crouton toast ends
+        //Boot_pref ends
 		
 		ImageButton b=(ImageButton) findViewById(R.id.txtQuery_play);
 		b.setOnClickListener(new OnClickListener() {
@@ -250,6 +287,10 @@ public class Allsongs extends Activity {
 				boolean track = getIntent().getBooleanExtra("track", true);
 				if(track){
 				txtQuery.setText(getIntent().getExtras().getString("track"));
+				}
+				else if(track=(String) null != null)
+				{
+					Crouton.makeText(Allsongs.this, "No track", Style.ALERT).show();
 				}
 			}
 		});
@@ -352,7 +393,7 @@ public class Allsongs extends Activity {
 				"Knowledge",
 				"Lady Cobra",
 				"Last Night On Earth",
-				"Last Of The American Girls",
+				"Last Of American Girls",
 				"Lazy Bones",
 				"Let Yourself Go",
 				"Letterbomb",
@@ -747,7 +788,7 @@ public class Allsongs extends Activity {
 				if (values=="Last Night On Earth") {
 					i=new Intent(Allsongs.this, Lastnight.class);
 					startActivity(i);}
-				if (values=="Last Of The American Girls") {
+				if (values=="Last Of American Girls") {
 					i=new Intent(Allsongs.this, Lastamerican.class);
 					startActivity(i);}
 				if (values=="Lazy Bones") {

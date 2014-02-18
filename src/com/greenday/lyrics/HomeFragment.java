@@ -1,6 +1,8 @@
 package com.greenday.lyrics;
 	
-	import de.keyboardsurfer.android.widget.crouton.Crouton;
+	import com.espian.showcaseview.ShowcaseView;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Fragment;
 import android.content.Intent;
@@ -19,7 +21,7 @@ import android.widget.ImageButton;
 	  
 	        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 	        
-	        //Testings
+	        //Now playing
 	        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton3);
 	        b.setOnClickListener(new OnClickListener() {
 				
@@ -31,16 +33,6 @@ import android.widget.ImageButton;
 				}
 			});
 	        
-	        ImageButton image = (ImageButton) rootView.findViewById(R.id.imageView1);
-	        image.setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View arg0) {
-					// TODO Auto-generated method stub
-					Crouton.makeText(getActivity(), "Stop Poking Me!!", Style.ALERT).show();
-					Crouton.makeText(getActivity(), "Writer names are in the respective song's lyrics.", Style.INFO).show();
-				}
-			});
 	        ImageButton ib = (ImageButton) rootView.findViewById(R.id.imageButton1);
 	        ib.setOnClickListener(new OnClickListener() {
 				
@@ -52,7 +44,9 @@ import android.widget.ImageButton;
 					startActivity(intent);
 				}
 			});
-	        ImageButton ib2 = (ImageButton) rootView.findViewById(R.id.imageButton2);
+	        /*Recents
+	         * ImageButton ib2 = (ImageButton) rootView.findViewById(R.id.imageButton2);
+	         
 	        ib2.setOnClickListener(new OnClickListener() {
 				
 				@Override
@@ -61,7 +55,7 @@ import android.widget.ImageButton;
 					Intent intent = new Intent(getActivity(), Recents.class);
 					startActivity(intent);				
 					}
-			});
+			});*/
 	        return rootView;
 	    }
 	    

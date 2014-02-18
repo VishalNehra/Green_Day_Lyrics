@@ -85,9 +85,9 @@ public class Extraordgirl extends Activity {
 		        .setMessage(Html.fromHtml(getString(R.string.album)+
 		        		getString(R.string.americanidiot_album) +
 		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>3:33</i><br><br>" + 
+		        		"<font color='#006500'><i>3:33</i></font><br><br>" + 
 		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright<br><br>" +
+		        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
 		        		getString(R.string.copyright) +
 		        		getString(R.string.copyright1)))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {

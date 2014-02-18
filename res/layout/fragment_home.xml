@@ -6,43 +6,23 @@
     android:gravity="left" >
 
 <ImageButton
-    android:id="@+id/imageView1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_home2"
-    style="?android:borderlessButtonStyle" />
-
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
+    android:id="@+id/imageButton3"
     style="?android:borderlessButtonStyle"
-    android:gravity="center"
-    android:src="@drawable/all_songs" />
-
-<ImageButton
-    android:id="@+id/imageButton2"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/imageButton1"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="32dp"
-    style="?android:borderlessButtonStyle"
-    android:src="@drawable/recents" />
+    android:layout_marginTop="34dp"
+    android:src="@drawable/playing" />
 
 <ImageButton
-    android:id="@+id/imageButton3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/imageButton2"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="32dp"
+    android:id="@+id/imageButton1"
     style="?android:borderlessButtonStyle"
-     android:src="@drawable/playing" />
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:src="@drawable/all_songs" />
  
 </RelativeLayout>
