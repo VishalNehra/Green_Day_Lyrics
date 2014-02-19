@@ -45,7 +45,6 @@ In labels you will get to know the length, writers, copyrights and more info. ab
 
 <h5>Stay tuned for more features!</h5>
 
-<<<<<<< HEAD
 =======
 Changelog
 ---------
@@ -69,17 +68,14 @@ Thanks to
 * [Stack Overflow](http://stackoverflow.com/)
 * And lots more!
 
-License
--------
+Disclaimer
+----------
 
-`All the lyrics used in this app belongs to the respective authors and copyrights.`  
-`For more info. visit Green Day [Official website](http://www.greenday.com/).`  
-This software is in compliance with [GPL](https://www.gnu.org/copyleft/gpl.html) and thus, this is a fully open source project.  
-If you want to contribute to this project send a pull request.  
-**More licensing terms will be added soon**
-
+All the lyrics provided in this app belongs to their respective owners/artists.<br>
+I DO NOT own any of the lyrics provided in this app.<br>
+I will not be liable for any errors or omissions in any kind of information provided in this app.<br>
+For more info. visit Green Day [Official website](http://www.greenday.com/). <br>
 
 
 
->>>>>>> 8f9c63f0099bfcd51a436c9e8db1f9e834395aac
 
