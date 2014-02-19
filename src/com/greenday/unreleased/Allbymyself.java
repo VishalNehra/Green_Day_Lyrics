@@ -3,19 +3,16 @@ package com.greenday.unreleased;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.americanidiot.Americanidiot;
 import com.greenday.dookie.Basketcase;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

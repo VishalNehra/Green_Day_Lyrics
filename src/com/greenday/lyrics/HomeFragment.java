@@ -1,9 +1,6 @@
 package com.greenday.lyrics;
 	
-	import com.espian.showcaseview.ShowcaseView;
-
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
+	import de.keyboardsurfer.android.widget.crouton.Crouton;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;

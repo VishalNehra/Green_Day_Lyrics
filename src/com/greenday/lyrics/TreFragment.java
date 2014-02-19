@@ -1,18 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.dos.Amy;
-import com.greenday.dos.Ashley;
-import com.greenday.dos.Babyeyes;
-import com.greenday.dos.Cutonight;
-import com.greenday.dos.Fucktime;
-import com.greenday.dos.Ladycobra;
-import com.greenday.dos.Lazybones;
-import com.greenday.dos.Makeoutparty;
-import com.greenday.dos.Nightlife;
-import com.greenday.dos.Stopredflash;
-import com.greenday.dos.Strayheart;
-import com.greenday.dos.Wildone;
-import com.greenday.dos.Wowthatsloud;
 import com.greenday.tre.Amanda;
 import com.greenday.tre.Avesrnde;
 import com.greenday.tre.Brutallove;

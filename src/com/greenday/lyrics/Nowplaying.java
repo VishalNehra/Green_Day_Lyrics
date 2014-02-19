@@ -3,18 +3,12 @@ package com.greenday.lyrics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.dos.Ashley;
-import com.greenday.nimrod.Allthetime;
-import com.greenday.nimrod.Grouch;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -24,7 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 

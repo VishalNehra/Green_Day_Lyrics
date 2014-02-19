@@ -2,21 +2,17 @@ package com.greenday.lyrics;
  
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
-import com.espian.showcaseview.targets.ViewTarget;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
  
-import java.io.File;
 import java.util.ArrayList;
  
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
@@ -29,12 +25,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.Toast;
  
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
@@ -68,7 +60,7 @@ public class MainActivity extends Activity {
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
             ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
-            		"Welcome", "\n\n\nSlide from left to right to access list of albums.\n" +
+            		"Welcome", "\nSlide from left to right to access list of albums.\n" +
             				"\nYou can also press highlighted area as an alternative.", co);
            
             //Click listeners for showcaseview

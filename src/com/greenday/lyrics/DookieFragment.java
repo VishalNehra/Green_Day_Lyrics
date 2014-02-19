@@ -14,8 +14,6 @@ import com.greenday.dookie.Sassafrasroots;
 import com.greenday.dookie.She;
 import com.greenday.dookie.Welcomeparadise;
 import com.greenday.dookie.Whencomearound;
-import com.greenday.dos.Fucktime;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 

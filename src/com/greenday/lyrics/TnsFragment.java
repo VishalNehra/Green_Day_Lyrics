@@ -1,26 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.ins.Basketcase;
-import com.greenday.ins.Brainstew;
-import com.greenday.ins.Geekstink;
-import com.greenday.ins.Goodriddance;
-import com.greenday.ins.Hitchinaride;
-import com.greenday.ins.JAR;
-import com.greenday.ins.Jaded;
-import com.greenday.ins.Longview;
-import com.greenday.ins.Macy;
-import com.greenday.ins.Maria;
-import com.greenday.ins.Minority;
-import com.greenday.ins.Niceguys;
-import com.greenday.ins.Poprocks;
-import com.greenday.ins.Redundant;
-import com.greenday.ins.She;
-import com.greenday.ins.Stuckwithme;
-import com.greenday.ins.Waiting;
-import com.greenday.ins.Walking;
-import com.greenday.ins.Warning;
-import com.greenday.ins.Welcomeparadise;
-import com.greenday.ins.Whencomearound;
 import com.greenday.tns.Atlibrary;
 import com.greenday.tns.Coffeemaker;
 import com.greenday.tns.Disappearingboy;

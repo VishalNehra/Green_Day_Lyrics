@@ -1,18 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.americanidiot.Americanidiot;
-import com.greenday.americanidiot.Arewethewaiting;
-import com.greenday.americanidiot.Boulevardofbd;
-import com.greenday.americanidiot.Extraordgirl;
-import com.greenday.americanidiot.Givemenov;
-import com.greenday.americanidiot.Holiday;
-import com.greenday.americanidiot.Homecoming;
-import com.greenday.americanidiot.Jesusofsuburb;
-import com.greenday.americanidiot.Letterbomb;
-import com.greenday.americanidiot.Shesarebel;
-import com.greenday.americanidiot.Stjimmy;
-import com.greenday.americanidiot.Wakemeup;
-import com.greenday.americanidiot.Whatshername;
 import com.greenday.ins.Basketcase;
 import com.greenday.ins.Brainstew;
 import com.greenday.ins.Geekstink;

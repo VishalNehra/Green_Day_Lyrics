@@ -73,7 +73,6 @@ import com.greenday.kerplunk.Privateale;
 import com.greenday.kerplunk.Razorbacks;
 import com.greenday.kerplunk.Strangeland;
 import com.greenday.kerplunk.Sweetchildren;
-import com.greenday.kerplunk.Welcome;
 import com.greenday.kerplunk.Whowrote;
 import com.greenday.kerplunk.Wordsmightate;
 import com.greenday.nimrod.Allthetime;
@@ -187,14 +186,12 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -203,7 +200,6 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -230,7 +226,7 @@ public class Allsongs extends Activity {
             //For leavign action bar unhidden; 
    		 co.insert = ShowcaseView.INSERT_TO_VIEW;
             ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 0, this,
-            		"All Songs", "\nFind all Green Day songs at a single place.\n\n" +
+            		"All Songs", "\nFind all Green Day songs at a single place.\n" +
             				"Quickly search any song from the list using search bar!\n" +
             				"Do report if any Green Day song not included/spelled incorrectly in the list.", co);
             

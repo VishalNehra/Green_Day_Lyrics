@@ -3,11 +3,9 @@ package com.greenday.nimrod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import android.app.Activity;
@@ -18,9 +16,6 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Niceguys extends Activity {

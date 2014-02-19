@@ -1,19 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.dookie.Basketcase;
-import com.greenday.dookie.Burnout;
-import com.greenday.dookie.Chump;
-import com.greenday.dookie.Comingclean;
-import com.greenday.dookie.Emeniussleepus;
-import com.greenday.dookie.FOD;
-import com.greenday.dookie.Havingblast;
-import com.greenday.dookie.Intheend;
-import com.greenday.dookie.Longview;
-import com.greenday.dookie.Pullingteeth;
-import com.greenday.dookie.Sassafrasroots;
-import com.greenday.dookie.She;
-import com.greenday.dookie.Welcomeparadise;
-import com.greenday.dookie.Whencomearound;
 import com.greenday.kerplunk.Android;
 import com.greenday.kerplunk.Bestthing;
 import com.greenday.kerplunk.Christie;

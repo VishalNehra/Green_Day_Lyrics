@@ -13,19 +13,6 @@ import com.greenday.dos.Stopredflash;
 import com.greenday.dos.Strayheart;
 import com.greenday.dos.Wildone;
 import com.greenday.dos.Wowthatsloud;
-import com.greenday.uno.Angelblue;
-import com.greenday.uno.Carpediem;
-import com.greenday.uno.Fellforyou;
-import com.greenday.uno.Killthedj;
-import com.greenday.uno.Letyourselfgo;
-import com.greenday.uno.Lossofcontrol;
-import com.greenday.uno.Nuclearfamily;
-import com.greenday.uno.Ohlove;
-import com.greenday.uno.Rustyjames;
-import com.greenday.uno.Staythenight;
-import com.greenday.uno.Sweetsixt;
-import com.greenday.uno.Troublemaker;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 

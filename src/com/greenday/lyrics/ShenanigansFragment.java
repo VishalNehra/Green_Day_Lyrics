@@ -14,25 +14,6 @@ import com.greenday.shenanigans.Tiredofwaiting;
 import com.greenday.shenanigans.WannabeonTV;
 import com.greenday.shenanigans.Youlied;
 import com.greenday.shenanigans.Yourdead;
-import com.greenday.tcb.Americaneulogy;
-import com.greenday.tcb.Eastjesus;
-import com.greenday.tcb.Guns;
-import com.greenday.tcb.Horseshoes;
-import com.greenday.tcb.Inferno;
-import com.greenday.tcb.Knowyourenemy;
-import com.greenday.tcb.Lastamerican;
-import com.greenday.tcb.Lastnight;
-import com.greenday.tcb.Lobotomy;
-import com.greenday.tcb.Murdercity;
-import com.greenday.tcb.Peacemaker;
-import com.greenday.tcb.Restlessheart;
-import com.greenday.tcb.Seethelight;
-import com.greenday.tcb.Songofcentuary;
-import com.greenday.tcb.Staticage;
-import com.greenday.tcb.Tcb;
-import com.greenday.tcb.Vivalagloria;
-import com.greenday.tcb.Vivalagloria2;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
