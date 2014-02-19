@@ -45,6 +45,7 @@ import com.greenday.dos.Stopredflash;
 import com.greenday.dos.Strayheart;
 import com.greenday.dos.Wildone;
 import com.greenday.dos.Wowthatsloud;
+import com.greenday.ins.JAR;
 import com.greenday.insomniac.Armatage;
 import com.greenday.insomniac.Babuvula;
 import com.greenday.insomniac.Brainstew;
@@ -67,6 +68,7 @@ import com.greenday.kerplunk.Lightyears;
 import com.greenday.kerplunk.Mygeneration;
 import com.greenday.kerplunk.Nooneknows;
 import com.greenday.kerplunk.Oneoflies;
+import com.greenday.kerplunk.Oominated;
 import com.greenday.kerplunk.Privateale;
 import com.greenday.kerplunk.Razorbacks;
 import com.greenday.kerplunk.Strangeland;
@@ -230,8 +232,7 @@ public class Allsongs extends Activity {
             ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 0, this,
             		"All Songs", "\nFind all Green Day songs at a single place.\n\n" +
             				"Quickly search any song from the list using search bar!\n" +
-            				"Do report if any Green Day song not included/spelled incorrectly in the list.\n" +
-            				"\nPlease read instructions carefully in the upcomming screen.", co);
+            				"Do report if any Green Day song not included/spelled incorrectly in the list.", co);
             
             //Click listeners for showcaseview
             sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
@@ -240,13 +241,13 @@ public class Allsongs extends Activity {
            	        //The view is hidden/dismissed
            		AlertDialog builder = new AlertDialog.Builder(Allsongs.this)
             	.setTitle("INSTRUCTIONS")
-            	.setMessage(Html.fromHtml("Below are the instructions of usage of <b>Now Playing</b> feature<br><br>" +
+            	.setMessage(Html.fromHtml("Instructions for the usage of <b>Now Playing</b> feature<br><br>" +
             			"1. Open <b><font color='#464ea3'>'Now Playing'</font></b> either from HOME or anywhere in app using Action Bar Icon.<br><br>" +
             			"2. Press on <b><font color='#464ea3'>'Search'</font></b> button in the 'Now Playing' screen.<br><br>" +
             			"3. Now press on the <b><font color='#464ea3'>'Play'</font></b> icon in search bar. <br><br>" +
             			"And then you will see name of your current playing song!<br>" +
             			"When you change the song, repeat the same process.<br>" +
-            			"<br><br><i><u><b><font color='#e02923'>Warning!</font></b></i></u><br>" +
+            			"<br><br><u><b><font color='#e02923'>Warning!</font></b></u><br>" +
             			"Do Not press on play button without playing any song in media player.<br>"))
             			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
     			            public void onClick(DialogInterface dialog, int which) {
@@ -309,7 +310,7 @@ public class Allsongs extends Activity {
 			}
 		String[] values = new String []
 				{
-				"1000 Hours",
+				"1,000 Hours",
 				"16",
 				"2000 Light Years Away",
 				"21 Guns",
@@ -317,7 +318,7 @@ public class Allsongs extends Activity {
 				"409 In Your Coffeemaker",
 				"80",
 				"86",
-				"8th Ave Serenade",
+				"8th Avenue Serenade",
 				"99 Revolutions",
 				"All By Myself",
 				"All The Time",
@@ -385,6 +386,7 @@ public class Allsongs extends Activity {
 				"In The End",
 				"Jackass",
 				"Jaded",
+				"J.A.R. (Jason Andrew Relva)",
 				"Jesus Of Suburbia",
 				"Jinx",
 				"Kill The DJ",
@@ -444,7 +446,7 @@ public class Allsongs extends Activity {
 				"Song Of The Century",
 				"St. Jimmy",
 				"Stay The Night",
-				"Stop When The Red Light Flash",
+				"Stop When The Red Lights Flash",
 				"Strangeland",
 				"Stray Heart",
 				"Stuart And The Ave",
@@ -459,7 +461,7 @@ public class Allsongs extends Activity {
 				"The One I Want",
 				"The Static Age",
 				"Tight Wadd Hill",
-				"Tired Of Waiting",
+				"Tired Of Waiting For You",
 				"Troublemaker",
 				"Uptight",
 				"Waiting",
@@ -468,7 +470,6 @@ public class Allsongs extends Activity {
 				"Walking Alone",
 				"Walking Contradiction",
 				"Warning",
-				"Welcome To Paradise",
 				"Welcome To Paradise",
 				"Westbound Sign",
 				"Whatsername",
@@ -536,7 +537,7 @@ public class Allsongs extends Activity {
 				// TODO Auto-generated method stub
 				Intent i =null;
 
-				if (values=="1000 Hours") {
+				if (values=="1,000 Hours") {
 					i=new Intent(Allsongs.this, Thousandhours.class);
 					startActivity(i);}
 				if (values=="16") {
@@ -560,7 +561,7 @@ public class Allsongs extends Activity {
 				if (values=="86") {
 					i=new Intent(Allsongs.this, Eightysix.class);
 					startActivity(i);}
-				if (values=="8th Ave Serenade") {
+				if (values=="8th Avenue Serenade") {
 					i=new Intent(Allsongs.this, Avesrnde.class);
 					startActivity(i);}
 				if (values=="99 Revolutions") {
@@ -575,7 +576,7 @@ public class Allsongs extends Activity {
 				if (values=="Amanda") {
 					i=new Intent(Allsongs.this, Amanda.class);
 					startActivity(i);}
-				if (values=="American Eulogy") {
+				if (values=="American Eulogy (Mass Hysteria/Modern World)") {
 					i=new Intent(Allsongs.this, Americaneulogy.class);
 					startActivity(i);}
 				if (values=="American Idiot") {
@@ -672,7 +673,7 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Dodada.class);
 					startActivity(i);}
 				if (values=="Dominated Love Slave") {
-					i=new Intent(Allsongs.this, Dodada.class);
+					i=new Intent(Allsongs.this, Oominated.class);
 					startActivity(i);}
 				if (values=="Don't Leave Me") {
 					i=new Intent(Allsongs.this, Dontleaveme.class);
@@ -941,7 +942,7 @@ public class Allsongs extends Activity {
 				if (values=="Stay The Night") {
 					i=new Intent(Allsongs.this, Staythenight.class);
 					startActivity(i);}
-				if (values=="Stop When The Red Light Flash") {
+				if (values=="Stop When The Red Lights Flash") {
 					i=new Intent(Allsongs.this, Stopredflash.class);
 					startActivity(i);}
 				if (values=="Strangeland") {
@@ -986,7 +987,7 @@ public class Allsongs extends Activity {
 				if (values=="Tight Wadd Hill") {
 					i=new Intent(Allsongs.this, Tightwad.class);
 					startActivity(i);}
-				if (values=="Tired Of Waiting") {
+				if (values=="Tired Of Waiting For You") {
 					i=new Intent(Allsongs.this, Tiredofwaiting.class);
 					startActivity(i);}
 				if (values=="Troublemaker") {
@@ -1013,9 +1014,9 @@ public class Allsongs extends Activity {
 				if (values=="Warning") {
 					i=new Intent(Allsongs.this, Warning.class);
 					startActivity(i);}
-				if (values=="Welcome To Paradise") {
-					i=new Intent(Allsongs.this, Welcome.class);
-					startActivity(i);}
+				//if (values=="Welcome To Paradise") {
+					//i=new Intent(Allsongs.this, Welcome.class);
+					//startActivity(i);}
 				if (values=="Welcome To Paradise") {
 					i=new Intent(Allsongs.this, Welcomeparadise.class);
 					startActivity(i);}
@@ -1052,14 +1053,14 @@ public class Allsongs extends Activity {
 				if (values=="You Lied") {
 					i=new Intent(Allsongs.this, Youlied.class);
 					startActivity(i);}
-				if (values=="You Lied") {
-					i=new Intent(Allsongs.this, Youlied.class);
-					startActivity(i);}
 				if (values=="¡Viva La Gloria!") {
 					i=new Intent(Allsongs.this, Vivalagloria.class);
 					startActivity(i);}
 				if (values=="¿Viva La Gloria? (Little Girl)") {
 					i=new Intent(Allsongs.this, Vivalagloria2.class);
+					startActivity(i);}
+				if (values=="J.A.R. (Jason Andrew Relva)") {
+					i=new Intent(Allsongs.this, JAR.class);
 					startActivity(i);}
 				
 			}

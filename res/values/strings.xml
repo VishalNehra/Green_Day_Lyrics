@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="now_playing">Now Playing</string>
+    
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
-    <string name="changelog_version">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;b>&lt;br></string>
-    <string name="changelog_change">&lt;font color="#006500">\tInitial release&lt;/font>&lt;br>&lt;br>&lt;br>&lt;br></string>
+    <string name="changelog_version">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_change">&lt;i>\tInitial release&lt;/i>&lt;br>&lt;br>&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
@@ -21,6 +23,12 @@
     
     <!-- Report title -->
     <string name="report_title">Report this song</string>
+    
+    <!-- Disclaimer title -->
+    <string name="disclaimer_title">Disclaimer</string>
+    
+    <!-- License title -->
+    <string name="license_title">Open Source Licenses</string>
     
     <!-- Label title -->
     <string name="label_title">Information about track</string>
@@ -57,9 +65,9 @@
     
     <string name="about_title">About</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">0.08 Alpha</string>
-    <string name="source_title">Github</string>
-    <string name="source_summary">Application sources</string>
+    <string name="version_summary">0.09 Alpha</string>
+    <string name="source_title">Application sources</string>
+    <string name="source_summary">View app source code. </string>
     <string name="members_title">Members</string>
     <string name="members_summary">List of Green Day members</string>
     <string name="albums_title">Albums</string>
@@ -164,8 +172,6 @@
     <string name="rate_title">Rate the app</string>
     <string name="rate_summary">Please leave a feedback of app in market</string>
     
-    <string name="disclaimer_title">Disclaimer</string>
-    
     <string name="extras_title">Extras</string>
 	
     <!-- Songs titles -->
@@ -243,7 +249,7 @@
     <string name="horseshoes_title">Horseshoes And Handgranades</string>
     <string name="staticage_title">The Static Age</string>
     <string name="guns_title">21 Guns</string>
-    <string name="americaneulogy_title">American Eulogy (Mass Hysteria/Modern World)</string>
+    <string name="americaneulogy_title">American Eulogy</string>
     <string name="seethelight_title">See The Light</string>
     
     <!-- Shenanigans -->
@@ -337,7 +343,7 @@
     <string name="welcome_title">Welcome To Paradise</string>
     <string name="christie_title">Christie Road</string>
     <string name="privateale_title">Private Ale</string>
-    <string name="oominated_title">Oominated Love Slave</string>
+    <string name="oominated_title">Dominated Love Slave</string>
     <string name="oneoflies_title">One Of My Lies</string>
     <string name="eighty_title">80</string>
     <string name="android_title">Android</string>
@@ -375,7 +381,7 @@
     
     <string name="maria_title">Maria</string>
     <string name="poprocks_title">Poprocks And Coke</string>
-    <string name="jar_title">Jason Andrew Relva</string>
+    <string name="jar_title">J.A.R. (Jason Andrew Relva)</string>
     <string name="walkingcontradiction_title">Walking Contradiction</string>
     
     <!-- Unreleased -->

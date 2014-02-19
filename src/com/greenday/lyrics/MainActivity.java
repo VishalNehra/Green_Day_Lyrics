@@ -9,6 +9,7 @@ import com.slidingmenu.model.NavDrawerItem;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
  
+import java.io.File;
 import java.util.ArrayList;
  
 import android.app.Activity;
@@ -344,10 +345,10 @@ public class MainActivity extends Activity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-    //Protect crouton to display on orientation change
+    //Protect crouton to display again on orientation change
+    @Override
     protected void onDestroy() {
         Crouton.clearCroutonsForActivity(this);
         super.onDestroy();
       }
-    
 }

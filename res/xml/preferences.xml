@@ -209,6 +209,9 @@
             
             <Preference android:key="disclaimer"
                 android:title="@string/disclaimer_title"/>
+            
+            <Preference android:key="license"
+                android:title="@string/license_title"/>
       </PreferenceCategory>
         
 </PreferenceScreen>

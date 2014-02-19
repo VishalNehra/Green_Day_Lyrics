@@ -41,7 +41,7 @@ public class Settings extends PreferenceActivity {
 		super.onCreate(savedInstanceState);
 		
 		ListPreference mthemeChooser;
-		Preference mCache, mchangeLog, mHints;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense;
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
@@ -56,6 +56,7 @@ public class Settings extends PreferenceActivity {
 		
 		//Cache
 		mCache = (Preference)findPreference("cache");
+		mCache.setEnabled(true);
 		mCache.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
@@ -77,15 +78,75 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						Crouton.makeText(Settings.this, "Not cleared \t\t:-(", Style.ALERT).show();
-						//Storage.getInstance().clearApplicationData();
-						File dir = new File(Environment.getDownloadCacheDirectory()+"data/data/com.greenday.lyrics/files/log");
-						if (dir.isDirectory()) {
-					        String[] children = dir.list();
-					        for (int i = 0; i < children.length; i++) {
-					            new File(dir, children[i]).delete();
+						
+						Crouton.makeText(Settings.this, "Cleared", Style.CONFIRM).show();
+						//Click listener to clear cache
+					           File dir = Settings.this.getCacheDir();
+					           if (dir != null && dir.isDirectory()) {
+					              deleteDir(dir);
+					           }
+					     }
+					    
+					     public boolean deleteDir(File dir) {
+					        if (dir != null && dir.isDirectory()) {
+					           String[] children = dir.list();
+					           for (int i = 0; i < children.length; i++) {
+					              boolean success = deleteDir(new File(dir, children[i]));
+					              if (!success) {
+					                 return false;
+					              }
+					           }
 					        }
-					    }
+
+					        // The directory is now empty so delete it
+					        return dir.delete();
+					        
+					        /*For deleting cache on exit, override ondestroy;
+					         * @Override
+							   protected void onStop(){
+							      super.onStop();
+							   }
+							
+							   //Fires after the OnStop() state
+							   @Override
+							   protected void onDestroy() {
+							      super.onDestroy();
+							      try {
+							         trimCache(this);
+							      } catch (Exception e) {
+							         // TODO Auto-generated catch block
+							         e.printStackTrace();
+							      }
+							   }
+							
+							   public static void trimCache(Context context) {
+							      try {
+							         File dir = context.getCacheDir();
+							         if (dir != null && dir.isDirectory()) {
+							            deleteDir(dir);
+							         }
+							      } catch (Exception e) {
+							         // TODO: handle exception
+							      }
+							   }
+							
+							   public static boolean deleteDir(File dir) {
+							      if (dir != null && dir.isDirectory()) {
+							         String[] children = dir.list();
+							         for (int i = 0; i < children.length; i++) {
+							            boolean success = deleteDir(new File(dir, children[i]));
+							            if (!success) {
+							               return false;
+							            }
+							         }
+							      }
+							
+							      // The directory is now empty so delete it
+							      return dir.delete();
+							   }
+							
+							}*/
+					        
 					}
 				}).show();
 				return false;
@@ -101,7 +162,7 @@ public class Settings extends PreferenceActivity {
 				// TODO Auto-generated method stub
 				AlertDialog hints_alert = new AlertDialog.Builder(Settings.this)
 				.setTitle("Are you sure?")
-				.setMessage("You will need to face all the startup instructions once again!")
+				.setMessage("You will face all the startup instructions once again!")
 				.setNegativeButton("No", new DialogInterface.OnClickListener() {
 					
 					@Override
@@ -166,6 +227,53 @@ public class Settings extends PreferenceActivity {
 		
 		
 		//Disclaimer
+		mDisclaimer = (Preference)findPreference("disclaimer");
+		mDisclaimer.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog disclaimer_alert=new AlertDialog.Builder(Settings.this)
+				.setTitle("Disclaimer")
+				.setMessage(Html.fromHtml("* All the lyrics provided in this app belongs to their respective owners/artists.<br>" +
+						"* I <b>DO NOT</b> own any of the lyrics provided in this app.<br>" +
+						"* I will not be liable for any errors or omissions in any kind of information provided in this app.<br>" +
+						"* This app is purely made for entertainment purpose only."
+				))
+				.setPositiveButton("Close", new OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						closeContextMenu();
+					}
+				}).show();	
+				return false;
+			}
+		});
+		
+		//Licenses
+		mLicense = (Preference)findPreference("license");
+		mLicense.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				AlertDialog disclaimer_alert=new AlertDialog.Builder(Settings.this)
+				.setTitle("Open Source Licenses")
+				.setMessage(Html.fromHtml("* This app is in compliance with open source licenses used by libraries in this app.<br>" +
+						"* You can find the source code at Github."))
+				.setPositiveButton("Close", new OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						closeContextMenu();
+					}
+				}).show();	
+				return false;
+			}
+		});
 		
 	}
 	
@@ -192,4 +300,10 @@ public class Settings extends PreferenceActivity {
 		return super.onOptionsItemSelected(item);
 	
 	}
+	
+	@Override
+    protected void onDestroy() {
+        super.onDestroy();
+      }
+    
 }

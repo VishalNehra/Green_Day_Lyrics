@@ -8,9 +8,6 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-	<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
-	<uses-permission android:name="android.permission.CLEAR_APP_CACHE"></uses-permission>
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	
     <application
         android:allowBackup="true"
@@ -33,7 +30,8 @@
         
         <activity android:name="com.greenday.lyrics.Recents"></activity>
         <activity android:name="com.greenday.lyrics.Nowplaying"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="@string/now_playing"/>
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
            android:windowSoftInputMode="stateHidden|adjustPan" 
@@ -46,7 +44,6 @@
            android:theme="@style/Theme.SettingsBackground" 
             android:screenOrientation="portrait" />
         <activity android:name="com.greenday.lyrics.Reportproblem"
-           android:label="@string/reportproblem"
            android:theme="@style/Reportproblem" 
             android:screenOrientation="portrait" />
         <activity android:name="com.greenday.lyrics.Reportsong"

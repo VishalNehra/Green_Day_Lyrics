@@ -18,6 +18,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,6 +26,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Nowplaying extends Activity {
 
@@ -44,6 +46,16 @@ getActionBar().setDisplayHomeAsUpEnabled(true);
 
 IntentFilter iF = new IntentFilter();
 getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
+
+TextView tv=(TextView) findViewById(R.id.textView1);
+tv.setText(Html.fromHtml("<br>1. Open <b><font color='#464ea3'>'Now Playing'</font></b> either from HOME or anywhere in app using Action Bar Icon.<br><br>" +
+            			"2. Press on <b><font color='#464ea3'>'Search'</font></b> button in the 'Now Playing' screen <i>(below)</i>.<br><br>" +
+            			"3. After that press on the <b><font color='#464ea3'>'Play'</font></b> icon in search bar of 'All Songs' in the next screen. <br><br>" +
+            			"And then you will see name of your current playing song!<br>" +
+            			"When you change the song, come back to <b><font color='#464ea3'>'Now Playing'</font></b> and repeat the same steps.<br>" +
+            			"This feature has been successfully tested using Play Music and Apollo Music Player.<br>" +
+            			"<br><br><i><u><b><font color='#e02923'>Warning!</font></b></i></u><br>" +
+            			"Do Not press on play button without playing any song in media player."));
 
 iF.addAction("com.android.music.metachanged");
 

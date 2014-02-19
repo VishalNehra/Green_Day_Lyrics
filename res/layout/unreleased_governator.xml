@@ -80,12 +80,4 @@ And it makes great television \n
 watching the world end \n
 I'll be back"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_unreleased"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>

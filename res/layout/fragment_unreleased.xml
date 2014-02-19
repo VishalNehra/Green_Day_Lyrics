@@ -12,12 +12,12 @@
         android:layout_alignParentTop="true" >
     </ListView>
 
-    <ImageView
+   <!-- <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        style="?android:borderlessButtonStyle" />
+        style="?android:borderlessButtonStyle" /> --> 
 
 </RelativeLayout>

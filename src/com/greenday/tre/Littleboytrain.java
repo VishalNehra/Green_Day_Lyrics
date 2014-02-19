@@ -4,7 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
+import com.greenday.dookie.Burnout;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
@@ -34,28 +36,6 @@ public class Littleboytrain extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.tre_cover2);
-		ImageButton b=(ImageButton) findViewById(R.id.imageButton1);
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog builder = new AlertDialog.Builder(Littleboytrain.this)
-		        .setMessage(Html.fromHtml(getString(R.string.album)+
-		        		getString(R.string.tre_album) +
-		        		getString(R.string.track_length) +
-		        		"<font color='#006500'><i>3:37</font></i><br><br>" + 
-		        		getString(R.string.writers) +
-		        		"<font color='#006500'>Billie Joe Armstrong, Tré Cool, Mike Dirnt</font><br><br>" +
-		        		getString(R.string.copyright) +
-		        		getString(R.string.copyright1)))
-		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int which) {
-		                closeContextMenu();
-		            }
-		        })
-		        .show();    
-			}
-		});
 	}
 	
 	//Action bar code below
@@ -81,6 +61,12 @@ public class Littleboytrain extends Activity {
 			{
 				startActivity(new Intent(getApplicationContext(), Settings.class));
 			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(this, Nowplaying.class));
+	            return true;
+			}
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
@@ -95,6 +81,25 @@ public class Littleboytrain extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				//Info
+				AlertDialog builder = new AlertDialog.Builder(Littleboytrain.this)
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.tre_album) +
+		        		getString(R.string.track_length) +
+		        		"<font color='#006500'><i>3:37</font></i><br><br>" + 
+		        		getString(R.string.writers) +
+		        		"<font color='#006500'>Billie Joe Armstrong, Tré Cool, Mike Dirnt</font><br><br>" +
+		        		getString(R.string.copyright) +
+		        		getString(R.string.copyright1)))
+		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+		            public void onClick(DialogInterface dialog, int which) {
+		                closeContextMenu();
+		            }
+		        })
+		        .show();    
 			}
 		            return super.onOptionsItemSelected(item);
 			

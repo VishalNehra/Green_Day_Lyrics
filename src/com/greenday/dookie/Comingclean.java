@@ -34,6 +34,7 @@ public class Comingclean extends Activity {
 		setContentView(R.layout.dookie_comingclean);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 	}
 	
 	//Action bar code below

@@ -30,6 +30,17 @@ public class Reportsong extends Activity {
 		final EditText et=(EditText) findViewById(R.id.editText1);
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 		Button b2= (Button) findViewById(R.id.button2);
+		
+		boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_report_song", true);
+		if(firstboot)
+		{
+			Crouton.makeText(Reportsong.this, "No need to type name of track", Style.INFO).show();
+			getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+			.edit()
+			.putBoolean("firstboot_report_song", false)
+			.commit();
+		}
+		
 		b2.setOnClickListener(new OnClickListener() {
 			
 			@Override

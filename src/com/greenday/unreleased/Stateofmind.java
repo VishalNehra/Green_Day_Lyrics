@@ -5,10 +5,14 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportproblem;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -67,6 +71,16 @@ public class Stateofmind extends Activity {
 	        	intent.putExtra("Search", true);
 	        	startActivity(intent);
 				return true;
+			}
+			if(item.getItemId()==R.id.action_play)
+			{
+				// now playing
+				startActivity(new Intent(this, Nowplaying.class));
+	            return true;
+			}
+			if(item.getItemId()==R.id.action_label)
+			{
+				Crouton.makeText(this, "Info. not available at the moment.", Style.ALERT).show();
 			}
 		            return super.onOptionsItemSelected(item);
 			

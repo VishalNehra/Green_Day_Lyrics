@@ -66,17 +66,16 @@ public class UnreleasedFragment extends Fragment {
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
         
 		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_detail", true);
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_unreleased", true);
 
         if (firstboot){
 		 
-        	Crouton.makeText(getActivity(), "If you press on the album icon at corner right", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "You can see some details about the current album.", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
+        	Crouton.makeText(getActivity(), "Some things are not updated in this section.", Style.ALERT).show();
+        	Crouton.makeText(getActivity(), "More things will be added here in next release.", Style.INFO).show();
         	
          getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE)
          .edit()
-         .putBoolean("firstboot_detail", false)
+         .putBoolean("firstboot_unreleased", false)
          .commit();
         }
 		//Boot_pref ends

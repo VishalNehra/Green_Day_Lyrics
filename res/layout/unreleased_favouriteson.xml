@@ -68,12 +68,4 @@ It's your favorite son.\n
 It's your favorite son.\n
 But isn't it a drag?"/>
 </ScrollView>
-<ImageButton
-    android:id="@+id/imageButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentTop="true"
-    android:src="@drawable/ic_unreleased"
-    style="?android:borderlessButtonStyle" />
 </RelativeLayout>
