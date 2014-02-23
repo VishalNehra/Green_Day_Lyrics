@@ -126,4 +126,12 @@ public boolean onOptionsItemSelected(MenuItem item) {
             return super.onOptionsItemSelected(item);
 	
 }
+
+@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		unregisterReceiver(mReceiver);
+		super.onDestroy();
+	}
+
 }

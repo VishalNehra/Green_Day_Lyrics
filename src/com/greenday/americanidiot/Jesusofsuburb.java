@@ -8,14 +8,19 @@ import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class Jesusofsuburb extends Activity {
@@ -29,6 +34,21 @@ public class Jesusofsuburb extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
+		
+		//Automatically scroll view
+				final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+				new CountDownTimer(174000, 1) {          
+
+					 public void onTick(long millisUntilFinished) {             
+
+					   sv.scrollBy(0, 130);         
+					 }          
+
+					 public void onFinish() {  
+						 Crouton.makeText(Jesusofsuburb.this, "Finished", Style.INFO).show();
+					 }      
+
+					}.start();
 	}
 	
 	//Action bar code below

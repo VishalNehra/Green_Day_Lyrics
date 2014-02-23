@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class Americanidiot extends Activity {
@@ -32,8 +33,15 @@ public class Americanidiot extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-	}
-
+        //getActionBar().setHomeButtonEnabled(true);
+		
+		//Automatically scrollview
+		final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+		sv.post(new Runnable() {
+		    public void run() {
+		    	sv.fullScroll(sv.FOCUS_DOWN);
+		    }
+		});}
 	//Action bar code below
 	
 	@Override

@@ -38,7 +38,7 @@ public class DosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-  
+    	
         View rootView = inflater.inflate(R.layout.fragment_dos, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		
