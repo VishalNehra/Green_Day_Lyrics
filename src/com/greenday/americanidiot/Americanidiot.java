@@ -7,9 +7,7 @@ import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
 import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 
-import com.espian.showcaseview.ShowcaseView;
 import com.greenday.lyrics.Allsongs;
-import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -17,11 +15,8 @@ import com.greenday.lyrics.Settings;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
-import android.R.string;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.FragmentManager.BackStackEntry;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,13 +25,13 @@ import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class Americanidiot extends Activity {
+public class Americanidiot extends Activity implements OnRefreshListener {
 	private PullToRefreshLayout mPullToRefreshLayout;
 	TextView tv1;
-	ShowcaseView sv;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -45,32 +40,21 @@ public class Americanidiot extends Activity {
 		setContentView(R.layout.americanidiot_americanidiot);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
-		ActionBarPullToRefresh.from(this)
-		.allChildrenArePullable()
-		.listener((OnRefreshListener) this)
-		.setup(mPullToRefreshLayout);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
+		
 		//Automatically scroll view
 		/*SharedPreferences prefs = */
 		boolean scroll = /*getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE)*/
 				PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
 		if(scroll)
 		{
-			final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-			new CountDownTimer(174000, 250) {          
-	
-				 public void onTick(long millisUntilFinished) {             
-				   sv.scrollBy(0, 1);         
-				 }          
-	
-				 public void onFinish() {  
-					 Crouton.makeText(Americanidiot.this, "Finished", Style.INFO).show();
-				 }      
-				 
-				}.start();
-				
+			//Pull to refresh
+			ActionBarPullToRefresh.from(this)
+			.allChildrenArePullable()
+			.listener(this)
+			.setup(mPullToRefreshLayout);
 		}
 
 		//Display
@@ -84,7 +68,7 @@ public class Americanidiot extends Activity {
 		boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
 		if(touch)
 		{
-			tv1.setOnDragListener(null);
+			
 		}
 	}
 	
@@ -126,12 +110,6 @@ public class Americanidiot extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
-		}
-		if(item.getItemId()==R.id.action_play)
-		{
-			// now playing
-			startActivity(new Intent(Americanidiot.this, Nowplaying.class));
-            return true;
 		}
 		if(item.getItemId()==R.id.action_label)
 		{
@@ -175,5 +153,23 @@ public class Americanidiot extends Activity {
 		// TODO Auto-generated method stub
 		getCurrentFocus().findFocus().computeScroll();
 		super.onDestroy();
+	}
+
+	//Pull to refresh listener
+	@Override
+	public void onRefreshStarted(View view) {
+		// TODO Auto-generated method stub
+			final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+			new CountDownTimer(174000, 250) {          
+				
+				 public void onTick(long millisUntilFinished) {             
+				   sv.scrollBy(0, 1);         
+				 }          
+	
+				 public void onFinish() {  
+					 Crouton.makeText(Americanidiot.this, "Finished", Style.INFO).show();
+					 mPullToRefreshLayout.setRefreshComplete();
+				 }      
+				}.start();
 	}
 }

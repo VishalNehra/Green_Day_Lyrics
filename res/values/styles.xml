@@ -5,6 +5,15 @@
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     
+    <!-- Pull to refresh -->
+    <style name="Widget.Custom.PtrHeader" parent="android:Widget">
+        <item name="ptrPullText">Pull To Start</item>
+		<item name="ptrRefreshingText">Starting</item>
+		<item name="ptrReleaseText">Started Successfully</item>
+		<item name="ptrProgressBarColor">#d43fa5</item>
+		
+	</style>
+    
     <!-- Custom showcaseview -->
     
     <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">

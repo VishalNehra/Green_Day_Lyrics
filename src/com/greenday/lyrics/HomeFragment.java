@@ -18,18 +18,6 @@ import android.widget.ImageButton;
 	  
 	        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 	        
-	        //Now playing
-	        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton3);
-	        b.setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					Intent intent = new Intent(getActivity(), Nowplaying.class);
-					startActivity(intent);
-				}
-			});
-	        
 	        ImageButton ib = (ImageButton) rootView.findViewById(R.id.imageButton1);
 	        ib.setOnClickListener(new OnClickListener() {
 				
@@ -37,7 +25,7 @@ import android.widget.ImageButton;
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
 					Intent intent = new Intent(getActivity(), Allsongs.class);
-					intent.putExtra("fix", true);
+					//intent.putExtra("fix", true);
 					startActivity(intent);
 				}
 			});

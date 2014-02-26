@@ -58,6 +58,8 @@ public class MainActivity extends Activity {
             // 1) Launch the authentication activity
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+            //For leavign action bar unhidden; 
+      		//co.insert = ShowcaseView.INSERT_TO_VIEW;
             @SuppressWarnings("deprecation")
 			ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
             		"Welcome", "\nSlide from left to right to access list of albums.\n" +
@@ -226,10 +228,6 @@ public class MainActivity extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
-        case R.id.action_play:
-			// media broadcast receiver
-        	startActivity(new Intent(MainActivity.this, Nowplaying.class));
-            return true;
         default:
             return super.onOptionsItemSelected(item);
         }

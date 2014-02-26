@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"  >
-
 <ScrollView
     android:id="@+id/sv"
     android:layout_width="match_parent"

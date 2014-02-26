@@ -6,16 +6,6 @@
     android:gravity="left" >
 
 <ImageButton
-    android:id="@+id/imageButton3"
-    style="?android:borderlessButtonStyle"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/imageButton1"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="34dp"
-    android:src="@drawable/playing" />
-
-<ImageButton
     android:id="@+id/imageButton1"
     style="?android:borderlessButtonStyle"
     android:layout_width="match_parent"

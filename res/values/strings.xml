@@ -41,7 +41,7 @@
     
     <!-- Automatically Scroll -->
     <string name="scroll_title">Automatic Scrolling</string>
-    <string name="scroll_summary_on">Enabled</string>
+    <string name="scroll_summary_on">Pull screen Up to Down to start</string>
     <string name="scroll_summary_off">Disabled</string>
     
     <!-- Display -->

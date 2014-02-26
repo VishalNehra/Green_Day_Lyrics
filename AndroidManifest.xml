@@ -29,9 +29,6 @@
         </activity>
         
         <activity android:name="com.greenday.lyrics.Recents"></activity>
-        <activity android:name="com.greenday.lyrics.Nowplaying"
-            android:screenOrientation="portrait"
-            android:label="@string/now_playing"/>
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
            android:windowSoftInputMode="stateHidden|adjustPan" 

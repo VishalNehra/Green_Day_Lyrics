@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
-import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
@@ -66,12 +65,6 @@ public class Lastridein extends Activity {
         	intent.putExtra("Search", true);
         	startActivity(intent);
 			return true;
-		}
-		if(item.getItemId()==R.id.action_play)
-		{
-			// now playing
-			startActivity(new Intent(this, Nowplaying.class));
-            return true;
 		}
 		if(item.getItemId()==R.id.action_label)
 		{
