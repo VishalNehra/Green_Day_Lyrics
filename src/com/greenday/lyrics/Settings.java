@@ -35,7 +35,6 @@ public class Settings extends PreferenceActivity {
 		
 		ListPreference mthemeChooser;
 		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense;
-		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		/*For extending settings as listview
@@ -55,7 +54,7 @@ public class Settings extends PreferenceActivity {
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				AlertDialog cache_alert = new AlertDialog.Builder(Settings.this)
+				/*AlertDialog cache_alert = */new AlertDialog.Builder(Settings.this)
 				.setTitle("Are you sure?")
 				.setMessage("This might decrease the app performance")
 				.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -146,14 +145,13 @@ public class Settings extends PreferenceActivity {
 			}
 		});
 		
-		//Shared Preferences
+		//Clear Shared Preferences
 		mHints=(Preference)findPreference("hints");
 		mHints.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog hints_alert = new AlertDialog.Builder(Settings.this)
+				new AlertDialog.Builder(Settings.this)
 				.setTitle("Are you sure?")
 				.setMessage("You will face all the startup instructions once again!")
 				.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -190,8 +188,7 @@ public class Settings extends PreferenceActivity {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog changelog_alert=new AlertDialog.Builder(Settings.this)
+				new AlertDialog.Builder(Settings.this)
 				.setTitle("Changelog")
 				.setMessage(Html.fromHtml(getString(R.string.changelog_version) + 
 						getString(R.string.changelog_change)))
@@ -225,8 +222,7 @@ public class Settings extends PreferenceActivity {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog disclaimer_alert=new AlertDialog.Builder(Settings.this)
+				new AlertDialog.Builder(Settings.this)
 				.setTitle("Disclaimer")
 				.setMessage(Html.fromHtml("* All the lyrics provided in this app belongs to their respective owners/artists.<br>" +
 						"* I <b>DO NOT</b> own any of the lyrics provided in this app.<br>" +
@@ -251,8 +247,7 @@ public class Settings extends PreferenceActivity {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
-				AlertDialog disclaimer_alert=new AlertDialog.Builder(Settings.this)
+				new AlertDialog.Builder(Settings.this)
 				.setTitle("Open Source Licenses")
 				.setMessage(Html.fromHtml("* This app is in compliance with open source licenses used by libraries in this app.<br>" +
 						"* You can find the source code at Github."))

@@ -78,7 +78,7 @@ public class Maria extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Maria.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		"<font color='#006500'>International Superhits! <i>(2001)</i><br><br></font>" +
 			        		getString(R.string.track_length) +

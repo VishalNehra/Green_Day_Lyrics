@@ -78,7 +78,7 @@ public class Wowthatsloud extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Wowthatsloud.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		getString(R.string.dos_album) +
 			        		getString(R.string.track_length) +

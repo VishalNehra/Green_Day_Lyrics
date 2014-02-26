@@ -79,7 +79,7 @@ public class Havingblast extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Havingblast.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		getString(R.string.dookie_album) +
 			        		getString(R.string.track_length) +

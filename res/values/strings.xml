@@ -39,6 +39,20 @@
     <!-- Showcaseviews -->
     <string name="showcase_button_ok">OK</string>
     
+    <!-- Automatically Scroll -->
+    <string name="scroll_title">Automatic Scrolling</string>
+    <string name="scroll_summary_on">Enabled</string>
+    <string name="scroll_summary_off">Disabled</string>
+    
+    <!-- Display -->
+    <string name="display_title">Screen Timeout</string>
+    <string name="display_summary_on">Never times out</string>
+    <string name="display_summary_off">Default screen timeout settings</string>
+    
+    <!-- Touch -->
+    <string name="touch_title">Touch</string>
+    <string name="touch_summary_on">Disabled in lyrics</string>
+    <string name="touch_summary_off">Recommended for auto acrolling</string>
     
     <!-- Settings -->
     

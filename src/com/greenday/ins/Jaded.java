@@ -78,7 +78,7 @@ public class Jaded extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Jaded.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
 			        		"<font color='#006500'>Insomniac, <i>1995</i></font>"))
 			        .setNeutralButton("OK", new DialogInterface.OnClickListener() {

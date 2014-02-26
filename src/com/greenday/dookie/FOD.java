@@ -79,7 +79,7 @@ public class FOD extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(FOD.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></u></b><br>" +
 			        		"<font color='#006500'><i>Song ends at 2:50, followed by hidden track 'All by Myself' performed by Tré Cool, which starts at 4:07</font></i><br><br>" +
 			        		getString(R.string.album)+

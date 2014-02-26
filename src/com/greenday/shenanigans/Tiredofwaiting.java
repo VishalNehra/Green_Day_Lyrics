@@ -78,7 +78,7 @@ public class Tiredofwaiting extends Activity {
 			if(item.getItemId()==R.id.action_label)
 			{
 				//Info
-				AlertDialog builder = new AlertDialog.Builder(Tiredofwaiting.this)
+				new AlertDialog.Builder(this)
 		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
 		        		"<font color='#006500'>Originally performed by The Kinks; from <i>'Basket Case', 1994</i></font><br><br>" +
 		        		getString(R.string.album)+

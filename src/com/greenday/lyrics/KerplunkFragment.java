@@ -23,6 +23,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 import android.os.Bundle;
 import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.Html;
@@ -46,8 +47,9 @@ public class KerplunkFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_kerplunk, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
         
+		getActivity();
 		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_detail", true);
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
 
         if (firstboot){
 		 
@@ -55,7 +57,8 @@ public class KerplunkFragment extends Fragment {
         	Crouton.makeText(getActivity(), "You can see some details about the current album.", Style.INFO).show();
         	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
         	
-         getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE)
+         getActivity();
+		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
          .edit()
          .putBoolean("firstboot_detail", false)
          .commit();
@@ -136,7 +139,6 @@ public class KerplunkFragment extends Fragment {
                 	 public void onItemClick(AdapterView<?> p, View view, int position, long id)
                 	 
                 	 { 
-                		 Fragment fragment = null;
                 		 switch(position)
                          {
                          case 0:  Intent newActivity = new Intent(getActivity(), Lightyears.class);     

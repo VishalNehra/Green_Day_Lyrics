@@ -78,7 +78,7 @@ public class JAR extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(JAR.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		"<font color='#006500'>International Superhits! <i>(2001)<br><br></i></font>" +
 			        		getString(R.string.track_length) +

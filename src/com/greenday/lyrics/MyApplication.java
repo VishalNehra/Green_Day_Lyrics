@@ -3,8 +3,10 @@ package com.greenday.lyrics;
 import org.acra.*;
 import org.acra.annotation.*;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 
+@SuppressLint("SdCardPath")
 @ReportsCrashes(
 		formKey="",
 				formUri = "https://vishal007.cloudant.com/acra-greenday/",
@@ -24,8 +26,7 @@ import android.app.Application;
 								 },
 		 		mode = ReportingInteractionMode.TOAST,
                 forceCloseDialogAfterToast = false, // optional, default false
-                resToastText = R.string.crash_toast_text,  
-								 
+                resToastText = R.string.crash_toast_text,
                 applicationLogFile = "/data/data/com.greenday.lyrics/files/log/extra.log"
 		)
 public class MyApplication extends Application {

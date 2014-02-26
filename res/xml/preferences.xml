@@ -187,6 +187,23 @@
             
             <!-- Extras -->
       <PreferenceCategory android:title="@string/extras_title">
+          
+          
+          <SwitchPreference android:key="scroll"
+              android:title="@string/scroll_title"
+              android:summaryOn="@string/scroll_summary_on"
+              android:summaryOff="@string/scroll_summary_off"
+              android:defaultValue="false" />
+          <CheckBoxPreference android:key="display"
+              android:title="@string/display_title"
+              android:summaryOn="@string/display_summary_on"
+              android:summaryOff="@string/display_summary_off"
+              android:defaultValue="false" />
+          <CheckBoxPreference android:key="touch"
+              android:title="@string/touch_title"
+              android:summaryOn="@string/touch_summary_on"
+              android:summaryOff="@string/touch_summary_off"
+              android:defaultValue="false" />
             <Preference android:key="store"
                 android:title="@string/store_title"
                 android:summary="@string/store_summary">

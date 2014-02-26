@@ -78,7 +78,7 @@ public class Onwagon extends Activity {
 			if(item.getItemId()==R.id.action_label)
 			{
 				//Info
-				AlertDialog builder = new AlertDialog.Builder(Onwagon.this)
+				new AlertDialog.Builder(this)
 		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
 		        		"<font color='#006500'>From <i>'Longview', 1994</i></font><br><br>" +
 		        		getString(R.string.album)+

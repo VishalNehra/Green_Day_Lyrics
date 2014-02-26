@@ -6,6 +6,7 @@
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView
+    android:id="@+id/sv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
@@ -45,7 +46,6 @@ This is the dawning of the rest of our lives\n
 On holiday\n
 \n
 (Hey!)\n
-(Say, hey!)\n
 \n
 (3,4)\n\n
 'The representative from California has the floor'\n

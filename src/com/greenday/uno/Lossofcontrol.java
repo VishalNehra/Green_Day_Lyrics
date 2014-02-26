@@ -78,7 +78,7 @@ public class Lossofcontrol extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Lossofcontrol.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		getString(R.string.uno_album) +
 			        		getString(R.string.track_length) +

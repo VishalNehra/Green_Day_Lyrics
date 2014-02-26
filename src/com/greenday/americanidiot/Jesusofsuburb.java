@@ -13,10 +13,12 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,21 +38,37 @@ public class Jesusofsuburb extends Activity {
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		
 		//Automatically scroll view
-				final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-				new CountDownTimer(174000, 1) {          
+		boolean scroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
+		if(scroll)
+		{
+			final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+				new CountDownTimer(548000, 100) {          
 
 					 public void onTick(long millisUntilFinished) {             
-
-					   sv.scrollBy(0, 130);         
+					   sv.scrollBy(0, 1);         
 					 }          
-
+		
 					 public void onFinish() {  
-						 Crouton.makeText(Jesusofsuburb.this, "Finished", Style.INFO).show();
+						 Crouton.makeText((Activity) getApplicationContext(), "Finished", Style.INFO).show();
 					 }      
-
+		
 					}.start();
-	}
-	
+			}
+			
+			//Display
+			boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+			if(display)
+			{
+				tv1.setKeepScreenOn(true);
+			}
+			
+			//Touch
+			boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
+			if(touch)
+			{
+				tv1.setOnDragListener(null);
+			}
+	}	
 	//Action bar code below
 	
 		@Override
@@ -98,7 +116,7 @@ public class Jesusofsuburb extends Activity {
 			if(item.getItemId()==R.id.action_label)
 			{
 				//Info
-				AlertDialog builder = new AlertDialog.Builder(Jesusofsuburb.this)
+				new AlertDialog.Builder(this)
 		        .setMessage(Html.fromHtml(getString(R.string.album)+
 		        		getString(R.string.americanidiot_album) +
 		        		getString(R.string.track_length) +

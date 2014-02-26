@@ -78,7 +78,7 @@ public class Dodada extends Activity {
 			if(item.getItemId()==R.id.action_label)
 			{
 				//Info
-				AlertDialog builder = new AlertDialog.Builder(Dodada.this)
+				new AlertDialog.Builder(this)
 		        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
 		        		"<font color='#006500'>From <i>'Brain Stew/Jaded', 1996</i></font><br><br>" +
 		        		getString(R.string.album)+
@@ -96,7 +96,7 @@ public class Dodada extends Activity {
 		        })
 		        .setNegativeButton("Go To Originals", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
-		            	AlertDialog builder2 = new AlertDialog.Builder(Dodada.this)
+		            	new AlertDialog.Builder(Dodada.this)
 				        
 				        .setNeutralButton("Brain Stew", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int which) {

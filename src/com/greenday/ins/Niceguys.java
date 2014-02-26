@@ -78,7 +78,7 @@ public class Niceguys extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Niceguys.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
 			        		"<font color='#006500'>Nimrod, <i>1997</i></font>"))
 			        .setPositiveButton("OK", new DialogInterface.OnClickListener() {

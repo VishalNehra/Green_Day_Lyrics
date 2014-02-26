@@ -18,7 +18,6 @@ import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.ListFragment;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
@@ -59,7 +58,8 @@ public class MainActivity extends Activity {
             // 1) Launch the authentication activity
             // 2) Then save the state
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-            ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
+            @SuppressWarnings("deprecation")
+			ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
             		"Welcome", "\nSlide from left to right to access list of albums.\n" +
             				"\nYou can also press highlighted area as an alternative.", co);
            
@@ -246,7 +246,6 @@ public class MainActivity extends Activity {
     private void displayView(int position) {
         // update the main content by replacing fragments
         Fragment fragment = null;
-        ListFragment listfragment = null;
         switch (position) {
         case 0:
             fragment = new HomeFragment();

@@ -25,6 +25,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.os.Bundle;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,15 +45,17 @@ public class UnreleasedFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_unreleased, container, false);
 		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
         
+		getActivity();
 		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE).getBoolean("firstboot_unreleased", true);
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_unreleased", true);
 
         if (firstboot){
 		 
         	Crouton.makeText(getActivity(), "Some things are not updated in this section.", Style.ALERT).show();
         	Crouton.makeText(getActivity(), "More things will be added here in next release.", Style.INFO).show();
         	
-         getActivity().getSharedPreferences("BOOT_PREF", getActivity().MODE_PRIVATE)
+         getActivity();
+		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
          .edit()
          .putBoolean("firstboot_unreleased", false)
          .commit();
@@ -99,7 +102,6 @@ public class UnreleasedFragment extends Fragment {
                 	 public void onItemClick(AdapterView<?> p, View view, int position, long id)
                 	 
                 	 { 
-                		 Fragment fragment = null;
                 		 switch(position)
                          {
                          case 0:  Intent newActivity = new Intent(getActivity(), Allbymyself.class);     

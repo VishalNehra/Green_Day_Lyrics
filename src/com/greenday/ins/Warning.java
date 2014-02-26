@@ -78,7 +78,7 @@ public class Warning extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Warning.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
 			        		"<font color='#006500'>Warning, <i>2000</i></font>"))
 			        .setPositiveButton("OK", new DialogInterface.OnClickListener() {

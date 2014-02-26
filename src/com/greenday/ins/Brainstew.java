@@ -78,7 +78,7 @@ public class Brainstew extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Brainstew.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</b></font></u><br>" +
 			        		"<font color='#006500'>Insomniac, <i>1994</i></font>"))
 			        .setNeutralButton("OK", new DialogInterface.OnClickListener() {

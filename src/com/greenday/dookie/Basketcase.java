@@ -79,7 +79,7 @@ public class Basketcase extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Basketcase.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		getString(R.string.dookie_album) +
 			        		getString(R.string.track_length) +

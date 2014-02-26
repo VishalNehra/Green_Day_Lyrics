@@ -78,7 +78,7 @@ public class Android extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Android.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		getString(R.string.kerplunk_album) +
 			        		getString(R.string.track_length) +

@@ -180,14 +180,14 @@ import com.greenday.warning.Misery;
 import com.greenday.warning.Waiting;
 import com.greenday.warning.Warning;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
-
+import android.R.string;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
@@ -208,6 +208,7 @@ import android.widget.Toast;
 public class Allsongs extends Activity {
 	ArrayAdapter<String> adapter;
 	
+	@SuppressWarnings("deprecation")
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
@@ -235,7 +236,7 @@ public class Allsongs extends Activity {
            	 @Override
            	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
            	        //The view is hidden/dismissed
-           		AlertDialog builder = new AlertDialog.Builder(Allsongs.this)
+           		new AlertDialog.Builder(Allsongs.this)
             	.setTitle("INSTRUCTIONS")
             	.setMessage(Html.fromHtml("Instructions for the usage of <b>Now Playing</b> feature<br><br>" +
             			"1. Open <b><font color='#464ea3'>'Now Playing'</font></b> either from HOME or anywhere in app using Action Bar Icon.<br><br>" +
@@ -274,21 +275,29 @@ public class Allsongs extends Activity {
         }
         
         //Boot_pref ends
-		
+
 		ImageButton b=(ImageButton) findViewById(R.id.txtQuery_play);
 		b.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				boolean track = getIntent().getBooleanExtra("track", true);
-				if(track){
-				txtQuery.setText(getIntent().getExtras().getString("track"));
-				}
-				else if(track=(String) null != null)
+				
+				SharedPreferences prefs = Allsongs.this.getSharedPreferences(
+					      "PLAYING_PREF", Context.MODE_PRIVATE);
+				String track = prefs.getString("song", "track");
+				//boolean track = getIntent().getBooleanExtra("track", true);
+				//if(track){
+				//txtQuery.setText(getIntent().getExtras().getString("track"));
+				//}
+				//SharedPreferences prefs = Allsongs.this.getSharedPreferences(
+					//      "PLAYING_PREF", Context.MODE_PRIVATE);
+				//String l = prefs.getString(track, track);
+				txtQuery.setText(track);
+				/*else if(track=(String) null != null)
 				{
 					Crouton.makeText(Allsongs.this, "No track", Style.ALERT).show();
-				}
+				}*/
 			}
 		});
 		
@@ -296,7 +305,7 @@ public class Allsongs extends Activity {
 		boolean fix=getIntent().getBooleanExtra("fix", true);
 		if(fix)
 		{
-			
+			//Just kidding :P
 		}
 		
 		//Action bar search
@@ -525,6 +534,7 @@ public class Allsongs extends Activity {
         
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
+			@SuppressWarnings("rawtypes")
 			@Override
 			public void onItemClick(AdapterView parent, View view,int position, long _id) {
 				String values = adapter.getItem(position);

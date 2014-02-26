@@ -79,7 +79,7 @@ public class Welcomeparadise extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Welcomeparadise.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>INFORMATION</font></b></u><br>" +
 			        		"<font color='#006500'><i>Re-recorded version from Kerplunk</font></i><br><br>" + 
 			        		getString(R.string.album)+

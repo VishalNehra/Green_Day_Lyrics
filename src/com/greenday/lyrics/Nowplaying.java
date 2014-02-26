@@ -11,6 +11,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
@@ -36,7 +37,7 @@ public void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.nowplaying);
 getActionBar().setDisplayHomeAsUpEnabled(true);
-
+//moveTaskToBack(true);
 IntentFilter iF = new IntentFilter();
 getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 
@@ -57,6 +58,7 @@ registerReceiver(mReceiver, iF);
 
 private BroadcastReceiver mReceiver = new BroadcastReceiver() {
 
+@SuppressWarnings("unused")
 @Override
 public void onReceive(Context context, Intent intent)
 {
@@ -65,6 +67,10 @@ String artist = intent.getStringExtra("artist");
 final String album = intent.getStringExtra("album");
 final String track = intent.getStringExtra("track");
 Log.d("Music",artist+":"+album+":"+track);
+SharedPreferences prefs = context.getSharedPreferences(
+	      "PLAYING_PREF", Context.MODE_PRIVATE);
+prefs.edit().putString("song", track).commit();
+finish();
 ImageButton b=(ImageButton) findViewById(R.id.imageButton3);
 b.setOnClickListener(new OnClickListener() {
 	

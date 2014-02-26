@@ -8,14 +8,20 @@ import com.greenday.lyrics.Nowplaying;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class Arewethewaiting extends Activity {
@@ -29,6 +35,26 @@ public class Arewethewaiting extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+		//Automatically scroll view
+				this.getSharedPreferences(
+					      "PLAYING_PREF", Context.MODE_PRIVATE);
+				boolean autoscroll = getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE).getBoolean("autoscroll", false);
+				if(autoscroll)
+				{
+				final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+				new CountDownTimer(232000, 200) {          
+
+					 public void onTick(long millisUntilFinished) {             
+					   sv.scrollBy(0, 1);         
+					 }          
+
+					 public void onFinish() {  
+						 Crouton.makeText(Arewethewaiting.this, "Finished", Style.INFO).show();
+					 }      
+
+					}.start();
+				}
 	}
 	
 	//Action bar code below
@@ -78,7 +104,7 @@ public class Arewethewaiting extends Activity {
 			if(item.getItemId()==R.id.action_label)
 			{
 				//Info
-				AlertDialog builder = new AlertDialog.Builder(Arewethewaiting.this)
+				new AlertDialog.Builder(this)
 		        .setMessage(Html.fromHtml(getString(R.string.album)+
 		        		getString(R.string.americanidiot_album) +
 		        		getString(R.string.track_length) +

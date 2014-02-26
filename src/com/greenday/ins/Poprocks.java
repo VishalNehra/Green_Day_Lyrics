@@ -78,7 +78,7 @@ public class Poprocks extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Poprocks.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml(getString(R.string.album)+
 			        		"<font color='#006500'>International Superhits! <i>(2001)</i></font><br><br>" +
 			        		getString(R.string.track_length) +

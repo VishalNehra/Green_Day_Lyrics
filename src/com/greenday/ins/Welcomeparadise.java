@@ -78,7 +78,7 @@ public class Welcomeparadise extends Activity {
 				if(item.getItemId()==R.id.action_label)
 				{
 					//Info
-					AlertDialog builder = new AlertDialog.Builder(Welcomeparadise.this)
+					new AlertDialog.Builder(this)
 			        .setMessage(Html.fromHtml("<font color='#524ef8'><b><u>From</font></b></u><br>" +
 			        		"<font color='#006500'>Dookie, <i>1994</i></font>"))
 			        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
