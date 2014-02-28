@@ -3,6 +3,10 @@ package com.greenday.americanidiot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
+
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
@@ -12,48 +16,55 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class Boulevardofbd extends Activity {
-	
+public class Boulevardofbd extends Activity implements OnRefreshListener{
+	private PullToRefreshLayout mPullToRefreshLayout;	
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_boulevard);
+		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Automatically scroll view
-				this.getSharedPreferences(
-					      "PLAYING_PREF", Context.MODE_PRIVATE);
-				boolean autoscroll = getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE).getBoolean("autoscroll", false);
-				if(autoscroll)
-				{
-				final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-				new CountDownTimer(232000, 200) {          
+		boolean scroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
+		if(scroll)
+		{
+			//Pull to refresh
+			ActionBarPullToRefresh.from(this)
+			.allChildrenArePullable()
+			.listener(this)
+			.setup(mPullToRefreshLayout);
+		}
 
-					 public void onTick(long millisUntilFinished) {             
-					   sv.scrollBy(0, 1);         
-					 }          
-
-					 public void onFinish() {  
-						 Crouton.makeText(Boulevardofbd.this, "Finished", Style.INFO).show();
-					 }      
-
-					}.start();
-				}
+		//Display
+		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+		if(display)
+		{
+			tv1.setKeepScreenOn(true);
+		}
+		
+		//Touch
+		boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
+		if(touch)
+		{
+			
+		}
 	}
 	
 	//Action bar code below
@@ -116,5 +127,21 @@ public class Boulevardofbd extends Activity {
 		            return super.onOptionsItemSelected(item);
 			
 		}
-		
+
+		//Pull to refresh listener
+				@Override
+				public void onRefreshStarted(View view) {
+					// TODO Auto-generated method stub
+						new CountDownTimer(260000, 8000) {          
+							final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+							 public void onTick(long millisUntilFinished) {             
+							   sv.scrollBy(0, 80);         
+							 }          
+				
+							 public void onFinish() {  
+								 Crouton.makeText(Boulevardofbd.this, "Finished", Style.CONFIRM).show();
+								 mPullToRefreshLayout.setRefreshComplete();
+							 }      
+							}.start();
+				}
 	}

@@ -5,7 +5,9 @@ import java.io.File;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import android.R.string;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,13 +18,19 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceManager;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+import android.graphics.Color;
+import com.fourmob.colorpicker.ColorPickerDialog;
+import com.fourmob.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
 import com.greenday.lyrics.R;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
@@ -31,10 +39,13 @@ public class Settings extends PreferenceActivity {
 	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
 		
-		ListPreference mthemeChooser;
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense;
+		//Set theme must be used before super.oncreate or any other layout declaration!
+		Util.setAppTheme(this);
+		
+		super.onCreate(savedInstanceState);
+		ListPreference mTheme;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mthemeChooser;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		/*For extending settings as listview
@@ -43,8 +54,74 @@ public class Settings extends PreferenceActivity {
 		*/
 		
 		//Theme chooser
-		mthemeChooser = (ListPreference)findPreference("themechooser");
-		mthemeChooser.setEnabled(false);
+		
+		/*final ColorPickerDialog colorPickerDialog = new ColorPickerDialog();
+		colorPickerDialog.initialize(R.string.dialog_title, new int[] { Color.CYAN, Color.LTGRAY, Color.BLACK, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED, Color.GRAY, Color.YELLOW }, Color.YELLOW, 3, 2);
+		colorPickerDialog.setOnColorSelectedListener(new OnColorSelectedListener() {
+
+			@Override
+			public void onColorSelected(int color) {
+				Toast.makeText(Settings.this, "selectedColor : " + color, Toast.LENGTH_SHORT).show();
+			}
+		});
+		mthemeChooser = (Preference)findPreference("themechooser");
+		mthemeChooser.setEnabled(true);
+		mthemeChooser.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+					//colorPickerDialog.show(getSupportFragmentManager(), "colorpicker");
+				return false;
+			}
+		});*/
+		mTheme = (ListPreference) findPreference("themechooser");
+		String s = null;
+		//String sp = PreferenceManager.getDefaultSharedPreferences(this).getString("themechooser", "1");
+		/*mTheme.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+			
+			@Override
+			public boolean onPreferenceChange(Preference arg0, Object arg1) {
+				// TODO Auto-generated method stub
+				Toast.makeText(Settings.this, "Not programmed", Toast.LENGTH_LONG).show();
+				//System.exit(0);
+				return false;
+			}
+		});*/
+		/*Utils.onActivityCreateSetTheme(this);
+		//int theme = Integer.parseInt(sp.getString("themechooser", s));
+		if(sp=="0")
+	    {
+			Utils.changeToTheme(this, Utils.THEME_DARK);
+	    }
+	    if(sp=="1")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_DEFAULT);
+	    }
+	    if(sp=="2")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_FROOTI);
+	    }
+	    if(sp=="3")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_LIGHT);
+	    }
+	    if(sp=="4")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_LIME);
+	    }
+	    if(sp=="5")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_MOJO);
+	    }
+	    if(sp=="6")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_PURPLE);
+	    }
+	    if(sp=="7")
+	    {
+	    	Utils.changeToTheme(this, Utils.THEME_ROSE);
+	    }*/
 		
 		//Cache
 		mCache = (Preference)findPreference("cache");
@@ -224,10 +301,10 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Disclaimer")
-				.setMessage(Html.fromHtml("* All the lyrics provided in this app belongs to their respective owners/artists.<br>" +
-						"* I <b>DO NOT</b> own any of the lyrics provided in this app.<br>" +
-						"* I will not be liable for any errors or omissions in any kind of information provided in this app.<br>" +
-						"* This app is purely made for entertainment purpose only."
+				.setMessage(Html.fromHtml("> All the lyrics provided in this app belongs to their respective owners/artists.<br><br>" +
+						"> I <b>DO NOT</b> own any of the lyrics provided in this app.<br><br>" +
+						"> I will not be liable for any errors or omissions in any kind of information provided in this app.<br><br>" +
+						"> This app is purely made for entertainment purpose only."
 				))
 				.setPositiveButton("Close", new OnClickListener() {
 					
@@ -249,8 +326,8 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Open Source Licenses")
-				.setMessage(Html.fromHtml("* This app is in compliance with open source licenses used by libraries in this app.<br>" +
-						"* You can find the source code at Github."))
+				.setMessage(Html.fromHtml("> This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
+						"> You can find the source code at Github."))
 				.setPositiveButton("Close", new OnClickListener() {
 					
 					@Override

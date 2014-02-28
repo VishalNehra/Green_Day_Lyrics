@@ -21,11 +21,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -34,12 +37,12 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_americanidiot);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
+		final ScrollView sv = (ScrollView) findViewById(R.id.sv);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
@@ -68,7 +71,7 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
 		if(touch)
 		{
-			
+			tv1.setClickable(false);
 		}
 	}
 	
@@ -135,23 +138,10 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 	}
 	
 	@Override
-	protected void onStop() {
-		// TODO Auto-generated method stub
-		getCurrentFocus().findFocus().computeScroll();
-		super.onStop();
-	}
-	
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		getCurrentFocus().findFocus().computeScroll();
-		super.onPause();
-	}
-	
-	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
-		getCurrentFocus().findFocus().computeScroll();
+		final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+		sv.getY();
 		super.onDestroy();
 	}
 
@@ -167,7 +157,7 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 				 }          
 	
 				 public void onFinish() {  
-					 Crouton.makeText(Americanidiot.this, "Finished", Style.INFO).show();
+					 Crouton.makeText(Americanidiot.this, "Finished", Style.CONFIRM).show();
 					 mPullToRefreshLayout.setRefreshComplete();
 				 }      
 				}.start();

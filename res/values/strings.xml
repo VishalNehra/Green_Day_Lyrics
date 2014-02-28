@@ -2,6 +2,7 @@
 <resources>
 
     <string name="now_playing">Now Playing</string>
+    <string name="dialog_title">Choose one</string>
     
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>

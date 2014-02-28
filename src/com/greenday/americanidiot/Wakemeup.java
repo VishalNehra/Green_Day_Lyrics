@@ -3,6 +3,10 @@ package com.greenday.americanidiot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
+
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
@@ -12,47 +16,54 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class Wakemeup extends Activity {
-	
+public class Wakemeup extends Activity implements OnRefreshListener{
+	private PullToRefreshLayout mPullToRefreshLayout;		
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_wakemeup);
+		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		
 		//Automatically scroll view
-				this.getSharedPreferences(
-					      "PLAYING_PREF", Context.MODE_PRIVATE);
-				boolean autoscroll = getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE).getBoolean("autoscroll", false);
-				if(autoscroll)
+				boolean scroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
+				if(scroll)
 				{
-				final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-				new CountDownTimer(232000, 200) {          
+					//Pull to refresh
+					ActionBarPullToRefresh.from(this)
+					.allChildrenArePullable()
+					.listener(this)
+					.setup(mPullToRefreshLayout);
+				}
 
-					 public void onTick(long millisUntilFinished) {             
-					   sv.scrollBy(0, 1);         
-					 }          
-
-					 public void onFinish() {  
-						 Crouton.makeText(Wakemeup.this, "Finished", Style.INFO).show();
-					 }      
-
-					}.start();
+				//Display
+				boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+				if(display)
+				{
+					tv1.setKeepScreenOn(true);
+				}
+				
+				//Touch
+				boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
+				if(touch)
+				{
+					
 				}
 	}
 	
@@ -117,4 +128,20 @@ public class Wakemeup extends Activity {
 			
 		}
 		
+		//Pull to refresh listener
+				@Override
+				public void onRefreshStarted(View view) {
+					// TODO Auto-generated method stub
+						new CountDownTimer(285000, 250) {          
+							final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+							 public void onTick(long millisUntilFinished) {             
+							   sv.scrollBy(0, 1);         
+							 }          
+				
+							 public void onFinish() {  
+								 Crouton.makeText(Wakemeup.this, "Finished", Style.CONFIRM).show();
+								 mPullToRefreshLayout.setRefreshComplete();
+							 }      
+							}.start();
+				}
 	}

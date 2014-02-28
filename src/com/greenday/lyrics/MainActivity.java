@@ -47,6 +47,10 @@ public class MainActivity extends Activity {
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	
+		//Set theme must be used before super.oncreate or any other layout declaration!
+		Util.setAppTheme(this);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
