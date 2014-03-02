@@ -10,7 +10,7 @@ This documentation contains all the info. you need to know about the app.
 
 Download
 --------------
-[Play Store](https://play.google.com/store/apps/details?id=com.greenday.lyrics)
+[Play Store](https://play.google.com/store/apps/details?id=com.greenday.lyrics)  
 [XDA](http://forum.xda-developers.com/showthread.php?t=2654021)
 
 Screenshots
