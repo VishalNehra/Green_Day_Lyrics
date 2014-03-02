@@ -59,9 +59,12 @@
     
     <string name="greenday_title">Green Day</string>
     <string name="theme_title">Theme</string>
-    <string name="themechooser_title">Theme Chooser</string>
+    <string name="themechooser_title">Choose Theme</string>
     <string name="themechooser_dialog">Choose a theme</string>
     <string name="themes_list_default">Default</string>
+    
+    <string name="apply_theme_title">Apply Theme</string>
+    <string name="apply_theme_summary">Apply selected theme</string>
     
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>

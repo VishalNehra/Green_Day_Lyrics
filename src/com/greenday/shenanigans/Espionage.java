@@ -7,6 +7,8 @@ import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.lyrics.Util;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -20,6 +22,10 @@ public class Espionage extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+    	
+		//Set theme must be used before super.oncreate or any other layout declaration
+		Util.setAppTheme(this);
+
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shenanigans_espionage);

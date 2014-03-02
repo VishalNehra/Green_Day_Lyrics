@@ -5,9 +5,7 @@ import java.io.File;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import android.R.string;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,20 +14,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceManager;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
-import android.graphics.Color;
-import com.fourmob.colorpicker.ColorPickerDialog;
-import com.fourmob.colorpicker.ColorPickerSwatch.OnColorSelectedListener;
 import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -40,12 +30,11 @@ public class Settings extends PreferenceActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		
-		//Set theme must be used before super.oncreate or any other layout declaration!
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		ListPreference mTheme;
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mthemeChooser;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		/*For extending settings as listview
@@ -53,75 +42,34 @@ public class Settings extends PreferenceActivity {
 		ListView lv=(ListView) findViewById(R.id.listView1);
 		*/
 		
-		//Theme chooser
-		
-		/*final ColorPickerDialog colorPickerDialog = new ColorPickerDialog();
-		colorPickerDialog.initialize(R.string.dialog_title, new int[] { Color.CYAN, Color.LTGRAY, Color.BLACK, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED, Color.GRAY, Color.YELLOW }, Color.YELLOW, 3, 2);
-		colorPickerDialog.setOnColorSelectedListener(new OnColorSelectedListener() {
-
-			@Override
-			public void onColorSelected(int color) {
-				Toast.makeText(Settings.this, "selectedColor : " + color, Toast.LENGTH_SHORT).show();
-			}
-		});
-		mthemeChooser = (Preference)findPreference("themechooser");
-		mthemeChooser.setEnabled(true);
-		mthemeChooser.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+		//Theme
+		mApplyTheme = (Preference)findPreference("apply_theme");
+		mApplyTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
 				// TODO Auto-generated method stub
-					//colorPickerDialog.show(getSupportFragmentManager(), "colorpicker");
+				new AlertDialog.Builder(Settings.this)
+				.setMessage("Are you sure")
+				.setNegativeButton("No", new OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						// TODO Auto-generated method stub
+						closeContextMenu();
+					}
+				})
+				.setPositiveButton("YES", new OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						System.exit(0);
+					}
+				}).show();
 				return false;
 			}
-		});*/
-		mTheme = (ListPreference) findPreference("themechooser");
-		String s = null;
-		//String sp = PreferenceManager.getDefaultSharedPreferences(this).getString("themechooser", "1");
-		/*mTheme.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-			
-			@Override
-			public boolean onPreferenceChange(Preference arg0, Object arg1) {
-				// TODO Auto-generated method stub
-				Toast.makeText(Settings.this, "Not programmed", Toast.LENGTH_LONG).show();
-				//System.exit(0);
-				return false;
-			}
-		});*/
-		/*Utils.onActivityCreateSetTheme(this);
-		//int theme = Integer.parseInt(sp.getString("themechooser", s));
-		if(sp=="0")
-	    {
-			Utils.changeToTheme(this, Utils.THEME_DARK);
-	    }
-	    if(sp=="1")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_DEFAULT);
-	    }
-	    if(sp=="2")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_FROOTI);
-	    }
-	    if(sp=="3")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_LIGHT);
-	    }
-	    if(sp=="4")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_LIME);
-	    }
-	    if(sp=="5")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_MOJO);
-	    }
-	    if(sp=="6")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_PURPLE);
-	    }
-	    if(sp=="7")
-	    {
-	    	Utils.changeToTheme(this, Utils.THEME_ROSE);
-	    }*/
+		});
 		
 		//Cache
 		mCache = (Preference)findPreference("cache");
@@ -370,5 +318,16 @@ public class Settings extends PreferenceActivity {
     protected void onDestroy() {
         super.onDestroy();
       }
+	
+	/*Override back button function
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+	    if ((keyCode == KeyEvent.KEYCODE_BACK))
+	    {       
+	        //System.exit(0);
+	    }
+	    return super.onKeyDown(keyCode, event);
+	}*/
     
 }

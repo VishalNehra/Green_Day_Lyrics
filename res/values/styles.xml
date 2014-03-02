@@ -18,14 +18,11 @@
     <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
     
     <!-- Themes -->
-    <!-- Default -->
+    <!-- Default 
     <style name="Default.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background</item>
         <item name="android:backgroundSplit">@null</item>
-    </style>
-   <style name="Default.Settings" parent="@style/Theme.Default">
-	<item name="android:windowBackground">@drawable/allsongs_bg</item>
-	</style>
+    </style>-->
 	<style name="Lime.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_lime</item>
         <item name="android:backgroundSplit">@null</item>
@@ -50,7 +47,7 @@
         <item name="android:background">@drawable/ab_background_frooti</item>
         <item name="android:backgroundSplit">@null</item>
     </style>
-    <style name="Purple.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <style name="Lavender.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_purple</item>
         <item name="android:backgroundSplit">@null</item>
     </style>

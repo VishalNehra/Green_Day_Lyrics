@@ -3,13 +3,14 @@
     
     <string-array name="themes_list">
         <item>Default</item>
+        <item>Dark</item>
         <item>Light</item>
-        <item>Light Lime</item>
-        <item>Light Mojo</item>
-        <item>Light San Marino</item>
-        <item>Dark Lime</item>
-        <item>Dark Mojo</item>
-        <item>Dark San Marino</item>
+        <item>Lime</item>
+        <item>Rose</item>
+        <item>Mojo</item>
+        <item>Saffron</item>
+        <item>Frooti</item>
+        <item>Lavender</item>
     </string-array>
     
     <string-array name="themes_value">
@@ -21,6 +22,7 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
         
     </string-array>
     

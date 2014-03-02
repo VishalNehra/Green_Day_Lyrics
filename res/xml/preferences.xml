@@ -9,6 +9,9 @@
                 android:key="themechooser"
                 android:entries="@array/themes_list"
                 android:entryValues="@array/themes_value" />
+            <Preference android:title="@string/apply_theme_title"
+                android:key="apply_theme"
+                android:summary="@string/apply_theme_summary"/>
                 
         </PreferenceCategory>
         

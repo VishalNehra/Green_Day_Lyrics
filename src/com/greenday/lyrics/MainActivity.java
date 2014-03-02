@@ -51,11 +51,11 @@ public class MainActivity extends Activity {
 		//Set theme must be used before super.oncreate or any other layout declaration!
 		Util.setAppTheme(this);
 
-        super.onCreate(savedInstanceState);
+		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
         
-      //Boot_pref
+        //Boot_pref
         boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
 
         if (firstboot){

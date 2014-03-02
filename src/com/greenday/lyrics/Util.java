@@ -9,28 +9,27 @@ public class Util extends Activity {
 public static void setAppTheme(Activity a) {
 	
     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(a);
-    String sp1 = null;
     int mTheme = Integer.parseInt(sp.getString("themechooser", ""));
     
     if(mTheme==0)
     {
-    	a.setTheme(R.style.Theme_Dark);
+    	a.setTheme(R.style.Theme_Default);
     }
     if(mTheme==1)
     {
-    	a.setTheme(R.style.Theme_Default);
+    	a.setTheme(R.style.Theme_Dark);
     }
     if(mTheme==2)
     {
-    	a.setTheme(R.style.Theme_Frooti);
+    	a.setTheme(R.style.Theme_Light);
     }
     if(mTheme==3)
     {
-    	a.setTheme(R.style.Theme_Light);
+    	a.setTheme(R.style.Theme_Lime);
     }
     if(mTheme==4)
     {
-    	a.setTheme(R.style.Theme_Lime);
+    	a.setTheme(R.style.Theme_Rose);
     }
     if(mTheme==5)
     {
@@ -38,17 +37,16 @@ public static void setAppTheme(Activity a) {
     }
     if(mTheme==6)
     {
-    	a.setTheme(R.style.Theme_Purple);
+    	a.setTheme(R.style.Theme_Saffron);
     }
     if(mTheme==7)
     {
-    	a.setTheme(R.style.Theme_Rose);
+    	a.setTheme(R.style.Theme_Frooti);
     }
-    //if(mTheme==8)
-    //{
-    	//a.setTheme(R.style.Theme_Sky);
-    //}
-
+    if(mTheme==8)
+    {
+    	a.setTheme(R.style.Theme_Lavender);
+    }
 }
 }
 

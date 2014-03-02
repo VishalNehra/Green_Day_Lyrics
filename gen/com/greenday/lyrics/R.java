@@ -159,13 +159,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int sv_titleTextColor=0x7f01000e;
     }
     public static final class color {
-        public static final int counter_text_bg=0x7f080005;
-        public static final int counter_text_color=0x7f080006;
+        /**  #4d5ead 
+         */
+        public static final int counter_text_bg=0x7f080006;
+        public static final int counter_text_color=0x7f080007;
         public static final int default_progress_bar_color=0x7f080000;
+        /**  #5062b6 
+         */
         public static final int list_background=0x7f080002;
-        public static final int list_background2=0x7f080007;
-        public static final int list_background_pressed=0x7f080003;
-        public static final int list_divider=0x7f080004;
+        public static final int list_background_focus=0x7f080003;
+        /**  #669900 
+         */
+        public static final int list_background_pressed=0x7f080004;
+        /**  #4d5ead 
+         */
+        public static final int list_divider=0x7f080005;
         public static final int list_item_title=0x7f080001;
     }
     public static final class dimen {
@@ -539,115 +547,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int main_song=0x7f0b0002;
     }
     public static final class string {
-        public static final int about_title=0x7f070031;
+        public static final int about_title=0x7f070033;
         /**  Alert Dialog 
          */
-        public static final int album=0x7f07012f;
-        public static final int album10_summary=0x7f070060;
-        public static final int album10_title=0x7f07005f;
-        public static final int album11_summary=0x7f070062;
-        public static final int album11_title=0x7f070061;
-        public static final int album12_summary=0x7f070064;
-        public static final int album12_title=0x7f070063;
-        public static final int album13_summary=0x7f070066;
-        public static final int album13_title=0x7f070065;
-        public static final int album1_summary=0x7f07004e;
+        public static final int album=0x7f070131;
+        public static final int album10_summary=0x7f070062;
+        public static final int album10_title=0x7f070061;
+        public static final int album11_summary=0x7f070064;
+        public static final int album11_title=0x7f070063;
+        public static final int album12_summary=0x7f070066;
+        public static final int album12_title=0x7f070065;
+        public static final int album13_summary=0x7f070068;
+        public static final int album13_title=0x7f070067;
+        public static final int album1_summary=0x7f070050;
         /**  ALBUM LIST 
          */
-        public static final int album1_title=0x7f07004d;
-        public static final int album2_summary=0x7f070050;
-        public static final int album2_title=0x7f07004f;
-        public static final int album3_summary=0x7f070052;
-        public static final int album3_title=0x7f070051;
-        public static final int album4_summary=0x7f070054;
-        public static final int album4_title=0x7f070053;
-        public static final int album5_summary=0x7f070056;
-        public static final int album5_title=0x7f070055;
-        public static final int album6_summary=0x7f070058;
-        public static final int album6_title=0x7f070057;
-        public static final int album7_summary=0x7f07005a;
-        public static final int album7_title=0x7f070059;
-        public static final int album8_summary=0x7f07005c;
-        public static final int album8_title=0x7f07005b;
-        public static final int album9_summary=0x7f07005e;
-        public static final int album9_title=0x7f07005d;
-        public static final int albums_summary=0x7f070039;
-        public static final int albums_title=0x7f070038;
+        public static final int album1_title=0x7f07004f;
+        public static final int album2_summary=0x7f070052;
+        public static final int album2_title=0x7f070051;
+        public static final int album3_summary=0x7f070054;
+        public static final int album3_title=0x7f070053;
+        public static final int album4_summary=0x7f070056;
+        public static final int album4_title=0x7f070055;
+        public static final int album5_summary=0x7f070058;
+        public static final int album5_title=0x7f070057;
+        public static final int album6_summary=0x7f07005a;
+        public static final int album6_title=0x7f070059;
+        public static final int album7_summary=0x7f07005c;
+        public static final int album7_title=0x7f07005b;
+        public static final int album8_summary=0x7f07005e;
+        public static final int album8_title=0x7f07005d;
+        public static final int album9_summary=0x7f070060;
+        public static final int album9_title=0x7f07005f;
+        public static final int albums_summary=0x7f07003b;
+        public static final int albums_title=0x7f07003a;
         public static final int all_songs=0x7f070010;
-        public static final int allbymyself_title=0x7f07012e;
+        public static final int allbymyself_title=0x7f070130;
         /**  Nimrod 
          */
-        public static final int allthetime_title=0x7f0700c8;
-        public static final int amanda_title=0x7f070097;
-        public static final int americaneulogy_title=0x7f0700ac;
-        public static final int americanidiot_album=0x7f070137;
-        public static final int americanidiot_album_release=0x7f070138;
+        public static final int allthetime_title=0x7f0700ca;
+        public static final int amanda_title=0x7f070099;
+        public static final int americaneulogy_title=0x7f0700ae;
+        public static final int americanidiot_album=0x7f070139;
+        public static final int americanidiot_album_release=0x7f07013a;
         /**  Songs titles 
  American Idiot 
          */
-        public static final int americanidiot_title=0x7f07006a;
-        public static final int amy_title=0x7f07008f;
-        public static final int android_title=0x7f0700fe;
-        public static final int angelblue_title=0x7f07007f;
-        public static final int app_name=0x7f070047;
+        public static final int americanidiot_title=0x7f07006c;
+        public static final int amy_title=0x7f070091;
+        public static final int android_title=0x7f070100;
+        public static final int angelblue_title=0x7f070081;
+        public static final int app_name=0x7f070049;
+        public static final int apply_theme_summary=0x7f070027;
+        public static final int apply_theme_title=0x7f070026;
         /**  Insomniac 
          */
-        public static final int armatage_title=0x7f0700da;
-        public static final int ashley_title=0x7f07008a;
-        public static final int atlibrary_title=0x7f070109;
-        public static final int avesrnde_title=0x7f070092;
-        public static final int awtw_title=0x7f07006e;
-        public static final int babuvula_title=0x7f0700df;
-        public static final int babyeyes_title=0x7f07008b;
-        public static final int basketcase_title=0x7f0700ee;
-        public static final int bestthing_title=0x7f070103;
+        public static final int armatage_title=0x7f0700dc;
+        public static final int ashley_title=0x7f07008c;
+        public static final int atlibrary_title=0x7f07010b;
+        public static final int avesrnde_title=0x7f070094;
+        public static final int awtw_title=0x7f070070;
+        public static final int babuvula_title=0x7f0700e1;
+        public static final int babyeyes_title=0x7f07008d;
+        public static final int basketcase_title=0x7f0700f0;
+        public static final int bestthing_title=0x7f070105;
         /**  Warning 
          */
-        public static final int bloodsex_title=0x7f0700bc;
-        public static final int bobd_title=0x7f07006d;
-        public static final int brainstew_title=0x7f0700e3;
-        public static final int brat_title=0x7f0700db;
+        public static final int bloodsex_title=0x7f0700be;
+        public static final int bobd_title=0x7f07006f;
+        public static final int brainstew_title=0x7f0700e5;
+        public static final int brat_title=0x7f0700dd;
         /**  TRE 
          */
-        public static final int brutallove_title=0x7f070090;
+        public static final int brutallove_title=0x7f070092;
         /**  Dookie 
          */
-        public static final int burnout_title=0x7f0700e8;
-        public static final int cache_summary=0x7f070028;
-        public static final int cache_title=0x7f070027;
-        public static final int carpediem_title=0x7f070079;
-        public static final int castaway_title=0x7f0700bd;
+        public static final int burnout_title=0x7f0700ea;
+        public static final int cache_summary=0x7f07002a;
+        public static final int cache_title=0x7f070029;
+        public static final int carpediem_title=0x7f07007b;
+        public static final int castaway_title=0x7f0700bf;
         public static final int changelog_change=0x7f07000c;
         public static final int changelog_close=0x7f07000a;
-        public static final int changelog_summary=0x7f07002c;
-        public static final int changelog_title=0x7f07002b;
+        public static final int changelog_summary=0x7f07002e;
+        public static final int changelog_title=0x7f07002d;
         public static final int changelog_version=0x7f07000b;
-        public static final int christie_title=0x7f0700f9;
-        public static final int chump_title=0x7f0700ea;
-        public static final int church_title=0x7f0700bf;
-        public static final int cigarettes_title=0x7f07011e;
-        public static final int coffeemaker_title=0x7f070108;
+        public static final int christie_title=0x7f0700fb;
+        public static final int chump_title=0x7f0700ec;
+        public static final int church_title=0x7f0700c1;
+        public static final int cigarettes_title=0x7f070120;
+        public static final int coffeemaker_title=0x7f07010a;
         public static final int color_picker_default_title=0x7f070002;
         public static final int color_swatch_description=0x7f070000;
         public static final int color_swatch_description_selected=0x7f070001;
-        public static final int comingclean_title=0x7f0700f2;
-        public static final int copyright=0x7f070134;
-        public static final int copyright1=0x7f070135;
-        public static final int copyright2=0x7f070136;
+        public static final int comingclean_title=0x7f0700f4;
+        public static final int copyright=0x7f070136;
+        public static final int copyright1=0x7f070137;
+        public static final int copyright2=0x7f070138;
         /**  ACRA 
          */
         public static final int crash_toast_text=0x7f07000d;
         /**  DOS 
          */
-        public static final int cutonight_title=0x7f070083;
-        public static final int deadbeat_title=0x7f0700c2;
+        public static final int cutonight_title=0x7f070085;
+        public static final int deadbeat_title=0x7f0700c4;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f070046;
-        public static final int desensitized_title=0x7f0700af;
+        public static final int desc_list_item_icon=0x7f070048;
+        public static final int desensitized_title=0x7f0700b1;
         public static final int dialog_title=0x7f070008;
-        public static final int dirtybastards_title=0x7f070099;
-        public static final int disappearingboy_title=0x7f07010a;
+        public static final int dirtybastards_title=0x7f07009b;
+        public static final int disappearingboy_title=0x7f07010c;
         /**  Disclaimer title 
          */
         public static final int disclaimer_title=0x7f070013;
@@ -656,291 +666,291 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  Display 
          */
         public static final int display_title=0x7f07001b;
-        public static final int dodada_title=0x7f0700b9;
-        public static final int donate_summary=0x7f070030;
-        public static final int donate_title=0x7f07002f;
-        public static final int dontleaveme_title=0x7f07010b;
-        public static final int dookie_album=0x7f070139;
-        public static final int dookie_album_release=0x7f07013a;
-        public static final int dos_album=0x7f07013b;
-        public static final int dos_album_release=0x7f07013c;
-        public static final int dramaqueen_title=0x7f070093;
-        public static final int drawer_close=0x7f070049;
-        public static final int drawer_open=0x7f070048;
-        public static final int dryice_title=0x7f07010c;
-        public static final int eastjesus_title=0x7f0700a3;
-        public static final int eighty_title=0x7f0700fd;
-        public static final int eightysix_title=0x7f0700e0;
-        public static final int emeniussleepus_title=0x7f0700f3;
-        public static final int espionage_title=0x7f0700b3;
-        public static final int extordgirl_title=0x7f070072;
-        public static final int extras_title=0x7f070069;
-        public static final int fallinlove_title=0x7f0700b2;
-        public static final int fashion_title=0x7f0700c0;
-        public static final int favouriteson_title=0x7f07011f;
-        public static final int fellforyou_title=0x7f07007c;
-        public static final int fod_title=0x7f0700f5;
-        public static final int foughtlaw_title=0x7f070122;
-        public static final int fucktime_title=0x7f070084;
-        public static final int geekstink_title=0x7f0700dd;
-        public static final int givemenov_title=0x7f070070;
-        public static final int goingpasalacqua_title=0x7f07010d;
-        public static final int goodriddance_title=0x7f0700c9;
-        public static final int governator_title=0x7f070120;
+        public static final int dodada_title=0x7f0700bb;
+        public static final int donate_summary=0x7f070032;
+        public static final int donate_title=0x7f070031;
+        public static final int dontleaveme_title=0x7f07010d;
+        public static final int dookie_album=0x7f07013b;
+        public static final int dookie_album_release=0x7f07013c;
+        public static final int dos_album=0x7f07013d;
+        public static final int dos_album_release=0x7f07013e;
+        public static final int dramaqueen_title=0x7f070095;
+        public static final int drawer_close=0x7f07004b;
+        public static final int drawer_open=0x7f07004a;
+        public static final int dryice_title=0x7f07010e;
+        public static final int eastjesus_title=0x7f0700a5;
+        public static final int eighty_title=0x7f0700ff;
+        public static final int eightysix_title=0x7f0700e2;
+        public static final int emeniussleepus_title=0x7f0700f5;
+        public static final int espionage_title=0x7f0700b5;
+        public static final int extordgirl_title=0x7f070074;
+        public static final int extras_title=0x7f07006b;
+        public static final int fallinlove_title=0x7f0700b4;
+        public static final int fashion_title=0x7f0700c2;
+        public static final int favouriteson_title=0x7f070121;
+        public static final int fellforyou_title=0x7f07007e;
+        public static final int fod_title=0x7f0700f7;
+        public static final int foughtlaw_title=0x7f070124;
+        public static final int fucktime_title=0x7f070086;
+        public static final int geekstink_title=0x7f0700df;
+        public static final int givemenov_title=0x7f070072;
+        public static final int goingpasalacqua_title=0x7f07010f;
+        public static final int goodriddance_title=0x7f0700cb;
+        public static final int governator_title=0x7f070122;
         /**  Settings 
          */
         public static final int greenday_title=0x7f070021;
-        public static final int grouch_title=0x7f0700cd;
-        public static final int guns_title=0x7f0700ab;
-        public static final int haushinka_title=0x7f0700ca;
-        public static final int havingblast_title=0x7f0700e9;
-        public static final int heartscollide_title=0x7f070121;
-        public static final int hints_summary=0x7f07002a;
-        public static final int hints_title=0x7f070029;
-        public static final int hitchinaride_title=0x7f0700cb;
-        public static final int holdon_title=0x7f0700c3;
-        public static final int holiday_title=0x7f07006c;
-        public static final int homcom_title=0x7f070075;
-        public static final int horseshoes_title=0x7f0700a9;
-        public static final int inferno_title=0x7f0700a1;
-        public static final int insomniac_album=0x7f07013d;
-        public static final int insomniac_album_release=0x7f07013e;
-        public static final int intheend_title=0x7f0700f4;
-        public static final int iwasthere_title=0x7f07010f;
-        public static final int jackass_title=0x7f0700c4;
-        public static final int jaded_title=0x7f0700e4;
-        public static final int jar_title=0x7f07011a;
-        public static final int jinx_title=0x7f0700d4;
-        public static final int jos_title=0x7f07006b;
-        public static final int judgedaughter_title=0x7f070115;
-        public static final int kerplunk_album=0x7f07013f;
-        public static final int kerplunk_album_release=0x7f070140;
-        public static final int kid_title=0x7f070094;
-        public static final int killthedj_title=0x7f07007b;
-        public static final int kingforaday_title=0x7f0700d8;
-        public static final int kissingsanta_title=0x7f070123;
-        public static final int knowledge_title=0x7f070110;
-        public static final int knowyourenemy_title=0x7f07009e;
+        public static final int grouch_title=0x7f0700cf;
+        public static final int guns_title=0x7f0700ad;
+        public static final int haushinka_title=0x7f0700cc;
+        public static final int havingblast_title=0x7f0700eb;
+        public static final int heartscollide_title=0x7f070123;
+        public static final int hints_summary=0x7f07002c;
+        public static final int hints_title=0x7f07002b;
+        public static final int hitchinaride_title=0x7f0700cd;
+        public static final int holdon_title=0x7f0700c5;
+        public static final int holiday_title=0x7f07006e;
+        public static final int homcom_title=0x7f070077;
+        public static final int horseshoes_title=0x7f0700ab;
+        public static final int inferno_title=0x7f0700a3;
+        public static final int insomniac_album=0x7f07013f;
+        public static final int insomniac_album_release=0x7f070140;
+        public static final int intheend_title=0x7f0700f6;
+        public static final int iwasthere_title=0x7f070111;
+        public static final int jackass_title=0x7f0700c6;
+        public static final int jaded_title=0x7f0700e6;
+        public static final int jar_title=0x7f07011c;
+        public static final int jinx_title=0x7f0700d6;
+        public static final int jos_title=0x7f07006d;
+        public static final int judgedaughter_title=0x7f070117;
+        public static final int kerplunk_album=0x7f070141;
+        public static final int kerplunk_album_release=0x7f070142;
+        public static final int kid_title=0x7f070096;
+        public static final int killthedj_title=0x7f07007d;
+        public static final int kingforaday_title=0x7f0700da;
+        public static final int kissingsanta_title=0x7f070125;
+        public static final int knowledge_title=0x7f070112;
+        public static final int knowyourenemy_title=0x7f0700a0;
         /**  Label title 
          */
         public static final int label_title=0x7f070015;
-        public static final int ladycobra_title=0x7f07008c;
-        public static final int lastamerican_title=0x7f0700a5;
-        public static final int lastnight_title=0x7f0700a2;
-        public static final int lastridein_title=0x7f0700d3;
-        public static final int lazybones_title=0x7f070086;
-        public static final int length=0x7f070131;
-        public static final int letterbomb_title=0x7f070073;
-        public static final int letyourselfgo_title=0x7f07007a;
+        public static final int ladycobra_title=0x7f07008e;
+        public static final int lastamerican_title=0x7f0700a7;
+        public static final int lastnight_title=0x7f0700a4;
+        public static final int lastridein_title=0x7f0700d5;
+        public static final int lazybones_title=0x7f070088;
+        public static final int length=0x7f070133;
+        public static final int letterbomb_title=0x7f070075;
+        public static final int letyourselfgo_title=0x7f07007c;
         /**  License title 
          */
         public static final int license_title=0x7f070014;
         /**  Kerplunk 
          */
-        public static final int lightyears_title=0x7f0700f6;
-        public static final int likeastone_title=0x7f070124;
-        public static final int littleboytrain_title=0x7f070096;
-        public static final int lobotomy_title=0x7f0700a0;
-        public static final int longview_title=0x7f0700eb;
-        public static final int lossofcontrol_title=0x7f07007d;
-        public static final int macy_title=0x7f0700c7;
-        public static final int makeoutparty_title=0x7f070088;
+        public static final int lightyears_title=0x7f0700f8;
+        public static final int likeastone_title=0x7f070126;
+        public static final int littleboytrain_title=0x7f070098;
+        public static final int lobotomy_title=0x7f0700a2;
+        public static final int longview_title=0x7f0700ed;
+        public static final int lossofcontrol_title=0x7f07007f;
+        public static final int macy_title=0x7f0700c9;
+        public static final int makeoutparty_title=0x7f07008a;
         /**  International Superhits 
          */
-        public static final int maria_title=0x7f070118;
-        public static final int mechanicalman_title=0x7f070125;
-        public static final int member1_summary=0x7f07003b;
-        public static final int member1_title=0x7f07003a;
-        public static final int member2_summary=0x7f07003d;
-        public static final int member2_title=0x7f07003c;
-        public static final int member3_summary=0x7f07003f;
-        public static final int member3_title=0x7f07003e;
-        public static final int member4_summary=0x7f070041;
-        public static final int member4_title=0x7f070040;
-        public static final int member5_summary=0x7f070043;
-        public static final int member5_title=0x7f070042;
-        public static final int member6_summary=0x7f070045;
-        public static final int member6_title=0x7f070044;
-        public static final int members_summary=0x7f070037;
-        public static final int members_title=0x7f070036;
-        public static final int minnesotagirl_title=0x7f070126;
-        public static final int minority_title=0x7f0700c6;
-        public static final int misery_title=0x7f0700c1;
-        public static final int missingyou_title=0x7f070091;
-        public static final int murdercity_title=0x7f0700a6;
-        public static final int mygeneration_title=0x7f070105;
-        public static final int niceguys_title=0x7f0700cc;
-        public static final int nightlife_title=0x7f07008d;
-        public static final int nimrod_album=0x7f070141;
-        public static final int nimrod_album_release=0x7f070142;
-        public static final int ninetyninerev_title=0x7f07009a;
-        public static final int nooneknows_title=0x7f0700ff;
-        public static final int nopride_title=0x7f0700de;
+        public static final int maria_title=0x7f07011a;
+        public static final int mechanicalman_title=0x7f070127;
+        public static final int member1_summary=0x7f07003d;
+        public static final int member1_title=0x7f07003c;
+        public static final int member2_summary=0x7f07003f;
+        public static final int member2_title=0x7f07003e;
+        public static final int member3_summary=0x7f070041;
+        public static final int member3_title=0x7f070040;
+        public static final int member4_summary=0x7f070043;
+        public static final int member4_title=0x7f070042;
+        public static final int member5_summary=0x7f070045;
+        public static final int member5_title=0x7f070044;
+        public static final int member6_summary=0x7f070047;
+        public static final int member6_title=0x7f070046;
+        public static final int members_summary=0x7f070039;
+        public static final int members_title=0x7f070038;
+        public static final int minnesotagirl_title=0x7f070128;
+        public static final int minority_title=0x7f0700c8;
+        public static final int misery_title=0x7f0700c3;
+        public static final int missingyou_title=0x7f070093;
+        public static final int murdercity_title=0x7f0700a8;
+        public static final int mygeneration_title=0x7f070107;
+        public static final int niceguys_title=0x7f0700ce;
+        public static final int nightlife_title=0x7f07008f;
+        public static final int nimrod_album=0x7f070143;
+        public static final int nimrod_album_release=0x7f070144;
+        public static final int ninetyninerev_title=0x7f07009c;
+        public static final int nooneknows_title=0x7f070101;
+        public static final int nopride_title=0x7f0700e0;
         public static final int now_playing=0x7f070007;
         /**  UNO 
          */
-        public static final int nuclearfamily_title=0x7f070077;
-        public static final int ohlove_title=0x7f070082;
+        public static final int nuclearfamily_title=0x7f070079;
+        public static final int ohlove_title=0x7f070084;
         public static final int ok=0x7f070006;
-        public static final int oneiwant_title=0x7f070116;
-        public static final int oneoflies_title=0x7f0700fc;
-        public static final int onlyofyou_title=0x7f070111;
-        public static final int onwagon_title=0x7f0700ba;
-        public static final int oominated_title=0x7f0700fb;
-        public static final int outsider_title=0x7f0700b1;
-        public static final int panicsong_title=0x7f0700e1;
-        public static final int paperlanterns_title=0x7f070112;
-        public static final int peacemaker_title=0x7f0700a4;
-        public static final int platypus_title=0x7f0700d1;
+        public static final int oneiwant_title=0x7f070118;
+        public static final int oneoflies_title=0x7f0700fe;
+        public static final int onlyofyou_title=0x7f070113;
+        public static final int onwagon_title=0x7f0700bc;
+        public static final int oominated_title=0x7f0700fd;
+        public static final int outsider_title=0x7f0700b3;
+        public static final int panicsong_title=0x7f0700e3;
+        public static final int paperlanterns_title=0x7f070114;
+        public static final int peacemaker_title=0x7f0700a6;
+        public static final int platypus_title=0x7f0700d3;
         /**  Play title 
          */
         public static final int play_title=0x7f070011;
-        public static final int poprocks_title=0x7f070119;
-        public static final int privateale_title=0x7f0700fa;
-        public static final int prosthetichead_title=0x7f0700d9;
+        public static final int poprocks_title=0x7f07011b;
+        public static final int privateale_title=0x7f0700fc;
+        public static final int prosthetichead_title=0x7f0700db;
         public static final int pull_to_refresh_pull_label=0x7f070003;
         public static final int pull_to_refresh_refreshing_label=0x7f070005;
         public static final int pull_to_refresh_release_label=0x7f070004;
-        public static final int pullingteeth_title=0x7f0700ed;
+        public static final int pullingteeth_title=0x7f0700ef;
         /**  Unreleased 
          */
-        public static final int quickone_title=0x7f07011c;
-        public static final int rate_summary=0x7f070068;
+        public static final int quickone_title=0x7f07011e;
+        public static final int rate_summary=0x7f07006a;
         /**  Rate Button 
          */
-        public static final int rate_title=0x7f070067;
-        public static final int razorbacks_title=0x7f0700f7;
-        public static final int redundant_title=0x7f0700ce;
-        public static final int reject_title=0x7f0700d6;
+        public static final int rate_title=0x7f070069;
+        public static final int razorbacks_title=0x7f0700f9;
+        public static final int redundant_title=0x7f0700d0;
+        public static final int reject_title=0x7f0700d8;
         /**  Report title 
          */
         public static final int report_title=0x7f070012;
-        public static final int reportproblem=0x7f07004b;
-        public static final int reportsong=0x7f07004c;
-        public static final int rest_title=0x7f070113;
-        public static final int restlessheart_title=0x7f0700a8;
-        public static final int roadtoacceptance_title=0x7f070114;
-        public static final int rotting_title=0x7f0700b8;
-        public static final int rustyjames_title=0x7f070081;
-        public static final int sassafrasroots_title=0x7f0700f0;
-        public static final int scattered_title=0x7f0700cf;
+        public static final int reportproblem=0x7f07004d;
+        public static final int reportsong=0x7f07004e;
+        public static final int rest_title=0x7f070115;
+        public static final int restlessheart_title=0x7f0700aa;
+        public static final int roadtoacceptance_title=0x7f070116;
+        public static final int rotting_title=0x7f0700ba;
+        public static final int rustyjames_title=0x7f070083;
+        public static final int sassafrasroots_title=0x7f0700f2;
+        public static final int scattered_title=0x7f0700d1;
         public static final int scroll_summary_off=0x7f07001a;
         public static final int scroll_summary_on=0x7f070019;
         /**  Automatically Scroll 
          */
         public static final int scroll_title=0x7f070018;
-        public static final int scumbag_title=0x7f0700b5;
+        public static final int scumbag_title=0x7f0700b7;
         public static final int search_hint=0x7f07000f;
         /**  Searchtitle 
          */
         public static final int search_title=0x7f07000e;
-        public static final int seethelight_title=0x7f0700ad;
+        public static final int seethelight_title=0x7f0700af;
         /**  Options Menu items 
          */
-        public static final int settings=0x7f07004a;
+        public static final int settings=0x7f07004c;
         /**  Settings title 
          */
         public static final int settings_title=0x7f070016;
-        public static final int sexdrugs_title=0x7f070095;
-        public static final int she_title=0x7f0700ef;
-        public static final int shenanigans_album=0x7f070143;
-        public static final int shenanigans_album_release=0x7f070144;
-        public static final int shesarebel_title=0x7f070071;
-        public static final int shoplifter_title=0x7f070127;
-        public static final int shout_title=0x7f070128;
+        public static final int sexdrugs_title=0x7f070097;
+        public static final int she_title=0x7f0700f1;
+        public static final int shenanigans_album=0x7f070145;
+        public static final int shenanigans_album_release=0x7f070146;
+        public static final int shesarebel_title=0x7f070073;
+        public static final int shoplifter_title=0x7f070129;
+        public static final int shout_title=0x7f07012a;
         /**  Showcaseviews 
          */
         public static final int showcase_button_ok=0x7f070017;
-        public static final int sickofme_title=0x7f0700b7;
-        public static final int sixteen_title=0x7f070107;
+        public static final int sickofme_title=0x7f0700b9;
+        public static final int sixteen_title=0x7f070109;
         /**  21st centuary breakdown 
          */
-        public static final int songofcentuary_title=0x7f07009c;
-        public static final int source_summary=0x7f070035;
-        public static final int source_title=0x7f070034;
-        public static final int stateofmind_title=0x7f07011d;
-        public static final int staticage_title=0x7f0700aa;
-        public static final int staythenight_title=0x7f070078;
-        public static final int stjimmy_title=0x7f07006f;
-        public static final int stopredflash_title=0x7f070085;
-        public static final int storage_title=0x7f070026;
-        public static final int store_summary=0x7f07002e;
-        public static final int store_title=0x7f07002d;
-        public static final int strangeland_title=0x7f070104;
-        public static final int strayheart_title=0x7f070089;
-        public static final int stuartave_title=0x7f0700e2;
-        public static final int stuckwithme_title=0x7f0700dc;
+        public static final int songofcentuary_title=0x7f07009e;
+        public static final int source_summary=0x7f070037;
+        public static final int source_title=0x7f070036;
+        public static final int stateofmind_title=0x7f07011f;
+        public static final int staticage_title=0x7f0700ac;
+        public static final int staythenight_title=0x7f07007a;
+        public static final int stjimmy_title=0x7f070071;
+        public static final int stopredflash_title=0x7f070087;
+        public static final int storage_title=0x7f070028;
+        public static final int store_summary=0x7f070030;
+        public static final int store_title=0x7f07002f;
+        public static final int strangeland_title=0x7f070106;
+        public static final int strayheart_title=0x7f07008b;
+        public static final int stuartave_title=0x7f0700e4;
+        public static final int stuckwithme_title=0x7f0700de;
         /**  Shenanigans 
          */
-        public static final int suffocate_title=0x7f0700ae;
-        public static final int sweetchildren_title=0x7f070102;
-        public static final int sweetsixt_title=0x7f070080;
-        public static final int takeback_title=0x7f0700d7;
-        public static final int tcb_album=0x7f070145;
-        public static final int tcb_album_release=0x7f070146;
-        public static final int tcb_title=0x7f07009d;
-        public static final int teenage_title=0x7f070129;
-        public static final int thatsallright_title=0x7f07012a;
-        public static final int theforgotten_title=0x7f07009b;
+        public static final int suffocate_title=0x7f0700b0;
+        public static final int sweetchildren_title=0x7f070104;
+        public static final int sweetsixt_title=0x7f070082;
+        public static final int takeback_title=0x7f0700d9;
+        public static final int tcb_album=0x7f070147;
+        public static final int tcb_album_release=0x7f070148;
+        public static final int tcb_title=0x7f07009f;
+        public static final int teenage_title=0x7f07012b;
+        public static final int thatsallright_title=0x7f07012c;
+        public static final int theforgotten_title=0x7f07009d;
         public static final int theme_title=0x7f070022;
         public static final int themechooser_dialog=0x7f070024;
         public static final int themechooser_title=0x7f070023;
         public static final int themes_list_default=0x7f070025;
         /**  1,039/Smoothed Out Slappy Hours 
          */
-        public static final int thousandhours_title=0x7f070106;
-        public static final int tightwad_title=0x7f0700e6;
-        public static final int tiredofwaiting_title=0x7f0700b6;
+        public static final int thousandhours_title=0x7f070108;
+        public static final int tightwad_title=0x7f0700e8;
+        public static final int tiredofwaiting_title=0x7f0700b8;
         /**  Changelog 
          */
         public static final int title_changelog=0x7f070009;
-        public static final int tns_album=0x7f070147;
-        public static final int tns_album_release=0x7f070148;
-        public static final int toomuch_title=0x7f07012b;
+        public static final int tns_album=0x7f070149;
+        public static final int tns_album_release=0x7f07014a;
+        public static final int toomuch_title=0x7f07012d;
         public static final int touch_summary_off=0x7f070020;
         public static final int touch_summary_on=0x7f07001f;
         /**  Touch 
          */
         public static final int touch_title=0x7f07001e;
-        public static final int track_length=0x7f070130;
-        public static final int track_list=0x7f070133;
-        public static final int tre_album=0x7f07014a;
-        public static final int tre_album_release=0x7f070149;
-        public static final int troublemaker_title=0x7f07007e;
-        public static final int uno_album=0x7f07014c;
-        public static final int uno_album_release=0x7f07014b;
-        public static final int uptight_title=0x7f0700d2;
-        public static final int version_summary=0x7f070033;
-        public static final int version_title=0x7f070032;
-        public static final int vivalagloria2_title=0x7f0700a7;
-        public static final int vivalagloria_title=0x7f07009f;
-        public static final int waiting_title=0x7f0700c5;
-        public static final int walkaway_title=0x7f070098;
-        public static final int walking_title=0x7f0700e7;
-        public static final int walkingalone_title=0x7f0700d5;
-        public static final int walkingcontradiction_title=0x7f07011b;
-        public static final int wannabeontv_title=0x7f0700b4;
-        public static final int wantbealone_title=0x7f07010e;
-        public static final int warning_album=0x7f07014e;
-        public static final int warning_album_release=0x7f07014d;
-        public static final int warning_title=0x7f0700be;
-        public static final int wearechampions_title=0x7f07012c;
-        public static final int welcome_title=0x7f0700f8;
-        public static final int welcomeparadise_title=0x7f0700ec;
-        public static final int westbound_title=0x7f0700e5;
-        public static final int whatshername_title=0x7f070076;
-        public static final int whencomearound_title=0x7f0700f1;
-        public static final int whowrote_title=0x7f070100;
-        public static final int whyyouwanthim_title=0x7f070117;
-        public static final int wildone_title=0x7f070087;
-        public static final int wmuwse_title=0x7f070074;
-        public static final int wordsmightate_title=0x7f070101;
-        public static final int workingclasshero_title=0x7f07012d;
-        public static final int worryrock_title=0x7f0700d0;
-        public static final int wowthatsloud_title=0x7f07008e;
-        public static final int writers=0x7f070132;
-        public static final int youlied_title=0x7f0700b0;
-        public static final int yourdead_title=0x7f0700bb;
+        public static final int track_length=0x7f070132;
+        public static final int track_list=0x7f070135;
+        public static final int tre_album=0x7f07014c;
+        public static final int tre_album_release=0x7f07014b;
+        public static final int troublemaker_title=0x7f070080;
+        public static final int uno_album=0x7f07014e;
+        public static final int uno_album_release=0x7f07014d;
+        public static final int uptight_title=0x7f0700d4;
+        public static final int version_summary=0x7f070035;
+        public static final int version_title=0x7f070034;
+        public static final int vivalagloria2_title=0x7f0700a9;
+        public static final int vivalagloria_title=0x7f0700a1;
+        public static final int waiting_title=0x7f0700c7;
+        public static final int walkaway_title=0x7f07009a;
+        public static final int walking_title=0x7f0700e9;
+        public static final int walkingalone_title=0x7f0700d7;
+        public static final int walkingcontradiction_title=0x7f07011d;
+        public static final int wannabeontv_title=0x7f0700b6;
+        public static final int wantbealone_title=0x7f070110;
+        public static final int warning_album=0x7f070150;
+        public static final int warning_album_release=0x7f07014f;
+        public static final int warning_title=0x7f0700c0;
+        public static final int wearechampions_title=0x7f07012e;
+        public static final int welcome_title=0x7f0700fa;
+        public static final int welcomeparadise_title=0x7f0700ee;
+        public static final int westbound_title=0x7f0700e7;
+        public static final int whatshername_title=0x7f070078;
+        public static final int whencomearound_title=0x7f0700f3;
+        public static final int whowrote_title=0x7f070102;
+        public static final int whyyouwanthim_title=0x7f070119;
+        public static final int wildone_title=0x7f070089;
+        public static final int wmuwse_title=0x7f070076;
+        public static final int wordsmightate_title=0x7f070103;
+        public static final int workingclasshero_title=0x7f07012f;
+        public static final int worryrock_title=0x7f0700d2;
+        public static final int wowthatsloud_title=0x7f070090;
+        public static final int writers=0x7f070134;
+        public static final int youlied_title=0x7f0700b2;
+        public static final int yourdead_title=0x7f0700bd;
     }
     public static final class style {
         /** 
@@ -955,38 +965,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090013;
+        public static final int AppBaseTheme=0x7f090011;
+        public static final int Frooti_ActionBar=0x7f09000f;
+        public static final int Lavender_ActionBar=0x7f090010;
         /**  Themes 
  Default 
+    <style name="Default.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_background</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
          */
-        public static final int Default_ActionBar=0x7f09000a;
-        public static final int Default_Settings=0x7f09000b;
-        public static final int Frooti_ActionBar=0x7f090011;
-        public static final int Lime_ActionBar=0x7f09000c;
-        public static final int Mojo_ActionBar=0x7f09000f;
-        public static final int Purple_ActionBar=0x7f090012;
+        public static final int Lime_ActionBar=0x7f09000a;
+        public static final int Mojo_ActionBar=0x7f09000d;
         public static final int Reportproblem=0x7f090008;
         public static final int Reportsong=0x7f090009;
-        public static final int Rose_ActionBar=0x7f09000e;
-        public static final int Saffron_ActionBar=0x7f090010;
+        public static final int Rose_ActionBar=0x7f09000c;
+        public static final int Saffron_ActionBar=0x7f09000e;
         public static final int ShowcaseButton=0x7f090000;
         public static final int ShowcaseView=0x7f090002;
         public static final int ShowcaseView_Light=0x7f090001;
-        public static final int Sky_ActionBar=0x7f09000d;
+        public static final int Sky_ActionBar=0x7f09000b;
         public static final int TextAppearance_ShowcaseView_Detail=0x7f090004;
         public static final int TextAppearance_ShowcaseView_Detail_Light=0x7f090005;
         public static final int TextAppearance_ShowcaseView_Title=0x7f090003;
         public static final int TextAppearance_ShowcaseView_Title_Light=0x7f090006;
-        public static final int Theme_Dark=0x7f090015;
-        public static final int Theme_Default=0x7f090014;
-        public static final int Theme_Frooti=0x7f09001c;
-        public static final int Theme_Light=0x7f090016;
-        public static final int Theme_Lime=0x7f090017;
-        public static final int Theme_Mojo=0x7f09001a;
-        public static final int Theme_Purple=0x7f09001d;
-        public static final int Theme_Rose=0x7f090019;
-        public static final int Theme_Saffron=0x7f09001b;
-        public static final int Theme_Sky=0x7f090018;
+        public static final int Theme_Dark=0x7f090013;
+        public static final int Theme_Default=0x7f090012;
+        public static final int Theme_Frooti=0x7f090019;
+        public static final int Theme_Lavender=0x7f09001a;
+        public static final int Theme_Light=0x7f090014;
+        public static final int Theme_Lime=0x7f090015;
+        public static final int Theme_Mojo=0x7f090017;
+        public static final int Theme_Rose=0x7f090016;
+        public static final int Theme_Saffron=0x7f090018;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.

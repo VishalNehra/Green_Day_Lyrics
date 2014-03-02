@@ -216,6 +216,10 @@ public class Allsongs extends Activity {
 	public static final String CMDNEXT = "next";
 	
 	protected void onCreate(Bundle savedInstanceState) {
+    	
+		//Set theme must be used before super.oncreate or any other layout declaration
+		Util.setAppTheme(this);
+
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);

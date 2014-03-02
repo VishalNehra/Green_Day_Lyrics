@@ -7,6 +7,7 @@ import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
+import com.greenday.lyrics.Util;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -22,6 +23,10 @@ public class Toomuch extends Activity {
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+    	
+		//Set theme must be used before super.oncreate or any other layout declaration
+		Util.setAppTheme(this);
+
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.unreleased_toomuch);

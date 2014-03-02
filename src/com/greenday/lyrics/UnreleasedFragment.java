@@ -43,7 +43,7 @@ public class UnreleasedFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_unreleased, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
         
 		getActivity();
 		//Boot_pref

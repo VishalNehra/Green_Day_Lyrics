@@ -5,7 +5,7 @@ Introduction
 -----------------
 
 A must have app for any Green Day fan out there.  
-Green Day Lyrics is an android app that contains most of lyrics of song by Green Day punk rock band, with a modern, awesome looking UI.  
+Green Day Lyrics is an android app that contains most of lyrics of song by Green Day punk rock band, with a fancy UI.  
 This documentation contains all the info. you need to know about the app.  
 
 Download
@@ -24,7 +24,7 @@ Screenshots
 <img src="http://i57.tinypic.com/mjya12.png" height="335" width="200"/> 
 <img src="http://i61.tinypic.com/1zt1f4.png" height="335" width="200"/>
   
->Youtube video will be uploaded soon!
+>Youtube video [here](https://www.youtube.com/watch?v=JtJUXp9VIgM)
 
 Features
 -------------
@@ -36,16 +36,32 @@ which album, just type its name and you will get the song.
 
 <h5>Now Playing*</h5>
 Don't have time to open album and see lyrics of current playing song? This feature is for you!  
-Just play any Green Day song in music player and press on Now Playing option on the Home screen and you will automatically see the lyrics of current playing song.  
-Now no worries of searching and even typing name of song in Search Bar.
+Just play any Green Day song in music player and press on Play icon in the search bar of 'All Songs'.
+This feature has been tested successfully on `Google Play Music`, `Apollo Music Player`, `Poweramp` and `n7player`.
+Not working on `Winamp`.
 
 <h5>Labels</h5>
 Curious about who wrote the Green Day songs?  
 In labels you will get to know the length, writers, copyrights and more info. about the track.  Moreover, you can see labels for Albums too!
 
+<h5>Theme Chooser</h5>
+View all Green Day Lyrics with awesome looking themes.
+You can choose from lots of available themes in settings.
+
+<h5>Automatic Scrolling</h5>
+Tired of scrolling by yourself?
+Turn ON auto-scrolling from scrolling and enjoy reading lyrics without even touching the screen!
+This feature is useful while listening to song along with reading its lyrics.
+
+Don't forget to `Slide from top to bottom` to start the auto-scrolling.
+
+<h5>Navigation Drawer</h5>
+Browse through different albums using fancy Navigation Drawer.
+View album art icon, track counter and name of album inside navigation drawer itself.
+
 <h5>Stay tuned for more features!</h5>
 
-=======
+
 Changelog
 ---------
 
@@ -65,6 +81,7 @@ Thanks to
 * [Logback](https://github.com/tony19/logback-android)
 * [ShowcaseView](https://github.com/amlcurran/ShowcaseView)
 * [Crouton](https://github.com/keyboardsurfer/Crouton)
+* [ActionBar-PullToRefresh](https://github.com/chrisbanes/ActionBar-PullToRefresh)
 * [Stack Overflow](http://stackoverflow.com/)
 * And lots more!
 
