@@ -4,6 +4,11 @@
     <string name="now_playing">Now Playing</string>
     <string name="dialog_title">Choose one</string>
     
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    
+    <string name="search_hint">Type to search a song&#8230;</string>
+    
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
@@ -21,6 +26,11 @@
     
     <!-- Play title -->
     <string name="play_title">Show Now Playing Track</string>
+    
+    <!-- Confirm Exit title -->
+    <string name="exit_title">Confirm before exit</string>
+    <string name="exit_summary_on">Enabled</string>
+    <string name="exit_summary_off">Disabled</string>
     
     <!-- Report title -->
     <string name="report_title">Report this song</string>
@@ -42,18 +52,18 @@
     
     <!-- Automatically Scroll -->
     <string name="scroll_title">Automatic Scrolling</string>
-    <string name="scroll_summary_on">Pull screen Up to Down to start</string>
-    <string name="scroll_summary_off">Disabled</string>
+    <string name="scroll_summary_on">Not Implemented</string>
+    <string name="scroll_summary_off">Not Implemented</string>
     
     <!-- Display -->
     <string name="display_title">Screen Timeout</string>
-    <string name="display_summary_on">Never times out</string>
-    <string name="display_summary_off">Default screen timeout settings</string>
+    <string name="display_summary_on">Not Implemented</string>
+    <string name="display_summary_off">Not Implemented</string>
     
     <!-- Touch -->
     <string name="touch_title">Touch</string>
     <string name="touch_summary_on">Disabled in lyrics</string>
-    <string name="touch_summary_off">Recommended for auto acrolling</string>
+    <string name="touch_summary_off">Recommended for auto-scrolling</string>
     
     <!-- Settings -->
     
@@ -68,7 +78,7 @@
     
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>
-    <string name="cache_summary">Clears cache in memory</string>
+    <string name="cache_summary">Clears cache memory</string>
     <string name="hints_title">Review Hints</string>
     <string name="hints_summary">Missed any instruction? This option is for you.</string>
     
@@ -76,14 +86,14 @@
     <string name="changelog_summary">List of changes in app</string>
     
     <string name="store_title">Green Day Store</string>
-    <string name="store_summary">Support Green Day, purchase original stuff</string>
+    <string name="store_summary">Support Green Day, purchase original stuff.</string>
     
     <string name="donate_title">Donate version</string>
     <string name="donate_summary">Help me pay play store hosting charges</string>
     
     <string name="about_title">About</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">0.09 Alpha</string>
+    <string name="version_summary">v1.0</string>
     <string name="source_title">Application sources</string>
     <string name="source_summary">View app source code. </string>
     <string name="members_title">Members</string>
@@ -106,7 +116,7 @@
     <!-- Sliding menu items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>1039/Smooth...</item>
+        <item>1039/Smooth&#8230;</item>
         <item>Kerplunk</item>
         <item>Dookie</item>
         <item>Insomniac</item>
@@ -142,7 +152,6 @@
         <item>@drawable/ic_dos</item>
         <item>@drawable/ic_tre</item>
         <item>@drawable/ic_unreleased</item>
-
         
     </array>
     
@@ -154,7 +163,6 @@
     
     <!-- Options Menu items -->
     <string name="settings">Settings</string>
-    <string name="reportproblem">Report problem</string>
     <string name="reportsong">Report this song</string>
     
     <!-- ALBUM LIST -->

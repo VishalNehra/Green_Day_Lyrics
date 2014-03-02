@@ -22,14 +22,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -47,7 +44,7 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		setContentView(R.layout.americanidiot_americanidiot);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
-		final ScrollView sv = (ScrollView) findViewById(R.id.sv);
+		findViewById(R.id.sv);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
@@ -113,10 +110,12 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		}
 		if(item.getItemId()==R.id.action_search)
 		{
-			// search action
-        	Intent intent = new Intent(this, Allsongs.class);
-        	intent.putExtra("Search", true);
-        	startActivity(intent);
+			// Search action | Add as new task
+			Intent intent = new Intent(this, Allsongs.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			intent.putExtra("Search", true);
+			startActivity(intent);
 			return true;
 		}
 		if(item.getItemId()==R.id.action_label)
@@ -145,8 +144,6 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
-		final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-		sv.getY();
 		super.onDestroy();
 	}
 

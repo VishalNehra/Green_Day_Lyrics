@@ -11,15 +11,21 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 import java.util.ArrayList;
  
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -48,9 +54,25 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	
-		//Set theme must be used before super.oncreate or any other layout declaration!
-		Util.setAppTheme(this);
+		//Setting default theme on firstboot
+    	boolean firstboot_theme = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_theme", true);
 
+        if (firstboot_theme){
+        	//Setting default theme
+        	SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+    		sp.edit().putString("themechooser", "0").commit();
+    		
+    		getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+            .edit()
+            .putBoolean("firstboot_theme", false)
+            .commit();
+        }
+        else
+        {
+        	//Set theme must be used before super.oncreate or any other layout declaration!
+        	Util.setAppTheme(this);
+        }
+        
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTitle = mDrawerTitle = getTitle();
@@ -61,6 +83,8 @@ public class MainActivity extends Activity {
         if (firstboot){
             // 1) Launch the authentication activity
             // 2) Then save the state
+        	
+    		//Showcaseview
             ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
             //For leavign action bar unhidden; 
       		//co.insert = ShowcaseView.INSERT_TO_VIEW;
@@ -75,7 +99,7 @@ public class MainActivity extends Activity {
             	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
             	        //The view is hidden/dismissed
             		 Crouton.makeText(MainActivity.this, "This app is still in Beta, you may encounter bugs.", Style.ALERT).show();
-            		 Crouton.makeText(MainActivity.this, "Please report when you find any strange behaviour in app.", Style.INFO).show();
+            		 Crouton.makeText(MainActivity.this, "Please report if you find any strange behaviour in app.", Style.INFO).show();
             		 Crouton.makeText(MainActivity.this, "Go ahead, explore the app. and its features!", Style.INFO).show();
             	    }
 
@@ -344,4 +368,42 @@ public class MainActivity extends Activity {
         Crouton.clearCroutonsForActivity(this);
         super.onDestroy();
       }
+    
+    //Override back button function
+    
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+	    if ((keyCode == KeyEvent.KEYCODE_BACK))
+	    {   
+	    	boolean exit = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("exit", false);
+	    	if(exit)
+	    	{
+	        new AlertDialog.Builder(this)
+	        .setTitle("Confirm?")
+	        .setMessage("You are about to exit")
+	        .setNegativeButton("No", new OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					closeContextMenu();
+				}
+			})
+			.setPositiveButton("Yes", new OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					onBackPressed();
+				}
+			}).show();
+	    	}
+	    	else
+	    	{
+	    		onBackPressed();
+	    	}
+	    }
+	    return super.onKeyDown(keyCode, event);
+	}
 }

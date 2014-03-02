@@ -1,7 +1,6 @@
 package com.greenday.lyrics;
 	
-	import de.keyboardsurfer.android.widget.crouton.Crouton;
-import android.app.Fragment;
+	import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -45,7 +44,6 @@ import android.widget.ImageButton;
 	    }
 	    
 	    public void onDestroy() {
-	        Crouton.clearCroutonsForActivity(getActivity());
 	        super.onDestroy();
 	      }
 	    

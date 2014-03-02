@@ -49,9 +49,9 @@ public class WarningFragment extends Fragment {
 
         if (firstboot){
 		 
-        	Crouton.makeText(getActivity(), "If you press on the album icon at corner right", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "You can see some details about the current album.", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
+        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
         	
          getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)

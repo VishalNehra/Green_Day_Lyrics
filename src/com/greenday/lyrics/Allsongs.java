@@ -92,6 +92,7 @@ import com.greenday.nimrod.Walkingalone;
 import com.greenday.nimrod.Worryrock;
 import com.greenday.shenanigans.Desensitized;
 import com.greenday.shenanigans.Dodada;
+import com.greenday.shenanigans.Espionage;
 import com.greenday.shenanigans.Fallinlove;
 import com.greenday.shenanigans.Onwagon;
 import com.greenday.shenanigans.Outsider;
@@ -244,14 +245,14 @@ public class Allsongs extends Activity {
             // 1) Launch the authentication activity
            		new AlertDialog.Builder(Allsongs.this)
             	.setTitle("INSTRUCTIONS")
-            	.setMessage(Html.fromHtml("Instructions for the usage of <b>Now Playing</b> feature<br><br>" +
-            			"1. Press on <b><font color='#464ea3'>'Now Playing'</font></b> icon in search bar of 'All Songs'.<br><br>" +
-            			"2. Press on <b><font color='#464ea3'>'Search'</font></b> button in the 'Now Playing' screen.<br><br>" +
-            			"3. Now press on the <b><font color='#464ea3'>'Play'</font></b> icon in search bar. <br><br>" +
-            			"And then you will see name of your current playing song!<br>" +
-            			"When you change the song, repeat the same process.<br>" +
-            			"<br><br><u><b><font color='#e02923'>Warning!</font></b></u><br>" +
-            			"Feature tested only on <br>"))
+            	.setMessage(Html.fromHtml("How to use <b>'Now Playing'</b> feature?<br><br>" +
+            			"Just press on <b><font color='#464ea3'>'Play'</font></b> icon in search bar.<br><br>" +
+            			"Now, you should see the name of current track in music player.<br><br>" +
+            			"<b>Feature tested on:</b><br><font color='#464ea3'><i>Google Play Music<br>" +
+            			"Apollo Music Player<br> Poweramp<br> n7player<br> Stock Samsung and HTC players.</i></font>" +
+             			"<br><br><u><b><font color='#e02923'>Warning!</font></b></u><br>" +
+            			"Make sure that name of Green Day tracks in music player match with the name in the list (or official release name).<br>" +
+            			"This feature might not work on <i><font color='#464ea3'>Winamp</i></font>."))
             			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
     			            public void onClick(DialogInterface dialog, int which) {
     			                Allsongs.this.closeContextMenu();
@@ -346,6 +347,7 @@ public class Allsongs extends Activity {
 				"Dry Ice",
 				"East Jesus Nowhere",
 				"Emenius Sleepus",
+				"Espionage",
 				"Extraordinary Girl",
 				"F.O.D.",
 				"Fashion Victim",
@@ -677,6 +679,9 @@ public class Allsongs extends Activity {
 					startActivity(i);}
 				if (values=="Emenius Sleepus") {
 					i=new Intent(Allsongs.this, Emeniussleepus.class);
+					startActivity(i);}
+				if (values=="Espionage") {
+					i=new Intent(Allsongs.this, Espionage.class);
 					startActivity(i);}
 				if (values=="Extraordinary Girl") {
 					i=new Intent(Allsongs.this, Extraordgirl.class);

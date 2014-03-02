@@ -14,7 +14,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" 
         android:name="com.greenday.lyrics.MyApplication"
-         >
+        android:theme="@style/Theme.Default"
+         android:debuggable="false">
         <activity
             android:name="com.greenday.lyrics.MainActivity"
             android:label="@string/app_name" 

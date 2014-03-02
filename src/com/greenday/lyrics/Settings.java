@@ -14,9 +14,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
+import android.preference.SwitchPreference;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +36,9 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme, mVersion, mDonate, mRate;
+		SwitchPreference mScroll, mDisplay;
+		CheckBoxPreference mTouch;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		/*For extending settings as listview
@@ -59,7 +63,7 @@ public class Settings extends PreferenceActivity {
 						closeContextMenu();
 					}
 				})
-				.setPositiveButton("YES", new OnClickListener() {
+				.setPositiveButton("Yes", new OnClickListener() {
 					
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
@@ -287,6 +291,31 @@ public class Settings extends PreferenceActivity {
 				return false;
 			}
 		});
+		
+		//Scroll
+		mScroll = (SwitchPreference) findPreference("scroll");
+		mScroll.setEnabled(false);
+		
+		//Display
+		mDisplay =(SwitchPreference) findPreference("display");
+		mDisplay.setEnabled(false);
+		
+		//Touch
+		mTouch = (CheckBoxPreference) findPreference("touch");
+		mTouch.setEnabled(false);
+		
+		//Build Version
+		mVersion = findPreference("version");
+		mVersion.setEnabled(false);
+		
+		//Donate
+		mDonate = findPreference("donate");
+		mDonate.setEnabled(false);
+		
+		//Rate
+		mRate = findPreference("rate");
+		mRate.setEnabled(false);
+		
 		
 	}
 	

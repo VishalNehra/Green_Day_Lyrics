@@ -3,9 +3,9 @@
     
     <string-array name="themes_list">
         <item>Default</item>
-        <item>Dark</item>
         <item>Light</item>
         <item>Lime</item>
+        <item>Dark Sky</item>
         <item>Rose</item>
         <item>Mojo</item>
         <item>Saffron</item>

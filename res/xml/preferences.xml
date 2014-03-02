@@ -163,7 +163,7 @@
         <PreferenceCategory
             android:title="@string/about_title">
             <Preference
-                android:key="build_version"
+                android:key="version"
                 android:title="@string/version_title"
                 android:summary="@string/version_summary">
             <intent 
@@ -197,7 +197,7 @@
               android:summaryOn="@string/scroll_summary_on"
               android:summaryOff="@string/scroll_summary_off"
               android:defaultValue="false" />
-          <CheckBoxPreference android:key="display"
+          <SwitchPreference android:key="display"
               android:title="@string/display_title"
               android:summaryOn="@string/display_summary_on"
               android:summaryOff="@string/display_summary_off"
@@ -207,6 +207,11 @@
               android:summaryOn="@string/touch_summary_on"
               android:summaryOff="@string/touch_summary_off"
               android:defaultValue="false" />
+          <CheckBoxPreference android:key="exit"
+              android:title="@string/exit_title"
+              android:summaryOn="@string/exit_summary_on"
+              android:summaryOff="@string/exit_summary_off"
+              android:defaultValue="false"/>
             <Preference android:key="store"
                 android:title="@string/store_title"
                 android:summary="@string/store_summary">
@@ -221,6 +226,7 @@
             </Preference>
             
             <Preference
+                	android:key="rate"
 	                android:title="@string/rate_title"
 	                android:summary="@string/rate_summary">
 	            <intent android:action="android.intent.action.VIEW"

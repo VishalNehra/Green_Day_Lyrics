@@ -62,16 +62,18 @@ public class Ladycobra extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
-				    Logger log = LoggerFactory.getLogger(Ladycobra.class);
+				    Logger log = LoggerFactory.getLogger(Fucktime.class);
 				    log.info("DOS/Lady Cobra");
 					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}
 				if(item.getItemId()==R.id.action_search)
 				{
-					// search action
-		        	Intent intent = new Intent(this, Allsongs.class);
-		        	intent.putExtra("Search", true);
-		        	startActivity(intent);
+					// Search action | Add as new task
+					Intent intent = new Intent(this, Allsongs.class);
+					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					intent.putExtra("Search", true);
+					startActivity(intent);
 					return true;
 				}
 				if(item.getItemId()==R.id.action_label)

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
     <style name="Theme.Default" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Default.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
     </style>
 
-    <style name="Theme.Dark" parent="@android:style/Theme.Holo">
-        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
-    </style>
-    
     <style name="Theme.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/Light.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
     </style>
     
     <style name="Theme.Lime" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Lime.ActionBar</item>
+        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+    </style>
+    
+    <style name="Theme.DarkSky" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/DarkSky.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
     </style>
     

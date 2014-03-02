@@ -51,8 +51,7 @@ public class UnreleasedFragment extends Fragment {
 
         if (firstboot){
 		 
-        	Crouton.makeText(getActivity(), "Some things are not updated in this section.", Style.ALERT).show();
-        	Crouton.makeText(getActivity(), "More things will be added here in next release.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "More lyrics will be added here in future.", Style.INFO).show();
         	
          getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
