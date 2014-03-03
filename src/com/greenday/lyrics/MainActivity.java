@@ -99,8 +99,7 @@ public class MainActivity extends Activity {
             	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
             	        //The view is hidden/dismissed
             		 Crouton.makeText(MainActivity.this, "This app is still in Beta, you may encounter bugs.", Style.ALERT).show();
-            		 Crouton.makeText(MainActivity.this, "Please report if you find any strange behaviour in app.", Style.INFO).show();
-            		 Crouton.makeText(MainActivity.this, "Go ahead, explore the app. and its features!", Style.INFO).show();
+            		 Crouton.makeText(MainActivity.this, "Please report if you find any strange behavior in the app.", Style.INFO).show();
             	    }
 
             	 @Override
@@ -401,7 +400,7 @@ public class MainActivity extends Activity {
 	    	}
 	    	else
 	    	{
-	    		onBackPressed();
+	    		super.onBackPressed();
 	    	}
 	    }
 	    return super.onKeyDown(keyCode, event);
