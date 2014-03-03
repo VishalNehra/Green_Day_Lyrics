@@ -122,52 +122,6 @@ public class Settings extends PreferenceActivity {
 					        // The directory is now empty so delete it
 					        return dir.delete();
 					        
-					        /*For deleting cache on exit, override ondestroy;
-					         * @Override
-							   protected void onStop(){
-							      super.onStop();
-							   }
-							
-							   //Fires after the OnStop() state
-							   @Override
-							   protected void onDestroy() {
-							      super.onDestroy();
-							      try {
-							         trimCache(this);
-							      } catch (Exception e) {
-							         // TODO Auto-generated catch block
-							         e.printStackTrace();
-							      }
-							   }
-							
-							   public static void trimCache(Context context) {
-							      try {
-							         File dir = context.getCacheDir();
-							         if (dir != null && dir.isDirectory()) {
-							            deleteDir(dir);
-							         }
-							      } catch (Exception e) {
-							         // TODO: handle exception
-							      }
-							   }
-							
-							   public static boolean deleteDir(File dir) {
-							      if (dir != null && dir.isDirectory()) {
-							         String[] children = dir.list();
-							         for (int i = 0; i < children.length; i++) {
-							            boolean success = deleteDir(new File(dir, children[i]));
-							            if (!success) {
-							               return false;
-							            }
-							         }
-							      }
-							
-							      // The directory is now empty so delete it
-							      return dir.delete();
-							   }
-							
-							}*/
-					        
 					}
 				}).show();
 				return false;
@@ -225,7 +179,7 @@ public class Settings extends PreferenceActivity {
 					
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
+
 						Intent i = new Intent(Intent.ACTION_VIEW, 
 							       Uri.parse("https://github.com/vishal0071/Green_Day_Lyrics/commits/master"));
 							startActivity(i);
@@ -236,7 +190,7 @@ public class Settings extends PreferenceActivity {
 					
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
+
 						closeContextMenu();
 					}
 				}).show();	
@@ -277,7 +231,7 @@ public class Settings extends PreferenceActivity {
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
-				.setTitle("Open Source Licenses")
+				.setTitle("Open-Source Licenses")
 				.setMessage(Html.fromHtml("> This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
 						"> You can find the source code at Github."))
 				.setPositiveButton("Close", new OnClickListener() {
@@ -336,8 +290,7 @@ public class Settings extends PreferenceActivity {
 
 		default:
 
-		}
-		;
+		};
 
 		return super.onOptionsItemSelected(item);
 	
@@ -347,16 +300,5 @@ public class Settings extends PreferenceActivity {
     protected void onDestroy() {
         super.onDestroy();
       }
-	
-	/*Override back button function
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event)
-	{
-	    if ((keyCode == KeyEvent.KEYCODE_BACK))
-	    {       
-	        //System.exit(0);
-	    }
-	    return super.onKeyDown(keyCode, event);
-	}*/
     
 }
