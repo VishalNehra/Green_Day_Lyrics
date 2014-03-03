@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 	 	
 	public class HomeFragment extends Fragment {
 	    public HomeFragment(){}
+	    
 	    @Override
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	            Bundle savedInstanceState) {
@@ -28,18 +29,7 @@ import android.widget.ImageButton;
 					startActivity(intent);
 				}
 			});
-	        /*Recents
-	         * ImageButton ib2 = (ImageButton) rootView.findViewById(R.id.imageButton2);
-	         
-	        ib2.setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View arg0) {
-					// TODO Auto-generated method stub
-					Intent intent = new Intent(getActivity(), Recents.class);
-					startActivity(intent);				
-					}
-			});*/
+
 	        return rootView;
 	    }
 	    
