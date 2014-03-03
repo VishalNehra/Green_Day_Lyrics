@@ -29,7 +29,7 @@ public class Reportproblem extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				finish();
+				super.finish();
 			}
 		});
 		Button b=(Button) findViewById(R.id.button1);
@@ -37,14 +37,15 @@ public class Reportproblem extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
+				
 				//Lib used to submit edittext to log
 				Logger log = LoggerFactory.getLogger(Reportsong.class);
 				log.info(et.getText().toString());
+				
 				//Exception to start ACRA without any crash!!
 				Throwable caughtException=null;
 				ACRA.getErrorReporter().handleException(caughtException);
-				finish();
+				super.finish();
 			}
 		});
 
