@@ -22,12 +22,6 @@ public class Recents extends Activity {
 		     // get the info from the currently running task
 		
 		     List< ActivityManager.RunningTaskInfo > taskInfo = am.getRunningTasks(1);
-		
-		 
-		
-		     Log.d("topActivity", "CURRENT Activity ::"
-		    		 
-		    		              + taskInfo.get(0).baseActivity.getClassName());
 		    		 
 		    		  
 		    		 
