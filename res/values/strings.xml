@@ -12,8 +12,10 @@
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
-    <string name="changelog_version">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
-    <string name="changelog_change">&lt;i>\tInitial release&lt;/i>&lt;br>&lt;br>&lt;br>&lt;br></string>
+    <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_change_1">\t- Initial release&lt;br>&lt;br></string>
+    <string name="changelog_version_2">&lt;font color="#524ef8">&lt;b>v1.0.1&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_change_2">&lt;i>\t- Added theme support to nav. drawer&lt;br>\t- Minor lyrics correction&lt;br>\t- Other minor fixes&lt;/i>&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
@@ -21,7 +23,6 @@
 	<!-- Searchtitle -->
     
     <string name="search_title">Search a song</string>
-    <string name="search_hint">Search songs</string>
     <string name="all_songs">All Songs</string>
     
     <!-- Play title -->

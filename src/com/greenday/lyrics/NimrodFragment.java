@@ -55,7 +55,7 @@ public class NimrodFragment extends Fragment {
 
         if (firstboot){
 		 
-        	Crouton.makeText(getActivity(), "Press on the circular album art icon", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
         	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
         	Crouton.makeText(getActivity(), "Similar feature is available for tracks too!", Style.CONFIRM).show();
         	

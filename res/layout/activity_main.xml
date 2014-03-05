@@ -9,17 +9,15 @@
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-   
  
     <!-- Listview to display slider menu -->
     <ListView
         android:id="@+id/list_slidermenu"
         android:layout_width="290dp"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
+        android:layout_gravity="left"
         android:choiceMode="singleChoice"
-        android:divider="@color/list_divider"
+        android:divider="@android:color/transparent"
         android:dividerHeight="1dp"       
-        android:listSelector="@drawable/list_selector"
-        android:background="@color/list_background"/>
+        android:background="?attr/color" />
 </android.support.v4.widget.DrawerLayout>

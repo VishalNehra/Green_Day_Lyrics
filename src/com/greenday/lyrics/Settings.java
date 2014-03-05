@@ -36,7 +36,7 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme, mVersion, mDonate, mRate;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme, mVersion, mDonate;
 		SwitchPreference mScroll, mDisplay;
 		CheckBoxPreference mTouch;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -45,6 +45,33 @@ public class Settings extends PreferenceActivity {
 		this.setContentView(R.layout.pref_act);
 		ListView lv=(ListView) findViewById(R.id.listView1);
 		*/
+		/*Testing
+		mTesting = (Preference)findPreference("testing");
+		mTesting.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				final AlertDialog.Builder alert = new AlertDialog.Builder(Settings.this);
+			    final EditText input = new EditText(Settings.this);
+			    alert.setView(input);
+			    alert.setMessage("Testing message");
+			    alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			        public void onClick(DialogInterface dialog, int whichButton) {
+			            //String value = input.getText().toString();
+			            //Toast.makeText(getApplicationContext(), value, Toast.LENGTH_SHORT).show();
+			        }
+			    });
+
+			    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			        public void onClick(DialogInterface dialog, int whichButton) {
+			            closeContextMenu();
+			        }
+			    });
+			    alert.show(); 
+				return false;
+			}
+		});*/
 		
 		//Theme
 		mApplyTheme = (Preference)findPreference("apply_theme");
@@ -173,8 +200,11 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Changelog")
-				.setMessage(Html.fromHtml(getString(R.string.changelog_version) + 
-						getString(R.string.changelog_change)))
+				.setMessage(Html.fromHtml(getString(R.string.changelog_version_2) + 
+						getString(R.string.changelog_change_2) + 
+								getString(R.string.changelog_version_1) + 
+								getString(R.string.changelog_change_1)
+								))
 				.setNegativeButton("Full Changelog", new OnClickListener() {
 					
 					@Override
@@ -265,11 +295,6 @@ public class Settings extends PreferenceActivity {
 		//Donate
 		mDonate = findPreference("donate");
 		mDonate.setEnabled(false);
-		
-		//Rate
-		mRate = findPreference("rate");
-		mRate.setEnabled(false);
-		
 		
 	}
 	

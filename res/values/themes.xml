@@ -4,45 +4,72 @@
     <style name="Theme.Default" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Default.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/default_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/default_activated_background</item>
+        <item name="color">@drawable/ab_background_default_split</item>
     </style>
 
     <style name="Theme.Light" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/Light.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/light_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/light_activated_background</item>
+        <item name="color">@drawable/ab_background_light_split</item>
     </style>
     
     <style name="Theme.Lime" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Lime.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/lime_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/lime_activated_background</item>
+        <item name="color">@drawable/ab_background_lime_split</item>
     </style>
     
     <style name="Theme.DarkSky" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/DarkSky.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/darksky_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/darksky_activated_background</item>
+        <item name="color">@drawable/ab_background_darksky_split</item>
     </style>
     
     <style name="Theme.Rose" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Rose.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/rose_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/rose_activated_background</item>
+        <item name="color">@drawable/ab_background_rose_split</item>
     </style>
     
     <style name="Theme.Mojo" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Mojo.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/mojo_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/mojo_activated_background</item>
+        <item name="color">@drawable/ab_background_mojo_split</item>
     </style>
     
     <style name="Theme.Saffron" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Saffron.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/saffron_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/saffron_activated_background</item>
+        <item name="color">@drawable/ab_background_saffron_split</item>
     </style>
     
     <style name="Theme.Frooti" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Frooti.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/frooti_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/frooti_activated_background</item>
+        <item name="color">@drawable/ab_background_frooti_split</item>
     </style>
     
     <style name="Theme.Lavender" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Lavender.ActionBar</item>
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/lavender_list_selector</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/lavender_activated_background</item>
+        <item name="color">@drawable/ab_background_lavender_split</item>
     </style>
 </resources>

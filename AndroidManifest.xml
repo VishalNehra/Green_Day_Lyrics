@@ -39,6 +39,7 @@
         
     </activity>
         
+        <activity android:name="com.greenday.lyrics.Report"/>
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings"
            android:screenOrientation="portrait" />

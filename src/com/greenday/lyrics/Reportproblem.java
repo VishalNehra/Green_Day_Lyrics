@@ -29,7 +29,7 @@ public class Reportproblem extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				super.finish();
+				finish();
 			}
 		});
 		Button b=(Button) findViewById(R.id.button1);
@@ -45,7 +45,7 @@ public class Reportproblem extends Activity {
 				//Exception to start ACRA without any crash!!
 				Throwable caughtException=null;
 				ACRA.getErrorReporter().handleException(caughtException);
-				super.finish();
+				finish();
 			}
 		});
 

@@ -20,12 +20,12 @@ public final class R {
 		public static final int sv_titleTextColor = 0x7f01000e;
 	}
 	public static final class drawable {
-		public static final int btn_cling_normal = 0x7f020011;
-		public static final int btn_cling_pressed = 0x7f020012;
-		public static final int cling = 0x7f020013;
-		public static final int cling_bleached = 0x7f020014;
-		public static final int cling_button_bg = 0x7f020015;
-		public static final int hand = 0x7f02001b;
+		public static final int btn_cling_normal = 0x7f020013;
+		public static final int btn_cling_pressed = 0x7f020014;
+		public static final int cling = 0x7f020015;
+		public static final int cling_bleached = 0x7f020016;
+		public static final int cling_button_bg = 0x7f020017;
+		public static final int hand = 0x7f020023;
 	}
 	public static final class id {
 		public static final int showcase_button = 0x7f060008;
@@ -34,7 +34,7 @@ public final class R {
 	}
 	public static final class layout {
 		public static final int handy = 0x7f03003d;
-		public static final int showcase_button = 0x7f030095;
+		public static final int showcase_button = 0x7f030094;
 	}
 	public static final class string {
 		public static final int ok = 0x7f070006;

@@ -1,10 +1,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    
     <!-- Pull to refresh -->
     <style name="Widget.Custom.PtrHeader" parent="android:Widget">
         <item name="ptrPullText">Pull To Start</item>
@@ -19,7 +14,7 @@
     
     <!-- Themes -->
     <style name="Default.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:backgroundSplit">@null</item>
+        <item name="android:backgroundSplit">@drawable/ab_background_default_split</item>
     </style>
     <style name="Light.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
         <item name="android:backgroundSplit">@null</item>

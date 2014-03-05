@@ -9,6 +9,7 @@ import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Report;
 import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
@@ -36,7 +37,7 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
     	
-		//Set theme must be used before super.oncreate or any other layout declaration!
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 
 		// TODO Auto-generated method stub
@@ -106,7 +107,8 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 			//Log report
 		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
 		    log.info("American Idiot/American Idiot");
-			startActivity(new Intent(getApplicationContext(), Reportsong.class));
+			//startActivity(new Intent(getApplicationContext(), Reportsong.class));
+		    Report.report(this);
 		}
 		if(item.getItemId()==R.id.action_search)
 		{
