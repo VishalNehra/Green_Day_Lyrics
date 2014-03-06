@@ -65,11 +65,8 @@ View album art icon, track counter and name of album inside navigation drawer it
 
 Changelog
 ---------
-
-For complete changelog please refer to [Commits](https://github.com/vishal0071/Green_Day_Lyrics/commits/master) history.  
-
-<h5>v1.0</h5>
->Initial release
+Changelog as per the release [here](https://github.com/vishal0071/Green_Day_Lyrics/releases).  
+For complete changelog please refer to [Commits](https://github.com/vishal0071/Green_Day_Lyrics/commits/master) history.
 
 Thanks to
 ---------
