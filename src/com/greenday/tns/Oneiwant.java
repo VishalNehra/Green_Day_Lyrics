@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportsong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
@@ -64,7 +63,6 @@ public class Oneiwant extends Activity {
 					//Log report
 				    Logger log = LoggerFactory.getLogger(Oneiwant.class);
 				    log.info("39-Smooth/The One I Want");
-					startActivity(new Intent(getApplicationContext(), Reportsong.class));
 				}
 				if(item.getItemId()==R.id.action_search)
 				{

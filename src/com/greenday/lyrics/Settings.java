@@ -45,33 +45,6 @@ public class Settings extends PreferenceActivity {
 		this.setContentView(R.layout.pref_act);
 		ListView lv=(ListView) findViewById(R.id.listView1);
 		*/
-		/*Testing
-		mTesting = (Preference)findPreference("testing");
-		mTesting.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			
-			@Override
-			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
-				final AlertDialog.Builder alert = new AlertDialog.Builder(Settings.this);
-			    final EditText input = new EditText(Settings.this);
-			    alert.setView(input);
-			    alert.setMessage("Testing message");
-			    alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-			        public void onClick(DialogInterface dialog, int whichButton) {
-			            //String value = input.getText().toString();
-			            //Toast.makeText(getApplicationContext(), value, Toast.LENGTH_SHORT).show();
-			        }
-			    });
-
-			    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-			        public void onClick(DialogInterface dialog, int whichButton) {
-			            closeContextMenu();
-			        }
-			    });
-			    alert.show(); 
-				return false;
-			}
-		});*/
 		
 		//Theme
 		mApplyTheme = (Preference)findPreference("apply_theme");
@@ -237,10 +210,10 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Disclaimer")
-				.setMessage(Html.fromHtml("> All the lyrics provided in this app belongs to their respective owners/artists.<br><br>" +
-						"> I <b>DO NOT</b> own any of the lyrics provided in this app.<br><br>" +
-						"> I will not be liable for any errors or omissions in any kind of information provided in this app.<br><br>" +
-						"> This app is purely made for entertainment purpose only."
+				.setMessage(Html.fromHtml("• All the lyrics provided in this app belongs to their respective owners/artists.<br><br>" +
+						"• I <b>DO NOT</b> own any of the lyrics provided in this app.<br><br>" +
+						"• I will not be liable for any errors or omissions in any kind of information provided in this app.<br><br>" +
+						"• This app is purely made for entertainment purpose only."
 				))
 				.setPositiveButton("Close", new OnClickListener() {
 					
@@ -262,8 +235,8 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Open-Source Licenses")
-				.setMessage(Html.fromHtml("> This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
-						"> You can find the source code at Github."))
+				.setMessage(Html.fromHtml("• This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
+						"• You can find the source code at Github."))
 				.setPositiveButton("Close", new OnClickListener() {
 					
 					@Override

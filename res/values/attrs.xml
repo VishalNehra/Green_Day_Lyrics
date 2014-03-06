@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="color" format="color|reference" />
+    <attr name="color_drawer" format="color|reference" />
+    <attr name="color_counter" format="color|reference" />
 </resources>

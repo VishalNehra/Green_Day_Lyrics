@@ -9,7 +9,7 @@ import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportsong;
+import com.greenday.lyrics.Report;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
@@ -100,7 +100,7 @@ public class Wakemeup extends Activity implements OnRefreshListener{
 				//Log report
 			    Logger log = LoggerFactory.getLogger(Wakemeup.class);
 			    log.info("American Idiot/Wake Me Up When September Ends");
-				startActivity(new Intent(getApplicationContext(), Reportsong.class));
+			    Report.report1(this);
 			}
 			if(item.getItemId()==R.id.action_search)
 			{

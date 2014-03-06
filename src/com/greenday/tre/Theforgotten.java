@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Reportsong;
+import com.greenday.lyrics.Report;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
@@ -64,7 +64,7 @@ public class Theforgotten extends Activity {
 				//Log report
 			    Logger log = LoggerFactory.getLogger(Theforgotten.class);
 			    log.info("TRE/The Forgotten");
-				startActivity(new Intent(getApplicationContext(), Reportsong.class));
+			    Report.report1(this);
 			}
 			if(item.getItemId()==R.id.action_search)
 			{

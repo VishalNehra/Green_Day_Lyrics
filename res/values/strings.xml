@@ -13,9 +13,12 @@
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
     <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
-    <string name="changelog_change_1">\t- Initial release&lt;br>&lt;br></string>
+    <string name="changelog_change_1">&lt;i>\t- Initial release&lt;/i>&lt;br>&lt;br></string>
     <string name="changelog_version_2">&lt;font color="#524ef8">&lt;b>v1.0.1&lt;/font>&lt;/b>&lt;br></string>
-    <string name="changelog_change_2">&lt;i>\t- Added theme support to nav. drawer&lt;br>\t- Minor lyrics correction&lt;br>\t- Other minor fixes&lt;/i>&lt;br>&lt;br></string>
+    <string name="changelog_change_2">\t- Added theme support to nav. drawer&lt;br>
+        \t- Fixed issue #5 (github)&lt;br>
+        \t- Minor lyrics correction&lt;br>
+        \t- Other minor fixes&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thank You for the feedback.
@@ -40,7 +43,7 @@
     <string name="disclaimer_title">Disclaimer</string>
     
     <!-- License title -->
-    <string name="license_title">Open Source Licenses</string>
+    <string name="license_title">Open-Source Licenses</string>
     
     <!-- Label title -->
     <string name="label_title">Information about track</string>
@@ -94,7 +97,7 @@
     
     <string name="about_title">About</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">v1.0</string>
+    <string name="version_summary">v1.0.1</string>
     <string name="source_title">Application sources</string>
     <string name="source_summary">View app source code. </string>
     <string name="members_title">Members</string>

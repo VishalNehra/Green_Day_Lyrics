@@ -224,14 +224,6 @@ public class MainActivity extends Activity {
     	MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.main, menu);
 
-		// Associate searchable configuration with the SearchView
-		/*SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-		SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
-				.getActionView();
-		searchView.setSearchableInfo(searchManager
-				.getSearchableInfo(getComponentName()));
-
-        searchView.setIconifiedByDefault(true); // Do not iconify the widget; expand it by default */
         return super.onCreateOptionsMenu(menu);
     }
     
@@ -247,7 +239,7 @@ public class MainActivity extends Activity {
         	startActivity(new Intent(MainActivity.this, Settings.class));
             return true;
         case R.id.item2:
-        	startActivity(new Intent(MainActivity.this, Reportproblem.class));
+        	Report.report2(this);
             return true;
         case R.id.action_search:
 			// search action
@@ -378,25 +370,25 @@ public class MainActivity extends Activity {
 	    	boolean exit = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("exit", false);
 	    	if(exit)
 	    	{
-	        new AlertDialog.Builder(this)
-	        .setTitle("Confirm?")
-	        .setMessage("You are about to exit")
-	        .setNegativeButton("No", new OnClickListener() {
-				
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					closeContextMenu();
-				}
-			})
-			.setPositiveButton("Yes", new OnClickListener() {
-				
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					onBackPressed();
-				}
-			}).show();
+	    		new AlertDialog.Builder(this)
+		        .setTitle("Confirm?")
+		        .setMessage("You are about to exit")
+		        .setNegativeButton("No", new OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						closeContextMenu();
+					}
+				})
+				.setPositiveButton("Yes", new OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						onBackPressed();
+					}
+				}).show();
 	    	}
 	    	else
 	    	{

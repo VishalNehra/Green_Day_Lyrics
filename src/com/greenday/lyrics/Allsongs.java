@@ -1088,7 +1088,7 @@ public class Allsongs extends Activity {
 				//Log report
 			    Logger log = LoggerFactory.getLogger(Allsongs.class);
 			    log.info("All Songs");
-				startActivity(new Intent(getApplicationContext(), Reportproblem.class));
+			    Report.report2(this);
 			}
 		            return super.onOptionsItemSelected(item);	
 		}
