@@ -6,7 +6,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/default_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/default_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_default_split</item>
+        <item name="color_drawer">@drawable/ab_background_default_drawer</item>
         <item name="color_counter">@drawable/ab_background_default_split</item>
     </style>
 
@@ -15,8 +15,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/light_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/light_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_light_split</item>
-        <item name="color_counter">@drawable/ab_background_light_split</item>
+        <item name="color_drawer">@drawable/ab_background_light_drawer</item>
     </style>
     
     <style name="Theme.Lime" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -24,7 +23,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/lime_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/lime_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_lime_split</item>
+        <item name="color_drawer">@drawable/ab_background_lime_drawer</item>
         <item name="color_counter">@drawable/ab_background_lime</item>
     </style>
     
@@ -33,7 +32,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/darksky_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/darksky_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_darksky_split</item>
+        <item name="color_drawer">@drawable/ab_background_darksky_drawer</item>
         <item name="color_counter">@drawable/ab_background_darksky</item>
     </style>
     
@@ -42,7 +41,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/rose_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/rose_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_rose_split</item>
+        <item name="color_drawer">@drawable/ab_background_rose_drawer</item>
         <item name="color_counter">@drawable/ab_background_rose</item>
     </style>
     
@@ -51,7 +50,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/mojo_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/mojo_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_mojo_split</item>
+        <item name="color_drawer">@drawable/ab_background_mojo_drawer</item>
         <item name="color_counter">@drawable/ab_background_mojo</item>
     </style>
     
@@ -60,7 +59,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/saffron_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/saffron_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_saffron_split</item>
+        <item name="color_drawer">@drawable/ab_background_saffron_drawer</item>
         <item name="color_counter">@drawable/ab_background_saffron</item>
     </style>
     
@@ -69,7 +68,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/frooti_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/frooti_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_frooti_split</item>
+        <item name="color_drawer">@drawable/ab_background_frooti_drawer</item>
         <item name="color_counter">@drawable/ab_background_frooti</item>
     </style>
     
@@ -78,7 +77,7 @@
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
         <item name="android:listChoiceBackgroundIndicator">@drawable/lavender_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/lavender_activated_background</item>
-        <item name="color_drawer">@drawable/ab_background_lavender_split</item>
+        <item name="color_drawer">@drawable/ab_background_lavender_drawer</item>
         <item name="color_counter">@drawable/ab_background_lavender</item>
     </style>
 </resources>

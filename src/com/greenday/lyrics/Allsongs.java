@@ -44,6 +44,7 @@ import com.greenday.dos.Strayheart;
 import com.greenday.dos.Wildone;
 import com.greenday.dos.Wowthatsloud;
 import com.greenday.ins.JAR;
+import com.greenday.ins.Poprocks;
 import com.greenday.insomniac.Armatage;
 import com.greenday.insomniac.Babuvula;
 import com.greenday.insomniac.Brainstew;
@@ -410,6 +411,7 @@ public class Allsongs extends Activity {
 				"Paper Lanterns",
 				"Peacemaker",
 				"Platypus (I Hate You)",
+				"Poprocks & Coke",
 				"Private Ale",
 				"Prosthetic Head",
 				"Pulling Teeth",
@@ -755,6 +757,9 @@ public class Allsongs extends Activity {
 				if (values=="Jaded") {
 					i=new Intent(Allsongs.this, Jaded.class);
 					startActivity(i);}
+				if (values=="J.A.R. (Jason Andrew Relva)") {
+					i=new Intent(Allsongs.this, JAR.class);
+					startActivity(i);}
 				if (values=="Jesus Of Suburbia") {
 					i=new Intent(Allsongs.this, Jesusofsuburb.class);
 					startActivity(i);}
@@ -865,6 +870,9 @@ public class Allsongs extends Activity {
 					startActivity(i);}
 				if (values=="Platypus (I Hate You)") {
 					i=new Intent(Allsongs.this, Platypus.class);
+					startActivity(i);}
+				if (values=="Poprocks & Coke") {
+					i=new Intent(Allsongs.this, Poprocks.class);
 					startActivity(i);}
 				if (values=="Private Ale") {
 					i=new Intent(Allsongs.this, Privateale.class);
@@ -1048,9 +1056,6 @@ public class Allsongs extends Activity {
 					startActivity(i);}
 				if (values=="¿Viva La Gloria? (Little Girl)") {
 					i=new Intent(Allsongs.this, Vivalagloria2.class);
-					startActivity(i);}
-				if (values=="J.A.R. (Jason Andrew Relva)") {
-					i=new Intent(Allsongs.this, JAR.class);
 					startActivity(i);}
 				
 			}
