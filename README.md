@@ -18,12 +18,12 @@ Screenshots
 >Please note that this app is tested on Nexus 4 (mako) and looks best on xhdpi.  
 >App has not been tested on Tablets.  
 
-<img src="http://i59.tinypic.com/zv5on.png" height="335" width="200"/> 
-<img src="http://i61.tinypic.com/4fvgbb.png" height="335" width="200"/> 
-<img src="http://i61.tinypic.com/2z5r982.png" height="335" width="200"/> 
-<img src="http://i59.tinypic.com/ibgoy0.png" height="335" width="200"/> 
-<img src="http://i57.tinypic.com/mjya12.png" height="335" width="200"/> 
-<img src="http://i61.tinypic.com/1zt1f4.png" height="335" width="200"/>
+<img src="http://i61.tinypic.com/9uqjah.png" height="335" width="200"/> 
+<img src="http://i60.tinypic.com/2lc9y1f.png" height="335" width="200"/> 
+<img src="http://i57.tinypic.com/211qmi8.png" height="335" width="200"/> 
+<img src="http://i61.tinypic.com/107krwz.png" height="335" width="200"/> 
+<img src="http://i57.tinypic.com/2yziybs.png" height="335" width="200"/> 
+<img src="http://i62.tinypic.com/jkeueq.png" height="335" width="200"/>
   
 >Youtube video [here](https://www.youtube.com/watch?v=JtJUXp9VIgM)
 
