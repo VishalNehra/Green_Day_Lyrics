@@ -22,6 +22,8 @@ import android.preference.SwitchPreference;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
 import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -36,7 +38,9 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme, mVersion, mDonate;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme;
+		final Preference mVersion;
+		Preference mDonate;
 		SwitchPreference mScroll, mDisplay;
 		CheckBoxPreference mTouch;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -251,7 +255,7 @@ public class Settings extends PreferenceActivity {
 		
 		//Scroll
 		mScroll = (SwitchPreference) findPreference("scroll");
-		mScroll.setEnabled(false);
+		mScroll.setEnabled(true);
 		
 		//Display
 		mDisplay =(SwitchPreference) findPreference("display");
@@ -262,8 +266,51 @@ public class Settings extends PreferenceActivity {
 		mTouch.setEnabled(false);
 		
 		//Build Version
+		//Ester Egg :D
 		mVersion = findPreference("version");
-		mVersion.setEnabled(false);
+		mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				final Toast t1 = Toast.makeText(Settings.this, "You are now 3 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+				t1.show();
+				mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+					
+					@Override
+					public boolean onPreferenceClick(Preference preference) {
+						// TODO Auto-generated method stub
+						t1.cancel();
+						final Toast t2 = Toast.makeText(Settings.this, "You are now 2 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+						t2.show();
+						mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+							
+							@Override
+							public boolean onPreferenceClick(Preference preference) {
+								// TODO Auto-generated method stub
+								t2.cancel();
+								final Toast t3 = Toast.makeText(Settings.this, "You are now 1 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+								t3.show();
+								mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+									
+									@Override
+									public boolean onPreferenceClick(Preference preference) {
+										// TODO Auto-generated method stub
+										t3.cancel();
+										Toast.makeText(Settings.this, "You are now Green Day Super fan!", Toast.LENGTH_SHORT).show();
+										startActivity(new Intent(Settings.this, Easteregg.class));
+										return false;
+									}
+								});
+								return false;
+							}
+						});
+						return false;
+					}
+				});
+				return false;
+			}
+		});
 		
 		//Donate
 		mDonate = findPreference("donate");

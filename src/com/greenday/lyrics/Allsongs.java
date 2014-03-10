@@ -237,6 +237,7 @@ public class Allsongs extends Activity {
 		iF.addAction("com.htc.music.metachanged");		//HTC stock
 		iF.addAction("com.sec.android.app.music.metachanged");		//Samsung
 		iF.addAction("com.nullsoft.winamp.metachanged");		//Winamp
+		iF.addAction("com.dogsbark.noozy.metachanged");
 		registerReceiver(mReceiver, iF);
 		
 		 //Boot_pref
