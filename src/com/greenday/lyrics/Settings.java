@@ -24,6 +24,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.greenday.easteregg.EasterPre;
+import com.greenday.easteregg.Easteregg;
 import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -45,7 +47,7 @@ public class Settings extends PreferenceActivity {
 		CheckBoxPreference mTouch;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
-		/*For extending settings as listview
+		/*To extend settings as listview
 		this.setContentView(R.layout.pref_act);
 		ListView lv=(ListView) findViewById(R.id.listView1);
 		*/
@@ -269,36 +271,52 @@ public class Settings extends PreferenceActivity {
 		//Ester Egg :D
 		mVersion = findPreference("version");
 		mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-			
+
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
 				// TODO Auto-generated method stub
-				final Toast t1 = Toast.makeText(Settings.this, "You are now 3 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
-				t1.show();
-				mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-					
-					@Override
-					public boolean onPreferenceClick(Preference preference) {
-						// TODO Auto-generated method stub
-						t1.cancel();
-						final Toast t2 = Toast.makeText(Settings.this, "You are now 2 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
-						t2.show();
-						mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-							
-							@Override
-							public boolean onPreferenceClick(Preference preference) {
-								// TODO Auto-generated method stub
-								t2.cancel();
-								final Toast t3 = Toast.makeText(Settings.this, "You are now 1 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
-								t3.show();
+					mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+						
+						@Override
+						public boolean onPreferenceClick(Preference arg0) {
+							// TODO Auto-generated method stub
 								mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 									
 									@Override
-									public boolean onPreferenceClick(Preference preference) {
+									public boolean onPreferenceClick(Preference arg0) {
 										// TODO Auto-generated method stub
-										t3.cancel();
-										Toast.makeText(Settings.this, "You are now Green Day Super fan!", Toast.LENGTH_SHORT).show();
-										startActivity(new Intent(Settings.this, Easteregg.class));
+											final Toast t1 = Toast.makeText(Settings.this, "You are now 3 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+											t1.show();
+											mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+												
+												@Override
+												public boolean onPreferenceClick(Preference preference) {
+													// TODO Auto-generated method stub
+														t1.cancel();
+														final Toast t2 = Toast.makeText(Settings.this, "You are now 2 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+														t2.show();
+														mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+															
+														@Override
+														public boolean onPreferenceClick(Preference preference) {
+															// TODO Auto-generated method stub
+																t2.cancel();
+																final Toast t3 = Toast.makeText(Settings.this, "You are now 1 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+																t3.show();
+																mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+																	
+																@Override
+																public boolean onPreferenceClick(Preference preference) {
+																	// TODO Auto-generated method stub
+																		t3.cancel();
+																		Toast.makeText(Settings.this, "You are now Green Day Super fan!", Toast.LENGTH_SHORT).show();
+																		startActivity(new Intent(Settings.this, EasterPre.class));
+														return false;
+													}
+												});
+												return false;
+											}
+										});
 										return false;
 									}
 								});

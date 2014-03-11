@@ -43,7 +43,10 @@
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings"
            android:screenOrientation="portrait" />
-        <activity android:name="com.greenday.lyrics.Easteregg"
+        <activity android:name="com.greenday.easteregg.Easteregg"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.greenday.easteregg.EasterPre"
             android:theme="@style/Theme.Transparent"
             android:screenOrientation="portrait" />
         

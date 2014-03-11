@@ -242,7 +242,6 @@ public class Allsongs extends Activity {
 		
 		 //Boot_pref
         boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_allsongs", true);
-
         if (firstboot){
             // 1) Launch the authentication activity
            		new AlertDialog.Builder(Allsongs.this)
@@ -281,13 +280,6 @@ public class Allsongs extends Activity {
 				txtQuery.setText(track);
 			}
 		});
-		
-		//Fixes crash of play button
-		boolean fix=getIntent().getBooleanExtra("fix", true);
-		if(fix)
-		{
-			//Just kidding :P
-		}
 		
 		//Action bar search
 		boolean search = getIntent().getBooleanExtra("Search", false);
@@ -1061,9 +1053,7 @@ public class Allsongs extends Activity {
 				
 			}
 		});
-		
 	}
-	
 	
 		//Action bar code below
 
