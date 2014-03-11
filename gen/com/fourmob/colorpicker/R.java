@@ -15,7 +15,7 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int color_picker_swatch = 0x7f020020;
-		public static final int ic_colorpicker_swatch_selected = 0x7f020036;
+		public static final int ic_colorpicker_swatch_selected = 0x7f020037;
 	}
 	public static final class id {
 		public static final int color_picker = 0x7f060000;

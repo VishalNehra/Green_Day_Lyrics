@@ -31,7 +31,6 @@
             
         </activity>
         
-        <activity android:name="com.greenday.lyrics.Recents"></activity>
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
            android:windowSoftInputMode="stateHidden|adjustPan" 
@@ -43,10 +42,10 @@
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings"
            android:screenOrientation="portrait" />
-        <activity android:name="com.greenday.easteregg.Easteregg"
+        <activity android:name="com.greenday.easteregg.EasterPre"
             android:theme="@style/Theme.Transparent"
             android:screenOrientation="portrait" />
-        <activity android:name="com.greenday.easteregg.EasterPre"
+        <activity android:name="com.greenday.easteregg.Beanbag"
             android:theme="@style/Theme.Transparent"
             android:screenOrientation="portrait" />
         

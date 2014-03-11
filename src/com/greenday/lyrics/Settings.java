@@ -25,7 +25,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.greenday.easteregg.EasterPre;
-import com.greenday.easteregg.Easteregg;
 import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -309,7 +308,7 @@ public class Settings extends PreferenceActivity {
 																public boolean onPreferenceClick(Preference preference) {
 																	// TODO Auto-generated method stub
 																		t3.cancel();
-																		Toast.makeText(Settings.this, "You are now Green Day Super fan!", Toast.LENGTH_SHORT).show();
+																		Toast.makeText(Settings.this, "HINT : Press back to exit", Toast.LENGTH_LONG).show();
 																		startActivity(new Intent(Settings.this, EasterPre.class));
 														return false;
 													}
