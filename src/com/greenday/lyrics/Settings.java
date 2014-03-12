@@ -300,7 +300,7 @@ public class Settings extends PreferenceActivity {
 														public boolean onPreferenceClick(Preference preference) {
 															// TODO Auto-generated method stub
 																t2.cancel();
-																final Toast t3 = Toast.makeText(Settings.this, "You are now 1 steps away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
+																final Toast t3 = Toast.makeText(Settings.this, "You are now 1 step away from becoming Green Day Super Fan", Toast.LENGTH_SHORT);
 																t3.show();
 																mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 																	

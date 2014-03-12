@@ -92,7 +92,7 @@ public class Beanbag extends Activity {
         static float MIN_SCALE = 0.2f;
         static float MAX_SCALE = 1f;
 
-        static float LUCKY = 0.01f;
+        static float LUCKY = 0.03f;
 
         static int MAX_RADIUS = (int)(576 * MAX_SCALE);
 
@@ -100,30 +100,12 @@ public class Beanbag extends Activity {
           R.drawable.easteregg1,
           R.drawable.easteregg2,
           R.drawable.easteregg3
-          /*R.drawable.redbean0,
-          R.drawable.redbean0,
-          R.drawable.redbean0,
-          R.drawable.redbean1,
-          R.drawable.redbean1,
-          R.drawable.redbean2,
-          R.drawable.redbean2,
-          R.drawable.redbeandroid,*/
         };
 
         static int COLORS[] = {
         	0xFF00CC00,
             0xFFCC0000,
             0xFF0000CC
-            /*0xFFFFFF00,
-            0xFFFF8000,
-            0xFF00CCFF,
-            0xFFFF0080,
-            0xFF8000FF,
-            0xFFFF8080,
-            0xFF8080FF,
-            0xFFB0C0D0,
-            0xFFDDDDDD,
-            0xFF333333,*/
         };
 
         public class Bean extends ImageView {
