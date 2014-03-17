@@ -9,11 +9,18 @@ import com.greenday.lyrics.Report;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +32,7 @@ public class Emeniussleepus extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
     	
-		//Set theme must be used before super.oncreate or any other layout declaration!
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 
 		// TODO Auto-generated method stub
@@ -34,6 +41,13 @@ public class Emeniussleepus extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
+
+		//Display
+		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+		if(display)
+		{
+			tv1.setKeepScreenOn(true);
+		}
 	}
 	
 	//Action bar code below
@@ -62,9 +76,18 @@ public class Emeniussleepus extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
+					ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+					NetworkInfo ni=cm.getActiveNetworkInfo();
+					if(ni!=null && ni.isConnected())
+					{
 				    Logger log = LoggerFactory.getLogger(Emeniussleepus.class);
 				    log.info("Dookie/Emenius Sleepus");
 				    Report.report1(this);
+					}
+					else
+					{
+						Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+					}
 				}
 				if(item.getItemId()==R.id.action_search)
 				{

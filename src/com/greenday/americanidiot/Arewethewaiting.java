@@ -3,10 +3,6 @@ package com.greenday.americanidiot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
-import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
-
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Report;
@@ -17,59 +13,39 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class Arewethewaiting extends Activity implements OnRefreshListener {
-	private PullToRefreshLayout mPullToRefreshLayout;
+public class Arewethewaiting extends Activity {
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
     	
-		//Set theme must be used before super.oncreate or any other layout declaration!
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_arewethewaiting);
 		tv1 = (TextView)findViewById(R.id.textView1);
-		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
-		//Automatically scroll view
-				boolean scroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
-				if(scroll)
-				{
-					//Pull to refresh
-					ActionBarPullToRefresh.from(this)
-					.allChildrenArePullable()
-					.listener(this)
-					.setup(mPullToRefreshLayout);
-				}
-
-				//Display
-				boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
-				if(display)
-				{
-					tv1.setKeepScreenOn(true);
-				}
-				
-				//Touch
-				boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
-				if(touch)
-				{
-					
-				}
+		//Display
+		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+		if(display)
+		{
+			tv1.setKeepScreenOn(true);
+		}
 	}
 	
 	//Action bar code below
@@ -98,9 +74,18 @@ public class Arewethewaiting extends Activity implements OnRefreshListener {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				//Log report
+				ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+				NetworkInfo ni=cm.getActiveNetworkInfo();
+				if(ni!=null && ni.isConnected())
+				{
 			    Logger log = LoggerFactory.getLogger(Arewethewaiting.class);
 			    log.info("American Idiot/Are We The Waiting");
 			    Report.report1(this);
+				}
+				else
+				{
+					Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+				}
 			}
 			if(item.getItemId()==R.id.action_search)
 			{
@@ -133,22 +118,5 @@ public class Arewethewaiting extends Activity implements OnRefreshListener {
 			}
 		            return super.onOptionsItemSelected(item);
 			
-		}
-
-		//Pull to refresh listener
-		@Override
-		public void onRefreshStarted(View view) {
-			// TODO Auto-generated method stub
-				new CountDownTimer(162000, 250) {          
-					final ScrollView sv = (ScrollView) findViewById(R.id.sv);
-					 public void onTick(long millisUntilFinished) {             
-					   sv.scrollBy(0, 1);         
-					 }          
-		
-					 public void onFinish() {  
-						 Crouton.makeText(Arewethewaiting.this, "Finished", Style.CONFIRM).show();
-						 mPullToRefreshLayout.setRefreshComplete();
-					 }      
-					}.start();
 		}
 	}

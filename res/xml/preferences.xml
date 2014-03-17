@@ -191,21 +191,10 @@
             <!-- Extras -->
       <PreferenceCategory android:title="@string/extras_title">
           
-          
-          <SwitchPreference android:key="scroll"
-              android:title="@string/scroll_title"
-              android:summaryOn="@string/scroll_summary_on"
-              android:summaryOff="@string/scroll_summary_off"
-              android:defaultValue="false" />
-          <SwitchPreference android:key="display"
+          <CheckBoxPreference android:key="display"
               android:title="@string/display_title"
               android:summaryOn="@string/display_summary_on"
               android:summaryOff="@string/display_summary_off"
-              android:defaultValue="false" />
-          <CheckBoxPreference android:key="touch"
-              android:title="@string/touch_title"
-              android:summaryOn="@string/touch_summary_on"
-              android:summaryOff="@string/touch_summary_off"
               android:defaultValue="false" />
           <CheckBoxPreference android:key="exit"
               android:title="@string/exit_title"
@@ -217,12 +206,6 @@
                 android:summary="@string/store_summary">
                 <intent android:action="android.intent.action.VIEW"
                     android:data="http://www.bravadousa.com/greenday/"/>
-            </Preference>
-            <Preference android:key="donate"
-                android:title="@string/donate_title"
-                android:summary="@string/donate_summary">
-                <intent android:action="android.intent.action.VIEW"
-                    android:data="market://details?id=com.greenday.lyrics_donate"/>
             </Preference>
             
             <Preference

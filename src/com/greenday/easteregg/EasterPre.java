@@ -1,6 +1,5 @@
 package com.greenday.easteregg;
 
-import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
@@ -39,7 +38,7 @@ public class EasterPre extends Activity {
 					    //ObjectAnimator.ofFloat(ib, "alpha", 1, 0.25f, 1)
 					);
 				
-				set1.setDuration(2 * 500).start();
+				set1.setDuration(1 * 350).start();
 				
 				ib.setOnClickListener(new OnClickListener() {
 					
@@ -51,7 +50,7 @@ public class EasterPre extends Activity {
 							    ObjectAnimator.ofFloat(ib, "rotation", 0, -360)
 							);
 						
-						set2.setDuration(2 * 500).start();
+						set2.setDuration(1 * 350).start();
 						
 						ib.setOnClickListener(new OnClickListener() {
 							
@@ -63,7 +62,7 @@ public class EasterPre extends Activity {
 								set3.playTogether(
 									    ObjectAnimator.ofFloat(ib, "rotation", 0, -360)
 									);
-								set3.setDuration(2 * 500).start();
+								set3.setDuration(1 * 350).start();
 								
 								ib.setOnClickListener(new OnClickListener() {
 									
@@ -76,34 +75,16 @@ public class EasterPre extends Activity {
 											    ObjectAnimator.ofFloat(ib, "rotation", 0, 360)
 											);
 										
-										set4.setDuration(2 * 500).start();
+										set4.setDuration(1 * 350).start();
 										                                                  
 										ib.setOnClickListener(new OnClickListener() {
 											
 											@Override
 											public void onClick(View v) {
 												// TODO Auto-generated method stub
-												final AnimatorSet set5 = new AnimatorSet();
+												Intent intent = new Intent(EasterPre.this, Beanbag.class);
+												startActivity(intent);
 												
-												set5.playTogether(
-													    ObjectAnimator.ofFloat(ib, "rotation", 0, 360),
-													    ObjectAnimator.ofFloat(ib, "scaleX", 1, 0.0f),
-													    ObjectAnimator.ofFloat(ib, "scaleY", 1, 0.0f)
-													);
-												new CountDownTimer(1200, 1200) {          
-													
-													 public void onTick(long millisUntilFinished) {             
-															//set5.setDuration(2 * 450);
-														 final ImageButton ib=(ImageButton) findViewById(R.id.imageButton1);
-														 animate(ib).setDuration(500).rotationYBy(720)/*.x(100).y(100)*/;
-													 }          
-
-													 public void onFinish() {  
-														 Toast.makeText(EasterPre.this, "You are now Green Day Super fan!", Toast.LENGTH_LONG).show();
-														 
-														 startActivity(new Intent(EasterPre.this, Beanbag.class));
-													 }      
-													}.start();
 											}
 										});
 									}

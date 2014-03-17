@@ -14,7 +14,10 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,9 +68,18 @@ public class Allbymyself extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
+					ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+					NetworkInfo ni=cm.getActiveNetworkInfo();
+					if(ni!=null && ni.isConnected())
+					{
 				    Logger log = LoggerFactory.getLogger(Basketcase.class);
 				    log.info("Unreleased/All By Myself");
 				    Report.report1(this);
+					}
+					else
+					{
+						Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+					}
 				}
 				if(item.getItemId()==R.id.action_search)
 				{

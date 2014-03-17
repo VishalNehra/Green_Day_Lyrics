@@ -2,6 +2,7 @@ package com.greenday.lyrics;
  
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
+import com.greenday.americanidiot.Arewethewaiting;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
 
@@ -9,6 +10,9 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
  
 import java.util.ArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
  
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -16,10 +20,13 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -239,7 +246,18 @@ public class MainActivity extends Activity {
         	startActivity(new Intent(MainActivity.this, Settings.class));
             return true;
         case R.id.item2:
+			ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+			NetworkInfo ni=cm.getActiveNetworkInfo();
+			if(ni!=null && ni.isConnected())
+			{
+        	Logger log = LoggerFactory.getLogger(MainActivity.class);
+		    log.info("MainActivity/Feedback");
         	Report.report2(this);
+			}
+			else
+			{
+				Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+			}
             return true;
         case R.id.action_search:
 			// search action

@@ -3,10 +3,6 @@ package com.greenday.americanidiot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
-import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
-
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.Report;
@@ -18,20 +14,20 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class Americanidiot extends Activity implements OnRefreshListener {
-	private PullToRefreshLayout mPullToRefreshLayout;
+public class Americanidiot extends Activity {
+	//private PullToRefreshLayout mPullToRefreshLayout;
 	TextView tv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +39,15 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_americanidiot);
 		tv1 = (TextView)findViewById(R.id.textView1);
-		mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
+		//mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 		findViewById(R.id.sv);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
 		
 		//Automatically scroll view
-		/*SharedPreferences prefs = */
-		boolean scroll = /*getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE)*/
+		/*SharedPreferences prefs = 
+		boolean scroll = getSharedPreferences("SETTINGS_PREF", MODE_PRIVATE)
 				PreferenceManager.getDefaultSharedPreferences(this).getBoolean("scroll", false);
 		if(scroll)
 		{
@@ -60,20 +56,13 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 			.allChildrenArePullable()
 			.listener(this)
 			.setup(mPullToRefreshLayout);
-		}
+		}*/
 
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
 		if(display)
 		{
-			tv1.setKeepScreenOn(true);
-		}
-		
-		//Touch
-		boolean touch = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touch", false);
-		if(touch)
-		{
-			tv1.setClickable(false);
+			Report.warning(this);
 		}
 	}
 	
@@ -104,9 +93,18 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		if(item.getItemId()==R.id.reportsong)
 		{
 			//Log report
-		    Logger log = LoggerFactory.getLogger(Americanidiot.class);
-		    log.info("American Idiot/American Idiot");
-		    Report.report1(this);
+			ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+			NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+			if (networkInfo != null && networkInfo.isConnected()) 
+			{
+			Logger log = LoggerFactory.getLogger(Americanidiot.class);
+			log.info("American Idiot/American Idiot");
+			Report.report1(this);
+			}
+			else
+			{
+				Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+			}
 		}
 		if(item.getItemId()==R.id.action_search)
 		{
@@ -147,7 +145,7 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 		super.onDestroy();
 	}
 
-	//Pull to refresh listener
+	/*Pull to refresh listener
 	@Override
 	public void onRefreshStarted(View view) {
 		// TODO Auto-generated method stub
@@ -163,5 +161,5 @@ public class Americanidiot extends Activity implements OnRefreshListener {
 					 mPullToRefreshLayout.setRefreshComplete();
 				 }      
 				}.start();
-	}
+	}*/
 }

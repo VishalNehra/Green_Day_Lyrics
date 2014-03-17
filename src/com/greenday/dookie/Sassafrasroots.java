@@ -9,10 +9,16 @@ import com.greenday.lyrics.Report;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
@@ -25,7 +31,7 @@ public class Sassafrasroots extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
     	
-		//Set theme must be used before super.oncreate or any other layout declaration!
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 
 		// TODO Auto-generated method stub
@@ -62,9 +68,18 @@ public class Sassafrasroots extends Activity {
 				if(item.getItemId()==R.id.reportsong)
 				{
 					//Log report
+					ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+					NetworkInfo ni=cm.getActiveNetworkInfo();
+					if(ni!=null && ni.isConnected())
+					{
 				    Logger log = LoggerFactory.getLogger(Sassafrasroots.class);
 				    log.info("Dookie/Sassafras Roots");
 				    Report.report1(this);
+					}
+					else
+					{
+						Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+					}
 				}
 				if(item.getItemId()==R.id.action_search)
 				{

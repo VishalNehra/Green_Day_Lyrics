@@ -22,25 +22,25 @@ public final class R {
 		public static final int ptrViewDelegateClass = 0x7f010000;
 	}
 	public static final class color {
-		public static final int default_progress_bar_color = 0x7f080000;
+		public static final int default_progress_bar_color = 0x7f060000;
 	}
 	public static final class dimen {
-		public static final int default_corner_radius = 0x7f050004;
+		public static final int default_corner_radius = 0x7f070000;
 	}
 	public static final class id {
-		public static final int inside = 0x7f060003;
-		public static final int outside = 0x7f060004;
-		public static final int ptr_content = 0x7f060005;
-		public static final int ptr_progress = 0x7f060007;
-		public static final int ptr_text = 0x7f060006;
+		public static final int inside = 0x7f050000;
+		public static final int outside = 0x7f050001;
+		public static final int ptr_content = 0x7f050002;
+		public static final int ptr_progress = 0x7f050004;
+		public static final int ptr_text = 0x7f050003;
 	}
 	public static final class layout {
-		public static final int default_header = 0x7f030011;
+		public static final int default_header = 0x7f03000f;
 	}
 	public static final class string {
-		public static final int pull_to_refresh_pull_label = 0x7f070003;
-		public static final int pull_to_refresh_refreshing_label = 0x7f070005;
-		public static final int pull_to_refresh_release_label = 0x7f070004;
+		public static final int pull_to_refresh_pull_label = 0x7f080000;
+		public static final int pull_to_refresh_refreshing_label = 0x7f080002;
+		public static final int pull_to_refresh_release_label = 0x7f080001;
 	}
 	public static final class styleable {
 		public static final int[] PullToRefreshHeader = { 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b };

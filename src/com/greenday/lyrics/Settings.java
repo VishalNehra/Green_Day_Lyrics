@@ -16,10 +16,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.SwitchPreference;
 import android.text.Html;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -41,9 +43,7 @@ public class Settings extends PreferenceActivity {
 		super.onCreate(savedInstanceState);
 		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme;
 		final Preference mVersion;
-		Preference mDonate;
-		SwitchPreference mScroll, mDisplay;
-		CheckBoxPreference mTouch;
+		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		/*To extend settings as listview
@@ -179,7 +179,7 @@ public class Settings extends PreferenceActivity {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Changelog")
 				.setMessage(Html.fromHtml(getString(R.string.changelog_version_2) + 
-						getString(R.string.changelog_change_2) + 
+								getString(R.string.changelog_change_2) + 
 								getString(R.string.changelog_version_1) + 
 								getString(R.string.changelog_change_1)
 								))
@@ -254,20 +254,41 @@ public class Settings extends PreferenceActivity {
 			}
 		});
 		
-		//Scroll
-		mScroll = (SwitchPreference) findPreference("scroll");
-		mScroll.setEnabled(true);
-		
 		//Display
-		mDisplay =(SwitchPreference) findPreference("display");
-		mDisplay.setEnabled(false);
-		
-		//Touch
-		mTouch = (CheckBoxPreference) findPreference("touch");
-		mTouch.setEnabled(false);
+		mDisplay =(CheckBoxPreference) findPreference("display");
+		mDisplay.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				if(mDisplay.isChecked())
+				{
+					new AlertDialog.Builder(Settings.this)
+					.setTitle(Html.fromHtml("<font color='#ff0000'>Warning</font>"))
+			        .setMessage(Html.fromHtml("Your screen won't turn off automatically.\n Are you sure?"))
+			        .setNeutralButton("No", new DialogInterface.OnClickListener() {
+			            public void onClick(DialogInterface dialog, int which) {
+			                closeContextMenu();
+			            }
+			        })
+			        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+			            public void onClick(DialogInterface dialog, int which) {
+			                closeContextMenu(); 
+			            }
+			        })
+			        .show();    
+				}
+				else
+				{
+					Log.d("Worked", "Checkbox is unchecked");
+				}
+				return false;
+			}
+		});
+		mDisplay.setEnabled(true);
 		
 		//Build Version
-		//Ester Egg :D
+		//Easter Egg :D
 		mVersion = findPreference("version");
 		mVersion.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
@@ -328,10 +349,6 @@ public class Settings extends PreferenceActivity {
 				return false;
 			}
 		});
-		
-		//Donate
-		mDonate = findPreference("donate");
-		mDonate.setEnabled(false);
 		
 	}
 	
