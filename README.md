@@ -49,12 +49,9 @@ In labels you will get to know the length, writers, copyrights and more info. ab
 View all Green Day Lyrics with awesome looking themes.
 You can choose from lots of available themes in settings.
 
-<h5>Automatic Scrolling</h5>
-Tired of scrolling by yourself?
-Turn ON auto-scrolling from scrolling and enjoy reading lyrics without even touching the screen!
-This feature is useful while listening to song along with reading its lyrics.
-
-Don't forget to `Slide from top to bottom` to start the auto-scrolling.
+~~**Automatic Scrolling**~~  
+~~Deprecated~~  
+Removed (Had issues with different screen sizes).
 
 <h5>Navigation Drawer</h5>
 Browse through different albums using fancy Navigation Drawer.
@@ -79,9 +76,10 @@ Thanks to
 * [Logback](https://github.com/tony19/logback-android)
 * [ShowcaseView](https://github.com/amlcurran/ShowcaseView)
 * [Crouton](https://github.com/keyboardsurfer/Crouton)
-* [ActionBar-PullToRefresh](https://github.com/chrisbanes/ActionBar-PullToRefresh)
+* ~~[ActionBar-PullToRefresh](https://github.com/chrisbanes/ActionBar-PullToRefresh)~~
 * [Nineold Androids](https://github.com/JakeWharton/NineOldAndroids)
 * [Stack Overflow](http://stackoverflow.com/)
+* [AZ Lyrics](http://www.azlyrics.com/)
 * And lots more!
 
 Disclaimer
