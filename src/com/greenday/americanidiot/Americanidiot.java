@@ -57,12 +57,12 @@ public class Americanidiot extends Activity {
 			.listener(this)
 			.setup(mPullToRefreshLayout);
 		}*/
-
+		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
 		if(display)
 		{
-			Report.warning(this);
+			tv1.setKeepScreenOn(true);
 		}
 	}
 	

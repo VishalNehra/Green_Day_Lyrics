@@ -61,8 +61,8 @@
     
     <!-- Display -->
     <string name="display_title">Screen Timeout</string>
-    <string name="display_summary_on">Not Implemented</string>
-    <string name="display_summary_off">Not Implemented</string>
+    <string name="display_summary_on">Disabled</string>
+    <string name="display_summary_off">Enabled</string>
     
     <!-- Touch -->
     <string name="touch_title">Touch</string>

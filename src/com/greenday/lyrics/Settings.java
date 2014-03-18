@@ -16,12 +16,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
-import android.preference.SwitchPreference;
+import android.preference.PreferenceManager;
 import android.text.Html;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -46,6 +44,7 @@ public class Settings extends PreferenceActivity {
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
+		
 		/*To extend settings as listview
 		this.setContentView(R.layout.pref_act);
 		ListView lv=(ListView) findViewById(R.id.listView1);
@@ -268,19 +267,21 @@ public class Settings extends PreferenceActivity {
 			        .setMessage(Html.fromHtml("Your screen won't turn off automatically.\n Are you sure?"))
 			        .setNeutralButton("No", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
-			                closeContextMenu();
+			                mDisplay.setChecked(false);
 			            }
 			        })
 			        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
-			                closeContextMenu(); 
+			                mDisplay.setChecked(true);
+			                SharedPreferences sp1 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+			                sp1.edit().putBoolean("display", true).commit();
 			            }
-			        })
-			        .show();    
+			        }).show();    
 				}
 				else
 				{
-					Log.d("Worked", "Checkbox is unchecked");
+					SharedPreferences sp2 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                sp2.edit().putBoolean("display", false).commit();
 				}
 				return false;
 			}

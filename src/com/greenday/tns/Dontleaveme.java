@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,6 +41,13 @@ public class Dontleaveme extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		this.getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
+		
+		//Display
+		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+		if(display)
+		{
+			tv1.setKeepScreenOn(true);
+		}
 	}
 	
 	//Action bar code below

@@ -20,9 +20,11 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class Lastridein extends Activity {
 	
@@ -35,8 +37,16 @@ public class Lastridein extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.nimrod_lastridein);
+		TextView tv1=(TextView) findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
+		
+		//Display
+		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+		if(display)
+		{
+			tv1.setKeepScreenOn(true);
+		}
 	}
 	
 	//Action bar code below

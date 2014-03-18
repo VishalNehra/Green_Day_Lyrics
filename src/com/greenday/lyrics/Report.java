@@ -7,9 +7,7 @@ import org.slf4j.LoggerFactory;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.PowerManager;
 import android.text.Html;
-import android.view.WindowManager;
 import android.widget.EditText;
 
 public class Report {
@@ -80,28 +78,4 @@ public class Report {
 	    report.show(); 
 		return;
 	}
-	
-	//Warning_Display
-		public static void warning(final Context context)
-		{       
-			final AlertDialog.Builder report = new AlertDialog.Builder(context);
-			report.setTitle("Warning");
-		    report.setMessage(Html.fromHtml("<font color='#524ef8' size = '14'><b>Hint:</b></font>" +
-		    		"<br>• Give any feedback/suggestion.<br>" +
-		    		"• In case of any layout problem, provide a link to the screenshot.<br>" +
-		    		"<br><font color='#D3D3D3'><i>Data usage hardly in KB's</font></i>"));
-		    report.setPositiveButton("Submit", new DialogInterface.OnClickListener() {
-		        public void onClick(DialogInterface dialog, int whichButton) {
-		        	
-		        }
-		    });
-
-		    report.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-		        public void onClick(DialogInterface dialog, int whichButton) {
-		            //closeContextMenu();
-		        }
-		    });
-		    report.show(); 
-			return;
-		}
 }

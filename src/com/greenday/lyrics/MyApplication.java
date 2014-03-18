@@ -15,14 +15,14 @@ import android.app.Application;
 		                		reportType = org.acra.sender.HttpSender.Type.JSON,
 							    httpMethod = org.acra.sender.HttpSender.Method.PUT,
 							    		customReportContent = {
-				ReportField.APP_VERSION_CODE,
-				ReportField.APP_VERSION_NAME,
-				ReportField.ANDROID_VERSION,
-				ReportField.PACKAGE_NAME,
-				ReportField.REPORT_ID,
-				ReportField.BUILD,
-				ReportField.STACK_TRACE,
-				ReportField.APPLICATION_LOG
+											ReportField.APP_VERSION_CODE,
+											ReportField.APP_VERSION_NAME,
+											ReportField.ANDROID_VERSION,
+											ReportField.PACKAGE_NAME,
+											ReportField.REPORT_ID,
+											ReportField.BUILD,
+											ReportField.STACK_TRACE,
+											ReportField.APPLICATION_LOG
 								 },
 		 		mode = ReportingInteractionMode.TOAST,
                 forceCloseDialogAfterToast = false, // optional, default false

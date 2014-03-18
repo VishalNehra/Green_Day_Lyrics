@@ -39,7 +39,7 @@ public class Boulevardofbd extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-
+		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
 		if(display)
