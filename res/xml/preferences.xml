@@ -4,14 +4,8 @@
         
         <!-- Theme -->
         <PreferenceCategory android:title="@string/theme_title">
-            <ListPreference android:title="@string/themechooser_title"
-                android:dialogTitle="@string/themechooser_dialog"
-                android:key="themechooser"
-                android:entries="@array/themes_list"
-                android:entryValues="@array/themes_value" />
-            <Preference android:title="@string/apply_theme_title"
-                android:key="apply_theme"
-                android:summary="@string/apply_theme_summary"/>
+            <Preference android:title="@string/themechooser_title"
+                android:key="theme" />
                 
         </PreferenceCategory>
         

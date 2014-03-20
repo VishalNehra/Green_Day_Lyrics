@@ -1,7 +1,6 @@
 package com.greenday.lyrics;
 
 import java.io.File;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,27 +38,25 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mApplyTheme;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mTheme;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		
-		/*To extend settings as listview
-		this.setContentView(R.layout.pref_act);
-		ListView lv=(ListView) findViewById(R.id.listView1);
-		*/
+		/*To extend settings as listview*/
+		//this.setContentView(R.layout.pref_act);
+		//ListView lv=(ListView) findViewById(R.id.listView1);
 		
 		//Theme
-		mApplyTheme = (Preference)findPreference("apply_theme");
-		mApplyTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+		mTheme=findPreference("theme");
+		mTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				// TODO Auto-generated method stub
 				new AlertDialog.Builder(Settings.this)
-				.setMessage("Are you sure")
-				.setNegativeButton("No", new OnClickListener() {
+				.setTitle(R.string.themechooser_dialog)
+				.setNegativeButton("Cancel", new OnClickListener() {
 					
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
@@ -67,14 +64,59 @@ public class Settings extends PreferenceActivity {
 						closeContextMenu();
 					}
 				})
-				.setPositiveButton("Yes", new OnClickListener() {
-					
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						System.exit(0);
-					}
-				}).show();
+				.setSingleChoiceItems(R.array.themes_list, 0, new DialogInterface.OnClickListener() {
+	                public void onClick(DialogInterface dialog, int item) {
+	                    switch(item)
+	                    {
+	                        case 0:
+	                                SharedPreferences tc1=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc1.edit().putString("themechooser", "0").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 1:
+		                        	SharedPreferences tc2=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc2.edit().putString("themechooser", "1").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 2:
+		                        	SharedPreferences tc3=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc3.edit().putString("themechooser", "2").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 3:
+		                        	SharedPreferences tc4=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc4.edit().putString("themechooser", "3").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 4:
+		                        	SharedPreferences tc5=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc5.edit().putString("themechooser", "4").commit();
+	                                System.exit(0);
+                                	break;
+	                        case 5:
+		                        	SharedPreferences tc6=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc6.edit().putString("themechooser", "5").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 6:
+		                        	SharedPreferences tc7=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc7.edit().putString("themechooser", "6").commit();
+	                                System.exit(0);
+	                                break;
+	                        case 7:
+		                        	SharedPreferences tc8=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc8.edit().putString("themechooser", "7").commit();  
+	                                System.exit(0);
+	                                break;
+	                        case 8:
+		                        	SharedPreferences tc9=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+	                                tc9.edit().putString("themechooser", "8").commit();  
+	                                System.exit(0);
+	                                break;
+	                    }
+	                }
+	           })
+	           .show();
 				return false;
 			}
 		});

@@ -61,8 +61,8 @@
     
     <!-- Display -->
     <string name="display_title">Screen Timeout</string>
-    <string name="display_summary_on">Disabled</string>
-    <string name="display_summary_off">Enabled</string>
+    <string name="display_summary_on">Screen won\'t turn off</string>
+    <string name="display_summary_off">Default system values</string>
     
     <!-- Touch -->
     <string name="touch_title">Touch</string>
@@ -342,7 +342,7 @@
 	<string name="babuvula_title">Bab\'s Uvula Who!</string>
 	<string name="eightysix_title">86</string>
 	<string name="panicsong_title">Panic Song</string>
-	<string name="stuartave_title">Stuart And The Ave</string>
+	<string name="stuartave_title">Stuart And The Ave.</string>
 	<string name="brainstew_title">Brain Stew</string>
 	<string name="jaded_title">Jaded</string>
 	<string name="westbound_title">Westbound Sign</string>

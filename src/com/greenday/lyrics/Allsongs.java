@@ -180,6 +180,9 @@ import com.greenday.warning.Misery;
 import com.greenday.warning.Waiting;
 import com.greenday.warning.Warning;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -189,6 +192,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
@@ -430,7 +435,7 @@ public class Allsongs extends Activity {
 				"Stop When The Red Lights Flash",
 				"Strangeland",
 				"Stray Heart",
-				"Stuart And The Ave",
+				"Stuart And The Ave.",
 				"Stuck With Me",
 				"Suffocate",
 				"Sweet 16",
@@ -942,7 +947,7 @@ public class Allsongs extends Activity {
 				if (values=="Stray Heart") {
 					i=new Intent(Allsongs.this, Strayheart.class);
 					startActivity(i);}
-				if (values=="Stuart And The Ave") {
+				if (values=="Stuart And The Ave.") {
 					i=new Intent(Allsongs.this, Stuartave.class);
 					startActivity(i);}
 				if (values=="Stuck With Me") {
@@ -1082,9 +1087,18 @@ public class Allsongs extends Activity {
 			if(item.getItemId()==R.id.item2)
 			{
 				//Log report
+				ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+				NetworkInfo ni=cm.getActiveNetworkInfo();
+				if(ni!=null && ni.isConnected())
+				{
 			    Logger log = LoggerFactory.getLogger(Allsongs.class);
 			    log.info("All Songs");
 			    Report.report2(this);
+				}
+				else
+				{
+					Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
+				}
 			}
 		            return super.onOptionsItemSelected(item);	
 		}
