@@ -44,12 +44,17 @@ public class Settings extends PreferenceActivity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		
-		/*To extend settings as listview*/
+		/*To change settings layout as listview*/
 		//this.setContentView(R.layout.pref_act);
 		//ListView lv=(ListView) findViewById(R.id.listView1);
 		
 		//Theme
 		mTheme=findPreference("theme");
+		SharedPreferences tc1=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+		
+		final SharedPreferences tc2=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+		final int current = Integer.parseInt(tc1.getString("themechooser", "0"));
+		
 		mTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
@@ -64,53 +69,44 @@ public class Settings extends PreferenceActivity {
 						closeContextMenu();
 					}
 				})
-				.setSingleChoiceItems(R.array.themes_list, 0, new DialogInterface.OnClickListener() {
+				.setSingleChoiceItems(R.array.themes_list, current, new DialogInterface.OnClickListener() {
 	                public void onClick(DialogInterface dialog, int item) {
 	                    switch(item)
 	                    {
 	                        case 0:
-	                                SharedPreferences tc1=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc1.edit().putString("themechooser", "0").commit();
+	                                tc2.edit().putString("themechooser", "0").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 1:
-		                        	SharedPreferences tc2=PreferenceManager.getDefaultSharedPreferences(Settings.this);
 	                                tc2.edit().putString("themechooser", "1").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 2:
-		                        	SharedPreferences tc3=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc3.edit().putString("themechooser", "2").commit();
+	                                tc2.edit().putString("themechooser", "2").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 3:
-		                        	SharedPreferences tc4=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc4.edit().putString("themechooser", "3").commit();
+	                                tc2.edit().putString("themechooser", "3").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 4:
-		                        	SharedPreferences tc5=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc5.edit().putString("themechooser", "4").commit();
+	                                tc2.edit().putString("themechooser", "4").commit();
 	                                System.exit(0);
                                 	break;
 	                        case 5:
-		                        	SharedPreferences tc6=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc6.edit().putString("themechooser", "5").commit();
+	                                tc2.edit().putString("themechooser", "5").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 6:
-		                        	SharedPreferences tc7=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc7.edit().putString("themechooser", "6").commit();
+	                                tc2.edit().putString("themechooser", "6").commit();
 	                                System.exit(0);
 	                                break;
 	                        case 7:
-		                        	SharedPreferences tc8=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc8.edit().putString("themechooser", "7").commit();  
+	                                tc2.edit().putString("themechooser", "7").commit();  
 	                                System.exit(0);
 	                                break;
 	                        case 8:
-		                        	SharedPreferences tc9=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-	                                tc9.edit().putString("themechooser", "8").commit();  
+	                                tc2.edit().putString("themechooser", "8").commit();  
 	                                System.exit(0);
 	                                break;
 	                    }

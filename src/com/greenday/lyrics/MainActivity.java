@@ -38,6 +38,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
  
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
@@ -367,51 +368,37 @@ public class MainActivity extends Activity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        // Pass any configuration change to the drawer toggls
+        // Pass any configuration change to the drawer toggles
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-    //Protect crouton to display again on orientation change
+    
     @Override
     protected void onDestroy() {
+    	//Protect crouton to display again on orientation change
         Crouton.clearCroutonsForActivity(this);
         super.onDestroy();
       }
     
     //Override back button function
-    
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event)
-	{
-	    if ((keyCode == KeyEvent.KEYCODE_BACK))
-	    {   
-	    	boolean exit = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("exit", false);
-	    	if(exit)
-	    	{
-	    		new AlertDialog.Builder(this)
-		        .setTitle("Confirm?")
-		        .setMessage("You are about to exit")
-		        .setNegativeButton("No", new OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						closeContextMenu();
-					}
-				})
-				.setPositiveButton("Yes", new OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						onBackPressed();
-					}
-				}).show();
-	    	}
-	    	else
-	    	{
-	    		super.onBackPressed();
-	    	}
-	    }
-	    return super.onKeyDown(keyCode, event);
-	}
+    long lastPress;
+    @Override
+    public void onBackPressed() {
+    	boolean exit = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("exit", false);
+    	if(exit)
+    	{
+        long currentTime = System.currentTimeMillis();
+        Toast exit_toast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_LONG);
+        if(currentTime - lastPress > 5000){
+            exit_toast.show();
+            lastPress = currentTime;
+        }else{
+        	exit_toast.cancel();
+            super.onBackPressed();
+        }
+    	}
+    	else
+    	{
+    		finish();
+    	}
+    }
 }
