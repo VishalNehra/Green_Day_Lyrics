@@ -14,7 +14,9 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
@@ -38,7 +40,8 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mTheme;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense;
+		final Preference mTheme;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);

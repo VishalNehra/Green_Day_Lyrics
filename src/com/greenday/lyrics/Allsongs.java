@@ -237,12 +237,20 @@ public class Allsongs extends Activity {
 		
 		//Register broadcast receiver
 		IntentFilter iF = new IntentFilter();
-		iF.addAction("com.android.music.metachanged");		//For stock and apollo player
+		iF.addAction("com.android.music.metachanged");		//Stock
 		iF.addAction("com.maxmpz.audioplayer.metachanged");		//Poweramp
 		iF.addAction("com.htc.music.metachanged");		//HTC stock
 		iF.addAction("com.sec.android.app.music.metachanged");		//Samsung
 		iF.addAction("com.nullsoft.winamp.metachanged");		//Winamp
 		iF.addAction("com.dogsbark.noozy.metachanged");
+	    iF.addAction("com.nullsoft.winamp.metachanged");
+	    iF.addAction("com.amazon.mp3.metachanged");     
+	    iF.addAction("com.miui.player.metachanged");        
+	    iF.addAction("com.real.IMP.metachanged");
+	    iF.addAction("com.sonyericsson.music.metachanged");
+	    iF.addAction("com.rdio.android.metachanged");
+	    iF.addAction("com.samsung.sec.android.MusicPlayer.metachanged");
+	    iF.addAction("com.andrew.apollo.metachanged");
 		registerReceiver(mReceiver, iF);
 		
 		 //Boot_pref

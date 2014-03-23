@@ -49,7 +49,7 @@ In labels you will get to know the length, writers, copyrights and more info. ab
 View all Green Day Lyrics with awesome looking themes.
 You can choose from lots of available themes in settings.
 
-~~**Automatic Scrolling**~~  
+<h5>Automatic Scrolling</h5> 
 ~~Deprecated~~  
 Removed (Had issues with different screen sizes).
 
@@ -71,7 +71,7 @@ Thanks to
 * Android [developer guides](http://developer.android.com)
 * [XDA Developers](http://forum.xda-developers.com) and its members [MBQ_](http://forum.xda-developers.com/member.php?u=4244313), 
 [SimplicityApks](http://forum.xda-developers.com/member.php?u=5282469) and 
-[xcesco89](http://forum.xda-developers.com/member.php?u=3283046)
+[arpitkh96](http://forum.xda-developers.com/member.php?u=4500270)
 * [ACRA](https://github.com/ACRA/acra)
 * [Logback](https://github.com/tony19/logback-android)
 * [ShowcaseView](https://github.com/amlcurran/ShowcaseView)
