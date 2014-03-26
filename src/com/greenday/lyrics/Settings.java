@@ -14,9 +14,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
@@ -67,50 +65,60 @@ public class Settings extends PreferenceActivity {
 				.setNegativeButton("Cancel", new OnClickListener() {
 					
 					@Override
-					public void onClick(DialogInterface arg0, int arg1) {
+					public void onClick(DialogInterface dialog, int arg1) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						dialog.cancel();
 					}
 				})
 				.setSingleChoiceItems(R.array.themes_list, current, new DialogInterface.OnClickListener() {
-	                public void onClick(DialogInterface dialog, int item) {
+					public void onClick(DialogInterface dialog, int item) {
 	                    switch(item)
 	                    {
 	                        case 0:
 	                                tc2.edit().putString("themechooser", "0").commit();
+	                                //recreate(); can be used too.
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 1:
 	                                tc2.edit().putString("themechooser", "1").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 2:
 	                                tc2.edit().putString("themechooser", "2").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 3:
 	                                tc2.edit().putString("themechooser", "3").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 4:
 	                                tc2.edit().putString("themechooser", "4").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
                                 	break;
 	                        case 5:
 	                                tc2.edit().putString("themechooser", "5").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 6:
 	                                tc2.edit().putString("themechooser", "6").commit();
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 7:
 	                                tc2.edit().putString("themechooser", "7").commit();  
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                        case 8:
 	                                tc2.edit().putString("themechooser", "8").commit();  
 	                                System.exit(0);
+	                                dialog.cancel();
 	                                break;
 	                    }
 	                }
@@ -136,7 +144,7 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						dialog.cancel();
 					}
 				})
 				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -173,7 +181,7 @@ public class Settings extends PreferenceActivity {
 			}
 		});
 		
-		//Clear Shared Preferences
+		//Clear Default Shared Preferences
 		mHints=(Preference)findPreference("hints");
 		mHints.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
@@ -187,7 +195,7 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						dialog.cancel();
 					}
 				})
 				.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -200,7 +208,7 @@ public class Settings extends PreferenceActivity {
 						SharedPreferences settings = Settings.this.getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE); 
 				        settings.edit().clear().commit();
 				        Logger log = LoggerFactory.getLogger(Settings.class);
-					    log.info("Settings/ERASED_PREFERENCES");
+					    log.info("Settings/ERASED_DEFAULT_PREFERENCES");
 				        navigateUpTo(new Intent(Settings.this, MainActivity.class));
 				        System.exit(0);
 					    }
@@ -239,7 +247,7 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 
-						closeContextMenu();
+						dialog.cancel();
 					}
 				}).show();	
 				return false;
@@ -265,7 +273,7 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						dialog.cancel();
 					}
 				}).show();	
 				return false;
@@ -287,7 +295,7 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						closeContextMenu();
+						dialog.cancel();
 					}
 				}).show();	
 				return false;
@@ -306,7 +314,7 @@ public class Settings extends PreferenceActivity {
 					new AlertDialog.Builder(Settings.this)
 					.setTitle(Html.fromHtml("<font color='#ff0000'>Warning</font>"))
 			        .setMessage(Html.fromHtml("Your screen won't turn off automatically.\n Are you sure?"))
-			        .setNeutralButton("No", new DialogInterface.OnClickListener() {
+			        .setNegativeButton("No", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
 			                mDisplay.setChecked(false);
 			            }
@@ -316,6 +324,7 @@ public class Settings extends PreferenceActivity {
 			                mDisplay.setChecked(true);
 			                SharedPreferences sp1 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 			                sp1.edit().putBoolean("display", true).commit();
+			                System.exit(0);
 			            }
 			        }).show();    
 				}
@@ -323,6 +332,7 @@ public class Settings extends PreferenceActivity {
 				{
 					SharedPreferences sp2 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 	                sp2.edit().putBoolean("display", false).commit();
+	                System.exit(0);
 				}
 				return false;
 			}

@@ -1,24 +1,15 @@
 package com.greenday.dookie;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Report;
+import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
-
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Html;
@@ -75,19 +66,9 @@ public class Intheend extends Activity {
 				}
 				if(item.getItemId()==R.id.reportsong)
 				{
-					//Log report
-					ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-					NetworkInfo ni=cm.getActiveNetworkInfo();
-					if(ni!=null && ni.isConnected())
-					{
-				    Logger log = LoggerFactory.getLogger(Intheend.class);
-				    log.info("Dookie/In The End");
-				    Report.report1(this);
-					}
-					else
-					{
-						Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
-					}
+					Intent intent = new Intent(this, ReportSong.class);
+					intent.putExtra("report_sub", "In The End");
+					startActivity(intent);
 				}
 				if(item.getItemId()==R.id.action_search)
 				{

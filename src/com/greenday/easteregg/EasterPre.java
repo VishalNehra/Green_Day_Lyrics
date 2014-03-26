@@ -5,10 +5,12 @@ import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.Toast;
 import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 public class EasterPre extends Activity {
@@ -87,8 +89,15 @@ public class EasterPre extends Activity {
 													@Override
 													public void onClick(View arg0) {
 														// TODO Auto-generated method stub
+														if(Build.VERSION.SDK_INT >= 16)
+														{
 														Intent intent = new Intent(EasterPre.this, Beanbag.class);
 														startActivity(intent);
+														}
+														else
+														{
+															Toast.makeText(EasterPre.this, "You are now Green Day Super Fan!", Toast.LENGTH_LONG).show();
+														}
 													}
 												});
 											}

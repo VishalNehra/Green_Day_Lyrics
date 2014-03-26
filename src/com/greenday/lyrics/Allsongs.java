@@ -1,8 +1,5 @@
 package com.greenday.lyrics;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.greenday.americanidiot.Americanidiot;
 import com.greenday.americanidiot.Arewethewaiting;
 import com.greenday.americanidiot.Boulevardofbd;
@@ -180,9 +177,6 @@ import com.greenday.warning.Misery;
 import com.greenday.warning.Waiting;
 import com.greenday.warning.Warning;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -192,8 +186,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
@@ -238,16 +230,17 @@ public class Allsongs extends Activity {
 		//Register broadcast receiver
 		IntentFilter iF = new IntentFilter();
 		iF.addAction("com.android.music.metachanged");		//Stock
+		iF.addAction("com.getpebble.action.NOW_PLAYING");
 		iF.addAction("com.maxmpz.audioplayer.metachanged");		//Poweramp
 		iF.addAction("com.htc.music.metachanged");		//HTC stock
 		iF.addAction("com.sec.android.app.music.metachanged");		//Samsung
 		iF.addAction("com.nullsoft.winamp.metachanged");		//Winamp
 		iF.addAction("com.dogsbark.noozy.metachanged");
-	    iF.addAction("com.nullsoft.winamp.metachanged");
+		iF.addAction("com.sonyericsson.media.infinite.metachanged");
 	    iF.addAction("com.amazon.mp3.metachanged");     
 	    iF.addAction("com.miui.player.metachanged");        
 	    iF.addAction("com.real.IMP.metachanged");
-	    iF.addAction("com.sonyericsson.music.metachanged");
+	    iF.addAction("com.sonyericsson.music.true");
 	    iF.addAction("com.rdio.android.metachanged");
 	    iF.addAction("com.samsung.sec.android.MusicPlayer.metachanged");
 	    iF.addAction("com.andrew.apollo.metachanged");
@@ -288,7 +281,7 @@ public class Allsongs extends Activity {
 				// TODO Auto-generated method stub
 				
 				SharedPreferences prefs = Allsongs.this.getSharedPreferences(
-					      "PLAYING_PREF", Context.MODE_PRIVATE);
+					      "EXTRA_PREF", Context.MODE_PRIVATE);
 				String track = prefs.getString("song", "track");
 				txtQuery.setText(track);
 			}
@@ -1094,19 +1087,9 @@ public class Allsongs extends Activity {
 			}
 			if(item.getItemId()==R.id.item2)
 			{
-				//Log report
-				ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-				NetworkInfo ni=cm.getActiveNetworkInfo();
-				if(ni!=null && ni.isConnected())
-				{
-			    Logger log = LoggerFactory.getLogger(Allsongs.class);
-			    log.info("All Songs");
-			    Report.report2(this);
-				}
-				else
-				{
-					Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
-				}
+				Intent intent = new Intent(this, ReportSong.class);
+				intent.putExtra("report_sub", "Feedback");
+				startActivity(intent);
 			}
 		            return super.onOptionsItemSelected(item);	
 		}
@@ -1124,7 +1107,7 @@ public class Allsongs extends Activity {
 			final String track = intent.getStringExtra("track");
 			Log.d("Music",artist+":"+album+":"+track);
 			SharedPreferences prefs = context.getSharedPreferences(
-				      "PLAYING_PREF", Context.MODE_PRIVATE);
+				      "EXTRA_PREF", Context.MODE_PRIVATE);
 			prefs.edit().putString("song", track).commit();
 			}
 		};

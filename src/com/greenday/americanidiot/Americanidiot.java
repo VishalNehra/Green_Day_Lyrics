@@ -1,24 +1,15 @@
 package com.greenday.americanidiot;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.Report;
+import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
-
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Html;
@@ -92,20 +83,11 @@ public class Americanidiot extends Activity {
 		}
 		if(item.getItemId()==R.id.reportsong)
 		{
-			//Log report
-			ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-			NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-			if (networkInfo != null && networkInfo.isConnected()) 
-			{
-			Logger log = LoggerFactory.getLogger(Americanidiot.class);
-			log.info("American Idiot/American Idiot");
-			Report.report1(this);
-			}
-			else
-			{
-				Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
-			}
+			Intent intent = new Intent(this, ReportSong.class);
+			intent.putExtra("report_sub", "American Idiot");
+			startActivity(intent);
 		}
+		
 		if(item.getItemId()==R.id.action_search)
 		{
 			// Search action | Add as new task

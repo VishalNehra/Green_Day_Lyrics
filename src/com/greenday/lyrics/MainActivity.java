@@ -10,9 +10,8 @@ import de.keyboardsurfer.android.widget.crouton.Style;
  
 import java.util.ArrayList;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
- 
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -21,8 +20,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -124,6 +121,17 @@ public class MainActivity extends Activity {
         }
         
         //Boot_pref ends
+        
+        //Get user account for spinner
+        Account[] accounts = AccountManager.get(this).getAccountsByType("com.google");
+        for (Account account : accounts) {
+
+        	SharedPreferences prefs = this.getSharedPreferences(
+				      "EXTRA_PREF", Context.MODE_PRIVATE);
+			prefs.edit().putString("account", account.name).commit();
+
+        }
+        
         // load slide menu items
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
  
@@ -242,24 +250,15 @@ public class MainActivity extends Activity {
         	startActivity(new Intent(MainActivity.this, Settings.class));
             return true;
         case R.id.item2:
-			ConnectivityManager cm=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-			NetworkInfo ni=cm.getActiveNetworkInfo();
-			if(ni!=null && ni.isConnected())
-			{
-        	Logger log = LoggerFactory.getLogger(MainActivity.class);
-		    log.info("MainActivity/Feedback");
-        	Report.report2(this);
-			}
-			else
-			{
-				Crouton.makeText(this, "Unable to report while offline", Style.ALERT).show();
-			}
+        	Intent intent = new Intent(this, ReportSong.class);
+			intent.putExtra("report_sub", "Feedback");
+			startActivity(intent);
             return true;
         case R.id.action_search:
 			// search action
-        	Intent intent = new Intent(MainActivity.this, Allsongs.class);
-        	intent.putExtra("Search", true);
-        	startActivity(intent);
+        	Intent intent2 = new Intent(MainActivity.this, Allsongs.class);
+        	intent2.putExtra("Search", true);
+        	startActivity(intent2);
 			return true;
         default:
             return super.onOptionsItemSelected(item);

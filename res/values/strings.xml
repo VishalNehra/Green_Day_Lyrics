@@ -6,6 +6,7 @@
     
     <string name="settings">Settings</string>
     <string name="feedback">Feedback</string>
+    <string name="reportsong_title">Report</string>
     
     <string name="search_hint">Type to search a song&#8230;</string>
     
@@ -21,7 +22,7 @@
         \t- Other minor fixes&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
-	<string name="crash_toast_text">Thank You for the feedback.
+	<string name="crash_toast_text">Thanks, your report is being sent.
 	</string>
 	<!-- Searchtitle -->
     
@@ -38,6 +39,7 @@
     
     <!-- Report title -->
     <string name="report_title">Report this song</string>
+    <string name="report_menu">Send</string>
     
     <!-- Disclaimer title -->
     <string name="disclaimer_title">Disclaimer</string>

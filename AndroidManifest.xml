@@ -11,6 +11,7 @@
         
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 	
     <application
         android:allowBackup="true"
@@ -40,6 +41,10 @@
     </activity>
         
         <activity android:name="com.greenday.lyrics.Report"/>
+        <activity android:name="com.greenday.lyrics.ReportSong"
+            android:label="@string/reportsong_title"
+        	android:screenOrientation="portrait"
+             />
         <activity android:name="com.greenday.lyrics.Settings"
            android:label="@string/settings"
            android:screenOrientation="portrait" />
