@@ -1,5 +1,6 @@
 package com.greenday.lyrics;
 
+import com.greenday.dookie.Allbymyself;
 import com.greenday.dookie.Basketcase;
 import com.greenday.dookie.Burnout;
 import com.greenday.dookie.Chump;
@@ -41,7 +42,7 @@ import android.widget.ListView;
 	            Bundle savedInstanceState) {
 	  
 	        View rootView = inflater.inflate(R.layout.fragment_dookie, container, false);
-			getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
+			//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 			
 			getActivity();
 			//Boot_pref
@@ -73,20 +74,21 @@ import android.widget.ListView;
 			        		getString(R.string.length) +
 			        		"<font color='#006500'><i>39:38</font></i><br><br>" +
 			        		getString(R.string.track_list) +
-			        		"<font color='#006500'>1. Burnout <i>(2:07)</i><br>" +
-			        		"2. Having A Blast <i>(2:44)</i><br>" +
-			        		"3. Chump <i>(2:54)</i><br>" +
-			        		"4. Longview <i>(3:59)</i><br>" +
-			        		"5. Welcome to Paradise <i>(3:44)</i><br>" +
-			        		"6. Pulling Teeth <i>(2:31)</i><br>" +
-			        		"7. Basket Case <i>(3:01)</i><br>" +
-			        		"8. She <i>(2:14)</i><br>" +
-			        		"9. Sassafras Roots <i>(2:37)</i><br>" +
-			        		"10. When I Come Around <i>(2:58)</i><br>" +
-			        		"11. Coming Clean <i>(1:34)</i><br>" +
-			        		"12. Emenius Sleepus <i>(1:43)</i><br>" +
-			        		"13. In The End <i>(1:46)</i><br>" +
-			        		"14. F.O.D. <i>(5:46)</i></font>"))
+			        		"<font color='#006500'>1. All By Myself <i>(1:35)</i><br>" +
+			        		"2. Burnout <i>(2:07)</i><br>" +
+			        		"3. Having A Blast <i>(2:44)</i><br>" +
+			        		"4. Chump <i>(2:54)</i><br>" +
+			        		"5. Longview <i>(3:59)</i><br>" +
+			        		"6. Welcome to Paradise <i>(3:44)</i><br>" +
+			        		"7. Pulling Teeth <i>(2:31)</i><br>" +
+			        		"8. Basket Case <i>(3:01)</i><br>" +
+			        		"9. She <i>(2:14)</i><br>" +
+			        		"10. Sassafras Roots <i>(2:37)</i><br>" +
+			        		"11. When I Come Around <i>(2:58)</i><br>" +
+			        		"12. Coming Clean <i>(1:34)</i><br>" +
+			        		"13. Emenius Sleepus <i>(1:43)</i><br>" +
+			        		"14. In The End <i>(1:46)</i><br>" +
+			        		"15. F.O.D. <i>(5:46)</i></font>"))
 			        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
 			                getActivity().closeContextMenu();
@@ -98,7 +100,8 @@ import android.widget.ListView;
 	        ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
 	        //EDITED Code 
-	        String[] values = new String[] {"Burnout",
+	        String[] values = new String[] {"All By Myself",
+	        		"Burnout",
 	        		"Having A Blast",
 	        		"Chump",
 	        		"Longview",
@@ -131,47 +134,51 @@ import android.widget.ListView;
 	                	 { 
 	                		 switch(position)
 	                         {
-	                         case 0:  Intent newActivity = new Intent(getActivity(), Burnout.class);     
-	                         		  startActivityForResult(newActivity, 0);
+
+	                         case 0:  Intent newActivity = new Intent(getActivity(), Allbymyself.class);     
+			                		  startActivityForResult(newActivity, 0);
+			                          break;
+	                         case 1:  Intent newActivity1 = new Intent(getActivity(), Burnout.class);     
+	                         		  startActivityForResult(newActivity1, 0);
 	                                  break;
-	                         case 1:  Intent newActivity1 = new Intent(getActivity(), Havingblast.class);     
-	                                  startActivityForResult(newActivity1, 1);
+	                         case 2:  Intent newActivity2 = new Intent(getActivity(), Havingblast.class);     
+	                                  startActivityForResult(newActivity2, 1);
 	                                  break;
-	                         case 2:  Intent newActivity2 = new Intent(getActivity(), Chump.class);     
-	        			              startActivityForResult(newActivity2, 1);
+	                         case 3:  Intent newActivity3 = new Intent(getActivity(), Chump.class);     
+	        			              startActivityForResult(newActivity3, 1);
 	        			              break;
-	                         case 3:  Intent newActivity3 = new Intent(getActivity(), Longview.class);     
-	        	              		  startActivityForResult(newActivity3, 1);
+	                         case 4:  Intent newActivity4 = new Intent(getActivity(), Longview.class);     
+	        	              		  startActivityForResult(newActivity4, 1);
 	        	              		  break;
-	                         case 4:  Intent newActivity4 = new Intent(getActivity(), Welcomeparadise.class);     
-	        		         		  startActivityForResult(newActivity4, 1);
+	                         case 5:  Intent newActivity5 = new Intent(getActivity(), Welcomeparadise.class);     
+	        		         		  startActivityForResult(newActivity5, 1);
 	        		         		  break;
-	                         case 5:  Intent newActivity5 = new Intent(getActivity(), Pullingteeth.class);     
-	        		        		  startActivityForResult(newActivity5, 1);
+	                         case 6:  Intent newActivity6 = new Intent(getActivity(), Pullingteeth.class);     
+	        		        		  startActivityForResult(newActivity6, 1);
 	        		        		  break;
-	                         case 6:  Intent newActivity6 = new Intent(getActivity(), Basketcase.class);     
-	        			       		  startActivityForResult(newActivity6, 1);
-	        			       		  break;
-	                         case 7:  Intent newActivity7 = new Intent(getActivity(), She.class);     
+	                         case 7:  Intent newActivity7 = new Intent(getActivity(), Basketcase.class);     
 	        			       		  startActivityForResult(newActivity7, 1);
 	        			       		  break;
-	                         case 8:  Intent newActivity8 = new Intent(getActivity(), Sassafrasroots.class);     
+	                         case 8:  Intent newActivity8 = new Intent(getActivity(), She.class);     
 	        			       		  startActivityForResult(newActivity8, 1);
 	        			       		  break;
-	                         case 9:  Intent newActivity9 = new Intent(getActivity(), Whencomearound.class);     
+	                         case 9:  Intent newActivity9 = new Intent(getActivity(), Sassafrasroots.class);     
 	        			       		  startActivityForResult(newActivity9, 1);
-	        			       		  break; 
-	                         case 10: Intent newActivity10 = new Intent(getActivity(), Comingclean.class);     
+	        			       		  break;
+	                         case 10:  Intent newActivity10 = new Intent(getActivity(), Whencomearound.class);     
 	        			       		  startActivityForResult(newActivity10, 1);
 	        			       		  break; 
-	                         case 11: Intent newActivity11 = new Intent(getActivity(), Emeniussleepus.class);     
+	                         case 11: Intent newActivity11 = new Intent(getActivity(), Comingclean.class);     
 	        			       		  startActivityForResult(newActivity11, 1);
-	        			       		  break;
-	                         case 12: Intent newActivity12 = new Intent(getActivity(), Intheend.class);     
+	        			       		  break; 
+	                         case 12: Intent newActivity12 = new Intent(getActivity(), Emeniussleepus.class);     
 	        			       		  startActivityForResult(newActivity12, 1);
 	        			       		  break;
-	                         case 13: Intent newActivity13 = new Intent(getActivity(), FOD.class);     
-						       		  startActivityForResult(newActivity13, 1);
+	                         case 13: Intent newActivity13 = new Intent(getActivity(), Intheend.class);     
+	        			       		  startActivityForResult(newActivity13, 1);
+	        			       		  break;
+	                         case 14: Intent newActivity14 = new Intent(getActivity(), FOD.class);     
+						       		  startActivityForResult(newActivity14, 1);
 						       		  break;
 	                  
 	                      }

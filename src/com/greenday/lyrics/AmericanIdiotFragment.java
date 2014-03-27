@@ -41,7 +41,7 @@ public class AmericanIdiotFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_americanidiot, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		
 
 		getActivity();

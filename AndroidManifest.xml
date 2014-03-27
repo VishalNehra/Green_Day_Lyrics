@@ -867,6 +867,13 @@
 	    
 	    <!-- Dookie -->
 	    
+	    
+	    <activity android:name="com.greenday.dookie.Allbymyself"
+	        android:label="@string/allbymyself_title"
+	        android:uiOptions="splitActionBarWhenNarrow"
+	        android:windowSoftInputMode="adjustPan"
+        	android:screenOrientation="portrait"
+	         ></activity>
 	    <activity android:name="com.greenday.dookie.Burnout"
 	        android:label="@string/burnout_title"
         	android:uiOptions="splitActionBarWhenNarrow"
@@ -1339,12 +1346,6 @@
 	        android:windowSoftInputMode="adjustPan"
         	android:screenOrientation="portrait"
 	         ></activity>
-	    <activity android:name="com.greenday.unreleased.Kissingsanta"
-	        android:label="@string/kissingsanta_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-	         ></activity>
 	    <activity android:name="com.greenday.unreleased.Likeastone"
 	        android:label="@string/likeastone_title"
 	        android:uiOptions="splitActionBarWhenNarrow"
@@ -1401,12 +1402,6 @@
 	         ></activity>
 	    <activity android:name="com.greenday.unreleased.Workingclasshero"
 	        android:label="@string/workingclasshero_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-	         ></activity>
-	    <activity android:name="com.greenday.unreleased.Allbymyself"
-	        android:label="@string/allbymyself_title"
 	        android:uiOptions="splitActionBarWhenNarrow"
 	        android:windowSoftInputMode="adjustPan"
         	android:screenOrientation="portrait"

@@ -31,7 +31,7 @@ public class Goodriddance extends Activity {
 		setContentView(R.layout.ins_goodriddance);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

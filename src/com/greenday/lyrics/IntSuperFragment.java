@@ -50,7 +50,7 @@ public class IntSuperFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_intsuper, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.ins_cover2);
         
 		getActivity();
 		//Boot_pref

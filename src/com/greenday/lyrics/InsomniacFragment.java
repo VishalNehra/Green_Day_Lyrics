@@ -43,7 +43,7 @@ public class InsomniacFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_insomniac, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		
 		getActivity();
 		//Boot_pref

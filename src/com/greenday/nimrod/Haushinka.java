@@ -30,7 +30,7 @@ public class Haushinka extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.nimrod_haushinka);
 		tv1 = (TextView)findViewById(R.id.textView1);
-		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Display

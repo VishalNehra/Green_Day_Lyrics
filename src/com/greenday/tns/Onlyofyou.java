@@ -31,7 +31,7 @@ public class Onlyofyou extends Activity {
 		setContentView(R.layout.tns_onlyofyou);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		this.getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
+		//this.getWindow().setBackgroundDrawableResource(R.drawable.tns_cover2);
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

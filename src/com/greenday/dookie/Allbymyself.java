@@ -1,4 +1,4 @@
-package com.greenday.unreleased;
+package com.greenday.dookie;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
@@ -28,7 +28,8 @@ public class Allbymyself extends Activity {
 
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.unreleased_allbymyself);
+		setContentView(R.layout.dookie_allbymyself);
+		//getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		

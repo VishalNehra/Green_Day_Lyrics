@@ -31,7 +31,7 @@ public class Nopride extends Activity {
 		setContentView(R.layout.insomniac_nopride);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

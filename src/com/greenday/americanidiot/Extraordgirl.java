@@ -29,7 +29,7 @@ public class Extraordgirl extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot_extordgirl);
 		tv1 = (TextView)findViewById(R.id.textView1);
-		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		//Display

@@ -41,7 +41,7 @@ public class UnoFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_uno, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.uno_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.uno_cover2);
         
 		getActivity();
 		//Boot_pref

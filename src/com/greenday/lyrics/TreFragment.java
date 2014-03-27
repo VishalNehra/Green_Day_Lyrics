@@ -41,7 +41,7 @@ public class TreFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_tre, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.tre_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.tre_cover2);
 		
 		getActivity();
 		//Boot_pref

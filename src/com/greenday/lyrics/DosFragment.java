@@ -41,7 +41,7 @@ public class DosFragment extends Fragment {
             Bundle savedInstanceState) {
     	
         View rootView = inflater.inflate(R.layout.fragment_dos, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		
 		getActivity();
 		//Boot_pref

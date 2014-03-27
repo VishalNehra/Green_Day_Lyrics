@@ -41,7 +41,7 @@ public class WarningFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_warning, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
         
 		getActivity();
 		//Boot_pref

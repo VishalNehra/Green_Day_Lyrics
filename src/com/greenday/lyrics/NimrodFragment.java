@@ -47,7 +47,7 @@ public class NimrodFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_nimrod, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
           
 		getActivity();
 		//Boot_pref

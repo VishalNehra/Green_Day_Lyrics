@@ -45,7 +45,7 @@ public class KerplunkFragment extends Fragment {
             Bundle savedInstanceState) {
   
         View rootView = inflater.inflate(R.layout.fragment_kerplunk, container, false);
-		getActivity().getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.kerplunk_cover2);
         
 		getActivity();
 		//Boot_pref

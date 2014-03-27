@@ -30,7 +30,7 @@ public class Stuckwithme extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.insomniac_stuckwithme);
 		tv1 = (TextView)findViewById(R.id.textView1);
-		getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.insomniac_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Display

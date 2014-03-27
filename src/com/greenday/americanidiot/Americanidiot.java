@@ -32,7 +32,7 @@ public class Americanidiot extends Activity {
 		tv1 = (TextView)findViewById(R.id.textView1);
 		//mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 		findViewById(R.id.sv);
-		getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
 		

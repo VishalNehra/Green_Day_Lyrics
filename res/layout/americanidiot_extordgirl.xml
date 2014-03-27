@@ -5,6 +5,7 @@
     android:id="@+id/ptr_layout"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/americanidiot_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView

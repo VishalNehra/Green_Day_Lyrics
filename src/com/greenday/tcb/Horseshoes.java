@@ -31,7 +31,7 @@ public class Horseshoes extends Activity {
 		setContentView(R.layout.tcb_horseshoes);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.tcb_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.tcb_cover2);
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

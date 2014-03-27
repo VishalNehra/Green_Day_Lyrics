@@ -30,7 +30,7 @@ public class Lastridein extends Activity {
 		setContentView(R.layout.nimrod_lastridein);
 		TextView tv1=(TextView) findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
+		//getWindow().setBackgroundDrawableResource(R.drawable.nimrod_cover2);
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

@@ -31,7 +31,7 @@ public class Havingblast extends Activity {
 		setContentView(R.layout.dookie_havingblast);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2); 
+		//getWindow().setBackgroundDrawableResource(R.drawable.dookie_cover2); 
 		
 		//Display
 		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);

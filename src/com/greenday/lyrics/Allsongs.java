@@ -13,6 +13,7 @@ import com.greenday.americanidiot.Shesarebel;
 import com.greenday.americanidiot.Stjimmy;
 import com.greenday.americanidiot.Wakemeup;
 import com.greenday.americanidiot.Whatshername;
+import com.greenday.dookie.Allbymyself;
 import com.greenday.dookie.Basketcase;
 import com.greenday.dookie.Burnout;
 import com.greenday.dookie.Chump;
@@ -163,7 +164,6 @@ import com.greenday.uno.Rustyjames;
 import com.greenday.uno.Staythenight;
 import com.greenday.uno.Sweetsixt;
 import com.greenday.uno.Troublemaker;
-import com.greenday.unreleased.Allbymyself;
 import com.greenday.warning.Bloodsex;
 import com.greenday.warning.Castaway;
 import com.greenday.warning.Church;
@@ -223,7 +223,7 @@ public class Allsongs extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
+		//getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		
@@ -243,7 +243,7 @@ public class Allsongs extends Activity {
 	    iF.addAction("com.sonyericsson.music.true");
 	    iF.addAction("com.rdio.android.metachanged");
 	    iF.addAction("com.samsung.sec.android.MusicPlayer.metachanged");
-	    iF.addAction("com.andrew.apollo.metachanged");
+	    //iF.addAction("com.andrew.apollo.metachanged");
 		registerReceiver(mReceiver, iF);
 		
 		 //Boot_pref

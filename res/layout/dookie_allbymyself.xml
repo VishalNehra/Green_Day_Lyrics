@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/unreleased_cover2"
+    android:background="@drawable/dookie_cover2"
     android:layout_gravity="center_horizontal"  >
 
 <ScrollView
@@ -18,20 +18,21 @@
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal"
         android:textSize="18sp" 
-        android:text="\nI saw daddy kissing Santa Claus\n
-Underneath the mistletoe\n
-Last night\n
-He didn't see me creep\n
-down the stairs to have a peek\n
-[Mike screams 'Oh GOD!']\n
-He thought I was up in the bedroom fast asleep\n
+        android:text="\nI was alone,I was all by myself\n
+No one was looking, I was thinking of you\n
+Oh yeah, did I mention I was all by myself\n
+All by myself...\n
+All by myself...\n
+All by myself...\n
 \n
-Then, I saw mommy kissing Santa Claus\n
-Underneath the Christmas tree last night\n
-there must be some mistake\n
-was I really awake?\n
-I move in closer, but better look away\n
-\n
-[Mike and Billie make barfing noises]"/>
+I went to your house,\n
+But no one was there\n
+I went in your room\n
+I was all by myself\n
+You and me had\n
+Such wonderful times\n
+When I'm all by myself,\n
+All by myself\n
+[repeat several times]"/>
 </ScrollView>
 </RelativeLayout>
