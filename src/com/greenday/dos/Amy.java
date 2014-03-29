@@ -1,11 +1,5 @@
 package com.greenday.dos;
 
-import com.greenday.lyrics.Allsongs;
-import com.greenday.lyrics.R;
-import com.greenday.lyrics.ReportSong;
-import com.greenday.lyrics.Settings;
-import com.greenday.lyrics.Util;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -16,6 +10,12 @@ import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.R;
+import com.greenday.lyrics.ReportSong;
+import com.greenday.lyrics.Settings;
+import com.greenday.lyrics.Util;
 
 public class Amy extends Activity {
 	

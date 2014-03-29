@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/ptr_layout"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -80,4 +78,4 @@ My shallow heart's the only thing that's beating\n
 Sometimes I wish someone up there will find me\n
 'til then I walk alone..."/>
 </ScrollView>
-</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+</RelativeLayout>

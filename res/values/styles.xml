@@ -1,13 +1,4 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!-- Pull to refresh -->
-    <style name="Widget.Custom.PtrHeader" parent="android:Widget">
-        <item name="ptrPullText">Pull To Start</item>
-		<item name="ptrRefreshingText">Starting</item>
-		<item name="ptrReleaseText">Started Successfully</item>
-		<item name="ptrProgressBarColor">#d43fa5</item>
-		
-	</style>
 	
     <style name="Theme.Transparent" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>

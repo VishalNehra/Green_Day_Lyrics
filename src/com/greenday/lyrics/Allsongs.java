@@ -196,6 +196,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -223,7 +224,7 @@ public class Allsongs extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		//getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
+		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		
@@ -282,7 +283,7 @@ public class Allsongs extends Activity {
 				
 				SharedPreferences prefs = Allsongs.this.getSharedPreferences(
 					      "EXTRA_PREF", Context.MODE_PRIVATE);
-				String track = prefs.getString("song", "track");
+				String track = prefs.getString("song", "Not Found");
 				txtQuery.setText(track);
 			}
 		});
@@ -290,7 +291,7 @@ public class Allsongs extends Activity {
 		//Action bar search
 		boolean search = getIntent().getBooleanExtra("Search", false);
 		if(search) {
-            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+            	getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 			}
 		
 		String[] values = new String []

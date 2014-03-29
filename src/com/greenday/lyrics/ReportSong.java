@@ -44,7 +44,7 @@ public class ReportSong extends Activity {
 		
 		SharedPreferences prefs = this.getSharedPreferences(
 			      "EXTRA_PREF", Context.MODE_PRIVATE);
-		final String account = prefs.getString("account", "account.name");
+		final String account = prefs.getString("account", "Green Day Fan");
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 		
 		String[] values = new String []

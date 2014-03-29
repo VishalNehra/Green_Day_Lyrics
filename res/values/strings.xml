@@ -14,12 +14,17 @@
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
     <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
-    <string name="changelog_change_1">&lt;i>\t- Initial release&lt;/i>&lt;br>&lt;br></string>
+    <string name="changelog_change_1">&lt;i>- Initial release&lt;/i>&lt;br>&lt;br></string>
     <string name="changelog_version_2">&lt;font color="#524ef8">&lt;b>v1.0.1&lt;/font>&lt;/b>&lt;br></string>
-    <string name="changelog_change_2">\t- Added theme support to nav. drawer&lt;br>
-        \t- Fixed issue #5 (github)&lt;br>
-        \t- Minor lyrics correction&lt;br>
-        \t- Other minor fixes&lt;br>&lt;br></string>
+    <string name="changelog_change_2">&lt;i>- Added theme support to nav. drawer&lt;br>
+          - ~~Fixed issue #5 (github)~~&lt;br>
+          - Minor lyrics correction&lt;br>
+          - Other minor fixes&lt;br>&lt;/i>&lt;br></string>
+    <string name="changelog_version_3">&lt;font color="#524ef8">&lt;b>v1.0.2&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_change_3">- Fixed nav drawer theme issues&lt;br>
+          - Modified nav drawer for tablets&lt;br>
+          - Fixed various options in Settings (see Full Changelog)&lt;br>
+          - Added new Report UI&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thanks, your report is being sent.
@@ -45,7 +50,8 @@
     <string name="disclaimer_title">Disclaimer</string>
     
     <!-- License title -->
-    <string name="license_title">Open-Source Licenses</string>
+    <string name="license_title">Open Source Licenses</string>
+    <string name="license_summary">License details for open source software</string>
     
     <!-- Label title -->
     <string name="label_title">Information about track</string>
@@ -86,7 +92,7 @@
     <string name="cache_title">Clear Cache</string>
     <string name="cache_summary">Clears cache memory</string>
     <string name="hints_title">Review Hints</string>
-    <string name="hints_summary">Missed any instruction? This option is for you.</string>
+    <string name="hints_summary">Missed any instruction? This option is for you</string>
     
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">List of changes in app</string>
@@ -98,10 +104,12 @@
     <string name="donate_summary">Help me pay play store hosting charges</string>
     
     <string name="about_title">About</string>
+    <string name="aboutapp_title">About the app.</string>
+    <string name="aboutgd_title">About Green Day</string>
     <string name="version_title">Build Version</string>
     <string name="version_summary">v1.0.1</string>
     <string name="source_title">Application sources</string>
-    <string name="source_summary">View app source code. </string>
+    <string name="source_summary">View app source code</string>
     <string name="members_title">Members</string>
     <string name="members_summary">List of Green Day members</string>
     <string name="albums_title">Albums</string>
@@ -202,9 +210,9 @@
     
     <!-- Rate Button -->
     <string name="rate_title">Rate the app</string>
-    <string name="rate_summary">It helps a lot!</string>
+    <string name="rate_summary">Please give a good rating :-)</string>
     
-    <string name="extras_title">Extras</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
 	
     <!-- Songs titles -->
     <!-- American Idiot -->

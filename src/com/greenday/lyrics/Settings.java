@@ -226,7 +226,9 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Changelog")
-				.setMessage(Html.fromHtml(getString(R.string.changelog_version_2) + 
+				.setMessage(Html.fromHtml(getString(R.string.changelog_version_3) + 
+								getString(R.string.changelog_change_3) + 
+								getString(R.string.changelog_version_2) + 
 								getString(R.string.changelog_change_2) + 
 								getString(R.string.changelog_version_1) + 
 								getString(R.string.changelog_change_1)
@@ -287,9 +289,9 @@ public class Settings extends PreferenceActivity {
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
-				.setTitle("Open-Source Licenses")
+				.setTitle("Open Source Licenses")
 				.setMessage(Html.fromHtml("• This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
-						"• You can find the source code at Github."))
+						"• For more info. go to github page of this app."))
 				.setPositiveButton("Close", new OnClickListener() {
 					
 					@Override

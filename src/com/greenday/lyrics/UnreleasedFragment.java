@@ -1,6 +1,5 @@
 package com.greenday.lyrics;
 
-import com.greenday.dookie.Allbymyself;
 import com.greenday.unreleased.Cigarettes;
 import com.greenday.unreleased.Favouriteson;
 import com.greenday.unreleased.Foughtlaw;

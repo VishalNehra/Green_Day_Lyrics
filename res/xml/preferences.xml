@@ -21,10 +21,54 @@
                 android:summary="@string/hints_summary"/>
         </PreferenceCategory>
         
-        <!-- Green Day -->
+        <!-- Miscellaneous -->
+	      <PreferenceCategory android:title="@string/miscellaneous_title">
+	          
+	          <CheckBoxPreference android:key="display"
+	              android:title="@string/display_title"
+	              android:summaryOn="@string/display_summary_on"
+	              android:summaryOff="@string/display_summary_off"
+	              android:defaultValue="false" />
+	          <CheckBoxPreference android:key="exit"
+	              android:title="@string/exit_title"
+	              android:summaryOn="@string/exit_summary_on"
+	              android:summaryOff="@string/exit_summary_off"
+	              android:defaultValue="false"/>
+	            
+	      </PreferenceCategory>
+        
+        <!-- About -->
         <PreferenceCategory
-            android:title="@string/greenday_title">
-            <!-- Albums -->
+            android:title="@string/about_title">
+            <PreferenceScreen android:title="@string/aboutapp_title">
+                <Preference android:key="version"
+                    android:title="@string/version_title"
+                    android:summary="@string/version_summary"/>
+                <Preference android:key="changelog"
+                    android:title="@string/changelog_title"
+                    android:summary="@string/changelog_summary" />
+                <Preference android:key="source"
+                    android:title="@string/source_title"
+                    android:summary="@string/source_summary">
+                    <intent android:action="android.intent.action.VIEW"
+	                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
+                </Preference>
+                <Preference
+                	android:key="rate"
+	                android:title="@string/rate_title"
+	                android:summary="@string/rate_summary">
+	            <intent android:action="android.intent.action.VIEW"
+	                    android:data="market://details?id=com.greenday.lyrics"/>
+	        	</Preference>
+                <Preference android:key="disclaimer"
+                android:title="@string/disclaimer_title"/>
+            
+            <Preference android:key="license"
+                android:title="@string/license_title"
+                android:summary="@string/license_summary"/>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="@string/aboutgd_title">
+                <!-- Albums -->
             <PreferenceScreen
                 android:title="@string/albums_title"
                 android:summary="@string/albums_summary">
@@ -149,54 +193,8 @@
                 android:summary="@string/member6_summary">
                 <intent android:action="android.intent.action.VIEW"
                     android:data="http://en.wikipedia.org/wiki/Jason_Freese"/></Preference>
-            <!-- More list can be added -->
         </PreferenceScreen>
-            
-        </PreferenceCategory>
         
-        <!-- About -->
-        
-        <PreferenceCategory
-            android:title="@string/about_title">
-            <Preference
-                android:key="version"
-                android:title="@string/version_title"
-                android:summary="@string/version_summary">
-            <!-- <intent 
-	        android:action="android.intent.action.VIEW"
-	        android:data="https://github.com/vishal0071/Green_Day_Lyrics/releases"/> -->
-		    <!-- intent to open class
-		        android:targetPackage="com.greenday.lyrics"
-		        android:targetClass="com.greenday.lyrics.Allsongs"  -->
-			</Preference>
-            
-            <Preference
-                android:key="source"
-                android:title="@string/source_title"
-                android:summary="@string/source_summary">
-	            <intent android:action="android.intent.action.VIEW"
-	                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
-            </Preference>
-            
-            <Preference android:key="changelog"
-                android:title="@string/changelog_title"
-                android:summary="@string/changelog_summary"/>
-            
-            </PreferenceCategory>
-            
-            <!-- Extras -->
-      <PreferenceCategory android:title="@string/extras_title">
-          
-          <CheckBoxPreference android:key="display"
-              android:title="@string/display_title"
-              android:summaryOn="@string/display_summary_on"
-              android:summaryOff="@string/display_summary_off"
-              android:defaultValue="false" />
-          <CheckBoxPreference android:key="exit"
-              android:title="@string/exit_title"
-              android:summaryOn="@string/exit_summary_on"
-              android:summaryOff="@string/exit_summary_off"
-              android:defaultValue="false"/>
             <Preference android:key="store"
                 android:title="@string/store_title"
                 android:summary="@string/store_summary">
@@ -204,19 +202,8 @@
                     android:data="http://www.bravadousa.com/greenday/"/>
             </Preference>
             
-            <Preference
-                	android:key="rate"
-	                android:title="@string/rate_title"
-	                android:summary="@string/rate_summary">
-	            <intent android:action="android.intent.action.VIEW"
-	                    android:data="market://details?id=com.greenday.lyrics"/>
-	        </Preference>
-            
-            <Preference android:key="disclaimer"
-                android:title="@string/disclaimer_title"/>
-            
-            <Preference android:key="license"
-                android:title="@string/license_title"/>
-      </PreferenceCategory>
+        </PreferenceScreen>
+                
+            </PreferenceCategory>
         
 </PreferenceScreen>
