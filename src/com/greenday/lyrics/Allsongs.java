@@ -485,7 +485,7 @@ public class Allsongs extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Toast.makeText(Allsongs.this, "Cleared", 2000).show();
+				Toast.makeText(Allsongs.this, "Cleared", Toast.LENGTH_SHORT).show();
 				txtQuery.setText("");
 			}
 		});

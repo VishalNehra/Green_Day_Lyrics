@@ -72,6 +72,7 @@ Thanks to
 * [XDA Developers](http://forum.xda-developers.com) and its members [MBQ_](http://forum.xda-developers.com/member.php?u=4244313), 
 [SimplicityApks](http://forum.xda-developers.com/member.php?u=5282469) and 
 [arpitkh96](http://forum.xda-developers.com/member.php?u=4500270)
+* [Tman684](http://www.greendaycommunity.org/user/67639-tman684/)
 * [ACRA](https://github.com/ACRA/acra)
 * [Logback](https://github.com/tony19/logback-android)
 * [ShowcaseView](https://github.com/amlcurran/ShowcaseView)

@@ -38,7 +38,7 @@ public class ReportSong extends Activity {
 		ActionBar ab = getActionBar();
 		ab.setSubtitle(getIntent().getExtras().getString("report_sub"));
 		
-		//Submit classs name for report
+		//Submit class name for report
 		Logger log = LoggerFactory.getLogger(ReportSong.class);
 		log.info(getIntent().getExtras().getString("report_sub"));
 		

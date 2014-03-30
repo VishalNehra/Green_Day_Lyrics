@@ -80,8 +80,8 @@
     <!-- Settings -->
     
     <string name="greenday_title">Green Day</string>
-    <string name="theme_title">Theme</string>
-    <string name="themechooser_title">Choose Theme</string>
+    <string name="theme_title">Interface</string>
+    <string name="themechooser_title">Theme Chooser</string>
     <string name="themechooser_dialog">Choose a theme</string>
     <string name="themes_list_default">Default</string>
     
