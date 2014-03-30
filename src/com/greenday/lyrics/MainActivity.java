@@ -3,6 +3,7 @@ package com.greenday.lyrics;
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.greenday.unreleased.UnreleasedFragment;
+import com.greenday.warning.WarningFragment;
 import com.slidingmenu.adapter.NavDrawerListAdapter;
 import com.slidingmenu.model.NavDrawerItem;
 

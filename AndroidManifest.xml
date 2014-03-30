@@ -595,76 +595,8 @@
         	 ></activity>
         
         <!-- Warning -->
-		<activity android:name="com.greenday.warning.Bloodsex"
-		    android:label="@string/bloodsex_title"
+        <activity android:name="com.greenday.warning.WarningMain"
         	android:uiOptions="splitActionBarWhenNarrow"
-        	android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity> 
-		<activity android:name="com.greenday.warning.Castaway"
-		    android:label="@string/castaway_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-		<activity android:name="com.greenday.warning.Warning"
-		    android:label="@string/warning_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>  
-		<activity android:name="com.greenday.warning.Church"
-		    android:label="@string/church_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Fashion"
-		    android:label="@string/fashion_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Misery"
-		    android:label="@string/misery_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Deadbeat"
-		    android:label="@string/deadbeat_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Holdon"
-		    android:label="@string/holdon_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Jackass"
-		    android:label="@string/jackass_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Waiting"
-		    android:label="@string/waiting_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Minority"
-		    android:label="@string/minority_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-		     ></activity>
-	    <activity android:name="com.greenday.warning.Macy"
-		    android:label="@string/macy_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
         	android:screenOrientation="portrait"
 		     ></activity>
 	    

@@ -5,6 +5,7 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
+import com.greenday.warning.WarningMain;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -93,8 +94,9 @@ public class Minority extends Activity {
 			        })
 			        .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
-			                Intent intent=new Intent(Minority.this, com.greenday.warning.Minority.class);
-			                startActivity(intent);
+			            	Intent newActivity10 = new Intent(Minority.this, WarningMain.class);     
+			                 newActivity10.putExtra("track", 11);
+			                 startActivityForResult(newActivity10, 1);
 			            }
 			        })
 			        .show();  

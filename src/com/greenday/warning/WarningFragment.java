@@ -1,17 +1,10 @@
-package com.greenday.lyrics;
+package com.greenday.warning;
 
-import com.greenday.warning.Bloodsex;
-import com.greenday.warning.Castaway;
-import com.greenday.warning.Church;
-import com.greenday.warning.Deadbeat;
-import com.greenday.warning.Fashion;
-import com.greenday.warning.Holdon;
-import com.greenday.warning.Jackass;
-import com.greenday.warning.Macy;
-import com.greenday.warning.Minority;
-import com.greenday.warning.Misery;
-import com.greenday.warning.Waiting;
-import com.greenday.warning.Warning;
+import com.greenday.lyrics.R;
+import com.greenday.lyrics.R.id;
+import com.greenday.lyrics.R.layout;
+import com.greenday.lyrics.R.string;
+import com.greenday.unreleased.Unreleased;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -129,42 +122,66 @@ public class WarningFragment extends Fragment {
                 	 { 
                 		 switch(position)
                          {
-                         case 0:  Intent newActivity = new Intent(getActivity(), Warning.class);     
-                         		  startActivityForResult(newActivity, 0);
-                                  break;
-                         case 1:  Intent newActivity1 = new Intent(getActivity(), Bloodsex.class);     
-                                  startActivityForResult(newActivity1, 1);
-                                  break;
-                         case 2:  Intent newActivity2 = new Intent(getActivity(), Church.class);     
-        			              startActivityForResult(newActivity2, 1);
-        			              break;
-                         case 3:  Intent newActivity3 = new Intent(getActivity(), Fashion.class);     
-        	              		  startActivityForResult(newActivity3, 1);
-        	              		  break;
-                         case 4:  Intent newActivity4 = new Intent(getActivity(), Castaway.class);     
-        		         		  startActivityForResult(newActivity4, 1);
-        		         		  break;
-                         case 5:  Intent newActivity5 = new Intent(getActivity(), Misery.class);     
-        		        		  startActivityForResult(newActivity5, 1);
-        		        		  break;
-                         case 6:  Intent newActivity6 = new Intent(getActivity(), Deadbeat.class);     
-        			       		  startActivityForResult(newActivity6, 1);
-        			       		  break;
-                         case 7:  Intent newActivity7 = new Intent(getActivity(), Holdon.class);     
-        			       		  startActivityForResult(newActivity7, 1);
-        			       		  break;
-                         case 8:  Intent newActivity8 = new Intent(getActivity(), Jackass.class);     
-        			       		  startActivityForResult(newActivity8, 1);
-        			       		  break;
-                         case 9:  Intent newActivity9 = new Intent(getActivity(), Waiting.class);     
-        			       		  startActivityForResult(newActivity9, 1);
-        			       		  break; 
-                         case 10: Intent newActivity10 = new Intent(getActivity(), Minority.class);     
-        			       		  startActivityForResult(newActivity10, 1);
-        			       		  break; 
-                         case 11: Intent newActivity11 = new Intent(getActivity(), Macy.class);     
-        			       		  startActivityForResult(newActivity11, 1);
-        			       		  break;
+                         case 0:  //Warning
+                        	 Intent newActivity = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity.putExtra("track", 1);
+			                 startActivityForResult(newActivity, 0);
+                             break;
+                         case 1:  //Blood, Sex & Booze
+                        	 Intent newActivity1 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity1.putExtra("track", 2);
+			                 startActivityForResult(newActivity1, 1);
+                             break;
+                         case 2:  //Church on Sunday
+                        	 Intent newActivity2 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity2.putExtra("track", 3);
+			                 startActivityForResult(newActivity2, 1);
+        			         break;
+                         case 3:  //Fashion Victim
+                        	 Intent newActivity3 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity3.putExtra("track", 4);
+			                 startActivityForResult(newActivity3, 1);
+        	              	 break;
+                         case 4:  //Castaway
+                        	 Intent newActivity4 = new Intent(getActivity(), WarningMain.class);   
+                        	 newActivity4.putExtra("track", 5);
+			                 startActivityForResult(newActivity4, 1);
+        		         	 break;
+                         case 5:  //Misery
+                        	 Intent newActivity5 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity5.putExtra("track", 6);
+			                 startActivityForResult(newActivity5, 1);
+        		        	 break;
+                         case 6:  //Deadbeat Holiday
+                        	 Intent newActivity6 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity6.putExtra("track", 7);
+			                 startActivityForResult(newActivity6, 1);
+        			       	 break;
+                         case 7:  //Hold On
+                        	 Intent newActivity7 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity7.putExtra("track", 8);
+			                 startActivityForResult(newActivity7, 1);
+        			       	 break;
+                         case 8:  //Jackass
+                        	 Intent newActivity8 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity8.putExtra("track", 9);
+			                 startActivityForResult(newActivity8, 1);
+        			       	 break; 
+                         case 9:  //Waiting
+                        	 Intent newActivity9 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity9.putExtra("track", 10);
+			                 startActivityForResult(newActivity9, 1);
+        			       	 break; 
+                         case 10: //Minority
+                        	 Intent newActivity10 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity10.putExtra("track", 11);
+			                 startActivityForResult(newActivity10, 1);
+        			       	 break;
+                         case 11: //Macy's Day Parade
+                        	 Intent newActivity11 = new Intent(getActivity(), WarningMain.class);     
+			                 newActivity11.putExtra("track", 12);
+			                 startActivityForResult(newActivity11, 1);
+        			       	 break;
                       }
                 	 }
                 });
