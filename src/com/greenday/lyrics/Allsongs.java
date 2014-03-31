@@ -152,18 +152,7 @@ import com.greenday.tre.Ninetyninerev;
 import com.greenday.tre.Sexdrugs;
 import com.greenday.tre.Theforgotten;
 import com.greenday.tre.Walkaway;
-import com.greenday.uno.Angelblue;
-import com.greenday.uno.Carpediem;
-import com.greenday.uno.Fellforyou;
-import com.greenday.uno.Killthedj;
-import com.greenday.uno.Letyourselfgo;
-import com.greenday.uno.Lossofcontrol;
-import com.greenday.uno.Nuclearfamily;
-import com.greenday.uno.Ohlove;
-import com.greenday.uno.Rustyjames;
-import com.greenday.uno.Staythenight;
-import com.greenday.uno.Sweetsixt;
-import com.greenday.uno.Troublemaker;
+import com.greenday.uno.Uno;
 import com.greenday.warning.WarningMain;
 
 import android.annotation.SuppressLint;
@@ -567,8 +556,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Android.class);
 					startActivity(i);}
 				if (values=="Angel Blue") {
-					i=new Intent(Allsongs.this, Angelblue.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivityForResult(newActivity8, 1);}
 				if (values=="Are We The Waiting") {
 					i=new Intent(Allsongs.this, Arewethewaiting.class);
 					startActivity(i);}
@@ -616,8 +606,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Burnout.class);
 					startActivity(i);}
 				if (values=="Carpe Diem") {
-					i=new Intent(Allsongs.this, Carpediem.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivityForResult(newActivity2, 1);}
 				if (values=="Castaway") {
 					Intent newActivity4 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity4.putExtra("track", 5);
@@ -689,8 +680,9 @@ public class Allsongs extends Activity {
                     newActivity3.putExtra("track", 4);
                     startActivityForResult(newActivity3, 1);}
 				if (values=="Fell For You") {
-					i=new Intent(Allsongs.this, Fellforyou.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivityForResult(newActivity5, 1);}
 				if (values=="Fuck Time") {
 					i=new Intent(Allsongs.this, Fucktime.class);
 					startActivity(i);}
@@ -763,8 +755,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Jinx.class);
 					startActivity(i);}
 				if (values=="Kill The DJ") {
-					i=new Intent(Allsongs.this, Killthedj.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Uno.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivityForResult(newActivity4, 1);}
 				if (values=="King For A Day") {
 					i=new Intent(Allsongs.this, Kingforaday.class);
 					startActivity(i);}
@@ -787,8 +780,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Lazybones.class);
 					startActivity(i);}
 				if (values=="Let Yourself Go") {
-					i=new Intent(Allsongs.this, Letyourselfgo.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivityForResult(newActivity3, 1);}
 				if (values=="Letterbomb") {
 					i=new Intent(Allsongs.this, Letterbomb.class);
 					startActivity(i);}
@@ -799,8 +793,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Longview.class);
 					startActivity(i);}
 				if (values=="Loss Of Control") {
-					i=new Intent(Allsongs.this, Lossofcontrol.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivityForResult(newActivity6, 1);}
 				if (values=="Macy's Day Parade") {
 					Intent newActivity11 = new Intent(Allsongs.this, WarningMain.class);     
 	                 newActivity11.putExtra("track", 12);
@@ -838,11 +833,13 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Nopride.class);
 					startActivity(i);}
 				if (values=="Nuclear Family") {
-					i=new Intent(Allsongs.this, Nuclearfamily.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Uno.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivityForResult(newActivity, 0);}
 				if (values=="Oh Love") {
-					i=new Intent(Allsongs.this, Ohlove.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivityForResult(newActivity11, 1);}
 				if (values=="On The Wagon") {
 					i=new Intent(Allsongs.this, Onwagon.class);
 					startActivity(i);}
@@ -901,8 +898,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Rotting.class);
 					startActivity(i);}
 				if (values=="Rusty James") {
-					i=new Intent(Allsongs.this, Rustyjames.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivityForResult(newActivity10, 1);}
 				if (values=="Sassafras Roots") {
 					i=new Intent(Allsongs.this, Sassafrasroots.class);
 					startActivity(i);}
@@ -937,8 +935,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Stjimmy.class);
 					startActivity(i);}
 				if (values=="Stay The Night") {
-					i=new Intent(Allsongs.this, Staythenight.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivityForResult(newActivity1, 1);}
 				if (values=="Stop When The Red Lights Flash") {
 					i=new Intent(Allsongs.this, Stopredflash.class);
 					startActivity(i);}
@@ -958,8 +957,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Suffocate.class);
 					startActivity(i);}
 				if (values=="Sweet 16") {
-					i=new Intent(Allsongs.this, Sweetsixt.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivityForResult(newActivity9, 1);}
 				if (values=="Sweet Children") {
 					i=new Intent(Allsongs.this, Sweetchildren.class);
 					startActivity(i);}
@@ -988,8 +988,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Tiredofwaiting.class);
 					startActivity(i);}
 				if (values=="Troublemaker") {
-					i=new Intent(Allsongs.this, Troublemaker.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Uno.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivityForResult(newActivity7, 1);}
 				if (values=="Uptight") {
 					i=new Intent(Allsongs.this, Uptight.class);
 					startActivity(i);}

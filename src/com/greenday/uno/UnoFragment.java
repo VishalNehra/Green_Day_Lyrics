@@ -1,18 +1,6 @@
-package com.greenday.lyrics;
+package com.greenday.uno;
 
-import com.greenday.uno.Angelblue;
-import com.greenday.uno.Carpediem;
-import com.greenday.uno.Fellforyou;
-import com.greenday.uno.Killthedj;
-import com.greenday.uno.Letyourselfgo;
-import com.greenday.uno.Lossofcontrol;
-import com.greenday.uno.Nuclearfamily;
-import com.greenday.uno.Ohlove;
-import com.greenday.uno.Rustyjames;
-import com.greenday.uno.Staythenight;
-import com.greenday.uno.Sweetsixt;
-import com.greenday.uno.Troublemaker;
-
+import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
@@ -128,43 +116,67 @@ public class UnoFragment extends Fragment {
                 	 { 
                 		 switch(position)
                          {
-                         case 0:  Intent newActivity = new Intent(getActivity(), Nuclearfamily.class);     
-                         		  startActivityForResult(newActivity, 0);
-                                  break;
-                         case 1:  Intent newActivity1 = new Intent(getActivity(), Staythenight.class);     
-                                  startActivityForResult(newActivity1, 1);
-                                  break;
-                         case 2:  Intent newActivity2 = new Intent(getActivity(), Carpediem.class);     
-        			              startActivityForResult(newActivity2, 1);
-        			              break;
-                         case 3:  Intent newActivity3 = new Intent(getActivity(), Letyourselfgo.class);     
-        	              		  startActivityForResult(newActivity3, 1);
-        	              		  break;
-                         case 4:  Intent newActivity4 = new Intent(getActivity(), Killthedj.class);     
-        		         		  startActivityForResult(newActivity4, 1);
-        		         		  break;
-                         case 5:  Intent newActivity5 = new Intent(getActivity(), Fellforyou.class);     
-        		        		  startActivityForResult(newActivity5, 1);
-        		        		  break;
-                         case 6:  Intent newActivity6 = new Intent(getActivity(), Lossofcontrol.class);     
-        			       		  startActivityForResult(newActivity6, 1);
-        			       		  break;
-                         case 7:  Intent newActivity7 = new Intent(getActivity(), Troublemaker.class);     
-        			       		  startActivityForResult(newActivity7, 1);
-        			       		  break;
-                         case 8:  Intent newActivity8 = new Intent(getActivity(), Angelblue.class);     
-        			       		  startActivityForResult(newActivity8, 1);
-        			       		  break;
-                         case 9:  Intent newActivity9 = new Intent(getActivity(), Sweetsixt.class);     
-        			       		  startActivityForResult(newActivity9, 1);
-        			       		  break; 
-                         case 10: Intent newActivity10 = new Intent(getActivity(), Rustyjames.class);     
-        			       		  startActivityForResult(newActivity10, 1);
-        			       		  break; 
-                         case 11: Intent newActivity11 = new Intent(getActivity(), Ohlove.class);     
-        			       		  startActivityForResult(newActivity11, 1);
-        			       		  break;
-                      }
+                         case 0:  //Nuclear Family
+                        	 Intent newActivity = new Intent(getActivity(), Uno.class);     
+			                 newActivity.putExtra("track", 1);
+			                 startActivityForResult(newActivity, 0);
+                             break;
+                         case 1:  //Stay The Night
+                        	 Intent newActivity1 = new Intent(getActivity(), Uno.class);     
+			                 newActivity1.putExtra("track", 2);
+			                 startActivityForResult(newActivity1, 1);
+                             break;
+                         case 2:  //Carpe Diem
+                        	 Intent newActivity2 = new Intent(getActivity(), Uno.class);     
+			                 newActivity2.putExtra("track", 3);
+			                 startActivityForResult(newActivity2, 1);
+        			         break;
+                         case 3:  //Let Yourself Go
+                        	 Intent newActivity3 = new Intent(getActivity(), Uno.class);     
+			                 newActivity3.putExtra("track", 4);
+			                 startActivityForResult(newActivity3, 1);
+        	              	 break;
+                         case 4:  //Kill The DJ
+                        	 Intent newActivity4 = new Intent(getActivity(), Uno.class);   
+                        	 newActivity4.putExtra("track", 5);
+			                 startActivityForResult(newActivity4, 1);
+        		         	 break;
+                         case 5:  //Fell For You
+                        	 Intent newActivity5 = new Intent(getActivity(), Uno.class);     
+			                 newActivity5.putExtra("track", 6);
+			                 startActivityForResult(newActivity5, 1);
+        		        	 break;
+                         case 6:  //Loss Of Control
+                        	 Intent newActivity6 = new Intent(getActivity(), Uno.class);     
+			                 newActivity6.putExtra("track", 7);
+			                 startActivityForResult(newActivity6, 1);
+        			       	 break;
+                         case 7:  //Troublemaker
+                        	 Intent newActivity7 = new Intent(getActivity(), Uno.class);     
+			                 newActivity7.putExtra("track", 8);
+			                 startActivityForResult(newActivity7, 1);
+        			       	 break;
+                         case 8:  //Angel Blue
+                        	 Intent newActivity8 = new Intent(getActivity(), Uno.class);     
+			                 newActivity8.putExtra("track", 9);
+			                 startActivityForResult(newActivity8, 1);
+        			       	 break; 
+                         case 9:  //Sweet 16
+                        	 Intent newActivity9 = new Intent(getActivity(), Uno.class);     
+			                 newActivity9.putExtra("track", 10);
+			                 startActivityForResult(newActivity9, 1);
+        			       	 break; 
+                         case 10: //Rusty James
+                        	 Intent newActivity10 = new Intent(getActivity(), Uno.class);     
+			                 newActivity10.putExtra("track", 11);
+			                 startActivityForResult(newActivity10, 1);
+        			       	 break;
+                         case 11: //Oh Love
+                        	 Intent newActivity11 = new Intent(getActivity(), Uno.class);     
+			                 newActivity11.putExtra("track", 12);
+			                 startActivityForResult(newActivity11, 1);
+        			       	 break;
+                         }
                 	 }
                 });
                 return rootView;

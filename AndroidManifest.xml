@@ -172,76 +172,8 @@
     	</activity>
     	
         <!-- UNO -->
-        <activity android:name="com.greenday.uno.Nuclearfamily"
-            android:label="@string/nuclearfamily_title"
+        <activity android:name="com.greenday.uno.Uno"
         	android:uiOptions="splitActionBarWhenNarrow"
-        	android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Staythenight"
-            android:label="@string/staythenight_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Carpediem"
-            android:label="@string/carpediem_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Letyourselfgo"
-            android:label="@string/letyourselfgo_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Killthedj"
-            android:label="@string/killthedj_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Fellforyou"
-            android:label="@string/fellforyou_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Lossofcontrol"
-            android:label="@string/lossofcontrol_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Troublemaker"
-            android:label="@string/troublemaker_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Angelblue"
-            android:label="@string/angelblue_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Sweetsixt"
-            android:label="@string/sweetsixt_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Rustyjames"
-            android:label="@string/rustyjames_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             ></activity>
-        <activity android:name="com.greenday.uno.Ohlove"
-            android:label="@string/ohlove_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
         	android:screenOrientation="portrait"
              ></activity>
         
