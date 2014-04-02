@@ -1,17 +1,10 @@
-package com.greenday.lyrics;
+package com.greenday.tre;
 
-import com.greenday.tre.Amanda;
-import com.greenday.tre.Avesrnde;
-import com.greenday.tre.Brutallove;
-import com.greenday.tre.Dirtybastards;
-import com.greenday.tre.Dramaqueen;
-import com.greenday.tre.Kid;
-import com.greenday.tre.Littleboytrain;
-import com.greenday.tre.Missingyou;
-import com.greenday.tre.Ninetyninerev;
-import com.greenday.tre.Sexdrugs;
-import com.greenday.tre.Theforgotten;
-import com.greenday.tre.Walkaway;
+import com.greenday.lyrics.R;
+import com.greenday.lyrics.R.id;
+import com.greenday.lyrics.R.layout;
+import com.greenday.lyrics.R.string;
+import com.greenday.uno.Uno;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -128,42 +121,66 @@ public class TreFragment extends Fragment {
                 	 { 
                 		 switch(position)
                          {
-                         case 0:  Intent newActivity = new Intent(getActivity(), Brutallove.class);     
-                         		  startActivityForResult(newActivity, 0);
-                                  break;
-                         case 1:  Intent newActivity1 = new Intent(getActivity(), Missingyou.class);     
-                                  startActivityForResult(newActivity1, 1);
-                                  break;
-                         case 2:  Intent newActivity2 = new Intent(getActivity(), Avesrnde.class);     
-        			              startActivityForResult(newActivity2, 1);
-        			              break;
-                         case 3:  Intent newActivity3 = new Intent(getActivity(), Dramaqueen.class);     
-        	              		  startActivityForResult(newActivity3, 1);
-        	              		  break;
-                         case 4:  Intent newActivity4 = new Intent(getActivity(), Kid.class);     
-        		         		  startActivityForResult(newActivity4, 1);
-        		         		  break;
-                         case 5:  Intent newActivity5 = new Intent(getActivity(), Sexdrugs.class);     
-        		        		  startActivityForResult(newActivity5, 1);
-        		        		  break;
-                         case 6:  Intent newActivity6 = new Intent(getActivity(), Littleboytrain.class);     
-        			       		  startActivityForResult(newActivity6, 1);
-        			       		  break;
-                         case 7:  Intent newActivity7 = new Intent(getActivity(), Amanda.class);     
-        			       		  startActivityForResult(newActivity7, 1);
-        			       		  break;
-                         case 8:  Intent newActivity8 = new Intent(getActivity(), Walkaway.class);     
-        			       		  startActivityForResult(newActivity8, 1);
-        			       		  break;
-                         case 9:  Intent newActivity9 = new Intent(getActivity(), Dirtybastards.class);     
-        			       		  startActivityForResult(newActivity9, 1);
-        			       		  break; 
-                         case 10: Intent newActivity10 = new Intent(getActivity(), Ninetyninerev.class);     
-        			       		  startActivityForResult(newActivity10, 1);
-        			       		  break; 
-                         case 11: Intent newActivity11 = new Intent(getActivity(), Theforgotten.class);     
-        			       		  startActivityForResult(newActivity11, 1);
-        			       		  break; 		  
+                         case 0:  //Brutal Love
+                        	 Intent newActivity = new Intent(getActivity(), Tre.class);     
+			                 newActivity.putExtra("track", 1);
+			                 startActivityForResult(newActivity, 0);
+                             break;
+                         case 1:  //Missing You
+                        	 Intent newActivity1 = new Intent(getActivity(), Tre.class);     
+			                 newActivity1.putExtra("track", 2);
+			                 startActivityForResult(newActivity1, 1);
+                             break;
+                         case 2:  //8th Avenue Serenade
+                        	 Intent newActivity2 = new Intent(getActivity(), Tre.class);     
+			                 newActivity2.putExtra("track", 3);
+			                 startActivityForResult(newActivity2, 1);
+        			         break;
+                         case 3:  //Drama Queen
+                        	 Intent newActivity3 = new Intent(getActivity(), Tre.class);     
+			                 newActivity3.putExtra("track", 4);
+			                 startActivityForResult(newActivity3, 1);
+        	              	 break;
+                         case 4:  //X-Kid
+                        	 Intent newActivity4 = new Intent(getActivity(), Tre.class);   
+                        	 newActivity4.putExtra("track", 5);
+			                 startActivityForResult(newActivity4, 1);
+        		         	 break;
+                         case 5:  //Sex, Drugs & Violence
+                        	 Intent newActivity5 = new Intent(getActivity(), Tre.class);     
+			                 newActivity5.putExtra("track", 6);
+			                 startActivityForResult(newActivity5, 1);
+        		        	 break;
+                         case 6:  //Little Boy Named Train
+                        	 Intent newActivity6 = new Intent(getActivity(), Tre.class);     
+			                 newActivity6.putExtra("track", 7);
+			                 startActivityForResult(newActivity6, 1);
+        			       	 break;
+                         case 7:  //Amanda
+                        	 Intent newActivity7 = new Intent(getActivity(), Tre.class);     
+			                 newActivity7.putExtra("track", 8);
+			                 startActivityForResult(newActivity7, 1);
+        			       	 break;
+                         case 8:  //Walk Away
+                        	 Intent newActivity8 = new Intent(getActivity(), Tre.class);     
+			                 newActivity8.putExtra("track", 9);
+			                 startActivityForResult(newActivity8, 1);
+        			       	 break; 
+                         case 9:  //Dirty Rotten Bastards
+                        	 Intent newActivity9 = new Intent(getActivity(), Tre.class);     
+			                 newActivity9.putExtra("track", 10);
+			                 startActivityForResult(newActivity9, 1);
+        			       	 break; 
+                         case 10: //99 Revolutions
+                        	 Intent newActivity10 = new Intent(getActivity(), Tre.class);     
+			                 newActivity10.putExtra("track", 11);
+			                 startActivityForResult(newActivity10, 1);
+        			       	 break;
+                         case 11: //The Forgotten
+                        	 Intent newActivity11 = new Intent(getActivity(), Tre.class);     
+			                 newActivity11.putExtra("track", 12);
+			                 startActivityForResult(newActivity11, 1);
+        			       	 break;
                       }
                 	 }
                 });
