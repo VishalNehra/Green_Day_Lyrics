@@ -1,6 +1,1065 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
+    <!-- Oh Girl -->
+    <string name="ohgirl">
+        \nNot Available
+    </string>
+    
+    <!-- Dream Catcher -->
+    <string name="dreamcatcher">
+        \nNot Available
+    </string>
+    
+    <!-- Olivia -->
+    <string name="olivia">
+        \nNot Available
+    </string>
+    
+    <!-- Boys in the Bathroom Stall -->
+    <string name="boysinstall">
+        \nNot Available
+    </string>
+    
+    <!-- Second Time Around -->
+    <string name="secondtime">
+        \nNot Available
+    </string>
+    
+    <!-- The Things I Heard Today -->
+    <string name="thingsheard">
+        \nNot Available
+    </string>
+    
+    <!-- What About Today? -->
+    <string name="whattoday">
+        \nNot Available
+    </string>
+    
+    <!-- Why Does It Always Rain on Me? -->
+    <string name="whydoesitrain">
+        \nI can\'t sleep tonight\n
+Everybody saying everything\'s alright\n
+Still I can\'t close my eyes\n
+I\'m seeing a tunnel at the end of all these lights \n
+ \n
+Sunny days\n
+Where have you gone?\n
+I get the strangest feeling you belong\n
+Why does it always rain on me?\n
+Is it because I lied when I was seventeen?\n
+Why does it always rain on me?\n
+Even when the sun is shining\n
+I can\'t avoid the lightning \n
+ \n
+I can\'t stand myself\n
+I\'m being held up by an invisible man\n
+Still life on a shelf when\n
+I got my mind on something else\n 
+ \n
+Sunny days\n
+Where have you gone?\n
+I get the strangest feeling you belong\n
+Why does it always rain on me?\n
+Is it because I lied when I was seventeen?\n
+Why does it always rain on me?\n
+Even when the sun is shining\n
+I can\'t avoid the lightning \n
+ \n
+Oh, where did the blue skies go?\n
+And why is it raining so?\n
+It\'s so cold \n
+I can\'t sleep tonight\n
+Everybody\'s saying everything\'s all right\n
+Still I can\'t close my eyes\n
+I\'m seeing a tunnel at the end of all these lights \n
+ \n
+Sunny days\n
+Where have you gone?\n
+I get the strangest feeling you belong\n
+Why does it always rain on me?\n
+Is it because I lied when I was seventeen?\n
+Even when the sun is shining\n
+I can\'t avoid the lightning\n
+Oh, where did the blue skies go?\n
+And why is it raining so?\n
+It\'s so cold\n
+Why does it always rain on me?\n
+Why does it always rain on....\n
+    </string>
+    
+    <!-- Like a Rat Does Cheese -->
+    <string name="likearat">
+        \nSuck my dick until your lips fall off.\n
+Don\'t make me ask again please.\n
+Put it down your throat until it makes you cough.\n
+Nibble on my dick like a rat does cheese.\n
+ \n
+Well you\'re from the south \n
+your a special kind of girl.\n
+Put my nuts in your mouth bitch \n
+just like you was a squirrel.\n
+Work on the shaft, \n
+cradle on the balls.\n
+Baby just don\'t bite it, \n
+get it on get it on.\n
+ \n
+Suck my dick until your lips fall off.\n
+Don\'t make me ask again please.\n
+Put it down your throat until it makes you cough.\n
+Nibble on my dick like a rat does cheese.\n
+ \n
+Well why don\'t you go down \n
+and a hook a brother up?\n
+Swallow it on down or spit it in a cup.\n
+Wipe it on your t-shirt let it dribble down your chin.\n
+Smoke a couple Newports \n
+and suck that dick again.\n
+ \n
+Suck my dick until your lips fall off.\n
+Don\'t make me ask again please.\n
+Put it down your throat until it makes you cough.\n
+Nibble on my dick like a rat does cheese.\n
+    </string>
+    
+    <!-- Walking the Dog -->
+    <string name="walkingdog">
+        \nRolling, bong hit, take 5!\n
+ \n
+Baby\'s back, dressd in black,\n
+silver buttons all down her back.\n
+High, low, tipsy toe,\n
+she broke the needle and she can\'t sew.\n
+ \n
+Walkin\' the dog,\n
+I\'m just a-walkin\' her dog.\n
+If you don\'t know how to do it,\n
+I\'ll show you how the walk the dog.\n
+ \n
+I asked the mother cents,\n
+see the fellow he jumped the fence.\n
+Jumped so high he touched the sky,\n
+Didn\'t got back till a-quarter-to-five\n
+ \n
+Walkin\' the dog,\n
+I\'m just a-walkin\' her dog.\n
+If you don\'t know how to do it,\n
+I\'ll show you how the walk the dog.\n
+ \n
+Baby\'s back, dressd in black,\n
+silver buttons all down her back.\n
+High, low, tipsy toe,\n
+she broke the needle and she can\'t sew.\n
+ \n
+Walkin\' the dog,\n
+I\'m just a-walkin\' her dog.\n
+If you don\'t know how to do it,\n
+I\'ll show you how the walk the dog.\n
+    </string>
+    
+    <!-- Billie Joe\'s Mom -->
+    <string name="billiesmom">
+        \nWell Billie Joe\'s mom, \n
+        she\'s the queen of all the acrobats,\n
+She can do the tricks \n
+that give the kids the shits,\n
+She can shoot green peas \n
+from her hairy frontal orafice,\n
+Do a double backflip and catch them on her tits!\n
+ \n
+She\'s a great big son-of-a-bitch, \n
+she\'s the twice the size of me!\n
+Got hair on her arse the like the branches of a tree,\n
+She can shoot, fight, fart, fuck,\n
+Fly an plane and drive a truck\n
+That\'s the kind of girl\n
+I want to marry please!\n
+    </string>
+    
+    <!-- Food Around the Corner -->
+    <string name="foodaround">
+        \nThere\'ll be food around the corner,\n
+Food around the corner\n
+Food around the corner for me\n
+ \n
+Do de do do do do\n
+ \n
+Food around the corner,\n
+Food around the corner\n
+Food around the corner for me\n
+ \n
+Do de do\n
+do de do \n
+Food around the corner for me\n
+    </string>
+    
+    <!-- You Can\'t Fool Me -->
+    <string name="youcantfool">
+        \nI see you every night when you go on TV\n
+Making up the song ?\n
+I can\'t control my head ??? breath\n
+Now I ?? the rest\n
+ \n
+\'Cuz I know before you say\n
+What you say just can\'t be\n
+You scare the hell out of me\n
+But you can\'t fool me\n
+ \n
+Every damn night come out with your shit\n
+Every damn lie\n
+??\n
+?? and they put your ass away\n
+ \n
+\'Cuz I know before you say\n
+What you say just can\'t be\n
+You scare the hell out of me\n
+But you can\'t fool me\n
+    </string>
+    
+    <!-- Jennifer -->
+    <string name="jennifer">
+        \nNot Available
+    </string>
+    
+    <!-- Maybe Forever -->
+    <string name="maybeforever">
+        \nIf i could know decisions coming from my heart \n
+I think about you girls \n
+I may have torn my dreams apar\n 
+I want to show you new things and I\'ll try keeping time \n
+Thoughts moving ? \n
+it\'s hard for me to find \n
+ \n
+I guess it\'s always been like that\n
+Maybe forever it\'s alright \n
+ \n
+If I could know decisions coming from my heart \n
+I think about you girls I may have torn my dreams apart \n
+Keep me on the right track to \n
+the trail on top of the edge \n
+No longer feeling I know that \n
+they just don\'t care \n
+ \n
+I guess it\'s always been like that \n
+Maybe forever sucked thin\n
+ \n
+I guess it\'s always been like that \n
+Maybe forever sucked thin\n
+    </string>
+    
+    <!-- World Vs. World (What You Say) -->
+    <string name="worldvsworld">
+        \nI\'ve got this feeling that\'s coming over me\n
+I\'m feeling bad about things as  you can see\n
+Got a smile and i\'m trying to find\n
+Cause you know that you\'re my only desire\n
+ \n
+I love to listen to your soft, gentle voice\n
+???? Skin so soft and moist\n
+You talk to me and it makes me feel better\n
+I know the reason I\'ve been so wrong about you\n
+ \n
+I love to listen to your words, girl, and what you say\n
+Take my feelings ? won\'t you stay?\n
+ \n
+Look in my eyes and tell me what you find\n
+With passion burning I know it\'s hard to find\n
+I\'ll write a letter and send it to you with love\n
+I\'d like to know, what are your thoughts about us?\n
+ \n
+A gentle kiss and then I wonder why\n
+You dry the tears, so many years I\'ve cried\n
+That emotion, when I think of us\n
+??? what we have ??? \n
+    </string>
+    
+    <!-- Midwest Medley -->
+    <string name="midwestmedley">
+        \nMother told me, yes, \n
+        she told me I\'d meet girls like you.\n
+She also told me, "Stay away, \n
+you\'ll never know what you\'ll catch."\n
+Just the other day I heard a soldier \n
+falling off some Indonesian junk that\'s going round.\n
+ \n
+Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird.\n
+Surrender, surrender, but don\'t give yourself away, \n
+ay, ay, ay.\n
+ \n
+Father says, "Your mother\'s right, \n
+she\'s really up on things."\n
+"Before we married, \n
+Mommy served in the WACS in the Philippines."\n
+Now, I had heard the WACS recruited old maids for the war.\n
+But mommy isn\'t one of those, \n
+I\'ve known her all these years.\n
+ \n
+Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird.\n
+Surrender, surrender, but don\'t give yourself away, \n
+ay, ay, ay.\n
+ \n
+God, what a mess, on the ladder of success\n
+Where you take one step and miss the whole first rung\n
+Dreams unfulfilled, graduate unskilled\n
+It beats pickin\' cotton and waitin\' to be forgotten\n
+ \n
+We are the sons of no one, bastards of young\n
+We are the sons of no one, bastards of young\n
+The daughters and the sons\n
+ \n
+Clean your baby womb, trash that baby boom\n
+Elvis in the ground, there\'ll ain\'t no beer tonight\n
+Income tax deduction, what a hell of a function\n
+It beats pickin\' cotton and waitin\' to be forgotten\n
+ \n
+We are the sons of no one, bastards of young\n
+We are the sons of no one, bastards of young\n
+The daughters and the sons\n
+ \n
+Whatever happened to all this season\'s losers of the year?\n
+Ev\'ry time I got to thinking, where\'d they disappear?\n
+When I woke up, Mom and Dad are rolling on the couch.\n
+Rolling numbers, rock and rolling, \n
+got my Kiss records out.\n
+ \n
+Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird.\n
+Surrender, surrender, but don\'t give yourself away, \n
+ay, ay, ay.\n
+ \n
+Surrender\n
+Surrender\n
+ \n
+We are the sons of no one, bastards of young\n
+(Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird)\n
+We are the sons of no one, bastards of young\n 
+(Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird)\n
+We are the sons of no one, bastards of young\n 
+(Mommy\'s alright, Daddy\'s alright, \n
+they just seem a little weird)\n
+    </string>
+    
+    <!-- When Will I Be Loved (Miranda Lambert + Billie Joe) -->
+    <string name="whenwillloved">
+        \nI\'ve been made blue, I\'ve been lied to\n
+When will I be loved\n
+I\'ve been turned down, I\'ve been pushed \'round\n
+When will I be loved\n
+When I meet a new girl that I want for mine\n
+She always breaks my heart in two, \n
+it happens every time\n
+I\'ve been cheated, been mistreated\n
+When will I be loved\n
+When I meet a new girl that I want for mine\n
+She always breaks my heart in two, \n
+it happens every time\n
+I\'ve been cheated, been mistreated\n
+When will I be loved\n
+When will I be loved\n
+    </string>
+    
+    <!-- I Run NY (The Lonely Island + Billie Joe) -->
+    <string name="irunny">
+        \nLadies and Gentleman, the Mayor of New York.\n
+ \n
+Good morning. It\'s been brought to my attention that many rap artist claim that they run New York, but this is not the case.\n
+In fact, I wrote my own song about what it\'s really like.\n
+Please excuse the profanity in advance.\n
+ \n
+Hit it.\n
+ \n
+ALRIGHT, NEW YORK!\n
+ \n
+New York, big city of dreams, \n
+and you know that I run this town. (I RUN IT!)\n
+The king of the streets, dressed in concrete, \n
+skyscrapers on my crown! (I\'m THE KING!)\n
+So if you want this Big Apple, \n
+come try to take a bite! (C\'MON!)\n
+\'Cause I run this motherfucking city and \n
+I won\'t give it up without a fight!\n
+ \n
+Yo, I run New York!\n
+It\'s a pain in the ass!\n
+The city\'s crowded as fuck,\n
+And it\'s covered in trash!\n
+ \n
+And the sanitation chief just shoved his shit in my face;\n
+Another transit strike? Aw, fucking great!\n
+ \n
+I can\'t wait\n
+To have another meeting with the labor union\n
+So the mob can bend me over\n
+And then shove their fucking shoe in.\n
+ \n
+So I do it\n
+So you can sip your pumpkin latté.\n
+I literally run New York and it\'s exhausting!\n
+ \n
+[Hook: Billie Joe Armstrong:]\n
+I run New York\n
+It\'s a fucking headache\n
+It really wears you down! (IT SUCKS!)\n
+ \n
+In this lake of bureaucratic bullshit,\n
+It\'s a miracle I don\'t drown!\n
+ \n
+I (double) literally run New York:\n
+I run the marathon.\n
+Plus I organized it,\n
+So I double-run the marathon!\n
+ \n
+But no one seems to give a fuck that I\'m a paragon.\n
+Instead they photoshop me so\n
+It\'s looking like I wear a thong,\n
+And laugh at it in my own office when I\'m gone.\n
+ \n
+I went to the Knicks game, and\n
+They booed me on the jumbotron!\n
+ \n
+Excuse me\n
+For trying to help you;\n
+They won\'t be satisfied until I\'m\n
+Locked up in Bellevue.\n
+ \n
+I guess they don\'t tell you\n
+This job sucks dick.\n
+I run New York and it feels like SHIT!\n
+ \n
+The Chief of Police is a major bully,\n
+He laughs at my ideas. (HE\'S A JERK!)\n
+ \n
+He made fun of my tie last week\n
+And I had to fight back tears!\n
+ \n
+Now on the surface, it probably seems like I should quit\n
+Cause I spend every day getting punched in the dick.\n
+ \n
+But at night\n
+I travel down into the subway,\n
+Wearing chainmail, locked and loaded for gunplay,\n
+ \n
+And battle the gigantic fire-breathing mutant rats!\n
+If I fucking quit, who the fuck would do that?!\n
+ \n
+I\'ll give you a hint:\n
+The answer is no one.\n
+That\'s why I\'m in the sewer dressed up like a shogun.\n
+Because on the equinox, a Hell Gate springs,\n
+Releasing hounds wreathed in the blood of kings.\n
+ \n
+And no one even knows!\n
+They just think I\'m a dork.\n
+But I still kill those fucking dogs, because\n
+I RUN NEW YORK!\n
+ \n
+I run New York, it\'s a shitty gig;\n
+There\'s no overtime in my pay. (BULLSHIT!)\n
+I asked this city for a fucking bonus,\n
+And they said "no fucking way!" (UNREAL!)\n
+ \n
+So rotten is this Big Apple,\n
+It\'s crawling with worms inside! (COME ON!)\n
+But I run this motherfucking shithole city,\n
+And it makes me wanna die!\n
+ \n
+I RUN NEW YORK!\n
+ \n
+Thank you.\n
+    </string>
+    
+    <!-- Depression Times (Jesse Malin + Green Day) -->
+    <string name="depressiontimes">
+        \n*Will be added...*
+    </string>
+    
+    <!-- Chocolate Rain (Tre Cool) -->
+    <string name="chocolaterain">
+        \nChocolate Rain,\n
+some stay dry and others feel the pain.\n
+Chocolate Rain,\n
+a baby born will die before this ends.\n
+Chocolate Rain,\n
+the school books say it can’t be here again.\n
+Chocolate Rain,\n
+the prisons make you wonder where it went.\n
+Chocolate Rain,\n
+build a tent and something in your thing.\n
+Chocolate Rain,\n
+maybe porn will never cry again,\n
+Chocolate Rain,\n
+only in the past is what they say.\n
+Chocolate Rain,\n
+raise your neighborhood insurance rates.\n
+Chocolate Rain,\n
+make us happy living in a cage.\n
+Chocolate Rain,\n
+made me cross the street the other day,\n
+Chocolate Rain,\n
+made you turn your head the other way.\n
+Chocolate Rain,\n
+made you turn your head in history.\n
+Chocolate Rain,\n
+I don’t know the words again, but.\n
+Chocolate Rain,\n
+seldom mentioned on the radio\n
+Chocolate Rain,\n
+its the fear your leaders call control.\n
+Chocolate Rain,\n
+worse than swearing, worse than calling names.\n
+Chocolate Rain,\n
+then they say publicly insane.\n
+Chocolate Rain,\n
+no one wants to hear about it now.\n
+Chocolate Rain,\n
+Orlando Bloom was good in that one movie.\n
+Chocolate Rain,\n
+makes the prince begin to fight and stuff.\n
+Chocolate Rain,\n
+yeah that’s why I come here.\n
+Chocolate Rain,\n
+stays behind as colors celebrate.\n
+Chocolate Rain,\n
+get your cute ass to the gay parade.\n
+Chocolate Rain,\n
+the same crime has a higher price to pay.\n
+Chocolate Rain,\n
+there’s no parking places in Grand Street.\n
+Chocolate Rain,\n
+The judge and jury swear it’s not the face.\n
+Chocolate Rain,\n
+I got tin foil on my spokes again.\n
+Chocolate Rain,\n
+well I’m in a another state and stuff.\n
+Chocolate Rain,\n
+I don’t have a lock for my bicycle\n
+Chocolate Rain,\n
+these scars on my… oh wait, \n
+I’m reading the wrong song.\n
+and behind my…\n
+Chocolate Rain,\n
+Chocolate Rain…\n
+ \n
+You\'re doing it fucking wrong.\n
+    </string>
+    
+    <!-- The Saints Are Coming (U2 + Green Day) -->
+    <string name="saintsarecoming">
+        \nThere is a house in New Orleans, \n
+        they call the Rising Sun\n
+It\'s been the ruin of many a poor boy, \n
+and God, I know I\'m one.\n
+\n
+I cried to my daddy on the telephone,\n
+how long now?\n
+Until the clouds unroll and you come home,\n
+the line went.\n
+But the shadows still remain since your descent,\n
+your descent.\n
+\n
+I cried to my daddy on the telephone,\n
+how long now?\n
+Until the clouds unroll and you come home,\n
+the line went.\n
+But the shadows still remain since your descent,\n
+your descent.\n
+\n
+The saints are coming, the saints are coming.\n
+I say no matter how I try, I realise there\'s no reply.\n
+The saints are coming, the saints are coming.\n
+I say no matter how I try, I realise there\'s no reply.\n
+\n
+A drowning sorrow floods the deepest grief,\n
+how long now?\n
+Until the weather change condemns belief,\n
+how long now?\n
+When the night watchman lets in the thief\n
+Whats wrong now?\n
+\n
+The saints are coming, the saints are coming\n
+I say no matter how I try, I realise there\'s no reply.\n
+The saints are coming, the saints are coming\n
+I say no matter how I try, I realise there\'s no reply.\n
+I say no matter how I try, I realise there\'s no reply.\n
+I say no matter how I try, I realise there\'s no reply.\n
+    </string>
+    
+    <!-- Private Hell (Iggy Pop + Green Day) -->
+    <string name="privatehell">
+        \nI have a private hell \n
+ \n
+Of excellent quality \n
+I\'ve dwelt there for years \n
+Playing with my fears \n
+ \n
+It\'s tastefull, luxurious, \n
+And full of sexuality \n
+And though they are tears \n
+I controll them with my gears \n
+ \n
+Well all in all, \n
+I must tell you, \n
+Well I must tell you, \n
+I\'m so proud of my private hell \n
+ \n
+Anger and greed brew \n
+And then they stamped \n
+Till I can transmute \n
+Them into more loot \n
+ \n
+It\'s tastefull, luxurious, \n
+And full of sexuality \n
+And though they are tears \n
+I controll them with my gears \n
+ \n
+Well all in all, \n
+I must tell you, \n
+Well I must tell you, \n
+I\'m so proud of my private hell \n
+ \n
+Well all in all, \n
+I must tell you, \n
+Well I must tell you, \n
+I\'m so proud of my private hell\n
+    </string>
+    
+    <!-- Supermarket (Iggy Pop + Green Day) -->
+    <string name="supermarket">
+        \nThe supermarket shelf is a lie\n
+ \n
+I know, we saw\n
+The guy from the record company\n
+Makes me wanna die\n
+ \n
+Everybody sells and everybody buys\n
+People who don\'t like that get blood in the eye\n
+Everybody sells and everybody buys\n
+People who don\'t like that get blood\n
+Get blood in the eye\n
+ \n
+I\'m proud of the corporate logo\n
+Written on my box\n
+It says that I\'m ok\n
+For the company stock\n
+What I am I do not own\n
+I don\'t know who does\n
+Maybe any, some institution\n
+With no flesh, flesh or blood\n
+ \n
+The supermarket shelf is a lie\n
+I know, we saw\n
+The guy from the record company\n
+Makes me wanna die\n
+ \n
+Everybody sells and everybody buys\n
+People who don\'t like that get blood in the eye\n
+Everybody sells and everybody buys\n
+People who don\'t like that get blood\n
+Get blood in the eye\n
+ \n
+Everybody sells and everybody buys\n
+Everybody sells and everybody buys\n
+Everybody sells and everybody buys\n
+Everybody sells and everybody buys\n
+ \n
+Everybody sells and everybody buys\n
+Everybody sells in the supermarket\n
+Supermarket got me blind\n
+    </string>
+    
+    <!-- The Ballad of Wilhelm Fink (Billie Joe) -->
+    <string name="ballad">
+        \nSaid that I\'d meet you\n
+ \n
+At the Berkeley Marina\n
+3 AM when no one will be found\n
+ \n
+All I got in mind\n
+Is a Boone\'s Farm jug of wine\n
+Smash a bottle in the parking lot\n
+ \n
+But considering our luck\n
+We\'ll get busted by the cops\n
+Instead of sex we\'ll go to jail\n
+Another lesson learned and failed\n
+    </string>
+    
+    <!-- Radio (Billie Joe and Rancid) -->
+    <string name="radio">
+        \nNever fell in love\n
+until i fell in love with you\n
+Never know what a good time was until i had a good time with you\n
+If you wanna get the feeling and you wanna get it right\n
+Then the music gotta be loud\n
+for when the music hit i feel no pain at all\n
+\n
+Warm summer night i was drinking with my dad\n
+He tried to give me the love that i never had\n
+But he gave more love to his bottle of wine\n
+So i had to go out and find love of another kind \n
+\n
+Here it is\n
+Here i am\n
+Turn it up\n
+fuckin\' loud\n
+\n
+Radio, Radio, Radio... \n
+\n
+When i got the music\n
+i got a place to go\n
+\n
+Radio clash\n
+magnificent 7\n
+I was a choir boy\n
+you showed me no heaven\n
+Two tools surley lost\n
+no remorse ignoring the cost\n
+\n
+Here it is\n
+Here i am\n
+Turn it up\n
+fuckin\' loud\n
+\n
+Radio, Radio, Radio... \n
+\n
+When i got the music\n
+i got a place to go\n
+    </string>
+    
+    <!-- Angel and the Jerk (Penelope Houston + Billie Joe) -->
+    <string name="angelandjerk">
+        \nYour gonna miss me miss me when I\'m gone\n
+ \n
+Your gonna miss me miss me when I\'m gone\n
+Can\'t you see there\'s something wrong\n
+Gonna miss me miss me when I\'m gone\n
+ \n
+On a night just like tonight\n
+Below my window pussies fight\n
+I\'m gonna be so far away\n
+Exactly like you are today\n
+You must have thought you really scored\n
+\'Cause we\'re the Angel and the Jerk\n
+You know I love to be ignored\n
+Just take for granted all my work\n
+ \n
+Your gonna miss me miss me when I\'m gone\n
+Your gonna miss me miss me when I\'m gone\n
+Can\'t you see there\'s something wrong\n
+Your Gonna miss me miss me when I\'m gone\n
+ \n
+Look at me......\n
+Who do you see?.....\n
+Am I a mirror to your moods...?\n
+ \n
+Today\'s the day......\n
+I break away.....\n
+I\'m pulling on my walking boots\n
+ \n
+Your gonna miss me miss me when I\'m gone\n
+Your gonna miss me miss me when I\'m gone\n
+Wake up, stupid! something\'s wrong\n
+Gonna miss me miss me when I\'m gone\n
+ \n
+I always hope you\'d be the one\n
+That\'s gonna meet me eye-to-eye\n
+I must be brighter than the sun\n
+Or else you\'ve gone completely shy\n
+Am I handy poltergeist?\n
+By day a busy little elf\n
+A saint to rival Jesus Christ\n
+You\'d better feed and clothe yourself\n
+ \n
+Your gonna miss me miss me...\n
+    </string>
+    
+    <!-- Can\'t Make Love (Pansy Division + Tre Cool) -->
+    <string name="cantmakelove">
+        \n"i can\'t make love to the flaky boys in this city, \n
+        this town is so full of flakes and users."\n
+ \n
+"yeah i know, i won\'t go out with boys because \n
+they always turn out to be mr wrong and that\'s the kind \n
+that end up falling in love with me."\n
+ \n
+boys will fall in love with you,\n
+everybody\'s lonely that\'s true,\n
+maybe it\'s psychology?\n
+i dunno i gotta move some place...\n
+ \n
+well i can\'t make love\n
+to the boys in this city\n
+because the boys\n
+are flakes and users\n
+ \n
+and i won\'t go out\n
+with boys because\n
+mr wrong will fall in love with you,\n
+everybody\'s lonely that\'s true\n
+ \n
+maybe it\'s psychology?\n
+i dunno, i gotta move some place\n
+where the boys are easy,\n
+and it makes me miss my lonely city\n
+ \n
+and the boys are so easy,\n
+and it makes me miss my lonely city,\n
+and it seems so easy,\n
+but i can\'t say the words that are on my mind.\n
+ \n
+i\'m a nice guy but i don\'t love you,\n
+i just wanna sleep with you\n
+ \n
+i\'m a nice guy but i don\'t love you,\n
+i just wanna sleep with you\n
+ \n
+i\'m a nice guy but i don\'t love you,\n
+i just wanna sleep with you\n
+ \n
+i\'m a nice guy, i\'m a nice guy, i\'m a nice guy.......\n
+ \n
+i just wanna sleep with you!\n
+    </string>
+    
+    <!-- Look For Love (Billie Joe) -->
+    <string name="lookforlove">
+        \n1, 2, 3, 4, 5, 6, 7\n
+ \n
+Look for Love (x6)\n
+When everything seems to go wrong\n
+And you need somebody strong\n
+With a smile and a song\n
+Love for Love\n
+ \n
+And when you\'re not having much fun\n
+And the day is never done\n
+Until you do find someone\n
+ \n
+Look for Love (x2)\n
+ \n
+And when you find love\n
+And keep all your love\n
+Success and happiness too\n
+Will be for you\n
+ \n
+2, 3, 4, 5, 6, 7\n
+ \n
+And now you really know\n
+That wherever you go\n
+The story is so\n
+ \n
+Look for Love (x2)\n
+ \n
+And when you find love\n
+And keep all your love\n
+Success and happiness too\n
+Will be for you\n
+ \n
+The story is so\n
+ \n
+Look for love\n
+    </string>
+    
+    <!-- State of Shock -->
+    <string name="stateofshock">
+        \nI\'m going into a state of shock\n
+I can twist (No)\n
+I can hardly walk\n
+ \n
+My eyes are rolling in the\n
+Back of my head\n
+I\'m black and blue\n
+And I\'m in the red silence\n
+ \n
+My tears are putting out my cigarette\n
+And sing the alphabet\n
+The way I remember\n
+ \n
+Make plans for amnesia\n
+Going under anesthesia\n
+Holding on for life\n
+    </string>
+    
+    <!-- Hybrid Moments -->
+    <string name="hybridmoments">
+        \nIf you\'re gonna scream, \n
+Scream with me \n
+Moments like this never last \n
+When new creatures rape your face\n
+Hybrids open up the door\n
+ \n
+Ooh baby when you cry \n
+Your face is momentary \n
+You hide your looks behind these scars\n
+ \n
+In hybrid moments \n
+Give me a moment \n
+Give me a moment \n
+Give me a moment \n
+ \n
+Ooh baby when you cry \n
+Your face is momentary \n
+You hide your looks behind these scars \n
+ \n
+In hybrid moments \n
+Give me a moment\n
+Give me a moment\n
+Give me a Moment\n
+Give me a moment \n
+Give me a moment\n
+ \n
+Happy birthday to you\n
+Happy birthday to you\n
+You old-ass, heavy-metal mother-fuckers\n
+30 years of Metallica\n
+    </string>
+    
+    <!-- When It\'s Time -->
+    <string name="whenitstime">
+        \nWords get trapped in my mind\n
+Sorry I don\'t take the time to feel the way I do\n
+\'Cause the first day you came into my life\n
+My time ticks around you\n
+ \n
+But then I need your voice\n
+As the key to unlock\n
+All the love that\'s trapped in me\n
+So tell me when it\'s time\n
+To say I love you\n
+ \n
+All I want is you to understand\n
+That when I take your hand\n
+It\'s \'cause I want to\n
+We are all born in a world of doubt\n
+But there\'s no doubt\n
+I figured out\n
+I love you\n
+ \n
+All I want is you to understand\n
+That when I take your hand\n
+It\'s \'cause I want to\n
+We are all born in a world of doubt\n
+And there\'s no doubt\n
+I figured out\n
+I love you\n
+ \n
+And I feel lonely for\n
+All the losers that will never take the time to say\n
+What was really on their mind instead\n
+They just hide away\n
+Yet they\'ll never have\n
+Someone like you to guard them\n
+And help along the way\n
+Or tell them when it\'s time to say, "I love you"\n
+So tell me when it\'s time to say "I love you"\n
+    </string>
+    
+    <!-- Lights Out -->
+    <string name="lightsout">
+        \nLights out,\n
+Here comes the night,\n
+As the darkness falls over the light\n
+Lights out,\n
+There goes the day\n
+And this fear that comes won\'t go away\n
+ \n
+And I\'m losing track of time,\n
+In the corners of my mind\n
+And im living out my private suicide (lights out)\n
+ \n
+Lights out\n
+I lost myself\n
+In the space between heaven and hell.\n
+Lights out,\n
+Finding my way,\n
+Did I waste my time losing the way?\n
+ \n
+And I\'m losing track of time\n
+In the corners of my mind,\n
+And I\'m living out my private suicide (lights out)\n
+ \n
+Lights out!\n
+ \n
+Lights out\n
+Here comes the night\n
+As the darkness falls over the light.\n
+Lights out\n
+I lost myself\n
+In the space between heaven and hell\n
+ \n
+Well I\'m losing track of time\n
+In the corners of my mind\n
+And I\'m living out my private suicide \n(lights out)\n
+    </string>
+    
+    <!-- The Simpsons Theme -->
+    <string name="simpsons">
+        \nInstrumental
+    </string>
+    
+    <!-- D.U.I. -->
+    <string name="dui">
+        \nLet\'s get drunk and go out driving\n
+Let\'s see just how quickly we can go\n
+Let\'s get plowed and plow down some old lady\n
+Let\'s just drink and bump the stereo\n
+\n
+Let\'s go down and vomit out of the window\n
+Let\'s keep score of how many we kill\n
+Two tequila slammers on the dashboard\n
+There\'s an alcoholic at the wheel\n
+\n
+Careful when I\'m taking this next corner\n
+Don\'t want anybody wasting beer\n
+Pass another lime and Corona\n
+Too drunk to use my clutch when shifting gear\n
+\n
+Let\'s get drunk and go out driving\n
+Let\'s do prodies in the cul de sac\n
+Let\'s get drunk and go out driving\n
+We\'re going and we\'re never coming back\n
+    </string>
+    
+    <!-- Don\'t Want to Know If You Are Lonely -->
+    <string name="dontwannaknow">
+        \nI\'m curious to know exactly how you are\n
+i keep my distance but that distance is too far\n
+it reassures me just to know that you\'re okay\n
+but i don\'t want you to go on needing me this way\n
+ \n
+and I, don\'t wanna know if you are lonely\n
+don\'t wanna know if you are less than lonely\
+don\'t wanna know if you are lonely\n
+don\'t wanna know, don\'t want to know\n
+ 
+the day you left me left me feeling oh so bad\n
+still i\'m not sure about all the doubts we had\n
+from the beginning we both knew it wouldn\'t last\n
+decisions have been made, the die has been cast\n
+ 
+And I,don\'t wanna know if you are lonely\n
+don\'t wanna know if you are less than lonely\n
+don\'t wanna know if you are lonely\n
+don\'t wanna know, don\'t want to know\n
+don\'t wanna know\n
+ \n
+the phone is ringing and the clock says 4 am\n
+if it\'s your friends, well i don\'t wanna hear from them\n
+please leave your number and a message at the tone\n
+or you can just go on and leave me here alone\n
+ \n
+And I, don\'t wanna know if you are lonely\n
+don\'t wanna know if you are less than lonely\n
+don\'t wanna know if you are lonely\n
+don\'t wanna know, don\'t want to know\n
+    </string>
+    
+    <!-- NEW ABOVE -->
+    
     <!-- Working Class Hero -->
     <string name="workingclasshero">
         \n[John Lennon cover]\n
@@ -159,7 +1218,7 @@ Too late and now it sucks to be you too\n
 Woah...oh oh oh oh..
     </string>
     
-    <!-- That's all Right -->
+    <!-- That\'s all Right -->
     <string name="thatsallright">
         \n[Originally by Arthur Crudup]\n
 \n
@@ -961,44 +2020,6 @@ I fought the law and the\n
 \n
 I fought the law and the law won [x7]\n
 I fought the law and the
-    </string>
-    
-    <!-- Lights Out -->
-    <string name="lightsout">\n
-Lights out,\n
-Here comes the night,\n
-As the darkness falls over the light\n
-Lights out,\n
-There goes the day\n
-And this fear that comes won\'t go away\n
- \n
-And I\'m losing track of time,\n
-In the corners of my mind\n
-And im living out my private suicide (lights out)\n
- \n
-Lights out\n
-I lost myself\n
-In the space between heaven and hell.\n
-Lights out,\n
-Finding my way,\n
-Did I waste my time losing the way?\n
- \nn
-And I\'m losing track of time\n
-In the corners of my mind,\n
-And I\'m living out my private suicide (lights out)\n
- \n
-Lights out!\n
- \n
-Lights out\n
-Here comes the night\n
-As the darkness falls over the light.\n
-Lights out\n
-I lost myself\n
-In the space between heaven and hell\n
- \n
-Well I\'m losing track of time\n
-In the corners of my mind\n
-And I\'m living out my private suicide (lights out)\n
     </string>
     
 </resources>
