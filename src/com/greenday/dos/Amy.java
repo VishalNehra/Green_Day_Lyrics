@@ -31,6 +31,7 @@ public class Amy extends Activity {
 		setContentView(R.layout.dos_amy);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		int i=10;
 		//getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
 		
 		//Display
