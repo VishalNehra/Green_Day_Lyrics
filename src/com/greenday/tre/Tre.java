@@ -28,64 +28,52 @@ public class Tre extends Activity {
 		setContentView(R.layout.tre);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
-		
+		ActionBar ab=getActionBar();
 		if(track == 1){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Brutal Love");
 			tv1.setText(R.string.brutallove);
 		}
 		if(track == 2){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Missing You");
 			tv1.setText(R.string.missingyou);
 		}
 		if(track == 3){
-			ActionBar ab=getActionBar();
 			ab.setTitle("8th Avenue Serenade");
 			tv1.setText(R.string.avesrnde);
 		}
 		if(track == 4){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Drama Queen");
 			tv1.setText(R.string.dramaqueen);
 		}
 		if(track == 5){
-			ActionBar ab=getActionBar();
 			ab.setTitle("X-Kid");
 			tv1.setText(R.string.kid);
 		}
 		if(track == 6){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Sex, Drugs & Violence");
 			tv1.setText(R.string.sexdrugs);
 		}
 		if(track == 7){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Little Boy Named Train");
 			tv1.setText(R.string.littleboytrain);
 		}
 		if(track == 8){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Amanda");
 			tv1.setText(R.string.amanda);
 		}
 		if(track == 9){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Walk Away");
 			tv1.setText(R.string.walkaway);
 		}
 		if(track == 10){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Dirty Rotten Bastards");
 			tv1.setText(R.string.dirtybastards);
 		}
 		if(track == 11){
-			ActionBar ab=getActionBar();
 			ab.setTitle("99 Revolutions");
 			tv1.setText(R.string.ninetyninerev);
 		}
 		if(track == 12){
-			ActionBar ab=getActionBar();
 			ab.setTitle("The Forgotten");
 			tv1.setText(R.string.theforgotten);
 		}
@@ -126,63 +114,52 @@ public class Tre extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				int track = getIntent().getExtras().getInt("track");
+				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Brutal Love");
 					startActivity(intent);
 					}
 				if(track == 2){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Missing You");
 					startActivity(intent);
 					}
 				if(track == 3){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "8th Avenue Serenade");
 					startActivity(intent);
 					}
 				if(track == 4){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Drama Queen");
 					startActivity(intent);
 					}
 				if(track == 5){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "X-Kid");
 					startActivity(intent);
 					}
 				if(track == 6){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Sex, Drugs & Violence");
 					startActivity(intent);
 					}
 				if(track == 7){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Little Boy Named Train");
 					startActivity(intent);
 					}
 				if(track == 8){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Amanda");
 					startActivity(intent);
 					}
 				if(track == 9){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Walk Away");
 					startActivity(intent);
 					}
 				if(track == 10){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Dirty Rotten Bastards");
 					startActivity(intent);
 					}
 				if(track == 11){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "99 Revolutions");
 					startActivity(intent);
 					}
 				if(track == 12){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "The Forgotten");
 					startActivity(intent);
 					}

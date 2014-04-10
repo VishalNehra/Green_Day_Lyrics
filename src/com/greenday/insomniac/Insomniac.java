@@ -1,11 +1,11 @@
-package com.greenday.uno;
+package com.greenday.insomniac;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.uno.Info;
+import com.greenday.insomniac.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,67 +16,74 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Uno extends Activity {
+public class Insomniac extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Declare theme before super.oncreate or setcontentview
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
-		setContentView(R.layout.uno);
-		
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.insomniac);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("Nuclear Family");
-			tv1.setText(R.string.nuclearfamily);
+			ab.setTitle("Armatage Shanks");
+			tv1.setText(R.string.armatage);
 		}
 		if(track == 2){
-			ab.setTitle("Stay The Night");
-			tv1.setText(R.string.staynight);
+			ab.setTitle("Brat");
+			tv1.setText(R.string.brat);
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem");
-			tv1.setText(R.string.carpediem);
+			ab.setTitle("Stuck With Me");
+			tv1.setText(R.string.stuckwithme);
 		}
 		if(track == 4){
-			ab.setTitle("Let Yourself Go");
-			tv1.setText(R.string.letgo);
+			ab.setTitle("Geek Stink Breath");
+			tv1.setText(R.string.geekstink);
 		}
 		if(track == 5){
-			ab.setTitle("Kill The DJ");
-			tv1.setText(R.string.killthedj);
+			ab.setTitle("No Pride");
+			tv1.setText(R.string.nopride);
 		}
 		if(track == 6){
-			ab.setTitle("Fell For You");
-			tv1.setText(R.string.fellforyou);
+			ab.setTitle("Bab's Uvula Who!");
+			tv1.setText(R.string.babuvula);
 		}
 		if(track == 7){
-			ab.setTitle("Loss Of Control");
-			tv1.setText(R.string.lossofcontrol);
+			ab.setTitle("86");
+			tv1.setText(R.string.eightysix);
 		}
 		if(track == 8){
-			ab.setTitle("Troublemaker");
-			tv1.setText(R.string.troublemaker);
+			ab.setTitle("Panic Song");
+			tv1.setText(R.string.panicsong);
 		}
 		if(track == 9){
-			ab.setTitle("Angel Blue");
-			tv1.setText(R.string.angelblue);
+			ab.setTitle("Stuart And The Ave.");
+			tv1.setText(R.string.stuartave);
 		}
 		if(track == 10){
-			ab.setTitle("Sweet 16");
-			tv1.setText(R.string.sweetsixt);
+			ab.setTitle("Brain Stew");
+			tv1.setText(R.string.brainstew);
 		}
 		if(track == 11){
-			ab.setTitle("Rusty James");
-			tv1.setText(R.string.rustyjames);
+			ab.setTitle("Jaded");
+			tv1.setText(R.string.jaded);
 		}
 		if(track == 12){
-			ab.setTitle("Oh Love");
-			tv1.setText(R.string.ohlove);
+			ab.setTitle("Westbound Sign");
+			tv1.setText(R.string.westbound);
+		}
+		if(track == 13){
+			ab.setTitle("Tight Wad Hill");
+			tv1.setText(R.string.tightwad);
+		}
+		if(track == 14){
+			ab.setTitle("Walking Contradiction");
+			tv1.setText(R.string.walking);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +124,59 @@ public class Uno extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Nuclear Family");
+					intent.putExtra("report_sub", "Armatage Shanks");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Stay The Night");
+					intent.putExtra("report_sub", "Brat");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Carpe Diem");
+					intent.putExtra("report_sub", "Stuck With Me");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Let Yourself Go");
+					intent.putExtra("report_sub", "Geek Stink Breath");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Kill The DJ");
+					intent.putExtra("report_sub", "No Pride");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Fell For You");
+					intent.putExtra("report_sub", "Bab's Uvula Who!");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Loss Of Control");
+					intent.putExtra("report_sub", "86");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Troublemaker");
+					intent.putExtra("report_sub", "Panic Song");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Angel Blue");
+					intent.putExtra("report_sub", "Stuart And The Ave.");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sweet 16");
+					intent.putExtra("report_sub", "Brain Stew");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Rusty James");
+					intent.putExtra("report_sub", "Jaded");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Oh Love");
+					intent.putExtra("report_sub", "Westbound Sign");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Tight Wad Hill");
+					startActivity(intent);
+					}
+				if(track == 14){
+					intent.putExtra("report_sub", "Walking Contradiction");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +228,12 @@ public class Uno extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
+				}
+				if(track == 14){
+					Info.info14(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

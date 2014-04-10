@@ -1,11 +1,11 @@
-package com.greenday.uno;
+package com.greenday.dos;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.uno.Info;
+import com.greenday.dos.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,67 +16,70 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Uno extends Activity {
+public class Dos extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Declare theme before super.oncreate or setcontentview
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
-		setContentView(R.layout.uno);
-		
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.dos);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("Nuclear Family");
-			tv1.setText(R.string.nuclearfamily);
+			ab.setTitle("See You Tonight");
+			tv1.setText(R.string.cutonight);
 		}
 		if(track == 2){
-			ab.setTitle("Stay The Night");
-			tv1.setText(R.string.staynight);
+			ab.setTitle("Fuck Time");
+			tv1.setText(R.string.fucktime);
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem");
-			tv1.setText(R.string.carpediem);
+			ab.setTitle("Stop When Red Lights Flash");
+			tv1.setText(R.string.stopwhenflash);
 		}
 		if(track == 4){
-			ab.setTitle("Let Yourself Go");
-			tv1.setText(R.string.letgo);
+			ab.setTitle("Lazy Bones");
+			tv1.setText(R.string.lazybones);
 		}
 		if(track == 5){
-			ab.setTitle("Kill The DJ");
-			tv1.setText(R.string.killthedj);
+			ab.setTitle("Wild One");
+			tv1.setText(R.string.wildone);
 		}
 		if(track == 6){
-			ab.setTitle("Fell For You");
-			tv1.setText(R.string.fellforyou);
+			ab.setTitle("Makeout Party");
+			tv1.setText(R.string.makeoutparty);
 		}
 		if(track == 7){
-			ab.setTitle("Loss Of Control");
-			tv1.setText(R.string.lossofcontrol);
+			ab.setTitle("Stray Heart");
+			tv1.setText(R.string.strayheart);
 		}
 		if(track == 8){
-			ab.setTitle("Troublemaker");
-			tv1.setText(R.string.troublemaker);
+			ab.setTitle("Ashley");
+			tv1.setText(R.string.ashley);
 		}
 		if(track == 9){
-			ab.setTitle("Angel Blue");
-			tv1.setText(R.string.angelblue);
+			ab.setTitle("Baby Eyes");
+			tv1.setText(R.string.babyeyes);
 		}
 		if(track == 10){
-			ab.setTitle("Sweet 16");
-			tv1.setText(R.string.sweetsixt);
+			ab.setTitle("Lady Cobra");
+			tv1.setText(R.string.ladycobra);
 		}
 		if(track == 11){
-			ab.setTitle("Rusty James");
-			tv1.setText(R.string.rustyjames);
+			ab.setTitle("Nightlife");
+			tv1.setText(R.string.nightlife);
 		}
 		if(track == 12){
-			ab.setTitle("Oh Love");
-			tv1.setText(R.string.ohlove);
+			ab.setTitle("Wow! That's Loud");
+			tv1.setText(R.string.wowthatsloud);
+		}
+		if(track == 13){
+			ab.setTitle("Amy");
+			tv1.setText(R.string.amy);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +120,55 @@ public class Uno extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Nuclear Family");
+					intent.putExtra("report_sub", "See You Tonight");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Stay The Night");
+					intent.putExtra("report_sub", "Fuck Time");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Carpe Diem");
+					intent.putExtra("report_sub", "Stop When Red Lights Flash");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Let Yourself Go");
+					intent.putExtra("report_sub", "Lazy Bones");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Kill The DJ");
+					intent.putExtra("report_sub", "Wild One");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Fell For You");
+					intent.putExtra("report_sub", "Makeout Party");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Loss Of Control");
+					intent.putExtra("report_sub", "Stray Heart");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Troublemaker");
+					intent.putExtra("report_sub", "Ashley");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Angel Blue");
+					intent.putExtra("report_sub", "Baby Eyes");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sweet 16");
+					intent.putExtra("report_sub", "Lady Cobra");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Rusty James");
+					intent.putExtra("report_sub", "Nightlife");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Oh Love");
+					intent.putExtra("report_sub", "Wow! That's Loud");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Amy");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +220,9 @@ public class Uno extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

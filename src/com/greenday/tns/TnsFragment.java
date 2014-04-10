@@ -138,97 +138,97 @@ public class TnsFragment extends Fragment {
                          case 0:  //At The Library
                         	 Intent newActivity = new Intent(getActivity(), Tns.class);     
 			                 newActivity.putExtra("track", 1);
-			                 startActivityForResult(newActivity, 0);
+			                 startActivity(newActivity);
                              break;
                          case 1:  //Don't Leave Me
                         	 Intent newActivity1 = new Intent(getActivity(), Tns.class);     
 			                 newActivity1.putExtra("track", 2);
-			                 startActivityForResult(newActivity1, 1);
+			                 startActivity(newActivity1);
                              break;
                          case 2:  //I Was There
                         	 Intent newActivity2 = new Intent(getActivity(), Tns.class);     
 			                 newActivity2.putExtra("track", 3);
-			                 startActivityForResult(newActivity2, 1);
+			                 startActivity(newActivity2);
         			         break;
                          case 3:  //Disappearing Boy
                         	 Intent newActivity3 = new Intent(getActivity(), Tns.class);     
 			                 newActivity3.putExtra("track", 4);
-			                 startActivityForResult(newActivity3, 1);
+			                 startActivity(newActivity3);
         	              	 break;
                          case 4:  //Green Day
                         	 Intent newActivity4 = new Intent(getActivity(), Tns.class);   
                         	 newActivity4.putExtra("track", 5);
-			                 startActivityForResult(newActivity4, 1);
+			                 startActivity(newActivity4);
         		         	 break;
                          case 5:  //Going To Pasalacqua
                         	 Intent newActivity5 = new Intent(getActivity(), Tns.class);     
 			                 newActivity5.putExtra("track", 6);
-			                 startActivityForResult(newActivity5, 1);
+			                 startActivity(newActivity5);
         		        	 break;
                          case 6:  //16
                         	 Intent newActivity6 = new Intent(getActivity(), Tns.class);     
 			                 newActivity6.putExtra("track", 7);
-			                 startActivityForResult(newActivity6, 1);
+			                 startActivity(newActivity6);
         			       	 break;
                          case 7:  //Road To Acceptance
                         	 Intent newActivity7 = new Intent(getActivity(), Tns.class);     
 			                 newActivity7.putExtra("track", 8);
-			                 startActivityForResult(newActivity7, 1);
+			                 startActivity(newActivity7);
         			       	 break;
                          case 8:  //Rest
                         	 Intent newActivity8 = new Intent(getActivity(), Tns.class);     
 			                 newActivity8.putExtra("track", 9);
-			                 startActivityForResult(newActivity8, 1);
+			                 startActivity(newActivity8);
         			       	 break; 
                          case 9:  //The Judge's Daughter
                         	 Intent newActivity9 = new Intent(getActivity(), Tns.class);     
 			                 newActivity9.putExtra("track", 10);
-			                 startActivityForResult(newActivity9, 1);
+			                 startActivity(newActivity9);
         			       	 break; 
                          case 10: //Paper Lanterns
                         	 Intent newActivity10 = new Intent(getActivity(), Tns.class);     
 			                 newActivity10.putExtra("track", 11);
-			                 startActivityForResult(newActivity10, 1);
+			                 startActivity(newActivity10);
         			       	 break;
                          case 11: //Why Do You Want Him?
                         	 Intent newActivity11 = new Intent(getActivity(), Tns.class);     
 			                 newActivity11.putExtra("track", 12);
-			                 startActivityForResult(newActivity11, 1);
+			                 startActivity(newActivity11);
         			       	 break;
                          case 12: //409 In Your Coffeemaker
                         	 Intent newActivity12 = new Intent(getActivity(), Tns.class);     
 			                 newActivity12.putExtra("track", 13);
-			                 startActivityForResult(newActivity12, 1);
+			                 startActivity(newActivity12);
         			       	 break;
                          case 13: //Knowledge
                         	 Intent newActivity13 = new Intent(getActivity(), Tns.class);     
 			                 newActivity13.putExtra("track", 14);
-			                 startActivityForResult(newActivity13, 1);
+			                 startActivity(newActivity13);
         			       	 break;
                          case 14: //1,000 Hours
                         	 Intent newActivity14 = new Intent(getActivity(), Tns.class);     
 			                 newActivity14.putExtra("track", 15);
-			                 startActivityForResult(newActivity14, 1);
+			                 startActivity(newActivity14);
         			       	 break;
                          case 15: //Dry Ice
                         	 Intent newActivity15 = new Intent(getActivity(), Tns.class);     
 			                 newActivity15.putExtra("track", 16);
-			                 startActivityForResult(newActivity15, 1);
+			                 startActivity(newActivity15);
         			       	 break;
                          case 16: //Only Of You
                         	 Intent newActivity16 = new Intent(getActivity(), Tns.class);     
 			                 newActivity16.putExtra("track", 17);
-			                 startActivityForResult(newActivity16, 1);
+			                 startActivity(newActivity16);
         			       	 break;
                          case 17: //The One I Want
                         	 Intent newActivity17 = new Intent(getActivity(), Tns.class);     
 			                 newActivity17.putExtra("track", 18);
-			                 startActivityForResult(newActivity17, 1);
+			                 startActivity(newActivity17);
         			       	 break;
                          case 18: //I Want To Be Alone
                         	 Intent newActivity18 = new Intent(getActivity(), Tns.class);     
 			                 newActivity18.putExtra("track", 19);
-			                 startActivityForResult(newActivity18, 1);
+			                 startActivity(newActivity18);
         			       	 break;
                       }
                 	 }

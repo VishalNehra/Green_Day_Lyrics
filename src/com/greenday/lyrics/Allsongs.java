@@ -13,114 +13,13 @@ import com.greenday.americanidiot.Shesarebel;
 import com.greenday.americanidiot.Stjimmy;
 import com.greenday.americanidiot.Wakemeup;
 import com.greenday.americanidiot.Whatshername;
-import com.greenday.dookie.Allbymyself;
-import com.greenday.dookie.Basketcase;
-import com.greenday.dookie.Burnout;
-import com.greenday.dookie.Chump;
-import com.greenday.dookie.Comingclean;
-import com.greenday.dookie.Emeniussleepus;
-import com.greenday.dookie.FOD;
-import com.greenday.dookie.Havingblast;
-import com.greenday.dookie.Intheend;
-import com.greenday.dookie.Longview;
-import com.greenday.dookie.Pullingteeth;
-import com.greenday.dookie.Sassafrasroots;
-import com.greenday.dookie.She;
-import com.greenday.dookie.Welcomeparadise;
-import com.greenday.dookie.Whencomearound;
-import com.greenday.dos.Amy;
-import com.greenday.dos.Ashley;
-import com.greenday.dos.Babyeyes;
-import com.greenday.dos.Cutonight;
-import com.greenday.dos.Fucktime;
-import com.greenday.dos.Ladycobra;
-import com.greenday.dos.Lazybones;
-import com.greenday.dos.Makeoutparty;
-import com.greenday.dos.Nightlife;
-import com.greenday.dos.Stopredflash;
-import com.greenday.dos.Strayheart;
-import com.greenday.dos.Wildone;
-import com.greenday.dos.Wowthatsloud;
-import com.greenday.ins.JAR;
-import com.greenday.ins.Poprocks;
-import com.greenday.insomniac.Armatage;
-import com.greenday.insomniac.Babuvula;
-import com.greenday.insomniac.Brainstew;
-import com.greenday.insomniac.Brat;
-import com.greenday.insomniac.Eightysix;
-import com.greenday.insomniac.Geekstink;
-import com.greenday.insomniac.Jaded;
-import com.greenday.insomniac.Nopride;
-import com.greenday.insomniac.Panicsong;
-import com.greenday.insomniac.Stuartave;
-import com.greenday.insomniac.Stuckwithme;
-import com.greenday.insomniac.Tightwad;
-import com.greenday.insomniac.Walking;
-import com.greenday.insomniac.Westbound;
-import com.greenday.kerplunk.Android;
-import com.greenday.kerplunk.Bestthing;
-import com.greenday.kerplunk.Christie;
-import com.greenday.kerplunk.Eighty;
-import com.greenday.kerplunk.Lightyears;
-import com.greenday.kerplunk.Mygeneration;
-import com.greenday.kerplunk.Nooneknows;
-import com.greenday.kerplunk.Oneoflies;
-import com.greenday.kerplunk.Oominated;
-import com.greenday.kerplunk.Privateale;
-import com.greenday.kerplunk.Razorbacks;
-import com.greenday.kerplunk.Strangeland;
-import com.greenday.kerplunk.Sweetchildren;
-import com.greenday.kerplunk.Whowrote;
-import com.greenday.kerplunk.Wordsmightate;
-import com.greenday.nimrod.Allthetime;
-import com.greenday.nimrod.Goodriddance;
-import com.greenday.nimrod.Grouch;
-import com.greenday.nimrod.Haushinka;
-import com.greenday.nimrod.Hitchinaride;
-import com.greenday.nimrod.Jinx;
-import com.greenday.nimrod.Kingforaday;
-import com.greenday.nimrod.Niceguys;
-import com.greenday.nimrod.Platypus;
-import com.greenday.nimrod.Prosthetichead;
-import com.greenday.nimrod.Redundant;
-import com.greenday.nimrod.Reject;
-import com.greenday.nimrod.Scattered;
-import com.greenday.nimrod.Takeback;
-import com.greenday.nimrod.Uptight;
-import com.greenday.nimrod.Walkingalone;
-import com.greenday.nimrod.Worryrock;
-import com.greenday.shenanigans.Desensitized;
-import com.greenday.shenanigans.Dodada;
-import com.greenday.shenanigans.Espionage;
-import com.greenday.shenanigans.Fallinlove;
-import com.greenday.shenanigans.Onwagon;
-import com.greenday.shenanigans.Outsider;
-import com.greenday.shenanigans.Rotting;
-import com.greenday.shenanigans.Scumbag;
-import com.greenday.shenanigans.Sickofme;
-import com.greenday.shenanigans.Suffocate;
-import com.greenday.shenanigans.Tiredofwaiting;
-import com.greenday.shenanigans.WannabeonTV;
-import com.greenday.shenanigans.Youlied;
-import com.greenday.shenanigans.Yourdead;
-import com.greenday.tcb.Americaneulogy;
-import com.greenday.tcb.Eastjesus;
-import com.greenday.tcb.Guns;
-import com.greenday.tcb.Horseshoes;
-import com.greenday.tcb.Inferno;
-import com.greenday.tcb.Knowyourenemy;
-import com.greenday.tcb.Lastamerican;
-import com.greenday.tcb.Lastnight;
-import com.greenday.tcb.Lobotomy;
-import com.greenday.tcb.Murdercity;
-import com.greenday.tcb.Peacemaker;
-import com.greenday.tcb.Restlessheart;
-import com.greenday.tcb.Seethelight;
-import com.greenday.tcb.Songofcentuary;
-import com.greenday.tcb.Staticage;
-import com.greenday.tcb.Tcb;
-import com.greenday.tcb.Vivalagloria;
-import com.greenday.tcb.Vivalagloria2;
+import com.greenday.dos.Dos;
+import com.greenday.ins.Ins;
+import com.greenday.insomniac.Insomniac;
+import com.greenday.kerplunk.Kerplunk;
+import com.greenday.nimrod.Nimrod;
+import com.greenday.shenanigans.Shenanigans;
+import com.greenday.tcb.TcbMain;
 import com.greenday.tns.Tns;
 import com.greenday.tre.Tre;
 import com.greenday.uno.Uno;
@@ -316,7 +215,7 @@ public class Allsongs extends Activity {
 				"Homecoming",
 				"Horseshoes And Handgrenades",
 				"I Want To Be Alone",
-				"I Want To Be On TV",
+				"I Want To Be On T.V.",
 				"I Was There",
 				"In The End",
 				"Jackass",
@@ -340,6 +239,7 @@ public class Allsongs extends Activity {
 				"Macy's Day Parade",
 				"Makeout Party",
 				"Minority",
+				"Maria",
 				"Misery",
 				"Missing You",
 				"Murder City",
@@ -477,181 +377,206 @@ public class Allsongs extends Activity {
 				if (values=="1,000 Hours") {
 					Intent newActivity14 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity14.putExtra("track", 15);
-	                startActivityForResult(newActivity14, 1);}
+	                startActivity(newActivity14);}
 				if (values=="16") {
 					Intent newActivity6 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity6.putExtra("track", 7);
-	                startActivityForResult(newActivity6, 1);}
+	                startActivity(newActivity6);}
 				if (values=="2000 Light Years Away") {
-					i=new Intent(Allsongs.this, Lightyears.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="21 Guns") {
-					i=new Intent(Allsongs.this, Guns.class);
-					startActivity(i);}
+					Intent newActivity15 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity15.putExtra("track", 16);
+	                startActivity(newActivity15);}
 				if (values=="21st Century Breakdown") {
-					i=new Intent(Allsongs.this, Tcb.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="409 In Your Coffeemaker") {
 					Intent newActivity12 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity12.putExtra("track", 13);
-	                startActivityForResult(newActivity12, 1);}
+	                startActivity(newActivity12);}
 				if (values=="80") {
-					i=new Intent(Allsongs.this, Eighty.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="86") {
-					i=new Intent(Allsongs.this, Eightysix.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="8th Avenue Serenade") {
 					Intent newActivity2 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity2.putExtra("track", 3);
-	                startActivityForResult(newActivity2, 1);}
+	                startActivity(newActivity2);}
 				if (values=="99 Revolutions") {
 					Intent newActivity10 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity10.putExtra("track", 11);
-	                startActivityForResult(newActivity10, 1);}
+	                startActivity(newActivity10);}
 				if (values=="All By Myself") {
 					i=new Intent(Allsongs.this, Allbymyself.class);
 					startActivity(i);}
 				if (values=="All The Time") {
-					i=new Intent(Allsongs.this, Allthetime.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Amanda") {
 					Intent newActivity7 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity7.putExtra("track", 8);
-	                startActivityForResult(newActivity7, 1);}
+	                startActivity(newActivity7);}
 				if (values=="American Eulogy (Mass Hysteria/Modern World)") {
-					i=new Intent(Allsongs.this, Americaneulogy.class);
-					startActivity(i);}
+					Intent newActivity16 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity16.putExtra("track", 17);
+	                startActivity(newActivity16);}
 				if (values=="American Idiot") {
 					i=new Intent(Allsongs.this, Americanidiot.class);
 					startActivity(i);}
 				if (values=="Amy") {
-					i=new Intent(Allsongs.this, Amy.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="Android") {
-					i=new Intent(Allsongs.this, Android.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Angel Blue") {
 					Intent newActivity8 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity8.putExtra("track", 9);
-	                startActivityForResult(newActivity8, 1);}
+	                startActivity(newActivity8);}
 				if (values=="Are We The Waiting") {
 					i=new Intent(Allsongs.this, Arewethewaiting.class);
 					startActivity(i);}
 				if (values=="Armatage Shanks") {
-					i=new Intent(Allsongs.this, Armatage.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="Ashley") {
-					i=new Intent(Allsongs.this, Ashley.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="At The Library") {
 					Intent newActivity = new Intent(Allsongs.this, Tns.class);     
 	                newActivity.putExtra("track", 1);
-	                startActivityForResult(newActivity, 0);}
+	                startActivity(newActivity);}
 				if (values=="Bab's Uvula Who?") {
-					i=new Intent(Allsongs.this, Babuvula.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Baby Eyes") {
-					i=new Intent(Allsongs.this, Babyeyes.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Basket Case") {
 					i=new Intent(Allsongs.this, Basketcase.class);
 					startActivity(i);}
 				if (values=="Before The Lobotomy") {
-					i=new Intent(Allsongs.this, Lobotomy.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, TcbMain.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Best Thing In Town") {
-					i=new Intent(Allsongs.this, Bestthing.class);
-					startActivity(i);}
+					Intent newActivity13 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity13.putExtra("track", 14);
+	                startActivity(newActivity13);}
 				if (values=="Blood, Sex And Booze") {
 					Intent newActivity1 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity1.putExtra("track", 2);
-                    startActivityForResult(newActivity1, 1);}
+                    startActivity(newActivity1);}
 				if (values=="Boulevard Of Broken Dreams") {
 					i=new Intent(Allsongs.this, Boulevardofbd.class);
 					startActivity(i);}
 				if (values=="Brain Stew") {
-					i=new Intent(Allsongs.this, Brainstew.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="Brat") {
-					i=new Intent(Allsongs.this, Brat.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Brutal Love") {
 					Intent newActivity = new Intent(Allsongs.this, Tre.class);     
 	                newActivity.putExtra("track", 1);
-	                startActivityForResult(newActivity, 0);}
+	                startActivity(newActivity);}
 				if (values=="Burnout") {
 					i=new Intent(Allsongs.this, Burnout.class);
 					startActivity(i);}
 				if (values=="Carpe Diem") {
 					Intent newActivity2 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity2.putExtra("track", 3);
-	                startActivityForResult(newActivity2, 1);}
+	                startActivity(newActivity2);}
 				if (values=="Castaway") {
 					Intent newActivity4 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity4.putExtra("track", 5);
-                    startActivityForResult(newActivity4, 1);}
+                    startActivity(newActivity4);}
 				if (values=="Christian's Inferno") {
-					i=new Intent(Allsongs.this, Inferno.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Christie Road") {
-					i=new Intent(Allsongs.this, Christie.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="Chump") {
 					i=new Intent(Allsongs.this, Chump.class);
 					startActivity(i);}
 				if (values=="Church On Sunday") {
 					Intent newActivity2 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity2.putExtra("track", 3);
-                    startActivityForResult(newActivity2, 1);}
+                    startActivity(newActivity2);}
 				if (values=="Coming Clean") {
 					i=new Intent(Allsongs.this, Comingclean.class);
 					startActivity(i);}
 				if (values=="Deadbeat Holiday") {
 					Intent newActivity6 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity6.putExtra("track", 7);
-                    startActivityForResult(newActivity6, 1);}
+                    startActivity(newActivity6);}
 				if (values=="Desensitized") {
-					i=new Intent(Allsongs.this, Desensitized.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Dirty Rotten Bastards") {
 					Intent newActivity9 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity9.putExtra("track", 10);
-	                startActivityForResult(newActivity9, 1);}
+	                startActivity(newActivity9);}
 				if (values=="Disappearing Boy") {
 					Intent newActivity3 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity3.putExtra("track", 4);
-	                startActivityForResult(newActivity3, 1);}
+	                startActivity(newActivity3);}
 				if (values=="Do Da Da") {
-					i=new Intent(Allsongs.this, Dodada.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="Dominated Love Slave") {
-					i=new Intent(Allsongs.this, Oominated.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Don't Leave Me") {
 					Intent newActivity1 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity1.putExtra("track", 2);
-	                startActivityForResult(newActivity1, 1);}
+	                startActivity(newActivity1);}
 				if (values=="Don't Wanna Fall In Love") {
-					i=new Intent(Allsongs.this, Fallinlove.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Shenanigans.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Drama Queen") {
 					Intent newActivity3 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity3.putExtra("track", 4);
-	                startActivityForResult(newActivity3, 1);}
+	                startActivity(newActivity3);}
 				if (values=="Dry Ice") {
 					Intent newActivity15 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity15.putExtra("track", 16);
-	                startActivityForResult(newActivity15, 1);}
+	                startActivity(newActivity15);}
 				if (values=="East Jesus Nowhere") {
-					i=new Intent(Allsongs.this, Eastjesus.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="Emenius Sleepus") {
 					i=new Intent(Allsongs.this, Emeniussleepus.class);
 					startActivity(i);}
 				if (values=="Espionage") {
-					i=new Intent(Allsongs.this, Espionage.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Extraordinary Girl") {
 					i=new Intent(Allsongs.this, Extraordgirl.class);
 					startActivity(i);}
@@ -661,47 +586,53 @@ public class Allsongs extends Activity {
 				if (values=="Fashion Victim") {
 					Intent newActivity3 = new Intent(Allsongs.this, WarningMain.class);     
                     newActivity3.putExtra("track", 4);
-                    startActivityForResult(newActivity3, 1);}
+                    startActivity(newActivity3);}
 				if (values=="Fell For You") {
 					Intent newActivity5 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity5.putExtra("track", 6);
-	                startActivityForResult(newActivity5, 1);}
+	                startActivity(newActivity5);}
 				if (values=="Fuck Time") {
-					i=new Intent(Allsongs.this, Fucktime.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Geek Stink Breath") {
-					i=new Intent(Allsongs.this, Geekstink.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="Give Me Novacaine") {
 					i=new Intent(Allsongs.this, Givemenov.class);
 					startActivity(i);}
 				if (values=="Going To Pasalacqua") {
 					Intent newActivity5 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity5.putExtra("track", 6);
-	                startActivityForResult(newActivity5, 1);}
+	                startActivity(newActivity5);}
 				if (values=="Good Riddance (Time Of Your Life)") {
-					i=new Intent(Allsongs.this, Goodriddance.class);
-					startActivity(i);}
+					Intent newActivity16 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity16.putExtra("track", 17);
+	                startActivity(newActivity16);}
 				if (values=="Green Day") {
 					Intent newActivity4 = new Intent(Allsongs.this, Tns.class);   
                	 	newActivity4.putExtra("track", 5);
-	                startActivityForResult(newActivity4, 1);}
+	                startActivity(newActivity4);}
 				if (values=="Ha Ha You're Dead") {
-					i=new Intent(Allsongs.this, Yourdead.class);
-					startActivity(i);}
+					Intent newActivity13 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity13.putExtra("track", 14);
+	                startActivity(newActivity13);}
 				if (values=="Haushinka") {
-					i=new Intent(Allsongs.this, Haushinka.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="Having A Blast") {
 					i=new Intent(Allsongs.this, Havingblast.class);
 					startActivity(i);}
 				if (values=="Hitchin' A Ride") {
-					i=new Intent(Allsongs.this, Hitchinaride.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Hold On") {
 					Intent newActivity7 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity7.putExtra("track", 8);
-	                 startActivityForResult(newActivity7, 1);;}
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="Holiday") {
 					i=new Intent(Allsongs.this, Holiday.class);
 					startActivity(i);}
@@ -709,211 +640,251 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Homecoming.class);
 					startActivity(i);}
 				if (values=="Horseshoes And Handgrenades") {
-					i=new Intent(Allsongs.this, Horseshoes.class);
-					startActivity(i);}
+					Intent newActivity13 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity13.putExtra("track", 14);
+	                startActivity(newActivity13);}
 				if (values=="I Want To Be Alone") {
 					Intent newActivity18 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity18.putExtra("track", 19);
-	                startActivityForResult(newActivity18, 1);}
-				if (values=="I Want To Be On TV") {
-					i=new Intent(Allsongs.this, WannabeonTV.class);
-					startActivity(i);}
+	                startActivity(newActivity18);}
+				if (values=="I Want To Be On T.V.") {
+					Intent newActivity6 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="I Was There") {
 					Intent newActivity2 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity2.putExtra("track", 3);
-	                startActivityForResult(newActivity2, 1);}
+	                startActivity(newActivity2);}
 				if (values=="In The End") {
 					i=new Intent(Allsongs.this, Intheend.class);
 					startActivity(i);}
 				if (values=="Jackass") {
 					Intent newActivity8 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity8.putExtra("track", 9);
-	                 startActivityForResult(newActivity8, 1);}
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Jaded") {
-					i=new Intent(Allsongs.this, Jaded.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="J.A.R. (Jason Andrew Relva)") {
-					i=new Intent(Allsongs.this, JAR.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Ins.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="Jesus Of Suburbia") {
 					i=new Intent(Allsongs.this, Jesusofsuburb.class);
 					startActivity(i);}
 				if (values=="Jinx") {
-					i=new Intent(Allsongs.this, Jinx.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="Kill The DJ") {
 					Intent newActivity4 = new Intent(Allsongs.this, Uno.class);   
                	 	newActivity4.putExtra("track", 5);
-	                startActivityForResult(newActivity4, 1);}
+	                startActivity(newActivity4);}
 				if (values=="King For A Day") {
-					i=new Intent(Allsongs.this, Kingforaday.class);
-					startActivity(i);}
+					Intent newActivity15 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity15.putExtra("track", 16);
+	                startActivity(newActivity15);}
 				if (values=="Know Your Enemy") {
-					i=new Intent(Allsongs.this, Knowyourenemy.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivity(newActivity2);}
 				if (values=="Knowledge") {
 					Intent newActivity13 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity13.putExtra("track", 14);
-	                startActivityForResult(newActivity13, 1);}
+	                startActivity(newActivity13);}
 				if (values=="Lady Cobra") {
-					i=new Intent(Allsongs.this, Ladycobra.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="Last Night On Earth") {
-					i=new Intent(Allsongs.this, Lastnight.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="Last Of American Girls") {
-					i=new Intent(Allsongs.this, Lastamerican.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="Lazy Bones") {
-					i=new Intent(Allsongs.this, Lazybones.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="Let Yourself Go") {
 					Intent newActivity3 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity3.putExtra("track", 4);
-	                startActivityForResult(newActivity3, 1);}
+	                startActivity(newActivity3);}
 				if (values=="Letterbomb") {
 					i=new Intent(Allsongs.this, Letterbomb.class);
 					startActivity(i);}
 				if (values=="Little Boy Named Train") {
 					Intent newActivity6 = new Intent(Allsongs.this, Tre.class);     
-	                 newActivity6.putExtra("track", 7);
-	                 startActivityForResult(newActivity6, 1);}
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="Longview") {
 					i=new Intent(Allsongs.this, Longview.class);
 					startActivity(i);}
 				if (values=="Loss Of Control") {
 					Intent newActivity6 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity6.putExtra("track", 7);
-	                startActivityForResult(newActivity6, 1);}
+	                startActivity(newActivity6);}
 				if (values=="Macy's Day Parade") {
 					Intent newActivity11 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity11.putExtra("track", 12);
-	                 startActivityForResult(newActivity11, 1);}
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="Makeout Party") {
-					i=new Intent(Allsongs.this, Makeoutparty.class);
-					startActivity(i);}
+					Intent newActivity5 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Minority") {
 					Intent newActivity10 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity10.putExtra("track", 11);
-	                 startActivityForResult(newActivity10, 1);}
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
+				if (values=="Maria") {
+					Intent newActivity = new Intent(Allsongs.this, Ins.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="Misery") {
 					Intent newActivity5 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity5.putExtra("track", 6);
-	                 startActivityForResult(newActivity5, 1);}
+	                newActivity5.putExtra("track", 6);
+	                startActivity(newActivity5);}
 				if (values=="Missing You") {
 					Intent newActivity1 = new Intent(Allsongs.this, Tre.class);     
-	                 newActivity1.putExtra("track", 2);
-	                 startActivityForResult(newActivity1, 1);}
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Murder City") {
-					i=new Intent(Allsongs.this, Murdercity.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="My Generation") {
-					i=new Intent(Allsongs.this, Mygeneration.class);
-					startActivity(i);}
+					Intent newActivity15 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity15.putExtra("track", 16);
+	                startActivity(newActivity15);}
 				if (values=="Nice Guys Finish Last") {
-					i=new Intent(Allsongs.this, Niceguys.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="Nightlife") {
-					i=new Intent(Allsongs.this, Nightlife.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="No One Knows") {
-					i=new Intent(Allsongs.this, Nooneknows.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="No Pride") {
-					i=new Intent(Allsongs.this, Nopride.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Insomniac.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Nuclear Family") {
 					Intent newActivity = new Intent(Allsongs.this, Uno.class);     
 	                newActivity.putExtra("track", 1);
-	                startActivityForResult(newActivity, 0);}
+	                startActivity(newActivity);}
 				if (values=="Oh Love") {
 					Intent newActivity11 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity11.putExtra("track", 12);
-	                startActivityForResult(newActivity11, 1);}
+	                startActivity(newActivity11);}
 				if (values=="On The Wagon") {
-					i=new Intent(Allsongs.this, Onwagon.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="One For The Razorbacks") {
-					i=new Intent(Allsongs.this, Razorbacks.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="One Of My Lies") {
-					i=new Intent(Allsongs.this, Oneoflies.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="Only Of You") {
 					Intent newActivity16 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity16.putExtra("track", 17);
-	                startActivityForResult(newActivity16, 1);}
+	                startActivity(newActivity16);}
 				if (values=="Outsider") {
-					i=new Intent(Allsongs.this, Outsider.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="Panic Song") {
-					i=new Intent(Allsongs.this, Panicsong.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="Paper Lanterns") {
 					Intent newActivity10 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity10.putExtra("track", 11);
-	                startActivityForResult(newActivity10, 1);}
+	                startActivity(newActivity10);}
 				if (values=="Peacemaker") {
-					i=new Intent(Allsongs.this, Peacemaker.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Platypus (I Hate You)") {
-					i=new Intent(Allsongs.this, Platypus.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="Poprocks & Coke") {
-					i=new Intent(Allsongs.this, Poprocks.class);
-					startActivity(i);}
+					Intent newActivity1 = new Intent(Allsongs.this, Ins.class);     
+	                newActivity1.putExtra("track", 2);
+	                startActivity(newActivity1);}
 				if (values=="Private Ale") {
-					i=new Intent(Allsongs.this, Privateale.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Kerplunk.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Prosthetic Head") {
-					i=new Intent(Allsongs.this, Prosthetichead.class);
-					startActivity(i);}
+					Intent newActivity17 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity17.putExtra("track", 18);
+	                startActivity(newActivity17);}
 				if (values=="Pulling Teeth") {
 					i=new Intent(Allsongs.this, Pullingteeth.class);
 					startActivity(i);}
 				if (values=="Redundant") {
-					i=new Intent(Allsongs.this, Redundant.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="Reject") {
-					i=new Intent(Allsongs.this, Reject.class);
-					startActivity(i);}
+					Intent newActivity13 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity13.putExtra("track", 14);
+	                startActivity(newActivity13);}
 				if (values=="Rest") {
 					Intent newActivity8 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity8.putExtra("track", 9);
-	                startActivityForResult(newActivity8, 1);}
+	                startActivity(newActivity8);}
 				if (values=="Restless Heart Syndrome") {
-					i=new Intent(Allsongs.this, Restlessheart.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="Road To Acceptance") {
 					Intent newActivity7 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity7.putExtra("track", 8);
-	                startActivityForResult(newActivity7, 1);}
+	                startActivity(newActivity7);}
 				if (values=="Rotting") {
-					i=new Intent(Allsongs.this, Rotting.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="Rusty James") {
 					Intent newActivity10 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity10.putExtra("track", 11);
-	                startActivityForResult(newActivity10, 1);}
+	                startActivity(newActivity10);}
 				if (values=="Sassafras Roots") {
 					i=new Intent(Allsongs.this, Sassafrasroots.class);
 					startActivity(i);}
 				if (values=="Scattered") {
-					i=new Intent(Allsongs.this, Scattered.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Nimrod.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Scumbag") {
-					i=new Intent(Allsongs.this, Scumbag.class);
-					startActivity(i);}
+					Intent newActivity7 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity7.putExtra("track", 8);
+	                startActivity(newActivity7);}
 				if (values=="See The Light") {
-					i=new Intent(Allsongs.this, Seethelight.class);
-					startActivity(i);}
+					Intent newActivity17 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity17.putExtra("track", 18);
+	                startActivity(newActivity17);}
 				if (values=="See You Tonight") {
-					i=new Intent(Allsongs.this, Cutonight.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Dos.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="Sex, Drugs & Violence") {
 					Intent newActivity5 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity5.putExtra("track", 6);
-	                startActivityForResult(newActivity5, 1);}
+	                startActivity(newActivity5);}
 				if (values=="She") {
 					i=new Intent(Allsongs.this, She.class);
 					startActivity(i);}
@@ -921,98 +892,115 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Shesarebel.class);
 					startActivity(i);}
 				if (values=="Sick Of Me") {
-					i=new Intent(Allsongs.this, Sickofme.class);
-					startActivity(i);}
+					Intent newActivity9 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="Song Of The Century") {
-					i=new Intent(Allsongs.this, Songofcentuary.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="St. Jimmy") {
 					i=new Intent(Allsongs.this, Stjimmy.class);
 					startActivity(i);}
 				if (values=="Stay The Night") {
 					Intent newActivity1 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity1.putExtra("track", 2);
-	                startActivityForResult(newActivity1, 1);}
+	                startActivity(newActivity1);}
 				if (values=="Stop When The Red Lights Flash") {
-					i=new Intent(Allsongs.this, Stopredflash.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivity(newActivity2);}
 				if (values=="Strangeland") {
-					i=new Intent(Allsongs.this, Strangeland.class);
-					startActivity(i);}
+					Intent newActivity14 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity14.putExtra("track", 15);
+	                 startActivity(newActivity14);}
 				if (values=="Stray Heart") {
-					i=new Intent(Allsongs.this, Strayheart.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="Stuart And The Ave.") {
-					i=new Intent(Allsongs.this, Stuartave.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Stuck With Me") {
-					i=new Intent(Allsongs.this, Stuckwithme.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivity(newActivity2);}
 				if (values=="Suffocate") {
-					i=new Intent(Allsongs.this, Suffocate.class);
-					startActivity(i);}
+					Intent newActivity = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				if (values=="Sweet 16") {
 					Intent newActivity9 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity9.putExtra("track", 10);
-	                startActivityForResult(newActivity9, 1);}
+	                startActivity(newActivity9);}
 				if (values=="Sweet Children") {
-					i=new Intent(Allsongs.this, Sweetchildren.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="Take Back") {
-					i=new Intent(Allsongs.this, Takeback.class);
-					startActivity(i);}
+					Intent newActivity14 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity14.putExtra("track", 15);
+	                startActivity(newActivity14);}
 				if (values=="The Forgotten") {
 					Intent newActivity11 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity11.putExtra("track", 12);
-	                startActivityForResult(newActivity11, 1);}
+	                startActivity(newActivity11);}
 				if (values=="The Grouch") {
-					i=new Intent(Allsongs.this, Grouch.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivity(newActivity2);}
 				if (values=="The Judge's Daughter") {
 					Intent newActivity9 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity9.putExtra("track", 10);
-	                startActivityForResult(newActivity9, 1);}
+	                startActivity(newActivity9);}
 				if (values=="The One I Want") {
 					Intent newActivity17 = new Intent(Allsongs.this, Tns.class);     
 	                 newActivity17.putExtra("track", 18);
-	                 startActivityForResult(newActivity17, 1);}
+	                 startActivity(newActivity17);}
 				if (values=="The Static Age") {
-					i=new Intent(Allsongs.this, Staticage.class);
-					startActivity(i);}
+					Intent newActivity14 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity14.putExtra("track", 15);
+	                startActivity(newActivity14);}
 				if (values=="Tight Wadd Hill") {
-					i=new Intent(Allsongs.this, Tightwad.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="Tired Of Waiting For You") {
-					i=new Intent(Allsongs.this, Tiredofwaiting.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Troublemaker") {
 					Intent newActivity7 = new Intent(Allsongs.this, Uno.class);     
 	                newActivity7.putExtra("track", 8);
-	                startActivityForResult(newActivity7, 1);}
+	                startActivity(newActivity7);}
 				if (values=="Uptight") {
-					i=new Intent(Allsongs.this, Uptight.class);
-					startActivity(i);}
+					Intent newActivity8 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity8.putExtra("track", 9);
+	                startActivity(newActivity8);}
 				if (values=="Waiting") {
 					Intent newActivity9 = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity9.putExtra("track", 10);
-	                 startActivityForResult(newActivity9, 1);;}
+	                newActivity9.putExtra("track", 10);
+	                startActivity(newActivity9);}
 				if (values=="Wake Me Up When September Ends") {
 					i=new Intent(Allsongs.this, Wakemeup.class);
 					startActivity(i);}
 				if (values=="Walk Away") {
 					Intent newActivity8 = new Intent(Allsongs.this, Tre.class);     
 	                newActivity8.putExtra("track", 9);
-	                startActivityForResult(newActivity8, 1);}
+	                startActivity(newActivity8);}
 				if (values=="Walking Alone") {
-					i=new Intent(Allsongs.this, Walkingalone.class);
-					startActivity(i);}
+					Intent newActivity12 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity12.putExtra("track", 13);
+	                startActivity(newActivity12);}
 				if (values=="Walking Contradiction") {
-					i=new Intent(Allsongs.this, Walking.class);
-					startActivity(i);}
+					Intent newActivity13 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity13.putExtra("track", 14);
+	                startActivity(newActivity13);}
 				if (values=="Warning") {
 					Intent newActivity = new Intent(Allsongs.this, WarningMain.class);     
-	                 newActivity.putExtra("track", 1);
-	                 startActivityForResult(newActivity, 0);}
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);}
 				//if (values=="Welcome To Paradise") {
 					//i=new Intent(Allsongs.this, Welcome.class);
 					//startActivity(i);}
@@ -1020,8 +1008,9 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Welcomeparadise.class);
 					startActivity(i);}
 				if (values=="Westbound Sign") {
-					i=new Intent(Allsongs.this, Westbound.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Insomniac.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="Whatsername") {
 					i=new Intent(Allsongs.this, Whatshername.class);
 					startActivity(i);}
@@ -1029,38 +1018,45 @@ public class Allsongs extends Activity {
 					i=new Intent(Allsongs.this, Whencomearound.class);
 					startActivity(i);}
 				if (values=="Who Wrote Holden Caulfield?") {
-					i=new Intent(Allsongs.this, Whowrote.class);
-					startActivity(i);}
+					Intent newActivity10 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity10.putExtra("track", 11);
+	                startActivity(newActivity10);}
 				if (values=="Why Do You Want Him?") {
 					Intent newActivity11 = new Intent(Allsongs.this, Tns.class);     
 	                newActivity11.putExtra("track", 12);
-	                startActivityForResult(newActivity11, 1);}
+	                startActivity(newActivity11);}
 				if (values=="Wild One") {
-					i=new Intent(Allsongs.this, Wildone.class);
-					startActivity(i);}
+					Intent newActivity4 = new Intent(Allsongs.this, Dos.class);   
+               	 	newActivity4.putExtra("track", 5);
+	                startActivity(newActivity4);}
 				if (values=="Words I Might Have Ate") {
-					i=new Intent(Allsongs.this, Wordsmightate.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Kerplunk.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="Worry Rock") {
-					i=new Intent(Allsongs.this, Worryrock.class);
-					startActivity(i);}
+					Intent newActivity6 = new Intent(Allsongs.this, Nimrod.class);     
+	                newActivity6.putExtra("track", 7);
+	                startActivity(newActivity6);}
 				if (values=="Wow! That's Loud") {
-					i=new Intent(Allsongs.this, Wowthatsloud.class);
-					startActivity(i);}
+					Intent newActivity11 = new Intent(Allsongs.this, Dos.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 				if (values=="X-Kid") {
 					Intent newActivity4 = new Intent(Allsongs.this, Tre.class);   
                	 	newActivity4.putExtra("track", 5);
-	                startActivityForResult(newActivity4, 1);}
+	                startActivity(newActivity4);}
 				if (values=="You Lied") {
-					i=new Intent(Allsongs.this, Youlied.class);
-					startActivity(i);}
+					Intent newActivity2 = new Intent(Allsongs.this, Shenanigans.class);     
+	                newActivity2.putExtra("track", 3);
+	                startActivity(newActivity2);}
 				if (values=="¡Viva La Gloria!") {
-					i=new Intent(Allsongs.this, Vivalagloria.class);
-					startActivity(i);}
+					Intent newActivity3 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity3.putExtra("track", 4);
+	                startActivity(newActivity3);}
 				if (values=="¿Viva La Gloria? (Little Girl)") {
-					i=new Intent(Allsongs.this, Vivalagloria2.class);
-					startActivity(i);}
-				
+					Intent newActivity11 = new Intent(Allsongs.this, TcbMain.class);     
+	                newActivity11.putExtra("track", 12);
+	                startActivity(newActivity11);}
 			}
 		});
 	}

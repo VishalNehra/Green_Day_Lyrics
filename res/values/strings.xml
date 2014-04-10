@@ -176,7 +176,6 @@
     <string name="drawer_close">Slider Menu Closed</string>
     
     <!-- Options Menu items -->
-    <string name="settings">Settings</string>
     <string name="reportsong">Report this song</string>
     
     <!-- ALBUM LIST -->
@@ -405,7 +404,6 @@
     <string name="dontleaveme_title">Don\'t Leave Me</string>
     <string name="dryice_title">Dry Ice</string>
     <string name="goingpasalacqua_title">Going To Pasalacqua</string>
-    <string name="greenday_title">Green Day</string>
     <string name="wantbealone_title">I Want To Be Alone</string>
     <string name="iwasthere_title">I Was There</string>
     <string name="knowledge_title">Knowledge</string>

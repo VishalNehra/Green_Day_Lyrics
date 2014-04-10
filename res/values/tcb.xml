@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
+    <!-- Viva La Gloria 2 -->
+    <string name="vivalagloria2">
+        \nLittle girl, little girl, \n
+Why are you crying?\n
+Inside your restless soul \n
+Your heart is dying?\n
+Little one, little one, \n
+Your soul is purging\n
+Of love and razor blades \n
+your blood is surging\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You\'re a stray for the salvation army\n
+There is no place like home \n
+When you got no place to go\n
+\n
+Little girl, little girl, \n
+Your life is calling\n
+The charlatans and saints of your abandon\n
+Little one, little one, \n
+The sky is falling\n
+Your lifeboat of deception is now sailing\n
+In the wake all the way no rhyme or reason\n
+Your bloodshot eyes \n
+Will show your heart of treason\n
+\n
+Little girl, little girl, you\'re dirty liar\n
+You\'re just a junkie preaching to the choir\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You\'re a stray for the salvation army\n
+There is no place like home \n
+when you got no place to go\n
+\n
+The traces of blood always follow you home \n
+Like the mascara tears from your getaway\n
+You\'re walking with blisters and running with shears\n
+So unholy sister of grace!\n
+\n
+Runaway\n
+From the river to the street \n
+And find yourself with your face in the gutter\n
+You\'re a stray for the salvation army\n
+There is no place like home
+    </string>
+    
+    <!-- Viva La Gloria -->
+    <string name="vivalagloria">
+        \nHey Gloria?\n
+Are you standing close to the edge?\n
+Lookout to the setting sun\n
+The brink of your vision\n
+Eternal youth is a landscape of the lie\n
+\n
+The cracks of my skin can prove\n
+As the years will testify\n
+Say your prayers and light a fire \n
+We\'re going to start a war\n
+Your slogan\'s a gun for hire\n
+It\'s what we waited for\n
+\n
+Hey Gloria\n
+\n
+This is why we were on the edge\n
+The fight of our lives been drawn to this undying love\n
+\n
+Gloria!Viva La Gloria!\n
+You blast your name in graffiti on the walls (oh)\n
+Falling through broken glass \n
+That\'s slashing through your spirit\n
+I can hear it like a jilted crowd\n
+\n
+Gloria!Where are you Gloria?\n
+You found a home in \n
+All your scars and ammunition\n
+You made your bed in salad days \n
+Amongst the ruins\n
+Ashes to ashes of our youth\n
+\n
+She smashed her knuckles into winter \n
+(Gloria)\n
+As autumns wind fades into black\n
+She is the saint of all the sinners \n
+(Gloria)\n
+The one that\'s fallen through the cracks\n
+So don\'t put away your burning light\n
+\n
+Gloria!Where are you Gloria?\n
+Don\'t lose you faith to your lost naivete\n
+Weather the storm and don\'t look back on last November\n
+When your banners were burning down\n
+\n
+Gloria!Viva La Gloria!\n
+Send me your amnesty down to the broken hearted\n
+Bring us the season that we always will remember\n
+Don\'t let the bonfires go out\n
+\n
+So Gloria\n
+\n
+Send out your message of \n
+The light that shadows in the night\n
+Gloria where\'s your undying love?\n
+Tell me the story of your life ...\n
+(Your life!)
+    </string>
+    
     <!-- 21st Century Breakdown -->
     <string name="tcb">
         \nBorn into Nixon I was raised in hell\n

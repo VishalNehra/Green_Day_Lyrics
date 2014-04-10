@@ -1,10 +1,10 @@
-package com.greenday.warning;
+package com.greenday.shenanigans;
 
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.R.id;
 import com.greenday.lyrics.R.layout;
 import com.greenday.lyrics.R.string;
-import com.greenday.unreleased.Unreleased;
+import com.greenday.tcb.TcbMain;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -25,16 +25,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-public class WarningFragment extends Fragment {
+
+public class ShenanigansFragment extends Fragment {
 	
-	public WarningFragment(){}
+public ShenanigansFragment(){}
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
   
-        View rootView = inflater.inflate(R.layout.fragment_warning, container, false);
-		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
+        View rootView = inflater.inflate(R.layout.fragment_shenanigans, container, false);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
         
 		getActivity();
 		//Boot_pref
@@ -62,22 +63,24 @@ public class WarningFragment extends Fragment {
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
 		        .setMessage(Html.fromHtml(getString(R.string.album) +
-		        		getString(R.string.warning_album_release) +
+		        		getString(R.string.shenanigans_album_release) +
 		        		getString(R.string.length) +
-		        		"<font color='#006500'><i>41:14</font></i><br><br>" +
+		        		"<font color='#006500'><i>33:23</i></font><br><br>" +
 		        		getString(R.string.track_list) +
-		        		"<font color='#006500'>1. Warning <i>(3:42)</i><br>" +
-		        		"2. Blood, Sex and Booze <i>(3:33)</i><br>" +
-		        		"3. Church on Sunday <i>(3:18)</i><br>" +
-		        		"4. Fashion Victim <i>(2:48)</i><br>" +
-		        		"5. Castaway <i>(3:52)</i><br>" +
-		        		"6. Misery <i>(5:05)</i><br>" +
-		        		"7. Deadbeat Holiday <i>(3:35)</i><br>" +
-		        		"8. Hold On <i>(2:56)</i><br>" +
-		        		"9. Jackass <i>(2:43)</i><br>" +
-		        		"10. Waiting <i>(3:13)</i><br>" +
-		        		"11. Minority <i>(2:49)</i><br>" +
-		        		"12. Macy's Day Parade <i>(3:34)</i><br>"))
+		        		"<font color='#006500'>1. Suffocate <i>(2:54)</i><br>" +
+		        		"2. Desensitized <i>(2:47)</i><br>" +
+		        		"3. You Lied <i>(2:26)</i><br>" +
+		        		"4. Outsider <i>(2:17)</i><br>" +
+		        		"5. Don't Wanna Fall in Love <i>(1:38)</i><br>" +
+		        		"6. Espionage <i>(3:23)</i><br>" +
+		        		"7. I Want to Be on T.V. <i>(1:17)</i><br>" +
+		        		"8. Scumbag <i>(1:46)</i><br>" +
+		        		"9. Tired of Waiting for You <i>(2:34)</i><br>" +
+		        		"10. Sick of Me <i>(2:07)</i><br>" +
+		        		"11. Rotting <i>(2:52)</i><br>" +
+		        		"12. Do Da Da <i>(1:30)</i><br>" +
+		        		"13. On the Wagon <i>(2:48)</i><br>" +
+		        		"14. Ha Ha You're Dead <i>(3:07)</i></font>"))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
@@ -90,19 +93,20 @@ public class WarningFragment extends Fragment {
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"Warning",
-        		"Blood, Sex and Booze",
-        		"Church On Sunday",
-        		"Fashion Victim",
-        		"Castaway",
-        		"Misery",
-        		"Deadbeat Holiday",
-        		"Hold On",
-        		"Jackass",
-        		"Waiting",
-        		"Minority",
-        		"Macy's Day Parade"
-        		};
+        String[] values = new String[] {"Suffocate",
+        		"Desensitized",
+        		"You Lied",
+        		"Outsider",
+        		"Don't Wanna Fall In Love",
+        		"Espionage",
+        		"I Want To Be On T.V.",
+        		"Scumbag",
+        		"Tired Of Waiting For You",
+        		"Sick Of Me",
+        		"Rotting",
+        		"Do Da Da",
+        		"On The Wagon",
+        		"Ha Ha You're Dead"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);
@@ -122,66 +126,76 @@ public class WarningFragment extends Fragment {
                 	 { 
                 		 switch(position)
                          {
-                         case 0:  //Warning
-                        	 Intent newActivity = new Intent(getActivity(), WarningMain.class);     
+                         case 0:  //Suffocate
+                        	 Intent newActivity = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity.putExtra("track", 1);
 			                 startActivity(newActivity);
                              break;
-                         case 1:  //Blood, Sex & Booze
-                        	 Intent newActivity1 = new Intent(getActivity(), WarningMain.class);     
+                         case 1:  //Desensitized
+                        	 Intent newActivity1 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity1.putExtra("track", 2);
 			                 startActivity(newActivity1);
                              break;
-                         case 2:  //Church on Sunday
-                        	 Intent newActivity2 = new Intent(getActivity(), WarningMain.class);     
+                         case 2:  //You Lied
+                        	 Intent newActivity2 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity2.putExtra("track", 3);
 			                 startActivity(newActivity2);
         			         break;
-                         case 3:  //Fashion Victim
-                        	 Intent newActivity3 = new Intent(getActivity(), WarningMain.class);     
+                         case 3:  //Outsider
+                        	 Intent newActivity3 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity3.putExtra("track", 4);
 			                 startActivity(newActivity3);
         	              	 break;
-                         case 4:  //Castaway
-                        	 Intent newActivity4 = new Intent(getActivity(), WarningMain.class);   
+                         case 4:  //Don't Wanna Fall In Love
+                        	 Intent newActivity4 = new Intent(getActivity(), Shenanigans.class);   
                         	 newActivity4.putExtra("track", 5);
 			                 startActivity(newActivity4);
         		         	 break;
-                         case 5:  //Misery
-                        	 Intent newActivity5 = new Intent(getActivity(), WarningMain.class);     
+                         case 5:  //Espionage
+                        	 Intent newActivity5 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity5.putExtra("track", 6);
 			                 startActivity(newActivity5);
         		        	 break;
-                         case 6:  //Deadbeat Holiday
-                        	 Intent newActivity6 = new Intent(getActivity(), WarningMain.class);     
+                         case 6:  //I Wanna Be On T.V.
+                        	 Intent newActivity6 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity6.putExtra("track", 7);
 			                 startActivity(newActivity6);
         			       	 break;
-                         case 7:  //Hold On
-                        	 Intent newActivity7 = new Intent(getActivity(), WarningMain.class);     
+                         case 7:  //Scumbag
+                        	 Intent newActivity7 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity7.putExtra("track", 8);
 			                 startActivity(newActivity7);
         			       	 break;
-                         case 8:  //Jackass
-                        	 Intent newActivity8 = new Intent(getActivity(), WarningMain.class);     
+                         case 8:  //Tired Of Waiting For You
+                        	 Intent newActivity8 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity8.putExtra("track", 9);
 			                 startActivity(newActivity8);
         			       	 break; 
-                         case 9:  //Waiting
-                        	 Intent newActivity9 = new Intent(getActivity(), WarningMain.class);     
+                         case 9:  //Sick Of Me
+                        	 Intent newActivity9 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity9.putExtra("track", 10);
 			                 startActivity(newActivity9);
         			       	 break; 
-                         case 10: //Minority
-                        	 Intent newActivity10 = new Intent(getActivity(), WarningMain.class);     
+                         case 10: //Rotting
+                        	 Intent newActivity10 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity10.putExtra("track", 11);
 			                 startActivity(newActivity10);
         			       	 break;
-                         case 11: //Macy's Day Parade
-                        	 Intent newActivity11 = new Intent(getActivity(), WarningMain.class);     
+                         case 11: //Do Da Da
+                        	 Intent newActivity11 = new Intent(getActivity(), Shenanigans.class);     
 			                 newActivity11.putExtra("track", 12);
 			                 startActivity(newActivity11);
         			       	 break;
+                         case 12: //On The Wagon
+                        	 Intent newActivity12 = new Intent(getActivity(), Shenanigans.class);     
+			                 newActivity12.putExtra("track", 13);
+			                 startActivity(newActivity12);
+        			       	 break;
+                         case 13: //Ha Ha You're Dead
+                        	 Intent newActivity13 = new Intent(getActivity(), Shenanigans.class);     
+			                 newActivity13.putExtra("track", 14);
+			                 startActivity(newActivity13);
+        			       	 break;  
                       }
                 	 }
                 });

@@ -1,11 +1,11 @@
-package com.greenday.uno;
+package com.greenday.tcb;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.uno.Info;
+import com.greenday.tcb.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,67 +16,90 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Uno extends Activity {
+public class TcbMain extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Declare theme before super.oncreate or setcontentview
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
-		setContentView(R.layout.uno);
-		
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.tcb);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("Nuclear Family");
-			tv1.setText(R.string.nuclearfamily);
+			ab.setTitle("Song Of The Centuary");
+			tv1.setText(R.string.songofcentuary);
 		}
 		if(track == 2){
-			ab.setTitle("Stay The Night");
-			tv1.setText(R.string.staynight);
+			ab.setTitle("21st Centuary Breakdown");
+			tv1.setText(R.string.tcb);
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem");
-			tv1.setText(R.string.carpediem);
+			ab.setTitle("Know Your Enemy");
+			tv1.setText(R.string.knowyourenemy);
 		}
 		if(track == 4){
-			ab.setTitle("Let Yourself Go");
-			tv1.setText(R.string.letgo);
+			ab.setTitle("¡Viva La Gloria!");
+			tv1.setText(R.string.vivalagloria);
 		}
 		if(track == 5){
-			ab.setTitle("Kill The DJ");
-			tv1.setText(R.string.killthedj);
+			ab.setTitle("Before The Lobotomy");
+			tv1.setText(R.string.lobotomy);
 		}
 		if(track == 6){
-			ab.setTitle("Fell For You");
-			tv1.setText(R.string.fellforyou);
+			ab.setTitle("Christian's Inferno");
+			tv1.setText(R.string.inferno);
 		}
 		if(track == 7){
-			ab.setTitle("Loss Of Control");
-			tv1.setText(R.string.lossofcontrol);
+			ab.setTitle("Last Night On Earth");
+			tv1.setText(R.string.lastnight);
 		}
 		if(track == 8){
-			ab.setTitle("Troublemaker");
-			tv1.setText(R.string.troublemaker);
+			ab.setTitle("East Jesus Nowhere");
+			tv1.setText(R.string.eastjesus);
 		}
 		if(track == 9){
-			ab.setTitle("Angel Blue");
-			tv1.setText(R.string.angelblue);
+			ab.setTitle("Peacemaker");
+			tv1.setText(R.string.peacemaker);
 		}
 		if(track == 10){
-			ab.setTitle("Sweet 16");
-			tv1.setText(R.string.sweetsixt);
+			ab.setTitle("Last Of American Girls");
+			tv1.setText(R.string.lastamerican);
 		}
 		if(track == 11){
-			ab.setTitle("Rusty James");
-			tv1.setText(R.string.rustyjames);
+			ab.setTitle("Murder City");
+			tv1.setText(R.string.murdercity);
 		}
 		if(track == 12){
-			ab.setTitle("Oh Love");
-			tv1.setText(R.string.ohlove);
+			ab.setTitle("¿Viva La Gloria? (Little Girl)");
+			tv1.setText(R.string.vivalagloria2);
+		}
+		if(track == 13){
+			ab.setTitle("Restless Heart Syndrome");
+			tv1.setText(R.string.restless);
+		}
+		if(track == 14){
+			ab.setTitle("Horseshoes And Handgranades");
+			tv1.setText(R.string.horseshoes);
+		}
+		if(track == 15){
+			ab.setTitle("The Static Age");
+			tv1.setText(R.string.staticage);
+		}
+		if(track == 16){
+			ab.setTitle("21 Guns");
+			tv1.setText(R.string.guns);
+		}
+		if(track == 17){
+			ab.setTitle("American Eulogy");
+			tv1.setText(R.string.americaneulogy);
+		}
+		if(track == 18){
+			ab.setTitle("See The Light");
+			tv1.setText(R.string.seethelight);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +140,75 @@ public class Uno extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Nuclear Family");
+					intent.putExtra("report_sub", "Song Of The Centuary");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Stay The Night");
+					intent.putExtra("report_sub", "21st Centuary Breakdown");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Carpe Diem");
+					intent.putExtra("report_sub", "Know Your Enemy");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Let Yourself Go");
+					intent.putExtra("report_sub", "¡Viva La Gloria!");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Kill The DJ");
+					intent.putExtra("report_sub", "Before The Lobotomy");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Fell For You");
+					intent.putExtra("report_sub", "Christian's Inferno");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Loss Of Control");
+					intent.putExtra("report_sub", "Last Night On Earth");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Troublemaker");
+					intent.putExtra("report_sub", "East Jesus Nowhere");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Angel Blue");
+					intent.putExtra("report_sub", "Peacemaker");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sweet 16");
+					intent.putExtra("report_sub", "Last Of American Girls");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Rusty James");
+					intent.putExtra("report_sub", "Murder City");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Oh Love");
+					intent.putExtra("report_sub", "¿Viva La Gloria? (Little Girl)");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Restless Heart Syndrome");
+					startActivity(intent);
+					}
+				if(track == 14){
+					intent.putExtra("report_sub", "Horseshoes And Handgranades");
+					startActivity(intent);
+					}
+				if(track == 15){
+					intent.putExtra("report_sub", "The Static Age");
+					startActivity(intent);
+					}
+				if(track == 16){
+					intent.putExtra("report_sub", "21 Guns");
+					startActivity(intent);
+					}
+				if(track == 17){
+					intent.putExtra("report_sub", "American Eulogy");
+					startActivity(intent);
+					}
+				if(track == 18){
+					intent.putExtra("report_sub", "See The Light");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +260,24 @@ public class Uno extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
+				}
+				if(track == 14){
+					Info.info14(this);
+				}
+				if(track == 15){
+					Info.info15(this);
+				}
+				if(track == 16){
+					Info.info16(this);
+				}
+				if(track == 17){
+					Info.info17(this);
+				}
+				if(track == 18){
+					Info.info18(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

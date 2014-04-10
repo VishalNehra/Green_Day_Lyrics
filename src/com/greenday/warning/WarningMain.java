@@ -31,64 +31,53 @@ public class WarningMain extends Activity {
 		setContentView(R.layout.warning);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
+		ActionBar ab=getActionBar();
 		
 		if(track == 1){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Warning");
 			tv1.setText(R.string.warning);
 		}
 		if(track == 2){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Blood, Sex and Booze");
 			tv1.setText(R.string.bloodsex);
 		}
 		if(track == 3){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Church On Sunday");
 			tv1.setText(R.string.church);
 		}
 		if(track == 4){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Fashion Victim");
 			tv1.setText(R.string.fashion);
 		}
 		if(track == 5){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Castaway");
 			tv1.setText(R.string.castaway);
 		}
 		if(track == 6){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Misery");
 			tv1.setText(R.string.misery);
 		}
 		if(track == 7){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Deadbeat Holiday");
 			tv1.setText(R.string.deadbeat);
 		}
 		if(track == 8){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Hold On");
 			tv1.setText(R.string.holdon);
 		}
 		if(track == 9){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Jackass");
 			tv1.setText(R.string.jackass);
 		}
 		if(track == 10){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Waiting");
 			tv1.setText(R.string.waiting);
 		}
 		if(track == 11){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Minority");
 			tv1.setText(R.string.minority);
 		}
 		if(track == 12){
-			ActionBar ab=getActionBar();
 			ab.setTitle("Macy's Day Parade");
 			tv1.setText(R.string.macy);
 		}
@@ -129,63 +118,52 @@ public class WarningMain extends Activity {
 			if(item.getItemId()==R.id.reportsong)
 			{
 				int track = getIntent().getExtras().getInt("track");
+				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Warning");
 					startActivity(intent);
 					}
 				if(track == 2){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Blood, Sex and Booze");
 					startActivity(intent);
 					}
 				if(track == 3){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Church On Sunday");
 					startActivity(intent);
 					}
 				if(track == 4){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Fashion Victim");
 					startActivity(intent);
 					}
 				if(track == 5){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Castaway");
 					startActivity(intent);
 					}
 				if(track == 6){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Misery");
 					startActivity(intent);
 					}
 				if(track == 7){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Deadbeat Holiday");
 					startActivity(intent);
 					}
 				if(track == 8){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Hold On");
 					startActivity(intent);
 					}
 				if(track == 9){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Jackass");
 					startActivity(intent);
 					}
 				if(track == 10){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Waiting");
 					startActivity(intent);
 					}
 				if(track == 11){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Minority");
 					startActivity(intent);
 					}
 				if(track == 12){
-					Intent intent = new Intent(this, ReportSong.class);
 					intent.putExtra("report_sub", "Macy's Day Parade");
 					startActivity(intent);
 					}

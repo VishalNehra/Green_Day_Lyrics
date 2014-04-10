@@ -124,62 +124,62 @@ public class TreFragment extends Fragment {
                          case 0:  //Brutal Love
                         	 Intent newActivity = new Intent(getActivity(), Tre.class);     
 			                 newActivity.putExtra("track", 1);
-			                 startActivityForResult(newActivity, 0);
+			                 startActivity(newActivity);
                              break;
                          case 1:  //Missing You
                         	 Intent newActivity1 = new Intent(getActivity(), Tre.class);     
 			                 newActivity1.putExtra("track", 2);
-			                 startActivityForResult(newActivity1, 1);
+			                 startActivity(newActivity1);
                              break;
                          case 2:  //8th Avenue Serenade
                         	 Intent newActivity2 = new Intent(getActivity(), Tre.class);     
 			                 newActivity2.putExtra("track", 3);
-			                 startActivityForResult(newActivity2, 1);
+			                 startActivity(newActivity2);
         			         break;
                          case 3:  //Drama Queen
                         	 Intent newActivity3 = new Intent(getActivity(), Tre.class);     
 			                 newActivity3.putExtra("track", 4);
-			                 startActivityForResult(newActivity3, 1);
+			                 startActivity(newActivity3);
         	              	 break;
                          case 4:  //X-Kid
                         	 Intent newActivity4 = new Intent(getActivity(), Tre.class);   
                         	 newActivity4.putExtra("track", 5);
-			                 startActivityForResult(newActivity4, 1);
+			                 startActivity(newActivity4);
         		         	 break;
                          case 5:  //Sex, Drugs & Violence
                         	 Intent newActivity5 = new Intent(getActivity(), Tre.class);     
 			                 newActivity5.putExtra("track", 6);
-			                 startActivityForResult(newActivity5, 1);
+			                 startActivity(newActivity5);
         		        	 break;
                          case 6:  //Little Boy Named Train
                         	 Intent newActivity6 = new Intent(getActivity(), Tre.class);     
 			                 newActivity6.putExtra("track", 7);
-			                 startActivityForResult(newActivity6, 1);
+			                 startActivity(newActivity6);
         			       	 break;
                          case 7:  //Amanda
                         	 Intent newActivity7 = new Intent(getActivity(), Tre.class);     
 			                 newActivity7.putExtra("track", 8);
-			                 startActivityForResult(newActivity7, 1);
+			                 startActivity(newActivity7);
         			       	 break;
                          case 8:  //Walk Away
                         	 Intent newActivity8 = new Intent(getActivity(), Tre.class);     
 			                 newActivity8.putExtra("track", 9);
-			                 startActivityForResult(newActivity8, 1);
+			                 startActivity(newActivity8);
         			       	 break; 
                          case 9:  //Dirty Rotten Bastards
                         	 Intent newActivity9 = new Intent(getActivity(), Tre.class);     
 			                 newActivity9.putExtra("track", 10);
-			                 startActivityForResult(newActivity9, 1);
+			                 startActivity(newActivity9);
         			       	 break; 
                          case 10: //99 Revolutions
                         	 Intent newActivity10 = new Intent(getActivity(), Tre.class);     
 			                 newActivity10.putExtra("track", 11);
-			                 startActivityForResult(newActivity10, 1);
+			                 startActivity(newActivity10);
         			       	 break;
                          case 11: //The Forgotten
                         	 Intent newActivity11 = new Intent(getActivity(), Tre.class);     
 			                 newActivity11.putExtra("track", 12);
-			                 startActivityForResult(newActivity11, 1);
+			                 startActivity(newActivity11);
         			       	 break;
                       }
                 	 }

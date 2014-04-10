@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.text.Html;
 
 import com.greenday.dookie.Longview;
+import com.greenday.insomniac.Insomniac;
+import com.greenday.kerplunk.Kerplunk;
 import com.greenday.lyrics.R;
+import com.greenday.nimrod.Nimrod;
 import com.greenday.warning.WarningMain;
 
 public class Info {
@@ -55,8 +58,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.nimrod.Goodriddance.class);
-                c.startActivity(intent);
+            	Intent newActivity16 = new Intent(c, Nimrod.class);     
+                newActivity16.putExtra("track", 17);
+                c.startActivity(newActivity16);
             }
         })
         .show();   
@@ -83,8 +87,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.nimrod.Goodriddance.class);
-                c.startActivity(intent);
+            	Intent newActivity16 = new Intent(c, Nimrod.class);     
+                newActivity16.putExtra("track", 17);
+                c.startActivity(newActivity16);
             }
         })
         .show();     
@@ -140,8 +145,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.insomniac.Geekstink.class);
-                c.startActivity(intent);
+            	Intent newActivity3 = new Intent(c, Insomniac.class);     
+                newActivity3.putExtra("track", 4);
+                c.startActivity(newActivity3);
             }
         })
         .show();   
@@ -164,8 +170,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.nimrod.Hitchinaride.class);
-                c.startActivity(intent);
+            	Intent newActivity1 = new Intent(c, Nimrod.class);     
+                newActivity1.putExtra("track", 2);
+                c.startActivity(newActivity1);
             }
         })
         .show();   
@@ -192,8 +199,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.insomniac.Geekstink.class);
-                c.startActivity(intent);
+            	Intent newActivity3 = new Intent(c, Insomniac.class);     
+                newActivity3.putExtra("track", 4);
+                c.startActivity(newActivity3);
             }
         })
         .show();    
@@ -277,8 +285,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.nimrod.Hitchinaride.class);
-                c.startActivity(intent);
+            	Intent newActivity1 = new Intent(c, Nimrod.class);     
+                newActivity1.putExtra("track", 2);
+                c.startActivity(newActivity1);
             }
         })
         .show();    
@@ -305,8 +314,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.nimrod.Goodriddance.class);
-                c.startActivity(intent);
+            	Intent newActivity16 = new Intent(c, Nimrod.class);     
+                newActivity16.putExtra("track", 17);
+                c.startActivity(newActivity16);
             }
         })
         .show();    
@@ -337,14 +347,16 @@ public class Info {
 		        
 		        .setNeutralButton("Brain Stew", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
-		            	Intent intent=new Intent(c, com.greenday.insomniac.Brainstew.class);
-		                c.startActivity(intent);
+		            	Intent newActivity9 = new Intent(c, Insomniac.class);     
+		                 newActivity9.putExtra("track", 10);
+		                 c.startActivity(newActivity9);
 		            }
 		        })
 		        .setNegativeButton("Jaded", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
-		                Intent intent=new Intent(c, com.greenday.insomniac.Jaded.class);
-		                c.startActivity(intent);
+		            	Intent newActivity10 = new Intent(c, Insomniac.class);     
+		                 newActivity10.putExtra("track", 11);
+		                 c.startActivity(newActivity10);
 		            }
 		        })
 		        .setPositiveButton("Close", new DialogInterface.OnClickListener() {

@@ -1,11 +1,11 @@
-package com.greenday.uno;
+package com.greenday.dookie;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.uno.Info;
+import com.greenday.dookie.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,67 +16,78 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Uno extends Activity {
+public class Dookie extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Declare theme before super.oncreate or setcontentview
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
-		setContentView(R.layout.uno);
-		
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.dookie);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("Nuclear Family");
-			tv1.setText(R.string.nuclearfamily);
+			ab.setTitle("All By Myself");
+			tv1.setText(R.string.allbymyself);
 		}
 		if(track == 2){
-			ab.setTitle("Stay The Night");
-			tv1.setText(R.string.staynight);
+			ab.setTitle("Burnout");
+			tv1.setText(R.string.burnout);
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem");
-			tv1.setText(R.string.carpediem);
+			ab.setTitle("Having A Blast");
+			tv1.setText(R.string.havingblast);
 		}
 		if(track == 4){
-			ab.setTitle("Let Yourself Go");
-			tv1.setText(R.string.letgo);
+			ab.setTitle("Chump");
+			tv1.setText(R.string.chump);
 		}
 		if(track == 5){
-			ab.setTitle("Kill The DJ");
-			tv1.setText(R.string.killthedj);
+			ab.setTitle("Longview");
+			tv1.setText(R.string.longview);
 		}
 		if(track == 6){
-			ab.setTitle("Fell For You");
-			tv1.setText(R.string.fellforyou);
+			ab.setTitle("Welcome To Paradise");
+			tv1.setText(R.string.welcometoparadise);
 		}
 		if(track == 7){
-			ab.setTitle("Loss Of Control");
-			tv1.setText(R.string.lossofcontrol);
+			ab.setTitle("Pulling Teeth");
+			tv1.setText(R.string.pullingteeth);
 		}
 		if(track == 8){
-			ab.setTitle("Troublemaker");
-			tv1.setText(R.string.troublemaker);
+			ab.setTitle("Basket Case");
+			tv1.setText(R.string.basketcase);
 		}
 		if(track == 9){
-			ab.setTitle("Angel Blue");
-			tv1.setText(R.string.angelblue);
+			ab.setTitle("She");
+			tv1.setText(R.string.she);
 		}
 		if(track == 10){
-			ab.setTitle("Sweet 16");
-			tv1.setText(R.string.sweetsixt);
+			ab.setTitle("Sassafras Roots");
+			tv1.setText(R.string.sassafrasroots);
 		}
 		if(track == 11){
-			ab.setTitle("Rusty James");
-			tv1.setText(R.string.rustyjames);
+			ab.setTitle("When I Come Around");
+			tv1.setText(R.string.whencomearound);
 		}
 		if(track == 12){
-			ab.setTitle("Oh Love");
-			tv1.setText(R.string.ohlove);
+			ab.setTitle("Coming Clean");
+			tv1.setText(R.string.comingclean);
+		}
+		if(track == 13){
+			ab.setTitle("Emenius Sleepus");
+			tv1.setText(R.string.emeniussleepus);
+		}
+		if(track == 14){
+			ab.setTitle("In The End");
+			tv1.setText(R.string.intheend);
+		}
+		if(track == 15){
+			ab.setTitle("F.O.D.");
+			tv1.setText(R.string.fod);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +128,65 @@ public class Uno extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Nuclear Family");
+					intent.putExtra("report_sub", "All By Myself");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Stay The Night");
+					intent.putExtra("report_sub", "Burnout");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Carpe Diem");
+					intent.putExtra("report_sub", "Having A Blast");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Let Yourself Go");
+					intent.putExtra("report_sub", "Chump");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Kill The DJ");
+					intent.putExtra("report_sub", "Longview");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Fell For You");
+					intent.putExtra("report_sub", "Welcome To Paradise");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Loss Of Control");
+					intent.putExtra("report_sub", "Pulling Teeth");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Troublemaker");
+					intent.putExtra("report_sub", "Basket Case");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Angel Blue");
+					intent.putExtra("report_sub", "She");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sweet 16");
+					intent.putExtra("report_sub", "Sassafras Roots");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Rusty James");
+					intent.putExtra("report_sub", "When I Come Around");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Oh Love");
+					intent.putExtra("report_sub", "Coming Clean");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Emenius Sleepus");
+					startActivity(intent);
+					}
+
+				if(track == 14){
+					intent.putExtra("report_sub", "In The End");
+					startActivity(intent);
+					}
+
+				if(track == 15){
+					intent.putExtra("report_sub", "F.O.D.");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +238,15 @@ public class Uno extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
+				}
+				if(track == 14){
+					Info.info14(this);
+				}
+				if(track == 15){
+					Info.info15(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

@@ -2,6 +2,14 @@ package com.greenday.lyrics;
  
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
+import com.greenday.dookie.DookieFragment;
+import com.greenday.dos.DosFragment;
+import com.greenday.ins.IntSuperFragment;
+import com.greenday.insomniac.InsomniacFragment;
+import com.greenday.kerplunk.KerplunkFragment;
+import com.greenday.nimrod.NimrodFragment;
+import com.greenday.shenanigans.ShenanigansFragment;
+import com.greenday.tcb.TcbFragment;
 import com.greenday.tns.TnsFragment;
 import com.greenday.tre.TreFragment;
 import com.greenday.uno.UnoFragment;

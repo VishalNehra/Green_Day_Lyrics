@@ -1,10 +1,10 @@
-package com.greenday.warning;
+package com.greenday.dos;
 
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.R.id;
 import com.greenday.lyrics.R.layout;
 import com.greenday.lyrics.R.string;
-import com.greenday.unreleased.Unreleased;
+import com.greenday.tcb.TcbMain;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -25,17 +25,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-public class WarningFragment extends Fragment {
+public class DosFragment extends Fragment {
 	
-	public WarningFragment(){}
+	public DosFragment(){}
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-  
-        View rootView = inflater.inflate(R.layout.fragment_warning, container, false);
-		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.warning_cover2);
-        
+    	
+        View rootView = inflater.inflate(R.layout.fragment_dos, container, false);
+		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
+		
 		getActivity();
 		//Boot_pref
         boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
@@ -54,30 +54,32 @@ public class WarningFragment extends Fragment {
         }
 		//Boot_pref ends
 		
-		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
+        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				@SuppressWarnings("unused")
 				AlertDialog builder = new AlertDialog.Builder(getActivity())
-		        .setMessage(Html.fromHtml(getString(R.string.album) +
-		        		getString(R.string.warning_album_release) +
+		        .setMessage(Html.fromHtml(getString(R.string.album)+
+		        		getString(R.string.dos_album_release) +
+		        		"<font color='#00900e'><i>[My B'Day :D]</i></font><br><br>" +
 		        		getString(R.string.length) +
-		        		"<font color='#006500'><i>41:14</font></i><br><br>" +
+		        		"<font color='#006500'><i>39:21</font></i><br><br>" +
 		        		getString(R.string.track_list) +
-		        		"<font color='#006500'>1. Warning <i>(3:42)</i><br>" +
-		        		"2. Blood, Sex and Booze <i>(3:33)</i><br>" +
-		        		"3. Church on Sunday <i>(3:18)</i><br>" +
-		        		"4. Fashion Victim <i>(2:48)</i><br>" +
-		        		"5. Castaway <i>(3:52)</i><br>" +
-		        		"6. Misery <i>(5:05)</i><br>" +
-		        		"7. Deadbeat Holiday <i>(3:35)</i><br>" +
-		        		"8. Hold On <i>(2:56)</i><br>" +
-		        		"9. Jackass <i>(2:43)</i><br>" +
-		        		"10. Waiting <i>(3:13)</i><br>" +
-		        		"11. Minority <i>(2:49)</i><br>" +
-		        		"12. Macy's Day Parade <i>(3:34)</i><br>"))
+		        		"<font color='#006500'>1. See You Tonight <i>(1:06)</i><br>" +
+		        		"2. Fuck Time <i>(2:45)</i><br>" +
+		        		"3. Stop When the Red Lights Flash <i>(2:26)</i><br>" +
+		        		"4. Lazy Bones <i>(3:34)</i><br>" +
+		        		"5. Wild One <i>(4:19)</i><br>" +
+		        		"6. Makeout Party <i>(3:14)</i><br>" +
+		        		"7. Stray Heart <i>(3:44)</i><br>" +
+		        		"8. Ashley <i>(2:50)</i><br>" +
+		        		"9. Baby Eyes <i>(2:22)</i><br>" +
+		        		"10. Lady Cobra <i>(2:05)</i><br>" +
+		        		"11. Nightlife <i>(3:04)</i><br>" +
+		        		"12. Wow! That's Loud <i>(4:27)</i><br>" +
+		        		"13. Amy <i>(3:25)</i></font>"))
 		        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                getActivity().closeContextMenu();
@@ -86,23 +88,22 @@ public class WarningFragment extends Fragment {
 		        .show();    
 			}
 		});
-		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
         //EDITED Code 
-        String[] values = new String[] {"Warning",
-        		"Blood, Sex and Booze",
-        		"Church On Sunday",
-        		"Fashion Victim",
-        		"Castaway",
-        		"Misery",
-        		"Deadbeat Holiday",
-        		"Hold On",
-        		"Jackass",
-        		"Waiting",
-        		"Minority",
-        		"Macy's Day Parade"
-        		};
+        String[] values = new String[] {"See You Tonight",
+        		"Fuck Time",
+        		"Stop When Red Lights Flash",
+        		"Lazy Bones",
+        		"Wild One",
+        		"Makeout Party",
+        		"Stray Heart",
+        		"Ashley",
+        		"Baby Eyes",
+        		"Lady Cobra",
+        		"Nightlife",
+        		"WOW! That's Loud",
+        		"Amy"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);
@@ -122,65 +123,70 @@ public class WarningFragment extends Fragment {
                 	 { 
                 		 switch(position)
                          {
-                         case 0:  //Warning
-                        	 Intent newActivity = new Intent(getActivity(), WarningMain.class);     
+                         case 0:  //See You Tonight
+                        	 Intent newActivity = new Intent(getActivity(), Dos.class);     
 			                 newActivity.putExtra("track", 1);
 			                 startActivity(newActivity);
                              break;
-                         case 1:  //Blood, Sex & Booze
-                        	 Intent newActivity1 = new Intent(getActivity(), WarningMain.class);     
+                         case 1:  //Fuck Time
+                        	 Intent newActivity1 = new Intent(getActivity(), Dos.class);     
 			                 newActivity1.putExtra("track", 2);
 			                 startActivity(newActivity1);
                              break;
-                         case 2:  //Church on Sunday
-                        	 Intent newActivity2 = new Intent(getActivity(), WarningMain.class);     
+                         case 2:  //Stop When Red Lights Flash
+                        	 Intent newActivity2 = new Intent(getActivity(), Dos.class);     
 			                 newActivity2.putExtra("track", 3);
 			                 startActivity(newActivity2);
         			         break;
-                         case 3:  //Fashion Victim
-                        	 Intent newActivity3 = new Intent(getActivity(), WarningMain.class);     
+                         case 3:  //Lazy Bones
+                        	 Intent newActivity3 = new Intent(getActivity(), Dos.class);     
 			                 newActivity3.putExtra("track", 4);
 			                 startActivity(newActivity3);
         	              	 break;
-                         case 4:  //Castaway
-                        	 Intent newActivity4 = new Intent(getActivity(), WarningMain.class);   
+                         case 4:  //Wild One
+                        	 Intent newActivity4 = new Intent(getActivity(), Dos.class);   
                         	 newActivity4.putExtra("track", 5);
 			                 startActivity(newActivity4);
         		         	 break;
-                         case 5:  //Misery
-                        	 Intent newActivity5 = new Intent(getActivity(), WarningMain.class);     
+                         case 5:  //Makeout Party
+                        	 Intent newActivity5 = new Intent(getActivity(), Dos.class);     
 			                 newActivity5.putExtra("track", 6);
 			                 startActivity(newActivity5);
         		        	 break;
-                         case 6:  //Deadbeat Holiday
-                        	 Intent newActivity6 = new Intent(getActivity(), WarningMain.class);     
+                         case 6:  //Stray Heart
+                        	 Intent newActivity6 = new Intent(getActivity(), Dos.class);     
 			                 newActivity6.putExtra("track", 7);
 			                 startActivity(newActivity6);
         			       	 break;
-                         case 7:  //Hold On
-                        	 Intent newActivity7 = new Intent(getActivity(), WarningMain.class);     
+                         case 7:  //Ashley
+                        	 Intent newActivity7 = new Intent(getActivity(), Dos.class);     
 			                 newActivity7.putExtra("track", 8);
 			                 startActivity(newActivity7);
         			       	 break;
-                         case 8:  //Jackass
-                        	 Intent newActivity8 = new Intent(getActivity(), WarningMain.class);     
+                         case 8:  //Baby Eyes
+                        	 Intent newActivity8 = new Intent(getActivity(), Dos.class);     
 			                 newActivity8.putExtra("track", 9);
 			                 startActivity(newActivity8);
         			       	 break; 
-                         case 9:  //Waiting
-                        	 Intent newActivity9 = new Intent(getActivity(), WarningMain.class);     
+                         case 9:  //Lady Cobra
+                        	 Intent newActivity9 = new Intent(getActivity(), Dos.class);     
 			                 newActivity9.putExtra("track", 10);
 			                 startActivity(newActivity9);
         			       	 break; 
-                         case 10: //Minority
-                        	 Intent newActivity10 = new Intent(getActivity(), WarningMain.class);     
+                         case 10: //Nightlife
+                        	 Intent newActivity10 = new Intent(getActivity(), Dos.class);     
 			                 newActivity10.putExtra("track", 11);
 			                 startActivity(newActivity10);
         			       	 break;
-                         case 11: //Macy's Day Parade
-                        	 Intent newActivity11 = new Intent(getActivity(), WarningMain.class);     
+                         case 11: //Wow! That's Loud
+                        	 Intent newActivity11 = new Intent(getActivity(), Dos.class);     
 			                 newActivity11.putExtra("track", 12);
 			                 startActivity(newActivity11);
+        			       	 break;
+                         case 12: //Amy
+                        	 Intent newActivity12 = new Intent(getActivity(), Dos.class);     
+			                 newActivity12.putExtra("track", 13);
+			                 startActivity(newActivity12);
         			       	 break;
                       }
                 	 }

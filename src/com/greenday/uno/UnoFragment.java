@@ -119,62 +119,62 @@ public class UnoFragment extends Fragment {
                          case 0:  //Nuclear Family
                         	 Intent newActivity = new Intent(getActivity(), Uno.class);     
 			                 newActivity.putExtra("track", 1);
-			                 startActivityForResult(newActivity, 0);
+			                 startActivity(newActivity);
                              break;
                          case 1:  //Stay The Night
                         	 Intent newActivity1 = new Intent(getActivity(), Uno.class);     
 			                 newActivity1.putExtra("track", 2);
-			                 startActivityForResult(newActivity1, 1);
+			                 startActivity(newActivity1);
                              break;
                          case 2:  //Carpe Diem
                         	 Intent newActivity2 = new Intent(getActivity(), Uno.class);     
 			                 newActivity2.putExtra("track", 3);
-			                 startActivityForResult(newActivity2, 1);
+			                 startActivity(newActivity2);
         			         break;
                          case 3:  //Let Yourself Go
                         	 Intent newActivity3 = new Intent(getActivity(), Uno.class);     
 			                 newActivity3.putExtra("track", 4);
-			                 startActivityForResult(newActivity3, 1);
+			                 startActivity(newActivity3);
         	              	 break;
                          case 4:  //Kill The DJ
                         	 Intent newActivity4 = new Intent(getActivity(), Uno.class);   
                         	 newActivity4.putExtra("track", 5);
-			                 startActivityForResult(newActivity4, 1);
+			                 startActivity(newActivity4);
         		         	 break;
                          case 5:  //Fell For You
                         	 Intent newActivity5 = new Intent(getActivity(), Uno.class);     
 			                 newActivity5.putExtra("track", 6);
-			                 startActivityForResult(newActivity5, 1);
+			                 startActivity(newActivity5);
         		        	 break;
                          case 6:  //Loss Of Control
                         	 Intent newActivity6 = new Intent(getActivity(), Uno.class);     
 			                 newActivity6.putExtra("track", 7);
-			                 startActivityForResult(newActivity6, 1);
+			                 startActivity(newActivity6);
         			       	 break;
                          case 7:  //Troublemaker
                         	 Intent newActivity7 = new Intent(getActivity(), Uno.class);     
 			                 newActivity7.putExtra("track", 8);
-			                 startActivityForResult(newActivity7, 1);
+			                 startActivity(newActivity7);
         			       	 break;
                          case 8:  //Angel Blue
                         	 Intent newActivity8 = new Intent(getActivity(), Uno.class);     
 			                 newActivity8.putExtra("track", 9);
-			                 startActivityForResult(newActivity8, 1);
+			                 startActivity(newActivity8);
         			       	 break; 
                          case 9:  //Sweet 16
                         	 Intent newActivity9 = new Intent(getActivity(), Uno.class);     
 			                 newActivity9.putExtra("track", 10);
-			                 startActivityForResult(newActivity9, 1);
+			                 startActivity(newActivity9);
         			       	 break; 
                          case 10: //Rusty James
                         	 Intent newActivity10 = new Intent(getActivity(), Uno.class);     
 			                 newActivity10.putExtra("track", 11);
-			                 startActivityForResult(newActivity10, 1);
+			                 startActivity(newActivity10);
         			       	 break;
                          case 11: //Oh Love
                         	 Intent newActivity11 = new Intent(getActivity(), Uno.class);     
 			                 newActivity11.putExtra("track", 12);
-			                 startActivityForResult(newActivity11, 1);
+			                 startActivity(newActivity11);
         			       	 break;
                          }
                 	 }

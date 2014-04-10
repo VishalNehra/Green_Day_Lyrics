@@ -1,11 +1,11 @@
-package com.greenday.uno;
+package com.greenday.kerplunk;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.uno.Info;
+import com.greenday.kerplunk.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,67 +16,82 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Uno extends Activity {
+public class Kerplunk extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Declare theme before super.oncreate or setcontentview
+		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
 		
-		setContentView(R.layout.uno);
-		
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.kerplunk);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("Nuclear Family");
-			tv1.setText(R.string.nuclearfamily);
+			ab.setTitle("2000 Light Years Away");
+			tv1.setText(R.string.lightyears);
 		}
 		if(track == 2){
-			ab.setTitle("Stay The Night");
-			tv1.setText(R.string.staynight);
+			ab.setTitle("One For The Razorbacks");
+			tv1.setText(R.string.razorbacks);
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem");
-			tv1.setText(R.string.carpediem);
+			ab.setTitle("Welcome To Paradise");
+			tv1.setText(R.string.welcometoparadise);
 		}
 		if(track == 4){
-			ab.setTitle("Let Yourself Go");
-			tv1.setText(R.string.letgo);
+			ab.setTitle("Christie Road");
+			tv1.setText(R.string.christieroad);
 		}
 		if(track == 5){
-			ab.setTitle("Kill The DJ");
-			tv1.setText(R.string.killthedj);
+			ab.setTitle("Private Ale");
+			tv1.setText(R.string.privateale);
 		}
 		if(track == 6){
-			ab.setTitle("Fell For You");
-			tv1.setText(R.string.fellforyou);
+			ab.setTitle("Dominated Love Slave");
+			tv1.setText(R.string.dominatedloveslave);
 		}
 		if(track == 7){
-			ab.setTitle("Loss Of Control");
-			tv1.setText(R.string.lossofcontrol);
+			ab.setTitle("One Of My Lies");
+			tv1.setText(R.string.oneoflies);
 		}
 		if(track == 8){
-			ab.setTitle("Troublemaker");
-			tv1.setText(R.string.troublemaker);
+			ab.setTitle("80");
+			tv1.setText(R.string.eighty);
 		}
 		if(track == 9){
-			ab.setTitle("Angel Blue");
-			tv1.setText(R.string.angelblue);
+			ab.setTitle("Android");
+			tv1.setText(R.string.android);
 		}
 		if(track == 10){
-			ab.setTitle("Sweet 16");
-			tv1.setText(R.string.sweetsixt);
+			ab.setTitle("No One Knows");
+			tv1.setText(R.string.nooneknows);
 		}
 		if(track == 11){
-			ab.setTitle("Rusty James");
-			tv1.setText(R.string.rustyjames);
+			ab.setTitle("Who Wrote Holden Caulfield?");
+			tv1.setText(R.string.whowrote);
 		}
 		if(track == 12){
-			ab.setTitle("Oh Love");
-			tv1.setText(R.string.ohlove);
+			ab.setTitle("Words I Might Have Ate");
+			tv1.setText(R.string.wordsmightate);
+		}
+		if(track == 13){
+			ab.setTitle("Sweet Children");
+			tv1.setText(R.string.sweetchildren);
+		}
+		if(track == 14){
+			ab.setTitle("Best Thing In Town");
+			tv1.setText(R.string.bestthing);
+		}
+		if(track == 15){
+			ab.setTitle("Strangeland");
+			tv1.setText(R.string.strangeland);
+		}
+		if(track == 16){
+			ab.setTitle("My Generation");
+			tv1.setText(R.string.mygeneration);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +132,67 @@ public class Uno extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Nuclear Family");
+					intent.putExtra("report_sub", "2000 Light Years Away");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Stay The Night");
+					intent.putExtra("report_sub", "One For The Razorbacks");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Carpe Diem");
+					intent.putExtra("report_sub", "Welcome To Paradise");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Let Yourself Go");
+					intent.putExtra("report_sub", "Christie Road");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Kill The DJ");
+					intent.putExtra("report_sub", "Private Ale");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Fell For You");
+					intent.putExtra("report_sub", "Dominated Love Slave");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Loss Of Control");
+					intent.putExtra("report_sub", "One Of My Lies");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Troublemaker");
+					intent.putExtra("report_sub", "80");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Angel Blue");
+					intent.putExtra("report_sub", "Android");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sweet 16");
+					intent.putExtra("report_sub", "No One Knows");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Rusty James");
+					intent.putExtra("report_sub", "Who Wrote Holden Caulfield?");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Oh Love");
+					intent.putExtra("report_sub", "Words I Might Have Ate");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Sweet Children");
+					startActivity(intent);
+					}
+				if(track == 14){
+					intent.putExtra("report_sub", "Best Thing In Town");
+					startActivity(intent);
+					}
+				if(track == 15){
+					intent.putExtra("report_sub", "Strangeland");
+					startActivity(intent);
+					}
+				if(track == 16){
+					intent.putExtra("report_sub", "My Generation");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +244,18 @@ public class Uno extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
+				}
+				if(track == 14){
+					Info.info14(this);
+				}
+				if(track == 15){
+					Info.info15(this);
+				}
+				if(track == 16){
+					Info.info16(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

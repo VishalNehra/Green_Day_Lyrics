@@ -328,7 +328,9 @@ public class Settings extends PreferenceActivity {
 			                sp1.edit().putBoolean("display", true).commit();
 			                System.exit(0);
 			            }
-			        }).show();    
+			        })
+			        .setCancelable(false)
+			        .show();    
 				}
 				else
 				{
