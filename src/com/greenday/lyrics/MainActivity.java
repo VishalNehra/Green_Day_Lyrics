@@ -2,6 +2,7 @@ package com.greenday.lyrics;
  
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
+import com.greenday.americanidiot.AmericanIdiotFragment;
 import com.greenday.dookie.DookieFragment;
 import com.greenday.dos.DosFragment;
 import com.greenday.ins.IntSuperFragment;

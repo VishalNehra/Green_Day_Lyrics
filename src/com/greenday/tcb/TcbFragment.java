@@ -1,11 +1,6 @@
 package com.greenday.tcb;
 
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.R.id;
-import com.greenday.lyrics.R.layout;
-import com.greenday.lyrics.R.string;
-import com.greenday.tns.Tns;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 

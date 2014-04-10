@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="now_playing">Now Playing</string>
-    <string name="dialog_title">Choose one</string>
     
     <string name="settings">Settings</string>
     <string name="feedback">Feedback</string>
@@ -34,9 +31,6 @@
     <string name="search_title">Search a song</string>
     <string name="all_songs">All Songs</string>
     
-    <!-- Play title -->
-    <string name="play_title">Show Now Playing Track</string>
-    
     <!-- Confirm Exit title -->
     <string name="exit_title">Confirm before exit</string>
     <string name="exit_summary_on">Enabled</string>
@@ -62,20 +56,10 @@
     <!-- Showcaseviews -->
     <string name="showcase_button_ok">OK</string>
     
-    <!-- Automatically Scroll -->
-    <string name="scroll_title">Automatic Scrolling</string>
-    <string name="scroll_summary_on">Not Implemented</string>
-    <string name="scroll_summary_off">Not Implemented</string>
-    
     <!-- Display -->
     <string name="display_title">Screen Timeout</string>
     <string name="display_summary_on">Screen won\'t turn off</string>
     <string name="display_summary_off">Default system values</string>
-    
-    <!-- Touch -->
-    <string name="touch_title">Touch</string>
-    <string name="touch_summary_on">Disabled in lyrics</string>
-    <string name="touch_summary_off">Recommended for auto-scrolling</string>
     
     <!-- Settings -->
     
@@ -83,10 +67,6 @@
     <string name="theme_title">Interface</string>
     <string name="themechooser_title">Theme Chooser</string>
     <string name="themechooser_dialog">Choose a theme</string>
-    <string name="themes_list_default">Default</string>
-    
-    <string name="apply_theme_title">Apply Theme</string>
-    <string name="apply_theme_summary">Apply selected theme</string>
     
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>
@@ -99,9 +79,6 @@
     
     <string name="store_title">Green Day Store</string>
     <string name="store_summary">Support Green Day, purchase original stuff.</string>
-    
-    <string name="donate_title">Donate version</string>
-    <string name="donate_summary">Help me pay play store hosting charges</string>
     
     <string name="about_title">About</string>
     <string name="aboutapp_title">About the app.</string>
@@ -172,8 +149,6 @@
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="app_name">Green Day Lyrics</string>
-    <string name="drawer_open">Slider Menu Opened</string>
-    <string name="drawer_close">Slider Menu Closed</string>
     
     <!-- Options Menu items -->
     <string name="reportsong">Report this song</string>
@@ -212,237 +187,6 @@
     <string name="rate_summary">Please give a good rating :-)</string>
     
     <string name="miscellaneous_title">Miscellaneous</string>
-	
-    <!-- Songs titles -->
-    <!-- American Idiot -->
-    <string name="americanidiot_title">American Idiot</string>
-    <string name="jos_title">Jesus Of Suburbia</string>
-    <string name="holiday_title">Holiday</string>
-    <string name="bobd_title">Boulevard of Broken Dreams</string>
-    <string name="awtw_title">Are We The Waiting</string>
-    <string name="stjimmy_title">St. Jimmy</string>
-    <string name="givemenov_title">Give Me Novacaine</string>
-    <string name="shesarebel_title">She\'s A Rebel</string>
-    <string name="extordgirl_title">Extraordinary Girl</string>
-    <string name="letterbomb_title">Letterbomb</string>
-    <string name="wmuwse_title">Wake Me Up When September Ends</string>
-    <string name="homcom_title">Homecoming</string>
-    <string name="whatshername_title">Whatshername</string>
-    <!-- UNO -->
-    <string name="nuclearfamily_title">Nuclear Family</string>
-    <string name="staythenight_title">Stay The Night</string>
-    <string name="carpediem_title">Carpe Diem</string>
-    <string name="letyourselfgo_title">Let Yourself Go</string>
-    <string name="killthedj_title">Kill The DJ</string>
-    <string name="fellforyou_title">Fell For You</string>
-    <string name="lossofcontrol_title">Loss Of Control</string>
-    <string name="troublemaker_title">Troublemaker</string>
-    <string name="angelblue_title">Angel Blue</string>
-    <string name="sweetsixt_title">Sweet 16</string>
-    <string name="rustyjames_title">Rusty James</string>
-    <string name="ohlove_title">Oh Love</string>
-    
-    <!-- DOS -->
-    <string name="cutonight_title">See You Tonight</string>
-    <string name="fucktime_title">Fuck Time</string>
-    <string name="stopredflash_title">Stop When Red Lights Flash</string>
-    <string name="lazybones_title">Lazy Bones</string>
-    <string name="wildone_title">Wild One</string>
-    <string name="makeoutparty_title">Makeout Party</string>
-    <string name="strayheart_title">Stray Heart</string>
-    <string name="ashley_title">Ashley</string>
-    <string name="babyeyes_title">Baby Eyes</string>
-    <string name="ladycobra_title">Lady Cobra</string>
-    <string name="nightlife_title">Nightlife</string>
-    <string name="wowthatsloud_title">Wow! That\'s Loud</string>
-    <string name="amy_title">Amy</string>
-    
-    <!-- TRE -->
-    <string name="brutallove_title">Brutal Love</string>
-    <string name="missingyou_title">Missing You</string>
-    <string name="avesrnde_title">8th Avenue Serenade</string>
-    <string name="dramaqueen_title">Drama Queen</string>
-    <string name="kid_title">X-Kid</string>
-    <string name="sexdrugs_title">Sex, Drugs &amp; Violence</string>
-    <string name="littleboytrain_title">Little Boy Named Train</string>
-    <string name="amanda_title">Amanda</string>
-    <string name="walkaway_title">Walk Away</string>
-    <string name="dirtybastards_title">Dirty Rotten Bastards</string>
-    <string name="ninetyninerev_title">99 Revolutions</string>
-    <string name="theforgotten_title">The Forgotten</string>
-    
-    <!-- 21st centuary breakdown -->
-    <string name="songofcentuary_title">Song Of The Centuary</string>
-    <string name="tcb_title">21st Century Breakdown</string>
-    <string name="knowyourenemy_title">Know Your Enemy</string>
-    <string name="vivalagloria_title">¡Viva La Gloria!</string>
-    <string name="lobotomy_title">Before The Lobotomy</string>
-    <string name="inferno_title">Christian\'s Inferno</string>
-    <string name="lastnight_title">Last Night On Earth</string>
-    <string name="eastjesus_title">East Jesus Nowhere</string>
-    <string name="peacemaker_title">Peacemaker</string>
-    <string name="lastamerican_title">Last Of American Girls</string>
-    <string name="murdercity_title">Murder City</string>
-    <string name="vivalagloria2_title">¿Viva La Gloria? (Little Girl)</string>
-    <string name="restlessheart_title">Restless Heart Syndrome</string>
-    <string name="horseshoes_title">Horseshoes And Handgranades</string>
-    <string name="staticage_title">The Static Age</string>
-    <string name="guns_title">21 Guns</string>
-    <string name="americaneulogy_title">American Eulogy</string>
-    <string name="seethelight_title">See The Light</string>
-    
-    <!-- Shenanigans -->
-    <string name="suffocate_title">Suffocate</string>
-    <string name="desensitized_title">Desensitized</string>
-    <string name="youlied_title">You Lied</string>
-    <string name="outsider_title">Outsider</string>
-    <string name="fallinlove_title">Don\'t Wanna Fall In Love</string>
-    <string name="espionage_title">Espionage</string>
-    <string name="wannabeontv_title">I Want To Be On T.V.</string>
-    <string name="scumbag_title">Scumbag</string>
-    <string name="tiredofwaiting_title">Tired Of Waiting For You</string>
-    <string name="sickofme_title">Sick Of Me</string>
-    <string name="rotting_title">Rotting</string>
-    <string name="dodada_title">Do Da Da</string>
-    <string name="onwagon_title">On The Wagon</string>
-    <string name="yourdead_title">Ha Ha You\'re Dead</string>
-    
-    <!-- Warning -->
-    <string name="bloodsex_title">Blood, Sex and Booze</string>
-    <string name="castaway_title">Castaway</string>
-    <string name="warning_title">Warning</string>
-    <string name="church_title">Church On Sunday</string>
-    <string name="fashion_title">Fashion Victim</string>
-    <string name="misery_title">Misery</string>
-    <string name="deadbeat_title">Deadbeat Holiday</string>
-    <string name="holdon_title">Hold On</string>
-    <string name="jackass_title">Jackass</string>
-    <string name="waiting_title">Waiting</string>
-    <string name="minority_title">Minority</string>
-    <string name="macy_title">Macy\'s Day Parade</string>
-    
-    <!-- Nimrod -->
-    <string name="allthetime_title">All The Time</string>
-    <string name="goodriddance_title">Good Riddance(Time Of Your Life)</string>
-    <string name="haushinka_title">Haushinka</string>
-    <string name="hitchinaride_title">Hitchin\' A Ride</string>
-    <string name="niceguys_title">Nice Guys Finish Last</string>
-    <string name="grouch_title">The Grouch</string>
-    <string name="redundant_title">Redundant</string>
-    <string name="scattered_title">Scattered</string>
-    <string name="worryrock_title">Worry Rock</string>
-    <string name="platypus_title">Platypus (I Hate You)</string>
-    <string name="uptight_title">Uptight</string>
-    <string name="lastridein_title">Last Ride In</string>
-    <string name="jinx_title">Jinx</string>
-    <string name="walkingalone_title">Walking Alone</string>
-    <string name="reject_title">Reject</string>
-    <string name="takeback_title">Take Back</string>
-    <string name="kingforaday_title">King For A Day</string>
-    <string name="prosthetichead_title">Prosthetic Head</string>
-    
-    
-	<!-- Insomniac -->
-	<string name="armatage_title">Armatage Shanks</string>
-	<string name="brat_title">Brat</string>
-	<string name="stuckwithme_title">Stuck With Me</string>
-	<string name="geekstink_title">Geek Stink Breath</string>
-	<string name="nopride_title">No Pride</string>
-	<string name="babuvula_title">Bab\'s Uvula Who!</string>
-	<string name="eightysix_title">86</string>
-	<string name="panicsong_title">Panic Song</string>
-	<string name="stuartave_title">Stuart And The Ave.</string>
-	<string name="brainstew_title">Brain Stew</string>
-	<string name="jaded_title">Jaded</string>
-	<string name="westbound_title">Westbound Sign</string>
-	<string name="tightwad_title">Tight Wad Hill</string>
-	<string name="walking_title">Walking Contradiction</string>
-	
-	<!-- Dookie -->
-	
-	<string name="burnout_title">Burnout</string>
-	<string name="havingblast_title">Having A Blast</string>
-	<string name="chump_title">Chump</string>
-	<string name="longview_title">Longview</string>
-	<string name="welcomeparadise_title">Welcome To Paradise</string>
-	<string name="pullingteeth_title">Pulling Teeth</string>
-	<string name="basketcase_title">Basket Case</string>
-	<string name="she_title">She</string>
-	<string name="sassafrasroots_title">Sassafras Roots</string>
-	<string name="whencomearound_title">When I Come Around</string>
-	<string name="comingclean_title">Coming Clean</string>
-	<string name="emeniussleepus_title">Emenius Sleepus</string>
-	<string name="intheend_title">In The End</string>
-	<string name="fod_title">F.O.D.</string>
-	
-    <!-- Kerplunk -->
-    
-    <string name="lightyears_title">2000 Light Years Away</string>
-    <string name="razorbacks_title">One For The Razorbacks</string>
-    <string name="welcome_title">Welcome To Paradise</string>
-    <string name="christie_title">Christie Road</string>
-    <string name="privateale_title">Private Ale</string>
-    <string name="oominated_title">Dominated Love Slave</string>
-    <string name="oneoflies_title">One Of My Lies</string>
-    <string name="eighty_title">80</string>
-    <string name="android_title">Android</string>
-    <string name="nooneknows_title">No One Knows</string>
-    <string name="whowrote_title">Who Wrote Holden Caulfield?</string>
-    <string name="wordsmightate_title">Words I Might Have Ate</string>
-    <string name="sweetchildren_title">Sweet Children</string>
-    <string name="bestthing_title">Best Thing In Town</string>
-    <string name="strangeland_title">Strangeland</string>
-    <string name="mygeneration_title">My Generation</string>
-    
-    <!-- 1,039/Smoothed Out Slappy Hours -->
-    
-    <string name="thousandhours_title">1,000 Hours</string>
-    <string name="sixteen_title">16</string>
-    <string name="coffeemaker_title">409 In Your Coffeemaker</string>
-    <string name="atlibrary_title">At The Library</string>
-    <string name="disappearingboy_title">Disappearing Boy</string>
-    <string name="dontleaveme_title">Don\'t Leave Me</string>
-    <string name="dryice_title">Dry Ice</string>
-    <string name="goingpasalacqua_title">Going To Pasalacqua</string>
-    <string name="wantbealone_title">I Want To Be Alone</string>
-    <string name="iwasthere_title">I Was There</string>
-    <string name="knowledge_title">Knowledge</string>
-    <string name="onlyofyou_title">Only Of You</string>
-    <string name="paperlanterns_title">Paper Lanterns</string>
-    <string name="rest_title">Rest</string>
-    <string name="roadtoacceptance_title">Road To Acceptance</string>
-    <string name="judgedaughter_title">The Judge\'s Daughter</string>
-    <string name="oneiwant_title">The One I Want</string>
-    <string name="whyyouwanthim_title">Why Do You Want Him?</string>
-    
-    <!-- International Superhits -->
-    
-    <string name="maria_title">Maria</string>
-    <string name="poprocks_title">Poprocks And Coke</string>
-    <string name="jar_title">J.A.R. (Jason Andrew Relva)</string>
-    <string name="walkingcontradiction_title">Walking Contradiction</string>
-    
-    <!-- Unreleased -->
-    
-    <string name="quickone_title">A Quick One While He\'s Away</string>
-    <string name="stateofmind_title">Another State Of Mind</string>
-    <string name="cigarettes_title">Cigarettes And Valentines</string>
-    <string name="favouriteson_title">Favourite Son</string>
-    <string name="governator_title">Governator</string>
-    <string name="heartscollide_title">Hearts Collide</string>
-    <string name="foughtlaw_title">I Fought The Law</string>
-    <string name="kissingsanta_title">I Saw My Parents Kissing Santa Claws</string>
-    <string name="likeastone_title">Like A Rolling Stone</string>
-    <string name="mechanicalman_title">Mechanical Man</string>
-    <string name="minnesotagirl_title">Minnesota Girl</string>
-    <string name="shoplifter_title">Shoplifter</string>
-    <string name="shout_title">Shout</string>
-    <string name="teenage_title">Teenage Lobotomy</string>
-    <string name="thatsallright_title">That\'s All Right</string>
-    <string name="toomuch_title">Too Much, Too Soon</string>
-    <string name="wearechampions_title">We Are The Champions</string>
-    <string name="workingclasshero_title">Working Class Hero</string>
-    <string name="allbymyself_title">All By Myself</string>
     
     <!-- Alert Dialog -->
     <string name="album">&lt;b>&lt;u>&lt;font color="#524ef8">ALBUM&lt;/font>&lt;/u>&lt;/b>&lt;br></string>

@@ -1,11 +1,11 @@
-package com.greenday.warning;
+package com.greenday.americanidiot;
 
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.warning.Info;
+import com.greenday.americanidiot.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class WarningMain extends Activity {
+public class AmericanIdiotMain extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,58 +25,61 @@ public class WarningMain extends Activity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.warning);
+		setContentView(R.layout.americanidiot);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
-		
 		if(track == 1){
-			ab.setTitle("Warning");
-			tv1.setText(R.string.warning);
+			ab.setTitle("American Idiot");
+			tv1.setText(R.string.americanidiot);
 		}
 		if(track == 2){
-			ab.setTitle("Blood, Sex and Booze");
-			tv1.setText(R.string.bloodsex);
+			ab.setTitle("Jesus Of Suburbia");
+			tv1.setText(R.string.jos);
 		}
 		if(track == 3){
-			ab.setTitle("Church On Sunday");
-			tv1.setText(R.string.church);
+			ab.setTitle("Holiday");
+			tv1.setText(R.string.holiday);
 		}
 		if(track == 4){
-			ab.setTitle("Fashion Victim");
-			tv1.setText(R.string.fashion);
+			ab.setTitle("Boulevard of Broken Dreams");
+			tv1.setText(R.string.boulevards);
 		}
 		if(track == 5){
-			ab.setTitle("Castaway");
-			tv1.setText(R.string.castaway);
+			ab.setTitle("Are We The Waiting");
+			tv1.setText(R.string.arewethewaiting);
 		}
 		if(track == 6){
-			ab.setTitle("Misery");
-			tv1.setText(R.string.misery);
+			ab.setTitle("St. Jimmy");
+			tv1.setText(R.string.stjimmy);
 		}
 		if(track == 7){
-			ab.setTitle("Deadbeat Holiday");
-			tv1.setText(R.string.deadbeat);
+			ab.setTitle("Give Me Novacaine");
+			tv1.setText(R.string.givemenov);
 		}
 		if(track == 8){
-			ab.setTitle("Hold On");
-			tv1.setText(R.string.holdon);
+			ab.setTitle("She's A Rebel");
+			tv1.setText(R.string.shesarebel);
 		}
 		if(track == 9){
-			ab.setTitle("Jackass");
-			tv1.setText(R.string.jackass);
+			ab.setTitle("Extraordinary Girl");
+			tv1.setText(R.string.extordgirl);
 		}
 		if(track == 10){
-			ab.setTitle("Waiting");
-			tv1.setText(R.string.waiting);
+			ab.setTitle("Letterbomb");
+			tv1.setText(R.string.letterbomb);
 		}
 		if(track == 11){
-			ab.setTitle("Minority");
-			tv1.setText(R.string.minority);
+			ab.setTitle("Wake Me Up When September Ends");
+			tv1.setText(R.string.wakemeup);
 		}
 		if(track == 12){
-			ab.setTitle("Macy's Day Parade");
-			tv1.setText(R.string.macy);
+			ab.setTitle("Homecoming");
+			tv1.setText(R.string.homecoming);
+		}
+		if(track == 13){
+			ab.setTitle("Whatshername");
+			tv1.setText(R.string.whatshername);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -117,51 +120,55 @@ public class WarningMain extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "Warning");
+					intent.putExtra("report_sub", "American Idiot");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Blood, Sex and Booze");
+					intent.putExtra("report_sub", "Jesus Of Suburbia");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Church On Sunday");
+					intent.putExtra("report_sub", "Holiday");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Fashion Victim");
+					intent.putExtra("report_sub", "Boulevard of Broken Dreams");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Castaway");
+					intent.putExtra("report_sub", "Are We The Waiting");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Misery");
+					intent.putExtra("report_sub", "St. Jimmy");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Deadbeat Holiday");
+					intent.putExtra("report_sub", "Give Me Novacaine");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Hold On");
+					intent.putExtra("report_sub", "She's A Rebel");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "Jackass");
+					intent.putExtra("report_sub", "Extraordinary Girl");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Waiting");
+					intent.putExtra("report_sub", "Letterbomb");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "Minority");
+					intent.putExtra("report_sub", "Wake Me Up When September Ends");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Macy's Day Parade");
+					intent.putExtra("report_sub", "Homecoming");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Whatshername");
 					startActivity(intent);
 					}
 			}
@@ -213,6 +220,9 @@ public class WarningMain extends Activity {
 				}
 				if(track == 12){
 					Info.info12(this);
+				}
+				if(track == 13){
+					Info.info13(this);
 				}
 			}
 		            return super.onOptionsItemSelected(item);

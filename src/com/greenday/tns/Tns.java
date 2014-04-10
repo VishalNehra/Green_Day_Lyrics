@@ -51,7 +51,7 @@ public class Tns extends Activity {
 		}
 		if(track == 6){
 			ab.setTitle("Going To Pasalacqua");
-			tv1.setText(R.string.goingpasalacqua_title);
+			tv1.setText(R.string.goingtopasalacqua);
 		}
 		if(track == 7){
 			ab.setTitle("16");
@@ -67,7 +67,7 @@ public class Tns extends Activity {
 		}
 		if(track == 10){
 			ab.setTitle("The Judge's Daughter");
-			tv1.setText(R.string.judgedaughter_title);
+			tv1.setText(R.string.judgesdaughter);
 		}
 		if(track == 11){
 			ab.setTitle("Paper Lanterns");

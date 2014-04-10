@@ -1,11 +1,6 @@
 package com.greenday.kerplunk;
 
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.R.id;
-import com.greenday.lyrics.R.layout;
-import com.greenday.lyrics.R.string;
-import com.greenday.nimrod.Nimrod;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 

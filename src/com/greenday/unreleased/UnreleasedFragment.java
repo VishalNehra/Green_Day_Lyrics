@@ -1,9 +1,6 @@
 package com.greenday.unreleased;
 
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.R.id;
-import com.greenday.lyrics.R.layout;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 

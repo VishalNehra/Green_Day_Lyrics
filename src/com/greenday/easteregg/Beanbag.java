@@ -103,9 +103,7 @@ public class Beanbag extends Activity {
         };
 
         static int COLORS[] = {
-        	0xFF00CC00,
-            0xFFCC0000,
-            0xFF0000CC
+        	0xffff0000
         };
 
         public class Bean extends ImageView {

@@ -1,19 +1,6 @@
-package com.greenday.lyrics;
+package com.greenday.americanidiot;
 
-import com.greenday.americanidiot.Americanidiot;
-import com.greenday.americanidiot.Arewethewaiting;
-import com.greenday.americanidiot.Boulevardofbd;
-import com.greenday.americanidiot.Extraordgirl;
-import com.greenday.americanidiot.Givemenov;
-import com.greenday.americanidiot.Holiday;
-import com.greenday.americanidiot.Homecoming;
-import com.greenday.americanidiot.Jesusofsuburb;
-import com.greenday.americanidiot.Letterbomb;
-import com.greenday.americanidiot.Shesarebel;
-import com.greenday.americanidiot.Stjimmy;
-import com.greenday.americanidiot.Wakemeup;
-import com.greenday.americanidiot.Whatshername;
-
+import com.greenday.lyrics.R;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
@@ -141,45 +128,71 @@ public class AmericanIdiotFragment extends Fragment{
         	 { 
         		 switch(position)
                  {
-                 case 0:  Intent newActivity = new Intent(getActivity(), Americanidiot.class);     
-                 		  startActivityForResult(newActivity, 0);
-                          break;
-                 case 1:  Intent newActivity1 = new Intent(getActivity(), Jesusofsuburb.class);     
-                          startActivityForResult(newActivity1, 1);
-                          break;
-                 case 2:  Intent newActivity2 = new Intent(getActivity(), Holiday.class);     
-			              startActivityForResult(newActivity2, 1);
-			              break;
-                 case 3:  Intent newActivity3 = new Intent(getActivity(), Boulevardofbd.class);     
-	              		  startActivityForResult(newActivity3, 1);
-	              		  break;
-                 case 4:  Intent newActivity4 = new Intent(getActivity(), Arewethewaiting.class);     
-		         		  startActivityForResult(newActivity4, 1);
-		         		  break;
-                 case 5:  Intent newActivity5 = new Intent(getActivity(), Stjimmy.class);     
-		        		  startActivityForResult(newActivity5, 1);
-		        		  break;
-                 case 6:  Intent newActivity6 = new Intent(getActivity(), Givemenov.class);     
-			       		  startActivityForResult(newActivity6, 1);
-			       		  break;
-                 case 7:  Intent newActivity7 = new Intent(getActivity(), Shesarebel.class);     
-			       		  startActivityForResult(newActivity7, 1);
-			       		  break;
-                 case 8:  Intent newActivity8 = new Intent(getActivity(), Extraordgirl.class);     
-			       		  startActivityForResult(newActivity8, 1);
-			       		  break;
-                 case 9:  Intent newActivity9 = new Intent(getActivity(), Letterbomb.class);     
-			       		  startActivityForResult(newActivity9, 1);
-			       		  break; 
-                 case 10: Intent newActivity10 = new Intent(getActivity(), Wakemeup.class);     
-			       		  startActivityForResult(newActivity10, 1);
-			       		  break; 
-                 case 11: Intent newActivity11 = new Intent(getActivity(), Homecoming.class);     
-			       		  startActivityForResult(newActivity11, 1);
-			       		  break;
-                 case 12: Intent newActivity12 = new Intent(getActivity(), Whatshername.class);     
-			       		  startActivityForResult(newActivity12, 1);
-			       		  break; 		  
+                 case 0:  //American Idiot
+                	 Intent newActivity = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity.putExtra("track", 1);
+	                 startActivity(newActivity);
+                     break;
+                 case 1:  //Jesus Of Suburbia
+                	 Intent newActivity1 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity1.putExtra("track", 2);
+	                 startActivity(newActivity1);
+                     break;
+                 case 2:  //Holiday
+                	 Intent newActivity2 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity2.putExtra("track", 3);
+	                 startActivity(newActivity2);
+			         break;
+                 case 3:  //Boulevard of Broken Dreams
+                	 Intent newActivity3 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity3.putExtra("track", 4);
+	                 startActivity(newActivity3);
+	              	 break;
+                 case 4:  //Are We The Waiting
+                	 Intent newActivity4 = new Intent(getActivity(), AmericanIdiotMain.class);   
+                	 newActivity4.putExtra("track", 5);
+	                 startActivity(newActivity4);
+		         	 break;
+                 case 5:  //St. Jimmy
+                	 Intent newActivity5 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity5.putExtra("track", 6);
+	                 startActivity(newActivity5);
+		        	 break;
+                 case 6:  //Give Me Novacaine
+                	 Intent newActivity6 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity6.putExtra("track", 7);
+	                 startActivity(newActivity6);
+			       	 break;
+                 case 7:  //She's A Rebel
+                	 Intent newActivity7 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity7.putExtra("track", 8);
+	                 startActivity(newActivity7);
+			       	 break;
+                 case 8:  //Extraordinary Girl
+                	 Intent newActivity8 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity8.putExtra("track", 9);
+	                 startActivity(newActivity8);
+			       	 break; 
+                 case 9:  //Letterbomb
+                	 Intent newActivity9 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity9.putExtra("track", 10);
+	                 startActivity(newActivity9);
+			       	 break; 
+                 case 10: //Wake Me Up When September Ends
+                	 Intent newActivity10 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity10.putExtra("track", 11);
+	                 startActivity(newActivity10);
+			       	 break;
+                 case 11: //Homecoming
+                	 Intent newActivity11 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity11.putExtra("track", 12);
+	                 startActivity(newActivity11);
+			       	 break;
+                 case 12: //Whatshername
+                	 Intent newActivity12 = new Intent(getActivity(), AmericanIdiotMain.class);     
+	                 newActivity12.putExtra("track", 13);
+	                 startActivity(newActivity12);
+			       	 break; 
           
               }
         	 }

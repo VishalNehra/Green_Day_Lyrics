@@ -40,7 +40,6 @@
         
     </activity>
         
-        <activity android:name="com.greenday.lyrics.Report"/>
         <activity android:name="com.greenday.lyrics.ReportSong"
             android:label="@string/reportsong_title"
         	android:screenOrientation="portrait"
@@ -66,110 +65,10 @@
         <!-- Songs -->
         
         <!-- American Idiot -->
-        <activity android:name="com.greenday.americanidiot.Americanidiot"
-            android:label="@string/americanidiot_title"
+        <activity android:name="com.greenday.americanidiot.AmericanIdiotMain"
         	android:uiOptions="splitActionBarWhenNarrow"
-        	android:windowSoftInputMode="adjustPan" 
         	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Jesusofsuburb"
-            android:label="@string/jos_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Holiday"
-            android:label="@string/holiday_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Boulevardofbd"
-            android:label="@string/bobd_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Arewethewaiting"
-            android:label="@string/awtw_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Stjimmy"
-            android:label="@string/stjimmy_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Givemenov"
-            android:label="@string/givemenov_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-        <activity android:name="com.greenday.americanidiot.Shesarebel"
-            android:label="@string/shesarebel_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-            
-        </activity>
-    	<activity android:name="com.greenday.americanidiot.Extraordgirl"
-            android:label="@string/extordgirl_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-    	    
-    	</activity>
-    	<activity android:name="com.greenday.americanidiot.Letterbomb"
-            android:label="@string/letterbomb_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-    	    
-    	</activity>
-    	<activity android:name="com.greenday.americanidiot.Wakemeup"
-            android:label="@string/wmuwse_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-    	    
-    	</activity>
-    	<activity android:name="com.greenday.americanidiot.Homecoming"
-            android:label="@string/homcom_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-    	    
-    	</activity>
-    	<activity android:name="com.greenday.americanidiot.Whatshername"
-            android:label="@string/whatshername_title"
-	        android:uiOptions="splitActionBarWhenNarrow"
-	        android:windowSoftInputMode="adjustPan"
-        	android:screenOrientation="portrait"
-             >
-    	    
-    	</activity>
+             ></activity>
     	
         <!-- UNO -->
         <activity android:name="com.greenday.uno.Uno"

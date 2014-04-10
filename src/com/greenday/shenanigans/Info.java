@@ -6,9 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.Html;
 
-import com.greenday.dookie.Longview;
+import com.greenday.dookie.Dookie;
 import com.greenday.insomniac.Insomniac;
-import com.greenday.kerplunk.Kerplunk;
 import com.greenday.lyrics.R;
 import com.greenday.nimrod.Nimrod;
 import com.greenday.warning.WarningMain;
@@ -257,8 +256,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent=new Intent(c, com.greenday.dookie.Basketcase.class);
-                c.startActivity(intent);
+            	Intent newActivity7 = new Intent(c, Dookie.class);     
+                newActivity7.putExtra("track", 8);
+                c.startActivity(newActivity7);
             }
         })
         .show(); 
@@ -391,7 +391,9 @@ public class Info {
         })
         .setNegativeButton("Go To Original", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                c.startActivity(new Intent(c, Longview.class));
+            	Intent newActivity4 = new Intent(c, Dookie.class);   
+           	 	newActivity4.putExtra("track", 5);
+                c.startActivity(newActivity4);
             }
         })
         .show();    

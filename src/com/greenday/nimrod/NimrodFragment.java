@@ -1,8 +1,6 @@
 package com.greenday.nimrod;
 
 import com.greenday.lyrics.R;
-import com.greenday.shenanigans.Shenanigans;
-
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
