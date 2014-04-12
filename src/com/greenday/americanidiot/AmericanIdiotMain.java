@@ -10,6 +10,7 @@ import com.greenday.americanidiot.Info;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -27,6 +28,9 @@ public class AmericanIdiotMain extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot);
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
+		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
+		tv1.setTextSize(text);
+		
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){

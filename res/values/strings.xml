@@ -36,6 +36,10 @@
     <string name="exit_summary_on">Enabled</string>
     <string name="exit_summary_off">Disabled</string>
     
+    <!-- Font -->
+    <string name="text_title">Text Size</string>
+    <string name="text_summary">Change text size</string>
+    
     <!-- Report title -->
     <string name="report_title">Report this song</string>
     <string name="report_menu">Send</string>

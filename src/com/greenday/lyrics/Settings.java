@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -19,8 +20,19 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.text.Html;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.TextView;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.LinearLayout;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Toast;
 
 import com.greenday.easteregg.EasterPre;
@@ -38,7 +50,7 @@ public class Settings extends PreferenceActivity {
 		Util.setAppTheme(this);
 		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText;
 		final Preference mTheme;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
@@ -342,6 +354,86 @@ public class Settings extends PreferenceActivity {
 			}
 		});
 		mDisplay.setEnabled(true);
+		
+		//Text Size
+		mText = findPreference("text");
+		mText.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				Dialog dialog = new Dialog(Settings.this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+				LayoutInflater inflater = (LayoutInflater) Settings.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+				final View layout = inflater.inflate(R.layout.textseekbar, (ViewGroup) findViewById(R.id.seekbar));
+				dialog.setContentView(layout);
+				dialog.show();
+				
+				//Seekbar
+				final SeekBar sk = (SeekBar) layout.findViewById(R.id.textseekbar);
+				sk.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+					
+					@Override
+					public void onStopTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+					}
+					
+					@Override
+					public void onStartTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+					}
+					
+					@Override
+					public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
+						// TODO Auto-generated method stub
+						TextView tv = (TextView) layout.findViewById(R.id.textView1);
+						tv.setTextSize((progress*1/4)+10);
+						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						sp.edit().putInt("text", (progress*1/4)+10).commit();
+						sp.edit().putInt("def_text_seek", (progress*1/4)+10).commit();
+					}
+				});
+				
+				//Default size Checkbox
+				final CheckBox cb = (CheckBox) layout.findViewById(R.id.checkBox1);
+				
+				//Initial
+				boolean def_text = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("def_text", true);
+				int sp = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
+				int init = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("text", 18);
+				final TextView tv = (TextView) layout.findViewById(R.id.textView1);
+				if(def_text){
+					cb.setChecked(true);
+					sk.setEnabled(false);
+					sk.setProgress((sp-10)*4);
+					tv.setTextSize(sp);
+				}
+				else{
+					cb.setChecked(false);
+					sk.setProgress((init-10)*4);
+					tv.setTextSize(init);
+				}
+				
+				cb.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+					
+					@Override
+					public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+						// TODO Auto-generated method stub
+						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						if(cb.isChecked()){
+							sk.setEnabled(false);
+							sp.edit().putBoolean("def_text", true).commit();
+							sp.edit().putInt("text", 18).commit();
+						}
+						else{
+							sp.edit().putBoolean("def_text", false).commit();
+							sk.setEnabled(true);
+						}
+					}
+				});
+				
+				return false;
+			}
+		});
 		
 		//Build Version
 		//Easter Egg :D

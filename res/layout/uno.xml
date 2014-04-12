@@ -15,8 +15,7 @@
         android:layout_height="wrap_content"
         android:maxLines = "200"
 		android:scrollbars = "vertical"
-        android:gravity="center_horizontal"
-        android:textSize="18sp" />
+        android:gravity="center_horizontal" />
     </ScrollView>
 
 </RelativeLayout>

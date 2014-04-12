@@ -29,6 +29,9 @@ public class Unreleased extends Activity {
 		setContentView(R.layout.unreleased);
 		
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
+		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
+		tv1.setTextSize(text);
+		
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){

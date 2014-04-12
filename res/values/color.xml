@@ -9,4 +9,7 @@
     <color name="counter_text_color">#c5c4c4</color>
     <color name="lime">#000000</color>
     
+    <color name="def_text_color">#fff00f</color>
+    <color name="text_color">#00ff00</color>
+    
 </resources>

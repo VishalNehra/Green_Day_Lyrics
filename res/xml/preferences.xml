@@ -34,6 +34,9 @@
 	              android:summaryOn="@string/exit_summary_on"
 	              android:summaryOff="@string/exit_summary_off"
 	              android:defaultValue="false"/>
+	          <Preference android:key="text"
+	              android:title="@string/text_title"
+	              android:summary="@string/text_summary"></Preference>
 	            
 	      </PreferenceCategory>
         
