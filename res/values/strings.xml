@@ -20,7 +20,8 @@
     <string name="changelog_version_3">&lt;font color="#524ef8">&lt;b>v1.0.2&lt;/font>&lt;/b>&lt;br></string>
     <string name="changelog_change_3">- Fixed nav drawer theme issues&lt;br>
           - Modified nav drawer for tablets&lt;br>
-          - Fixed various options in Settings (see Full Changelog)&lt;br>
+          - Fixed/Added various options in Settings (see Full Changelog)&lt;br>
+          - Added some more lyrics&lt;br>
           - Added new Report UI&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
@@ -39,6 +40,8 @@
     <!-- Font -->
     <string name="text_title">Text Size</string>
     <string name="text_summary">Change text size</string>
+    <string name="def_text_size">Default text size</string>
+    <string name="text_sample">Sample</string>
     
     <!-- Report title -->
     <string name="report_title">Report this song</string>
@@ -88,7 +91,7 @@
     <string name="aboutapp_title">About the app.</string>
     <string name="aboutgd_title">About Green Day</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">v1.0.1</string>
+    <string name="version_summary">v1.0.2</string>
     <string name="source_title">Application sources</string>
     <string name="source_summary">View app source code</string>
     <string name="members_title">Members</string>
@@ -227,6 +230,23 @@
     <string name="warning_album_release">&lt;font color="#006500">Warning&lt;i> (October 3, 2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="warning_album">&lt;font color="#006500">Warning&lt;i> (2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     
+    <!-- For Unreleased -->
+    <string name="fact_extras">&lt;b>&lt;u>&lt;font color="#524ef8">FACT&lt;/font>&lt;/u>&lt;/b>&lt;br></string>
+    
+    <string name="warning_extras_album">&lt;font color="#006500">Warning (Single)&lt;/font>&lt;br>&lt;br></string>
+    <string name="shenanigans_extras_album">&lt;font color="#006500">Shenanigans (Unmastered Promo)&lt;/font>&lt;br>&lt;br></string>
+    <string name="knowyourenemy_extras_album">&lt;font color="#006500">Know Your Enemy (Single)&lt;/font>&lt;br>&lt;br></string>
+    <string name="americanidiot_extras_album">&lt;font color="#006500">American Idiot: The Original Broadway Cast Recording&lt;/font>&lt;br>&lt;br></string>
+    <string name="unreleased_extras_album">&lt;font color="#006500">Not Released, was posted on YouTube&lt;/font>&lt;br>&lt;br></string>
+    <string name="lookforlove_extras_album">&lt;font color="#006500">Look for Love&lt;/font>&lt;br>&lt;br></string>
+    <string name="generations_extras_album">&lt;font color="#006500">Generations, Vol 1: A Punk Look at Human Rights&lt;/font>&lt;br>&lt;br></string>
+    <string name="friendsagain_extras_album">&lt;font color="#006500">Friends Again&lt;/font>&lt;br>&lt;br></string>
+    <string name="letsgo_extras_album">&lt;font color="#006500">Let\'s Go&lt;/font>&lt;br>&lt;br></string>
+    <string name="shortmusic_extras_album">&lt;font color="#006500">Short Music for Short People&lt;/font>&lt;br>&lt;br></string>
+    <string name="skull_extras_album">&lt;font color="#006500">Skull Ring&lt;/font>&lt;br>&lt;br></string>
+    <string name="saints_extras_album">&lt;font color="#006500">The Saints Are Coming&lt;/font>&lt;br>&lt;br></string>
+    <string name="wack_extras_album">&lt;font color="#006500">The Wack Album&lt;/font>&lt;br>&lt;br></string>
+    <string name="unreleased2_extras_album">&lt;font color="#006500">Not Released&lt;/font>&lt;br>&lt;br></string>
     
     
 </resources>

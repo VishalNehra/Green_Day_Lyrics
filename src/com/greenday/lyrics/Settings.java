@@ -399,6 +399,7 @@ public class Settings extends PreferenceActivity {
 				//Initial
 				boolean def_text = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("def_text", true);
 				int sp = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
+				SharedPreferences sp2 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 				int init = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("text", 18);
 				final TextView tv = (TextView) layout.findViewById(R.id.textView1);
 				if(def_text){
@@ -406,6 +407,7 @@ public class Settings extends PreferenceActivity {
 					sk.setEnabled(false);
 					sk.setProgress((sp-10)*4);
 					tv.setTextSize(sp);
+					sp2.edit().putInt("text", 18).commit();
 				}
 				else{
 					cb.setChecked(false);

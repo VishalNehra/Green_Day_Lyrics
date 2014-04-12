@@ -4,6 +4,7 @@ import org.acra.ACRA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.keyboardsurfer.android.widget.crouton.Configuration;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.ActionBar;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -42,15 +44,21 @@ public class ReportSong extends Activity {
 		Logger log = LoggerFactory.getLogger(ReportSong.class);
 		log.info(getIntent().getExtras().getString("report_sub"));
 		
-		/*Style style = new Style.Builder()
+		Style style = new Style.Builder()
 		.setGravity(1)
-		.setHeight(5).build();
+		.setHeight(50).build();
+		final Crouton crouton = Crouton.makeText(this, "No Internet Connection", style)
+				.setConfiguration(new Configuration.Builder().setDuration(Configuration.DURATION_INFINITE)
+						.build());
+		
 		ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 		if (networkInfo != null && networkInfo.isConnected()) 
 		{
-			final Crouton crouton = Crouton.makeText(this, "No Internet Connection", style)
-					.setConfiguration(new Configuration.Builder().setDuration(Configuration.DURATION_INFINITE).build());
+			//No action
+		}
+		else
+		{
 			crouton.setOnClickListener(new OnClickListener() {
 				
 				@Override
@@ -60,7 +68,7 @@ public class ReportSong extends Activity {
 				}
 			});
 			crouton.show();
-		}*/
+		}
 		
 		SharedPreferences prefs = this.getSharedPreferences(
 			      "EXTRA_PREF", Context.MODE_PRIVATE);
@@ -107,8 +115,8 @@ public class ReportSong extends Activity {
 		et.setHint("Write your feedback");
 		
 		TextView tv = (TextView) findViewById(R.id.textView1);
-		tv.setText("Your feedback, system information and email address \nwill be sent to the database.\n" +
-		"Your private information will not be used/distributed \nanywhere else.");
+		tv.setText("Your feedback, system information and email address will be sent to the database.\n" +
+		"Your private information will not be used/distributed anywhere else.");
 		
 	}
 	

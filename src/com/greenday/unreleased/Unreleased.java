@@ -5,6 +5,8 @@ import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
+import com.greenday.unreleased.Info;
+
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
@@ -513,11 +515,164 @@ public class Unreleased extends Activity {
 		if(item.getItemId()==R.id.action_label)
 		{
 			int track = getIntent().getExtras().getInt("track");
-			if(track == 18){
+			if(track == 1){
+				Info.info1(this);
+			}
+			if(track == 2){
+				Info.info2(this);
+			}
+			if(track == 3){
+				Info.info3(this);
+			}
+			if(track == 4){
+				Info.info4(this);
+			}
+			if(track == 5){
+				Info.info5(this);
+			}
+			if(track == 6){
+				Info.info6(this);
+			}
+			if(track == 7){
+				Info.info7(this);
+			}
+			if(track == 8){
+				Info.info8(this);
+			}
+			if(track == 9){
+				Info.info9(this);
+			}
+			if(track == 10){
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
+			}
+			if(track == 11){
+				Info.info11(this);
+			}
+			if(track == 12){
+				Info.info12(this);
+			}
+			if(track == 13){
+				Info.info13(this);
+			}
+			if(track == 14){
+				Info.info14(this);
+			}
+			if(track == 15){
+				Info.info15(this);
+			}
+			if(track == 16){
+				Info.info16(this);
+			}
+			if(track == 17){
 				Info.info17(this);
 			}
-			else{
-				Crouton.makeText(this, "Info. not available ATM", Style.ALERT).show();
+			if(track == 18){
+				Info.info18(this);
+			}
+			if(track == 19){
+				Info.info19(this);
+			}
+			if(track == 20){
+				Info.info20(this);
+			}
+			if(track == 21){
+				Info.info21(this);
+			}
+			if(track == 22){
+				Info.info22(this);
+			}
+			if(track == 23){
+				Info.info23(this);
+			}
+			if(track == 24){
+				Info.info24(this);
+			}
+			if(track == 25){
+				Info.info25(this);
+			}
+			if(track == 26){
+				Info.info26(this);
+			}
+			if(track == 27){
+				Info.info27(this);
+			}
+			if(track == 28){
+				Info.info28(this);
+			}
+			if(track == 29){
+				Info.info29(this);
+			}
+			if(track == 30){
+				Info.info30(this);
+			}
+			if(track == 31){
+				Info.info31(this);
+			}
+			if(track == 32){
+				Info.info32(this);
+			}
+			if(track == 33){
+				Info.info33(this);
+			}
+			if(track == 34){
+				Info.info34(this);
+			}
+			if(track == 35){
+				Info.info35(this);
+			}
+			if(track == 36){
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
+			}
+			if(track == 37){
+				Info.info37(this);
+			}
+			if(track == 38){
+				Info.info38(this);
+			}
+			if(track == 39){
+				Info.info39(this);
+			}
+			if(track == 40){
+				Info.info40(this);
+			}
+			if(track == 41){
+				Info.info41(this);
+			}
+			if(track == 42){
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
+			}
+			if(track == 43){
+				Info.info43(this);
+			}
+			if(track == 44){
+				Info.info44(this);
+			}
+			if(track == 45){
+				Info.info45(this);
+			}
+			if(track == 46){
+				Info.info46(this);
+			}
+			if(track == 47){
+				Info.info47(this);
+			}
+			if(track == 48){
+				Info.info48(this);
+			}
+			if(track == 49){
+				Info.info49(this);
+			}
+			if(track == 50){
+				Info.info50(this);
+			}
+			if(track == 51){
+				Info.info51(this);
+			}
+			if(track == 52){
+				Info.info52(this);
+			}
+			if(track == 53){
+				Info.info53(this);
 			}
 		}
 	            return super.onOptionsItemSelected(item);
