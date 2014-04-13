@@ -10,6 +10,7 @@ import com.greenday.uno.Info;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -30,6 +31,52 @@ public class Uno extends Activity {
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
 		tv1.setTextSize(text);
+
+		//Text theme
+		int themetext = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString("themechooser", null));
+		boolean themetextb = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("themetext", true);
+		if(themetextb){
+			if(themetext==0){
+				//Black
+				tv1.setTextColor(Color.parseColor("#000000"));
+			}
+			else if(themetext==1){
+				//Grey
+				tv1.setTextColor(Color.parseColor("#A4A4A4"));
+			}
+			else if(themetext==2){
+				//Lime
+				tv1.setTextColor(Color.parseColor("#669002"));
+			}
+			else if(themetext==3){
+				//Dark Sky
+				tv1.setTextColor(Color.parseColor("#464ea3"));
+			}
+			else if(themetext==4){
+				//Rose
+				tv1.setTextColor(Color.parseColor("#cf2a9b"));
+			}
+			else if(themetext==5){
+				//Mojo
+				tv1.setTextColor(Color.parseColor("#c84741"));
+			}
+			else if(themetext==6){
+				//Saffron
+				tv1.setTextColor(Color.parseColor("#f48935"));
+			}
+			else if(themetext==7){
+				//Frooti
+				tv1.setTextColor(Color.parseColor("#E4A803"));
+			}
+			else if(themetext==8){
+				//Lavender
+				tv1.setTextColor(Color.parseColor("#92278f"));
+			}
+		}
+		else{
+			//Black
+			tv1.setTextColor(Color.parseColor("#000000"));
+		}
 		
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();

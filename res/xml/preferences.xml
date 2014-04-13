@@ -5,9 +5,12 @@
         <!-- Theme -->
         <PreferenceCategory android:title="@string/theme_title">
             <Preference android:title="@string/themechooser_title"
-                android:key="theme"
-                android:entryValues="@array/themes_value"
-                android:entries="@array/themes_list" />
+                android:key="theme" />
+            <CheckBoxPreference 
+                android:key="themetext"
+                android:title="@string/theme_text_title"
+                android:summary="@string/theme_text_summary"
+                android:defaultValue="false"/>
                 
         </PreferenceCategory>
         

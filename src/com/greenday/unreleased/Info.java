@@ -1,16 +1,11 @@
 package com.greenday.unreleased;
 
-import android.R.style;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.text.Html;
 
 import com.greenday.lyrics.R;
-import com.greenday.lyrics.R.string;
-
-import de.keyboardsurfer.android.widget.crouton.Crouton;
-import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class Info {
 	
@@ -19,13 +14,9 @@ public class Info {
 		//A Quick One While He's Away
 		new AlertDialog.Builder(c)
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.tcb_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:26</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>8:00</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -55,21 +46,6 @@ public class Info {
 	public static void info3(final Context c)
 	{
 		//Another State Of Mind
-		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:36</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
-        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        })
-        .show();    
 	}
 	
 	public static void info4(final Context c)
@@ -77,13 +53,11 @@ public class Info {
 		//Billie Joe's Mom
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live5_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:52</font></i><br><br>" + 
+        		"<font color='#006500'><i>0:52</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Tré Cool</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -97,13 +71,11 @@ public class Info {
 		//Boys in the Bathroom Stall
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.none_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:29</font></i><br><br>" + 
+        		"<font color='#006500'><i>0:44</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Tré Cool</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -142,7 +114,7 @@ public class Info {
         		"<font color='#006500'>Tay Zonday</font><br><br>" +
         		c.getString(R.string.fact_extras) +
         		"<font color='#006500'>At the end, Tré begins to sing Another State of Mind, which Green Day recorded during that time" +
-        		"<br><br>At the end Tre says 'You're doing it fucking wrong', which was also said at the beginning of Highway 1</font>"))
+        		"<br><br>At the end Tré says 'You're doing it fucking wrong', which was also said at the beginning of Highway 1</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -156,13 +128,13 @@ public class Info {
 		//Cigarettes And Valentines
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.awesomeasfuck_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:35</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:44</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
+        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		c.getString(R.string.copyright1)))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -192,6 +164,19 @@ public class Info {
 	public static void info10(final Context c)
 	{
 		//Depression Times
+		new AlertDialog.Builder(c)			        
+        .setMessage(Html.fromHtml(c.getString(R.string.album)+
+        		c.getString(R.string.none_extras_album) +
+        		c.getString(R.string.track_length) +
+        		"<font color='#006500'><i>2:34</font></i><br><br>" + 
+        		c.getString(R.string.writers) +
+        		"<font color='#006500'>Jesse Malin, Green Day</font>"))
+        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        })
+        .show();    
 	}
 	
 	public static void info11(final Context c)
@@ -217,13 +202,9 @@ public class Info {
 		//Dream Catcher
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.none_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:09</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>2:30</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -237,13 +218,13 @@ public class Info {
 		//Favourite Son
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.rock_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:52</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:06</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		c.getString(R.string.copyright1)))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -257,13 +238,11 @@ public class Info {
 		//Food Around the Corner
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.food_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:19</font></i><br><br>" + 
+        		"<font color='#006500'><i>Varies</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Operation Ivy</font><br><br>" +
-        		"<font color='#524ef8'><b><u>Label</b></u></font><br>" +
-        		"<font color='#006500'>Lookout!</font>"))
+        		"<font color='#006500'>From the <i>1943</i> Merrie Melodies cartoon <i>'An Itch in Time'</i> directed by Bob Clampett</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -277,13 +256,13 @@ public class Info {
 		//Governator
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.americanidiot2_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:25</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:32 or 3:51</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		c.getString(R.string.copyright1)))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -297,13 +276,13 @@ public class Info {
 		//Hearts Collide
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.knowyourenemy_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:45</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:39</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
+        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard, Michael Pritchard</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		c.getString(R.string.copyright1)))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -334,14 +313,13 @@ public class Info {
 	{
 		//I Fought The Law
 		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        .setMessage(Html.fromHtml(
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:01</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:44</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Mike Dirnt, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
+        		"<font color='#006500'>Sonny Curtis</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Sony/ATV Acuff Rose Music</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -371,21 +349,6 @@ public class Info {
 	public static void info20(final Context c)
 	{
 		//Jennifer
-		new AlertDialog.Builder(c)
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:26</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
-        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        })
-        .show();      
 	}
 	
 	public static void info21(final Context c)
@@ -411,13 +374,11 @@ public class Info {
 		//Like A Rolling Stone
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.tcb_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:36</font></i><br><br>" + 
+        		"<font color='#006500'><i>6:11</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Bob Dylan</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -431,13 +392,11 @@ public class Info {
 		//Like a Rat Does Cheese
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live6_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:52</font></i><br><br>" + 
+        		"<font color='#006500'><i>Varies</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Tré Cool</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -469,13 +428,11 @@ public class Info {
 		//Maybe Forever
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live3_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:30</font></i><br><br>" + 
+        		"<font color='#006500'><i>3:46</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Billie Joe Armstrong, Michael Pritchard, John Kiffmeyer</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -489,13 +446,9 @@ public class Info {
 		//Mechanical Man
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.livefreaky_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:24</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>2:55</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -509,13 +462,11 @@ public class Info {
 		//Midwest Medley
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live1_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:35</font></i><br><br>" + 
+        		"<font color='#006500'><i>5:20 or 5:29</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Rick Nielson/Paul Westerberg</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -529,13 +480,9 @@ public class Info {
 		//Minnesota Girl
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.none_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:05</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>1:20</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -549,13 +496,9 @@ public class Info {
 		//Oh Girl
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.unreleased2_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:36</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>1:34</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -569,13 +512,9 @@ public class Info {
 		//Olivia
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		"<font color='#006500'>Was played during 21st Century Breakdown World Tour</font><br><br>" + 
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:23</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>1:05</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -623,21 +562,6 @@ public class Info {
 	public static void info33(final Context c)
 	{
 		//Second Time Around
-		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:19</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Operation Ivy</font><br><br>" +
-        		"<font color='#524ef8'><b><u>Label</b></u></font><br>" +
-        		"<font color='#006500'>Lookout!</font>"))
-        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        })
-        .show();    
 	}
 	
 	public static void info34(final Context c)
@@ -645,13 +569,9 @@ public class Info {
 		//Shoplifter
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.americanidiot2_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:25</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>1:51</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -664,14 +584,13 @@ public class Info {
 	{
 		//Shout
 		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        .setMessage(Html.fromHtml(
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:45</font></i><br><br>" + 
+        		"<font color='#006500'><i>Varies</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
+        		"<font color='#006500'>Vincent E. Brown, Keir Gist, Anthony Shawn Criss, Gordon Chambers</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Orisha Music Publishing, Naughty Music, WB Music Corp.</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -707,14 +626,11 @@ public class Info {
 	{
 		//Teenage Lobotomy
 		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        .setMessage(Html.fromHtml(
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:09</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:01</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>The Ramones</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -728,13 +644,11 @@ public class Info {
 		//That's All Right
 		new AlertDialog.Builder(c)
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.tcb_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:26</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:02</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Arthur Crudup</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -789,13 +703,9 @@ public class Info {
 		//The Things I Heard Today
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.none_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:29</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright, Mike Pritchard</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'><i>2:27</font></i>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -809,13 +719,11 @@ public class Info {
 		//Too Much, Too Soon
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:30</font></i><br><br>" + 
+        		c.getString(R.string.americanidiot2_extras_album) +
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
+        		"<font color='#006500'>Michael Pritchard, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Green Daze Music, WB Music Corp.</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -829,13 +737,11 @@ public class Info {
 		//Walking the Dog
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.dookie_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:24</font></i><br><br>" + 
+        		"<font color='#006500'><i>2:52</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Rufus Thomas</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -848,14 +754,11 @@ public class Info {
 	{
 		//We Are The Champions
 		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        .setMessage(Html.fromHtml(
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:35</font></i><br><br>" + 
+        		"<font color='#006500'><i>3:37</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Queen</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -867,21 +770,6 @@ public class Info {
 	public static void info47(final Context c)
 	{
 		//What About Today?
-		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:05</font></i><br><br>" + 
-        		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
-        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        })
-        .show();    
 	}
 	
 	public static void info48(final Context c)
@@ -927,13 +815,11 @@ public class Info {
 		//Why Does It Always Rain on Me?
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.none_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>3:09</font></i><br><br>" + 
+        		"<font color='#006500'><i>3:44</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, John Kiffmeyer</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Fran Healy</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -946,14 +832,11 @@ public class Info {
 	{
 		//Working Class Hero
 		new AlertDialog.Builder(c)			        
-        .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
-        		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:52</font></i><br><br>" + 
+        .setMessage(Html.fromHtml( 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
+        		"<font color='#006500'>John Lennon</font><br><br>" +
         		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Lenono Music, Lennon Music</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -967,13 +850,11 @@ public class Info {
 		//World Vs. World
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live2_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:19</font></i><br><br>" + 
+        		"<font color='#006500'><i>3:26 or 4:55</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Operation Ivy</font><br><br>" +
-        		"<font color='#524ef8'><b><u>Label</b></u></font><br>" +
-        		"<font color='#006500'>Lookout!</font>"))
+        		"<font color='#006500'>Billie Joe Armstrong</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -987,13 +868,11 @@ public class Info {
 		//You Can't Fool Me
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.tns_album) +
+        		c.getString(R.string.live4_extras_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>2:25</font></i><br><br>" + 
+        		"<font color='#006500'><i>1:57 or 2:26</font></i><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>John Kiffmeyer, Billie Joe Armstrong, Frank E. Iii Wright</font><br><br>" +
-        		c.getString(R.string.copyright) +
-        		c.getString(R.string.copyright2)))
+        		"<font color='#006500'>Billie Joe Armstrong, Michael Pritchard, and John Kiffmeyer</font>"))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

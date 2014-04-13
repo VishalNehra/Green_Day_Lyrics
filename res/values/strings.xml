@@ -22,7 +22,8 @@
           - Modified nav drawer for tablets&lt;br>
           - Fixed/Added various options in Settings (see Full Changelog)&lt;br>
           - Added some more lyrics&lt;br>
-          - Added new Report UI&lt;br>&lt;br></string>
+          - Added new Report UI&lt;br>
+          - Fixed some issues with 4.0.x&lt;br>&lt;br></string>
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thanks, your report is being sent.
@@ -74,6 +75,8 @@
     <string name="theme_title">Interface</string>
     <string name="themechooser_title">Theme Chooser</string>
     <string name="themechooser_dialog">Choose a theme</string>
+    <string name="theme_text_title">Theme text color</string>
+    <string name="theme_text_summary">Changes text color acc. to theme</string>
     
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>
@@ -237,16 +240,29 @@
     <string name="shenanigans_extras_album">&lt;font color="#006500">Shenanigans (Unmastered Promo)&lt;/font>&lt;br>&lt;br></string>
     <string name="knowyourenemy_extras_album">&lt;font color="#006500">Know Your Enemy (Single)&lt;/font>&lt;br>&lt;br></string>
     <string name="americanidiot_extras_album">&lt;font color="#006500">American Idiot: The Original Broadway Cast Recording&lt;/font>&lt;br>&lt;br></string>
-    <string name="unreleased_extras_album">&lt;font color="#006500">Not Released, was posted on YouTube&lt;/font>&lt;br>&lt;br></string>
+    <string name="unreleased_extras_album">&lt;font color="#006500">Not Released, was posted on &lt;i>YouTube&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="lookforlove_extras_album">&lt;font color="#006500">Look for Love&lt;/font>&lt;br>&lt;br></string>
     <string name="generations_extras_album">&lt;font color="#006500">Generations, Vol 1: A Punk Look at Human Rights&lt;/font>&lt;br>&lt;br></string>
     <string name="friendsagain_extras_album">&lt;font color="#006500">Friends Again&lt;/font>&lt;br>&lt;br></string>
+    <string name="americanidiot2_extras_album">&lt;font color="#006500">American Idiot (Single)&lt;/font>&lt;br>&lt;br></string>
     <string name="letsgo_extras_album">&lt;font color="#006500">Let\'s Go&lt;/font>&lt;br>&lt;br></string>
     <string name="shortmusic_extras_album">&lt;font color="#006500">Short Music for Short People&lt;/font>&lt;br>&lt;br></string>
     <string name="skull_extras_album">&lt;font color="#006500">Skull Ring&lt;/font>&lt;br>&lt;br></string>
     <string name="saints_extras_album">&lt;font color="#006500">The Saints Are Coming&lt;/font>&lt;br>&lt;br></string>
     <string name="wack_extras_album">&lt;font color="#006500">The Wack Album&lt;/font>&lt;br>&lt;br></string>
+    <string name="livefreaky_extras_album">&lt;font color="#006500">Live Freaky! Die Freaky!&lt;/font>&lt;br>&lt;br></string>
+    <string name="dookie_extras_album">&lt;font color="#006500">Dookie Demo Tape #3&lt;/font>&lt;br>&lt;br></string>
     <string name="unreleased2_extras_album">&lt;font color="#006500">Not Released&lt;/font>&lt;br>&lt;br></string>
+    <string name="live1_extras_album">&lt;font color="#006500">Live Song, either Maida Vale or The Warfield performances from 04 and 05 respectively&lt;/font>&lt;br>&lt;br></string>
+    <string name="live2_extras_album">&lt;font color="#006500">Live performances either from Gilman or KALX 1989&lt;/font>&lt;br>&lt;br></string>
+    <string name="live3_extras_album">&lt;font color="#006500">Live performance KALX 1989&lt;/font>&lt;br>&lt;br></string>
+    <string name="live4_extras_album">&lt;font color="#006500">Live performance either Davis Community Center 1989 or Gilman (unknown date)&lt;/font>&lt;br>&lt;br></string>
+    <string name="live5_extras_album">&lt;font color="#006500">Performed at Silver Dollar Club 1993&lt;/font>&lt;br>&lt;br></string>
+    <string name="live6_extras_album">&lt;font color="#006500">Live performances&lt;/font>&lt;br>&lt;br></string>
+    <string name="food_extras_album">&lt;font color="#006500">At least 12 live recordings exist&lt;/font>&lt;br>&lt;br></string>
+    <string name="none_extras_album">&lt;font color="#006500">None&lt;/font>&lt;br>&lt;br></string>
+    <string name="awesomeasfuck_extras_album">&lt;font color="#006500">Awesome As Fuck (Live Album)&lt;/font>&lt;br>&lt;br></string>
+    <string name="rock_extras_album">&lt;font color="#006500">Rock Against Bush Vol. 2 / American Idiot (Bonus Track)&lt;/font>&lt;br>&lt;br></string>
     
     
 </resources>

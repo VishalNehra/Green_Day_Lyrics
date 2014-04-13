@@ -1,39 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <!-- Oh Girl -->
-    <string name="ohgirl">
-        \nNot Available
-    </string>
-    
-    <!-- Dream Catcher -->
-    <string name="dreamcatcher">
-        \nNot Available
-    </string>
-    
-    <!-- Olivia -->
-    <string name="olivia">
-        \nNot Available
-    </string>
-    
-    <!-- Boys in the Bathroom Stall -->
-    <string name="boysinstall">
-        \nNot Available
-    </string>
-    
     <!-- Second Time Around -->
     <string name="secondtime">
         \nNot Available
     </string>
-    
-    <!-- The Things I Heard Today -->
-    <string name="thingsheard">
+     
+    <!-- Jennifer -->
+    <string name="jennifer">
         \nNot Available
     </string>
     
     <!-- What About Today? -->
     <string name="whattoday">
         \nNot Available
+    </string>
+    
+    <!-- Olivia -->
+    <string name="olivia">
+        \nOlivia, Olivia it\'s raining outside\n
+the city is drenched there\'s a moon out tonight\n
+there\'s a break in the clouds just under the stars\n
+we wanna go on and watch from afar\n
+\n
+We couldn\'t care when and stepped in the mud\n
+It makes no sense but you misunderstood\n
+The city is in ruins, \n
+but there\'s a flower in the crack of the streets\n
+\n
+Olivia, Olivia, I\'ll give you my best\n
+safe in my arms, I\'ll lay you to rest\n
+you can borrow my coat, you wear the dress\n
+Olivia, Olivia, come follow me home
+    </string>
+    
+    <!-- The Things I Heard Today -->
+    <string name="thingsheard">
+        \nWell the things that I heard today\n
+It\'s not worth listening or to say\n
+Struggle hold you can\'t get out of\n
+I\'ve got no love for you\n
+And the day is dragging on and on\n
+It makes you feel that much more alone\n
+As its getting faster\n
+No disaster\n
+Once you say..how long.. \n
+How long can we go on\n
+I hear it all going wrong\n
+So shut your hole\n
+There\'s something wrong with\n
+The things I heard today \n
+\n
+There\'s always talking and you say shut up\n
+You\'ve got your problems with what\'s going on\n
+Your tragedy is going stale\n
+You\'re on a bridge and you can\'t budge\n
+Well the Saturday night is getting old\n
+All the week you\'re doing what you\'re told\n
+You start the fight and you pull the plug\n
+Next morning your face down in the mud \n
+\n
+How long can we go on\n
+I hear it going on and on and on\n
+So shut your hole\n
+There\'s nothing wrong with\n
+The things I heard today... \n
+\n
+They talk you say shut up\n
+You\'ve got your problems with what\'s going on\n
+You tragedy is going stiff\n
+You\'re on a bridge and you can\'t budge\n
+Well the Saturday night is getting old\n
+All the week you\'re doing what you\'re told\n
+You start the fight and you pull the plug\n
+Next morning your face down in the mud \n
+\n
+How long can we go on\n
+I hear it all going, going wrong\n
+So shut your hole\n
+There\'s nothing wrong with\n
+The things I heard today...\n
+The things I heard today...\n
+    </string>
+    
+    <!-- Boys in the Bathroom Stall -->
+    <string name="boysinstall">
+        \nI was peeing in the bathroom stall\n
+At OriginalJjoe\'s restaurant.\n
+Two boys were getting it on,\n
+Right there in the bathroom stall\n
+At Original Joe\'s restaurant\n
+There was an incredible roar\n
+As they slammed against the bathroom door\n
+They called for more\n
+Down on four\n
+In the middle of the floor\n
+At Original Joe\'s restaurant.\n
+    </string>
+    
+    <!-- Oh Girl -->
+    <string name="ohgirl">
+        \n???? myself\n
+And I can only tell\n
+and maybe I\'ll put up a fight(?)\n
+And I can only tell\n
+Maybe I will see you \'round some time\n
+\n
+Oh girl, do you wanna know what\'s at home, girl\n
+Oh girl, do you wanna be my ???, girl\n
+Oh girl, who knew ?????\n
+Oh girl, you wanna get a reason for excuses. \n
+\n
+Oh, won\'t you hold me down?\n
+Cause I won\'t put up a fight\n
+Now with your eyes so brown\n
+Maybe I will see you around some time\n
+\n
+Oh, won\'t you hold me down?\n
+Cause I won\'t put up a fight\n
+And with your eyes so brown,\n
+Maybe I will see you around some time\n
+    </string>
+    
+    <!-- Dream Catcher -->
+    <string name="dreamcatcher">
+        \nDream Catcher, what\'s the matter?\n
+Where have all my dreams gone?\n
+Nightmares and blank stares\n
+And thoughts of you\n
+years have gone.\n
+\n
+[Chorus]\n
+Dream Catcher, what\'s the matter?\n
+Face of my youth\n
+Forsaken, hearts breakin\'\n
+Ask for the truth\n
+\n
+Confess my loneliness\n
+at midnight, my darkest hours\n
+Dreaming you\'re feeling down\n
+Hearts like a thunder shower\n
+\n
+Dream Catcher, give me laughter\n
+Face of my youth\n
+Forsaken, heart\'s breakin\'\n
+Search for the truth\n
+\n
+At the end of the night\n
+Catch my dreams tonight\n
+Will you shelter me from dreaming of my....\n
+\n
+Dream Catcher, what\'s the matter?\n
+Where have all my dreams gone?\n
+Nightmares and blank stares\n
+And thoughts of you\n
+years have gone.\n
+\n
+Dream Catcher, give me laughter\n
+Face of my youth\n
+Forsaken, heart\'s breakin\'\n
+Search for the truth\n
+\n
+Confess my loneliness\n
+at midnight, my darkest hours\n
+Fearing now, dreaming of\n
+Hearts like a thunder shower\n
+\n
+Dream Catcher, what\'s the matter?\n
+Face of my youth\n
+Forsaken, hearts breakin\'\n
+Search for the truth\n
+\n
+At the end of the night\n
+You can catch my dreams tonight\n
+Will you shelter me from dreaming \n
+of my darkest ...
     </string>
     
     <!-- Why Does It Always Rain on Me? -->
@@ -214,11 +355,6 @@ Every damn lie\n
 What you say just can\'t be\n
 You scare the hell out of me\n
 But you can\'t fool me\n
-    </string>
-    
-    <!-- Jennifer -->
-    <string name="jennifer">
-        \nNot Available
     </string>
     
     <!-- Maybe Forever -->
@@ -474,7 +610,48 @@ Thank you.\n
     
     <!-- Depression Times (Jesse Malin + Green Day) -->
     <string name="depressiontimes">
-        \n*Will be added...*
+        \nSuch a lonely planet...\n
+ \n
+I\'m a pacifist, but I\'m gonna go postal\n
+I\'m a sidewalk surfer cruising on the avenue\n
+I\'m a graduate, but I can\'t get arrested\n
+I\'m a kid from Queens, man\n
+I was tempted by the hall of Babylon\n
+ \n
+Depression times\n
+Living in the great decline\n
+These depression times keep rolling on\n
+And they say it\'s gonna be alright, come on\n
+And they say it\'s gonna be alright\n
+ \n
+I\'m a ?, in the petrified forest\n
+I\'m a soldier fighting on someone else\'s war\n
+Back at home, the girls looked sad, nobody noticed\n
+And the window shoppers ...?.. reflection..?...television\n
+ \n
+Depression times\n
+They say it\'s a state of mind\n
+These depression times keep rolling on\n
+And they say it\'s gonna be alright, come on\n
+And they say it\'s gonna be alright\n
+ \n
+Depression times\n
+Living in the great decline\n
+These depression times keep rolling on\n
+And they say it\'s gonna be alright, come on\n
+And they say it\'s gonna be alright\n
+ \n
+Well messengers and messing drugs\n
+?..Punk.?..telescope\n
+From Harlem out to Hollywood\n
+They\'re messing up the neighborhood\n
+You gotta love it\'s your love\n
+You gotta love it\'s your love\n
+You gotta love it\'s your love\n
+ \n
+Living in depression times\n
+What we need the most\n
+?????
     </string>
     
     <!-- Chocolate Rain (Tre Cool) -->
@@ -1255,7 +1432,7 @@ Any way you do
     
     <!-- Teenage Lobotomy -->
     <string name="teenage">
-        [Originally by Ramones]\n
+        \n[Originally by Ramones]\n
 \n
 Lobotomy!\n
 Lobotomy!\n
@@ -1287,49 +1464,6 @@ Guess I\'ll have to break the news\n
 That I got no mind to lose\n
 All the girls are loving me\n
 I\'m a teenage lobotomy
-    </string>
-    
-    <!-- State Of Mind -->
-    <string name="stateofmind">
-        \n[originally performed by Social Distortion]\n
-\n
-Well I\'m in another state, \n
-Another state of mind,\n
-I wish that I could be there \n
-right next to her\n
-This road leads to this, \n
-This one leads to that,\n
-Her voice sends shivers down my spine.\n
-\n
-These scars in my flesh,\n
-I\'m bruised and I\'m bloodied\n
-Only she know the pain that I\'ve been thru.\n
-Talk to her a thousand miles away,\n
-There\'s tears in her eyes.\n
-If I make it back I\'m gonna show her,\n
-she\'s the one for me - \n
-Hitch a ride on the wild side,\n
-It\'s real hell on wheels.\n
-There\'s gonna be a fight tonite, I know.\n
-Another city we can\'t find,\n
-Another city left buried behind.\n
-As I picture her, the cities burn away.\n
-\n
-These scars in my flesh,\n
-I\'m bruised and I\'m bloodied\n
-Only she know the pain that I\'ve been thru.\n
-Talk to her a thousand miles away,\n
-There\'s tears in her eyes.\n
-If I make it back I\'m gonna show her,\n
-she\'s the one for me - \n
-\n
-These scars in my flesh,\n
-I\'m bruised and I\'m bloodied\n
-Only she know the pain that I\'ve been thru.\n
-Talk to her a thousand miles away,\n
-There\'s tears in her eyes.\n
-If I make it back I\'m gonna show her,\n
-she\'s the one for me -
     </string>
     
     <!-- Shout -->
@@ -1450,7 +1584,7 @@ Well now you gotta do some time
     
     <!-- Quick One -->
     <string name="quickone">
-        \n[originally performed by The Who]\n
+        \n[Originally performed by The Who]\n
 \n
 [I. Her Man\'s Been Gone]\n
 \n

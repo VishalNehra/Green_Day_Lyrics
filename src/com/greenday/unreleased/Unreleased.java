@@ -13,6 +13,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -33,6 +34,52 @@ public class Unreleased extends Activity {
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
 		tv1.setTextSize(text);
+
+		//Text theme
+		int themetext = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString("themechooser", null));
+		boolean themetextb = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("themetext", true);
+		if(themetextb){
+			if(themetext==0){
+				//Black
+				tv1.setTextColor(Color.parseColor("#000000"));
+			}
+			else if(themetext==1){
+				//Grey
+				tv1.setTextColor(Color.parseColor("#A4A4A4"));
+			}
+			else if(themetext==2){
+				//Lime
+				tv1.setTextColor(Color.parseColor("#669002"));
+			}
+			else if(themetext==3){
+				//Dark Sky
+				tv1.setTextColor(Color.parseColor("#464ea3"));
+			}
+			else if(themetext==4){
+				//Rose
+				tv1.setTextColor(Color.parseColor("#cf2a9b"));
+			}
+			else if(themetext==5){
+				//Mojo
+				tv1.setTextColor(Color.parseColor("#c84741"));
+			}
+			else if(themetext==6){
+				//Saffron
+				tv1.setTextColor(Color.parseColor("#f48935"));
+			}
+			else if(themetext==7){
+				//Frooti
+				tv1.setTextColor(Color.parseColor("#E4A803"));
+			}
+			else if(themetext==8){
+				//Lavender
+				tv1.setTextColor(Color.parseColor("#92278f"));
+			}
+		}
+		else{
+			//Black
+			tv1.setTextColor(Color.parseColor("#000000"));
+		}
 		
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
@@ -66,7 +113,6 @@ public class Unreleased extends Activity {
 		}
 		if(track == 8){
 			ab.setTitle("Cigarettes And Valentines");
-			ab.setSubtitle("21st Centuary Breakdown");
 			tv1.setText(R.string.cigarettes);
 		}
 		if(track == 9){
@@ -87,7 +133,6 @@ public class Unreleased extends Activity {
 		}
 		if(track == 13){
 			ab.setTitle("Favourite Son");
-			ab.setSubtitle("American Idiot");
 			tv1.setText(R.string.favouriteson);
 		}
 		if(track == 14){
@@ -120,7 +165,6 @@ public class Unreleased extends Activity {
 		}
 		if(track == 21){
 			ab.setTitle("Lights Out");
-			ab.setSubtitle("21st Centuary Breakdown");
 			tv1.setText(R.string.lightsout);
 		}
 		if(track == 22){
@@ -522,7 +566,7 @@ public class Unreleased extends Activity {
 				Info.info2(this);
 			}
 			if(track == 3){
-				Info.info3(this);
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
 			}
 			if(track == 4){
 				Info.info4(this);
@@ -543,7 +587,7 @@ public class Unreleased extends Activity {
 				Info.info9(this);
 			}
 			if(track == 10){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
+				Info.info10(this);
 			}
 			if(track == 11){
 				Info.info11(this);
@@ -573,7 +617,7 @@ public class Unreleased extends Activity {
 				Info.info19(this);
 			}
 			if(track == 20){
-				Info.info20(this);
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
 			}
 			if(track == 21){
 				Info.info21(this);
@@ -612,7 +656,7 @@ public class Unreleased extends Activity {
 				Info.info32(this);
 			}
 			if(track == 33){
-				Info.info33(this);
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
 			}
 			if(track == 34){
 				Info.info34(this);
@@ -654,7 +698,7 @@ public class Unreleased extends Activity {
 				Info.info46(this);
 			}
 			if(track == 47){
-				Info.info47(this);
+				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
 			}
 			if(track == 48){
 				Info.info48(this);

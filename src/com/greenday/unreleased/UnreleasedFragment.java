@@ -32,7 +32,7 @@ public class UnreleasedFragment extends Fragment {
 
         if (firstboot){
 		 
-        	Crouton.makeText(getActivity(), "More lyrics will be added here in future.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "The content in this part might be incorrect.", Style.ALERT).show();
         	
          getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
@@ -96,7 +96,7 @@ public class UnreleasedFragment extends Fragment {
 					"When Will I Be Loved (Miranda Lambert + Billie Joe)",
 					"Why Does It Always Rain on Me?",
 					"Working Class Hero",
-					"World Vs. World",
+					"World Vs. World (What You Say)",
 					"You Can't Fool Me"
         		};
         ArrayAdapter<String> adapter =

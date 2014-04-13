@@ -161,5 +161,11 @@ public class ReportSong extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		Crouton.clearCroutonsForActivity(this);
+		super.onDestroy();
+	}
 }

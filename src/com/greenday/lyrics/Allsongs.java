@@ -96,7 +96,7 @@ public class Allsongs extends Activity {
             			"Apollo Music Player<br> Poweramp<br> n7player<br> Stock Samsung and HTC players.</i></font>" +
              			"<br><br><u><b><font color='#e02923'>Warning!</font></b></u><br>" +
             			"Make sure that name of Green Day tracks in music player match with the name in the list (or official release name).<br>" +
-            			"This feature might not work on <i><font color='#464ea3'>Winamp</i></font>."))
+            			"This feature might not work on <i><font color='#464ea3'>Winamp</i></font> and <i><font color='#464ea3'>Walkman</i></font>."))
             			.setNeutralButton("OK", new DialogInterface.OnClickListener() {
     			            public void onClick(DialogInterface dialog, int which) {
     			                Allsongs.this.closeContextMenu();

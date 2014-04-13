@@ -14,11 +14,11 @@ public class Info {
 		//All By Myself
 		new AlertDialog.Builder(c)
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
-        		c.getString(R.string.dos_album) +
+        		c.getString(R.string.dookie_album) +
         		c.getString(R.string.track_length) +
-        		"<font color='#006500'><i>1:06</i></font><br><br>" + 
+        		"<font color='#006500'><i>1:35</i></font><br><br>" + 
         		c.getString(R.string.writers) +
-        		"<font color='#006500'>Tré Cool, Billie Joe Armstrong, Mike Dirnt</font><br><br>" +
+        		"<font color='#006500'>Billie Joe Armstrong, Frank E. Iii Wright, Michael Pritchard</font><br><br>" +
         		c.getString(R.string.copyright) +
         		c.getString(R.string.copyright1)))
         .setNeutralButton("OK", new DialogInterface.OnClickListener() {

@@ -112,8 +112,7 @@ public class MainActivity extends Activity {
             	 @Override
             	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
             	        //The view is hidden/dismissed
-            		 Crouton.makeText(MainActivity.this, "This app is still in Beta, you may encounter bugs.", Style.ALERT).show();
-            		 Crouton.makeText(MainActivity.this, "Please report if you find any strange behavior in the app.", Style.INFO).show();
+            		 Crouton.makeText(MainActivity.this, "Please report if you find any incorrect lyrics.", Style.INFO).show();
             	    }
 
             	 @Override

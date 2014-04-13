@@ -12,7 +12,9 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
@@ -195,6 +197,7 @@ public class Settings extends PreferenceActivity {
 		
 		//Clear Default Shared Preferences
 		mHints=(Preference)findPreference("hints");
+		
 		mHints.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
@@ -221,7 +224,12 @@ public class Settings extends PreferenceActivity {
 				        settings.edit().clear().commit();
 				        Logger log = LoggerFactory.getLogger(Settings.class);
 					    log.info("Settings/ERASED_DEFAULT_PREFERENCES");
-				        navigateUpTo(new Intent(Settings.this, MainActivity.class));
+					    if(Build.VERSION.SDK_INT <= 15){
+					    	startActivity(new Intent(Settings.this, MainActivity.class));
+					    }
+					    else{
+					    	navigateUpTo(new Intent(Settings.this, MainActivity.class));
+					    }
 				        System.exit(0);
 					    }
 					
@@ -408,11 +416,16 @@ public class Settings extends PreferenceActivity {
 					sk.setProgress((sp-10)*4);
 					tv.setTextSize(sp);
 					sp2.edit().putInt("text", 18).commit();
+					
+					//Text Color
+					tv.setTextColor(Color.parseColor("#A4A4A4"));
 				}
 				else{
 					cb.setChecked(false);
 					sk.setProgress((init-10)*4);
 					tv.setTextSize(init);
+					//Text Color
+					tv.setTextColor(Color.parseColor("#000000"));
 				}
 				
 				cb.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -421,14 +434,20 @@ public class Settings extends PreferenceActivity {
 					public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 						// TODO Auto-generated method stub
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						int init = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
 						if(cb.isChecked()){
 							sk.setEnabled(false);
 							sp.edit().putBoolean("def_text", true).commit();
 							sp.edit().putInt("text", 18).commit();
+							//Text Color
+							tv.setTextColor(Color.parseColor("#A4A4A4"));
 						}
 						else{
 							sp.edit().putBoolean("def_text", false).commit();
 							sk.setEnabled(true);
+							sp.edit().putInt("text", init).commit();
+							//Text Color
+							tv.setTextColor(Color.parseColor("#000000"));
 						}
 					}
 				});
