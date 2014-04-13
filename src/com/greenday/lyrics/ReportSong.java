@@ -4,7 +4,6 @@ import org.acra.ACRA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.keyboardsurfer.android.widget.crouton.Configuration;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.ActionBar;
@@ -17,13 +16,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ReportSong extends Activity {
 	
@@ -44,13 +43,6 @@ public class ReportSong extends Activity {
 		Logger log = LoggerFactory.getLogger(ReportSong.class);
 		log.info(getIntent().getExtras().getString("report_sub"));
 		
-		Style style = new Style.Builder()
-		.setGravity(1)
-		.setHeight(50).build();
-		final Crouton crouton = Crouton.makeText(this, "No Internet Connection", style)
-				.setConfiguration(new Configuration.Builder().setDuration(Configuration.DURATION_INFINITE)
-						.build());
-		
 		ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 		if (networkInfo != null && networkInfo.isConnected()) 
@@ -59,15 +51,7 @@ public class ReportSong extends Activity {
 		}
 		else
 		{
-			crouton.setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View arg0) {
-					// TODO Auto-generated method stub
-					crouton.hide();
-				}
-			});
-			crouton.show();
+			Toast.makeText(this, "Internet connection not available", Toast.LENGTH_LONG).show();
 		}
 		
 		SharedPreferences prefs = this.getSharedPreferences(

@@ -424,7 +424,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int burnout=0x7f06001a;
         public static final int cache_summary=0x7f060099;
         public static final int cache_title=0x7f060098;
-        /**  Can\'t Make Love (Pansy Division + Tre Cool) 
+        /**  Can't Make Love (Pansy Division + Tre Cool) 
          */
         public static final int cantmakelove=0x7f06016b;
         /**  Carpe Diem 
