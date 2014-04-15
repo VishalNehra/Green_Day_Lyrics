@@ -1,47 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Green Day Lyrics by vishal0071</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <title>Green Day Lyrics by vishal0071</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/vishal0071/Green_Day_Lyrics">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/vishal0071/Green_Day_Lyrics/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/vishal0071/Green_Day_Lyrics/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <header>
+      <div class="inner">
+        <h1>Green Day Lyrics</h1>
+        <h2>GD Lyrics on your smartphone</h2>
+        <a href="https://github.com/vishal0071/Green_Day_Lyrics" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Green Day Lyrics</h1>
-          <p>GD Lyrics on your smartphone</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/vishal0071">vishal0071</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h2>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>A must have app for any Green Day fan out there.<br>
+<p>A must have app for a Green Day fan.<br>
 Green Day Lyrics is an android app that contains most of lyrics of song by Green Day punk rock band, with a fancy UI.<br>
 This documentation contains all the info. you need to know about the app.  </p>
 
@@ -54,14 +44,13 @@ This documentation contains all the info. you need to know about the app.  </p>
 <a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
 
 <blockquote>
-<p>Please note that this app is tested on Nexus 4 (mako) and looks best on xhdpi.<br>
-App has not been tested on Tablets.  </p>
+<p>Looks best on xhdpi screen.</p>
 </blockquote>
 
 <p><img src="http://i61.tinypic.com/9uqjah.png" height="335" width="200"><img src="http://i60.tinypic.com/2lc9y1f.png" height="335" width="200"><img src="http://i57.tinypic.com/211qmi8.png" height="335" width="200"><img src="http://i61.tinypic.com/107krwz.png" height="335" width="200"><img src="http://i57.tinypic.com/2yziybs.png" height="335" width="200"><img src="http://i62.tinypic.com/jkeueq.png" height="335" width="200"></p>
 
 <blockquote>
-<p>Youtube video <a href="https://www.youtube.com/watch?v=JtJUXp9VIgM">here</a></p>
+<p>Youtube video <a href="https://www.youtube.com/watch?v=JtJUXp9VIgM">here</a>.</p>
 </blockquote>
 
 <h2>
@@ -80,7 +69,7 @@ which album, just type its name and you will get the song.  </p>
 <p>Don't have time to open album and see lyrics of current playing song? This feature is for you!<br>
 Just play any Green Day song in music player and press on Play icon in the search bar of 'All Songs'.
 This feature has been tested successfully on <code>Google Play Music</code>, <code>Apollo Music Player</code>, <code>Poweramp</code> and <code>n7player</code>.
-Not working on <code>Winamp</code>.</p>
+Not working on <code>Winamp</code> and <code>Walkman</code> players.</p>
 
 <h5>
 <a name="labels" class="anchor" href="#labels"><span class="octicon octicon-link"></span></a>Labels</h5>
@@ -94,10 +83,7 @@ In labels you will get to know the length, writers, copyrights and more info. ab
 <p>View all Green Day Lyrics with awesome looking themes.
 You can choose from lots of available themes in settings.</p>
 
-<h5>
-<a name="automatic-scrolling" class="anchor" href="#automatic-scrolling"><span class="octicon octicon-link"></span></a>Automatic Scrolling</h5> 
-
-<p><del>Deprecated</del><br>
+<p><del>Automatic Scrolling</del><br>
 Removed (Had issues with different screen sizes).</p>
 
 <h5>
@@ -107,7 +93,9 @@ Removed (Had issues with different screen sizes).</p>
 View album art icon, track counter and name of album inside navigation drawer itself.</p>
 
 <h5>
-<a name="stay-tuned-for-more-features" class="anchor" href="#stay-tuned-for-more-features"><span class="octicon octicon-link"></span></a>Stay tuned for more features!</h5>
+<a name="stay-tuned-for-more-features" class="anchor" href="#stay-tuned-for-more-features"><span class="octicon octicon-link"></span></a>Stay tuned for more features!</h5>  
+
+<p><br></p>
 
 <h2>
 <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
@@ -142,12 +130,12 @@ For complete changelog please refer to <a href="https://github.com/vishal0071/Gr
 <a name="disclaimer" class="anchor" href="#disclaimer"><span class="octicon octicon-link"></span></a>Disclaimer</h2>
 
 <p>All the lyrics provided in this app belongs to their respective owners/artists.<br>
-I DO NOT own any of the lyrics provided in this app.<br>
+I <em>DO NOT</em> own any of the lyrics provided in this app.<br>
 I will not be liable for any errors or omissions in any kind of information provided in this app.<br>
 For more info. visit Green Day <a href="http://www.greenday.com/">Official website</a>. <br></p>
 
 <h2>
-<a name="licensing" class="anchor" href="#licensing"><span class="octicon octicon-link"></span></a>Licensing</h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <pre><code>Copyright 2014 Vishal
 
@@ -163,10 +151,25 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 </code></pre>
-      </section>
+        </section>
 
+        <aside id="sidebar">
+          <a href="https://github.com/vishal0071/Green_Day_Lyrics/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/vishal0071/Green_Day_Lyrics/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/vishal0071/Green_Day_Lyrics"></a> is maintained by <a href="https://github.com/vishal0071">vishal0071</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+  
   </body>
 </html>
