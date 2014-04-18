@@ -330,11 +330,9 @@ public class UnreleasedFragment extends Fragment {
 		                		  newActivity52.putExtra("track", 53);
 		                		  startActivity(newActivity52);
 		                		  break;
-                  
                          }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

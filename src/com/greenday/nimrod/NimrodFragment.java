@@ -218,10 +218,9 @@ public class NimrodFragment extends Fragment {
 			                 newActivity17.putExtra("track", 18);
 			                 startActivity(newActivity17);
         			       	 break;  
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

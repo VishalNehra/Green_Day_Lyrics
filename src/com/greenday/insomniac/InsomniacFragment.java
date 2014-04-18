@@ -191,10 +191,9 @@ public class InsomniacFragment extends Fragment {
 			                 startActivity(newActivity13);
         			       	 break;  
                   
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

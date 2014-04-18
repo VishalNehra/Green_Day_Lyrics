@@ -206,10 +206,9 @@ public class KerplunkFragment extends Fragment {
 			                 startActivity(newActivity15);
         			       	 break;  
                   
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

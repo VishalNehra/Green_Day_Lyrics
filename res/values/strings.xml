@@ -130,6 +130,7 @@
         <item>¡Uno!</item>
         <item>¡Dos!</item>
         <item>¡Tré!</item>
+        <item>Demolicious</item>
         <item>Extras</item>
         
         
@@ -152,6 +153,7 @@
         <item>@drawable/ic_uno</item>
         <item>@drawable/ic_dos</item>
         <item>@drawable/ic_tre</item>
+        <item>@drawable/ic_demolicious</item>
         <item>@drawable/ic_unreleased</item>
         
     </array>
@@ -232,6 +234,8 @@
     <string name="uno_album">&lt;font color="#006500">¡Uno!&lt;i> (2012)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="warning_album_release">&lt;font color="#006500">Warning&lt;i> (October 3, 2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     <string name="warning_album">&lt;font color="#006500">Warning&lt;i> (2000)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="demolicious_album_release">&lt;font color="#006500">Demolicious&lt;i> (April 19, 2014)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
+    <string name="demolicious_album">&lt;font color="#006500">Demolicious&lt;i> (2014)&lt;/font>&lt;/i>&lt;br>&lt;br></string>
     
     <!-- For Unreleased -->
     <string name="fact_extras">&lt;b>&lt;u>&lt;font color="#524ef8">FACT&lt;/font>&lt;/u>&lt;/b>&lt;br></string>

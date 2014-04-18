@@ -225,10 +225,9 @@ public class TnsFragment extends Fragment {
 			                 newActivity18.putExtra("track", 19);
 			                 startActivity(newActivity18);
         			       	 break;
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

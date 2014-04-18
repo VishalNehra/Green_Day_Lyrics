@@ -178,8 +178,7 @@ public class UnoFragment extends Fragment {
         			       	 break;
                          }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

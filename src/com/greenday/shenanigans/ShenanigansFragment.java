@@ -191,10 +191,9 @@ public ShenanigansFragment(){}
 			                 newActivity13.putExtra("track", 14);
 			                 startActivity(newActivity13);
         			       	 break;  
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

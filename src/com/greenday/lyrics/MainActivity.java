@@ -3,6 +3,7 @@ package com.greenday.lyrics;
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.greenday.americanidiot.AmericanIdiotFragment;
+import com.greenday.demolicious.DemoliciousFragment;
 import com.greenday.dookie.DookieFragment;
 import com.greenday.dos.DosFragment;
 import com.greenday.ins.IntSuperFragment;
@@ -186,8 +187,10 @@ public class MainActivity extends Activity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuIcons.getResourceId(12, -1), true, "13"));
         // TRE
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuIcons.getResourceId(13, -1), true, "12"));
+        // Demolicious
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "18"));
         // Unreleased
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "53"));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[15], navMenuIcons.getResourceId(15, -1), true, "53"));
         
          
  
@@ -333,6 +336,9 @@ public class MainActivity extends Activity {
             fragment = new TreFragment();
             break;
         case 14:
+            fragment = new DemoliciousFragment();
+            break;
+        case 15:
             fragment = new UnreleasedFragment();
             break;
         default:

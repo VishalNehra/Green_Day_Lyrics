@@ -177,10 +177,9 @@ public class WarningFragment extends Fragment {
 			                 newActivity11.putExtra("track", 12);
 			                 startActivity(newActivity11);
         			       	 break;
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}

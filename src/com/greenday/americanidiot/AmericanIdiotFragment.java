@@ -193,11 +193,9 @@ public class AmericanIdiotFragment extends Fragment{
 	                 newActivity12.putExtra("track", 13);
 	                 startActivity(newActivity12);
 			       	 break; 
-          
-              }
+                 }
         	 }
-        });
-         
-        return rootView;
-    }
+         });
+         return rootView;
+    }   
 }

@@ -195,11 +195,9 @@ import android.widget.ListView;
 				                 newActivity14.putExtra("track", 15);
 				                 startActivity(newActivity14);
 	        			       	 break;
-	                  
-	                      }
+	                         }
 	                	 }
-	                });
-	                return rootView;
-	            }
-	           
-	        }
+	                 });
+	                 return rootView;
+	    }   
+}

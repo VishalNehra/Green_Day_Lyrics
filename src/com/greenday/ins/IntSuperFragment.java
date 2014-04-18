@@ -239,11 +239,9 @@ public class IntSuperFragment extends Fragment {
 			                 newActivity20.putExtra("track", 21);
 			                 startActivity(newActivity20);
         			       	 break; 
-                  
-                      }
+                         }
                 	 }
-                });
-                return rootView;
-            }
-           
-        }
+                 });
+                 return rootView;
+    }   
+}
