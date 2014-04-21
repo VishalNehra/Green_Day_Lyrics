@@ -158,6 +158,12 @@
             <intent android:action="android.intent.action.VIEW"
                     android:data="http://en.wikipedia.org/wiki/%C2%A1Tr%C3%A9!"/>
             </Preference>
+            <Preference android:key="album14_screen"
+                android:title="@string/album14_title"
+                android:summary="@string/album14_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://en.wikipedia.org/wiki/Demolicious"/>
+            </Preference>
             </PreferenceScreen>
             <!-- Members -->
             

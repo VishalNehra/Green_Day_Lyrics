@@ -5,7 +5,7 @@ import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.Util;
 import com.greenday.lyrics.R;
-import com.greenday.dookie.Info;
+import com.greenday.demolicious.Info;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -41,7 +41,7 @@ public class Demolicious extends Activity {
 			}
 			else if(themetext==1){
 				//Grey
-				tv1.setTextColor(Color.parseColor("#A4A4A4"));
+				tv1.setTextColor(Color.parseColor("#424242"));
 			}
 			else if(themetext==2){
 				//Lime
@@ -80,64 +80,76 @@ public class Demolicious extends Activity {
 		int track = getIntent().getExtras().getInt("track");
 		ActionBar ab=getActionBar();
 		if(track == 1){
-			ab.setTitle("All By Myself");
-			tv1.setText(R.string.allbymyself);
+			ab.setTitle("99 Revolutions (Demo)");
+			tv1.setText(R.string.ninetyrevdemo);
 		}
 		if(track == 2){
-			ab.setTitle("Burnout");
-			tv1.setText(R.string.burnout);
+			ab.setTitle("Angel Blue (Demo)");
+			tv1.setText(R.string.angelbluedemo);
 		}
 		if(track == 3){
-			ab.setTitle("Having A Blast");
-			tv1.setText(R.string.havingblast);
+			ab.setTitle("Carpe Diem (Demo)");
+			tv1.setText(R.string.carpediemdemo);
 		}
 		if(track == 4){
-			ab.setTitle("Chump");
-			tv1.setText(R.string.chump);
+			ab.setTitle("State Of Shock");
+			tv1.setText(R.string.stateofshock);
 		}
 		if(track == 5){
-			ab.setTitle("Longview");
-			tv1.setText(R.string.longview);
+			ab.setTitle("Let Yourself Go (Demo)");
+			tv1.setText(R.string.letgodemo);
 		}
 		if(track == 6){
-			ab.setTitle("Welcome To Paradise");
-			tv1.setText(R.string.welcometoparadise);
+			ab.setTitle("Sex, Drugs And Violence (Demo)");
+			tv1.setText(R.string.sexviolencedemo);
 		}
 		if(track == 7){
-			ab.setTitle("Pulling Teeth");
-			tv1.setText(R.string.pullingteeth);
+			ab.setTitle("Ashley (Demo)");
+			tv1.setText(R.string.ashleydemo);
 		}
 		if(track == 8){
-			ab.setTitle("Basket Case");
-			tv1.setText(R.string.basketcase);
+			ab.setTitle("Fell For You (Demo)");
+			tv1.setText(R.string.fellforyoudemo);
 		}
 		if(track == 9){
-			ab.setTitle("She");
-			tv1.setText(R.string.she);
+			ab.setTitle("Stay The Night (Demo)");
+			tv1.setText(R.string.staynightdemo);
 		}
 		if(track == 10){
-			ab.setTitle("Sassafras Roots");
-			tv1.setText(R.string.sassafrasroots);
+			ab.setTitle("Nuclear Family (Demo)");
+			tv1.setText(R.string.nucleardemo);
 		}
 		if(track == 11){
-			ab.setTitle("When I Come Around");
-			tv1.setText(R.string.whencomearound);
+			ab.setTitle("Stray Heart (Demo)");
+			tv1.setText(R.string.strayheartdemo);
 		}
 		if(track == 12){
-			ab.setTitle("Coming Clean");
-			tv1.setText(R.string.comingclean);
+			ab.setTitle("Rusty James (Demo)");
+			tv1.setText(R.string.rustyjamesdemo);
 		}
 		if(track == 13){
-			ab.setTitle("Emenius Sleepus");
-			tv1.setText(R.string.emeniussleepus);
+			ab.setTitle("A Little Boy Named Train (Demo)");
+			tv1.setText(R.string.littleboydemo);
 		}
 		if(track == 14){
-			ab.setTitle("In The End");
-			tv1.setText(R.string.intheend);
+			ab.setTitle("Baby Eyes (Demo)");
+			tv1.setText(R.string.babyeyesdemo);
 		}
 		if(track == 15){
-			ab.setTitle("F.O.D.");
-			tv1.setText(R.string.fod);
+			ab.setTitle("Makeout Party (Demo)");
+			tv1.setText(R.string.makeoutdemo);
+		}
+		if(track == 16){
+			ab.setTitle("Oh Love (Demo)");
+			tv1.setText(R.string.ohlovedemo);
+		}
+		if(track == 17){
+			ab.setTitle("Missing You (Demo)");
+			tv1.setText(R.string.missingyoudemo);
+		}
+		if(track == 18){
+			ab.setTitle("Stay The Night (Acoustic)");
+			tv1.setText(R.string.staynightacoustic);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -178,65 +190,75 @@ public class Demolicious extends Activity {
 				int track = getIntent().getExtras().getInt("track");
 				Intent intent = new Intent(this, ReportSong.class);
 				if(track == 1){
-					intent.putExtra("report_sub", "All By Myself");
+					intent.putExtra("report_sub", "99 Revolutions (Demo)");
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "Burnout");
+					intent.putExtra("report_sub", "Angel Blue (Demo)");
 					startActivity(intent);
 					}
 				if(track == 3){
-					intent.putExtra("report_sub", "Having A Blast");
+					intent.putExtra("report_sub", "Carpe Diem (Demo)");
 					startActivity(intent);
 					}
 				if(track == 4){
-					intent.putExtra("report_sub", "Chump");
+					intent.putExtra("report_sub", "State Of Shock");
 					startActivity(intent);
 					}
 				if(track == 5){
-					intent.putExtra("report_sub", "Longview");
+					intent.putExtra("report_sub", "Let Yourself Go (Demo)");
 					startActivity(intent);
 					}
 				if(track == 6){
-					intent.putExtra("report_sub", "Welcome To Paradise");
+					intent.putExtra("report_sub", "Sex, Drugs And Violence (Demo)");
 					startActivity(intent);
 					}
 				if(track == 7){
-					intent.putExtra("report_sub", "Pulling Teeth");
+					intent.putExtra("report_sub", "Ashley (Demo)");
 					startActivity(intent);
 					}
 				if(track == 8){
-					intent.putExtra("report_sub", "Basket Case");
+					intent.putExtra("report_sub", "Fell For You (Demo)");
 					startActivity(intent);
 					}
 				if(track == 9){
-					intent.putExtra("report_sub", "She");
+					intent.putExtra("report_sub", "Stay The Night (Demo)");
 					startActivity(intent);
 					}
 				if(track == 10){
-					intent.putExtra("report_sub", "Sassafras Roots");
+					intent.putExtra("report_sub", "Nuclear Family (Demo)");
 					startActivity(intent);
 					}
 				if(track == 11){
-					intent.putExtra("report_sub", "When I Come Around");
+					intent.putExtra("report_sub", "Stray Heart (Demo)");
 					startActivity(intent);
 					}
 				if(track == 12){
-					intent.putExtra("report_sub", "Coming Clean");
+					intent.putExtra("report_sub", "Rusty James (Demo)");
 					startActivity(intent);
 					}
 				if(track == 13){
-					intent.putExtra("report_sub", "Emenius Sleepus");
+					intent.putExtra("report_sub", "A Little Boy Named Train (Demo)");
 					startActivity(intent);
 					}
-
 				if(track == 14){
-					intent.putExtra("report_sub", "In The End");
+					intent.putExtra("report_sub", "Baby Eyes (Demo)");
 					startActivity(intent);
 					}
-
 				if(track == 15){
-					intent.putExtra("report_sub", "F.O.D.");
+					intent.putExtra("report_sub", "Makeout Party (Demo)");
+					startActivity(intent);
+					}
+				if(track == 16){
+					intent.putExtra("report_sub", "Oh Love (Demo)");
+					startActivity(intent);
+					}
+				if(track == 17){
+					intent.putExtra("report_sub", "Missing You (Demo)");
+					startActivity(intent);
+					}
+				if(track == 18){
+					intent.putExtra("report_sub", "Stay The Night (Acoustic)");
 					startActivity(intent);
 					}
 			}
@@ -298,6 +320,16 @@ public class Demolicious extends Activity {
 				if(track == 15){
 					Info.info15(this);
 				}
+				if(track == 16){
+					Info.info16(this);
+				}
+				if(track == 17){
+					Info.info17(this);
+				}
+				if(track == 18){
+					Info.info18(this);
+				}
+				
 			}
 		            return super.onOptionsItemSelected(item);
 		}

@@ -45,7 +45,7 @@ public class Unreleased extends Activity {
 			}
 			else if(themetext==1){
 				//Grey
-				tv1.setTextColor(Color.parseColor("#A4A4A4"));
+				tv1.setTextColor(Color.parseColor("#424242"));
 			}
 			else if(themetext==2){
 				//Lime

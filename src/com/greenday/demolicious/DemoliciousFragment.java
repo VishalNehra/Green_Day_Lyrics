@@ -60,24 +60,24 @@ import android.widget.ListView;
 			        		getString(R.string.length) +
 			        		"<font color='#006500'><i>62:44</font></i><br><br>" +
 			        		getString(R.string.track_list) +
-			        		"<font color='#006500'>1. 99 Revolutions (demo) <i>(4:06)</i><br>" +
-			        		"2. Angel Blue (demo) <i>(2:55)</i><br>" +
-			        		"3. Carpe Diem (demo) <i>(3:39)</i><br>" +
+			        		"<font color='#006500'>1. 99 Revolutions (Demo) <i>(4:06)</i><br>" +
+			        		"2. Angel Blue (Demo) <i>(2:55)</i><br>" +
+			        		"3. Carpe Diem (Demo) <i>(3:39)</i><br>" +
 			        		"4. State of Shock <i>(2:28)</i><br>" +
-			        		"5. Let Yourself Go (demo) <i>(3:00)</i><br>" +
-			        		"6. Sex, Drugs & Violence (demo) <i>(3:25)</i><br>" +
-			        		"7. Ashley (demo) <i>(2:47)</i><br>" +
-			        		"8. Fell for You (demo) <i>(3:12)</i><br>" +
-			        		"9. Stay the Night (demo) <i>(4:40)</i><br>" +
-			        		"10. Nuclear Family (demo) <i>(3:03)</i><br>" +
-			        		"11. Stray Heart (demo) <i>(3:50)</i><br>" +
-			        		"12. Rusty James (demo) <i>(4:15)</i><br>" +
-			        		"13. A Little Boy Named Train (demo) <i>(3:57)</i><br>" +
-			        		"14. Baby Eyes (demo) <i>(2:15)</i><br>" +
-			        		"15. Makeout Party (demo) <i>(3:12)</i><br>" +
-			        		"16. Oh Love (demo) <i>(5:13)</i><br>" +
-			        		"17. Missing You (demo) <i>(3:41)</i><br>" +
-			        		"18. Stay the Night (acoustic) <i>(3:09)</i></font>"))
+			        		"5. Let Yourself Go (Demo) <i>(3:00)</i><br>" +
+			        		"6. Sex, Drugs & Violence (Demo) <i>(3:25)</i><br>" +
+			        		"7. Ashley (Demo) <i>(2:47)</i><br>" +
+			        		"8. Fell for You (Demo) <i>(3:12)</i><br>" +
+			        		"9. Stay the Night (Demo) <i>(4:40)</i><br>" +
+			        		"10. Nuclear Family (Demo) <i>(3:03)</i><br>" +
+			        		"11. Stray Heart (Demo) <i>(3:50)</i><br>" +
+			        		"12. Rusty James (Demo) <i>(4:15)</i><br>" +
+			        		"13. A Little Boy Named Train (Demo) <i>(3:57)</i><br>" +
+			        		"14. Baby Eyes (Demo) <i>(2:15)</i><br>" +
+			        		"15. Makeout Party (Demo) <i>(3:12)</i><br>" +
+			        		"16. Oh Love (Demo) <i>(5:13)</i><br>" +
+			        		"17. Missing You (Demo) <i>(3:41)</i><br>" +
+			        		"18. Stay the Night (Acoustic) <i>(3:09)</i></font>"))
 			        .setNeutralButton("OK", new DialogInterface.OnClickListener() {
 			            public void onClick(DialogInterface dialog, int which) {
 			                getActivity().closeContextMenu();
@@ -89,24 +89,24 @@ import android.widget.ListView;
 	        ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
 	        //EDITED Code 
-	        String[] values = new String[] {"99 Revolutions (demo)",
-	        		"Angel Blue (demo)",
-	        		"Carpe Diem (demo)",
+	        String[] values = new String[] {"99 Revolutions (Demo)",
+	        		"Angel Blue (Demo)",
+	        		"Carpe Diem (Demo)",
 	        		"State of Shock",
-	        		"Let Yourself Go (demo)",
-	        		"Sex, Drugs & Violence (demo)",
-	        		"Ashley (demo)",
-	        		"Fell for You (demo)",
-	        		"Stay the Night (demo)",
-	        		"Nuclear Family (demo)",
-	        		"Stray Heart (demo)",
-	        		"Rusty James (demo)",
-	        		"A Little Boy Named Train (demo)",
-	        		"Baby Eyes (demo)",
-	        		"Makeout Party (demo)",
-			        "Oh Love (demo)",
-			        "Missing You (demo)",
-	        		"Stay the Night (acoustic)"};
+	        		"Let Yourself Go (Demo)",
+	        		"Sex, Drugs & Violence (Demo)",
+	        		"Ashley (Demo)",
+	        		"Fell for You (Demo)",
+	        		"Stay the Night (Demo)",
+	        		"Nuclear Family (Demo)",
+	        		"Stray Heart (Demo)",
+	        		"Rusty James (Demo)",
+	        		"A Little Boy Named Train (Demo)",
+	        		"Baby Eyes (Demo)",
+	        		"Makeout Party (Demo)",
+			        "Oh Love (Demo)",
+			        "Missing You (Demo)",
+	        		"Stay the Night (Acoustic)"};
 	        ArrayAdapter<String> adapter =
 	                new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
 	                super.onActivityCreated(savedInstanceState);
@@ -125,17 +125,17 @@ import android.widget.ListView;
 	                	 { 
 	                		 switch(position)
 	                         {
-	                         case 0:  //99 Revolutions (demo)
+	                         case 0:  //99 Revolutions (Demo)
 	                        	 Intent newActivity = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity.putExtra("track", 1);
 				                 startActivity(newActivity);
 	                             break;
-	                         case 1:  //Angel Blue (demo)
+	                         case 1:  //Angel Blue (Demo)
 	                        	 Intent newActivity1 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity1.putExtra("track", 2);
 				                 startActivity(newActivity1);
 	                             break;
-	                         case 2:  //Carpe Diem (demo)
+	                         case 2:  //Carpe Diem (Demo)
 	                        	 Intent newActivity2 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity2.putExtra("track", 3);
 				                 startActivity(newActivity2);
@@ -145,67 +145,67 @@ import android.widget.ListView;
 				                 newActivity3.putExtra("track", 4);
 				                 startActivity(newActivity3);
 	        	              	 break;
-	                         case 4:  //Let Yourself Go (demo)
+	                         case 4:  //Let Yourself Go (Demo)
 	                        	 Intent newActivity4 = new Intent(getActivity(), Demolicious.class);   
 	                        	 newActivity4.putExtra("track", 5);
 				                 startActivity(newActivity4);
 	        		         	 break;
-	                         case 5:  //Sex, Drugs & Violence (demo)
+	                         case 5:  //Sex, Drugs & Violence (Demo)
 	                        	 Intent newActivity5 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity5.putExtra("track", 6);
 				                 startActivity(newActivity5);
 	        		        	 break;
-	                         case 6:  //Ashley (demo)
+	                         case 6:  //Ashley (Demo)
 	                        	 Intent newActivity6 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity6.putExtra("track", 7);
 				                 startActivity(newActivity6);
 	        			       	 break;
-	                         case 7:  //Fell for You (demo)
+	                         case 7:  //Fell for You (Demo)
 	                        	 Intent newActivity7 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity7.putExtra("track", 8);
 				                 startActivity(newActivity7);
 	        			       	 break;
-	                         case 8:  //Stay the Night (demo)
+	                         case 8:  //Stay the Night (Demo)
 	                        	 Intent newActivity8 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity8.putExtra("track", 9);
 				                 startActivity(newActivity8);
 	        			       	 break; 
-	                         case 9:  //Nuclear Family (demo)
+	                         case 9:  //Nuclear Family (Demo)
 	                        	 Intent newActivity9 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity9.putExtra("track", 10);
 				                 startActivity(newActivity9);
 	        			       	 break; 
-	                         case 10: //Stray Heart (demo)
+	                         case 10: //Stray Heart (Demo)
 	                        	 Intent newActivity10 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity10.putExtra("track", 11);
 				                 startActivity(newActivity10);
 	        			       	 break;
-	                         case 11: //Rusty James (demo)
+	                         case 11: //Rusty James (Demo)
 	                        	 Intent newActivity11 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity11.putExtra("track", 12);
 				                 startActivity(newActivity11);
 	        			       	 break;
-	                         case 12: //A Little Boy Named Train (demo)
+	                         case 12: //A Little Boy Named Train (Demo)
 	                        	 Intent newActivity12 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity12.putExtra("track", 13);
 				                 startActivity(newActivity12);
 	        			       	 break;
-	                         case 13: //Baby Eyes (demo)
+	                         case 13: //Baby Eyes (Demo)
 	                        	 Intent newActivity13 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity13.putExtra("track", 14);
 				                 startActivity(newActivity13);
 	        			       	 break;
-	                         case 14: //Makeout Party (demo)
+	                         case 14: //Makeout Party (Demo)
 	                        	 Intent newActivity14 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity14.putExtra("track", 15);
 				                 startActivity(newActivity14);
 	        			       	 break;
-	                         case 15: //Oh Love (demo)
+	                         case 15: //Oh Love (Demo)
 	                        	 Intent newActivity15 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity15.putExtra("track", 16);
 				                 startActivity(newActivity15);
 	        			       	 break;
-	                         case 16: //Missing You (demo)
+	                         case 16: //Missing You (Demo)
 	                        	 Intent newActivity16 = new Intent(getActivity(), Demolicious.class);     
 				                 newActivity16.putExtra("track", 17);
 				                 startActivity(newActivity16);

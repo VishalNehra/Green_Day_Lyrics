@@ -244,7 +244,9 @@ public class Settings extends PreferenceActivity {
 			public boolean onPreferenceClick(Preference arg0) {
 				new AlertDialog.Builder(Settings.this)
 				.setTitle("Changelog")
-				.setMessage(Html.fromHtml(getString(R.string.changelog_version_3) + 
+				.setMessage(Html.fromHtml(getString(R.string.changelog_version_4) + 
+								getString(R.string.changelog_change_4) + 
+								getString(R.string.changelog_version_3) + 
 								getString(R.string.changelog_change_3) + 
 								getString(R.string.changelog_version_2) + 
 								getString(R.string.changelog_change_2) + 

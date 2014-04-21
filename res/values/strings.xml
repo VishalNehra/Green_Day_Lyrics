@@ -10,20 +10,23 @@
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
-    <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>March 1, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_1">&lt;i>- Initial release&lt;/i>&lt;br>&lt;br></string>
-    <string name="changelog_version_2">&lt;font color="#524ef8">&lt;b>v1.0.1&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_version_2">&lt;font color="#524ef8">&lt;b>v1.0.1&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>March 5, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_2">&lt;i>- Added theme support to nav. drawer&lt;br>
           - ~~Fixed issue #5 (github)~~&lt;br>
           - Minor lyrics correction&lt;br>
           - Other minor fixes&lt;br>&lt;/i>&lt;br></string>
-    <string name="changelog_version_3">&lt;font color="#524ef8">&lt;b>v1.0.2&lt;/font>&lt;/b>&lt;br></string>
+    <string name="changelog_version_3">&lt;font color="#524ef8">&lt;b>v1.0.2&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>April 14, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_3">- Fixed nav drawer theme issues&lt;br>
           - Modified nav drawer for tablets&lt;br>
           - Fixed/Added various options in Settings (see Full Changelog)&lt;br>
           - Added some more lyrics&lt;br>
           - Added new Report UI&lt;br>
           - Fixed some issues with 4.0.x&lt;br>&lt;br></string>
+    <string name="changelog_version_4">&lt;font color="#524ef8">&lt;b>v1.0.3&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>April 21, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
+    <string name="changelog_change_4">- Added Demolicious lyrics&lt;br>
+          - Other minor fixes&lt;br>&lt;br></string>      
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thanks, your report is being sent.
@@ -94,7 +97,7 @@
     <string name="aboutapp_title">About the app.</string>
     <string name="aboutgd_title">About Green Day</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">v1.0.2</string>
+    <string name="version_summary">v1.0.3</string>
     <string name="source_title">Application sources</string>
     <string name="source_summary">View app source code</string>
     <string name="members_title">Members</string>
@@ -168,7 +171,7 @@
     <!-- ALBUM LIST -->
     
     <string name="album1_title">39/Smooth</string>
-    <string name="album1_summary">April 13, 1990  (Good Friday)</string>
+    <string name="album1_summary">April 13, 1990 (Good Friday)</string>
     <string name="album2_title">Kerplunk</string>
     <string name="album2_summary">January 17, 1992</string>
     <string name="album3_title">Dookie</string>
@@ -193,6 +196,8 @@
     <string name="album12_summary">November 9, 2012 (My B\'Day :D)</string>
     <string name="album13_title">¡TRÉ!</string>
     <string name="album13_summary">December 7, 2012</string>
+    <string name="album14_title">Demolicious</string>
+    <string name="album14_summary">April 19, 2014 (Record Store Day)</string>
     
     <!-- Rate Button -->
     <string name="rate_title">Rate the app</string>

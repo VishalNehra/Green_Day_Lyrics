@@ -1,6 +1,7 @@
 package com.greenday.lyrics;
 
 import com.greenday.americanidiot.AmericanIdiotMain;
+import com.greenday.demolicious.Demolicious;
 import com.greenday.dookie.Dookie;
 import com.greenday.dos.Dos;
 import com.greenday.ins.Ins;
@@ -142,6 +143,7 @@ public class Allsongs extends Activity {
 				"86",
 				"8th Avenue Serenade",
 				"99 Revolutions",
+				"99 Revolutions (Demo)",
 				"All By Myself",
 				"All The Time",
 				"Amanda",
@@ -150,12 +152,16 @@ public class Allsongs extends Activity {
 				"Amy",
 				"Android",
 				"Angel Blue",
+				"Angel Blue (Demo)",
 				"Are We The Waiting",
 				"Armatage Shanks",
 				"Ashley",
+				"Ashley (Demo)",
+				"A Little Boy Named Train (Demo)",
 				"At The Library",
 				"Bab's Uvula Who?",
 				"Baby Eyes",
+				"Baby Eyes (Demo)",
 				"Basket Case",
 				"Before The Lobotomy",
 				"Best Thing In Town",
@@ -166,6 +172,7 @@ public class Allsongs extends Activity {
 				"Brutal Love",
 				"Burnout",
 				"Carpe Diem",
+				"Carpe Diem (Demo)",
 				"Castaway",
 				"Christian's Inferno",
 				"Christie Road",
@@ -189,6 +196,7 @@ public class Allsongs extends Activity {
 				"F.O.D.",
 				"Fashion Victim",
 				"Fell For You",
+				"Fell For You (Demo)",
 				"Fuck Time",
 				"Geek Stink Breath",
 				"Give Me Novacaine",
@@ -221,16 +229,19 @@ public class Allsongs extends Activity {
 				"Last Of American Girls",
 				"Lazy Bones",
 				"Let Yourself Go",
+				"Let Yourself Go (Demo)",
 				"Letterbomb",
 				"Little Boy Named Train",
 				"Longview",
 				"Loss Of Control",
 				"Macy's Day Parade",
 				"Makeout Party",
+				"Makeout Party (Demo)",
 				"Minority",
 				"Maria",
 				"Misery",
 				"Missing You",
+				"Missing You (Demo)",
 				"Murder City",
 				"My Generation",
 				"Nice Guys Finish Last",
@@ -238,7 +249,9 @@ public class Allsongs extends Activity {
 				"No One Knows",
 				"No Pride",
 				"Nuclear Family",
+				"Nuclear Family (Demo)",
 				"Oh Love",
+				"Oh Love (Demo)",
 				"On The Wagon",
 				"One For The Razorbacks",
 				"One Of My Lies",
@@ -259,21 +272,27 @@ public class Allsongs extends Activity {
 				"Road To Acceptance",
 				"Rotting",
 				"Rusty James",
+				"Rusty James (Demo)",
 				"Sassafras Roots",
 				"Scattered",
 				"Scumbag",
 				"See The Light",
 				"See You Tonight",
 				"Sex, Drugs & Violence",
+				"Sex, Drugs And Violence (Demo)",
 				"She",
 				"She's A Rebel",
 				"Sick Of Me",
 				"Song Of The Century",
 				"St. Jimmy",
+				"State Of Shock",
+				"Stay The Night (Acoustic)",
 				"Stay The Night",
+				"Stay The Night (Demo)",
 				"Stop When The Red Lights Flash",
 				"Strangeland",
 				"Stray Heart",
+				"Stray Heart (Demo)",
 				"Stuart And The Ave.",
 				"Stuck With Me",
 				"Suffocate",
@@ -1071,6 +1090,85 @@ public class Allsongs extends Activity {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
+				
+				/*
+				 * Demolicious
+				 */
+				if (values=="99 Revolutions (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 1);
+	                startActivity(newActivity);
+				}
+				if (values=="Angel Blue (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 2);
+	                startActivity(newActivity);
+				}if (values=="Carpe Diem (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 3);
+	                startActivity(newActivity);
+				}if (values=="State Of Shock"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 4);
+	                startActivity(newActivity);
+				}if (values=="Let Yourself Go (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 5);
+	                startActivity(newActivity);
+				}if (values=="Sex, Drugs And Violence (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 6);
+	                startActivity(newActivity);
+				}if (values=="Ashley (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 7);
+	                startActivity(newActivity);
+				}if (values=="Fell For You (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 8);
+	                startActivity(newActivity);
+				}if (values=="Stay The Night (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 9);
+	                startActivity(newActivity);
+				}if (values=="Nuclear Family (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 10);
+	                startActivity(newActivity);
+				}if (values=="Stray Heart (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 11);
+	                startActivity(newActivity);
+				}if (values=="Rusty James (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 12);
+	                startActivity(newActivity);
+				}if (values=="A Little Boy Named Train (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 13);
+	                startActivity(newActivity);
+				}if (values=="Baby Eyes (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 14);
+	                startActivity(newActivity);
+				}if (values=="Makeout Party (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 15);
+	                startActivity(newActivity);
+				}if (values=="Oh Love (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 16);
+	                startActivity(newActivity);
+				}if (values=="Missing You (Demo)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 17);
+	                startActivity(newActivity);
+				}if (values=="Stay The Night (Acoustic)"){
+					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
+	                newActivity.putExtra("track", 18);
+	                startActivity(newActivity);
+				}
+				
 			}
 		});
 	}
