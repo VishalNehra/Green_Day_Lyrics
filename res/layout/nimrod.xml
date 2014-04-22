@@ -5,9 +5,10 @@
     android:background="@drawable/nimrod_cover2"
     android:orientation="vertical" >
 
-    <ScrollView 
+    <com.fourmob.poppyview.NotifyingScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
     <TextView
         android:id="@+id/textView1"
         android:textIsSelectable="true"
@@ -16,6 +17,6 @@
         android:maxLines = "200"
 		android:scrollbars = "vertical"
         android:gravity="center_horizontal" />
-    </ScrollView>
+    </com.fourmob.poppyview.NotifyingScrollView>
 
 </RelativeLayout>

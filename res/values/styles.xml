@@ -14,41 +14,30 @@
     
     <!-- Themes -->
     <style name="Default.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:backgroundSplit">@drawable/ab_background_default_split</item>
+        <!-- <item name="android:backgroundSplit">@drawable/ab_background_default_split</item>  -->
     </style>
     <style name="Light.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-        <item name="android:backgroundSplit">@null</item>
     </style>
 	<style name="Lime.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_lime</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_lime_split</item>
     </style>
     <style name="DarkSky.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_darksky</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_darksky_split</item>
     </style>
     <style name="Rose.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_rose</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_rose_split</item>
     </style>
     <style name="Mojo.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_mojo</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_mojo_split</item>
     </style>
     <style name="Saffron.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_saffron</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_saffron_split</item>
     </style>
     <style name="Frooti.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_frooti</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_frooti_split</item>
     </style>
     <style name="Lavender.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_lavender</item>
-        <item name="android:backgroundSplit">@drawable/ab_background_lavender_split</item>
     </style>
-	
-   <!-- Dark -->
-   <!-- Light -->
 
 </resources>

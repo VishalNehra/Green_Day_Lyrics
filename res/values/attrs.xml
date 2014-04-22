@@ -2,4 +2,5 @@
 <resources>
     <attr name="color_drawer" format="color|reference" />
     <attr name="color_counter" format="color|reference" />
+    <attr name="poppy" format="color|reference"/>
 </resources>

@@ -1,5 +1,7 @@
 package com.greenday.ins;
 
+import com.fourmob.poppyview.PoppyViewHelper;
+import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
@@ -14,9 +16,14 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Ins extends Activity {
+	
+	private PoppyViewHelper mPoppyViewHelper;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +33,201 @@ public class Ins extends Activity {
 				
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ins);
+		
+		//Poppyview
+		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
+		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
+		
+		ImageButton search = (ImageButton) poppyview.findViewById(R.id.imageButton1);
+		search.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				// Search action | Add as new task
+				Intent intent = new Intent(Ins.this, Allsongs.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				intent.putExtra("Search", true);
+				startActivity(intent);
+			}
+		});
+		ImageButton report = (ImageButton) poppyview.findViewById(R.id.imageButton2);
+		report.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				int track = getIntent().getExtras().getInt("track");
+				Intent intent = new Intent(Ins.this, ReportSong.class);
+				if(track == 1){
+					intent.putExtra("report_sub", "Maria");
+					startActivity(intent);
+					}
+				if(track == 2){
+					intent.putExtra("report_sub", "Poprocks And Coke");
+					startActivity(intent);
+					}
+				if(track == 3){
+					intent.putExtra("report_sub", "Longview");
+					startActivity(intent);
+					}
+				if(track == 4){
+					intent.putExtra("report_sub", "Welcome To Paradise");
+					startActivity(intent);
+					}
+				if(track == 5){
+					intent.putExtra("report_sub", "Basket Case");
+					startActivity(intent);
+					}
+				if(track == 6){
+					intent.putExtra("report_sub", "When I Come Around");
+					startActivity(intent);
+					}
+				if(track == 7){
+					intent.putExtra("report_sub", "She");
+					startActivity(intent);
+					}
+				if(track == 8){
+					intent.putExtra("report_sub", "J.A.R. (Jason Andrew Relva)");
+					startActivity(intent);
+					}
+				if(track == 9){
+					intent.putExtra("report_sub", "Geek Stink Breath");
+					startActivity(intent);
+					}
+				if(track == 10){
+					intent.putExtra("report_sub", "Brain Stew");
+					startActivity(intent);
+					}
+				if(track == 11){
+					intent.putExtra("report_sub", "Jaded");
+					startActivity(intent);
+					}
+				if(track == 12){
+					intent.putExtra("report_sub", "Walking Contradiction");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Walking Contradiction");
+					startActivity(intent);
+					}
+				if(track == 14){
+					intent.putExtra("report_sub", "Hitchin' A Ride");
+					startActivity(intent);
+					}
+				if(track == 15){
+					intent.putExtra("report_sub", "Good Riddance (Time Of Your Life)");
+					startActivity(intent);
+					}
+				if(track == 16){
+					intent.putExtra("report_sub", "Redundant");
+					startActivity(intent);
+					}
+				if(track == 17){
+					intent.putExtra("report_sub", "Nice Guys Finish Last");
+					startActivity(intent);
+				}
+				if(track == 18){
+					intent.putExtra("report_sub", "Minority");
+					startActivity(intent);
+				}
+				if(track == 19){
+					intent.putExtra("report_sub", "Warning");
+					startActivity(intent);
+					}
+				if(track == 20){
+					intent.putExtra("report_sub", "Waiting");
+					startActivity(intent);
+					}
+				if(track == 21){
+					intent.putExtra("report_sub", "Macy's Day Parade");
+					startActivity(intent);
+					}
+			}
+		});
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		label.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				int track = getIntent().getExtras().getInt("track");
+				if(track == 1){
+					Info.info1(Ins.this);
+				}
+				if(track == 2){
+					Info.info2(Ins.this);
+				}
+				if(track == 3){
+					Info.info3(Ins.this);
+				}
+				if(track == 4){
+					Info.info4(Ins.this);
+				}
+				if(track == 5){
+					Info.info5(Ins.this);
+				}
+				if(track == 6){
+					Info.info6(Ins.this);
+				}
+				if(track == 7){
+					Info.info7(Ins.this);
+				}
+				if(track == 8){
+					Info.info8(Ins.this);
+				}
+				if(track == 9){
+					Info.info9(Ins.this);
+				}
+				if(track == 10){
+					Info.info10(Ins.this);
+				}
+				if(track == 11){
+					Info.info11(Ins.this);
+				}
+				if(track == 12){
+					Info.info12(Ins.this);
+				}
+				if(track == 13){
+					Info.info13(Ins.this);
+				}
+				if(track == 14){
+					Info.info14(Ins.this);
+				}
+				if(track == 15){
+					Info.info15(Ins.this);
+				}
+				if(track == 16){
+					Info.info16(Ins.this);
+				}
+				if(track == 17){
+					Info.info17(Ins.this);
+				}
+				if(track == 18){
+					Info.info18(Ins.this);
+				}
+				if(track == 19){
+					Info.info19(Ins.this);
+				}
+				if(track == 20){
+					Info.info20(Ins.this);
+				}
+				if(track == 21){
+					Info.info21(Ins.this);
+				}
+			}
+		});
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		settings.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent(getApplicationContext(), Settings.class));
+			}
+		});
+		//Poppyview
 		
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
@@ -178,7 +380,6 @@ public class Ins extends Activity {
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_song, menu);
         return true;
     }
 	
@@ -193,176 +394,6 @@ public class Ins extends Activity {
 		default:
 
 		};
-		if(item.getItemId()==R.id.settings)
-		{
-			startActivity(new Intent(getApplicationContext(), Settings.class));
-		}
-		if(item.getItemId()==R.id.reportsong)
-		{
-			int track = getIntent().getExtras().getInt("track");
-			Intent intent = new Intent(this, ReportSong.class);
-			if(track == 1){
-				intent.putExtra("report_sub", "Maria");
-				startActivity(intent);
-				}
-			if(track == 2){
-				intent.putExtra("report_sub", "Poprocks And Coke");
-				startActivity(intent);
-				}
-			if(track == 3){
-				intent.putExtra("report_sub", "Longview");
-				startActivity(intent);
-				}
-			if(track == 4){
-				intent.putExtra("report_sub", "Welcome To Paradise");
-				startActivity(intent);
-				}
-			if(track == 5){
-				intent.putExtra("report_sub", "Basket Case");
-				startActivity(intent);
-				}
-			if(track == 6){
-				intent.putExtra("report_sub", "When I Come Around");
-				startActivity(intent);
-				}
-			if(track == 7){
-				intent.putExtra("report_sub", "She");
-				startActivity(intent);
-				}
-			if(track == 8){
-				intent.putExtra("report_sub", "J.A.R. (Jason Andrew Relva)");
-				startActivity(intent);
-				}
-			if(track == 9){
-				intent.putExtra("report_sub", "Geek Stink Breath");
-				startActivity(intent);
-				}
-			if(track == 10){
-				intent.putExtra("report_sub", "Brain Stew");
-				startActivity(intent);
-				}
-			if(track == 11){
-				intent.putExtra("report_sub", "Jaded");
-				startActivity(intent);
-				}
-			if(track == 12){
-				intent.putExtra("report_sub", "Walking Contradiction");
-				startActivity(intent);
-				}
-			if(track == 13){
-				intent.putExtra("report_sub", "Walking Contradiction");
-				startActivity(intent);
-				}
-			if(track == 14){
-				intent.putExtra("report_sub", "Hitchin' A Ride");
-				startActivity(intent);
-				}
-			if(track == 15){
-				intent.putExtra("report_sub", "Good Riddance (Time Of Your Life)");
-				startActivity(intent);
-				}
-			if(track == 16){
-				intent.putExtra("report_sub", "Redundant");
-				startActivity(intent);
-				}
-			if(track == 17){
-				intent.putExtra("report_sub", "Nice Guys Finish Last");
-				startActivity(intent);
-			}
-			if(track == 18){
-				intent.putExtra("report_sub", "Minority");
-				startActivity(intent);
-			}
-			if(track == 19){
-				intent.putExtra("report_sub", "Warning");
-				startActivity(intent);
-				}
-			if(track == 20){
-				intent.putExtra("report_sub", "Waiting");
-				startActivity(intent);
-				}
-			if(track == 21){
-				intent.putExtra("report_sub", "Macy's Day Parade");
-				startActivity(intent);
-				}
-		}
-		if(item.getItemId()==R.id.action_search)
-		{
-			// Search action | Add as new task
-			Intent intent = new Intent(this, Allsongs.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
-			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			intent.putExtra("Search", true);
-			startActivity(intent);
-			return true;
-		}
-		if(item.getItemId()==R.id.action_label)
-		{
-			int track = getIntent().getExtras().getInt("track");
-			if(track == 1){
-				Info.info1(this);
-			}
-			if(track == 2){
-				Info.info2(this);
-			}
-			if(track == 3){
-				Info.info3(this);
-			}
-			if(track == 4){
-				Info.info4(this);
-			}
-			if(track == 5){
-				Info.info5(this);
-			}
-			if(track == 6){
-				Info.info6(this);
-			}
-			if(track == 7){
-				Info.info7(this);
-			}
-			if(track == 8){
-				Info.info8(this);
-			}
-			if(track == 9){
-				Info.info9(this);
-			}
-			if(track == 10){
-				Info.info10(this);
-			}
-			if(track == 11){
-				Info.info11(this);
-			}
-			if(track == 12){
-				Info.info12(this);
-			}
-			if(track == 13){
-				Info.info13(this);
-			}
-			if(track == 14){
-				Info.info14(this);
-			}
-			if(track == 15){
-				Info.info15(this);
-			}
-			if(track == 16){
-				Info.info16(this);
-			}
-			if(track == 17){
-				Info.info17(this);
-			}
-			if(track == 18){
-				Info.info18(this);
-			}
-			if(track == 19){
-				Info.info19(this);
-			}
-			if(track == 20){
-				Info.info20(this);
-			}
-			if(track == 21){
-				Info.info21(this);
-			}
-		}
 	            return super.onOptionsItemSelected(item);
 	}
 }

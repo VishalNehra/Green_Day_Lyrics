@@ -61,97 +61,82 @@
         android:finishOnTaskLaunch="true" 
         android:screenOrientation="portrait" />
         
-        <!-- Songs -->
+        <!-- Albums -->
         
         <!-- American Idiot -->
         <activity android:name="com.greenday.americanidiot.AmericanIdiotMain"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
              ></activity>
     	
         <!-- UNO -->
         <activity android:name="com.greenday.uno.Uno"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
              ></activity>
         
         <!-- DOS -->
         <activity android:name="com.greenday.dos.Dos"
-            android:uiOptions="splitActionBarWhenNarrow"
             android:screenOrientation="portrait"
             ></activity>
         
         <!-- TRE -->
         <activity android:name="com.greenday.tre.Tre"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
         	 ></activity>
         
         <!-- 21st centuary breakdown -->
         <activity android:name="com.greenday.tcb.TcbMain"
-	        android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
         	 ></activity>
         
         <!-- Shenanigans -->
         <activity android:name="com.greenday.shenanigans.Shenanigans"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
         	 ></activity>
         
         <!-- Warning -->
         <activity android:name="com.greenday.warning.WarningMain"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 		     ></activity>
 	    
 	    <!-- Nimrod -->
 	    <activity android:name="com.greenday.nimrod.Nimrod"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 	         ></activity>
 	    
 	    <!-- Insomniac -->
 	    <activity android:name="com.greenday.insomniac.Insomniac"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 	         ></activity>
 	    
 	    <!-- Dookie -->
 	    
 	    <activity android:name="com.greenday.dookie.Dookie"
-	        android:uiOptions="splitActionBarWhenNarrow"
 	        android:screenOrientation="portrait"
 	        ></activity>
 	    
 	    <!-- Kerplunk -->
 	    <activity android:name="com.greenday.kerplunk.Kerplunk"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 	         ></activity>
 	    
 	    <!-- International Superhits -->
 	    <activity android:name="com.greenday.ins.Ins"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 	         ></activity>
 	    
 	    <!-- 39/Smooth -->
 	    <activity android:name="com.greenday.tns.Tns"
-        	android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait"
 	         ></activity>
 	    
 	    <!-- Unreleased -->
 	    
 	    <activity android:name="com.greenday.unreleased.Unreleased"
-            android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait" />
 	    
 	    <!-- Demolicious -->
 	    
 	    <activity android:name="com.greenday.demolicious.Demolicious"
-            android:uiOptions="splitActionBarWhenNarrow"
         	android:screenOrientation="portrait" />
 	    
         <!-- for second actionbar-  android:uiOptions="splitActionBarWhenNarrow"

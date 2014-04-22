@@ -1,5 +1,7 @@
 package com.greenday.unreleased;
 
+import com.fourmob.poppyview.PoppyViewHelper;
+import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
@@ -18,9 +20,14 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Unreleased extends Activity {
+	
+	private PoppyViewHelper mPoppyViewHelper;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,425 @@ public class Unreleased extends Activity {
 				
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.unreleased);
+		
+		//Poppyview
+		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
+		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
+		
+		ImageButton search = (ImageButton) poppyview.findViewById(R.id.imageButton1);
+		search.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				// Search action | Add as new task
+				Intent intent = new Intent(Unreleased.this, Allsongs.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				intent.putExtra("Search", true);
+				startActivity(intent);
+			}
+		});
+		ImageButton report = (ImageButton) poppyview.findViewById(R.id.imageButton2);
+		report.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				int track = getIntent().getExtras().getInt("track");
+				Intent intent = new Intent(Unreleased.this, ReportSong.class);
+				if(track == 1){
+					intent.putExtra("report_sub", "A Quick One While He's Away");
+					startActivity(intent);
+					}
+				if(track == 2){
+					intent.putExtra("report_sub", "Angel and the Jerk");
+					startActivity(intent);
+					}
+				if(track == 3){
+					intent.putExtra("report_sub", "Another State Of Mind");
+					startActivity(intent);
+					}
+				if(track == 4){
+					intent.putExtra("report_sub", "Billie Joe's Mom");
+					startActivity(intent);
+					}
+				if(track == 5){
+					intent.putExtra("report_sub", "Boys in the Bathroom Stall");
+					startActivity(intent);
+					}
+				if(track == 6){
+					intent.putExtra("report_sub", "Can't Make Love");
+					startActivity(intent);
+					}
+				if(track == 7){
+					intent.putExtra("report_sub", "Chocolate Rain");
+					startActivity(intent);
+					}
+				if(track == 8){
+					intent.putExtra("report_sub", "Cigarettes And Valentines");
+					startActivity(intent);
+					}
+				if(track == 9){
+					intent.putExtra("report_sub", "D.U.I.");
+					startActivity(intent);
+					}
+				if(track == 10){
+					intent.putExtra("report_sub", "Depression Times");
+					startActivity(intent);
+					}
+				if(track == 11){
+					intent.putExtra("report_sub", "Don't Want to Know If You Are Lonely");
+					startActivity(intent);
+					}
+				if(track == 12){
+					intent.putExtra("report_sub", "Dream Catcher");
+					startActivity(intent);
+					}
+				if(track == 13){
+					intent.putExtra("report_sub", "Favourite Son");
+					startActivity(intent);
+					}
+				if(track == 14){
+					intent.putExtra("report_sub", "Food Around the Corner");
+					startActivity(intent);
+					}
+				if(track == 15){
+					intent.putExtra("report_sub", "Governator");
+					startActivity(intent);
+					}
+				if(track == 16){
+					intent.putExtra("report_sub", "Hearts Collide");
+					startActivity(intent);
+					}
+				if(track == 17){
+					intent.putExtra("report_sub", "Hybrid Moments");
+					startActivity(intent);
+				}
+				if(track == 18){
+					intent.putExtra("report_sub", "I Fought The Law");
+					startActivity(intent);
+				}
+				if(track == 19){
+					intent.putExtra("report_sub", "I Run NY");
+					startActivity(intent);
+					}
+				if(track == 20){
+					intent.putExtra("report_sub", "Jennifer");
+					startActivity(intent);
+					}
+				if(track == 21){
+					intent.putExtra("report_sub", "Lights Out");
+					startActivity(intent);
+					}
+				if(track == 22){
+					intent.putExtra("report_sub", "Like A Rolling Stone");
+					startActivity(intent);
+					}
+				if(track == 23){
+					intent.putExtra("report_sub", "Like a Rat Does Cheese");
+					startActivity(intent);
+					}
+				if(track == 24){
+					intent.putExtra("report_sub", "Look For Love");
+					startActivity(intent);
+					}
+				if(track == 25){
+					intent.putExtra("report_sub", "Maybe Forever");
+					startActivity(intent);
+					}
+				if(track == 26){
+					intent.putExtra("report_sub", "Mechanical Man");
+					startActivity(intent);
+					}
+				if(track == 27){
+					intent.putExtra("report_sub", "Midwest Medley");
+					startActivity(intent);
+					}
+				if(track == 28){
+					intent.putExtra("report_sub", "Minnesota Girl");
+					startActivity(intent);
+					}
+				if(track == 29){
+					intent.putExtra("report_sub", "Oh Girl");
+					startActivity(intent);
+					}
+				if(track == 30){
+					intent.putExtra("report_sub", "Olivia");
+					startActivity(intent);
+					}
+				if(track == 31){
+					intent.putExtra("report_sub", "Private Hell");
+					startActivity(intent);
+					}
+				if(track == 32){
+					intent.putExtra("report_sub", "Radio");
+					startActivity(intent);
+					}
+				if(track == 33){
+					intent.putExtra("report_sub", "Second Time Around");
+					startActivity(intent);
+					}
+				if(track == 34){
+					intent.putExtra("report_sub", "Shoplifter");
+					startActivity(intent);
+					}
+				if(track == 35){
+					intent.putExtra("report_sub", "Shout");
+					startActivity(intent);
+				}
+				if(track == 36){
+					intent.putExtra("report_sub", "State of Shock");
+					startActivity(intent);
+				}
+				if(track == 37){
+					intent.putExtra("report_sub", "Supermarket");
+					startActivity(intent);
+					}
+				if(track == 38){
+					intent.putExtra("report_sub", "Teenage Lobotomy");
+					startActivity(intent);
+					}
+				if(track == 39){
+					intent.putExtra("report_sub", "That's All Right");
+					startActivity(intent);
+					}
+				if(track == 40){
+					intent.putExtra("report_sub", "The Ballad of Wilhelm Fink");
+					startActivity(intent);
+					}
+				if(track == 41){
+					intent.putExtra("report_sub", "The Saints Are Coming");
+					startActivity(intent);
+					}
+				if(track == 42){
+					intent.putExtra("report_sub", "The Simpsons Theme");
+					startActivity(intent);
+					}
+				if(track == 43){
+					intent.putExtra("report_sub", "The Things I Heard Today");
+					startActivity(intent);
+					}
+				if(track == 44){
+					intent.putExtra("report_sub", "Too Much, Too Soon");
+					startActivity(intent);
+					}
+				if(track == 45){
+					intent.putExtra("report_sub", "Walking the Dog");
+					startActivity(intent);
+					}
+				if(track == 46){
+					intent.putExtra("report_sub", "We Are The Champions");
+					startActivity(intent);
+					}
+				if(track == 47){
+					intent.putExtra("report_sub", "What About Today?");
+					startActivity(intent);
+					}
+				if(track == 48){
+					intent.putExtra("report_sub", "When It's Time");
+					startActivity(intent);
+					}
+				if(track == 49){
+					intent.putExtra("report_sub", "When Will I Be Loved");
+					startActivity(intent);
+					}
+				if(track == 50){
+					intent.putExtra("report_sub", "Why Does It Always Rain on Me?");
+					startActivity(intent);
+					}
+				if(track == 51){
+					intent.putExtra("report_sub", "Working Class Hero");
+					startActivity(intent);
+					}
+				if(track == 52){
+					intent.putExtra("report_sub", "World Vs. World");
+					startActivity(intent);
+				}
+				if(track == 53){
+					intent.putExtra("report_sub", "You Can't Fool Me");
+					startActivity(intent);
+				}
+			}
+		});
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		label.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				int track = getIntent().getExtras().getInt("track");
+				if(track == 1){
+					Info.info1(Unreleased.this);
+				}
+				if(track == 2){
+					Info.info2(Unreleased.this);
+				}
+				if(track == 3){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 4){
+					Info.info4(Unreleased.this);
+				}
+				if(track == 5){
+					Info.info5(Unreleased.this);
+				}
+				if(track == 6){
+					Info.info6(Unreleased.this);
+				}
+				if(track == 7){
+					Info.info7(Unreleased.this);
+				}
+				if(track == 8){
+					Info.info8(Unreleased.this);
+				}
+				if(track == 9){
+					Info.info9(Unreleased.this);
+				}
+				if(track == 10){
+					Info.info10(Unreleased.this);
+				}
+				if(track == 11){
+					Info.info11(Unreleased.this);
+				}
+				if(track == 12){
+					Info.info12(Unreleased.this);
+				}
+				if(track == 13){
+					Info.info13(Unreleased.this);
+				}
+				if(track == 14){
+					Info.info14(Unreleased.this);
+				}
+				if(track == 15){
+					Info.info15(Unreleased.this);
+				}
+				if(track == 16){
+					Info.info16(Unreleased.this);
+				}
+				if(track == 17){
+					Info.info17(Unreleased.this);
+				}
+				if(track == 18){
+					Info.info18(Unreleased.this);
+				}
+				if(track == 19){
+					Info.info19(Unreleased.this);
+				}
+				if(track == 20){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 21){
+					Info.info21(Unreleased.this);
+				}
+				if(track == 22){
+					Info.info22(Unreleased.this);
+				}
+				if(track == 23){
+					Info.info23(Unreleased.this);
+				}
+				if(track == 24){
+					Info.info24(Unreleased.this);
+				}
+				if(track == 25){
+					Info.info25(Unreleased.this);
+				}
+				if(track == 26){
+					Info.info26(Unreleased.this);
+				}
+				if(track == 27){
+					Info.info27(Unreleased.this);
+				}
+				if(track == 28){
+					Info.info28(Unreleased.this);
+				}
+				if(track == 29){
+					Info.info29(Unreleased.this);
+				}
+				if(track == 30){
+					Info.info30(Unreleased.this);
+				}
+				if(track == 31){
+					Info.info31(Unreleased.this);
+				}
+				if(track == 32){
+					Info.info32(Unreleased.this);
+				}
+				if(track == 33){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 34){
+					Info.info34(Unreleased.this);
+				}
+				if(track == 35){
+					Info.info35(Unreleased.this);
+				}
+				if(track == 36){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 37){
+					Info.info37(Unreleased.this);
+				}
+				if(track == 38){
+					Info.info38(Unreleased.this);
+				}
+				if(track == 39){
+					Info.info39(Unreleased.this);
+				}
+				if(track == 40){
+					Info.info40(Unreleased.this);
+				}
+				if(track == 41){
+					Info.info41(Unreleased.this);
+				}
+				if(track == 42){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 43){
+					Info.info43(Unreleased.this);
+				}
+				if(track == 44){
+					Info.info44(Unreleased.this);
+				}
+				if(track == 45){
+					Info.info45(Unreleased.this);
+				}
+				if(track == 46){
+					Info.info46(Unreleased.this);
+				}
+				if(track == 47){
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+				}
+				if(track == 48){
+					Info.info48(Unreleased.this);
+				}
+				if(track == 49){
+					Info.info49(Unreleased.this);
+				}
+				if(track == 50){
+					Info.info50(Unreleased.this);
+				}
+				if(track == 51){
+					Info.info51(Unreleased.this);
+				}
+				if(track == 52){
+					Info.info52(Unreleased.this);
+				}
+				if(track == 53){
+					Info.info53(Unreleased.this);
+				}
+			}
+		});
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		settings.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent(getApplicationContext(), Settings.class));
+			}
+		});
+		//Poppyview
 		
 		TextView tv1 = (TextView)findViewById(R.id.textView1);
 		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
@@ -310,7 +736,6 @@ public class Unreleased extends Activity {
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_song, menu);
         return true;
     }
 	
@@ -325,400 +750,6 @@ public class Unreleased extends Activity {
 		default:
 
 		};
-		if(item.getItemId()==R.id.settings)
-		{
-			startActivity(new Intent(getApplicationContext(), Settings.class));
-		}
-		if(item.getItemId()==R.id.reportsong)
-		{
-			int track = getIntent().getExtras().getInt("track");
-			Intent intent = new Intent(this, ReportSong.class);
-			if(track == 1){
-				intent.putExtra("report_sub", "A Quick One While He's Away");
-				startActivity(intent);
-				}
-			if(track == 2){
-				intent.putExtra("report_sub", "Angel and the Jerk");
-				startActivity(intent);
-				}
-			if(track == 3){
-				intent.putExtra("report_sub", "Another State Of Mind");
-				startActivity(intent);
-				}
-			if(track == 4){
-				intent.putExtra("report_sub", "Billie Joe's Mom");
-				startActivity(intent);
-				}
-			if(track == 5){
-				intent.putExtra("report_sub", "Boys in the Bathroom Stall");
-				startActivity(intent);
-				}
-			if(track == 6){
-				intent.putExtra("report_sub", "Can't Make Love");
-				startActivity(intent);
-				}
-			if(track == 7){
-				intent.putExtra("report_sub", "Chocolate Rain");
-				startActivity(intent);
-				}
-			if(track == 8){
-				intent.putExtra("report_sub", "Cigarettes And Valentines");
-				startActivity(intent);
-				}
-			if(track == 9){
-				intent.putExtra("report_sub", "D.U.I.");
-				startActivity(intent);
-				}
-			if(track == 10){
-				intent.putExtra("report_sub", "Depression Times");
-				startActivity(intent);
-				}
-			if(track == 11){
-				intent.putExtra("report_sub", "Don't Want to Know If You Are Lonely");
-				startActivity(intent);
-				}
-			if(track == 12){
-				intent.putExtra("report_sub", "Dream Catcher");
-				startActivity(intent);
-				}
-			if(track == 13){
-				intent.putExtra("report_sub", "Favourite Son");
-				startActivity(intent);
-				}
-			if(track == 14){
-				intent.putExtra("report_sub", "Food Around the Corner");
-				startActivity(intent);
-				}
-			if(track == 15){
-				intent.putExtra("report_sub", "Governator");
-				startActivity(intent);
-				}
-			if(track == 16){
-				intent.putExtra("report_sub", "Hearts Collide");
-				startActivity(intent);
-				}
-			if(track == 17){
-				intent.putExtra("report_sub", "Hybrid Moments");
-				startActivity(intent);
-			}
-			if(track == 18){
-				intent.putExtra("report_sub", "I Fought The Law");
-				startActivity(intent);
-			}
-			if(track == 19){
-				intent.putExtra("report_sub", "I Run NY");
-				startActivity(intent);
-				}
-			if(track == 20){
-				intent.putExtra("report_sub", "Jennifer");
-				startActivity(intent);
-				}
-			if(track == 21){
-				intent.putExtra("report_sub", "Lights Out");
-				startActivity(intent);
-				}
-			if(track == 22){
-				intent.putExtra("report_sub", "Like A Rolling Stone");
-				startActivity(intent);
-				}
-			if(track == 23){
-				intent.putExtra("report_sub", "Like a Rat Does Cheese");
-				startActivity(intent);
-				}
-			if(track == 24){
-				intent.putExtra("report_sub", "Look For Love");
-				startActivity(intent);
-				}
-			if(track == 25){
-				intent.putExtra("report_sub", "Maybe Forever");
-				startActivity(intent);
-				}
-			if(track == 26){
-				intent.putExtra("report_sub", "Mechanical Man");
-				startActivity(intent);
-				}
-			if(track == 27){
-				intent.putExtra("report_sub", "Midwest Medley");
-				startActivity(intent);
-				}
-			if(track == 28){
-				intent.putExtra("report_sub", "Minnesota Girl");
-				startActivity(intent);
-				}
-			if(track == 29){
-				intent.putExtra("report_sub", "Oh Girl");
-				startActivity(intent);
-				}
-			if(track == 30){
-				intent.putExtra("report_sub", "Olivia");
-				startActivity(intent);
-				}
-			if(track == 31){
-				intent.putExtra("report_sub", "Private Hell");
-				startActivity(intent);
-				}
-			if(track == 32){
-				intent.putExtra("report_sub", "Radio");
-				startActivity(intent);
-				}
-			if(track == 33){
-				intent.putExtra("report_sub", "Second Time Around");
-				startActivity(intent);
-				}
-			if(track == 34){
-				intent.putExtra("report_sub", "Shoplifter");
-				startActivity(intent);
-				}
-			if(track == 35){
-				intent.putExtra("report_sub", "Shout");
-				startActivity(intent);
-			}
-			if(track == 36){
-				intent.putExtra("report_sub", "State of Shock");
-				startActivity(intent);
-			}
-			if(track == 37){
-				intent.putExtra("report_sub", "Supermarket");
-				startActivity(intent);
-				}
-			if(track == 38){
-				intent.putExtra("report_sub", "Teenage Lobotomy");
-				startActivity(intent);
-				}
-			if(track == 39){
-				intent.putExtra("report_sub", "That's All Right");
-				startActivity(intent);
-				}
-			if(track == 40){
-				intent.putExtra("report_sub", "The Ballad of Wilhelm Fink");
-				startActivity(intent);
-				}
-			if(track == 41){
-				intent.putExtra("report_sub", "The Saints Are Coming");
-				startActivity(intent);
-				}
-			if(track == 42){
-				intent.putExtra("report_sub", "The Simpsons Theme");
-				startActivity(intent);
-				}
-			if(track == 43){
-				intent.putExtra("report_sub", "The Things I Heard Today");
-				startActivity(intent);
-				}
-			if(track == 44){
-				intent.putExtra("report_sub", "Too Much, Too Soon");
-				startActivity(intent);
-				}
-			if(track == 45){
-				intent.putExtra("report_sub", "Walking the Dog");
-				startActivity(intent);
-				}
-			if(track == 46){
-				intent.putExtra("report_sub", "We Are The Champions");
-				startActivity(intent);
-				}
-			if(track == 47){
-				intent.putExtra("report_sub", "What About Today?");
-				startActivity(intent);
-				}
-			if(track == 48){
-				intent.putExtra("report_sub", "When It's Time");
-				startActivity(intent);
-				}
-			if(track == 49){
-				intent.putExtra("report_sub", "When Will I Be Loved");
-				startActivity(intent);
-				}
-			if(track == 50){
-				intent.putExtra("report_sub", "Why Does It Always Rain on Me?");
-				startActivity(intent);
-				}
-			if(track == 51){
-				intent.putExtra("report_sub", "Working Class Hero");
-				startActivity(intent);
-				}
-			if(track == 52){
-				intent.putExtra("report_sub", "World Vs. World");
-				startActivity(intent);
-			}
-			if(track == 53){
-				intent.putExtra("report_sub", "You Can't Fool Me");
-				startActivity(intent);
-			}
-		}
-		if(item.getItemId()==R.id.action_search)
-		{
-			// Search action | Add as new task
-			Intent intent = new Intent(this, Allsongs.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
-			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			intent.putExtra("Search", true);
-			startActivity(intent);
-			return true;
-		}
-		if(item.getItemId()==R.id.action_label)
-		{
-			int track = getIntent().getExtras().getInt("track");
-			if(track == 1){
-				Info.info1(this);
-			}
-			if(track == 2){
-				Info.info2(this);
-			}
-			if(track == 3){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 4){
-				Info.info4(this);
-			}
-			if(track == 5){
-				Info.info5(this);
-			}
-			if(track == 6){
-				Info.info6(this);
-			}
-			if(track == 7){
-				Info.info7(this);
-			}
-			if(track == 8){
-				Info.info8(this);
-			}
-			if(track == 9){
-				Info.info9(this);
-			}
-			if(track == 10){
-				Info.info10(this);
-			}
-			if(track == 11){
-				Info.info11(this);
-			}
-			if(track == 12){
-				Info.info12(this);
-			}
-			if(track == 13){
-				Info.info13(this);
-			}
-			if(track == 14){
-				Info.info14(this);
-			}
-			if(track == 15){
-				Info.info15(this);
-			}
-			if(track == 16){
-				Info.info16(this);
-			}
-			if(track == 17){
-				Info.info17(this);
-			}
-			if(track == 18){
-				Info.info18(this);
-			}
-			if(track == 19){
-				Info.info19(this);
-			}
-			if(track == 20){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 21){
-				Info.info21(this);
-			}
-			if(track == 22){
-				Info.info22(this);
-			}
-			if(track == 23){
-				Info.info23(this);
-			}
-			if(track == 24){
-				Info.info24(this);
-			}
-			if(track == 25){
-				Info.info25(this);
-			}
-			if(track == 26){
-				Info.info26(this);
-			}
-			if(track == 27){
-				Info.info27(this);
-			}
-			if(track == 28){
-				Info.info28(this);
-			}
-			if(track == 29){
-				Info.info29(this);
-			}
-			if(track == 30){
-				Info.info30(this);
-			}
-			if(track == 31){
-				Info.info31(this);
-			}
-			if(track == 32){
-				Info.info32(this);
-			}
-			if(track == 33){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 34){
-				Info.info34(this);
-			}
-			if(track == 35){
-				Info.info35(this);
-			}
-			if(track == 36){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 37){
-				Info.info37(this);
-			}
-			if(track == 38){
-				Info.info38(this);
-			}
-			if(track == 39){
-				Info.info39(this);
-			}
-			if(track == 40){
-				Info.info40(this);
-			}
-			if(track == 41){
-				Info.info41(this);
-			}
-			if(track == 42){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 43){
-				Info.info43(this);
-			}
-			if(track == 44){
-				Info.info44(this);
-			}
-			if(track == 45){
-				Info.info45(this);
-			}
-			if(track == 46){
-				Info.info46(this);
-			}
-			if(track == 47){
-				Crouton.makeText(this, "Info. not available.", Style.ALERT).show();
-			}
-			if(track == 48){
-				Info.info48(this);
-			}
-			if(track == 49){
-				Info.info49(this);
-			}
-			if(track == 50){
-				Info.info50(this);
-			}
-			if(track == 51){
-				Info.info51(this);
-			}
-			if(track == 52){
-				Info.info52(this);
-			}
-			if(track == 53){
-				Info.info53(this);
-			}
-		}
 	            return super.onOptionsItemSelected(item);
 	}
 }

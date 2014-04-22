@@ -6,7 +6,8 @@
         <item name="android:listChoiceBackgroundIndicator">@drawable/default_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/default_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_default_drawer</item>
-        <item name="color_counter">@drawable/ab_background_default_split</item>
+        <item name="color_counter">@drawable/ab_background_default_drawer</item>
+        <item name="poppy">@color/poppy_default</item>
     </style>
 
     <style name="Theme.Light" parent="@android:style/Theme.Holo.Light">
@@ -14,6 +15,7 @@
         <item name="android:listChoiceBackgroundIndicator">@drawable/light_list_selector</item>
         <item name="android:activatedBackgroundIndicator">@drawable/light_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_light_drawer</item>
+        <item name="poppy">@color/poppy_light</item>
     </style>
     
     <style name="Theme.Lime" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -22,6 +24,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/lime_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_lime_drawer</item>
         <item name="color_counter">@drawable/ab_background_lime</item>
+        <item name="poppy">@color/poppy_lime</item>
     </style>
     
     <style name="Theme.DarkSky" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -30,6 +33,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/darksky_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_darksky_drawer</item>
         <item name="color_counter">@drawable/ab_background_darksky</item>
+        <item name="poppy">@color/poppy_darksky</item>
     </style>
     
     <style name="Theme.Rose" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -38,6 +42,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/rose_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_rose_drawer</item>
         <item name="color_counter">@drawable/ab_background_rose</item>
+        <item name="poppy">@color/poppy_rose</item>
     </style>
     
     <style name="Theme.Mojo" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -46,6 +51,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/mojo_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_mojo_drawer</item>
         <item name="color_counter">@drawable/ab_background_mojo</item>
+        <item name="poppy">@color/poppy_mojo</item>
     </style>
     
     <style name="Theme.Saffron" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -54,6 +60,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/saffron_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_saffron_drawer</item>
         <item name="color_counter">@drawable/ab_background_saffron</item>
+        <item name="poppy">@color/poppy_saffron</item>
     </style>
     
     <style name="Theme.Frooti" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -62,6 +69,7 @@
         <item name="android:activatedBackgroundIndicator">@drawable/frooti_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_frooti_drawer</item>
         <item name="color_counter">@drawable/ab_background_frooti</item>
+        <item name="poppy">@color/poppy_frooti</item>
     </style>
     
     <style name="Theme.Lavender" parent="@android:style/Theme.Holo.Light.DarkActionBar">
@@ -70,5 +78,6 @@
         <item name="android:activatedBackgroundIndicator">@drawable/lavender_activated_background</item>
         <item name="color_drawer">@drawable/ab_background_lavender_drawer</item>
         <item name="color_counter">@drawable/ab_background_lavender</item>
+        <item name="poppy">@color/poppy_lavender</item>
     </style>
 </resources>
