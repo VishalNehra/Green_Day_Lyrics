@@ -66,6 +66,7 @@
         <!-- American Idiot -->
         <activity android:name="com.greenday.americanidiot.AmericanIdiotMain"
         	android:screenOrientation="portrait"
+        	android:theme="@style/americanidiot_theme"
              ></activity>
     	
         <!-- UNO -->

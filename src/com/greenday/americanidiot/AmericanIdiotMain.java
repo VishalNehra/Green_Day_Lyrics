@@ -31,6 +31,7 @@ public class AmericanIdiotMain extends Activity {
 		// TODO Auto-generated method stub
 		//Set theme must be used before super.oncreate or any other layout declaration
 		Util.setAppTheme(this);
+		setTheme(R.style.americanidiot_theme);
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot);

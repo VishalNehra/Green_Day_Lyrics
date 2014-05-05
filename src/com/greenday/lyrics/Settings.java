@@ -364,6 +364,7 @@ public class Settings extends PreferenceActivity {
 		mDisplay.setEnabled(true);
 		
 		//Text Size
+		//Only god knows how this work
 		mText = findPreference("text");
 		mText.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
@@ -395,6 +396,8 @@ public class Settings extends PreferenceActivity {
 						// TODO Auto-generated method stub
 						TextView tv = (TextView) layout.findViewById(R.id.textView1);
 						tv.setTextSize((progress*1/4)+10);
+						TextView tv2= (TextView) layout.findViewById(R.id.textView2);
+						tv2.setText((progress*3/2)+30 + " %");
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 						sp.edit().putInt("text", (progress*1/4)+10).commit();
 						sp.edit().putInt("def_text_seek", (progress*1/4)+10).commit();

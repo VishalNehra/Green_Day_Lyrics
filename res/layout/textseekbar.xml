@@ -23,6 +23,14 @@
         android:text="@string/text_sample"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
     <view
         android:id="@+id/view1"
         android:layout_width="wrap_content"
@@ -41,7 +49,7 @@
     <view
         android:id="@+id/view2"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/checkBox1"
         android:layout_toRightOf="@+id/view1"
         class="RelativeLayout" />

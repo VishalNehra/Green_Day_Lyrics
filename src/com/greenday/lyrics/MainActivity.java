@@ -112,7 +112,8 @@ public class MainActivity extends Activity {
             sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
             	 @Override
             	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
-            	        //The view is hidden/dismissed
+            	     //The view is hidden/dismissed
+            		 //RelativeLayout v = new RelativeLayout(MainActivity.this);
             		 Crouton.makeText(MainActivity.this, "Please report if you find any incorrect lyrics.", Style.INFO).show();
             	    }
 

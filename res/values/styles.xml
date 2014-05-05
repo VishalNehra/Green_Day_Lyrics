@@ -39,5 +39,10 @@
     <style name="Lavender.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background_lavender</item>
     </style>
+    
+    <!-- Testing -->
+    <style name="americanidiot_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/americanidiot_cover2</item>
+    </style>
 
 </resources>
