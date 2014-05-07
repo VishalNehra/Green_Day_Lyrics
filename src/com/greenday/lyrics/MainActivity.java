@@ -27,6 +27,7 @@ import java.util.ArrayList;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -35,6 +36,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -69,27 +72,21 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	
-		//Setting default theme on firstboot
-    	boolean firstboot_theme = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_theme", true);
-
-        if (firstboot_theme){
-        	//Setting default theme
-        	SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-    		sp.edit().putString("themechooser", "0").commit();
-    		
-    		getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
-            .edit()
-            .putBoolean("firstboot_theme", false)
-            .commit();
-        }
-        else
-        {
-        	//Set theme must be used before super.oncreate or any other layout declaration!
-        	Util.setAppTheme(this);
-        }
-        
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        //Nav. Drawer Listview background
+        int nav_def_color= Color.parseColor("#222222");
+        int nav_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", nav_def_color);
+        ListView lv=(ListView) findViewById(R.id.list_slidermenu);
+        lv.setBackgroundColor(nav_color);
+        
+        //Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ActionBar ab =getActionBar();
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+        
         mTitle = mDrawerTitle = getTitle();
         
         //Boot_pref

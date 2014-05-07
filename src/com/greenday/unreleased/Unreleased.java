@@ -6,7 +6,6 @@ import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
-import com.greenday.lyrics.Util;
 import com.greenday.unreleased.Info;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -16,6 +15,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -32,15 +32,31 @@ public class Unreleased extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Set theme must be used before super.oncreate or any other layout declaration
-		Util.setAppTheme(this);
-				
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.unreleased);
+		
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ActionBar ab =getActionBar();
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+        
+        //Text Size
+		TextView tv1 = (TextView)findViewById(R.id.textView1);
+		int text_size = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
+		tv1.setTextSize(text_size);
+		
+		//Text Color
+		int text_def_color= Color.parseColor("#222222");
+        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
+        tv1.setTextColor(text_color);
 		
 		//Poppyview
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
 		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
+		int poppy_def_color=Color.parseColor("#222222");
+		int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
+		poppyview.setBackgroundColor(poppy_color);
 		
 		ImageButton search = (ImageButton) poppyview.findViewById(R.id.imageButton1);
 		search.setOnClickListener(new OnClickListener() {
@@ -456,59 +472,9 @@ public class Unreleased extends Activity {
 			}
 		});
 		//Poppyview
-		
-		TextView tv1 = (TextView)findViewById(R.id.textView1);
-		int text = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
-		tv1.setTextSize(text);
 
-		//Text theme
-		int themetext = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString("themechooser", null));
-		boolean themetextb = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("themetext", true);
-		if(themetextb){
-			if(themetext==0){
-				//Black
-				tv1.setTextColor(Color.parseColor("#000000"));
-			}
-			else if(themetext==1){
-				//Grey
-				tv1.setTextColor(Color.parseColor("#424242"));
-			}
-			else if(themetext==2){
-				//Lime
-				tv1.setTextColor(Color.parseColor("#669002"));
-			}
-			else if(themetext==3){
-				//Dark Sky
-				tv1.setTextColor(Color.parseColor("#464ea3"));
-			}
-			else if(themetext==4){
-				//Rose
-				tv1.setTextColor(Color.parseColor("#cf2a9b"));
-			}
-			else if(themetext==5){
-				//Mojo
-				tv1.setTextColor(Color.parseColor("#c84741"));
-			}
-			else if(themetext==6){
-				//Saffron
-				tv1.setTextColor(Color.parseColor("#f48935"));
-			}
-			else if(themetext==7){
-				//Frooti
-				tv1.setTextColor(Color.parseColor("#E4A803"));
-			}
-			else if(themetext==8){
-				//Lavender
-				tv1.setTextColor(Color.parseColor("#92278f"));
-			}
-		}
-		else{
-			//Black
-			tv1.setTextColor(Color.parseColor("#000000"));
-		}
-		
+		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
-		ActionBar ab=getActionBar();
 		if(track == 1){
 			ab.setTitle("A Quick One While He's Away");
 			tv1.setText(R.string.quickone);
@@ -731,8 +697,6 @@ public class Unreleased extends Activity {
 			tv1.setKeepScreenOn(true);
 		}
 	}
-	
-	//Action bar code below
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -10,9 +10,12 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,14 +32,16 @@ public class ReportSong extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		//Set theme must be used before super.oncreate or any other layout declaration
-		Util.setAppTheme(this);
-		
 		super.onCreate(savedInstanceState);
-		
 		setContentView(R.layout.reportsong);
+		
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ActionBar ab =getActionBar();
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+        
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		ActionBar ab = getActionBar();
 		ab.setSubtitle(getIntent().getExtras().getString("report_sub"));
 		
 		//Submit class name for report
@@ -104,11 +109,9 @@ public class ReportSong extends Activity {
 		
 	}
 	
-	//Actionbar code
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_report, menu);
-        
         return true;
     }
 	

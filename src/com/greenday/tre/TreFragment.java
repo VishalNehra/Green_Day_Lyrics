@@ -41,7 +41,7 @@ public class TreFragment extends Fragment {
         	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
         	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
         	
-         getActivity();
+        getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
          .edit()
          .putBoolean("firstboot_detail", false)

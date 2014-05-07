@@ -30,7 +30,6 @@ public class AmericanIdiotFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_americanidiot, container, false);
 		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.americanidiot_cover2);
 		
-
 		getActivity();
 		//Boot_pref
         boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
@@ -41,7 +40,7 @@ public class AmericanIdiotFragment extends Fragment{
         	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
         	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
         	
-         getActivity();
+        getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
          .edit()
          .putBoolean("firstboot_detail", false)

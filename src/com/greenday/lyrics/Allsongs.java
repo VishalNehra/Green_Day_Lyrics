@@ -16,6 +16,7 @@ import com.greenday.uno.Uno;
 import com.greenday.warning.WarningMain;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -24,7 +25,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
@@ -53,13 +57,16 @@ public class Allsongs extends Activity {
 	public static final String CMDNEXT = "next";
 	
 	protected void onCreate(Bundle savedInstanceState) {
-    	
-		//Set theme must be used before super.oncreate or any other layout declaration
-		Util.setAppTheme(this);
-
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
+		
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ActionBar ab =getActionBar();
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
@@ -1172,8 +1179,6 @@ public class Allsongs extends Activity {
 			}
 		});
 	}
-	
-		//Action bar code below
 
 		@Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
@@ -1224,10 +1229,10 @@ public class Allsongs extends Activity {
 			}
 		};
 		
-		//To avoid intent leak
 		@Override
 		protected void onDestroy() {
 			// TODO Auto-generated method stub
+			//To avoid intent leak
 			unregisterReceiver(mReceiver);
 			super.onDestroy();
 		}

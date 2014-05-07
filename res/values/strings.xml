@@ -77,15 +77,20 @@
     <string name="greenday_title">Green Day</string>
     <string name="theme_title">Interface</string>
     <string name="themechooser_title">Theme Chooser</string>
-    <string name="themechooser_dialog">Choose a theme</string>
-    <string name="theme_text_title">Theme text color</string>
-    <string name="theme_text_summary">Changes text color acc. to theme</string>
+    <string name="ab_theme_title">Action Bar</string>
+    <string name="ab_theme_summary">Change action bar color on the top</string>
+    <string name="poppy_theme_title">Poppy Bar</string>
+    <string name="poppy_theme_summary">Change background of poppy bar on the bottom</string>
+    <string name="text_theme_title">Lyrics Text</string>
+    <string name="text_theme_summary">Change lyrics text color</string>
+    <string name="nav_theme_title">Navigation Drawer</string>
+    <string name="nav_theme_summary">Change navigation drawer background</string>
     
     <string name="storage_title">Storage</string>
     <string name="cache_title">Clear Cache</string>
     <string name="cache_summary">Clears cache memory</string>
     <string name="hints_title">Review Hints</string>
-    <string name="hints_summary">Missed any instruction? This option is for you</string>
+    <string name="hints_summary">Missed any instruction? This option is for you.</string>
     
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">List of changes in app</string>
@@ -202,6 +207,9 @@
     <!-- Rate Button -->
     <string name="rate_title">Rate the app</string>
     <string name="rate_summary">Please give a good rating :-)</string>
+    
+    <!-- Theme Chooser button -->
+    <string name="theme_button">Apply</string>
     
     <string name="miscellaneous_title">Miscellaneous</string>
     

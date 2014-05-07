@@ -4,13 +4,20 @@
         
         <!-- Theme -->
         <PreferenceCategory android:title="@string/theme_title">
-            <Preference android:title="@string/themechooser_title"
-                android:key="theme" />
-            <CheckBoxPreference 
-                android:key="themetext"
-                android:title="@string/theme_text_title"
-                android:summary="@string/theme_text_summary"
-                android:defaultValue="false"/>
+            <PreferenceScreen android:title="@string/themechooser_title">
+                <Preference android:title="@string/ab_theme_title"
+                    android:summary="@string/ab_theme_summary"
+                    android:key="ab_theme"/>
+                <Preference android:title="@string/poppy_theme_title"
+                    android:summary="@string/poppy_theme_summary"
+                    android:key="poppy_theme"/>
+                <Preference android:title="@string/text_theme_title"
+                    android:summary="@string/text_theme_summary"
+                    android:key="text_theme"/>
+                <Preference android:title="@string/nav_theme_title"
+                    android:summary="@string/nav_theme_summary"
+                    android:key="nav_theme"/>
+                </PreferenceScreen>
                 
         </PreferenceCategory>
         

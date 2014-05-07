@@ -1,5 +1,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 	
+    <!-- Ester Egg || Bean Bag -->
     <style name="Theme.Transparent" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
     <item name="android:windowBackground">@android:color/transparent</item>
@@ -12,37 +13,4 @@
     <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
     <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
     
-    <!-- Themes -->
-    <style name="Default.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <!-- <item name="android:backgroundSplit">@drawable/ab_background_default_split</item>  -->
-    </style>
-    <style name="Light.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-    </style>
-	<style name="Lime.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_lime</item>
-    </style>
-    <style name="DarkSky.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_darksky</item>
-    </style>
-    <style name="Rose.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_rose</item>
-    </style>
-    <style name="Mojo.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_mojo</item>
-    </style>
-    <style name="Saffron.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_saffron</item>
-    </style>
-    <style name="Frooti.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_frooti</item>
-    </style>
-    <style name="Lavender.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_background_lavender</item>
-    </style>
-    
-    <!-- Testing -->
-    <style name="americanidiot_theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
-        <item name="android:windowBackground">@drawable/americanidiot_cover2</item>
-    </style>
-
 </resources>

@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:hardwareAccelerated="true"
         android:name="com.greenday.lyrics.Frontend"
-        android:theme="@style/Theme.Default">
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
         <activity
             android:name="com.greenday.lyrics.MainActivity"
             android:label="@string/app_name" 
@@ -61,12 +61,16 @@
         android:finishOnTaskLaunch="true" 
         android:screenOrientation="portrait" />
         
+        <!-- Theme Chooser -->
+        <activity android:name="com.greenday.lyrics.ThemeChooser"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo"/>
+        
         <!-- Albums -->
         
         <!-- American Idiot -->
         <activity android:name="com.greenday.americanidiot.AmericanIdiotMain"
         	android:screenOrientation="portrait"
-        	android:theme="@style/americanidiot_theme"
              ></activity>
     	
         <!-- UNO -->

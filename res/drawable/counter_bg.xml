@@ -6,7 +6,7 @@
     <solid android:color="@color/counter_text_bg" >
     </solid>
  
-    <!-- If you want to add some padding -->
+    <!-- Add some padding -->
     <padding
         android:right="3dp"
         android:left="3dp" >

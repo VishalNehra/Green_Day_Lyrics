@@ -12,14 +12,4 @@
     <color name="def_text_color">#fff00f</color>
     <color name="text_color">#00ff00</color>
     
-    <color name="poppy_default">#70000000</color>
-    <color name="poppy_light">#70A4A4A4</color>
-    <color name="poppy_lime">#70669002</color>
-    <color name="poppy_darksky">#70464ea3</color>
-    <color name="poppy_rose">#70cf2a9b</color>
-    <color name="poppy_mojo">#70c84741</color>
-    <color name="poppy_saffron">#70f48935</color>
-    <color name="poppy_frooti">#70fbba00</color>
-    <color name="poppy_lavender">#7092278f</color>
-    
 </resources>

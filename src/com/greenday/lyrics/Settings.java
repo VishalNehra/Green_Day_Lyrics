@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -13,6 +14,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -45,97 +47,70 @@ public class Settings extends PreferenceActivity {
 	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		
-		//Set theme must be used before super.oncreate or any other layout declaration
-		Util.setAppTheme(this);
-		
 		super.onCreate(savedInstanceState);
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText;
-		final Preference mTheme;
+		
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
+		
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ActionBar ab =getActionBar();
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
 		
 		/*To change settings layout as listview*/
 		//this.setContentView(R.layout.pref_act);
 		//ListView lv=(ListView) findViewById(R.id.listView1);
 		
 		//Theme
-		mTheme=findPreference("theme");
-		SharedPreferences tc1=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-		
-		final SharedPreferences tc2=PreferenceManager.getDefaultSharedPreferences(Settings.this);
-		final int current = Integer.parseInt(tc1.getString("themechooser", "0"));
-		
-		mTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+		mABTheme = findPreference("ab_theme");
+		mABTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
-			public boolean onPreferenceClick(Preference arg0) {
-				new AlertDialog.Builder(Settings.this)
-				.setTitle(R.string.themechooser_dialog)
-				.setNegativeButton("Cancel", new OnClickListener() {
-					
-					@Override
-					public void onClick(DialogInterface dialog, int arg1) {
-						// TODO Auto-generated method stub
-						dialog.cancel();
-					}
-				})
-				.setSingleChoiceItems(R.array.themes_list, current, new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int item) {
-	                    switch(item)
-	                    {
-	                        case 0:
-	                                tc2.edit().putString("themechooser", "0").commit();
-	                                //recreate(); can be used too.
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 1:
-	                                tc2.edit().putString("themechooser", "1").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 2:
-	                                tc2.edit().putString("themechooser", "2").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 3:
-	                                tc2.edit().putString("themechooser", "3").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 4:
-	                                tc2.edit().putString("themechooser", "4").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-                                	break;
-	                        case 5:
-	                                tc2.edit().putString("themechooser", "5").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 6:
-	                                tc2.edit().putString("themechooser", "6").commit();
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 7:
-	                                tc2.edit().putString("themechooser", "7").commit();  
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                        case 8:
-	                                tc2.edit().putString("themechooser", "8").commit();  
-	                                System.exit(0);
-	                                dialog.cancel();
-	                                break;
-	                    }
-	                }
-	           })
-	           .show();
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Settings.this, ThemeChooser.class);
+				intent.putExtra("ab_theme", true);
+				startActivity(intent);
+				return false;
+			}
+		});
+		mPoppyTheme=findPreference("poppy_theme");
+		mPoppyTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Settings.this, ThemeChooser.class);
+				intent.putExtra("poppy_theme", true);
+				startActivity(intent);
+				return false;
+			}
+		});
+		mTextTheme=findPreference("text_theme");
+		mTextTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Settings.this, ThemeChooser.class);
+				intent.putExtra("text_theme", true);
+				startActivity(intent);
+				return false;
+			}
+		});
+		mNavTheme=findPreference("nav_theme");
+		mNavTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Settings.this, ThemeChooser.class);
+				intent.putExtra("nav_theme", true);
+				startActivity(intent);
 				return false;
 			}
 		});
@@ -524,8 +499,6 @@ public class Settings extends PreferenceActivity {
 		
 	}
 	
-	//Actionbar code
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		return super.onCreateOptionsMenu(menu);

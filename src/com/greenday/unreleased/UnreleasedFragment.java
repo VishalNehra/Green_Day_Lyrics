@@ -34,7 +34,7 @@ public class UnreleasedFragment extends Fragment {
 		 
         	Crouton.makeText(getActivity(), "The content in this part might be incorrect.", Style.ALERT).show();
         	
-         getActivity();
+        getActivity();
 		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
          .edit()
          .putBoolean("firstboot_unreleased", false)
