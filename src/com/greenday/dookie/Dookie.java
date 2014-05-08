@@ -44,14 +44,14 @@ public class Dookie extends Activity {
 		tv1.setTextSize(text_size);
 		
 		//Text Color
-		int text_def_color= Color.parseColor("#222222");
+		int text_def_color= Color.parseColor("#000000");
         int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
         tv1.setTextColor(text_color);
         
 		//Poppyview
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
 		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
-		int poppy_def_color=Color.parseColor("#222222");
+		int poppy_def_color=Color.parseColor("#40222222");
 		int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
 		poppyview.setBackgroundColor(poppy_color);
 		

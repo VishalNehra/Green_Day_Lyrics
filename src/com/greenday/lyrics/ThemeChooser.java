@@ -5,13 +5,11 @@ import com.larswerkman.holocolorpicker.ColorPicker.OnColorChangedListener;
 import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SVBar;
 
-import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -25,7 +23,6 @@ import android.widget.Toast;
 
 public class ThemeChooser extends Activity {
 	
-	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -36,9 +33,13 @@ public class ThemeChooser extends Activity {
 		int int_color = Color.parseColor("#222222");
 		int ab_theme = PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", int_color);
 		ActionBar ab = getActionBar();
+		ab.setSubtitle("Theme Chooser");
 		ab.setBackgroundDrawable(new ColorDrawable(ab_theme));
-		ab.setTitle("Theme Chooser");
 		ab.setDisplayHomeAsUpEnabled(true);
+		
+		final TextView tv1=(TextView) findViewById(R.id.textView1);
+		tv1.setText("Sample");
+		tv1.setTextSize(50);
 		
 		final ColorPicker picker = (ColorPicker) findViewById(R.id.picker);
 		SVBar svBar = (SVBar) findViewById(R.id.svbar);
@@ -62,31 +63,39 @@ public class ThemeChooser extends Activity {
 		//Applying previously selected color
 		//Action bar
 		if(ab_intent){
+			ab.setTitle("Action Bar");
 			int ab_def_color= Color.parseColor("#222222");
 	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
 	        picker.setOldCenterColor(ab_color);
 	        picker.setColor(ab_color);
+	        tv1.setTextColor(ab_color);
 		}
 		//Poppy bar
 		if(poppy_intent){
-			int ab_def_color= Color.parseColor("#222222");
-	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", ab_def_color);
-	        picker.setOldCenterColor(ab_color);
-	        picker.setColor(ab_color);
+			ab.setTitle("Poppy Bar");
+			int poppy_def_color= Color.parseColor("#222222");
+	        int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
+	        picker.setOldCenterColor(poppy_color);
+	        picker.setColor(poppy_color);
+	        tv1.setTextColor(poppy_color);
 		}
 		//Text color
 		if(text_intent){
-			int ab_def_color= Color.parseColor("#222222");
-	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", ab_def_color);
-	        picker.setOldCenterColor(ab_color);
-	        picker.setColor(ab_color);
+			ab.setTitle("Lyrics Text");
+			int text_def_color= Color.parseColor("#222222");
+	        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
+	        picker.setOldCenterColor(text_color);
+	        picker.setColor(text_color);
+	        tv1.setTextColor(text_color);
 		}
 		//Navigation drawer
 		if(nav_intent){
-			int ab_def_color= Color.parseColor("#222222");
-	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", ab_def_color);
-	        picker.setOldCenterColor(ab_color);
-	        picker.setColor(ab_color);
+			ab.setTitle("Navigation Drawer");
+			int nav_def_color= Color.parseColor("#222222");
+	        int nav_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", nav_def_color);
+	        picker.setOldCenterColor(nav_color);
+	        picker.setColor(nav_color);
+	        tv1.setTextColor(nav_color);
 		}
 		
 		//Hint colors
@@ -141,10 +150,6 @@ public class ThemeChooser extends Activity {
 				picker.setColor(-42415);
 			}
 		});
-		
-		final TextView tv1=(TextView) findViewById(R.id.textView1);
-		tv1.setText("Sample");
-		tv1.setTextSize(50);
 		
 		picker.setOnColorChangedListener(new OnColorChangedListener() {
 			

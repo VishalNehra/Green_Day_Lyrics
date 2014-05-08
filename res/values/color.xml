@@ -2,8 +2,8 @@
 <resources>
     <color name="list_item_title">#fff</color>
     <color name="list_background"><!-- #5062b6 -->#343434</color>
-    <color name="list_background_focus">#5a6622</color>
-    <color name="list_background_pressed"><!-- #669900 -->#79892e</color>
+    <color name="list_background_focus">#000000</color>
+    <color name="list_background_pressed">#50ffffff</color>
     <color name="list_divider"><!-- #4d5ead -->#444444</color>
     <color name="counter_text_bg"><!-- #4d5ead -->#5a6622</color>
     <color name="counter_text_color">#c5c4c4</color>

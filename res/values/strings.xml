@@ -20,13 +20,17 @@
     <string name="changelog_version_3">&lt;font color="#524ef8">&lt;b>v1.0.2&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>April 14, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_3">- Fixed nav drawer theme issues&lt;br>
           - Modified nav drawer for tablets&lt;br>
-          - Fixed/Added various options in Settings (see Full Changelog)&lt;br>
+          - Fixed/Added various options in Settings&lt;br>
           - Added some more lyrics&lt;br>
           - Added new Report UI&lt;br>
           - Fixed some issues with 4.0.x&lt;br>&lt;br></string>
     <string name="changelog_version_4">&lt;font color="#524ef8">&lt;b>v1.0.3&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>April 21, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_4">- Added Demolicious lyrics&lt;br>
           - Other minor fixes&lt;br>&lt;br></string>      
+    <string name="changelog_version_5">&lt;font color="#524ef8">&lt;b>v1.0.4&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>May 08, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
+    <string name="changelog_change_5">- Redesigned Theme Chooser&lt;br>
+          - Added Poppy View&lt;br>
+          - Lots more...&lt;br>&lt;br></string>            
     
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thanks, your report is being sent.
@@ -102,9 +106,9 @@
     <string name="aboutapp_title">About the app.</string>
     <string name="aboutgd_title">About Green Day</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">v1.0.3</string>
-    <string name="source_title">Application sources</string>
-    <string name="source_summary">View app source code</string>
+    <string name="version_summary">v1.0.4</string>
+    <string name="source_title">Github</string>
+    <string name="source_summary">View app. source code</string>
     <string name="members_title">Members</string>
     <string name="members_summary">List of Green Day members</string>
     <string name="albums_title">Albums</string>

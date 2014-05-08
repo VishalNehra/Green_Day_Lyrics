@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         //Nav. Drawer Listview background
-        int nav_def_color= Color.parseColor("#222222");
+        int nav_def_color= Color.parseColor("#70222222");
         int nav_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", nav_def_color);
         ListView lv=(ListView) findViewById(R.id.list_slidermenu);
         lv.setBackgroundColor(nav_color);
