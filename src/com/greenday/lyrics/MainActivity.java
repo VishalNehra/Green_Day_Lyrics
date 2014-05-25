@@ -81,6 +81,7 @@ public class MainActivity extends Activity {
         ListView lv=(ListView) findViewById(R.id.list_slidermenu);
         lv.setBackgroundColor(nav_color);
         
+        
         //Action bar color
         int ab_def_color= Color.parseColor("#222222");
         int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
@@ -153,6 +154,12 @@ public class MainActivity extends Activity {
  
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
+        
+        //Drawer width
+        int nav_width = PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_width", getResources().getDisplayMetrics().widthPixels/2);
+        DrawerLayout.LayoutParams params = (android.support.v4.widget.DrawerLayout.LayoutParams) mDrawerList.getLayoutParams();
+        params.width = nav_width;
+        mDrawerList.setLayoutParams(params);
  
         navDrawerItems = new ArrayList<NavDrawerItem>();
  

@@ -44,9 +44,18 @@
 	              android:summaryOn="@string/exit_summary_on"
 	              android:summaryOff="@string/exit_summary_off"
 	              android:defaultValue="false"/>
-	          <Preference android:key="text"
-	              android:title="@string/text_title"
-	              android:summary="@string/text_summary"></Preference>
+	          
+	          <PreferenceScreen android:title="@string/more_title">
+	              <Preference android:key="text"
+		              android:title="@string/text_title"
+		              android:summary="@string/text_summary"></Preference>
+	              <Preference android:key="alpha"
+		              android:title="@string/alpha_title"
+		              android:summary="@string/alpha_summary"></Preference>
+		          <Preference android:key="nav_width"
+		              android:title="@string/nav_width_title"
+		              android:summary="@string/nav_width_summary"></Preference>
+	          </PreferenceScreen>
 	            
 	      </PreferenceCategory>
         

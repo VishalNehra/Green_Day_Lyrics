@@ -66,6 +66,11 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo"/>
         
+        <!-- Viewpagers -->
+        <activity android:name="com.greenday.lyrics.AmericanIdiot"
+            android:screenOrientation="portrait"
+            />
+        
         <!-- Albums -->
         
         <!-- American Idiot -->

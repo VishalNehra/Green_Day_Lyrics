@@ -66,6 +66,4 @@ import com.slidingmenu.model.NavDrawerItem;
 	        return convertView;
 	    }
 	 
-	}
-
-
+}

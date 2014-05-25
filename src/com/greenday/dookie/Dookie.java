@@ -48,6 +48,11 @@ public class Dookie extends Activity {
         int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
         tv1.setTextColor(text_color);
         
+        //Background transparency
+        int def_alpha = 150;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
+        findViewById(R.id.dookie_layout).getBackground().setAlpha(alpha);
+        
 		//Poppyview
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
 		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);

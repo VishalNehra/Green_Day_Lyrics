@@ -32,6 +32,7 @@ public class AmericanIdiotMain extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot);
+		findViewById(R.id.american_idiot_layout).getBackground().setAlpha(22);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -48,6 +49,11 @@ public class AmericanIdiotMain extends Activity {
 		int text_def_color= Color.parseColor("#000000");
         int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
         tv1.setTextColor(text_color);
+        
+        //Background transparency
+        int def_alpha = 150;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
+        findViewById(R.id.american_idiot_layout).getBackground().setAlpha(alpha);
 		
 		//Poppyview 
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);

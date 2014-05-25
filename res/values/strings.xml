@@ -7,6 +7,19 @@
     
     <string name="search_hint">Type to search a song&#8230;</string>
     
+    <string name="testing">Testing</string>
+    
+    <!-- More -->
+    <string name="more_title">More&#8230;</string>
+    
+    <!-- Image Alpha -->
+    <string name="alpha_title">ART Transparency</string>
+    <string name="alpha_summary">Set album art transparency</string>
+    
+    <!-- Nav width -->
+    <string name="nav_width_title">Nav. Drawer Width</string>
+    <string name="nav_width_summary">Change width of navigation drawer</string>
+    
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_close">Close</string>
@@ -35,8 +48,8 @@
 	<!-- ACRA -->
 	<string name="crash_toast_text">Thanks, your report is being sent.
 	</string>
+	
 	<!-- Searchtitle -->
-    
     <string name="search_title">Search a song</string>
     <string name="all_songs">All Songs</string>
     
@@ -48,7 +61,6 @@
     <!-- Font -->
     <string name="text_title">Text Size</string>
     <string name="text_summary">Change text size</string>
-    <string name="def_text_size">Default text size</string>
     <string name="text_sample">Sample</string>
     
     <!-- Report title -->
@@ -75,6 +87,10 @@
     <string name="display_title">Screen Timeout</string>
     <string name="display_summary_on">Screen won\'t turn off</string>
     <string name="display_summary_off">Default system values</string>
+    
+    <string name="def_image_alpha">Default ART alpha (70)</string>
+    <string name="def_text_size">Default text size (18sp)</string>
+    <string name="def_nav_width">Default drawer width (240dp)</string>
     
     <!-- Settings -->
     

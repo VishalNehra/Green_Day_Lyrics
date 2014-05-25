@@ -34,7 +34,7 @@
     <view
         android:id="@+id/view1"
         android:layout_width="wrap_content"
-        android:layout_height="10dp"
+        android:layout_height="20dp"
         android:layout_below="@+id/textseekbar"
         android:layout_centerHorizontal="true"
         class="RelativeLayout" />
@@ -48,8 +48,8 @@
 
     <view
         android:id="@+id/view2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
         android:layout_below="@+id/checkBox1"
         android:layout_toRightOf="@+id/view1"
         class="RelativeLayout" />

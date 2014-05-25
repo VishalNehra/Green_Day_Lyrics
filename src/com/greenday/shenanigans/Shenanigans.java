@@ -47,6 +47,11 @@ public class Shenanigans extends Activity {
 		int text_def_color= Color.parseColor("#000000");
         int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
         tv1.setTextColor(text_color);
+        
+        //Background transparency
+        int def_alpha = 150;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
+        findViewById(R.id.shenanigans_layout).getBackground().setAlpha(alpha);
 		
 		//Poppyview
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);

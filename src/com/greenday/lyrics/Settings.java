@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SeekBar;
@@ -49,7 +50,7 @@ public class Settings extends PreferenceActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -341,7 +342,7 @@ public class Settings extends PreferenceActivity {
 		mDisplay.setEnabled(true);
 		
 		//Text Size
-		//Only god knows how this work
+		//Future me, please forgive for what I have coded here
 		mText = findPreference("text");
 		mText.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
@@ -350,7 +351,7 @@ public class Settings extends PreferenceActivity {
 				// TODO Auto-generated method stub
 				Dialog dialog = new Dialog(Settings.this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
 				LayoutInflater inflater = (LayoutInflater) Settings.this.getSystemService(LAYOUT_INFLATER_SERVICE);
-				final View layout = inflater.inflate(R.layout.textseekbar, (ViewGroup) findViewById(R.id.seekbar));
+				final View layout = inflater.inflate(R.layout.seekbar_text, (ViewGroup) findViewById(R.id.seekbar));
 				dialog.setContentView(layout);
 				dialog.show();
 				
@@ -432,6 +433,196 @@ public class Settings extends PreferenceActivity {
 					}
 				});
 				
+				return false;
+			}
+		});
+		
+		//Image Alpha
+		mAlpha=findPreference("alpha");
+		mAlpha.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				Dialog dialog=new Dialog(Settings.this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+				LayoutInflater inflater = (LayoutInflater) Settings.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+				final View layout = inflater.inflate(R.layout.seekbar_image, (ViewGroup) findViewById(R.id.seekbar));
+				dialog.setContentView(layout);
+				dialog.show();
+				
+				//Seekbar
+				final SeekBar sb = (SeekBar) layout.findViewById(R.id.imageSeekbar);
+
+				//Sample image
+				final ImageView iv = (ImageView) layout.findViewById(R.id.imageView1);
+				
+				//Default Checkbox
+				final CheckBox cb = (CheckBox) layout.findViewById(R.id.checkBox1);
+				
+				//Seekbar listener
+				sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+					
+					@Override
+					public void onStopTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onStartTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
+						// TODO Auto-generated method stub
+						//Setting sample image transparency
+						int extended_progress=(int) (progress*2.55);	//Alpha is from 0 to 255
+						iv.setAlpha(extended_progress);
+						
+						//Saving value to shared preferences
+						//Image alpha
+						SharedPreferences sp=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						sp.edit().putInt("alpha", extended_progress).commit();
+						//Seekbar progress
+						sp.edit().putInt("alpha_seekbar", progress).commit();
+					}
+				});
+				
+				//Setting initial dialog values
+				//Seekbar
+				int def_alpha_seekbar = 58;		//Default checkbox checked, def value is 150 (for seekbar, 150/2.55)
+				int init_alpha_seekbar = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha_seekbar", def_alpha_seekbar);
+				sb.setProgress(init_alpha_seekbar);
+				//Sample Image
+				int def_alpha_sampleImage=150;		//Default alpha value, when checkbox is checked
+				int init_alpha_sampleImage = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha", def_alpha_sampleImage);
+				iv.setAlpha(init_alpha_sampleImage);
+				//Checkbox
+				boolean def_checkbox = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("alpha_def_checkbox", true);
+				if(def_checkbox){
+					cb.setChecked(true);
+					sb.setEnabled(false);
+				}
+				else{
+					cb.setChecked(false);
+					sb.setEnabled(true);
+				}
+				
+				//Default checkbox bahaviour
+				cb.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+					
+					@Override
+					public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
+						// TODO Auto-generated method stub
+						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						if(cb.isChecked()){
+							sp.edit().putBoolean("alpha_def_checkbox", true).commit();
+							sp.edit().putInt("alpha", 70).commit();
+							sb.setEnabled(false);
+						}
+						else{
+							sp.edit().putBoolean("alpha_def_checkbox", false).commit();
+							sb.setEnabled(true);
+						}
+					}
+				});
+				return false;
+			}
+		});
+		
+		//Navigation Drawer Width
+		mNavWidth=findPreference("nav_width");
+		mNavWidth.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				Dialog dialog=new Dialog(Settings.this, android.R.style.Theme_Holo_Light_Dialog_NoActionBar);
+				LayoutInflater inflater = (LayoutInflater) Settings.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+				final View layout = inflater.inflate(R.layout.seekbar_nav, (ViewGroup) findViewById(R.id.seekbar));
+				dialog.setContentView(layout);
+				dialog.show();
+				
+				//Seekbar
+				final SeekBar sb = (SeekBar) layout.findViewById(R.id.navSeekbar);
+
+				//Sample text
+				final TextView tv = (TextView) layout.findViewById(R.id.textView1);
+				
+				//Default Checkbox
+				final CheckBox cb = (CheckBox) layout.findViewById(R.id.checkBox1);
+				
+				//Seekbar listener
+				sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+					
+					@Override
+					public void onStopTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onStartTrackingTouch(SeekBar arg0) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
+						// TODO Auto-generated method stub
+						//Setting sample image transparency
+						int extended_progress = (int) ((getResources().getDisplayMetrics().widthPixels/2)+(progress*0.005*getResources().getDisplayMetrics().widthPixels));		//Setting progress from half width to full screen width
+						tv.setText((50+(progress/2)) + "%");
+						
+						//Saving value to shared preferences
+						//Nav width
+						SharedPreferences sp=PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						sp.edit().putInt("nav_width", extended_progress).commit();
+						//Seekbar progress
+						sp.edit().putInt("nav_width_seekbar", progress).commit();
+					}
+				});
+				/*
+				//Setting initial dialog values
+				//Seekbar
+				int def_alpha_seekbar = 58;		//Default checkbox checked, def value is 150 (for seekbar, 150/2.55)
+				int init_alpha_seekbar = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha_seekbar", def_alpha_seekbar);
+				sb.setProgress(init_alpha_seekbar);
+				//Sample Image
+				int def_alpha_sampleImage=150;		//Default alpha value, when checkbox is checked
+				int init_alpha_sampleImage = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha", def_alpha_sampleImage);
+				iv.setAlpha(init_alpha_sampleImage);
+				//Checkbox
+				boolean def_checkbox = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("alpha_def_checkbox", true);
+				if(def_checkbox){
+					cb.setChecked(true);
+					sb.setEnabled(false);
+				}
+				else{
+					cb.setChecked(false);
+					sb.setEnabled(true);
+				}
+				
+				//Default checkbox bahaviour
+				cb.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+					
+					@Override
+					public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
+						// TODO Auto-generated method stub
+						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						if(cb.isChecked()){
+							sp.edit().putBoolean("alpha_def_checkbox", true).commit();
+							sp.edit().putInt("alpha", 70).commit();
+							sb.setEnabled(false);
+						}
+						else{
+							sp.edit().putBoolean("alpha_def_checkbox", false).commit();
+							sb.setEnabled(true);
+						}
+					}
+				});*/
 				return false;
 			}
 		});
