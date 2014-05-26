@@ -5,6 +5,7 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
@@ -48,7 +49,12 @@ public class NimrodFragment extends Fragment {
          .commit();
         }
 		//Boot_pref ends
-		
+
+        //Background transparency
+        int def_alpha = 150;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
+        rootView.findViewById(R.id.nimrod_layout).getBackground().setAlpha(alpha);
+        
 		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
 			@Override

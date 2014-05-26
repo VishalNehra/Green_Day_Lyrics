@@ -90,7 +90,7 @@
     
     <string name="def_image_alpha">Default ART alpha (70)</string>
     <string name="def_text_size">Default text size (18sp)</string>
-    <string name="def_nav_width">Default drawer width (240dp)</string>
+    <string name="def_nav_width">Default drawer width (Screen/2)</string>
     
     <!-- Settings -->
     

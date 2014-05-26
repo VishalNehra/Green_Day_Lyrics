@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,7 +48,12 @@ import android.widget.ListView;
 	         .commit();
 	        }
 			//Boot_pref ends
-			
+
+	        //Background transparency
+	        int def_alpha = 150;
+	        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
+	        rootView.findViewById(R.id.demolicious_layout).getBackground().setAlpha(alpha);
+	        
 	        ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 			b.setOnClickListener(new OnClickListener() {
 				@Override

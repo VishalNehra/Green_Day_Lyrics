@@ -342,7 +342,6 @@ public class Settings extends PreferenceActivity {
 		mDisplay.setEnabled(true);
 		
 		//Text Size
-		//Future me, please forgive for what I have coded here
 		mText = findPreference("text");
 		mText.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
@@ -372,13 +371,14 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
 						// TODO Auto-generated method stub
-						TextView tv = (TextView) layout.findViewById(R.id.textView1);
-						tv.setTextSize((progress*1/4)+10);
-						TextView tv2= (TextView) layout.findViewById(R.id.textView2);
-						tv2.setText((progress*3/2)+30 + " %");
+						TextView tv = (TextView) layout.findViewById(R.id.textView1);		//Sample text
+						tv.setTextSize((float) ((progress/5.55)+9));
+						TextView tv2= (TextView) layout.findViewById(R.id.textView2);		//Sample Percentage
+						tv2.setText((progress)+ 50 + " %");
+						tv2.setTextSize((float) ((progress/5.55)+9));
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
-						sp.edit().putInt("text", (progress*1/4)+10).commit();
-						sp.edit().putInt("def_text_seek", (progress*1/4)+10).commit();
+						sp.edit().putInt("text", (int) ((progress/5.55)+9)).commit();
+						sp.edit().putInt("def_text_seek", progress).commit();
 					}
 				});
 				
@@ -386,27 +386,32 @@ public class Settings extends PreferenceActivity {
 				final CheckBox cb = (CheckBox) layout.findViewById(R.id.checkBox1);
 				
 				//Initial
+				//Seekbar
+				int text_init_seekbar = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
+				sk.setProgress(text_init_seekbar);
+				//Text View
+				final TextView tv = (TextView) layout.findViewById(R.id.textView1);		//Sample Text
+				final TextView tv2 = (TextView) layout.findViewById(R.id.textView2);		//Sample Percentage
+				int text_init_sample = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("text", 18);
+				tv.setTextSize(text_init_sample);
+				tv2.setTextSize(text_init_sample);
+				tv2.setText(text_init_seekbar + 50 + "%");
+				//Checkbox
 				boolean def_text = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("def_text", true);
-				int sp = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
-				SharedPreferences sp2 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
-				int init = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("text", 18);
-				final TextView tv = (TextView) layout.findViewById(R.id.textView1);
 				if(def_text){
 					cb.setChecked(true);
 					sk.setEnabled(false);
-					sk.setProgress((sp-10)*4);
-					tv.setTextSize(sp);
-					sp2.edit().putInt("text", 18).commit();
 					
 					//Text Color
 					tv.setTextColor(Color.parseColor("#A4A4A4"));
+					tv2.setTextColor(Color.parseColor("#A4A4A4"));
 				}
 				else{
 					cb.setChecked(false);
-					sk.setProgress((init-10)*4);
-					tv.setTextSize(init);
+					sk.setEnabled(true);
 					//Text Color
 					tv.setTextColor(Color.parseColor("#000000"));
+					tv2.setTextColor(Color.parseColor("#000000"));
 				}
 				
 				cb.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -415,20 +420,20 @@ public class Settings extends PreferenceActivity {
 					public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 						// TODO Auto-generated method stub
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
-						int init = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("def_text_seek", 18);
 						if(cb.isChecked()){
 							sk.setEnabled(false);
 							sp.edit().putBoolean("def_text", true).commit();
 							sp.edit().putInt("text", 18).commit();
 							//Text Color
 							tv.setTextColor(Color.parseColor("#A4A4A4"));
+							tv2.setTextColor(Color.parseColor("#A4A4A4"));
 						}
 						else{
 							sp.edit().putBoolean("def_text", false).commit();
 							sk.setEnabled(true);
-							sp.edit().putInt("text", init).commit();
 							//Text Color
 							tv.setTextColor(Color.parseColor("#000000"));
+							tv2.setTextColor(Color.parseColor("#000000"));
 						}
 					}
 				});
@@ -574,7 +579,7 @@ public class Settings extends PreferenceActivity {
 						// TODO Auto-generated method stub
 						//Setting sample image transparency
 						int extended_progress = (int) ((getResources().getDisplayMetrics().widthPixels/2)+(progress*0.005*getResources().getDisplayMetrics().widthPixels));		//Setting progress from half width to full screen width
-						tv.setText((50+(progress/2)) + "%");
+						tv.setText((50+(progress/2)) + "%\n" + "of the screen width");
 						
 						//Saving value to shared preferences
 						//Nav width
@@ -584,18 +589,18 @@ public class Settings extends PreferenceActivity {
 						sp.edit().putInt("nav_width_seekbar", progress).commit();
 					}
 				});
-				/*
+				
 				//Setting initial dialog values
 				//Seekbar
-				int def_alpha_seekbar = 58;		//Default checkbox checked, def value is 150 (for seekbar, 150/2.55)
-				int init_alpha_seekbar = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha_seekbar", def_alpha_seekbar);
-				sb.setProgress(init_alpha_seekbar);
-				//Sample Image
-				int def_alpha_sampleImage=150;		//Default alpha value, when checkbox is checked
-				int init_alpha_sampleImage = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("alpha", def_alpha_sampleImage);
-				iv.setAlpha(init_alpha_sampleImage);
+				int def_nav_seekbar = 0;		//Default checkbox checked, def value is 0 (for seekbar, 0)
+				int init_nav_seekbar = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("nav_width_seekbar", def_nav_seekbar);
+				sb.setProgress(init_nav_seekbar);
+				//Sample text
+				int def_nav_sampleText=50;		//Default nav value, when checkbox is checked
+				int init_nav_sampleText = PreferenceManager.getDefaultSharedPreferences(Settings.this).getInt("nav_width_seekbar", def_nav_sampleText);
+				tv.setText((50+(init_nav_sampleText/2)) + "%\n" + "of the screen width");
 				//Checkbox
-				boolean def_checkbox = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("alpha_def_checkbox", true);
+				boolean def_checkbox = PreferenceManager.getDefaultSharedPreferences(Settings.this).getBoolean("nav_def_checkbox", true);
 				if(def_checkbox){
 					cb.setChecked(true);
 					sb.setEnabled(false);
@@ -613,16 +618,16 @@ public class Settings extends PreferenceActivity {
 						// TODO Auto-generated method stub
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 						if(cb.isChecked()){
-							sp.edit().putBoolean("alpha_def_checkbox", true).commit();
-							sp.edit().putInt("alpha", 70).commit();
+							sp.edit().putBoolean("nav_def_checkbox", true).commit();
+							sp.edit().putInt("nav_width", getResources().getDisplayMetrics().widthPixels/2).commit();
 							sb.setEnabled(false);
 						}
 						else{
-							sp.edit().putBoolean("alpha_def_checkbox", false).commit();
+							sp.edit().putBoolean("nav_def_checkbox", false).commit();
 							sb.setEnabled(true);
 						}
 					}
-				});*/
+				});
 				return false;
 			}
 		});

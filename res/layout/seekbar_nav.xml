@@ -24,7 +24,7 @@
     <view
         android:id="@+id/view1"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/checkBox1"
         android:layout_centerHorizontal="true"
         class="RelativeLayout" />
@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/view1"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
     <view
