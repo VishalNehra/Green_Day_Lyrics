@@ -3,10 +3,16 @@ package com.greenday.demolicious;
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.demolicious.Info;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -157,7 +164,82 @@ public class Demolicious extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("99 Revolutions (Demo)", track);
+					}
+				if(track == 2){
+					lookupTrack("Angel Blue (Demo)", track);
+					}
+				if(track == 3){
+					lookupTrack("Carpe Diem (Demo)", track);
+					}
+				if(track == 4){
+					lookupTrack("State Of Shock", track);
+					}
+				if(track == 5){
+					lookupTrack("Let Yourself Go (Demo)", track);
+					}
+				if(track == 6){
+					lookupTrack("Sex, Drugs And Violence (Demo)", track);
+					}
+				if(track == 7){
+					lookupTrack("Ashley (Demo)", track);
+					}
+				if(track == 8){
+					lookupTrack("Fell For You (Demo)", track);
+					}
+				if(track == 9){
+					lookupTrack("Stay The Night (Demo)", track);
+					}
+				if(track == 10){
+					lookupTrack("Nuclear Family (Demo)", track);
+					}
+				if(track == 11){
+					lookupTrack("Stray Heart (Demo)", track);
+					}
+				if(track == 12){
+					lookupTrack("Rusty James (Demo)", track);
+					}
+				if(track == 13){
+					lookupTrack("A Little Boy Named Train (Demo)", track);
+					}
+				if(track == 14){
+					lookupTrack("Baby Eyes (Demo)", track);
+					}
+				if(track == 15){
+					lookupTrack("Makeout Party (Demo)", track);
+					}
+				if(track == 16){
+					lookupTrack("Oh Love (Demo)", track);
+					}
+				if(track == 17){
+					lookupTrack("Missing You (Demo)", track);
+					}
+				if(track == 18){
+					lookupTrack("Stay The Night (Acoustic)", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Demolicious.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -220,7 +302,7 @@ public class Demolicious extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -333,5 +415,19 @@ public class Demolicious extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+		
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

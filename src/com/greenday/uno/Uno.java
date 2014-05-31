@@ -2,11 +2,17 @@ package com.greenday.uno;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
 import com.greenday.uno.Info;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -132,7 +139,64 @@ public class Uno extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("Nuclear Family", track);
+					}
+				if(track == 2){
+					lookupTrack("Stay The Night", track);
+					}
+				if(track == 3){
+					lookupTrack("Carpe Diem", track);
+					}
+				if(track == 4){
+					lookupTrack("Let Yourself Go", track);
+					}
+				if(track == 5){
+					lookupTrack("Kill The DJ", track);
+					}
+				if(track == 6){
+					lookupTrack("Fell For You", track);
+					}
+				if(track == 7){
+					lookupTrack("Loss Of Control", track);
+					}
+				if(track == 8){
+					lookupTrack("Troublemaker", track);
+					}
+				if(track == 9){
+					lookupTrack("Angel Blue", track);
+					}
+				if(track == 10){
+					lookupTrack("Sweet 16", track);
+					}
+				if(track == 11){
+					lookupTrack("Rusty James", track);
+					}
+				if(track == 12){
+					lookupTrack("Oh Love", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Uno.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -177,7 +241,7 @@ public class Uno extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -266,5 +330,19 @@ public class Uno extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

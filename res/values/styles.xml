@@ -9,8 +9,5 @@
     <item name="android:windowIsFloating">false</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-	
-    <style name="Reportproblem" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
-    <style name="Reportsong" parent="android:Theme.Holo.Dialog.NoActionBar"/>
     
 </resources>

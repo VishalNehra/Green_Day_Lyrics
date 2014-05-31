@@ -3,10 +3,16 @@ package com.greenday.dookie;
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.dookie.Info;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -146,7 +153,73 @@ public class Dookie extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("All By Myself", track);
+					}
+				if(track == 2){
+					lookupTrack("Burnout", track);
+					}
+				if(track == 3){
+					lookupTrack("Having A Blast", track);
+					}
+				if(track == 4){
+					lookupTrack("Chump", track);
+					}
+				if(track == 5){
+					lookupTrack("Longview", track);
+					}
+				if(track == 6){
+					lookupTrack("Welcome To Paradise", track);
+					}
+				if(track == 7){
+					lookupTrack("Pulling Teeth", track);
+					}
+				if(track == 8){
+					lookupTrack("Basket Case", track);
+					}
+				if(track == 9){
+					lookupTrack("She", track);
+					}
+				if(track == 10){
+					lookupTrack("Sassafras Roots", track);
+					}
+				if(track == 11){
+					lookupTrack("When I Come Around", track);
+					}
+				if(track == 12){
+					lookupTrack("Coming Clean", track);
+					}
+				if(track == 13){
+					lookupTrack("Emenius Sleepus", track);
+					}
+				if(track == 14){
+					lookupTrack("In The End", track);
+					}
+				if(track == 15){
+					lookupTrack("F.O.D.", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Dookie.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -200,7 +273,7 @@ public class Dookie extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -301,5 +374,19 @@ public class Dookie extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

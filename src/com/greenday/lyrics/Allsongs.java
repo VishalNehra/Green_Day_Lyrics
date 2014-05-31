@@ -47,6 +47,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class Allsongs extends Activity {
+	
 	ArrayAdapter<String> adapter;
 	public static final String SERVICECMD = "com.android.music.musicservicecommand";
 	public static final String CMDNAME = "command";

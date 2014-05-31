@@ -2,11 +2,17 @@ package com.greenday.nimrod;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
 import com.greenday.nimrod.Info;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -156,7 +163,82 @@ public class Nimrod extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("Nice Guys Finish Last", track);
+					}
+				if(track == 2){
+					lookupTrack("Hitchin' A Ride", track);
+					}
+				if(track == 3){
+					lookupTrack("The Grouch", track);
+					}
+				if(track == 4){
+					lookupTrack("Redundant", track);
+					}
+				if(track == 5){
+					lookupTrack("Scattered", track);
+					}
+				if(track == 6){
+					lookupTrack("All The Time", track);
+					}
+				if(track == 7){
+					lookupTrack("Worry Rock", track);
+					}
+				if(track == 8){
+					lookupTrack("Platypus (I Hate You)", track);
+					}
+				if(track == 9){
+					lookupTrack("Uptight", track);
+					}
+				if(track == 10){
+					lookupTrack("Last Ride In", track);
+					}
+				if(track == 11){
+					lookupTrack("Jinx", track);
+					}
+				if(track == 12){
+					lookupTrack("Haushinka", track);
+					}
+				if(track == 13){
+					lookupTrack("Walking Alone", track);
+					}
+				if(track == 14){
+					lookupTrack("Reject", track);
+					}
+				if(track == 15){
+					lookupTrack("Take Back", track);
+					}
+				if(track == 16){
+					lookupTrack("King For A Day", track);
+					}
+				if(track == 17){
+					lookupTrack("Good Riddance (Time Of Your Life)", track);
+					}
+				if(track == 18){
+					lookupTrack("Prosthetic Head", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Nimrod.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -219,7 +301,7 @@ public class Nimrod extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -334,5 +416,19 @@ public class Nimrod extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+		
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

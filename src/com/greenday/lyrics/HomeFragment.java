@@ -1,12 +1,15 @@
 package com.greenday.lyrics;
 	
-	import android.app.Fragment;
+	import com.greenday.database.DatabaseActivity;
+
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 	 	
 	public class HomeFragment extends Fragment {
@@ -29,15 +32,20 @@ import android.widget.ImageButton;
 					startActivity(intent);
 				}
 			});
-
+	        
+	        Button b = (Button) rootView.findViewById(R.id.button1);
+	        b.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startActivity(new Intent(getActivity(), DatabaseActivity.class));
+				}
+			});
 	        return rootView;
 	    }
 	    
 	    public void onDestroy() {
 	        super.onDestroy();
-	      }
-	    
-	
+	      }	
 }
-
-

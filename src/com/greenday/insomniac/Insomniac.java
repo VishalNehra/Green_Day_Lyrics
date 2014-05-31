@@ -3,10 +3,16 @@ package com.greenday.insomniac;
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.insomniac.Info;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -140,7 +147,70 @@ public class Insomniac extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("Armatage Shanks", track);
+					}
+				if(track == 2){
+					lookupTrack("Brat", track);
+					}
+				if(track == 3){
+					lookupTrack("Stuck With Me", track);
+					}
+				if(track == 4){
+					lookupTrack("Geek Stink Breath", track);
+					}
+				if(track == 5){
+					lookupTrack("No Pride", track);
+					}
+				if(track == 6){
+					lookupTrack("Bab's Uvula Who!", track);
+					}
+				if(track == 7){
+					lookupTrack("86", track);
+					}
+				if(track == 8){
+					lookupTrack("Panic Song", track);
+					}
+				if(track == 9){
+					lookupTrack("Stuart And The Ave.", track);
+					}
+				if(track == 10){
+					lookupTrack("Brain Stew", track);
+					}
+				if(track == 11){
+					lookupTrack("Jaded", track);
+					}
+				if(track == 12){
+					lookupTrack("Westbound Sign", track);
+					}
+				if(track == 13){
+					lookupTrack("Tight Wad Hill", track);
+					}
+				if(track == 14){
+					lookupTrack("Walking Contradiction", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Insomniac.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -191,7 +261,7 @@ public class Insomniac extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -288,5 +358,19 @@ public class Insomniac extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

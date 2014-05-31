@@ -3,11 +3,16 @@ package com.greenday.americanidiot;
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
 import com.greenday.americanidiot.Info;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -19,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -138,7 +144,67 @@ public class AmericanIdiotMain extends Activity {
 					}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("American Idiot", track);
+					}
+				if(track == 2){
+					lookupTrack("Jesus Of Suburbia", track);
+					}
+				if(track == 3){
+					lookupTrack("Holiday", track);
+					}
+				if(track == 4){
+					lookupTrack("Boulevard Of Broken Dreams", track);
+					}
+				if(track == 5){
+					lookupTrack("Are We The Waiting", track);
+					}
+				if(track == 6){
+					lookupTrack("St. Jimmy", track);
+					}
+				if(track == 7){
+					lookupTrack("Give Me Novacaine", track);
+					}
+				if(track == 8){
+					lookupTrack("She's A Rebel", track);
+					}
+				if(track == 9){
+					lookupTrack("Extraordinary Girl", track);
+					}
+				if(track == 10){
+					lookupTrack("Letterbomb", track);
+					}
+				if(track == 11){
+					lookupTrack("Wake Me Up When September Ends", track);
+					}
+				if(track == 12){
+					lookupTrack("Homecoming", track);
+					}
+				if(track == 13){
+					lookupTrack("Whatshername", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(AmericanIdiotMain.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -186,7 +252,7 @@ public class AmericanIdiotMain extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -280,5 +346,19 @@ public class AmericanIdiotMain extends Activity {
 
 			};
 		            return super.onOptionsItemSelected(item);
+		}
+		
+		//Checking and adding to database
+		public void lookupTrack(String name, int i) {
+			DBHandler db = new DBHandler(this, null, null, 1);
+			Track findtrack = db.findTrack(name);
+			
+			if(findtrack != null) {
+				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+			} else {
+				db.addTrack(new Track(name, i));
+				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+			}
 		}
 }

@@ -2,7 +2,10 @@ package com.greenday.unreleased;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.greenday.database.DBHandler;
+import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
+import com.greenday.lyrics.Favorites;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
@@ -22,6 +25,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -299,7 +303,187 @@ public class Unreleased extends Activity {
 				}
 			}
 		});
-		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton3);
+		
+		ImageButton favourite = (ImageButton) poppyview.findViewById(R.id.imageButton3);
+		favourite.setOnClickListener(new OnClickListener() {
+
+			int track = getIntent().getExtras().getInt("track");
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(track == 1){
+					lookupTrack("A Quick One While He's Away", track);
+					}
+				if(track == 2){
+					lookupTrack("Angel and the Jerk", track);
+					}
+				if(track == 3){
+					lookupTrack("Another State Of Mind", track);
+					}
+				if(track == 4){
+					lookupTrack("Billie Joe's Mom", track);
+					}
+				if(track == 5){
+					lookupTrack("Boys in the Bathroom Stall", track);
+					}
+				if(track == 6){
+					lookupTrack("Can't Make Love", track);
+					}
+				if(track == 7){
+					lookupTrack("Chocolate Rain", track);
+					}
+				if(track == 8){
+					lookupTrack("Cigarettes And Valentines", track);
+					}
+				if(track == 9){
+					lookupTrack("D.U.I.", track);
+					}
+				if(track == 10){
+					lookupTrack("Depression Times", track);
+					}
+				if(track == 11){
+					lookupTrack("Don't Want to Know If You Are Lonely", track);
+					}
+				if(track == 12){
+					lookupTrack("Dream Catcher", track);
+					}
+				if(track == 13){
+					lookupTrack("Favourite Son", track);
+					}
+				if(track == 14){
+					lookupTrack("Food Around the Corner", track);
+					}
+				if(track == 15){
+					lookupTrack("Governator", track);
+					}
+				if(track == 16){
+					lookupTrack("Hearts Collide", track);
+					}
+				if(track == 17){
+					lookupTrack("Hybrid Moments", track);
+					}
+				if(track == 18){
+					lookupTrack("I Fought The Law", track);
+					}
+				if(track == 19){
+					lookupTrack("I Run NY", track);
+					}
+				if(track == 20){
+					lookupTrack("Jennifer", track);
+					}
+				if(track == 21){
+					lookupTrack("Lights Out", track);
+					}
+				if(track == 22){
+					lookupTrack("Like A Rolling Stone", track);
+					}
+				if(track == 23){
+					lookupTrack("Like a Rat Does Cheese", track);
+					}
+				if(track == 24){
+					lookupTrack("Look For Love", track);
+					}
+				if(track == 25){
+					lookupTrack("Maybe Forever", track);
+					}
+				if(track == 26){
+					lookupTrack("Mechanical Man", track);
+					}
+				if(track == 27){
+					lookupTrack("Midwest Medley", track);
+					}
+				if(track == 28){
+					lookupTrack("Minnesota Girl", track);
+					}
+				if(track == 29){
+					lookupTrack("Oh Girl", track);
+					}
+				if(track == 30){
+					lookupTrack("Olivia", track);
+					}
+				if(track == 31){
+					lookupTrack("Private Hell", track);
+					}
+				if(track == 32){
+					lookupTrack("Radio", track);
+					}
+				if(track == 33){
+					lookupTrack("Second Time Around", track);
+					}
+				if(track == 34){
+					lookupTrack("Shoplifter", track);
+					}
+				if(track == 35){
+					lookupTrack("Shout", track);
+					}
+				if(track == 36){
+					lookupTrack("State of Shock", track);
+					}
+				if(track == 37){
+					lookupTrack("Supermarket", track);
+					}
+				if(track == 38){
+					lookupTrack("Teenage Lobotomy", track);
+					}
+				if(track == 39){
+					lookupTrack("That's All Right", track);
+					}
+				if(track == 40){
+					lookupTrack("The Ballad of Wilhelm Fink", track);
+					}
+				if(track == 41){
+					lookupTrack("The Saints Are Coming", track);
+					}
+				if(track == 42){
+					lookupTrack("The Simpsons Theme", track);
+					}
+				if(track == 43){
+					lookupTrack("The Things I Heard Today", track);
+					}
+				if(track == 44){
+					lookupTrack("Too Much, Too Soon", track);
+					}
+				if(track == 45){
+					lookupTrack("Walking the Dog", track);
+					}
+				if(track == 46){
+					lookupTrack("We Are The Champions", track);
+					}
+				if(track == 47){
+					lookupTrack("What About Today?", track);
+					}
+				if(track == 48){
+					lookupTrack("When It's Time", track);
+					}
+				if(track == 49){
+					lookupTrack("When Will I Be Loved", track);
+					}
+				if(track == 50){
+					lookupTrack("Why Does It Always Rain on Me?", track);
+					}
+				if(track == 51){
+					lookupTrack("Working Class Hero", track);
+					}
+				if(track == 52){
+					lookupTrack("World Vs. World", track);
+					}
+				if(track == 53){
+					lookupTrack("You Can't Fool Me", track);
+					}
+			}
+		});
+		favourite.setOnLongClickListener(new OnLongClickListener() {
+			
+			Intent intent = new Intent(Unreleased.this, Favorites.class);
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				startActivity(intent);
+				return false;
+			}
+		});
+		
+		ImageButton label=(ImageButton) poppyview.findViewById(R.id.imageButton4);
 		label.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -467,7 +651,7 @@ public class Unreleased extends Activity {
 				}
 			}
 		});
-		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton4);
+		ImageButton settings=(ImageButton) poppyview.findViewById(R.id.imageButton5);
 		settings.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -720,5 +904,19 @@ public class Unreleased extends Activity {
 
 		};
 	            return super.onOptionsItemSelected(item);
+	}
+
+	//Checking and adding to database
+	public void lookupTrack(String name, int i) {
+		DBHandler db = new DBHandler(this, null, null, 1);
+		Track findtrack = db.findTrack(name);
+		
+		if(findtrack != null) {
+			Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
+			Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
+		} else {
+			db.addTrack(new Track(name, i));
+			Crouton.makeText(this, "Added to favorites", Style.INFO).show();
+		}
 	}
 }
