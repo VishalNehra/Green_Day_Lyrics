@@ -1,7 +1,5 @@
 package com.greenday.lyrics;
 	
-	import com.greenday.database.DatabaseActivity;
-
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,7 +37,7 @@ import android.widget.ImageButton;
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startActivity(new Intent(getActivity(), DatabaseActivity.class));
+					startActivity(new Intent(getActivity(), Favorites.class));
 				}
 			});
 	        return rootView;

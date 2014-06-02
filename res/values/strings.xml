@@ -9,8 +9,11 @@
     
     <string name="testing">Testing</string>
     
-    <!-- More -->
+    <!-- More (Settings)-->
     <string name="more_title">More&#8230;</string>
+    
+    <!-- Favorites title -->
+    <string name="favorites_title">Favorites</string>
     
     <!-- Image Alpha -->
     <string name="alpha_title">ART Transparency</string>
