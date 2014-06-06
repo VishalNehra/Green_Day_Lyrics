@@ -94,7 +94,7 @@ public class TcbMain extends Activity {
 					startActivity(intent);
 					}
 				if(track == 2){
-					intent.putExtra("report_sub", "21st Centuary Breakdown");
+					intent.putExtra("report_sub", "21st Century Breakdown");
 					startActivity(intent);
 					}
 				if(track == 3){
@@ -175,7 +175,7 @@ public class TcbMain extends Activity {
 					lookupTrack("Song Of The Centuary", track);
 					}
 				if(track == 2){
-					lookupTrack("21st Centuary Breakdown", track);
+					lookupTrack("21st Century Breakdown", track);
 					}
 				if(track == 3){
 					lookupTrack("Know Your Enemy", track);
@@ -319,7 +319,7 @@ public class TcbMain extends Activity {
 			tv1.setText(R.string.songofcentuary);
 		}
 		if(track == 2){
-			ab.setTitle("21st Centuary Breakdown");
+			ab.setTitle("21st Century Breakdown");
 			tv1.setText(R.string.tcb);
 		}
 		if(track == 3){

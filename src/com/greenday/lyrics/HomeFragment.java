@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 	 	
 	public class HomeFragment extends Fragment {
@@ -31,8 +30,8 @@ import android.widget.ImageButton;
 				}
 			});
 	        
-	        Button b = (Button) rootView.findViewById(R.id.button1);
-	        b.setOnClickListener(new OnClickListener() {
+	        ImageButton ib2 = (ImageButton) rootView.findViewById(R.id.imageButton2);
+	        ib2.setOnClickListener(new OnClickListener() {
 				
 				@Override
 				public void onClick(View arg0) {

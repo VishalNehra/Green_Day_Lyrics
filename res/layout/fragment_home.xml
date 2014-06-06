@@ -15,12 +15,15 @@
     android:gravity="center"
     android:src="@drawable/all_songs" />
 
-<Button
-    android:id="@+id/button1"
-    android:layout_width="wrap_content"
+<ImageButton
+    android:id="@+id/imageButton2"
+    style="?android:borderlessButtonStyle"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/imageButton1"
     android:layout_centerHorizontal="true"
-    android:text="Button" />
+    android:layout_marginTop="40dp"
+    android:gravity="center"
+    android:src="@drawable/fav_button" />
  
 </RelativeLayout>

@@ -29,6 +29,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -282,22 +283,170 @@ public class Settings extends PreferenceActivity {
 		
 		//Licenses
 		mLicense = (Preference)findPreference("license");
+		//Defining dialog layout
+		final Dialog dialog = new Dialog(this, android.R.style.Theme_Holo_Light_DialogWhenLarge_NoActionBar);
+		//dialog.setTitle("Open-Source Licenses");
+		LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+		final View dialog_view = inflater.inflate(R.layout.open_source_licenses, null);
+		dialog.setContentView(dialog_view);
+		
 		mLicense.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 			
 			@Override
 			public boolean onPreferenceClick(Preference arg0) {
-				new AlertDialog.Builder(Settings.this)
-				.setTitle("Open Source Licenses")
-				.setMessage(Html.fromHtml("• This app is in compliance with open source licenses used by libraries in this app.<br><br>" +
-						"• For more info. go to github page of this app."))
-				.setPositiveButton("Close", new OnClickListener() {
-					
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						dialog.cancel();
-					}
-				}).show();	
+				String oss_dialog = "<html><body>" +
+						"<h3>Notices for files:</h3> " +
+						"<ul><li>logback-android-1.0.10-2.jar</ul></li>" +	//logback
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright (C) 1999-2014, QOS.ch. All rights reserved.<br>" +
+						"&nbsp;*<br>" +
+						"&nbsp;* This program and the accompanying materials are dual-licensed under<br>" +
+						"&nbsp;* either the terms of the Eclipse Public License v1.0 as published by<br>" +
+						"&nbsp;* the Eclipse Foundation<br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;or (per the licensee\'s choosing)<br>" +
+						"&nbsp;* under the terms of the GNU Lesser General Public License version 2.1<br>" +
+						"&nbsp;* as published by the Free Software Foundation." +
+						"<br>&nbsp;*/ " +
+						"<br><br></code></p>" +
+						"<h3>Notices for files:</h3>" +
+						"<ul><li>slf4j-api-1.7.5.jar</ul></li>" +	//slf4j (for logback)
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>" +
+						"Copyright (c) 2004-2013 QOS.ch<br>" +
+						"All rights reserved.<br><br>" +
+						
+						"Permission is hereby granted, free  of charge, to any person obtaining<br>" +
+						"a  copy  of this  software  and  associated  documentation files  (the<br>" +
+						"\"Software\"), to  deal in  the Software without  restriction, including<br>" +
+						"without limitation  the rights to  use, copy, modify,  merge, publish,<br>" +
+						"distribute,  sublicense, and/or sell  copies of  the Software,  and to<br>" +
+						"permit persons to whom the Software  is furnished to do so, subject to<br>" +
+						"the following conditions:<br><br>" +
+						 
+						"The  above  copyright  notice  and  this permission  notice  shall  be<br>" +
+						"included in all copies or substantial portions of the Software.<br><br>" +
+						 
+						"THE  SOFTWARE IS  PROVIDED  \"AS  IS\", WITHOUT  WARRANTY  OF ANY  KIND,<br>" +
+						"EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF<br>" +
+						"MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND<br>" +
+						"NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE<br>" +
+						"LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION<br>" +
+						"OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION<br>" +
+						"WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br><br></p></code>" +
+						"<h3>Notices for files:</h3>" +
+						"<ul><li>nineoldandroids-2.4.0.jar</ul></li>" +	//nineoldandroids
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright 2012 Jake Wharton<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Licensed under the Apache License, Version 2.0 (the \"License\");<br>" +
+						"&nbsp;* you may not use this file except in compliance with the License.<br>" +
+						"&nbsp;* You may obtain a copy of the License at<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Unless required by applicable law or agreed to in writing, software<br>" +
+						"&nbsp;* distributed under the License is distributed on an \"AS IS\" BASIS,<br>" +
+						"&nbsp;* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>" +
+						"&nbsp;* See the License for the specific language governing permissions and<br>" +
+						"&nbsp;* limitations under the License.<br>" +
+						"&nbsp;*/ " +
+						"<br><br></code></p>" +
+						"<h3>Notices for files:</h3>" +
+						"<ul><li>acra-4.5.0.jar</ul></li>" +	//acra
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright [yyyy] [name of copyright owner]<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Licensed under the Apache License, Version 2.0 (the \"License\");<br>" +
+						"&nbsp;* you may not use this file except in compliance with the License.<br>" +
+						"&nbsp;* You may obtain a copy of the License at<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Unless required by applicable law or agreed to in writing, software<br>" +
+						"&nbsp;* distributed under the License is distributed on an \"AS IS\" BASIS,<br>" +
+						"&nbsp;* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>" +
+						"&nbsp;* See the License for the specific language governing permissions and<br>" +
+						"&nbsp;* limitations under the License.<br>" +
+						"&nbsp;*/ " +
+						"<br><br></code></p>" +
+						"<h3>Notices for files:</h3>" +
+						"<ul><li>crouton-1.8.2.jar</ul></li>" +	//crouton
+						"<p style = 'background-color:#eeeeee;padding-left:1em' align='center'><code>" +
+						"<br>" +
+						"Apache License<br>" +
+                        "Version 2.0, January 2004<br>" +
+                        "http://www.apache.org/licenses/<br><br></code></p>" +
+                        "<h3>Notices for libraries:</h3>" +
+						"<ul><li>PoppyView</ul></li>" +	//Poppyview
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright 2013 Flavien Laurent<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Licensed under the Apache License, Version 2.0 (the \"License\");<br>" +
+						"&nbsp;* you may not use this file except in compliance with the License.<br>" +
+						"&nbsp;* You may obtain a copy of the License at<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Unless required by applicable law or agreed to in writing, software<br>" +
+						"&nbsp;* distributed under the License is distributed on an \"AS IS\" BASIS,<br>" +
+						"&nbsp;* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>" +
+						"&nbsp;* See the License for the specific language governing permissions and<br>" +
+						"&nbsp;* limitations under the License.<br>" +
+						"&nbsp;*/ " +
+						"<br><br></code></p>" +
+                        "<h3>Notices for libraries:</h3>" +
+						"<ul><li>Android Holo ColorPicker</ul></li>" +	//Holocolor picker
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright 2012 Lars Werkman<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Licensed under the Apache License, Version 2.0 (the \"License\");<br>" +
+						"&nbsp;* you may not use this file except in compliance with the License.<br>" +
+						"&nbsp;* You may obtain a copy of the License at<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Unless required by applicable law or agreed to in writing, software<br>" +
+						"&nbsp;* distributed under the License is distributed on an \"AS IS\" BASIS,<br>" +
+						"&nbsp;* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>" +
+						"&nbsp;* See the License for the specific language governing permissions and<br>" +
+						"&nbsp;* limitations under the License.<br>" +
+						"&nbsp;*/ " +
+						"<br><br></code></p>" +
+                        "<h3>Notices for libraries:</h3>" +
+						"<ul><li>EnhancedListView</ul></li>" +	//Enhanced Listview
+						"<p style = 'background-color:#eeeeee;padding-left:1em'><code>" +
+						"<br>/*<br>" +
+						"&nbsp;* Copyright 2013 Tim Roes<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Licensed under the Apache License, Version 2.0 (the \"License\");<br>" +
+						"&nbsp;* you may not use this file except in compliance with the License.<br>" +
+						"&nbsp;* You may obtain a copy of the License at<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* &nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0<br>" +
+						"&nbsp;* <br>" +
+						"&nbsp;* Unless required by applicable law or agreed to in writing, software<br>" +
+						"&nbsp;* distributed under the License is distributed on an \"AS IS\" BASIS,<br>" +
+						"&nbsp;* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>" +
+						"&nbsp;* See the License for the specific language governing permissions and<br>" +
+						"&nbsp;* limitations under the License.<br>" +
+						"&nbsp;*/ " +
+						"<br><br></code></p>" +
+                        "<h3>Notices for libraries:</h3>" +
+						"<ul><li>ShowcaseView</ul></li>" +	//ShowcaseView
+						"<p style = 'background-color:#eeeeee;padding-left:1em' align='center'><code>" +
+						"<br>" +
+						"Apache License<br>" +
+                        "Version 2.0, January 2004<br>" +
+                        "http://www.apache.org/licenses/<br><br></code></p>" +
+						"</body></html>";
+				WebView wv = (WebView) dialog_view.findViewById(R.id.webView1);
+				wv.loadData(oss_dialog, "text/html", null);
+				dialog.show();
 				return false;
 			}
 		});
