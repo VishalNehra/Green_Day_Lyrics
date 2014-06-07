@@ -424,7 +424,6 @@ public class Demolicious extends Activity {
 			
 			if(findtrack != null) {
 				Crouton.makeText(this, "Already in favorites", Style.ALERT).show();
-				Crouton.makeText(this, "Press and hold on favorites icon to view it", Style.INFO).show();
 			} else {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();

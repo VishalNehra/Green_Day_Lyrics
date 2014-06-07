@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
@@ -915,28 +916,29 @@ public class Favorites extends Activity {
 	                 */
 	                if (values.equals("A Quick One While He's Away")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 1);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 1);
+	                    Toast.makeText(Favorites.this, "in condition", Toast.LENGTH_LONG).show();
+	                    startActivity(i);
 	                } if (values.equals("Angel and the Jerk")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 2);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 2);
+	                    startActivity(i);
 	                } if (values.equals("Another State Of Mind")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 3);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 3);
+	                    startActivity(i);
 	                } if (values.equals("Billie Joe's Mom")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 4);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 4);
+	                    startActivity(i);
 	                } if (values.equals("Boys in the Bathroom Stall")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 5);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 5);
+	                    startActivity(i);
 	                } if (values.equals("Can't Make Love")) {
 	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    newActivity.putExtra("track", 6);
-	                    startActivity(newActivity);
+	                    i.putExtra("track", 6);
+	                    startActivity(i);
 	                } 
 	                
 				}
