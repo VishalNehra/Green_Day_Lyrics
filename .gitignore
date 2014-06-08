@@ -2,6 +2,6 @@
 ## Eclipse
 #################
 
-/gen/
-/bin/
-/.settings/
+gen/
+bin/
+.settings/
