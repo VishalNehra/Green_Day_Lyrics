@@ -3,5 +3,5 @@
 #################
 
 /gen/
-bin/
-.settings/
+/bin/
+/.settings/
