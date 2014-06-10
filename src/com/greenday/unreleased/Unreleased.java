@@ -230,74 +230,70 @@ public class Unreleased extends Activity {
 					startActivity(intent);
 				}
 				if(track == 36){
-					intent.putExtra("report_sub", "State of Shock");
-					startActivity(intent);
-				}
-				if(track == 37){
 					intent.putExtra("report_sub", "Supermarket");
 					startActivity(intent);
 					}
-				if(track == 38){
+				if(track == 37){
 					intent.putExtra("report_sub", "Teenage Lobotomy");
 					startActivity(intent);
 					}
-				if(track == 39){
+				if(track == 38){
 					intent.putExtra("report_sub", "That's All Right");
 					startActivity(intent);
 					}
-				if(track == 40){
+				if(track == 39){
 					intent.putExtra("report_sub", "The Ballad of Wilhelm Fink");
 					startActivity(intent);
 					}
-				if(track == 41){
+				if(track == 40){
 					intent.putExtra("report_sub", "The Saints Are Coming");
 					startActivity(intent);
 					}
-				if(track == 42){
+				if(track == 41){
 					intent.putExtra("report_sub", "The Simpsons Theme");
 					startActivity(intent);
 					}
-				if(track == 43){
+				if(track == 42){
 					intent.putExtra("report_sub", "The Things I Heard Today");
 					startActivity(intent);
 					}
-				if(track == 44){
+				if(track == 43){
 					intent.putExtra("report_sub", "Too Much, Too Soon");
 					startActivity(intent);
 					}
-				if(track == 45){
+				if(track == 44){
 					intent.putExtra("report_sub", "Walking the Dog");
 					startActivity(intent);
 					}
-				if(track == 46){
+				if(track == 45){
 					intent.putExtra("report_sub", "We Are The Champions");
 					startActivity(intent);
 					}
-				if(track == 47){
+				if(track == 46){
 					intent.putExtra("report_sub", "What About Today?");
 					startActivity(intent);
 					}
-				if(track == 48){
+				if(track == 47){
 					intent.putExtra("report_sub", "When It's Time");
 					startActivity(intent);
 					}
-				if(track == 49){
+				if(track == 48){
 					intent.putExtra("report_sub", "When Will I Be Loved");
 					startActivity(intent);
 					}
-				if(track == 50){
+				if(track == 49){
 					intent.putExtra("report_sub", "Why Does It Always Rain on Me?");
 					startActivity(intent);
 					}
-				if(track == 51){
+				if(track == 50){
 					intent.putExtra("report_sub", "Working Class Hero");
 					startActivity(intent);
 					}
-				if(track == 52){
+				if(track == 51){
 					intent.putExtra("report_sub", "World Vs. World");
 					startActivity(intent);
 				}
-				if(track == 53){
+				if(track == 52){
 					intent.putExtra("report_sub", "You Can't Fool Me");
 					startActivity(intent);
 				}
@@ -417,57 +413,54 @@ public class Unreleased extends Activity {
 					lookupTrack("Shout", track);
 					}
 				if(track == 36){
-					lookupTrack("State of Shock", track);
-					}
-				if(track == 37){
 					lookupTrack("Supermarket", track);
 					}
-				if(track == 38){
+				if(track == 37){
 					lookupTrack("Teenage Lobotomy", track);
 					}
-				if(track == 39){
+				if(track == 38){
 					lookupTrack("That's All Right", track);
 					}
-				if(track == 40){
+				if(track == 39){
 					lookupTrack("The Ballad of Wilhelm Fink", track);
 					}
-				if(track == 41){
+				if(track == 40){
 					lookupTrack("The Saints Are Coming", track);
 					}
-				if(track == 42){
+				if(track == 41){
 					lookupTrack("The Simpsons Theme", track);
 					}
-				if(track == 43){
+				if(track == 42){
 					lookupTrack("The Things I Heard Today", track);
 					}
-				if(track == 44){
+				if(track == 43){
 					lookupTrack("Too Much, Too Soon", track);
 					}
-				if(track == 45){
+				if(track == 44){
 					lookupTrack("Walking the Dog", track);
 					}
-				if(track == 46){
+				if(track == 45){
 					lookupTrack("We Are The Champions", track);
 					}
-				if(track == 47){
+				if(track == 46){
 					lookupTrack("What About Today?", track);
 					}
-				if(track == 48){
+				if(track == 47){
 					lookupTrack("When It's Time", track);
 					}
-				if(track == 49){
+				if(track == 48){
 					lookupTrack("When Will I Be Loved", track);
 					}
-				if(track == 50){
+				if(track == 49){
 					lookupTrack("Why Does It Always Rain on Me?", track);
 					}
-				if(track == 51){
+				if(track == 50){
 					lookupTrack("Working Class Hero", track);
 					}
-				if(track == 52){
+				if(track == 51){
 					lookupTrack("World Vs. World", track);
 					}
-				if(track == 53){
+				if(track == 52){
 					lookupTrack("You Can't Fool Me", track);
 					}
 			}
@@ -596,7 +589,7 @@ public class Unreleased extends Activity {
 					Info.info35(Unreleased.this);
 				}
 				if(track == 36){
-					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+					Info.info36(Unreleased.this);
 				}
 				if(track == 37){
 					Info.info37(Unreleased.this);
@@ -611,10 +604,10 @@ public class Unreleased extends Activity {
 					Info.info40(Unreleased.this);
 				}
 				if(track == 41){
-					Info.info41(Unreleased.this);
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
 				}
 				if(track == 42){
-					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+					Info.info42(Unreleased.this);
 				}
 				if(track == 43){
 					Info.info43(Unreleased.this);
@@ -626,10 +619,10 @@ public class Unreleased extends Activity {
 					Info.info45(Unreleased.this);
 				}
 				if(track == 46){
-					Info.info46(Unreleased.this);
+					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
 				}
 				if(track == 47){
-					Crouton.makeText(Unreleased.this, "Info. not available.", Style.ALERT).show();
+					Info.info47(Unreleased.this);
 				}
 				if(track == 48){
 					Info.info48(Unreleased.this);
@@ -645,9 +638,6 @@ public class Unreleased extends Activity {
 				}
 				if(track == 52){
 					Info.info52(Unreleased.this);
-				}
-				if(track == 53){
-					Info.info53(Unreleased.this);
 				}
 			}
 		});
@@ -805,74 +795,70 @@ public class Unreleased extends Activity {
 			tv1.setText(R.string.shout);
 		}
 		if(track == 36){
-			ab.setTitle("State of Shock");
-			tv1.setText(R.string.stateofshock);
-		}
-		if(track == 37){
 			ab.setTitle("Supermarket");
 			tv1.setText(R.string.supermarket);
 		}
-		if(track == 38){
+		if(track == 37){
 			ab.setTitle("Teenage Lobotomy");
 			tv1.setText(R.string.teenage);
 		}
-		if(track == 39){
+		if(track == 38){
 			ab.setTitle("That's All Right");
 			tv1.setText(R.string.thatsallright);
 		}
-		if(track == 40){
+		if(track == 39){
 			ab.setTitle("The Ballad of Wilhelm Fink");
 			tv1.setText(R.string.ballad);
 		}
-		if(track == 41){
+		if(track == 40){
 			ab.setTitle("The Saints Are Coming");
 			tv1.setText(R.string.saintsarecoming);
 		}
-		if(track == 42){
+		if(track == 41){
 			ab.setTitle("The Simpsons Theme");
 			tv1.setText(R.string.simpsons);
 		}
-		if(track == 43){
+		if(track == 42){
 			ab.setTitle("The Things I Heard Today");
 			tv1.setText(R.string.thingsheard);
 		}
-		if(track == 44){
+		if(track == 43){
 			ab.setTitle("Too Much, Too Soon");
 			tv1.setText(R.string.toomuch);
 		}
-		if(track == 45){
+		if(track == 44){
 			ab.setTitle("Walking the Dog");
 			tv1.setText(R.string.walkingdog);
 		}
-		if(track == 46){
+		if(track == 45){
 			ab.setTitle("We Are The Champions");
 			tv1.setText(R.string.wearechampions);
 		}
-		if(track == 47){
+		if(track == 46){
 			ab.setTitle("What About Today?");
 			tv1.setText(R.string.whattoday);
 		}
-		if(track == 48){
+		if(track == 47){
 			ab.setTitle("When It's Time");
 			tv1.setText(R.string.whenitstime);
 		}
-		if(track == 49){
+		if(track == 48){
 			ab.setTitle("When Will I Be Loved");
 			tv1.setText(R.string.whenwillloved);
 		}
-		if(track == 50){
+		if(track == 49){
 			ab.setTitle("Why Does It Always Rain on Me?");
 			tv1.setText(R.string.whydoesitrain);
 		}
-		if(track == 51){
+		if(track == 50){
 			ab.setTitle("Working Class Hero");
 			tv1.setText(R.string.workingclasshero);
 		}
-		if(track == 52){
+		if(track == 51){
 			ab.setTitle("World Vs. World");
 			tv1.setText(R.string.worldvsworld);
 		}
-		if(track == 53){
+		if(track == 52){
 			ab.setTitle("You Can't Fool Me");
 			tv1.setText(R.string.youcantfool);
 		}

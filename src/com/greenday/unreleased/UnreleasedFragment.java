@@ -86,7 +86,7 @@ public class UnreleasedFragment extends Fragment {
 					"Second Time Around",
 					"Shoplifter",
 					"Shout",
-					"State of Shock",
+					//"State of Shock",
 					"Supermarket (Iggy Pop + Green Day)",
 					"Teenage Lobotomy",
 					"That's All Right",
@@ -264,6 +264,10 @@ public class UnreleasedFragment extends Fragment {
 		                		  newActivity34.putExtra("track", 35);
 		                		  startActivity(newActivity34);
 		                		  break;
+                         /*case 35: Intent newActivity35 = new Intent(getActivity(), Unreleased.class);
+		                		  newActivity35.putExtra("track", 36);
+		                		  startActivity(newActivity35);
+		                		  break;*/
                          case 35: Intent newActivity35 = new Intent(getActivity(), Unreleased.class);
 		                		  newActivity35.putExtra("track", 36);
 		                		  startActivity(newActivity35);
@@ -331,10 +335,6 @@ public class UnreleasedFragment extends Fragment {
                          case 51: Intent newActivity51 = new Intent(getActivity(), Unreleased.class);
 		                		  newActivity51.putExtra("track", 52);
 		                		  startActivity(newActivity51);
-		                		  break;
-                         case 52: Intent newActivity52 = new Intent(getActivity(), Unreleased.class);
-		                		  newActivity52.putExtra("track", 53);
-		                		  startActivity(newActivity52);
 		                		  break;
                          }
                 	 }

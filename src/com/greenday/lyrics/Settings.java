@@ -23,6 +23,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.provider.Telephony.Mms.Rate;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -51,7 +52,7 @@ public class Settings extends PreferenceActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -257,6 +258,19 @@ public class Settings extends PreferenceActivity {
 			}
 		});
 		
+		//Translate
+		mTranslate = findPreference("translate");
+		mTranslate.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Settings.this, ReportSong.class);
+				intent.putExtra("translate", true);
+				startActivity(intent);
+				return false;
+			}
+		});
 		
 		//Disclaimer
 		mDisclaimer = (Preference)findPreference("disclaimer");

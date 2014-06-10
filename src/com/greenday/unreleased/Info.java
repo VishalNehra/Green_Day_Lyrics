@@ -601,11 +601,6 @@ public class Info {
 	
 	public static void info36(final Context c)
 	{
-		//State of Shock
-	}
-	
-	public static void info37(final Context c)
-	{
 		//Supermarket
 		new AlertDialog.Builder(c)			        
         .setMessage(Html.fromHtml(c.getString(R.string.album)+
@@ -622,7 +617,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info38(final Context c)
+	public static void info37(final Context c)
 	{
 		//Teenage Lobotomy
 		new AlertDialog.Builder(c)			        
@@ -639,7 +634,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info39(final Context c)
+	public static void info38(final Context c)
 	{
 		//That's All Right
 		new AlertDialog.Builder(c)
@@ -657,7 +652,7 @@ public class Info {
         .show();      
 	}
 	
-	public static void info40(final Context c)
+	public static void info39(final Context c)
 	{
 		//The Ballad of Wilhelm Fink
 		new AlertDialog.Builder(c)			        
@@ -675,7 +670,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info41(final Context c)
+	public static void info40(final Context c)
 	{
 		//The Saints Are Coming
 		new AlertDialog.Builder(c)			        
@@ -693,12 +688,12 @@ public class Info {
         .show();    
 	}
 	
-	public static void info42(final Context c)
+	public static void info41(final Context c)
 	{
 		//The Simpsons Theme
 	}
 	
-	public static void info43(final Context c)
+	public static void info42(final Context c)
 	{
 		//The Things I Heard Today
 		new AlertDialog.Builder(c)			        
@@ -714,7 +709,7 @@ public class Info {
         .show();      
 	}
 	
-	public static void info44(final Context c)
+	public static void info43(final Context c)
 	{
 		//Too Much, Too Soon
 		new AlertDialog.Builder(c)			        
@@ -732,7 +727,7 @@ public class Info {
         .show();   
 	}
 	
-	public static void info45(final Context c)
+	public static void info44(final Context c)
 	{
 		//Walking the Dog
 		new AlertDialog.Builder(c)			        
@@ -750,7 +745,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info46(final Context c)
+	public static void info45(final Context c)
 	{
 		//We Are The Champions
 		new AlertDialog.Builder(c)			        
@@ -767,12 +762,12 @@ public class Info {
         .show();     
 	}
 	
-	public static void info47(final Context c)
+	public static void info46(final Context c)
 	{
 		//What About Today?
 	}
 	
-	public static void info48(final Context c)
+	public static void info47(final Context c)
 	{
 		//When It's Time
 		new AlertDialog.Builder(c)			        
@@ -792,7 +787,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info49(final Context c)
+	public static void info48(final Context c)
 	{
 		//When Will I Be Loved
 		new AlertDialog.Builder(c)			        
@@ -810,7 +805,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info50(final Context c)
+	public static void info49(final Context c)
 	{
 		//Why Does It Always Rain on Me?
 		new AlertDialog.Builder(c)			        
@@ -828,7 +823,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info51(final Context c)
+	public static void info50(final Context c)
 	{
 		//Working Class Hero
 		new AlertDialog.Builder(c)			        
@@ -845,7 +840,7 @@ public class Info {
         .show();     
 	}
 	
-	public static void info52(final Context c)
+	public static void info51(final Context c)
 	{
 		//World Vs. World
 		new AlertDialog.Builder(c)			        
@@ -863,7 +858,7 @@ public class Info {
         .show();    
 	}
 	
-	public static void info53(final Context c)
+	public static void info52(final Context c)
 	{
 		//You Can't Fool Me
 		new AlertDialog.Builder(c)			        

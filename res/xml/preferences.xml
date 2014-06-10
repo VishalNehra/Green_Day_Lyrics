@@ -55,6 +55,9 @@
 		          <Preference android:key="nav_width"
 		              android:title="@string/nav_width_title"
 		              android:summary="@string/nav_width_summary"></Preference>
+		          <Preference android:key="wallpaper"
+		              android:title="@string/wallpaper_title"
+		              android:summary="@string/wallpaper_summary"/>
 	          </PreferenceScreen>
 	            
 	      </PreferenceCategory>
@@ -75,6 +78,9 @@
                     <intent android:action="android.intent.action.VIEW"
 	                    android:data="https://github.com/vishal0071/Green_Day_Lyrics"/>
                 </Preference>
+                <Preference android:key="translate"
+                    android:title="@string/translate_title"
+                    android:summary="@string/translate_summary" />
                 <Preference
                 	android:key="rate"
 	                android:title="@string/rate_title"

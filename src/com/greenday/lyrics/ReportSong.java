@@ -44,6 +44,11 @@ public class ReportSong extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		ab.setSubtitle(getIntent().getExtras().getString("report_sub"));
 		
+		//Getting user e-mail for report
+		SharedPreferences prefs = this.getSharedPreferences(
+			      "EXTRA_PREF", Context.MODE_PRIVATE);
+		final String account = prefs.getString("account", "Green Day Fan");
+		
 		//Submit class name for report
 		Logger log = LoggerFactory.getLogger(ReportSong.class);
 		log.info(getIntent().getExtras().getString("report_sub"));
@@ -52,16 +57,13 @@ public class ReportSong extends Activity {
 		NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 		if (networkInfo != null && networkInfo.isConnected()) 
 		{
-			//No action
+			//Toast.makeText(this, "Choose your E-Mail id if you expect a reply for your feedback", Toast.LENGTH_LONG).show();
 		}
 		else
 		{
 			Toast.makeText(this, "Internet connection not available", Toast.LENGTH_LONG).show();
 		}
 		
-		SharedPreferences prefs = this.getSharedPreferences(
-			      "EXTRA_PREF", Context.MODE_PRIVATE);
-		final String account = prefs.getString("account", "Green Day Fan");
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 		
 		String[] values = new String []
@@ -99,6 +101,13 @@ public class ReportSong extends Activity {
 				
 			}
 		});
+		
+		//Setting translation intent
+		boolean translate = getIntent().getBooleanExtra("translate", false);
+		if(translate) {
+			spinner.setSelection(1);
+			log.info("translation");	//Should be done in send button, but that's fine, can be managed
+		}
 	    
 		EditText et = (EditText) findViewById(R.id.editText1);
 		et.setHint("Write your feedback");
@@ -133,13 +142,19 @@ public class ReportSong extends Activity {
 			if (networkInfo != null && networkInfo.isConnected()) 
 			{
 				EditText et = (EditText) findViewById(R.id.editText1);
-				//Lib used to submit edittext to log
-				Logger log = LoggerFactory.getLogger(ReportSong.class);
-				log.info(et.getText().toString());
-				//Exception to start ACRA without any crash
-				Throwable caughtException=null;
-				ACRA.getErrorReporter().handleException(caughtException);
-				onBackPressed();
+				String et_text = et.getText().toString();
+				if(et_text.equals("")) {
+					//Crouton.makeText(ReportSong.this, "Unable to send empty feedback", Style.ALERT).show();
+					et.setError("DAFAQ, type something on me");
+				} else {
+					//Lib used to submit edittext to log
+					Logger log = LoggerFactory.getLogger(ReportSong.class);
+					log.info(et.getText().toString());
+					//Exception to start ACRA without any crash
+					Throwable caughtException=null;
+					ACRA.getErrorReporter().handleException(caughtException);
+					onBackPressed();
+				}
 			}
 			else
 			{

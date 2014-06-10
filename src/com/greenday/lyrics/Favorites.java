@@ -910,38 +910,220 @@ public class Favorites extends Activity {
 					Intent newActivity = new Intent(Favorites.this, Demolicious.class);     
 	                newActivity.putExtra("track", 18);
 	                startActivity(newActivity);
-	                
-	                /*
-	                 * Unreleased
-	                 */
-	                if (values.equals("A Quick One While He's Away")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 1);
-	                    Toast.makeText(Favorites.this, "in condition", Toast.LENGTH_LONG).show();
-	                    startActivity(i);
-	                } if (values.equals("Angel and the Jerk")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 2);
-	                    startActivity(i);
-	                } if (values.equals("Another State Of Mind")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 3);
-	                    startActivity(i);
-	                } if (values.equals("Billie Joe's Mom")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 4);
-	                    startActivity(i);
-	                } if (values.equals("Boys in the Bathroom Stall")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 5);
-	                    startActivity(i);
-	                } if (values.equals("Can't Make Love")) {
-	                	Intent i = new Intent(Favorites.this, Unreleased.class);     
-	                    i.putExtra("track", 6);
-	                    startActivity(i);
-	                } 
-	                
 				}
+				
+	            /*
+	             * Unreleased
+	             */
+	            if (values.equals("A Quick One While He's Away")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 1);
+	                startActivity(i);
+	            } if (values.equals("Angel and the Jerk")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 2);
+	                startActivity(i);
+	            } if (values.equals("Another State Of Mind")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 3);
+	                startActivity(i);
+	            } if (values.equals("Billie Joe's Mom")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 4);
+	                startActivity(i);
+	            } if (values.equals("Boys in the Bathroom Stall")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 5);
+	                startActivity(i);
+	            } if (values.equals("Can't Make Love")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 6);
+	                startActivity(i);
+	            } if (values.equals("Chocolate Rain")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 7);
+	                startActivity(i);
+	            } if (values.equals("Cigarettes And Valentines")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 8);
+	                startActivity(i);
+	            } if (values.equals("D.U.I.")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 9);
+	                startActivity(i);
+	            } if (values.equals("Depression Times")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 10);
+	                startActivity(i);
+	            } if (values.equals("Don't Want to Know If You Are Lonely")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 11);
+	                startActivity(i);
+	            } if (values.equals("Dream Catcher")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 12);
+	                startActivity(i);
+	            } if (values.equals("Favourite Son")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 13);
+	                startActivity(i);
+	            } if (values.equals("Food Around the Corner")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 14);
+	                startActivity(i);
+	            } if (values.equals("Governator")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 15);
+	                startActivity(i);
+	            } if (values.equals("Hearts Collide")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 16);
+	                startActivity(i);
+	            } if (values.equals("Hybrid Moments")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 17);
+	                startActivity(i);
+	            } if (values.equals("I Fought The Law")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 18);
+	                startActivity(i);
+	            } if (values.equals("I Run NY")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 19);
+	                startActivity(i);
+	            } if (values.equals("Jennifer")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 20);
+	                startActivity(i);
+	            } if (values.equals("Lights Out")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 21);
+	                startActivity(i);
+	            } if (values.equals("Like A Rolling Stone")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 22);
+	                startActivity(i);
+	            } if (values.equals("Like a Rat Does Cheese")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 23);
+	                startActivity(i);
+	            } if (values.equals("Look For Love")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 24);
+	                startActivity(i);
+	            } if (values.equals("Maybe Forever")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 25);
+	                startActivity(i);
+	            } if (values.equals("Mechanical Man")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 26);
+	                startActivity(i);
+	            } if (values.equals("Midwest Medley")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 27);
+	                startActivity(i);
+	            } if (values.equals("Minnesota Girl")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 28);
+	                startActivity(i);
+	            } if (values.equals("Oh Girl")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 29);
+	                startActivity(i);
+	            } if (values.equals("Olivia")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 30);
+	                startActivity(i);
+	            } if (values.equals("Private Hell")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 31);
+	                startActivity(i);
+	            } if (values.equals("Radio")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 32);
+	                startActivity(i);
+	            } if (values.equals("Second Time Around")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 33);
+	                startActivity(i);
+	            } if (values.equals("Shoplifter")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 34);
+	                startActivity(i);
+	            } if (values.equals("Shout")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 35);
+	                startActivity(i);
+	            } if (values.equals("Supermarket")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 36);
+	                startActivity(i);
+	            } if (values.equals("Teenage Lobotomy")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 37);
+	                startActivity(i);
+	            } if (values.equals("That's All Right")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 38);
+	                startActivity(i);
+	            } if (values.equals("The Ballad of Wilhelm Fink")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 39);
+	                startActivity(i);
+	            } if (values.equals("The Saints Are Coming")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 40);
+	                startActivity(i);
+	            } if (values.equals("The Simpsons Theme")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 41);
+	                startActivity(i);
+	            } if (values.equals("The Things I Heard Today")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 42);
+	                startActivity(i);
+	            } if (values.equals("Too Much, Too Soon")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 43);
+	                startActivity(i);
+	            } if (values.equals("Walking the Dog")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 44);
+	                startActivity(i);
+	            } if (values.equals("We Are The Champions")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 45);
+	                startActivity(i);
+	            } if (values.equals("What About Today?")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 46);
+	                startActivity(i);
+	            } if (values.equals("When It's Time")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 47);
+	                startActivity(i);
+	            } if (values.equals("When Will I Be Loved")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 48);
+	                startActivity(i);
+	            } if (values.equals("Why Does It Always Rain on Me?")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 49);
+	                startActivity(i);
+	            } if (values.equals("Working Class Hero")) {
+	            	Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 50);
+	                startActivity(i);
+	            } if (values.equals("World Vs. World")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 51);
+	                startActivity(i);
+	            } if (values.equals("You Can't Fool Me")) {
+	                Intent i = new Intent(Favorites.this, Unreleased.class);     
+	                i.putExtra("track", 52);
+	                startActivity(i);
+	            }
 			}
 		});
 		

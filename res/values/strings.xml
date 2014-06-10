@@ -23,6 +23,10 @@
     <string name="nav_width_title">Nav. Drawer Width</string>
     <string name="nav_width_summary">Change width of navigation drawer</string>
     
+    <!-- Wallpaper -->
+    <string name="wallpaper_title">Set Wallpaper</string>
+    <string name="wallpaper_summary">Can set beautiful Green Day album arts as wallpaper</string>
+    
     <!-- Changelog -->
     <string name="title_changelog">Change log</string>
     <string name="changelog_version_1">&lt;font color="#524ef8">&lt;b>v1.0&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>March 1, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
@@ -124,6 +128,10 @@
     
     <string name="store_title">Green Day Store</string>
     <string name="store_summary">Support Green Day, purchase original stuff.</string>
+    
+  	<!-- Translate -->
+  	<string name="translate_title">Translate</string>
+  	<string name="translate_summary">Want app in your language? Help in its translation</string>
     
     <string name="about_title">About</string>
     <string name="aboutapp_title">About the app.</string>
