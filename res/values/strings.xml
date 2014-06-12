@@ -64,6 +64,9 @@
     <string name="search_title">Search a song</string>
     <string name="all_songs">All Songs</string>
     
+    <!-- Favorite action bar title -->
+    <string name="fav_title">Add favorite</string>
+    
     <!-- Confirm Exit title -->
     <string name="exit_title">Confirm before exit</string>
     <string name="exit_summary_on">Enabled</string>

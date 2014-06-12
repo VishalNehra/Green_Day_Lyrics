@@ -139,206 +139,9 @@ public class Allsongs extends Activity {
             	getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 			}
 		
-		String[] values = new String []
-				{
-				"1,000 Hours",
-				"16",
-				"2000 Light Years Away",
-				"21 Guns",
-				"21st Century Breakdown",
-				"409 In Your Coffeemaker",
-				"80",
-				"86",
-				"8th Avenue Serenade",
-				"99 Revolutions",
-				"99 Revolutions (Demo)",
-				"All By Myself",
-				"All The Time",
-				"Amanda",
-				"American Eulogy (Mass Hysteria/Modern World)",
-				"American Idiot",
-				"Amy",
-				"Android",
-				"Angel Blue",
-				"Angel Blue (Demo)",
-				"Are We The Waiting",
-				"Armatage Shanks",
-				"Ashley",
-				"Ashley (Demo)",
-				"A Little Boy Named Train (Demo)",
-				"At The Library",
-				"Bab's Uvula Who?",
-				"Baby Eyes",
-				"Baby Eyes (Demo)",
-				"Basket Case",
-				"Before The Lobotomy",
-				"Best Thing In Town",
-				"Blood, Sex And Booze",
-				"Boulevard Of Broken Dreams",
-				"Brain Stew",
-				"Brat",
-				"Brutal Love",
-				"Burnout",
-				"Carpe Diem",
-				"Carpe Diem (Demo)",
-				"Castaway",
-				"Christian's Inferno",
-				"Christie Road",
-				"Chump",
-				"Church On Sunday",
-				"Coming Clean",
-				"Deadbeat Holiday",
-				"Desensitized",
-				"Dirty Rotten Bastards",
-				"Disappearing Boy",
-				"Do Da Da",
-				"Dominated Love Slave",
-				"Don't Leave Me",
-				"Don't Wanna Fall In Love",
-				"Drama Queen",
-				"Dry Ice",
-				"East Jesus Nowhere",
-				"Emenius Sleepus",
-				"Espionage",
-				"Extraordinary Girl",
-				"F.O.D.",
-				"Fashion Victim",
-				"Fell For You",
-				"Fell For You (Demo)",
-				"Fuck Time",
-				"Geek Stink Breath",
-				"Give Me Novacaine",
-				"Going To Pasalacqua",
-				"Good Riddance (Time Of Your Life)",
-				"Green Day",
-				"Ha Ha You're Dead",
-				"Haushinka",
-				"Having A Blast",
-				"Hitchin' A Ride",
-				"Hold On",
-				"Holiday",
-				"Homecoming",
-				"Horseshoes And Handgrenades",
-				"I Want To Be Alone",
-				"I Want To Be On T.V.",
-				"I Was There",
-				"In The End",
-				"Jackass",
-				"Jaded",
-				"J.A.R. (Jason Andrew Relva)",
-				"Jesus Of Suburbia",
-				"Jinx",
-				"Kill The DJ",
-				"King For A Day",
-				"Know Your Enemy",
-				"Knowledge",
-				"Lady Cobra",
-				"Last Night On Earth",
-				"Last Of American Girls",
-				"Lazy Bones",
-				"Let Yourself Go",
-				"Let Yourself Go (Demo)",
-				"Letterbomb",
-				"Little Boy Named Train",
-				"Longview",
-				"Loss Of Control",
-				"Macy's Day Parade",
-				"Makeout Party",
-				"Makeout Party (Demo)",
-				"Minority",
-				"Maria",
-				"Misery",
-				"Missing You",
-				"Missing You (Demo)",
-				"Murder City",
-				"My Generation",
-				"Nice Guys Finish Last",
-				"Nightlife",
-				"No One Knows",
-				"No Pride",
-				"Nuclear Family",
-				"Nuclear Family (Demo)",
-				"Oh Love",
-				"Oh Love (Demo)",
-				"On The Wagon",
-				"One For The Razorbacks",
-				"One Of My Lies",
-				"Only Of You",
-				"Outsider",
-				"Panic Song",
-				"Paper Lanterns",
-				"Peacemaker",
-				"Platypus (I Hate You)",
-				"Poprocks & Coke",
-				"Private Ale",
-				"Prosthetic Head",
-				"Pulling Teeth",
-				"Redundant",
-				"Reject",
-				"Rest",
-				"Restless Heart Syndrome",
-				"Road To Acceptance",
-				"Rotting",
-				"Rusty James",
-				"Rusty James (Demo)",
-				"Sassafras Roots",
-				"Scattered",
-				"Scumbag",
-				"See The Light",
-				"See You Tonight",
-				"Sex, Drugs & Violence",
-				"Sex, Drugs And Violence (Demo)",
-				"She",
-				"She's A Rebel",
-				"Sick Of Me",
-				"Song Of The Century",
-				"St. Jimmy",
-				"State Of Shock",
-				"Stay The Night (Acoustic)",
-				"Stay The Night",
-				"Stay The Night (Demo)",
-				"Stop When The Red Lights Flash",
-				"Strangeland",
-				"Stray Heart",
-				"Stray Heart (Demo)",
-				"Stuart And The Ave.",
-				"Stuck With Me",
-				"Suffocate",
-				"Sweet 16",
-				"Sweet Children",
-				"Take Back",
-				"The Forgotten",
-				"The Grouch",
-				"The Judge's Daughter",
-				"The One I Want",
-				"The Static Age",
-				"Tight Wadd Hill",
-				"Tired Of Waiting For You",
-				"Troublemaker",
-				"Uptight",
-				"Waiting",
-				"Wake Me Up When September Ends",
-				"Walk Away",
-				"Walking Alone",
-				"Walking Contradiction",
-				"Warning",
-				"Welcome To Paradise",
-				"Westbound Sign",
-				"Whatsername",
-				"When I Come Around",
-				"Who Wrote Holden Caulfield?",
-				"Why Do You Want Him?",
-				"Wild One",
-				"Words I Might Have Ate",
-				"Worry Rock",
-				"Wow! That's Loud",
-				"X-Kid",
-				"You Lied",
-				"¡Viva La Gloria!",
-				"¿Viva La Gloria? (Little Girl)"
-				};
+		final String[] value = getResources().getStringArray(R.array.fav_array);
 		
-		adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
+		adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, value);
 		lv.setAdapter(adapter);
 		lv.setFastScrollEnabled(true);
 		lv.setFastScrollAlwaysVisible(true);
@@ -384,717 +187,717 @@ public class Allsongs extends Activity {
 			@SuppressWarnings("rawtypes")
 			@Override
 			public void onItemClick(AdapterView parent, View view,int position, long _id) {
-				String values = adapter.getItem(position);
+				String values = value[position];
 				// TODO Auto-generated method stub
 
-				if (values=="1,000 Hours") {
+				if (values.equals("1,000 Hours")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 15);
 	                startActivity(intent);}
-				if (values=="16") {
+				if (values.equals("16")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="2000 Light Years Away") {
+				if (values.equals("2000 Light Years Away")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="21 Guns") {
+				if (values.equals("21 Guns")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 16);
 	                startActivity(intent);}
-				if (values=="21st Century Breakdown") {
+				if (values.equals("21st Century Breakdown")) {
 					Intent intent1 = new Intent(Allsongs.this, TcbMain.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="409 In Your Coffeemaker") {
+				if (values.equals("409 In Your Coffeemaker")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="80") {
+				if (values.equals("80")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="86") {
+				if (values.equals("86")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="8th Avenue Serenade") {
+				if (values.equals("8th Avenue Serenade")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="99 Revolutions") {
+				if (values.equals("99 Revolutions")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="All By Myself") {
+				if (values.equals("All By Myself")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="All The Time") {
+				if (values.equals("All The Time")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Amanda") {
+				if (values.equals("Amanda")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="American Eulogy (Mass Hysteria/Modern World)") {
+				if (values.equals("American Eulogy (Mass Hysteria/Modern World)")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 17);
 	                startActivity(intent);}
-				if (values=="American Idiot") {
+				if (values.equals("American Idiot")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Amy") {
+				if (values.equals("Amy")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Android") {
+				if (values.equals("Android")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Angel Blue") {
+				if (values.equals("Angel Blue")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Are We The Waiting") {
+				if (values.equals("Are We The Waiting")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Armatage Shanks") {
+				if (values.equals("Armatage Shanks")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Ashley") {
+				if (values.equals("Ashley")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="At The Library") {
+				if (values.equals("At The Library")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Bab's Uvula Who?") {
+				if (values.equals("Bab's Uvula Who?")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Baby Eyes") {
+				if (values.equals("Baby Eyes")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Basket Case") {
+				if (values.equals("Basket Case")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Before The Lobotomy") {
+				if (values.equals("Before The Lobotomy")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Best Thing In Town") {
+				if (values.equals("Best Thing In Town")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Blood, Sex And Booze") {
+				if (values.equals("Blood, Sex And Booze")) {
 					Intent intent1 = new Intent(Allsongs.this, WarningMain.class);     
                     intent1.putExtra("track", 2);
                     startActivity(intent1);}
-				if (values=="Boulevard Of Broken Dreams") {
+				if (values.equals("Boulevard Of Broken Dreams")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Brain Stew") {
+				if (values.equals("Brain Stew")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Brat") {
+				if (values.equals("Brat")) {
 					Intent intent1 = new Intent(Allsongs.this, Insomniac.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Brutal Love") {
+				if (values.equals("Brutal Love")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Burnout") {
+				if (values.equals("Burnout")) {
 					Intent intent1 = new Intent(Allsongs.this, Dookie.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Carpe Diem") {
+				if (values.equals("Carpe Diem")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Castaway") {
+				if (values.equals("Castaway")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
                     intent.putExtra("track", 5);
                     startActivity(intent);}
-				if (values=="Christian's Inferno") {
+				if (values.equals("Christian's Inferno")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Christie Road") {
+				if (values.equals("Christie Road")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Chump") {
+				if (values.equals("Chump")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Church On Sunday") {
+				if (values.equals("Church On Sunday")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
                     intent.putExtra("track", 3);
                     startActivity(intent);}
-				if (values=="Coming Clean") {
+				if (values.equals("Coming Clean")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Deadbeat Holiday") {
+				if (values.equals("Deadbeat Holiday")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
                     intent.putExtra("track", 7);
                     startActivity(intent);}
-				if (values=="Desensitized") {
+				if (values.equals("Desensitized")) {
 					Intent intent1 = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Dirty Rotten Bastards") {
+				if (values.equals("Dirty Rotten Bastards")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Disappearing Boy") {
+				if (values.equals("Disappearing Boy")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Do Da Da") {
+				if (values.equals("Do Da Da")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Dominated Love Slave") {
+				if (values.equals("Dominated Love Slave")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Don't Leave Me") {
+				if (values.equals("Don't Leave Me")) {
 					Intent intent1 = new Intent(Allsongs.this, Tns.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Don't Wanna Fall In Love") {
+				if (values.equals("Don't Wanna Fall In Love")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Drama Queen") {
+				if (values.equals("Drama Queen")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Dry Ice") {
+				if (values.equals("Dry Ice")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 16);
 	                startActivity(intent);}
-				if (values=="East Jesus Nowhere") {
+				if (values.equals("East Jesus Nowhere")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Emenius Sleepus") {
+				if (values.equals("Emenius Sleepus")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Espionage") {
+				if (values.equals("Espionage")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Extraordinary Girl") {
+				if (values.equals("Extraordinary Girl")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="F.O.D.") {
+				if (values.equals("F.O.D.")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 15);
 	                startActivity(intent);}
-				if (values=="Fashion Victim") {
+				if (values.equals("Fashion Victim")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
                     intent.putExtra("track", 4);
                     startActivity(intent);}
-				if (values=="Fell For You") {
+				if (values.equals("Fell For You")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Fuck Time") {
+				if (values.equals("Fuck Time")) {
 					Intent intent1 = new Intent(Allsongs.this, Dos.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Geek Stink Breath") {
+				if (values.equals("Geek Stink Breath")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Give Me Novacaine") {
+				if (values.equals("Give Me Novacaine")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Going To Pasalacqua") {
+				if (values.equals("Going To Pasalacqua")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Good Riddance (Time Of Your Life)") {
+				if (values.equals("Good Riddance (Time Of Your Life)")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 17);
 	                startActivity(intent);}
-				if (values=="Green Day") {
+				if (values.equals("Green Day")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Ha Ha You're Dead") {
+				if (values.equals("Ha Ha You're Dead")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Haushinka") {
+				if (values.equals("Haushinka")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Having A Blast") {
+				if (values.equals("Having A Blast")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Hitchin' A Ride") {
+				if (values.equals("Hitchin' A Ride")) {
 					Intent intent1 = new Intent(Allsongs.this, Nimrod.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Hold On") {
+				if (values.equals("Hold On")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Holiday") {
+				if (values.equals("Holiday")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Homecoming") {
+				if (values.equals("Homecoming")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Horseshoes And Handgrenades") {
+				if (values.equals("Horseshoes And Handgrenades")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="I Want To Be Alone") {
+				if (values.equals("I Want To Be Alone")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 19);
 	                startActivity(intent);}
-				if (values=="I Want To Be On T.V.") {
+				if (values.equals("I Want To Be On T.V.")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="I Was There") {
+				if (values.equals("I Was There")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="In The End") {
+				if (values.equals("In The End")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Jackass") {
+				if (values.equals("Jackass")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Jaded") {
+				if (values.equals("Jaded")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="J.A.R. (Jason Andrew Relva)") {
+				if (values.equals("J.A.R. (Jason Andrew Relva)")) {
 					Intent intent = new Intent(Allsongs.this, Ins.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Jesus Of Suburbia") {
+				if (values.equals("Jesus Of Suburbia")) {
 					Intent intent1 = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Jinx") {
+				if (values.equals("Jinx")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Kill The DJ") {
+				if (values.equals("Kill The DJ")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="King For A Day") {
+				if (values.equals("King For A Day")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 16);
 	                startActivity(intent);}
-				if (values=="Know Your Enemy") {
+				if (values.equals("Know Your Enemy")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Knowledge") {
+				if (values.equals("Knowledge")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Lady Cobra") {
+				if (values.equals("Lady Cobra")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Last Night On Earth") {
+				if (values.equals("Last Night On Earth")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Last Of American Girls") {
+				if (values.equals("Last Of American Girls")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Lazy Bones") {
+				if (values.equals("Lazy Bones")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Let Yourself Go") {
+				if (values.equals("Let Yourself Go")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Letterbomb") {
+				if (values.equals("Letterbomb")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Little Boy Named Train") {
+				if (values.equals("Little Boy Named Train")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Longview") {
+				if (values.equals("Longview")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Loss Of Control") {
+				if (values.equals("Loss Of Control")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Macy's Day Parade") {
+				if (values.equals("Macy's Day Parade")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Makeout Party") {
+				if (values.equals("Makeout Party")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Minority") {
+				if (values.equals("Minority")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Maria") {
+				if (values.equals("Maria")) {
 					Intent intent = new Intent(Allsongs.this, Ins.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Misery") {
+				if (values.equals("Misery")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Missing You") {
+				if (values.equals("Missing You")) {
 					Intent intent1 = new Intent(Allsongs.this, Tre.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Murder City") {
+				if (values.equals("Murder City")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="My Generation") {
+				if (values.equals("My Generation")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 16);
 	                startActivity(intent);}
-				if (values=="Nice Guys Finish Last") {
+				if (values.equals("Nice Guys Finish Last")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Nightlife") {
+				if (values.equals("Nightlife")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="No One Knows") {
+				if (values.equals("No One Knows")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="No Pride") {
+				if (values.equals("No Pride")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Nuclear Family") {
+				if (values.equals("Nuclear Family")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Oh Love") {
+				if (values.equals("Oh Love")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="On The Wagon") {
+				if (values.equals("On The Wagon")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="One For The Razorbacks") {
+				if (values.equals("One For The Razorbacks")) {
 					Intent intent1 = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="One Of My Lies") {
+				if (values.equals("One Of My Lies")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Only Of You") {
+				if (values.equals("Only Of You")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 17);
 	                startActivity(intent);}
-				if (values=="Outsider") {
+				if (values.equals("Outsider")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Panic Song") {
+				if (values.equals("Panic Song")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Paper Lanterns") {
+				if (values.equals("Paper Lanterns")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Peacemaker") {
+				if (values.equals("Peacemaker")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Platypus (I Hate You)") {
+				if (values.equals("Platypus (I Hate You)")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Poprocks & Coke") {
+				if (values.equals("Poprocks & Coke")) {
 					Intent intent1 = new Intent(Allsongs.this, Ins.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Private Ale") {
+				if (values.equals("Private Ale")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Prosthetic Head") {
+				if (values.equals("Prosthetic Head")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 18);
 	                startActivity(intent);}
-				if (values=="Pulling Teeth") {
+				if (values.equals("Pulling Teeth")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Redundant") {
+				if (values.equals("Redundant")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="Reject") {
+				if (values.equals("Reject")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Rest") {
+				if (values.equals("Rest")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Restless Heart Syndrome") {
+				if (values.equals("Restless Heart Syndrome")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Road To Acceptance") {
+				if (values.equals("Road To Acceptance")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Rotting") {
+				if (values.equals("Rotting")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Rusty James") {
+				if (values.equals("Rusty James")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Sassafras Roots") {
+				if (values.equals("Sassafras Roots")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Scattered") {
+				if (values.equals("Scattered")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Scumbag") {
+				if (values.equals("Scumbag")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="See The Light") {
+				if (values.equals("See The Light")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 18);
 	                startActivity(intent);}
-				if (values=="See You Tonight") {
+				if (values.equals("See You Tonight")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Sex, Drugs & Violence") {
+				if (values.equals("Sex, Drugs & Violence")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="She") {
+				if (values.equals("She")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="She's A Rebel") {
+				if (values.equals("She's A Rebel")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Sick Of Me") {
+				if (values.equals("Sick Of Me")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Song Of The Century") {
+				if (values.equals("Song Of The Century")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="St. Jimmy") {
+				if (values.equals("St. Jimmy")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Stay The Night") {
+				if (values.equals("Stay The Night")) {
 					Intent intent1 = new Intent(Allsongs.this, Uno.class);     
 	                intent1.putExtra("track", 2);
 	                startActivity(intent1);}
-				if (values=="Stop When The Red Lights Flash") {
+				if (values.equals("Stop When The Red Lights Flash")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Strangeland") {
+				if (values.equals("Strangeland")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 15);
 	                 startActivity(intent);}
-				if (values=="Stray Heart") {
+				if (values.equals("Stray Heart")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Stuart And The Ave.") {
+				if (values.equals("Stuart And The Ave.")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Stuck With Me") {
+				if (values.equals("Stuck With Me")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="Suffocate") {
+				if (values.equals("Suffocate")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				if (values=="Sweet 16") {
+				if (values.equals("Sweet 16")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Sweet Children") {
+				if (values.equals("Sweet Children")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Take Back") {
+				if (values.equals("Take Back")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 15);
 	                startActivity(intent);}
-				if (values=="The Forgotten") {
+				if (values.equals("The Forgotten")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="The Grouch") {
+				if (values.equals("The Grouch")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="The Judge's Daughter") {
+				if (values.equals("The Judge's Daughter")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="The One I Want") {
+				if (values.equals("The One I Want")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                 intent.putExtra("track", 18);
 	                 startActivity(intent);}
-				if (values=="The Static Age") {
+				if (values.equals("The Static Age")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 15);
 	                startActivity(intent);}
-				if (values=="Tight Wadd Hill") {
+				if (values.equals("Tight Wadd Hill")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Tired Of Waiting For You") {
+				if (values.equals("Tired Of Waiting For You")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Troublemaker") {
+				if (values.equals("Troublemaker")) {
 					Intent intent = new Intent(Allsongs.this, Uno.class);     
 	                intent.putExtra("track", 8);
 	                startActivity(intent);}
-				if (values=="Uptight") {
+				if (values.equals("Uptight")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Waiting") {
+				if (values.equals("Waiting")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 10);
 	                startActivity(intent);}
-				if (values=="Wake Me Up When September Ends") {
+				if (values.equals("Wake Me Up When September Ends")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Walk Away") {
+				if (values.equals("Walk Away")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);     
 	                intent.putExtra("track", 9);
 	                startActivity(intent);}
-				if (values=="Walking Alone") {
+				if (values.equals("Walking Alone")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="Walking Contradiction") {
+				if (values.equals("Walking Contradiction")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 14);
 	                startActivity(intent);}
-				if (values=="Warning") {
+				if (values.equals("Warning")) {
 					Intent intent = new Intent(Allsongs.this, WarningMain.class);     
 	                intent.putExtra("track", 1);
 	                startActivity(intent);}
-				//if (values=="Welcome To Paradise") {
+				//if (values.equals("Welcome To Paradise")) {
 					//i=new Intent(Allsongs.this, Welcome.class);
 					//startActivity(i);}
-				if (values=="Welcome To Paradise") {
+				if (values.equals("Welcome To Paradise")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 6);
 	                startActivity(intent);}
-				if (values=="Westbound Sign") {
+				if (values.equals("Westbound Sign")) {
 					Intent intent = new Intent(Allsongs.this, Insomniac.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Whatsername") {
+				if (values.equals("Whatsername")) {
 					Intent intent = new Intent(Allsongs.this, AmericanIdiotMain.class);     
 	                intent.putExtra("track", 13);
 	                startActivity(intent);}
-				if (values=="When I Come Around") {
+				if (values.equals("When I Come Around")) {
 					Intent intent = new Intent(Allsongs.this, Dookie.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Who Wrote Holden Caulfield?") {
+				if (values.equals("Who Wrote Holden Caulfield?")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 11);
 	                startActivity(intent);}
-				if (values=="Why Do You Want Him?") {
+				if (values.equals("Why Do You Want Him?")) {
 					Intent intent = new Intent(Allsongs.this, Tns.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Wild One") {
+				if (values.equals("Wild One")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="Words I Might Have Ate") {
+				if (values.equals("Words I Might Have Ate")) {
 					Intent intent = new Intent(Allsongs.this, Kerplunk.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="Worry Rock") {
+				if (values.equals("Worry Rock")) {
 					Intent intent = new Intent(Allsongs.this, Nimrod.class);     
 	                intent.putExtra("track", 7);
 	                startActivity(intent);}
-				if (values=="Wow! That's Loud") {
+				if (values.equals("Wow! That's Loud")) {
 					Intent intent = new Intent(Allsongs.this, Dos.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
-				if (values=="X-Kid") {
+				if (values.equals("X-Kid")) {
 					Intent intent = new Intent(Allsongs.this, Tre.class);   
                	 	intent.putExtra("track", 5);
 	                startActivity(intent);}
-				if (values=="You Lied") {
+				if (values.equals("You Lied")) {
 					Intent intent = new Intent(Allsongs.this, Shenanigans.class);     
 	                intent.putExtra("track", 3);
 	                startActivity(intent);}
-				if (values=="¡Viva La Gloria!") {
+				if (values.equals("¡Viva La Gloria!")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 4);
 	                startActivity(intent);}
-				if (values=="¿Viva La Gloria? (Little Girl)") {
+				if (values.equals("¿Viva La Gloria? (Little Girl)")) {
 					Intent intent = new Intent(Allsongs.this, TcbMain.class);     
 	                intent.putExtra("track", 12);
 	                startActivity(intent);}
@@ -1102,76 +905,76 @@ public class Allsongs extends Activity {
 				/*
 				 * Demolicious
 				 */
-				if (values=="99 Revolutions (Demo)"){
+				if (values.equals("99 Revolutions (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 1);
 	                startActivity(newActivity);
 				}
-				if (values=="Angel Blue (Demo)"){
+				if (values.equals("Angel Blue (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 2);
 	                startActivity(newActivity);
-				}if (values=="Carpe Diem (Demo)"){
+				}if (values.equals("Carpe Diem (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 3);
 	                startActivity(newActivity);
-				}if (values=="State Of Shock"){
+				}if (values.equals("State Of Shock")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 4);
 	                startActivity(newActivity);
-				}if (values=="Let Yourself Go (Demo)"){
+				}if (values.equals("Let Yourself Go (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 5);
 	                startActivity(newActivity);
-				}if (values=="Sex, Drugs And Violence (Demo)"){
+				}if (values.equals("Sex, Drugs And Violence (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 6);
 	                startActivity(newActivity);
-				}if (values=="Ashley (Demo)"){
+				}if (values.equals("Ashley (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 7);
 	                startActivity(newActivity);
-				}if (values=="Fell For You (Demo)"){
+				}if (values.equals("Fell For You (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 8);
 	                startActivity(newActivity);
-				}if (values=="Stay The Night (Demo)"){
+				}if (values.equals("Stay The Night (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 9);
 	                startActivity(newActivity);
-				}if (values=="Nuclear Family (Demo)"){
+				}if (values.equals("Nuclear Family (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 10);
 	                startActivity(newActivity);
-				}if (values=="Stray Heart (Demo)"){
+				}if (values.equals("Stray Heart (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 11);
 	                startActivity(newActivity);
-				}if (values=="Rusty James (Demo)"){
+				}if (values.equals("Rusty James (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 12);
 	                startActivity(newActivity);
-				}if (values=="A Little Boy Named Train (Demo)"){
+				}if (values.equals("A Little Boy Named Train (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 13);
 	                startActivity(newActivity);
-				}if (values=="Baby Eyes (Demo)"){
+				}if (values.equals("Baby Eyes (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 14);
 	                startActivity(newActivity);
-				}if (values=="Makeout Party (Demo)"){
+				}if (values.equals("Makeout Party (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 15);
 	                startActivity(newActivity);
-				}if (values=="Oh Love (Demo)"){
+				}if (values.equals("Oh Love (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 16);
 	                startActivity(newActivity);
-				}if (values=="Missing You (Demo)"){
+				}if (values.equals("Missing You (Demo)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 17);
 	                startActivity(newActivity);
-				}if (values=="Stay The Night (Acoustic)"){
+				}if (values.equals("Stay The Night (Acoustic)")) {
 					Intent newActivity = new Intent(Allsongs.this, Demolicious.class);     
 	                newActivity.putExtra("track", 18);
 	                startActivity(newActivity);

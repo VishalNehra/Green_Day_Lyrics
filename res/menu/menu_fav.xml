@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/item1" android:title="@string/settings" />
+	<item android:id="@+id/item2" android:title="@string/feedback" />
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:showAsAction="always"
+        android:title="@string/search_title"/>
+    <item android:id="@+id/action_fav"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/fav_title"
+        android:showAsAction="always"/>
+
+</menu>

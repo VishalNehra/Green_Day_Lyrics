@@ -5,6 +5,10 @@ import java.util.List;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,7 +20,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.espian.showcaseview.OnShowcaseEventListener;
@@ -39,12 +45,15 @@ import com.greenday.uno.Uno;
 import com.greenday.unreleased.Unreleased;
 import com.greenday.warning.WarningMain;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import de.timroes.android.listview.EnhancedListView;
 import de.timroes.android.listview.EnhancedListView.OnDismissCallback;
 import de.timroes.android.listview.EnhancedListView.Undoable;
 
 public class Favorites extends Activity {
 	
+	AlertDialog ad;
 	ArrayAdapter<String> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +70,7 @@ public class Favorites extends Activity {
         ActionBar ab =getActionBar();
         ab.setBackgroundDrawable(new ColorDrawable(ab_color));
 		
-		EnhancedListView lv = (EnhancedListView) findViewById(R.id.listView1);
+		final EnhancedListView lv = (EnhancedListView) findViewById(R.id.listView1);
 		
 		//Getting list from database
 		final DBHandler db = new DBHandler(this, null, null, 1);
@@ -75,7 +84,10 @@ public class Favorites extends Activity {
 		adapter = new ArrayAdapter<String>(Favorites.this, android.R.layout.simple_list_item_1, list);
 		lv.setAdapter(adapter);
 		
-		
+		//Setting empty listview
+		TextView tv = (TextView) findViewById(R.id.textView1);
+		tv.setText("DAFAQ? Don't have any favorite song?");
+		lv.setEmptyView(findViewById(R.id.textView1));
 		
 		lv.setDismissCallback(new OnDismissCallback() {
 			
@@ -1167,7 +1179,7 @@ public class Favorites extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// TODO Auto-generated method stub
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.main, menu); 
+		inflater.inflate(R.menu.menu_fav, menu); 
 		return super.onCreateOptionsMenu(menu);
 	}
 	
@@ -1192,8 +1204,42 @@ public class Favorites extends Activity {
         	intent2.putExtra("Search", true);
         	startActivity(intent2);
 			return true;
+        case R.id.action_fav:
+        	//add new favorite button
+        	final String[] fav_array = getResources().getStringArray(R.array.fav_array);
+        	final DBHandler db = new DBHandler(this, null, null, 1);
+        	new AlertDialog.Builder(Favorites.this)
+        	.setTitle("Add new favorite")
+        	.setIcon(R.drawable.ic_launcher)
+        	.setItems(R.array.fav_array, new OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface arg0, int position) {
+					// TODO Auto-generated method stub
+					//String fav = ad.getListView().getSelectedItem().toString();
+					String selected = fav_array[position];
+					
+					//Checking for existing record
+					Track findtrack = db.findTrack(selected);
+					if(findtrack != null) {
+						Crouton.makeText(Favorites.this, "Already in favorites", Style.ALERT).show();
+					} else {
+						//Adding selected item to database
+						db.addTrack(new Track(selected, 0));
+						Crouton.makeText(Favorites.this, selected + " added as favorite", Style.INFO).show();
+					}
+				}
+			})
+        	.show();
         default:
             return super.onOptionsItemSelected(item);
 		}
+	}
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		//adapter.notifyDataSetChanged();
+		super.onPause();
 	}
 }

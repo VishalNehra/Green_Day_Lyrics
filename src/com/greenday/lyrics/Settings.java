@@ -52,7 +52,8 @@ public class Settings extends PreferenceActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth;
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, 
+		mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -793,6 +794,18 @@ public class Settings extends PreferenceActivity {
 						}
 					}
 				});
+				return false;
+			}
+		});
+		
+		//Wallpaper
+		mWallpaper = findPreference("wallpaper");
+		mWallpaper.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			@Override
+			public boolean onPreferenceClick(Preference arg0) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent(Settings.this, Wallpaper.class));
 				return false;
 			}
 		});
