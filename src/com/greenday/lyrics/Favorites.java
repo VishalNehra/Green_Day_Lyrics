@@ -6,7 +6,6 @@ import java.util.List;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
@@ -22,11 +21,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.widget.Toast;
-
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
+import com.espian.showcaseview.targets.ActionItemTarget;
 import com.greenday.americanidiot.AmericanIdiotMain;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
@@ -86,7 +83,7 @@ public class Favorites extends Activity {
 		
 		//Setting empty listview
 		TextView tv = (TextView) findViewById(R.id.textView1);
-		tv.setText("DAFAQ? Don't have any favorite song?");
+		tv.setText("Start adding favorites by pressing on '+' icon !");
 		lv.setEmptyView(findViewById(R.id.textView1));
 		
 		lv.setDismissCallback(new OnDismissCallback() {
@@ -131,7 +128,7 @@ public class Favorites extends Activity {
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view,int position, long _id) {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long _id) {
 				
 				String values = adapter.getItem(position);
 				if (values.equals("1,000 Hours")) {
@@ -1140,26 +1137,36 @@ public class Favorites extends Activity {
 		});
 		
 		//Testing showcaseview
-		//Showcaseview
-        ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-        //For leavign action bar unhidden; 
+		//Config for second Showcaseview
+        final ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+        //For leaving action bar unhidden; 
   		//co.insert = ShowcaseView.INSERT_TO_VIEW;
         //co.centerText = true;
+        co.shotType = ShowcaseView.TYPE_ONE_SHOT;
         @SuppressWarnings("deprecation")
-		ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
-        		"Favorites", "\nSlide from left to right to remove any favorite.\n" +
-        				"\nAdd them from their respective lyrics screen.", co);
-        //sv.animateGesture(0, 100, 200, 200);
-        int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
-        int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
-        sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
-        sv.setShowcaseIndicatorScale(0);
-        //Click listeners for showcaseview
-        sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+        //First showcaseview
+        ShowcaseView.ConfigOptions co2 = new ShowcaseView.ConfigOptions(); 
+		co2.showcaseId=ShowcaseView.ITEM_ACTION_ITEM;
+		co2.hideOnClickOutside=true;
+		ActionItemTarget target = new ActionItemTarget(Favorites.this, R.id.action_fav);
+		ShowcaseView sv2 = ShowcaseView.insertShowcaseView(target, Favorites.this, "Favorites", "\nAdd new favorite by pressing on this button.\n" +
+		 		"You can also add new favorite using poppy bar in lyrics.", co2);
+		sv2.show();
+        //Click listeners for first showcaseview
+        sv2.setOnShowcaseEventListener(new OnShowcaseEventListener() {
         	 @Override
         	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
-        	     //The view is hidden/dismissed
-        		 //Crouton.makeText(Favorites.this, "Just another crouton :P", Style.CONFIRM).show();
+        		 
+        		 //Second showcaseview
+        		 @SuppressWarnings("deprecation")
+				ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, Favorites.this,
+        	        		"Favorites", "\nSlide from left to right to remove any favorite.", co);
+        	     //sv.animateGesture(0, 100, 200, 200);
+        	     int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
+        	     int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
+        	     sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
+        	     sv.setShowcaseIndicatorScale(0);
+				 sv.show();
         	    }
 
         	 @Override
