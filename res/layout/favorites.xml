@@ -7,7 +7,8 @@
     <de.timroes.android.listview.EnhancedListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants" >
     </de.timroes.android.listview.EnhancedListView>
 
     <TextView

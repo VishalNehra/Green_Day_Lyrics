@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
+
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.espian.showcaseview.targets.ActionItemTarget;
@@ -50,7 +52,6 @@ import de.timroes.android.listview.EnhancedListView.Undoable;
 
 public class Favorites extends Activity {
 	
-	AlertDialog ad;
 	ArrayAdapter<String> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -1136,50 +1137,58 @@ public class Favorites extends Activity {
 			}
 		});
 		
-		//Testing showcaseview
-		//Config for second Showcaseview
-        final ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-        //For leaving action bar unhidden; 
-  		//co.insert = ShowcaseView.INSERT_TO_VIEW;
-        //co.centerText = true;
-        co.shotType = ShowcaseView.TYPE_ONE_SHOT;
-        @SuppressWarnings("deprecation")
-        //First showcaseview
-        ShowcaseView.ConfigOptions co2 = new ShowcaseView.ConfigOptions(); 
-		co2.showcaseId=ShowcaseView.ITEM_ACTION_ITEM;
-		co2.hideOnClickOutside=true;
-		ActionItemTarget target = new ActionItemTarget(Favorites.this, R.id.action_fav);
-		ShowcaseView sv2 = ShowcaseView.insertShowcaseView(target, Favorites.this, "Favorites", "\nAdd new favorite by pressing on this button.\n" +
-		 		"You can also add new favorite using poppy bar in lyrics.", co2);
-		sv2.show();
-        //Click listeners for first showcaseview
-        sv2.setOnShowcaseEventListener(new OnShowcaseEventListener() {
-        	 @Override
-        	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
-        		 
-        		 //Second showcaseview
-        		 @SuppressWarnings("deprecation")
-				ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, Favorites.this,
-        	        		"Favorites", "\nSlide from left to right to remove any favorite.", co);
-        	     //sv.animateGesture(0, 100, 200, 200);
-        	     int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
-        	     int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
-        	     sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
-        	     sv.setShowcaseIndicatorScale(0);
-				 sv.show();
-        	    }
+		//Firstboot pref
+		boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_favorites", true);
+		if(firstboot) {
+			
+			//Testing showcaseview
+			//Config for second Showcaseview
+	        final ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+	        //For leaving action bar unhidden; 
+	  		//co.insert = ShowcaseView.INSERT_TO_VIEW;
+	        //co.centerText = true;
+	        //First showcaseview
+	        ShowcaseView.ConfigOptions co2 = new ShowcaseView.ConfigOptions(); 
+			co2.showcaseId=ShowcaseView.ITEM_ACTION_ITEM;
+			co2.hideOnClickOutside=true;
+			ActionItemTarget target = new ActionItemTarget(Favorites.this, R.id.action_fav);
+			ShowcaseView sv2 = ShowcaseView.insertShowcaseView(target, Favorites.this, "Favorites", "\nAdd new favorite by pressing on this button.\n" +
+			 		"You can also add new favorite using poppy bar in lyrics.", co2);
+			sv2.show();
+	        //Click listeners for first showcaseview
+	        sv2.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+	        	 @Override
+	        	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
+	        		 
+	        		 //Second showcaseview
+	        		 @SuppressWarnings("deprecation")
+					 ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, Favorites.this,
+	        	        		"Favorites", "\nSlide from left to right to remove any favorite.", co);
+	        	     //sv.animateGesture(0, 100, 200, 200);
+	        	     int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
+	        	     int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
+	        	     sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
+	        	     sv.setShowcaseIndicatorScale(0);
+					 sv.show();
+	        	    }
 
-        	 @Override
-        	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
-        	        //The view is shown
-        	    }
+	        	 @Override
+	        	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
+	        	        //The view is shown
+	        	    }
 
-			@Override
-			public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
-				// TODO Auto-generated method stub
-				
-			}
-        	});
+				@Override
+				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+					// TODO Auto-generated method stub
+					
+				}
+	        	});
+			
+			getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+			.edit()
+			.putBoolean("firstboot_favorites", false).commit();
+		}
+		
 	}
 	
 	@Override
@@ -1221,11 +1230,11 @@ public class Favorites extends Activity {
         	.setItems(R.array.fav_array, new OnClickListener() {
 				
 				@Override
-				public void onClick(DialogInterface arg0, int position) {
+				public void onClick(DialogInterface view, int position) {
 					// TODO Auto-generated method stub
 					//String fav = ad.getListView().getSelectedItem().toString();
 					String selected = fav_array[position];
-					
+					//adapter.notifyDataSetChanged();
 					//Checking for existing record
 					Track findtrack = db.findTrack(selected);
 					if(findtrack != null) {
@@ -1233,7 +1242,8 @@ public class Favorites extends Activity {
 					} else {
 						//Adding selected item to database
 						db.addTrack(new Track(selected, 0));
-						Crouton.makeText(Favorites.this, selected + " added as favorite", Style.INFO).show();
+						Toast.makeText(Favorites.this, "\"" + selected + "\"" + " added as favorite", Toast.LENGTH_LONG).show();
+						recreate();
 					}
 				}
 			})
@@ -1242,11 +1252,10 @@ public class Favorites extends Activity {
             return super.onOptionsItemSelected(item);
 		}
 	}
-	
 	@Override
-	protected void onPause() {
+	protected void onResume() {
 		// TODO Auto-generated method stub
-		//adapter.notifyDataSetChanged();
-		super.onPause();
+		adapter.notifyDataSetChanged();
+		super.onResume();
 	}
 }

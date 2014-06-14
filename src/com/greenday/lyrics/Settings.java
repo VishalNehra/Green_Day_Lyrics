@@ -23,7 +23,6 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.provider.Telephony.Mms.Rate;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -56,6 +55,7 @@ public class Settings extends PreferenceActivity {
 		mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper;
 		final Preference mVersion;
 		final CheckBoxPreference mDisplay;
+		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
 		
