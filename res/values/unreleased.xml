@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
+    <!-- Another State Of Mind -->
+    <string name="anotherstate">
+        \nNot Available
+    </string>
+    
     <!-- Second Time Around -->
     <string name="secondtime">
         \nNot Available

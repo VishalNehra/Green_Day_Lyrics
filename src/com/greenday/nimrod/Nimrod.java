@@ -2,13 +2,18 @@ package com.greenday.nimrod;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.nimrod.Info;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Nimrod extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.nimrod);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -315,76 +326,112 @@ public class Nimrod extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("Nice Guys Finish Last");
+			String current = "Nice Guys Finish Last";
+			ab.setTitle(current);
 			tv1.setText(R.string.niceguys);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Hitchin' A Ride");
+			String current = "Hitchin' A Ride";
+			ab.setTitle(current);
 			tv1.setText(R.string.hitchinaride);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("The Grouch");
+			String current = "The Grouch";
+			ab.setTitle(current);
 			tv1.setText(R.string.grouch);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Redundant");
+			String current = "Redundant";
+			ab.setTitle(current);
 			tv1.setText(R.string.redundant);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Scattered");
+			String current = "Scattered";
+			ab.setTitle(current);
 			tv1.setText(R.string.scattered);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("All The Time");
+			String current = "All The Time";
+			ab.setTitle(current);
 			tv1.setText(R.string.allthetime);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("Worry Rock");
+			String current = "Worry Rock";
+			ab.setTitle(current);
 			tv1.setText(R.string.worryrock);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Platypus (I Hate You)");
+			String current = "Platypus (I Hate You)";
+			ab.setTitle(current);
 			tv1.setText(R.string.platypus);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Uptight");
+			String current = "Uptight";
+			ab.setTitle(current);
 			tv1.setText(R.string.uptight);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Last Ride In");
+			String current = "Last Ride In";
+			ab.setTitle(current);
 			tv1.setText(R.string.lastridein);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Jinx");
+			String current = "Jinx";
+			ab.setTitle(current);
 			tv1.setText(R.string.jinx);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Haushinka");
+			String current = "Haushinka";
+			ab.setTitle(current);
 			tv1.setText(R.string.haushinka);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Walking Alone");
+			String current = "Walking Alone";
+			ab.setTitle(current);
 			tv1.setText(R.string.walkingalone);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Reject");
+			String current = "Reject";
+			ab.setTitle(current);
 			tv1.setText(R.string.reject);
+			analytics(current);
 		}
 		if(track == 15){
-			ab.setTitle("Take Back");
+			String current = "Take Back";
+			ab.setTitle(current);
 			tv1.setText(R.string.takeback);
+			analytics(current);
 		}
 		if(track == 16){
-			ab.setTitle("King For A Day");
+			String current = "King For A Day";
+			ab.setTitle(current);
 			tv1.setText(R.string.kingforaday);
+			analytics(current);
 		}
 		if(track == 17){
-			ab.setTitle("Good Riddance (Time Of Your Life)");
+			String current = "Good Riddance (Time Of Your Life)";
+			ab.setTitle(current);
 			tv1.setText(R.string.goodriddance);
+			analytics(current);
 		}
 		if(track == 18){
-			ab.setTitle("Prosthetic Head");
+			String current = "Prosthetic Head";
+			ab.setTitle(current);
 			tv1.setText(R.string.prosthetichead);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -429,5 +476,38 @@ public class Nimrod extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

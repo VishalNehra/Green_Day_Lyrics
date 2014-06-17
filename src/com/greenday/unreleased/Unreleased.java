@@ -2,13 +2,18 @@ package com.greenday.unreleased;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.unreleased.Info;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Unreleased extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.unreleased);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -655,212 +666,316 @@ public class Unreleased extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("A Quick One While He's Away");
+			String current = "A Quick One While He's Away";
+			ab.setTitle(current);
 			tv1.setText(R.string.quickone);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Angel and the Jerk");
+			String current = "Angel and the Jerk";
+			ab.setTitle(current);
 			tv1.setText(R.string.angelandjerk);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Another State Of Mind");
-			tv1.setText(R.string.cigarettes);
+			String current = "Another State Of Mind";
+			ab.setTitle(current);
+			tv1.setText(R.string.anotherstate);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Billie Joe's Mom");
+			String current = "Billie Joe's Mom";
+			ab.setTitle(current);
 			tv1.setText(R.string.billiesmom);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Boys in the Bathroom Stall");
+			String current = "Boys in the Bathroom Stall";
+			ab.setTitle(current);
 			tv1.setText(R.string.boysinstall);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Can't Make Love");
+			String current = "Can't Make Love";
+			ab.setTitle(current);
 			tv1.setText(R.string.cantmakelove);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("Chocolate Rain");
+			String current = "Chocolate Rain";
+			ab.setTitle(current);
 			tv1.setText(R.string.chocolaterain);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Cigarettes And Valentines");
+			String current = "Cigarettes And Valentines";
+			ab.setTitle(current);
 			tv1.setText(R.string.cigarettes);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("D.U.I.");
+			String current = "D.U.I.";
+			ab.setTitle(current);
 			tv1.setText(R.string.dui);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Depression Times");
+			String current = "Depression Times";
+			ab.setTitle(current);
 			tv1.setText(R.string.depressiontimes);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Don't Want to Know If You Are Lonely");
+			String current = "Don't Want to Know If You Are Lonely";
+			ab.setTitle(current);
 			tv1.setText(R.string.dontwannaknow);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Dream Catcher");
+			String current = "Dream Catcher";
+			ab.setTitle(current);
 			tv1.setText(R.string.dreamcatcher);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Favourite Son");
+			String current = "Favourite Son";
+			ab.setTitle(current);
 			tv1.setText(R.string.favouriteson);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Food Around the Corner");
+			String current = "Food Around the Corner";
+			ab.setTitle(current);
 			tv1.setText(R.string.foodaround);
+			analytics(current);
 		}
 		if(track == 15){
-			ab.setTitle("Governator");
+			String current = "Governator";
+			ab.setTitle(current);
 			tv1.setText(R.string.governator);
+			analytics(current);
 		}
 		if(track == 16){
-			ab.setTitle("Hearts Collide");
+			String current = "Hearts Collide";
+			ab.setTitle(current);
 			tv1.setText(R.string.heartscollide);
+			analytics(current);
 		}
 		if(track == 17){
-			ab.setTitle("Hybrid Moments");
+			String current = "Hybrid Moments";
+			ab.setTitle(current);
 			tv1.setText(R.string.hybridmoments);
+			analytics(current);
 		}
 		if(track == 18){
-			ab.setTitle("I Fought The Law");
+			String current = "I Fought The Law";
+			ab.setTitle(current);
 			tv1.setText(R.string.foughtlaw);
+			analytics(current);
 		}
 		if(track == 19){
-			ab.setTitle("I Run NY");
+			String current = "I Run NY";
+			ab.setTitle(current);
 			tv1.setText(R.string.irunny);
+			analytics(current);
 		}
 		if(track == 20){
-			ab.setTitle("Jennifer");
+			String current = "Jennifer";
+			ab.setTitle(current);
 			tv1.setText(R.string.jennifer);
+			analytics(current);
 		}
 		if(track == 21){
-			ab.setTitle("Lights Out");
+			String current = "Lights Out";
+			ab.setTitle(current);
 			tv1.setText(R.string.lightsout);
+			analytics(current);
 		}
 		if(track == 22){
-			ab.setTitle("Like A Rolling Stone");
+			String current = "Like A Rolling Stone";
+			ab.setTitle(current);
 			tv1.setText(R.string.likeastone);
+			analytics(current);
 		}
 		if(track == 23){
-			ab.setTitle("Like a Rat Does Cheese");
+			String current = "Like a Rat Does Cheese";
+			ab.setTitle(current);
 			tv1.setText(R.string.likearat);
+			analytics(current);
 		}
 		if(track == 24){
-			ab.setTitle("Look For Love");
+			String current = "Look For Love";
+			ab.setTitle(current);
 			tv1.setText(R.string.lookforlove);
+			analytics(current);
 		}
 		if(track == 25){
-			ab.setTitle("Maybe Forever");
+			String current = "Maybe Forever";
+			ab.setTitle(current);
 			tv1.setText(R.string.maybeforever);
+			analytics(current);
 		}
 		if(track == 26){
-			ab.setTitle("Mechanical Man");
+			String current = "Mechanical Man";
+			ab.setTitle(current);
 			tv1.setText(R.string.mechanicalman);
+			analytics(current);
 		}
 		if(track == 27){
-			ab.setTitle("Midwest Medley");
+			String current = "Midwest Medley";
+			ab.setTitle(current);
 			tv1.setText(R.string.midwestmedley);
+			analytics(current);
 		}
 		if(track == 28){
-			ab.setTitle("Minnesota Girl");
+			String current = "Minnesota Girl";
+			ab.setTitle(current);
 			tv1.setText(R.string.minnesotagirl);
+			analytics(current);
 		}
 		if(track == 29){
-			ab.setTitle("Oh Girl");
+			String current = "Oh Girl";
+			ab.setTitle(current);
 			tv1.setText(R.string.ohgirl);
+			analytics(current);
 		}
 		if(track == 30){
-			ab.setTitle("Olivia");
+			String current = "Olivia";
+			ab.setTitle(current);
 			tv1.setText(R.string.olivia);
+			analytics(current);
 		}
 		if(track == 31){
-			ab.setTitle("Private Hell");
+			String current = "Private Hell";
+			ab.setTitle(current);
 			tv1.setText(R.string.privatehell);
+			analytics(current);
 		}
 		if(track == 32){
-			ab.setTitle("Radio");
+			String current = "Radio";
+			ab.setTitle(current);
 			tv1.setText(R.string.radio);
+			analytics(current);
 		}
 		if(track == 33){
-			ab.setTitle("Second Time Around");
+			String current = "Second Time Around";
+			ab.setTitle(current);
 			tv1.setText(R.string.secondtime);
+			analytics(current);
 		}
 		if(track == 34){
-			ab.setTitle("Shoplifter");
+			String current = "Shoplifter";
+			ab.setTitle(current);
 			tv1.setText(R.string.shoplifter);
+			analytics(current);
 		}
 		if(track == 35){
-			ab.setTitle("Shout");
+			String current = "Shout";
+			ab.setTitle(current);
 			tv1.setText(R.string.shout);
+			analytics(current);
 		}
 		if(track == 36){
-			ab.setTitle("Supermarket");
+			String current = "Supermarket";
+			ab.setTitle(current);
 			tv1.setText(R.string.supermarket);
+			analytics(current);
 		}
 		if(track == 37){
-			ab.setTitle("Teenage Lobotomy");
+			String current = "Teenage Lobotomy";
+			ab.setTitle(current);
 			tv1.setText(R.string.teenage);
+			analytics(current);
 		}
 		if(track == 38){
-			ab.setTitle("That's All Right");
+			String current = "That's All Right";
+			ab.setTitle(current);
 			tv1.setText(R.string.thatsallright);
+			analytics(current);
 		}
 		if(track == 39){
-			ab.setTitle("The Ballad of Wilhelm Fink");
+			String current = "The Ballad of Wilhelm Fink";
+			ab.setTitle(current);
 			tv1.setText(R.string.ballad);
+			analytics(current);
 		}
 		if(track == 40){
-			ab.setTitle("The Saints Are Coming");
+			String current = "The Saints Are Coming";
+			ab.setTitle(current);
 			tv1.setText(R.string.saintsarecoming);
+			analytics(current);
 		}
 		if(track == 41){
-			ab.setTitle("The Simpsons Theme");
+			String current = "The Simpsons Theme";
+			ab.setTitle(current);
 			tv1.setText(R.string.simpsons);
+			analytics(current);
 		}
 		if(track == 42){
-			ab.setTitle("The Things I Heard Today");
+			String current = "The Things I Heard Today";
+			ab.setTitle(current);
 			tv1.setText(R.string.thingsheard);
+			analytics(current);
 		}
 		if(track == 43){
-			ab.setTitle("Too Much, Too Soon");
+			String current = "Too Much, Too Soon";
+			ab.setTitle(current);
 			tv1.setText(R.string.toomuch);
+			analytics(current);
 		}
 		if(track == 44){
-			ab.setTitle("Walking the Dog");
+			String current = "Walking the Dog";
+			ab.setTitle(current);
 			tv1.setText(R.string.walkingdog);
+			analytics(current);
 		}
 		if(track == 45){
-			ab.setTitle("We Are The Champions");
+			String current = "We Are The Champions";
+			ab.setTitle(current);
 			tv1.setText(R.string.wearechampions);
+			analytics(current);
 		}
 		if(track == 46){
-			ab.setTitle("What About Today?");
+			String current = "What About Today?";
+			ab.setTitle(current);
 			tv1.setText(R.string.whattoday);
+			analytics(current);
 		}
 		if(track == 47){
-			ab.setTitle("When It's Time");
+			String current = "When It's Time";
+			ab.setTitle(current);
 			tv1.setText(R.string.whenitstime);
+			analytics(current);
 		}
 		if(track == 48){
-			ab.setTitle("When Will I Be Loved");
+			String current = "When Will I Be Loved";
+			ab.setTitle(current);
 			tv1.setText(R.string.whenwillloved);
+			analytics(current);
 		}
 		if(track == 49){
-			ab.setTitle("Why Does It Always Rain on Me?");
+			String current = "Why Does It Always Rain on Me?";
+			ab.setTitle(current);
 			tv1.setText(R.string.whydoesitrain);
+			analytics(current);
 		}
 		if(track == 50){
-			ab.setTitle("Working Class Hero");
+			String current = "Working Class Hero";
+			ab.setTitle(current);
 			tv1.setText(R.string.workingclasshero);
+			analytics(current);
 		}
 		if(track == 51){
-			ab.setTitle("World Vs. World");
+			String current = "World Vs. World";
+			ab.setTitle(current);
 			tv1.setText(R.string.worldvsworld);
+			analytics(current);
 		}
 		if(track == 52){
-			ab.setTitle("You Can't Fool Me");
+			String current = "You Can't Fool Me";
+			ab.setTitle(current);
 			tv1.setText(R.string.youcantfool);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -903,5 +1018,38 @@ public class Unreleased extends Activity {
 			db.addTrack(new Track(name, i));
 			Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 		}
+	}
+	
+	//Analytics
+	public void analytics(String s) {
+		//Google Analytics
+		// Set screen name.
+        t.setScreenName(s);
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+    	//Protect crouton
+        Crouton.clearCroutonsForActivity(this);
+		super.onDestroy();
 	}
 }

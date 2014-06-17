@@ -2,13 +2,18 @@ package com.greenday.shenanigans;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.shenanigans.Info;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Shenanigans extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shenanigans);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -275,60 +286,88 @@ public class Shenanigans extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("Suffocate");
+			String current = "Suffocate";
+			ab.setTitle(current);
 			tv1.setText(R.string.suffocate);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Desensitized");
+			String current = "Desensitized";
+			ab.setTitle(current);
 			tv1.setText(R.string.desensitized);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("You Lied");
+			String current = "You Lied";
+			ab.setTitle(current);
 			tv1.setText(R.string.youlied);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Outsider");
+			String current = "Outsider";
+			ab.setTitle(current);
 			tv1.setText(R.string.outsider);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Don't Wanna Fall In Love");
+			String current = "Don't Wanna Fall In Love";
+			ab.setTitle(current);
 			tv1.setText(R.string.fallinlove);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Espionage");
+			String current = "Espionage";
+			ab.setTitle(current);
 			tv1.setText(R.string.espionage);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("I Wanna Be On T.V.");
+			String current = "I Wanna Be On T.V.";
+			ab.setTitle(current);
 			tv1.setText(R.string.wannabeontv);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Scumbag");
+			String current = "Scumbag";
+			ab.setTitle(current);
 			tv1.setText(R.string.scumbag);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Tired Of Waiting For You");
+			String current = "Tired Of Waiting For You";
+			ab.setTitle(current);
 			tv1.setText(R.string.tiredofwaiting);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Sick Of Me");
+			String current = "Sick Of Me";
+			ab.setTitle(current);
 			tv1.setText(R.string.sickofme);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Rotting");
+			String current = "Rotting";
+			ab.setTitle(current);
 			tv1.setText(R.string.rotting);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Do Da Da");
+			String current = "Do Da Da";
+			ab.setTitle(current);
 			tv1.setText(R.string.dodada);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("On The Wagon");
+			String current = "On The Wagon";
+			ab.setTitle(current);
 			tv1.setText(R.string.onwagon);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Ha Ha You're Dead");
+			String current = "Ha Ha You're Dead";
+			ab.setTitle(current);
 			tv1.setText(R.string.youredead);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -372,5 +411,38 @@ public class Shenanigans extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }
