@@ -2,11 +2,16 @@ package com.greenday.kerplunk;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.kerplunk.Info;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Kerplunk extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.kerplunk);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -295,68 +306,100 @@ public class Kerplunk extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("2000 Light Years Away");
+			String current = "2000 Light Years Away";
+			ab.setTitle(current);
 			tv1.setText(R.string.lightyears);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("One For The Razorbacks");
+			String current = "One For The Razorbacks";
+			ab.setTitle(current);
 			tv1.setText(R.string.razorbacks);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Welcome To Paradise");
+			String current = "Welcome To Paradise";
+			ab.setTitle(current);
 			tv1.setText(R.string.welcometoparadise);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Christie Road");
+			String current = "Christie Road";
+			ab.setTitle(current);
 			tv1.setText(R.string.christieroad);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Private Ale");
+			String current = "Private Ale";
+			ab.setTitle(current);
 			tv1.setText(R.string.privateale);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Dominated Love Slave");
+			String current = "Dominated Love Slave";
+			ab.setTitle(current);
 			tv1.setText(R.string.dominatedloveslave);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("One Of My Lies");
+			String current = "One Of My Lies";
+			ab.setTitle(current);
 			tv1.setText(R.string.oneoflies);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("80");
+			String current = "80";
+			ab.setTitle(current);
 			tv1.setText(R.string.eighty);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Android");
+			String current = "Android";
+			ab.setTitle(current);
 			tv1.setText(R.string.android);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("No One Knows");
+			String current = "No One Knows";
+			ab.setTitle(current);
 			tv1.setText(R.string.nooneknows);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Who Wrote Holden Caulfield?");
+			String current = "Who Wrote Holden Caulfield?";
+			ab.setTitle(current);
 			tv1.setText(R.string.whowrote);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Words I Might Have Ate");
+			String current = "Words I Might Have Ate";
+			ab.setTitle(current);
 			tv1.setText(R.string.wordsmightate);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Sweet Children");
+			String current = "Sweet Children";
+			ab.setTitle(current);
 			tv1.setText(R.string.sweetchildren);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Best Thing In Town");
+			String current = "Best Thing In Town";
+			ab.setTitle(current);
 			tv1.setText(R.string.bestthing);
+			analytics(current);
 		}
 		if(track == 15){
-			ab.setTitle("Strangeland");
+			String current = "Strangeland";
+			ab.setTitle(current);
 			tv1.setText(R.string.strangeland);
+			analytics(current);
 		}
 		if(track == 16){
-			ab.setTitle("My Generation");
+			String current = "My Generation";
+			ab.setTitle(current);
 			tv1.setText(R.string.mygeneration);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -399,5 +442,38 @@ public class Kerplunk extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

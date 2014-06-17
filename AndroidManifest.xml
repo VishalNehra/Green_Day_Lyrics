@@ -33,6 +33,10 @@
             
         </activity>
         
+        <!-- GA -->
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource"
+			android:resource="@xml/global_tracker" />
+        
         <activity android:name="com.greenday.lyrics.Allsongs"
            android:label="@string/all_songs"
            android:windowSoftInputMode="stateHidden|adjustPan" 

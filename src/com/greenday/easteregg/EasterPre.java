@@ -1,5 +1,7 @@
 package com.greenday.easteregg;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.R;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
@@ -19,6 +21,11 @@ public class EasterPre extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.easterpre);
+		
+		//Testing Google Analytics
+		//Get a Tracker (should auto-report)
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		
 		final ImageButton ib=(ImageButton) findViewById(R.id.imageButton1);
 		ib.setOnClickListener(new OnClickListener() {
 			
@@ -111,5 +118,21 @@ public class EasterPre extends Activity {
 			}
 		});
 		super.onCreate(savedInstanceState);
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
 	}
 }

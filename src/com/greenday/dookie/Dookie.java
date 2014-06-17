@@ -2,11 +2,16 @@ package com.greenday.dookie;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.dookie.Info;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Dookie extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.dookie);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -287,64 +298,94 @@ public class Dookie extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("All By Myself");
+			String current = "All By Myself";
+			ab.setTitle(current);
 			tv1.setText(R.string.allbymyself);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Burnout");
+			String current = "Burnout";
+			ab.setTitle(current);
 			tv1.setText(R.string.burnout);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Having A Blast");
+			String current = "Having A Blast";
+			ab.setTitle(current);
 			tv1.setText(R.string.havingblast);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Chump");
+			String current = "Chump";
+			ab.setTitle(current);
 			tv1.setText(R.string.chump);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Longview");
+			String current = "Longview";
+			ab.setTitle(current);
 			tv1.setText(R.string.longview);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Welcome To Paradise");
+			String current = "Welcome To Paradise";
+			ab.setTitle(current);
 			tv1.setText(R.string.welcometoparadise);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("Pulling Teeth");
+			String current = "Pulling Teeth";
+			ab.setTitle(current);
 			tv1.setText(R.string.pullingteeth);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Basket Case");
+			String current = "Basket Case";
+			ab.setTitle(current);
 			tv1.setText(R.string.basketcase);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("She");
+			String current = "She";
+			ab.setTitle(current);
 			tv1.setText(R.string.she);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Sassafras Roots");
+			String current = "Sassafras Roots";
+			ab.setTitle(current);
 			tv1.setText(R.string.sassafrasroots);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("When I Come Around");
+			String current = "When I Come Around";
+			ab.setTitle(current);
 			tv1.setText(R.string.whencomearound);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Coming Clean");
+			String current = "Coming Clean";
+			ab.setTitle(current);
 			tv1.setText(R.string.comingclean);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Emenius Sleepus");
+			String current = "Emenius Sleepus";
+			ab.setTitle(current);
 			tv1.setText(R.string.emeniussleepus);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("In The End");
+			String current = "In The End";
+			ab.setTitle(current);
 			tv1.setText(R.string.intheend);
+			analytics(current);
 		}
 		if(track == 15){
-			ab.setTitle("F.O.D.");
+			String current = "F.O.D.";
+			ab.setTitle(current);
 			tv1.setText(R.string.fod);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -387,5 +428,38 @@ public class Dookie extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

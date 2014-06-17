@@ -1,9 +1,12 @@
 package com.greenday.lyrics;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
 import com.larswerkman.holocolorpicker.ColorPicker;
 import com.larswerkman.holocolorpicker.ColorPicker.OnColorChangedListener;
 import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SVBar;
+
+import de.keyboardsurfer.android.widget.crouton.Crouton;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -27,8 +30,11 @@ public class ThemeChooser extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		
 		setContentView(R.layout.themechooser);
+		
+		//Google Analytics
+		//Get a Tracker (should auto-report)
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
 		int int_color = Color.parseColor("#222222");
 		int ab_theme = PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", int_color);
@@ -212,5 +218,29 @@ public class ThemeChooser extends Activity {
 				break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+    	//Protect crouton
+        Crouton.clearCroutonsForActivity(this);
+		super.onDestroy();
 	}
 }

@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.espian.showcaseview.OnShowcaseEventListener;
 import com.espian.showcaseview.ShowcaseView;
 import com.espian.showcaseview.targets.ActionItemTarget;
+import com.google.android.gms.analytics.GoogleAnalytics;
 import com.greenday.americanidiot.AmericanIdiotMain;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
@@ -58,6 +59,10 @@ public class Favorites extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.favorites);
+		
+		//Google Analytics
+		//Get a Tracker (should auto-report)
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
 		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -1252,10 +1257,35 @@ public class Favorites extends Activity {
             return super.onOptionsItemSelected(item);
 		}
 	}
+	
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		adapter.notifyDataSetChanged();
 		super.onResume();
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+    	//Protect crouton
+        Crouton.clearCroutonsForActivity(this);
+		super.onDestroy();
 	}
 }

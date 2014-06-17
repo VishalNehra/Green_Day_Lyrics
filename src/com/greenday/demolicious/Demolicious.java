@@ -2,11 +2,16 @@ package com.greenday.demolicious;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.demolicious.Info;
@@ -39,6 +44,11 @@ public class Demolicious extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.demolicious);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		Tracker t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -316,76 +326,151 @@ public class Demolicious extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("99 Revolutions (Demo)");
+			String current = "99 Revolutions (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.ninetyrevdemo);
+			
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(current);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 2){
-			ab.setTitle("Angel Blue (Demo)");
+			String current = "Angel Blue (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.angelbluedemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 3){
-			ab.setTitle("Carpe Diem (Demo)");
+			String current = "Carpe Diem (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.carpediemdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 4){
-			ab.setTitle("State Of Shock");
+			String current = "State Of Shock";
+			ab.setTitle(current);
 			tv1.setText(R.string.stateofshock);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 5){
-			ab.setTitle("Let Yourself Go (Demo)");
+			String current = "Let Yourself Go (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.letgodemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 6){
-			ab.setTitle("Sex, Drugs And Violence (Demo)");
+			String current = "Sex, Drugs And Violence (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.sexviolencedemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 7){
-			ab.setTitle("Ashley (Demo)");
+			String current = "Ashley (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.ashleydemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 8){
-			ab.setTitle("Fell For You (Demo)");
+			String current = "Fell For You (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.fellforyoudemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 9){
-			ab.setTitle("Stay The Night (Demo)");
+			String current = "Stay The Night (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.staynightdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 10){
-			ab.setTitle("Nuclear Family (Demo)");
+			String current = "Nuclear Family (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.nucleardemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 11){
-			ab.setTitle("Stray Heart (Demo)");
+			String current = "Stray Heart (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.strayheartdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 12){
-			ab.setTitle("Rusty James (Demo)");
+			String current = "Rusty James (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.rustyjamesdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 13){
-			ab.setTitle("A Little Boy Named Train (Demo)");
+			String current = "A Little Boy Named Train (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.littleboydemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 14){
-			ab.setTitle("Baby Eyes (Demo)");
+			String current = "Baby Eyes (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.babyeyesdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 15){
-			ab.setTitle("Makeout Party (Demo)");
+			String current = "Makeout Party (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.makeoutdemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 16){
-			ab.setTitle("Oh Love (Demo)");
+			String current = "Oh Love (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.ohlovedemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 17){
-			ab.setTitle("Missing You (Demo)");
+			String current = "Missing You (Demo)";
+			ab.setTitle(current);
 			tv1.setText(R.string.missingyoudemo);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		if(track == 18){
-			ab.setTitle("Stay The Night (Acoustic)");
+			String current = "Stay The Night (Acoustic)";
+			ab.setTitle(current);
 			tv1.setText(R.string.staynightacoustic);
+			
+	        t.setScreenName(current);
+	        t.send(new HitBuilders.AppViewBuilder().build());
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -428,5 +513,29 @@ public class Demolicious extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

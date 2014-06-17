@@ -2,11 +2,16 @@ package com.greenday.insomniac;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.insomniac.Info;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Insomniac extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.insomniac);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -275,60 +286,88 @@ public class Insomniac extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("Armatage Shanks");
+			String current = "Armatage Shanks";
+			ab.setTitle(current);
 			tv1.setText(R.string.armatage);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Brat");
+			String current = "Brat";
+			ab.setTitle(current);
 			tv1.setText(R.string.brat);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Stuck With Me");
+			String current = "Stuck With Me";
+			ab.setTitle(current);
 			tv1.setText(R.string.stuckwithme);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Geek Stink Breath");
+			String current = "Geek Stink Breath";
+			ab.setTitle(current);
 			tv1.setText(R.string.geekstink);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("No Pride");
+			String current = "No Pride";
+			ab.setTitle(current);
 			tv1.setText(R.string.nopride);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Bab's Uvula Who!");
+			String current = "Bab's Uvula Who!";
+			ab.setTitle(current);
 			tv1.setText(R.string.babuvula);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("86");
+			String current = "86";
+			ab.setTitle(current);
 			tv1.setText(R.string.eightysix);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Panic Song");
+			String current = "Panic Song";
+			ab.setTitle(current);
 			tv1.setText(R.string.panicsong);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Stuart And The Ave.");
+			String current = "Stuart And The Ave.";
+			ab.setTitle(current);
 			tv1.setText(R.string.stuartave);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Brain Stew");
+			String current = "Brain Stew";
+			ab.setTitle(current);
 			tv1.setText(R.string.brainstew);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Jaded");
+			String current = "Jaded";
+			ab.setTitle(current);
 			tv1.setText(R.string.jaded);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Westbound Sign");
+			String current = "Westbound Sign";
+			ab.setTitle(current);
 			tv1.setText(R.string.westbound);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Tight Wad Hill");
+			String current = "Tight Wad Hill";
+			ab.setTitle(current);
 			tv1.setText(R.string.tightwad);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Walking Contradiction");
+			String current = "Walking Contradiction";
+			ab.setTitle(current);
 			tv1.setText(R.string.walking);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -371,5 +410,38 @@ public class Insomniac extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

@@ -2,8 +2,13 @@ package com.greenday.americanidiot;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
@@ -20,21 +25,18 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class AmericanIdiotMain extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,11 @@ public class AmericanIdiotMain extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot);
 		findViewById(R.id.american_idiot_layout).getBackground().setAlpha(22);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -270,56 +277,82 @@ public class AmericanIdiotMain extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("American Idiot");
+			String current = "American Idiot";
+			ab.setTitle(current);
 			tv1.setText(R.string.americanidiot);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Jesus Of Suburbia");
+			String current = "Jesus Of Suburbia";
+			ab.setTitle(current);
 			tv1.setText(R.string.jos);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Holiday");
+			String current = "Holiday";
+			ab.setTitle(current);
 			tv1.setText(R.string.holiday);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Boulevard of Broken Dreams");
+			String current = "Boulevard of Broken Dreams";
+			ab.setTitle(current);
 			tv1.setText(R.string.boulevards);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Are We The Waiting");
+			String current = "Are We The Waiting";
+			ab.setTitle(current);
 			tv1.setText(R.string.arewethewaiting);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("St. Jimmy");
+			String current = "St. Jimmy";
+			ab.setTitle(current);
 			tv1.setText(R.string.stjimmy);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("Give Me Novacaine");
+			String current = "Give Me Novacaine";
+			ab.setTitle(current);
 			tv1.setText(R.string.givemenov);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("She's A Rebel");
+			String current = "She's A Rebel";
+			ab.setTitle(current);
 			tv1.setText(R.string.shesarebel);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Extraordinary Girl");
+			String current = "Extraordinary Girl";
+			ab.setTitle(current);
 			tv1.setText(R.string.extordgirl);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Letterbomb");
+			String current = "Letterbomb";
+			ab.setTitle(current);
 			tv1.setText(R.string.letterbomb);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Wake Me Up When September Ends");
+			String current = "Wake Me Up When September Ends";
+			ab.setTitle(current);
 			tv1.setText(R.string.wakemeup);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Homecoming");
+			String current = "Homecoming";
+			ab.setTitle(current);
 			tv1.setText(R.string.homecoming);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Whatshername");
+			String current = "Whatshername";
+			ab.setTitle(current);
 			tv1.setText(R.string.whatshername);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -363,5 +396,38 @@ public class AmericanIdiotMain extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

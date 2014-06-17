@@ -2,11 +2,16 @@ package com.greenday.dos;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
 import com.greenday.lyrics.R;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.dos.Info;
@@ -32,12 +37,18 @@ import android.widget.TextView;
 public class Dos extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.dos);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -265,56 +276,82 @@ public class Dos extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("See You Tonight");
+			String current = "See You Tonight";
+			ab.setTitle(current);
 			tv1.setText(R.string.cutonight);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Fuck Time");
+			String current = "Fuck Time";
+			ab.setTitle(current);
 			tv1.setText(R.string.fucktime);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Stop When Red Lights Flash");
+			String current = "Stop When Red Lights Flash";
+			ab.setTitle(current);
 			tv1.setText(R.string.stopwhenflash);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Lazy Bones");
+			String current = "Lazy Bones";
+			ab.setTitle(current);
 			tv1.setText(R.string.lazybones);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Wild One");
+			String current = "Wild One";
+			ab.setTitle(current);
 			tv1.setText(R.string.wildone);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("Makeout Party");
+			String current = "Makeout Party";
+			ab.setTitle(current);
 			tv1.setText(R.string.makeoutparty);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("Stray Heart");
+			String current = "Stray Heart";
+			ab.setTitle(current);
 			tv1.setText(R.string.strayheart);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("Ashley");
+			String current = "Ashley";
+			ab.setTitle(current);
 			tv1.setText(R.string.ashley);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Baby Eyes");
+			String current = "Baby Eyes";
+			ab.setTitle(current);
 			tv1.setText(R.string.babyeyes);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Lady Cobra");
+			String current = "Lady Cobra";
+			ab.setTitle(current);
 			tv1.setText(R.string.ladycobra);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Nightlife");
+			String current = "Nightlife";
+			ab.setTitle(current);
 			tv1.setText(R.string.nightlife);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Wow! That's Loud");
+			String current = "Wow! That's Loud";
+			ab.setTitle(current);
 			tv1.setText(R.string.wowthatsloud);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Amy");
+			String current = "Amy";
+			ab.setTitle(current);
 			tv1.setText(R.string.amy);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -357,5 +394,38 @@ public class Dos extends Activity {
 				db.addTrack(new Track(name, i));
 				Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 			}
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onStart() {
+			// TODO Auto-generated method stub
+			//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+			GoogleAnalytics.getInstance(this).reportActivityStart(this);
+			super.onStart();
+		}
+		
+		@Override
+		protected void onStop() {
+			// TODO Auto-generated method stub
+			//Stop the analytics tracking
+			GoogleAnalytics.getInstance(this).reportActivityStop(this);
+			super.onStop();
+		}
+		
+		@Override
+		protected void onDestroy() {
+			// TODO Auto-generated method stub
+	    	//Protect crouton
+	        Crouton.clearCroutonsForActivity(this);
+			super.onDestroy();
 		}
 }

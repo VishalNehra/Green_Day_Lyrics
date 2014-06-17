@@ -2,11 +2,16 @@ package com.greenday.ins;
 
 import com.fourmob.poppyview.PoppyViewHelper;
 import com.fourmob.poppyview.PoppyViewHelper.PoppyViewPosition;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.greenday.lyrics.Allsongs;
 import com.greenday.lyrics.Favorites;
+import com.greenday.lyrics.Frontend;
 import com.greenday.lyrics.R;
 import com.greenday.lyrics.ReportSong;
 import com.greenday.lyrics.Settings;
+import com.greenday.lyrics.Frontend.TrackerName;
 import com.greenday.database.DBHandler;
 import com.greenday.database.Track;
 import com.greenday.ins.Info;
@@ -31,12 +36,18 @@ import android.widget.TextView;
 public class Ins extends Activity {
 	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ins);
+		
+		//Google Analytics
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
+		t = ((Frontend) this.getApplication()).getTracker(
+	            TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -344,88 +355,130 @@ public class Ins extends Activity {
 		//Lyrics
 		int track = getIntent().getExtras().getInt("track");
 		if(track == 1){
-			ab.setTitle("Maria");
+			String current = "Maria";
+			ab.setTitle(current);
 			tv1.setText(R.string.maria);
+			analytics(current);
 		}
 		if(track == 2){
-			ab.setTitle("Poprocks And Coke");
+			String current = "Poprocks And Coke";
+			ab.setTitle(current);
 			tv1.setText(R.string.poprocks);
+			analytics(current);
 		}
 		if(track == 3){
-			ab.setTitle("Longview");
+			String current = "Longview";
+			ab.setTitle(current);
 			tv1.setText(R.string.longview);
+			analytics(current);
 		}
 		if(track == 4){
-			ab.setTitle("Welcome To Paradise");
+			String current = "Welcome To Paradise";
+			ab.setTitle(current);
 			tv1.setText(R.string.welcometoparadise);
+			analytics(current);
 		}
 		if(track == 5){
-			ab.setTitle("Basket Case");
+			String current = "Basket Case";
+			ab.setTitle(current);
 			tv1.setText(R.string.basketcase);
+			analytics(current);
 		}
 		if(track == 6){
-			ab.setTitle("When I Come Around");
+			String current = "When I Come Around";
+			ab.setTitle(current);
 			tv1.setText(R.string.whencomearound);
+			analytics(current);
 		}
 		if(track == 7){
-			ab.setTitle("She");
+			String current = "She";
+			ab.setTitle(current);
 			tv1.setText(R.string.she);
+			analytics(current);
 		}
 		if(track == 8){
-			ab.setTitle("J.A.R. (Jason Andrew Relva)");
+			String current = "J.A.R. (Jason Andrew Relva)";
+			ab.setTitle(current);
 			tv1.setText(R.string.jar);
+			analytics(current);
 		}
 		if(track == 9){
-			ab.setTitle("Geek Stink Breath");
+			String current = "Geek Stink Breath";
+			ab.setTitle(current);
 			tv1.setText(R.string.geekstink);
+			analytics(current);
 		}
 		if(track == 10){
-			ab.setTitle("Brain Stew");
+			String current = "Brain Stew";
+			ab.setTitle(current);
 			tv1.setText(R.string.brainstew);
+			analytics(current);
 		}
 		if(track == 11){
-			ab.setTitle("Jaded");
+			String current = "Jaded";
+			ab.setTitle(current);
 			tv1.setText(R.string.jaded);
+			analytics(current);
 		}
 		if(track == 12){
-			ab.setTitle("Walking Contradiction");
+			String current = "Walking Contradiction";
+			ab.setTitle(current);
 			tv1.setText(R.string.walking);
+			analytics(current);
 		}
 		if(track == 13){
-			ab.setTitle("Stuck With Me");
+			String current = "Stuck With Me";
+			ab.setTitle(current);
 			tv1.setText(R.string.stuckwithme);
+			analytics(current);
 		}
 		if(track == 14){
-			ab.setTitle("Hitchin' A Ride");
+			String current = "Hitchin' A Ride";
+			ab.setTitle(current);
 			tv1.setText(R.string.hitchinaride);
+			analytics(current);
 		}
 		if(track == 15){
-			ab.setTitle("Good Riddance (Time Of Your Life)");
+			String current = "Good Riddance (Time Of Your Life)";
+			ab.setTitle(current);
 			tv1.setText(R.string.goodriddance);
+			analytics(current);
 		}
 		if(track == 16){
-			ab.setTitle("Redundant");
+			String current = "Redundant";
+			ab.setTitle(current);
 			tv1.setText(R.string.redundant);
+			analytics(current);
 		}
 		if(track == 17){
-			ab.setTitle("Nice Guys Finish Last");
+			String current = "Nice Guys Finish Last";
+			ab.setTitle(current);
 			tv1.setText(R.string.niceguys);
+			analytics(current);
 		}
 		if(track == 18){
-			ab.setTitle("Minority");
+			String current = "Minority";
+			ab.setTitle(current);
 			tv1.setText(R.string.minority);
+			analytics(current);
 		}
 		if(track == 19){
-			ab.setTitle("Warning");
+			String current = "Warning";
+			ab.setTitle(current);
 			tv1.setText(R.string.warning);
+			analytics(current);
 		}
 		if(track == 20){
-			ab.setTitle("Waiting");
+			String current = "Waiting";
+			ab.setTitle(current);
 			tv1.setText(R.string.waiting);
+			analytics(current);
 		}
 		if(track == 21){
-			ab.setTitle("Macy's Day Parade");
+			String current = "Macy's Day Parade";
+			ab.setTitle(current);
 			tv1.setText(R.string.macy);
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -468,5 +521,38 @@ public class Ins extends Activity {
 			db.addTrack(new Track(name, i));
 			Crouton.makeText(this, "Added to favorites", Style.INFO).show();
 		}
+	}
+	
+	//Analytics
+	public void analytics(String s) {
+		//Google Analytics
+		// Set screen name.
+        t.setScreenName(s);
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+    	//Protect crouton
+        Crouton.clearCroutonsForActivity(this);
+		super.onDestroy();
 	}
 }

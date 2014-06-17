@@ -4,6 +4,8 @@ import org.acra.ACRA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.ActionBar;
@@ -34,6 +36,10 @@ public class ReportSong extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.reportsong);
+		
+		//Google Analytics
+		//Get a Tracker (should auto-report)
+		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
 		//Action bar color
         int ab_def_color= Color.parseColor("#222222");
@@ -165,9 +171,26 @@ public class ReportSong extends Activity {
 	}
 	
 	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+		super.onStart();
+	}
+	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		//Stop the analytics tracking
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+		super.onStop();
+	}
+	
+	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
-		Crouton.clearCroutonsForActivity(this);
+    	//Protect crouton
+        Crouton.clearCroutonsForActivity(this);
 		super.onDestroy();
 	}
 }

@@ -393,7 +393,7 @@ public class MainActivity extends Activity {
     
     @Override
     protected void onDestroy() {
-    	//Protect crouton to display again on orientation change
+    	//Protect crouton
         Crouton.clearCroutonsForActivity(this);
         super.onDestroy();
       }
