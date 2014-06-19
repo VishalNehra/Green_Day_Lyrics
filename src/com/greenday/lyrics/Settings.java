@@ -45,15 +45,16 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class Settings extends PreferenceActivity {
-	
-	private Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, 
-	mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper, mVersion;
-	private CheckBoxPreference mDisplay;
 
 	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, 
+		mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper;
+		final Preference mVersion;
+		final CheckBoxPreference mDisplay;
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
@@ -899,4 +900,5 @@ public class Settings extends PreferenceActivity {
     protected void onDestroy() {
         super.onDestroy();
       }
+    
 }

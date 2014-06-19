@@ -67,7 +67,7 @@ public class Demolicious extends Activity {
         tv1.setTextColor(text_color);
         
         //Background transparency
-        int def_alpha = 70;
+        int def_alpha = 150;
         int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
         findViewById(R.id.demolicious_layout).getBackground().setAlpha(alpha);
 		

@@ -67,7 +67,7 @@ public class Shenanigans extends Activity {
         tv1.setTextColor(text_color);
         
         //Background transparency
-        int def_alpha = 70;
+        int def_alpha = 150;
         int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
         findViewById(R.id.shenanigans_layout).getBackground().setAlpha(alpha);
 		
