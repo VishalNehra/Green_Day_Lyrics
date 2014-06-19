@@ -396,7 +396,7 @@ public class MainActivity extends Activity {
     	//Protect crouton
         Crouton.clearCroutonsForActivity(this);
         super.onDestroy();
-      }
+     }
     
     //Override back button function
     long lastPress;

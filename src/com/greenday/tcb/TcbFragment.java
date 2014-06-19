@@ -51,7 +51,7 @@ public class TcbFragment extends Fragment {
 		//Boot_pref ends
 
         //Background transparency
-        int def_alpha = 150;
+        int def_alpha = 70;
         int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
         rootView.findViewById(R.id.tcb_layout).getBackground().setAlpha(alpha);
         

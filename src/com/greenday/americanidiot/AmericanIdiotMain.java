@@ -44,7 +44,7 @@ public class AmericanIdiotMain extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.americanidiot);
-		findViewById(R.id.american_idiot_layout).getBackground().setAlpha(22);
+		//findViewById(R.id.american_idiot_layout).getBackground().setAlpha(22);
 		
 		//Google Analytics
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
@@ -68,7 +68,7 @@ public class AmericanIdiotMain extends Activity {
         tv1.setTextColor(text_color);
         
         //Background transparency
-        int def_alpha = 150;
+        int def_alpha = 70;
         int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
         findViewById(R.id.american_idiot_layout).getBackground().setAlpha(alpha);
 		
