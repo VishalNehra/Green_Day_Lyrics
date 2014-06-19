@@ -67,7 +67,7 @@ public class WarningMain extends Activity {
         tv1.setTextColor(text_color);
         
         //Background transparency
-        int def_alpha = 150;
+        int def_alpha = 70;
         int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
         findViewById(R.id.warning_layout).getBackground().setAlpha(alpha);
 		
