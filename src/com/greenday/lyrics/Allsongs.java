@@ -47,6 +47,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class Allsongs extends Activity {
@@ -65,6 +66,19 @@ public class Allsongs extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_songs);
 		
+		//Home Theme
+		RelativeLayout rl = (RelativeLayout) findViewById(R.id.all_songs_layout);
+		int sp = PreferenceManager.getDefaultSharedPreferences(this).getInt("home_theme", 0);
+		if(sp==0) {
+        	rl.setBackgroundResource(R.drawable.allsongs_bg);
+        }
+        else if(sp==1) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg2);
+        }
+        else if(sp==2) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg3);
+        }
+		
 		//Google Analytics
 		//Get a Tracker (should auto-report)
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
@@ -76,7 +90,6 @@ public class Allsongs extends Activity {
         ab.setBackgroundDrawable(new ColorDrawable(ab_color));
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		final ListView lv= (ListView) findViewById(R.id.listView1);
 		final EditText txtQuery = (EditText) findViewById(R.id.txtQuery);
 		

@@ -17,6 +17,9 @@
                 <Preference android:title="@string/nav_theme_title"
                     android:summary="@string/nav_theme_summary"
                     android:key="nav_theme"/>
+                <Preference android:title="@string/home_theme_title"
+                    android:summary="@string/home_theme_summary"
+                    android:key="home_theme"/>
                 </PreferenceScreen>
                 
         </PreferenceCategory>

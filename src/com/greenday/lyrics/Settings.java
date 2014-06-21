@@ -47,7 +47,7 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 public class Settings extends PreferenceActivity {
 	
 	private Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, 
-	mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper, mVersion;
+	mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper, mVersion, mHomeTheme;
 	private CheckBoxPreference mDisplay;
 
 	@SuppressWarnings("deprecation")
@@ -114,6 +114,36 @@ public class Settings extends PreferenceActivity {
 				Intent intent = new Intent(Settings.this, ThemeChooser.class);
 				intent.putExtra("nav_theme", true);
 				startActivity(intent);
+				return false;
+			}
+		});
+		mHomeTheme = findPreference("home_theme");
+		mHomeTheme.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+			
+			String[] home_theme_list = new String[] {
+				"¡Uno!",
+				"¡Dos!",
+				"¡Tré!"
+			};
+			
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				// TODO Auto-generated method stub
+				final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+				int i = sp.getInt("home_theme", 0);
+				new AlertDialog.Builder(Settings.this)
+				.setTitle("Choose your favorite album")
+				.setSingleChoiceItems(home_theme_list, i, new OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface arg0, int pos) {
+						// TODO Auto-generated method stub
+						sp.edit().putInt("home_theme", pos).commit();
+						Toast.makeText(Settings.this, "Applied", Toast.LENGTH_LONG).show();
+						arg0.cancel();
+					}
+				})
+				.show();
 				return false;
 			}
 		});

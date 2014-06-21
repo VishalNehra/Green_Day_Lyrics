@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
@@ -60,11 +61,23 @@ public class Favorites extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.favorites);
 		
+		//Home Theme
+		RelativeLayout rl = (RelativeLayout) findViewById(R.id.favorites_layout);
+		int sp = PreferenceManager.getDefaultSharedPreferences(this).getInt("home_theme", 0);
+		if(sp==0) {
+        	rl.setBackgroundResource(R.drawable.allsongs_bg);
+        }
+        else if(sp==1) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg2);
+        }
+        else if(sp==2) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg3);
+        }
+		
 		//Google Analytics
 		//Get a Tracker (should auto-report)
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
-		getWindow().setBackgroundDrawableResource(R.drawable.allsongs_bg);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Action bar color

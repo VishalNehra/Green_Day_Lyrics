@@ -22,7 +22,7 @@ public class EasterPre extends Activity {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.easterpre);
 		
-		//Testing Google Analytics
+		//Google Analytics
 		//Get a Tracker (should auto-report)
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
