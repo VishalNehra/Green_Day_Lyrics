@@ -21,40 +21,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-
 public class ShenanigansFragment extends Fragment {
-	
-public ShenanigansFragment(){}
+	private View rootView;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
   
-        View rootView = inflater.inflate(R.layout.fragment_shenanigans, container, false);
-		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.shenanigans_cover2);
+        rootView = inflater.inflate(R.layout.fragment_shenanigans, container, false);
         
-		getActivity();
-		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
-
-        if (firstboot){
-		 
-        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
-        	
-        getActivity();
-		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
-         .edit()
-         .putBoolean("firstboot_detail", false)
-         .commit();
-        }
-		//Boot_pref ends
-
-        //Background transparency
-        int def_alpha = 70;
-        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
-        rootView.findViewById(R.id.shenanigans_layout).getBackground().setAlpha(alpha);
+        //Loading Preferences
+        getPref();
         
 		ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -92,9 +69,9 @@ public ShenanigansFragment(){}
 		});
 		
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
-
-        //EDITED Code 
-        String[] values = new String[] {"Suffocate",
+        
+        String[] values = new String[] {
+        		"Suffocate",
         		"Desensitized",
         		"You Lied",
         		"Outsider",
@@ -112,10 +89,7 @@ public ShenanigansFragment(){}
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);
                  listview.setAdapter(adapter);  
-
-                 //To have custom list view use this : you must define CustomeAdapter class
-                 // listview.setadapter(new CustomeAdapter(getActivity()));
-                //getActivty is used instead of Context
+                 
                 /*
                  * Adding individual onclicklistener commands below;  
                  */
@@ -202,4 +176,35 @@ public ShenanigansFragment(){}
                  });
                  return rootView;
     }   
+    
+    @Override
+    public void onResume() {
+    	// TODO Auto-generated method stub
+    	getPref();
+    	super.onResume();
+    }
+    
+    private void getPref() {
+
+		//Boot_pref
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
+
+        if (firstboot){
+		 
+        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
+        	
+		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
+         .edit()
+         .putBoolean("firstboot_detail", false)
+         .commit();
+        }
+		//Boot_pref ends
+
+        //Background transparency
+        int def_alpha = 70;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
+        rootView.findViewById(R.id.shenanigans_layout).getBackground().setAlpha(alpha);
+    }
 }

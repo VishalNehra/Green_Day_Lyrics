@@ -22,38 +22,16 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class DosFragment extends Fragment {
-	
-	public DosFragment(){}
+	private View rootView;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
     	
-        View rootView = inflater.inflate(R.layout.fragment_dos, container, false);
-		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.dos_cover2);
-		
-		getActivity();
-		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
-
-        if (firstboot){
-		 
-        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
-        	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
-        	
-        getActivity();
-		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
-         .edit()
-         .putBoolean("firstboot_detail", false)
-         .commit();
-        }
-		//Boot_pref ends
-
-        //Background transparency
-        int def_alpha = 70;
-        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
-        rootView.findViewById(R.id.dos_layout).getBackground().setAlpha(alpha);
+        rootView = inflater.inflate(R.layout.fragment_dos, container, false);
+        
+		//Loading Preferences
+        getPref();
         
         ImageButton b=(ImageButton) rootView.findViewById(R.id.imageButton1);
 		b.setOnClickListener(new OnClickListener() {
@@ -91,8 +69,8 @@ public class DosFragment extends Fragment {
 		});
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
-        //EDITED Code 
-        String[] values = new String[] {"See You Tonight",
+        String[] values = new String[] {
+        		"See You Tonight",
         		"Fuck Time",
         		"Stop When Red Lights Flash",
         		"Lazy Bones",
@@ -110,9 +88,6 @@ public class DosFragment extends Fragment {
                 super.onActivityCreated(savedInstanceState);
                  listview.setAdapter(adapter);  
 
-                 //To have custom list view use this : you must define CustomeAdapter class
-                 // listview.setadapter(new CustomeAdapter(getActivity()));
-                //getActivty is used instead of Context
                 /*
                  * Adding individual onclicklistener commands below;  
                  */
@@ -194,4 +169,35 @@ public class DosFragment extends Fragment {
                  });
                  return rootView;
     }   
+    
+    @Override
+    public void onResume() {
+    	// TODO Auto-generated method stub
+    	getPref();
+    	super.onResume();
+    }
+    
+    private void getPref() {
+    	
+    	//Boot_pref
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_detail", true);
+
+        if (firstboot){
+		 
+        	Crouton.makeText(getActivity(), "Press on the circular album art icon...", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "to see more info about the album.", Style.INFO).show();
+        	Crouton.makeText(getActivity(), "Similar feature is available for the tracks too!", Style.CONFIRM).show();
+        	
+		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
+         .edit()
+         .putBoolean("firstboot_detail", false)
+         .commit();
+        }
+		//Boot_pref ends
+
+        //Background transparency
+        int def_alpha = 70;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
+        rootView.findViewById(R.id.dos_layout).getBackground().setAlpha(alpha);
+    }
 }

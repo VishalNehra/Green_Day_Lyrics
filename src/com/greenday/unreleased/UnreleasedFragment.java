@@ -17,102 +17,79 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class UnreleasedFragment extends Fragment {
-	
-	public UnreleasedFragment(){}
+	private View rootView;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
   
-        View rootView = inflater.inflate(R.layout.fragment_unreleased, container, false);
-		//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.unreleased_cover2);
+        rootView = inflater.inflate(R.layout.fragment_unreleased, container, false);
         
-		getActivity();
-		//Boot_pref
-        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_unreleased", true);
-
-        if (firstboot){
-		 
-        	Crouton.makeText(getActivity(), "The content in this part might be incorrect.", Style.ALERT).show();
-        	
-        getActivity();
-		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
-         .edit()
-         .putBoolean("firstboot_unreleased", false)
-         .commit();
-        }
-		//Boot_pref ends
-
-        //Background transparency
-        int def_alpha = 70;
-        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
-        rootView.findViewById(R.id.unreleased_layout).getBackground().setAlpha(alpha);
+        //Loading Preferences
+        getPref();
         
         ListView listview = (ListView) rootView.findViewById(R.id.listView1);
 
-        //EDITED Code 
-        String[] values = new String[] {"A Quick One While He's Away",
-					"Angel and the Jerk (Penelope Houston + Billie Joe)",
-					"Another State Of Mind",
-					"Billie Joe's Mom",
-					"Boys in the Bathroom Stall",
-					"Can't Make Love (Pansy Division + Tré Cool)",
-					"Chocolate Rain (Tré Cool)",
-					"Cigarettes And Valentines",
-					"D.U.I.",
-					"Depression Times (Jesse Malin + Green Day)",
-					"Don't Want to Know If You Are Lonely",
-					"Dream Catcher",
-					"Favourite Son",
-					"Food Around the Corner",
-					"Governator",
-					"Hearts Collide",
-					"Hybrid Moments",
-					"I Fought The Law",
-					"I Run NY (The Lonely Island + Billie Joe)",
-					"Jennifer",
-					"Lights Out",
-					"Like A Rolling Stone",
-					"Like a Rat Does Cheese",
-					"Look For Love (Billie Joe)",
-					"Maybe Forever",
-					"Mechanical Man",
-					"Midwest Medley",
-					"Minnesota Girl",
-					"Oh Girl",
-					"Olivia",
-					"Private Hell (Iggy Pop + Green Day)",
-					"Radio (Billie Joe and Rancid)",
-					"Second Time Around",
-					"Shoplifter",
-					"Shout",
-					//"State of Shock",
-					"Supermarket (Iggy Pop + Green Day)",
-					"Teenage Lobotomy",
-					"That's All Right",
-					"The Ballad of Wilhelm Fink (Billie Joe)",
-					"The Saints Are Coming (U2 + Green Day)",
-					"The Simpsons Theme",
-					"The Things I Heard Today",
-					"Too Much, Too Soon",
-					"Walking the Dog",
-					"We Are The Champions",
-					"What About Today?",
-					"When It's Time",
-					"When Will I Be Loved (Miranda Lambert + Billie Joe)",
-					"Why Does It Always Rain on Me?",
-					"Working Class Hero",
-					"World Vs. World (What You Say)",
-					"You Can't Fool Me"
+        String[] values = new String[] {
+        		"A Quick One While He's Away",
+				"Angel and the Jerk (Penelope Houston + Billie Joe)",
+				"Another State Of Mind",
+				"Billie Joe's Mom",
+				"Boys in the Bathroom Stall",
+				"Can't Make Love (Pansy Division + Tré Cool)",
+				"Chocolate Rain (Tré Cool)",
+				"Cigarettes And Valentines",
+				"D.U.I.",
+				"Depression Times (Jesse Malin + Green Day)",
+				"Don't Want to Know If You Are Lonely",
+				"Dream Catcher",
+				"Favourite Son",
+				"Food Around the Corner",
+				"Governator",
+				"Hearts Collide",
+				"Hybrid Moments",
+				"I Fought The Law",
+				"I Run NY (The Lonely Island + Billie Joe)",
+				"Jennifer",
+				"Lights Out",
+				"Like A Rolling Stone",
+				"Like a Rat Does Cheese",
+				"Look For Love (Billie Joe)",
+				"Maybe Forever",
+				"Mechanical Man",
+				"Midwest Medley",
+				"Minnesota Girl",
+				"Oh Girl",
+				"Olivia",
+				"Private Hell (Iggy Pop + Green Day)",
+				"Radio (Billie Joe and Rancid)",
+				"Second Time Around",
+				"Shoplifter",
+				"Shout",
+				//"State of Shock",
+				"Supermarket (Iggy Pop + Green Day)",
+				"Teenage Lobotomy",
+				"That's All Right",
+				"The Ballad of Wilhelm Fink (Billie Joe)",
+				"The Saints Are Coming (U2 + Green Day)",
+				"The Simpsons Theme",
+				"The Things I Heard Today",
+				"Too Much, Too Soon",
+				"Walking the Dog",
+				"We Are The Champions",
+				"What About Today?",
+				"When It's Time",
+				"When Will I Be Loved (Miranda Lambert + Billie Joe)",
+				"Why Does It Always Rain on Me?",
+				"Working Class Hero",
+				"World Vs. World (What You Say)",
+				"You Can't Fool Me"
         		};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, values); 
                 super.onActivityCreated(savedInstanceState);
                  listview.setAdapter(adapter);  
 
-                 //To have custom list view use this : you must define CustomeAdapter class
-                 // listview.setadapter(new CustomeAdapter(getActivity()));
-                //getActivty is used instead of Context
                 /*
                  * Adding individual onclicklistener commands below;  
                  */
@@ -341,4 +318,33 @@ public class UnreleasedFragment extends Fragment {
                  });
                  return rootView;
     }   
+    
+    @Override
+    public void onResume() {
+    	// TODO Auto-generated method stub
+    	getPref();
+    	super.onResume();
+    }
+    
+    private void getPref() {
+
+		//Boot_pref
+        boolean firstboot = getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE).getBoolean("firstboot_unreleased", true);
+
+        if (firstboot){
+		 
+        	Crouton.makeText(getActivity(), "The content in this part might be incorrect.", Style.ALERT).show();
+        	
+		getActivity().getSharedPreferences("BOOT_PREF", Context.MODE_PRIVATE)
+         .edit()
+         .putBoolean("firstboot_unreleased", false)
+         .commit();
+        }
+		//Boot_pref ends
+
+        //Background transparency
+        int def_alpha = 70;
+        int alpha = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("alpha", def_alpha);
+        rootView.findViewById(R.id.unreleased_layout).getBackground().setAlpha(alpha);
+    }
 }

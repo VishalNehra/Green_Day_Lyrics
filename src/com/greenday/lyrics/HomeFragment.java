@@ -22,20 +22,7 @@ import android.widget.RelativeLayout;
 	        rootView = inflater.inflate(R.layout.fragment_home, container, false);
 	        
 	        //Home theme
-	        RelativeLayout rl = (RelativeLayout) rootView.findViewById(R.id.fragment_home_layout);
-	        int sp = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("home_theme", 0);
-	        if(sp==0) {
-	        	//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.home_cover);
-	        	rl.setBackgroundResource(R.drawable.home_cover);
-	        }
-	        else if(sp==1) {
-	        	//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.home_cover2);
-	        	rl.setBackgroundResource(R.drawable.home_cover2);
-	        }
-	        else if(sp==2) {
-	        	//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.home_cover3);
-	        	rl.setBackgroundResource(R.drawable.home_cover3);
-	        }
+	        getPrefs();
 	        
 	        ImageButton ib = (ImageButton) rootView.findViewById(R.id.imageButton1);
 	        ib.setOnClickListener(new OnClickListener() {
@@ -67,7 +54,13 @@ import android.widget.RelativeLayout;
 	    
 	    @Override
 	    public void onResume() {
-	    	// TODO Auto-generated method stub//Home theme
+	    	// TODO Auto-generated method stub
+	    	getPrefs();
+	    	super.onResume();
+	    }
+	    
+	    private void getPrefs() {
+	    	//Home theme
 	        RelativeLayout rl = (RelativeLayout) rootView.findViewById(R.id.fragment_home_layout);
 	        int sp = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt("home_theme", 0);
 	        if(sp==0) {
@@ -82,6 +75,5 @@ import android.widget.RelativeLayout;
 	        	//getActivity().getWindow().setBackgroundDrawableResource(R.drawable.home_cover3);
 	        	rl.setBackgroundResource(R.drawable.home_cover3);
 	        }
-	    	super.onResume();
 	    }
 }
