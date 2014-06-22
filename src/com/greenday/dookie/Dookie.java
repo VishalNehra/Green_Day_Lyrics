@@ -35,9 +35,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Dookie extends Activity {
-	
 	private PoppyViewHelper mPoppyViewHelper;
 	private Tracker t;
+	private View poppyview;
+	private TextView tv1;
+	private ActionBar ab;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,39 +47,22 @@ public class Dookie extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.dookie);
 		
+        ab =getActionBar();
+		tv1 = (TextView)findViewById(R.id.textView1);
+		
+		//Poppyview 
+		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
+		poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
+				
+        //Loading Preferences
+        getPref();
+		
 		//Google Analytics
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		t = ((Frontend) this.getApplication()).getTracker(
 	            TrackerName.APP_TRACKER);
 		
-		//Action bar color
-        int ab_def_color= Color.parseColor("#222222");
-        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
-        ActionBar ab =getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
-        
-        //Text Size
-		TextView tv1 = (TextView)findViewById(R.id.textView1);
-		int text_size = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
-		tv1.setTextSize(text_size);
-		
-		//Text Color
-		int text_def_color= Color.parseColor("#000000");
-        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
-        tv1.setTextColor(text_color);
-        
-        //Background transparency
-        int def_alpha = 70;
-        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
-        findViewById(R.id.dookie_layout).getBackground().setAlpha(alpha);
-        
-		//Poppyview
-		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
-		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
-		int poppy_def_color=Color.parseColor("#40222222");
-		int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
-		poppyview.setBackgroundColor(poppy_color);
-		
+		//PoppyView
 		ImageButton search = (ImageButton) poppyview.findViewById(R.id.imageButton1);
 		search.setOnClickListener(new OnClickListener() {
 			
@@ -225,6 +210,8 @@ public class Dookie extends Activity {
 			@Override
 			public boolean onLongClick(View arg0) {
 				// TODO Auto-generated method stub
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity(intent);
 				return false;
 			}
@@ -461,5 +448,39 @@ public class Dookie extends Activity {
 	    	//Protect crouton
 	        Crouton.clearCroutonsForActivity(this);
 			super.onDestroy();
+		}
+		
+		@Override
+		protected void onResume() {
+			// TODO Auto-generated method stub
+			getPref();
+			super.onResume();
+		}
+		
+		private void getPref() {
+			
+			//Action bar color
+	        int ab_def_color= Color.parseColor("#222222");
+	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+	        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+	        
+	        //Text Size
+			int text_size = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
+			tv1.setTextSize(text_size);
+			
+			//Text Color
+			int text_def_color= Color.parseColor("#000000");
+	        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
+	        tv1.setTextColor(text_color);
+	        
+	        //Background transparency
+	        int def_alpha = 70;
+	        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
+	        findViewById(R.id.dookie_layout).getBackground().setAlpha(alpha);
+	        
+	        //PoppyView
+	        int poppy_def_color=Color.parseColor("#40222222");
+			int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
+			poppyview.setBackgroundColor(poppy_color);
 		}
 }

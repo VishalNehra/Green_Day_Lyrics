@@ -35,8 +35,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Demolicious extends Activity {
-	
 	private PoppyViewHelper mPoppyViewHelper;
+	private Tracker t;
+	private View poppyview;
+	private TextView tv1;
+	private ActionBar ab;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,37 +50,20 @@ public class Demolicious extends Activity {
 		
 		//Google Analytics
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
-		Tracker t = ((Frontend) this.getApplication()).getTracker(
+		t = ((Frontend) this.getApplication()).getTracker(
 	            TrackerName.APP_TRACKER);
 		
-		//Action bar color
-        int ab_def_color= Color.parseColor("#222222");
-        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
-        ActionBar ab =getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
-        
-        //Text Size
-		TextView tv1 = (TextView)findViewById(R.id.textView1);
-		int text_size = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
-		tv1.setTextSize(text_size);
-		
-		//Text Color
-		int text_def_color= Color.parseColor("#000000");
-        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
-        tv1.setTextColor(text_color);
-        
-        //Background transparency
-        int def_alpha = 70;
-        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
-        findViewById(R.id.demolicious_layout).getBackground().setAlpha(alpha);
+        ab =getActionBar();
+		tv1 = (TextView)findViewById(R.id.textView1);
 		
 		//Poppyview 
 		mPoppyViewHelper=new PoppyViewHelper(this, PoppyViewPosition.BOTTOM);
-		View poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
-		int poppy_def_color=Color.parseColor("#40222222");
-		int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
-		poppyview.setBackgroundColor(poppy_color);
+		poppyview = mPoppyViewHelper.createPoppyViewOnScrollView(R.id.scrollView, R.layout.poppyview);
 		
+		//Loading Preferences
+		getPref();
+		
+		//Poppyview 
 		ImageButton search = (ImageButton) poppyview.findViewById(R.id.imageButton1);
 		search.setOnClickListener(new OnClickListener() {
 			
@@ -244,6 +230,8 @@ public class Demolicious extends Activity {
 			@Override
 			public boolean onLongClick(View arg0) {
 				// TODO Auto-generated method stub
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity(intent);
 				return false;
 			}
@@ -329,148 +317,109 @@ public class Demolicious extends Activity {
 			String current = "99 Revolutions (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.ninetyrevdemo);
-			
-			//Google Analytics
-			// Set screen name.
-	        t.setScreenName(current);
-	        // Send a screen view.
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 2){
 			String current = "Angel Blue (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.angelbluedemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 3){
 			String current = "Carpe Diem (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.carpediemdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 4){
 			String current = "State Of Shock";
 			ab.setTitle(current);
 			tv1.setText(R.string.stateofshock);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 5){
 			String current = "Let Yourself Go (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.letgodemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 6){
 			String current = "Sex, Drugs And Violence (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.sexviolencedemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 7){
 			String current = "Ashley (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.ashleydemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 8){
 			String current = "Fell For You (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.fellforyoudemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 9){
 			String current = "Stay The Night (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.staynightdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 10){
 			String current = "Nuclear Family (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.nucleardemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 11){
 			String current = "Stray Heart (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.strayheartdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 12){
 			String current = "Rusty James (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.rustyjamesdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 13){
 			String current = "A Little Boy Named Train (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.littleboydemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 14){
 			String current = "Baby Eyes (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.babyeyesdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 15){
 			String current = "Makeout Party (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.makeoutdemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 16){
 			String current = "Oh Love (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.ohlovedemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 17){
 			String current = "Missing You (Demo)";
 			ab.setTitle(current);
 			tv1.setText(R.string.missingyoudemo);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		if(track == 18){
 			String current = "Stay The Night (Acoustic)";
 			ab.setTitle(current);
 			tv1.setText(R.string.staynightacoustic);
-			
-	        t.setScreenName(current);
-	        t.send(new HitBuilders.AppViewBuilder().build());
+			analytics(current);
 		}
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -537,5 +486,48 @@ public class Demolicious extends Activity {
 	    	//Protect crouton
 	        Crouton.clearCroutonsForActivity(this);
 			super.onDestroy();
+		}
+		
+		//Analytics
+		public void analytics(String s) {
+			//Google Analytics
+			// Set screen name.
+	        t.setScreenName(s);
+	        // Send a screen view.
+	        t.send(new HitBuilders.AppViewBuilder().build());
+		}
+		
+		@Override
+		protected void onResume() {
+			// TODO Auto-generated method stub
+			getPref();
+			super.onResume();
+		}
+		
+		private void getPref() {
+
+			//Action bar color
+	        int ab_def_color= Color.parseColor("#222222");
+	        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+	        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+	        
+	        //Text Size
+			int text_size = PreferenceManager.getDefaultSharedPreferences(this).getInt("text", 18);
+			tv1.setTextSize(text_size);
+			
+			//Text Color
+			int text_def_color= Color.parseColor("#000000");
+	        int text_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("text_theme", text_def_color);
+	        tv1.setTextColor(text_color);
+	        
+	        //Background transparency
+	        int def_alpha = 70;
+	        int alpha = PreferenceManager.getDefaultSharedPreferences(this).getInt("alpha", def_alpha);
+	        findViewById(R.id.demolicious_layout).getBackground().setAlpha(alpha);
+	        
+	        //PoppyView
+	        int poppy_def_color=Color.parseColor("#40222222");
+			int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
+			poppyview.setBackgroundColor(poppy_color);
 		}
 }
