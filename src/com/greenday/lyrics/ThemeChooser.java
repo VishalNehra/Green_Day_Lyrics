@@ -174,28 +174,32 @@ public class ThemeChooser extends Activity {
 							SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ThemeChooser.this);
 							sp.edit().putInt("ab_theme", color).commit();
 							Toast.makeText(ThemeChooser.this, "Applied", Toast.LENGTH_LONG).show();
-							System.exit(0);
+							//System.exit(0);
+							onBackPressed();
 						}
 						
 						if(text_intent){
 							SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ThemeChooser.this);
 							sp.edit().putInt("text_theme", color).commit();
 							Toast.makeText(ThemeChooser.this, "Applied", Toast.LENGTH_LONG).show();
-							System.exit(0);
+							//System.exit(0);
+							onBackPressed();
 						}
 						
 						if(poppy_intent){
 							SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ThemeChooser.this);
 							sp.edit().putInt("poppy_theme", color).commit();
 							Toast.makeText(ThemeChooser.this, "Applied", Toast.LENGTH_LONG).show();
-							System.exit(0);
+							//System.exit(0);
+							onBackPressed();
 						}
 						
 						if(nav_intent){
 							SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ThemeChooser.this);
 							sp.edit().putInt("nav_theme", color).commit();
 							Toast.makeText(ThemeChooser.this, "Applied", Toast.LENGTH_LONG).show();
-							System.exit(0);
+							//System.exit(0);
+							onBackPressed();
 						}
 					}
 				});

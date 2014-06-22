@@ -143,7 +143,7 @@
     <string name="aboutapp_title">About the app.</string>
     <string name="aboutgd_title">About Green Day</string>
     <string name="version_title">Build Version</string>
-    <string name="version_summary">v1.0.4</string>
+    <string name="version_summary">v1.0.5</string>
     <string name="source_title">Github</string>
     <string name="source_summary">View app. source code</string>
     <string name="members_title">Members</string>

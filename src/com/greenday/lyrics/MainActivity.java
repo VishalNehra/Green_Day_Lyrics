@@ -68,6 +68,9 @@ public class MainActivity extends Activity {
  
     private ArrayList<NavDrawerItem> navDrawerItems;
     private NavDrawerListAdapter adapter;
+    private ListView lv;
+    private ActionBar ab;
+    private DrawerLayout.LayoutParams params;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,64 +79,19 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         //Nav. Drawer Listview background
-        int nav_def_color= Color.parseColor("#70222222");
-        int nav_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", nav_def_color);
-        ListView lv=(ListView) findViewById(R.id.list_slidermenu);
-        lv.setBackgroundColor(nav_color);
+        lv=(ListView) findViewById(R.id.list_slidermenu);
         
+        //Actionbar
+        ab = getActionBar();
         
-        //Action bar color
-        int ab_def_color= Color.parseColor("#222222");
-        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
-        ActionBar ab =getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+        //Do not rearrange this stuff!
+        mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
+        params = (android.support.v4.widget.DrawerLayout.LayoutParams) mDrawerList.getLayoutParams();
+        
+        //Loading Preferences
+        getPref();
         
         mTitle = mDrawerTitle = getTitle();
-        
-        //Boot_pref
-        boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
-
-        if (firstboot){
-            // 1) Launch the authentication activity
-            // 2) Then save the state
-        	
-    		//Showcaseview
-            ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-            //For leavign action bar unhidden; 
-      		//co.insert = ShowcaseView.INSERT_TO_VIEW;
-            @SuppressWarnings("deprecation")
-			ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
-            		"Welcome", "\nSlide from left to right to access list of albums.\n" +
-            				"\nYou can also press highlighted area as an alternative.", co);
-           
-            //Click listeners for showcaseview
-            sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
-            	 @Override
-            	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
-            	     //The view is hidden/dismissed
-            		 //RelativeLayout v = new RelativeLayout(MainActivity.this);
-            		 Crouton.makeText(MainActivity.this, "Please report if you find any incorrect lyrics.", Style.INFO).show();
-            	    }
-
-            	 @Override
-            	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
-            	        //The view is shown
-            	    }
-
-				@Override
-				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
-					// TODO Auto-generated method stub
-					
-				}
-            	});
-
-            getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
-                .edit()
-                .putBoolean("firstboot", false)
-                .commit();
-        }
-        
-        //Boot_pref ends
         
         //Get user account for spinner
         Account[] accounts = AccountManager.get(this).getAccountsByType("com.google");
@@ -153,13 +111,6 @@ public class MainActivity extends Activity {
                 .obtainTypedArray(R.array.nav_drawer_icons);
  
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
-        
-        //Drawer width
-        int nav_width = PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_width", getResources().getDisplayMetrics().widthPixels/2);
-        DrawerLayout.LayoutParams params = (android.support.v4.widget.DrawerLayout.LayoutParams) mDrawerList.getLayoutParams();
-        params.width = nav_width;
-        mDrawerList.setLayoutParams(params);
  
         navDrawerItems = new ArrayList<NavDrawerItem>();
  
@@ -196,8 +147,6 @@ public class MainActivity extends Activity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1), true, "18"));
         // Unreleased
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[15], navMenuIcons.getResourceId(15, -1), true, "53"));
-        
-         
  
         // Recycle the typed array
         navMenuIcons.recycle();
@@ -419,5 +368,71 @@ public class MainActivity extends Activity {
     	{
     		finish();
     	}
+    }
+    
+    @Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		getPref();
+		super.onResume();
+	}
+    
+    private void getPref() {
+    	//Nav Drawer ListView Background
+        int nav_def_color= Color.parseColor("#70222222");
+        int nav_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_theme", nav_def_color);
+        lv.setBackgroundColor(nav_color);
+
+        //Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+
+        //Drawer width
+        int nav_width = PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_width", getResources().getDisplayMetrics().widthPixels/2);
+        params.width = nav_width;
+        mDrawerList.setLayoutParams(params);
+        
+        //Boot_pref
+        boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot", true);
+
+        if (firstboot){
+        	
+    		//Showcaseview
+            ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+            //For leavign action bar unhidden; 
+      		//co.insert = ShowcaseView.INSERT_TO_VIEW;
+            @SuppressWarnings("deprecation")
+			ShowcaseView sv=ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, this,
+            		"Welcome", "\nSlide from left to right to access list of albums.\n" +
+            				"\nYou can also press highlighted area as an alternative.", co);
+           
+            //Click listeners for showcaseview
+            sv.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+            	 @Override
+            	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            	     //The view is hidden/dismissed
+            		 //RelativeLayout v = new RelativeLayout(MainActivity.this);
+            		 Crouton.makeText(MainActivity.this, "Please report if you find any incorrect lyrics.", Style.INFO).show();
+            	    }
+
+            	 @Override
+            	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
+            	        //The view is shown
+            	    }
+
+				@Override
+				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+					// TODO Auto-generated method stub
+					
+				}
+            	});
+
+            getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+                .edit()
+                .putBoolean("firstboot", false)
+                .commit();
+        }
+        //Boot_pref ends
     }
 }

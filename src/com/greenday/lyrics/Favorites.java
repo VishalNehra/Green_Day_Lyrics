@@ -53,8 +53,10 @@ import de.timroes.android.listview.EnhancedListView.OnDismissCallback;
 import de.timroes.android.listview.EnhancedListView.Undoable;
 
 public class Favorites extends Activity {
+	private ArrayAdapter<String> adapter;
+	private RelativeLayout rl;
+	private ActionBar ab;
 	
-	ArrayAdapter<String> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -62,29 +64,18 @@ public class Favorites extends Activity {
 		setContentView(R.layout.favorites);
 		
 		//Home Theme
-		RelativeLayout rl = (RelativeLayout) findViewById(R.id.favorites_layout);
-		int sp = PreferenceManager.getDefaultSharedPreferences(this).getInt("home_theme", 0);
-		if(sp==0) {
-        	rl.setBackgroundResource(R.drawable.allsongs_bg);
-        }
-        else if(sp==1) {
-        	rl.setBackgroundResource(R.drawable.all_songs_bg2);
-        }
-        else if(sp==2) {
-        	rl.setBackgroundResource(R.drawable.all_songs_bg3);
-        }
+		rl = (RelativeLayout) findViewById(R.id.favorites_layout);
+		
+        ab =getActionBar();
+        
+        //Loading Preferences
+        getPref();
 		
 		//Google Analytics
 		//Get a Tracker (should auto-report)
 		((Frontend) getApplication()).getTracker(Frontend.TrackerName.APP_TRACKER);
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		//Action bar color
-        int ab_def_color= Color.parseColor("#222222");
-        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
-        ActionBar ab =getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
 		
 		final EnhancedListView lv = (EnhancedListView) findViewById(R.id.listView1);
 		
@@ -1155,58 +1146,6 @@ public class Favorites extends Activity {
 			}
 		});
 		
-		//Firstboot pref
-		boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_favorites", true);
-		if(firstboot) {
-			
-			//Testing showcaseview
-			//Config for second Showcaseview
-	        final ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
-	        //For leaving action bar unhidden; 
-	  		//co.insert = ShowcaseView.INSERT_TO_VIEW;
-	        //co.centerText = true;
-	        //First showcaseview
-	        ShowcaseView.ConfigOptions co2 = new ShowcaseView.ConfigOptions(); 
-			co2.showcaseId=ShowcaseView.ITEM_ACTION_ITEM;
-			co2.hideOnClickOutside=true;
-			ActionItemTarget target = new ActionItemTarget(Favorites.this, R.id.action_fav);
-			ShowcaseView sv2 = ShowcaseView.insertShowcaseView(target, Favorites.this, "Favorites", "\nAdd new favorite by pressing on this button.\n" +
-			 		"You can also add new favorite using poppy bar in lyrics.", co2);
-			sv2.show();
-	        //Click listeners for first showcaseview
-	        sv2.setOnShowcaseEventListener(new OnShowcaseEventListener() {
-	        	 @Override
-	        	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
-	        		 
-	        		 //Second showcaseview
-	        		 @SuppressWarnings("deprecation")
-					 ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, Favorites.this,
-	        	        		"Favorites", "\nSlide from left to right to remove any favorite.", co);
-	        	     //sv.animateGesture(0, 100, 200, 200);
-	        	     int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
-	        	     int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
-	        	     sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
-	        	     sv.setShowcaseIndicatorScale(0);
-					 sv.show();
-	        	    }
-
-	        	 @Override
-	        	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
-	        	        //The view is shown
-	        	    }
-
-				@Override
-				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
-					// TODO Auto-generated method stub
-					
-				}
-	        	});
-			
-			getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
-			.edit()
-			.putBoolean("firstboot_favorites", false).commit();
-		}
-		
 	}
 	
 	@Override
@@ -1275,6 +1214,7 @@ public class Favorites extends Activity {
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		adapter.notifyDataSetChanged();
+		getPref();
 		super.onResume();
 	}
 	
@@ -1300,5 +1240,76 @@ public class Favorites extends Activity {
     	//Protect crouton
         Crouton.clearCroutonsForActivity(this);
 		super.onDestroy();
+	}
+	
+	private void getPref() {
+		//Home Theme
+		int sp = PreferenceManager.getDefaultSharedPreferences(this).getInt("home_theme", 0);
+		if(sp==0) {
+        	rl.setBackgroundResource(R.drawable.allsongs_bg);
+        }
+        else if(sp==1) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg2);
+        }
+        else if(sp==2) {
+        	rl.setBackgroundResource(R.drawable.all_songs_bg3);
+        }
+		
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+        
+		//Firstboot pref
+		boolean firstboot = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstboot_favorites", true);
+		if(firstboot) {
+			
+			//Testing showcaseview
+			//Config for second Showcaseview
+	        final ShowcaseView.ConfigOptions co = new ShowcaseView.ConfigOptions();
+	        //For leaving action bar unhidden; 
+	  		//co.insert = ShowcaseView.INSERT_TO_VIEW;
+	        //co.centerText = true;
+	        //First showcaseview
+	        ShowcaseView.ConfigOptions co2 = new ShowcaseView.ConfigOptions(); 
+			co2.showcaseId=ShowcaseView.ITEM_ACTION_ITEM;
+			co2.hideOnClickOutside=true;
+			ActionItemTarget target = new ActionItemTarget(Favorites.this, R.id.action_fav);
+			ShowcaseView sv2 = ShowcaseView.insertShowcaseView(target, Favorites.this, "Favorites", "\nAdd new favorite by pressing on this button.\n" +
+			 		"You can also add new favorite using poppy bar in lyrics.", co2);
+			sv2.show();
+	        //Click listeners for first showcaseview
+	        sv2.setOnShowcaseEventListener(new OnShowcaseEventListener() {
+	        	 @Override
+	        	    public void onShowcaseViewHide(ShowcaseView showcaseView) {
+	        		 
+	        		 //Second showcaseview
+	        		 @SuppressWarnings("deprecation")
+					 ShowcaseView sv = ShowcaseView.insertShowcaseViewWithType(ShowcaseView.ITEM_ACTION_HOME, 1, Favorites.this,
+	        	        		"Favorites", "\nSlide from left to right to remove any favorite.", co);
+	        	     //sv.animateGesture(0, 100, 200, 200);
+	        	     int x_final_pos = getResources().getDisplayMetrics().widthPixels/2;
+	        	     int y_init_pos = getResources().getDisplayMetrics().heightPixels/4;
+	        	     sv.animateGesture(0, y_init_pos, x_final_pos, y_init_pos);
+	        	     sv.setShowcaseIndicatorScale(0);
+					 sv.show();
+	        	    }
+
+	        	 @Override
+	        	    public void onShowcaseViewShow(ShowcaseView showcaseView) {
+	        	        //The view is shown
+	        	    }
+
+				@Override
+				public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+					// TODO Auto-generated method stub
+					
+				}
+	        	});
+			
+			getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+			.edit()
+			.putBoolean("firstboot_favorites", false).commit();
+		}
 	}
 }

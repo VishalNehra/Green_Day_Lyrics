@@ -45,7 +45,7 @@ import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class Settings extends PreferenceActivity {
-	
+	private ActionBar ab;
 	private Preference mCache, mchangeLog, mHints, mDisclaimer, mTranslate, 
 	mLicense, mText, mABTheme, mPoppyTheme, mTextTheme, mNavTheme, mAlpha, mNavWidth, mWallpaper, mVersion, mHomeTheme;
 	private CheckBoxPreference mDisplay;
@@ -57,12 +57,11 @@ public class Settings extends PreferenceActivity {
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		addPreferencesFromResource(R.xml.preferences);
-		
-		//Action bar color
-        int ab_def_color= Color.parseColor("#222222");
-        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
-        ActionBar ab =getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+
+        ab =getActionBar();
+        
+        //Loading Preferences
+        getPref();
 		
 		/*To change settings layout as listview*/
 		//this.setContentView(R.layout.pref_act);
@@ -519,7 +518,7 @@ public class Settings extends PreferenceActivity {
 			                mDisplay.setChecked(true);
 			                SharedPreferences sp1 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 			                sp1.edit().putBoolean("display", true).commit();
-			                System.exit(0);
+			                //System.exit(0);
 			            }
 			        })
 			        .setCancelable(false)
@@ -529,7 +528,7 @@ public class Settings extends PreferenceActivity {
 				{
 					SharedPreferences sp2 = PreferenceManager.getDefaultSharedPreferences(Settings.this);
 	                sp2.edit().putBoolean("display", false).commit();
-	                System.exit(0);
+	                //System.exit(0);
 				}
 				return false;
 			}
@@ -929,4 +928,19 @@ public class Settings extends PreferenceActivity {
     protected void onDestroy() {
         super.onDestroy();
       }
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		getPref();
+		super.onResume();
+	}
+	
+	private void getPref() {
+
+		//Action bar color
+        int ab_def_color= Color.parseColor("#222222");
+        int ab_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("ab_theme", ab_def_color);
+        ab.setBackgroundDrawable(new ColorDrawable(ab_color));
+	}
 }

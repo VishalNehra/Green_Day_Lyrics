@@ -48,6 +48,7 @@ public class Dos extends Activity {
 		setContentView(R.layout.dos);
 		
         ab =getActionBar();
+		ab.setDisplayHomeAsUpEnabled(true);
 		tv1 = (TextView)findViewById(R.id.textView1);
 		
 		//Poppyview 
@@ -340,15 +341,6 @@ public class Dos extends Activity {
 			tv1.setText(R.string.amy);
 			analytics(current);
 		}
-		
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		//Display
-		boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
-		if(display)
-		{
-			tv1.setKeepScreenOn(true);
-		}
 	}
 	
 		@Override
@@ -448,5 +440,12 @@ public class Dos extends Activity {
 	        int poppy_def_color=Color.parseColor("#40222222");
 			int poppy_color=PreferenceManager.getDefaultSharedPreferences(this).getInt("poppy_theme", poppy_def_color);
 			poppyview.setBackgroundColor(poppy_color);
+			
+			//Display
+			boolean display = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("display", false);
+			if(display)
+			{
+				tv1.setKeepScreenOn(true);
+			}
 		}
 }
