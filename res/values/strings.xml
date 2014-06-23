@@ -50,7 +50,7 @@
     <string name="changelog_change_5">- Redesigned Theme Chooser&lt;br>
           - Added Poppy View&lt;br>
           - Lots more&#8230;&lt;br>&lt;br></string>         
-    <string name="changelog_version_6">&lt;font color="#524ef8">&lt;b>v1.0.5&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>June 20, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
+    <string name="changelog_version_6">&lt;font color="#524ef8">&lt;b>v1.0.5&lt;/font>&lt;/b>&lt;i>&lt;font color="#5299f2">&lt;br>June 23, 2014&lt;/i>&lt;/font>&lt;br>&lt;br></string>
     <string name="changelog_change_6">- More options added in Settings&lt;br>
           - Fixed issues with Lyrics text&lt;br>
           - Added favorites database&lt;br>
@@ -105,7 +105,7 @@
     
     <string name="def_image_alpha">Default ART alpha (70)</string>
     <string name="def_text_size">Default text size (18sp)</string>
-    <string name="def_nav_width">Default drawer width (Screen/2)</string>
+    <string name="def_nav_width">Default drawer width (240dp)</string>
     
     <!-- Settings -->
     

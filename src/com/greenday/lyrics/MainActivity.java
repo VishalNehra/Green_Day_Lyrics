@@ -35,6 +35,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -389,7 +390,8 @@ public class MainActivity extends Activity {
         ab.setBackgroundDrawable(new ColorDrawable(ab_color));
 
         //Drawer width
-        int nav_width = PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_width", getResources().getDisplayMetrics().widthPixels/2);
+        int px = (int) (240 * Resources.getSystem().getDisplayMetrics().density);
+        int nav_width = PreferenceManager.getDefaultSharedPreferences(this).getInt("nav_width", px);
         params.width = nav_width;
         mDrawerList.setLayoutParams(params);
         

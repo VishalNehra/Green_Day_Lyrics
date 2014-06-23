@@ -11,6 +11,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.res.Resources;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -771,7 +772,6 @@ public class Settings extends PreferenceActivity {
 					@Override
 					public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
 						// TODO Auto-generated method stub
-						//Setting sample image transparency
 						int extended_progress = (int) ((getResources().getDisplayMetrics().widthPixels/2)+(progress*0.005*getResources().getDisplayMetrics().widthPixels));		//Setting progress from half width to full screen width
 						tv.setText((50+(progress/2)) + "%\n" + "of the screen width");
 						
@@ -811,9 +811,10 @@ public class Settings extends PreferenceActivity {
 					public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
 						// TODO Auto-generated method stub
 						SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(Settings.this);
+						int px = (int) (240 * Resources.getSystem().getDisplayMetrics().density);
 						if(cb.isChecked()){
 							sp.edit().putBoolean("nav_def_checkbox", true).commit();
-							sp.edit().putInt("nav_width", getResources().getDisplayMetrics().widthPixels/2).commit();
+							sp.edit().putInt("nav_width", px).commit();
 							sb.setEnabled(false);
 						}
 						else{
