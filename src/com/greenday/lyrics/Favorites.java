@@ -56,6 +56,8 @@ public class Favorites extends Activity {
 	private ArrayAdapter<String> adapter;
 	private RelativeLayout rl;
 	private ActionBar ab;
+	private EnhancedListView lv;
+	private ArrayList<String> list;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -77,19 +79,20 @@ public class Favorites extends Activity {
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
-		final EnhancedListView lv = (EnhancedListView) findViewById(R.id.listView1);
+		lv = (EnhancedListView) findViewById(R.id.listView1);
 		
 		//Getting list from database
 		final DBHandler db = new DBHandler(this, null, null, 1);
 		List<Track> track = db.getAllTracks();
-		final ArrayList<String> list = new ArrayList<String>();
-		
-		for(Track t : track) {
-			list.add(t.getTrackName());
-		}
+		list = new ArrayList<String>();
 		
 		adapter = new ArrayAdapter<String>(Favorites.this, android.R.layout.simple_list_item_1, list);
 		lv.setAdapter(adapter);
+		
+		for(Track t : track) {
+			//list.add(t.getTrackName());
+			adapter.add(t.getTrackName());
+		}
 		
 		//Setting empty listview
 		TextView tv = (TextView) findViewById(R.id.textView1);
@@ -1200,7 +1203,7 @@ public class Favorites extends Activity {
 						//Adding selected item to database
 						db.addTrack(new Track(selected, 0));
 						Toast.makeText(Favorites.this, "\"" + selected + "\"" + " added as favorite", Toast.LENGTH_LONG).show();
-						recreate();
+						adapter.add(selected);
 					}
 				}
 			})
@@ -1213,7 +1216,6 @@ public class Favorites extends Activity {
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
-		adapter.notifyDataSetChanged();
 		getPref();
 		super.onResume();
 	}

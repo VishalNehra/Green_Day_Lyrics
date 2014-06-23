@@ -63,9 +63,9 @@ public class Wallpaper extends Activity {
 			"Shenanigans",
 			"American Idiot",
 			"21st Century Breakdown",
-			"UNO",
-			"DOS",
-			"TRE",
+			"¡Uno!",
+			"¡Dos!",
+			"¡Tré!",
 			"Demolicious",
 			"Billie ?"
 		};
